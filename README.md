@@ -9,7 +9,7 @@ Live site: https://basic-1000.vercel.app
 | Path | What it is |
 |---|---|
 | `index.html` | The whole website: layout, lessons, quizzes, review, dictionary and Supabase sign-in |
-| `figures.js` | Stick-figure teaching pictures (D3), one per word; step 1 so far |
+| `figures.js` | Animated stick-figure scenes (D3), one per word; all of Unit 1 (steps 1-10) so far |
 | `data-1.txt` ... `data-4.txt` | The 1,000 words the site loads (250 per file) |
 | `content/course.json` | The full course data: steps, definitions, examples |
 | `content/check_course.py`, `content/vocab.py` | Checks every course rule. Run after editing `course.json` |
