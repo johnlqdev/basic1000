@@ -1,0 +1,100 @@
+manage|verb|F|to control a business or a group of people; also, to be able to do something hard|She manages a small hotel.|I managed to finish my work.
+manager|noun|F|a person whose job is to manage a business or a group of workers|I want to talk to the manager.|She is the manager of the shop.
+many|determiner|D||Many people came to the party.|How many brothers do you have?
+map|noun|P||Look at the map.|Can you show me on the map?
+mark|noun|F|a small area of a different colour on something; also, a sign or number that shows how good a piece of work is|There is a mark on your shirt.|She got a good mark in the test.
+market|noun|F|a place where people buy and sell things, often outside|We buy fruit at the market.|The market is open every morning.
+marry|verb|F|to join with another person in a way that the law accepts, and live together as a family|She married a doctor.|They married last year.
+mass|noun|F|a large amount of something without a clear shape; also, a large number of people or things|There was a mass of clouds in the sky.|A mass of people came into the street.
+match|noun|F|a game between two people or teams; also, a small stick that makes fire when you push it quickly against something rough|We won the match.|He lit a match.
+material|noun|F|a substance that things are made from; also, cloth|Wood is a strong material.|This dress is made of soft material.
+matter|noun|F|a subject or situation that you must think about|It is a private matter.|It does not matter.
+may|verb|D||May I come in?|It may rain today.
+meal|noun|F|the food that you eat at one time, like the food in the morning or at night|We have three meals a day.|That was a good meal.
+mean|verb|F|to have as a sense or as an idea; also, to have a plan to do something|What does this word mean?|I did not mean to break it.
+measure|verb|F|to find out how big, long, heavy or hot something is|Measure the table.|We measured the distance.
+meat|noun|P||I do not eat meat.|This meat is cooked well.
+medical|adjective|F|having to do with the care of ill people and the study of disease|She is a medical student.|He needs medical help.
+meet|verb|F|to come together with someone, by plan or by chance; also, to see someone for the first time|Let us meet at six.|I met her at a party.
+meeting|noun|F|a time when people come together to talk about something|We have a meeting at nine.|The meeting was long.
+member|noun|F|a person who is part of a group|She is a member of the team.|All members must come.
+memory|noun|F|the power to keep things in your mind; also, something that you remember|He has a good memory.|I have happy memories of that summer.
+metal|noun|P||This chair is made of metal.|Gold is a metal.
+middle|noun|F|the part or point that is the same distance from all the edges or ends|There is a table in the middle of the room.|He woke up in the middle of the night.
+might|verb|D||It might rain.|I might go to the party.
+military|adjective|F|having to do with an army or with war|He had military training.|The country has a strong military.
+milk|noun|P||Would you like some milk?|Cows give milk.
+million|number|D||A million people live in this city.|The house cost a million.
+mind|noun|D||She has a quick mind.|What is on your mind?
+mine|noun|F|a deep hole in the ground from which people take coal, gold or other things|He works in a coal mine.|The gold mine is closed now.
+minute|noun|F|a short unit of time; many of them together make one hour|Wait a minute.|The train leaves in ten minutes.
+miss|verb|F|to not catch or meet something; also, to feel sad because someone is not with you|I missed the train.|I miss my mother.
+mix|verb|F|to put different things together so that they become one thing|Mix the milk and the eggs.|Oil and water do not mix.
+moment|noun|F|a very short period of time; also, a certain point in time|Wait a moment.|At that moment, the phone rang.
+money|noun|P||I have no money.|She saves money every week.
+month|noun|F|one of the parts of a year; each one is about four weeks long|I will see you next month.|She is three months old.
+moon|noun|P||The moon is bright tonight.|There is no moon in the sky.
+morning|noun|F|the early part of the day, from when the sun comes up until the middle of the day|I get up early in the morning.|Good morning!
+mother|noun|P||My mother is a teacher.|She is a mother of three.
+motion|noun|F|the act of moving|The motion of the boat made me ill.|The car was in motion.
+mountain|noun|P||The mountain is very high.|We went up the mountain.
+mouth|noun|P||Open your mouth.|Do not talk with food in your mouth.
+move|verb|A||Do not move!|We moved to a new house.
+much|determiner|D||I do not have much money.|Thank you very much.
+muscle|noun|F|one of the parts of the body that pull on the bones to make the body move|He has strong muscles.|I have a pain in a muscle in my leg.
+music|noun|D||I love music.|She plays music every day.
+must|verb|D||You must wash your hands.|I must go now.
+name|noun|F|the word or words that someone or something is known by|What is your name?|My name is on the list.
+narrow|adjective|P||The street is narrow.|This is a narrow bridge.
+nation|noun|F|a country and its people|The whole nation was sad.|The leaders of many nations met.
+natural|adjective|F|made by nature, not by people; also, normal and expected|Wood is a natural material.|It is natural to feel sad.
+nature|noun|F|everything in the world that people did not make, like plants, animals and the weather|I love nature.|It is not in her nature to be angry.
+near|preposition|F|a short distance from|The school is near my house.|Do not go near the fire.
+necessary|adjective|F|needed; that must be done or had|Food is necessary for life.|Is it necessary to come early?
+neck|noun|P||She has a long neck.|He has a pain in his neck.
+need|verb|D||I need some water.|Plants need light.
+nerve|noun|F|one of the long, thin parts in the body that carry feelings and orders between the brain and the other parts|A nerve in my tooth is giving me pain.|A nerve in his back was damaged.
+net|noun|F|a material made of thin lines joined together, with open spaces between them, used for catching fish and other things|They caught fish in a net.|The ball went into the net.
+never|adverb|F|not at any time|I never eat meat.|She has never been to the sea.
+new|adjective|P||I have a new car.|This dress is new.
+news|noun|F|information about things that have just happened|Did you hear the news?|I have good news.
+next|adjective|F|coming right after this one; also, nearest|The next train is at six.|She sat at the next table.
+nice|adjective|F|pleasing; good; kind|What a nice day!|He is very nice.
+night|noun|P||I sleep at night.|Good night!
+nine|number|D||There are nine people in the room.|The shop opens at nine.
+no|determiner|D||No, it is not a dog.|I have no cat.
+noise|noun|F|a sound, often a loud one that you do not want|Do not make a noise.|I heard a noise outside.
+normal|adjective|F|the same as most others; what you expect|It is normal to be tired after work.|The weather is normal for this time of year.
+north|noun|F|the direction on your left when you look at the place where the sun comes up|Birds go north in summer.|They live in the north of the country.
+nose|noun|P||She has a small nose.|He touched his nose.
+not|adverb|D||The dog is not big.|I am not a man.
+note|noun|F|a short piece of writing to help you remember something; also, a single sound in music|I wrote a note to my mother.|She played a high note.
+now|adverb|D||I am at home now.|Do it now.
+number|noun|D||What is your phone number?|Pick a number from one to ten.
+observation|noun|F|the act of watching something with care to learn about it|The doctor kept him under observation.|Her observations were right.
+of|preposition|D||I want a cup of milk.|The door of the house is red.
+off|preposition|A||Take your shoes off.|He fell off the chair.
+offer|verb|F|to say that you will give or do something if someone wants it|He offered me a drink.|I accept your offer.
+office|noun|F|a room where people do work at tables, often with papers and computers|I work in an office.|Her office is on the second floor.
+often|adverb|F|many times|I often go there.|How often do you see her?
+oil|noun|F|a thick liquid that does not mix with water, used for cooking, for burning or to make machines work smoothly|Cook it in a little oil.|The car needs oil.
+old|adjective|P||My father is old.|This is an old house.
+on|preposition|A||The book is on the table.|Put your hat on.
+once|adverb|F|one time; also, at some time in the past|I have been there once.|I once lived in a small town.
+one|number|D||I have one brother.|One of the cups is broken.
+only|adverb|F|no more than; also, no one or nothing else|I have only one brother.|Only you can help me.
+open|adjective|A||The door is open.|Open your book.
+operation|noun|F|the act of a doctor cutting into a body to make it well; also, the way something works|He had an operation on his knee.|The operation of the machine is simple.
+opinion|noun|F|what you think or believe about something|What is your opinion?|In my opinion, he is right.
+opposite|adjective|F|completely different; also, on the other side|Hot is the opposite of cold.|She lives in the house opposite.
+or|conjunction|D||Do you want milk or water?|Is it hot or cold?
+orange|noun|P||I eat an orange every day.|Her dress is orange.
+order|noun|F|the way things are put one after another; also, words that tell someone to do something|Put the words in order.|The army gave the order to attack.
+organisation|noun|F|a group of people who work together for a purpose, like a business or a school|She works for a large organisation.|The organisation helps poor children.
+other|adjective|D||Give me the other cup.|Where is the other shoe?
+out|adverb|A||Get out!|She went out of the room.
+outside|adverb|F|not in a building; also, the part of something that you see when you are not in it|Let us play outside.|The outside of the house is white.
+over|preposition|A||The bird flew over the house.|Put a cover over the food.
+own|adjective|F|that is yours and not anyone else's|I have my own room.|She made her own dress.
+owner|noun|F|a person who has something as their own|Who is the owner of this car?|The owner of the shop is my friend.
+page|noun|P||Open your book at page ten.|Read this page.

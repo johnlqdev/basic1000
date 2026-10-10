@@ -1,0 +1,250 @@
+miss|verb|F|101|to not catch or meet something; also, to feel sad because someone is not with you|I missed the train.|101|I miss my mother.|101||
+mouth|noun|P|101||Open your mouth.|101|Do not talk with food in your mouth.|101||
+owner|noun|F|101|a person who has something as their own|Who is the owner of this car?|101|The owner of the shop is my friend.|116||
+hang|verb|A|101||The picture hangs on the wall.|101|Hang your coat on the hook.|144||
+horse|noun|P|101||She has a horse.|101|The horse is in the field.|170||
+star|noun|P|102||There are many stars in the sky.|102|The star is very bright.|168||
+song|noun|F|102|a short piece of music with words that you make with your voice|My mother likes this song best.|102|Her songs are beautiful.|140||
+expert|noun|F|102|a person who knows a lot about a subject|He is an expert in birds.|102|Ask an expert.|107||
+reaction|noun|F|102|what you do or feel because of something that happens|What was his reaction to the news?|102|She had a bad reaction to the eggs.|112||
+shoulder|noun|P|102||He put his hand on my shoulder.|102|I have a pain in my shoulder.|146||
+worry|verb|F|103|to feel that something bad may happen, and to keep thinking about it|Do not worry.|103|She worries about her son.|114||
+shake|verb|A|103||She was shaking with cold.|103|Shake the bottle.|112||
+touch|verb|A|103||Do not touch the fire.|103|She touched my arm.|103||
+lift|verb|A|103||Can you lift this box?|103|He lifted the child up.|103||
+rich|adjective|F|103|having a lot of money|He is a rich man.|103|They became rich.|103||
+against|preposition|F|104|touching something and pushing on it; also, not agreeing with or fighting someone or something|He put the chair against the wall.|104|Many people are against the war.|128||
+reach|verb|F|104|to put out your arm to touch something; also, to arrive at a place|I cannot reach the top shelf.|104|We reached the station at six.|116||
+physical|adjective|F|104|having to do with the body, not the mind; also, having to do with things you can touch and see|Physical work makes me tired.|104|He is in good physical condition.|151||
+sister|noun|F|104|a girl or woman who has the same parents as you|My sister is older than me.|104|I have two sisters.|104||
+shelf|noun|P|104||The books are on the shelf.|104|Put the cups on the top shelf.|104||
+ill|adjective|F|105|not well in body or mind|She is ill today.|105|He looks ill.|105||
+bread|noun|P|105||This bread is soft.|105|I eat bread in the morning.|153||
+ball|noun|P|105||Throw me the ball.|105|The boy kicked the ball.|145||
+damage|noun|F|105|a change to something that makes it less good or less able to work|The rain did a lot of damage.|105|The fire damaged the house.|105||
+soft|adjective|P|105||The bed is soft.|105|She has a soft voice.|105||
+question|noun|D|106||This is a hard question.|106|Can I ask you a question?|107||
+hard|adjective|F|106|not soft; also, not easy|The ground is hard.|106|The test was hard.|107||
+doctor|noun|F|106|a person whose job is to help ill people get well|Go and see a doctor.|106|My mother is a doctor.|106||
+regular|adjective|F|106|happening at the same times again and again; also, normal|He makes regular visits to the doctor.|106|Eat regular meals.|157||
+metal|noun|P|106||This chair is made of metal.|106|Gold is a metal.|109||
+ask|verb|F|107|to say a question to someone; also, to say that you want something|Can I ask you a question?|107|He asked for water.|107||
+test|noun|F|107|a set of questions to see what someone knows; also, something done to see if a thing works|They tested the machine.|107|I passed the test.|108||
+prepare|verb|F|107|to make something ready, or to get ready for something|We prepared for the test.|107|She prepared the meal.|157||
+heavy|adjective|F|107|hard to lift or carry|This box is heavy.|107|The bag is too heavy for me.|107||
+thin|adjective|P|107||He is very thin.|107|Cut the bread into thin pieces.|107||
+pass|verb|F|108|to go past something; also, to give something to someone; also, to do well in a test|We passed the school.|108|Pass me the salt.|160||
+answer|noun|F|108|what you say or write back when someone asks you a question|What is the answer?|108|Please answer the question.|108||
+weight|noun|F|108|how heavy someone or something is|What is your weight?|108|The weight of the box is too much for me.|108||
+measure|verb|F|108|to find out how big, long, heavy or hot something is|Measure the table.|108|We measured the distance.|108||
+wash|verb|A|108||Wash your hands.|108|I washed the cups.|108||
+cloth|noun|P|109||I need some cloth to make a dress.|109|Clean the table with a wet cloth.|111||
+knife|noun|P|109||Cut the bread with a knife.|109|The knife is sharp.|130||
+gold|noun|P|109||Gold costs a lot of money.|109|Her ring is made of gold.|134||
+wet|adjective|P|109||My shirt is wet.|109|The ground is wet after the rain.|109||
+cook|verb|A|109||I cook every night.|109|She is cooking rice.|109||
+wear|verb|F|110|to have clothes, shoes or other things on your body|She is wearing a red dress.|110|I wear a coat in winter.|131||
+flower|noun|P|110||She gave me a flower.|110|The garden is full of flowers.|126||
+leaf|noun|P|110||A leaf fell from the tree.|110|The leaves are green.|110||
+liquid|noun|P|110||Water is a liquid.|110|Drink a lot of liquid when you are ill.|110||
+smooth|adjective|P|110||The road is smooth.|110|Her skin is smooth.|167||
+boat|noun|P|111||We went out in a boat.|111|The boat is on the river.|111||
+cloud|noun|P|111||There are no clouds in the sky.|111|A dark cloud covered the sun.|111||
+bend|verb|A|111||The road bends to the left.|111|Bend your knees.|113||
+clean|adjective|P|111||My hands are clean.|111|The room is clean now.|111||
+dry|adjective|P|111||My shirt is dry now.|111|The ground is dry.|111||
+egg|noun|P|112||Birds come out of eggs.|112|I had an egg for my morning meal.|157||
+plane|noun|P|112||The plane is in the sky.|112|We went there by plane.|112||
+angry|adjective|P|112||He is angry with his brother.|112|Please do not be angry.|112||
+bottle|noun|P|112||A bottle of water, please.|112|There is no milk in the bottle.|112||
+female|adjective|P|112||A cow is a female animal.|112|Is the cat male or female?|113||
+daughter|noun|F|113|a female child of a mother or father|They have two daughters.|113|My daughter is five.|113||
+ice|noun|P|113||The water turned to ice.|113|There is ice on the road.|113||
+knee|noun|P|113||He fell and cut his knee.|113|Bend your knees.|113||
+male|adjective|P|113||Is your dog male or female?|113|Most of the people in the room were male.|113||
+nose|noun|P|113||She has a small nose.|113|He touched his nose.|113||
+send|verb|F|114|to make something or someone go to another place|She sent her son to school.|114|Send me a letter.|168||
+air|noun|F|114|what is all around us, which we take in through the nose and mouth to live|Open the window to let in some air.|114|The air in the mountains is clean.|114||
+son|noun|F|114|a male child of a mother or father|They have two sons.|114|My son is at school.|114||
+birth|noun|F|114|the time when a baby comes out of its mother's body|She gave birth to a son.|114|What is your date of birth?|149||
+roof|noun|P|114||There is a cat on the roof.|114|The roof is red.|114||
+receive|verb|F|115|to get something that someone gives or sends you|She received a lot of presents.|115|I received a letter.|168||
+building|noun|F|115|a house, an office, a school or any other thing with walls and a roof|The building has ten floors.|115|This is an old building.|115||
+internet|noun|F|115|the system that joins computers around the world, so that people can send and get information|I found it on the internet.|115|Do you have the internet at home?|115||
+ship|noun|P|115||We went by ship.|115|The ship is in the harbour.|157||
+bone|noun|P|115||The dog has a bone.|115|He broke a bone in his leg.|115||
+outside|adverb|F|116|not in a building; also, the part of something that you see when you are not in it|Let us play outside.|116|The outside of the house is white.|116||
+shop|noun|F|116|a building or room where things are sold|I went to the shop to buy bread.|116|She has a small shop.|116||
+station|noun|F|116|a building where trains stop so that people can get on and off|I will meet you at the station.|116|The station is near the river.|116||
+hotel|noun|F|116|a building where people pay to sleep and eat when they are away from home|We stayed in a hotel.|116|The hotel is near the sea.|116||
+circle|noun|P|116||Draw a circle.|116|We sat in a circle.|116||
+service|noun|F|117|work that is done to help people, like in a shop or hotel; also, a system that gives people something they need|The service in this hotel is good.|117|There is a train service to the city.|117||
+edge|noun|F|117|the outside line or end of something|Do not stand near the edge.|117|He sat on the edge of the bed.|117||
+store|noun|F|117|a shop; also, a place where things are kept for later use|I bought it at the store.|117|Store the food in a cold place.|117||
+curve|noun|F|117|a line that bends smoothly, like part of a circle|Draw a curve.|117|The road has a sharp curve.|130||
+fat|adjective|P|117||The cat is fat.|117|He is not fat, he is strong.|137||
+side|noun|F|118|one of the parts at the edge of something; also, the part on the left or the right|A box has six sides.|118|He sat at my side.|118||
+middle|noun|F|118|the part or point that is the same distance from all the edges or ends|There is a table in the middle of the room.|118|He woke up in the middle of the night.|133||
+seed|noun|F|118|the small, hard part of a plant from which a new plant grows|Apples have seeds inside.|118|Plant the seeds in the spring.|169||
+grass|noun|P|118||The grass is green.|118|The cows eat grass.|118||
+insect|noun|F|118|a very small animal with six legs and a body in three parts|A fly is an insect.|118|There are insects on the leaves.|118||
+among|preposition|F|119|in the middle of a group of things or people|The house is among the trees.|119|There is a doctor among us.|119||
+base|noun|F|119|the lowest part of something, which it stands on|The base of the tree is wide.|119|The army has a base near the town.|127||
+contain|verb|F|119|to have something inside|This box contains books.|119|Milk contains fat.|119||
+wide|adjective|F|119|large from one side to the other|The river is very wide.|119|This road is wide.|119||
+street|noun|F|119|a road in a town or city with houses or shops on its sides|I live on this street.|119|The street is quiet at night.|122||
+afternoon|noun|F|120|the part of the day between the middle of the day and the evening|I sleep in the afternoon.|120|See you this afternoon.|120||
+laugh|verb|A|120||She laughed at his story.|120|The children are laughing.|120||
+loud|adjective|F|120|making a lot of sound|The music is too loud.|120|He has a loud voice.|120||
+neck|noun|P|120||She has a long neck.|120|He has a pain in his neck.|146||
+orange|noun|P|120||I eat an orange every day.|120|Her dress is orange.|120||
+call|verb|F|121|to say someone's name loudly to get them to come; also, to talk to someone on the phone|I will call you tomorrow.|121|Call the dog in.|121||
+noise|noun|F|121|a sound, often a loud one that you do not want|Do not make a noise.|121|I heard a noise outside.|121||
+shut|verb|A|121||Shut the door.|121|The shop is shut.|121||
+slow|adjective|F|121|not quick; taking a long time|The train is very slow.|121|He is a slow reader.|168||
+sort|noun|D|121||What sort of music do you like?|121|Sort the books by colour.|174||
+area|noun|F|122|a part of a place, a town or a country|We live in a quiet area.|122|This area is good for farming.|171||
+type|noun|F|122|a sort of something|What type of car is it?|122|I do not like this type of music.|122||
+kind|adjective|F|122|good to other people and wanting to help them; also, a sort|She is very kind.|122|What kind of music do you like?|122||
+quiet|adjective|F|122|making very little noise|Please be quiet.|122|It is a quiet street.|122||
+strange|adjective|F|122|not normal; different from what you expect|I heard a strange noise.|122|It is strange that he is late.|122||
+such|determiner|F|123|of this kind; also, so very|It is such a big dog!|123|It was such a nice day.|125||
+local|adjective|F|123|of or in the area where you live|She goes to the local school.|123|Ask the local people.|123||
+example|noun|F|123|one thing that shows what other things of the same kind are like|Give me an example.|123|An apple is an example of a fruit.|166||
+view|noun|F|123|what you can see from a place; also, an opinion|In my view, he is wrong.|123|There is a beautiful view from the top.|140||
+wrong|adjective|F|123|not right; not true; also, not good or kind|Your answer is wrong.|123|It is wrong to take things that are not yours.|123||
+case|noun|F|124|a box or bag that holds or covers something; also, an example of something happening|Put your glasses in the case.|124|In this case, you are right.|124||
+appear|verb|F|124|to come into view; also, to seem|A man appeared at the door.|124|She appears to be ill.|124||
+percent|noun|F|124|a part of every hundred; for example, ten in every hundred|Prices went up by five percent.|124|Ten percent of the students are ill.|179||
+community|noun|F|124|the people who live in one area, or who have something in common|She helps the local community.|124|We are a small community.|124||
+industry|noun|F|124|the work of making things in large amounts, using machines; also, all the companies that do one kind of work|The town has a lot of industry.|124|She works in the music industry.|124||
+space|noun|F|125|an area with nothing in it; also, the area outside the earth where the stars are|There is no space for my bag.|125|They sent a man into space.|125||
+rest|noun|F|125|a time when you stop working and sleep or sit quietly; also, what is left|You need some rest.|125|I will do the rest tomorrow.|125||
+land|noun|F|125|the part of the earth that is not water; also, an area of ground|The plane will land soon.|125|They bought some land.|125||
+nice|adjective|F|125|pleasing; good; kind|What a nice day!|125|He is very nice.|125||
+balance|noun|F|125|being able to stand or move without falling|Keep a balance between work and rest.|125|She lost her balance and fell.|157||
+full|adjective|F|126|with no more space inside|The bottle is full.|126|The room was full of people.|126||
+form|noun|F|126|the shape of something; also, a kind or type; also, a paper with spaces where you write facts about yourself|Ice is a form of water.|126|Please write your name on this form.|126||
+property|noun|F|126|the things that someone owns; also, a building and the land it is on|This is private property.|126|He has a lot of property in the city.|126||
+garden|noun|F|126|an area of land near a house where people grow flowers or food|The children are playing in the garden.|126|She grows flowers in her garden.|126||
+front|noun|F|126|the part of something that faces forward or is seen first|There is a garden in front of the house.|126|Sit at the front of the class.|180||
+act|verb|F|127|to do something; also, to play a part in a story in front of people|You must act now.|127|She acts in plays at school.|127||
+army|noun|F|127|a large group of people trained to fight for a country on land|He joined the army.|127|The army came into the city.|127||
+wind|noun|F|127|air that moves quickly across the land|The wind blew the leaves away.|127|The wind is strong today.|137||
+hole|noun|F|127|an opening or a space in something, with nothing in it|There is a hole in my shoe.|127|Do not fall in the hole.|127||
+blow|verb|A|127||Blow on your food if it is hot.|127|The wind is blowing.|127||
+development|noun|F|128|the act of growing or changing into something bigger or better|The development of a child takes years.|128|There is a lot of new development in the city.|128||
+war|noun|F|128|fighting between countries or groups using armies|The war lasted five years.|128|Many people died in the war.|128||
+choice|noun|F|128|the act of choosing; also, the things you are able to choose from|You have a choice of two rooms.|128|It was a good choice.|128||
+operation|noun|F|128|the act of a doctor cutting into a body to make it well; also, the way something works|He had an operation on his knee.|128|The operation of the machine is simple.|168||
+addition|noun|F|128|the act of adding numbers together; also, a thing that is added|Addition is one of the first things children learn about numbers.|128|The new room is an addition to the house.|128||
+decide|verb|F|129|to make a choice about what to do after thinking|I decided to stay at home.|129|Have you decided?|129||
+decision|noun|F|129|a choice that you make after thinking|It was a hard decision.|129|We need a decision today.|129||
+behaviour|noun|F|129|the way a person or animal acts|His behaviour at school is good.|129|We watched the behaviour of the birds.|136||behavior
+growth|noun|F|129|the act of growing; an increase|The growth of the city was quick.|129|There is growth in the business.|129||
+weather|noun|F|129|how hot, cold, wet or dry it is outside, and if there is wind or sun|The weather is good today.|129|What will the weather be like tomorrow?|129||
+nature|noun|F|130|everything in the world that people did not make, like plants, animals and the weather|It is not in her nature to be angry.|130|I love nature.|148||
+committee|noun|F|130|a small group of people who are chosen to make decisions for a larger group|The committee will meet tomorrow.|130|She is a member of the committee.|130||
+agreement|noun|F|130|a plan or decision that two or more people agree on|The two countries made an agreement.|130|We are all in agreement.|130||
+season|noun|F|130|one of the four parts of the year, each with its own weather|It is the wet season.|130|I like summer more than any other season.|131||
+sharp|adjective|F|130|having a thin edge that can cut, or an end that can make a hole|This knife is sharp.|130|I felt a sharp pain.|146||
+quality|noun|F|131|how good or bad something is; also, a part of someone's nature|This shirt is of good quality.|131|Her best quality is that she is kind.|131||
+natural|adjective|F|131|made by nature, not by people; also, normal and expected|It is natural to feel sad.|131|Wood is a natural material.|165||
+summer|noun|F|131|the hottest season of the year|We go to the sea in summer.|131|It is very hot this summer.|131||
+winter|noun|F|131|the coldest season of the year|It snows in winter.|131|Winter is cold here.|131||
+island|noun|F|131|a piece of land with water all around it|They live on an island.|131|The island is small.|131||
+heat|noun|F|132|the quality of being hot|Heat the milk.|132|The heat of the sun is strong today.|137||
+pipe|noun|F|132|a long, round piece of metal with a hole all the way through it, that water or other liquids go through|The pipe is under the floor.|132|The water pipe burst.|134||
+thick|adjective|P|132||This book is thick.|132|The walls are thick.|132||
+ticket|noun|F|132|a small piece of paper that shows you have paid to travel or to go into a place|I bought a train ticket.|132|Show your ticket at the door.|132||
+angle|noun|F|132|the space between two lines that meet at a point|The road turns at a sharp angle.|132|A square has four angles.|162||
+burn|verb|F|133|to be on fire, or to damage something with fire or heat|I burnt my hand on the hot pot.|133|The wood is burning.|165||
+awake|adjective|F|133|not sleeping|Are you awake?|133|The baby was awake all night.|133||
+bath|noun|P|133||The baby is in the bath.|133|I take a bath every night.|133||
+bell|noun|P|133||I heard a bell.|133|The school bell rang.|134||
+pot|noun|P|133||Cook the rice in a pot.|133|There is a plant in the pot.|133||
+energy|noun|F|134|what makes things move, get hot or give light; we get it from food, from the sun and from burning things|I have no energy today.|134|The sun gives us energy.|134||
+ring|noun|F|134|a circle of metal that you wear on a finger; also, the sound of a bell|She has a gold ring.|134|The phone is ringing.|134||
+brain|noun|F|134|the part inside your head that you use to think and feel|Use your brain!|134|The brain controls the body.|136||
+breath|noun|F|134|the air that goes into and out of your body through your nose and mouth|Take a deep breath.|134|I could see my breath in the cold air.|134||
+burst|verb|F|134|to break open suddenly, because there is too much inside|The bag burst.|134|The water pipe burst in the night.|134||
+power|noun|F|135|being able to do things, or to make others do what you want; also, the energy that makes machines and lights work|The power went off.|135|The government has a lot of power.|137||
+effort|noun|F|135|the work or energy you use to do something|It took a lot of effort.|135|Make an effort to come.|135||
+cheap|adjective|F|135|not costing much money|This shirt is cheap.|135|Bread is cheap here.|135||
+clock|noun|P|135||The clock is on the wall.|135|Look at the clock.|135||
+cry|verb|A|135||The baby is crying.|135|She cried when her dog died.|135||
+try|verb|F|136|to make an effort to do something|Try to sleep.|136|I tried, but I failed.|138||
+control|verb|F|136|to have power over something or someone; to make something do what you want|She controls the money.|136|He could not control the car.|136||
+force|noun|F|136|power; also, the use of power to make someone do something|The force of the wind broke the tree.|136|They used force to open the door.|136||
+watch|verb|F|136|to look at something for a period of time; also, a small clock that you wear on your arm|We watched the birds.|136|My watch is new.|136||
+difficult|adjective|F|136|not easy; needing a lot of effort or knowledge|This question is difficult.|136|It was a difficult time.|136||
+government|noun|F|137|the group of people who control a country|The government will make a decision.|137|He works for the government.|137||
+lead|verb|F|137|to go in front and show the way; also, to be in control of a group|She led us to the station.|137|He leads the team.|137||
+strong|adjective|F|137|having a lot of power or force|He is very strong.|137|There is a strong wind.|137||
+authority|noun|F|137|the power to give orders and make decisions; also, the people who have this power|Ask the local authority.|137|The police have the authority to stop cars.|139||
+manage|verb|F|137|to control a business or a group of people; also, to be able to do something hard|She manages a small hotel.|137|I managed to finish my work.|137||
+law|noun|F|138|a rule made by a government that everyone must follow|It is against the law.|138|The law says you must stop here.|138||
+fail|verb|F|138|to not do what you tried to do|He failed the test.|138|The plan failed.|138||
+attempt|noun|F|138|the act of trying to do something, often something hard|It was his first attempt.|138|She made an attempt to get to the top of the mountain.|138||
+listen|verb|F|138|to try to hear sounds or what someone is saying|Listen to me.|138|I like listening to music.|138||
+manager|noun|F|138|a person whose job is to manage a business or a group of workers|I want to talk to the manager.|138|She is the manager of the shop.|138||
+report|noun|F|139|a spoken or written account of something that happened|She reported the crime to the police.|139|I read the report.|168||
+society|noun|F|139|people living together in a group, with the same laws and ways of life|We live in a free society.|139|Old people are important in our society.|139||
+attention|noun|F|139|the act of watching, listening or thinking hard about something|Please give me your attention.|139|He was not paying attention.|139||
+police|noun|F|139|the people whose job is to make others keep the law and to catch people who break it|Call the police!|139|The police stopped the car.|139||
+crime|noun|F|139|an act that is against the law|Taking things that are not yours is a crime.|139|There is not much crime in this town.|139||
+tax|noun|F|140|money that people must pay to the government|We pay tax on the money we get from work.|140|The tax on wine is high.|172||
+memory|noun|F|140|the power to keep things in your mind; also, something that you remember|He has a good memory.|140|I have happy memories of that summer.|140||
+beautiful|adjective|F|140|very pleasing to look at or listen to|What a beautiful flower!|140|She has a beautiful voice.|140||
+competition|noun|F|140|an event in which people try to be the best|There is a lot of competition for jobs.|140|She won the competition.|156||
+marry|verb|F|140|to join with another person in a way that the law accepts, and live together as a family|She married a doctor.|140|They married last year.|140||
+single|adjective|F|141|only one; also, not married|Is she single?|141|There is a single tree in the field.|170||
+couple|noun|F|141|two people who are married or together; also, two or a few things|They are a happy couple.|141|Wait a couple of minutes.|154||
+wife|noun|F|141|the woman that a man is married to|This is my wife.|141|His wife is a doctor.|141||
+prison|noun|F|141|a building where people who broke the law are kept and cannot go out|He was sent to prison.|141|The prison is on an island.|141||
+debt|noun|F|141|money that you have to pay back to someone|He has a lot of debt.|141|She paid her debts.|141||
+note|noun|F|142|a short piece of writing to help you remember something; also, a single sound in music|I wrote a note to my mother.|142|She played a high note.|142||
+unit|noun|F|142|one single thing, part or group; also, an amount used for measuring|The book has ten units.|142|A minute is a unit of time.|154||
+equal|adjective|F|142|the same in amount, size or value|Two and two is equal to four.|142|All people are equal.|142||
+error|noun|F|142|something that is not right; a wrong act or answer|There is an error in your work.|142|It was an error.|142||
+false|adjective|F|142|not true; not right|His story is false.|142|True or false?|142||
+second|adjective|F|143|coming after the first; also, a very short unit of time|This is my second visit.|143|Wait a second.|152||
+real|adjective|F|143|true; that is there in fact; not imagined or false|Is this gold real?|143|It is a real problem.|154||
+degree|noun|F|143|a unit for measuring heat or angles; also, how much of something there is|The water is a hundred degrees.|143|I agree with you to some degree.|143||
+half|noun|F|143|one of two equal parts of something|Cut the apple in half.|143|Half of the class is ill.|180||
+grey|adjective|P|143||His hair is grey.|143|The sky is grey today.|143||gray
+level|noun|F|144|how high something is; also, an amount or degree of something|The water level is high.|144|The level of noise in the room was high.|144||
+smoke|noun|F|144|the grey or black cloud that comes from something burning|There is smoke in the room.|144|He does not smoke.|144||
+gun|noun|P|144||He has a gun.|144|The police have guns.|144||
+hook|noun|F|144|a curved piece of metal for hanging things on or for catching fish|Hang your coat on the hook.|144|He caught a fish with a hook.|144||
+journey|noun|F|144|the act of going from one place to another, often a long way|The journey took two days.|144|Have a good journey.|144||
+scale|noun|F|145|a machine for measuring weight; also, a set of numbers or levels for measuring something|Put the bag on the scale.|145|On a scale of one to ten, how happy are you?|145||
+flat|adjective|F|145|with no parts higher or lower than the rest; level|The land is flat here.|145|A table has a flat top.|145||
+wound|noun|F|145|a cut or other damage to the body, often caused by a knife or a gun|The wound is not deep.|145|He was wounded in the war.|145||
+kick|verb|A|145||Kick the ball.|145|He kicked the door.|145||
+limit|noun|F|145|the point or amount that something cannot go past|There is a limit to what I can do.|145|There is no limit to his desire for money.|159||
+lie|verb|F|146|to be flat on a bed or the ground; also, to say something that is not true|I want to lie down.|146|Do not lie to me.|146||
+range|noun|F|146|a number of different things of the same kind; also, the limits between which something changes|The shop has a wide range of shoes.|146|The price range is from five to ten.|146||
+card|noun|F|146|a small, flat piece of thick paper with words or pictures on it|She sent me a birthday card.|146|Pay with your card.|146||
+pain|noun|F|146|what you feel in your body when it is wounded or ill|I have a pain in my back.|146|She cried with pain.|146||
+iron|noun|F|146|a strong, hard metal; also, a flat hot thing used to make clothes smooth|The door is made of iron.|146|Iron your shirt before the meeting.|146||
+feeling|noun|F|147|something you feel in your body or mind, like pain or being happy or sad|I have a feeling that something is wrong.|147|She did not show her feelings.|147||
+attack|verb|F|147|to use force to try to damage something or give someone pain or a wound|The dog attacked the man.|147|The army attacked the town.|147||
+danger|noun|F|147|the chance that something bad will happen to you; something that may give you pain, a wound or death|There is danger in the water.|147|The child is in danger.|147||
+meat|noun|P|147||I do not eat meat.|147|This meat is cooked well.|147||
+mix|verb|F|147|to put different things together so that they become one thing|Mix the milk and the eggs.|147|Oil and water do not mix.|158||
+interest|noun|F|148|a feeling of wanting to know more about something; also, the money you pay or get for the use of money|The interest on my debt is high.|148|She has an interest in history.|170||
+political|adjective|F|148|having to do with government and the way a country is controlled|She is interested in political questions.|148|There are two big political parties.|149||
+love|verb|F|148|to have a very strong, warm feeling for someone or something|I love my mother.|148|She loves music.|148||
+save|verb|F|148|to take someone out of danger; also, to keep money to use later|He saved the child from the fire.|148|I save money every month.|148||
+serious|adjective|F|148|important and needing attention, because it may cause danger or damage; also, not said for a laugh|Are you serious?|148|It is a serious disease.|157||
+party|noun|F|149|a time when people come together to eat, drink and have a good time; also, a political group|We had a party for her birthday.|149|Which party do you support?|149||
+date|noun|F|149|the day, month and year when something happens; also, a meeting with someone you love or may love|What is the date today?|149|They went out on a date.|149||
+fear|noun|F|149|the feeling you have when you think something bad may happen to you|She has a fear of dogs.|149|He was shaking with fear.|149||
+doubt|noun|F|149|a feeling of not being sure|There is no doubt that he is right.|149|I doubt that she will come.|149||
+safe|adjective|F|149|not in danger; also, not able to cause damage or pain|The children are safe.|149|Is this water safe to drink?|149||
+certain|adjective|F|150|sure; with no doubt|I am certain that he is right.|150|It is certain to rain.|150||
+care|noun|F|150|the act of keeping someone or something safe and well; also, thinking about what you do so that you do not make errors|The baby needs care.|150|Do your work with care.|150||
+check|verb|F|150|to look at something to see if it is right, safe or working|Check your answers.|150|Please check the door is locked.|158||
+respect|noun|F|150|a feeling that someone or something is good, important or of value|I have great respect for my teacher.|150|Respect other people.|150||
+pleasure|noun|F|150|a feeling of being happy or pleased|It is a pleasure to meet you.|150|Reading gives me pleasure.|168||

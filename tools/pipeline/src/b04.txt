@@ -1,0 +1,99 @@
+far|adjective|F|a long way away|The station is not far from here.|How far is it?
+farm|noun|F|an area of land with fields and buildings where people grow food or keep animals|They live on a farm.|There are cows on the farm.
+fat|adjective|P||The cat is fat.|He is not fat, he is strong.
+father|noun|P||My father is a doctor.|He is a good father.
+fear|noun|F|the feeling you have when you think something bad may happen to you|She has a fear of dogs.|He was shaking with fear.
+feather|noun|F|one of the soft, light things that cover a bird's body|The bird lost a feather.|This bed is full of feathers.
+feel|verb|D||I feel cold.|Feel how soft this is.
+feeling|noun|F|something you feel in your body or mind, like pain or being happy or sad|I have a feeling that something is wrong.|She did not show her feelings.
+female|adjective|P||A cow is a female animal.|Is the cat male or female?
+few|determiner|F|a small number of; not many|I have a few friends here.|Few people came.
+fiction|noun|F|stories about people and events that are not real|I like to read fiction.|His story was fiction, not fact.
+field|noun|F|an area of land with grass, used for animals or for growing things; also, an area of study|The cows are in the field.|She is an expert in her field.
+fight|verb|A||The two boys are fighting.|They fought for their country.
+finally|adverb|F|at the end, after a long time|We finally arrived.|Finally, the rain stopped.
+find|verb|A||I cannot find my keys.|She found a ring on the road.
+finger|noun|P||I cut my finger.|You have five fingers on each hand.
+finish|verb|F|to come to the end of something|Have you finished your work?|The class finished at ten.
+fire|noun|P||The fire is warm.|There was a fire in the building.
+first|adjective|D||She was the first to arrive.|This is my first time here.
+fish|noun|P||He caught a fish.|Fish live in water.
+five|number|D||I have five fingers on this hand.|The child is five.
+fix|verb|F|to make something work again after it is broken; also, to make something stay in one place|Can you fix my phone?|Fix the picture to the wall.
+flag|noun|P||The flag is red and white.|Every country has a flag.
+flat|adjective|F|with no parts higher or lower than the rest; level|The land is flat here.|A table has a flat top.
+flight|noun|F|a journey in a plane; also, the act of flying|Our flight is at nine.|The flight of the bird was beautiful.
+floor|noun|P||The book fell on the floor.|We live on the second floor.
+flower|noun|P||She gave me a flower.|The garden is full of flowers.
+fly|verb|A||Birds fly.|We flew to the city.
+fold|verb|A||Fold the paper in half.|She folded her shirts.
+follow|verb|F|to go or come after someone or something|Follow me.|The dog followed him home.
+food|noun|F|things that people and animals eat|We need food and water.|The food here is good.
+foot|noun|P||My foot is cold.|He has a pain in his foot.
+for|preposition|D||This is for you.|I waited for an hour.
+force|noun|F|power; also, the use of power to make someone do something|The force of the wind broke the tree.|They used force to open the door.
+forget|verb|F|to not remember|I forgot his name.|Do not forget your bag.
+fork|noun|P||Eat with a knife and fork.|Put the fork on the table.
+form|noun|F|the shape of something; also, a kind or type; also, a paper with spaces where you write facts about yourself|Ice is a form of water.|Please write your name on this form.
+forward|adverb|A||Move forward.|She stepped forward.
+four|number|D||A cat has four legs.|I get up at four.
+frame|noun|F|the structure that holds something, or the edge around a picture or window|The picture is in a gold frame.|The window frame is made of wood.
+free|adjective|F|able to do what you want; also, not costing any money|You are free to go.|The tickets are free.
+frequent|adjective|F|happening often|He makes frequent visits to his mother.|There are frequent trains to the city.
+friend|noun|F|a person you know well and like, who is not part of your family|She is my best friend.|I met a friend in town.
+from|preposition|D||The milk is from a cow.|This letter is from my mother.
+front|noun|F|the part of something that faces forward or is seen first|Sit at the front of the class.|There is a garden in front of the house.
+fruit|noun|F|the part of a plant that has seeds in it and is often sweet to eat, like an apple|I eat fruit every day.|Apples and oranges are fruit.
+full|adjective|F|with no more space inside|The bottle is full.|The room was full of people.
+further|adverb|F|to a greater distance; also, more|I cannot walk any further.|Do you have any further questions?
+future|noun|F|the time that will come after now|What will you do in the future?|We hope for a better future.
+game|noun|F|an activity that you play for pleasure, often with rules|Let us play a game.|We won the game.
+garden|noun|F|an area of land near a house where people grow flowers or food|The children are playing in the garden.|She grows flowers in her garden.
+general|adjective|F|having to do with most people or things, not with one in particular; also, not detailed|The general opinion is good.|Give me a general idea.
+get|verb|D||I got a letter today.|It is getting cold.
+girl|noun|P||She is a girl.|The girl has a cat.
+give|verb|A||Give me the book.|She gave him some money.
+glass|noun|P||A glass of water, please.|The window is made of glass.
+go|verb|A||Go to bed.|I went to school.
+gold|noun|P||Her ring is made of gold.|Gold costs a lot of money.
+good|adjective|P||This is a good apple.|She is a good doctor.
+government|noun|F|the group of people who control a country|The government will make a decision.|He works for the government.
+grain|noun|F|the seeds of plants like rice that we use for food; also, a very small piece of something|Rice is a grain.|There is a grain of sand in my eye.
+grass|noun|P||The grass is green.|The cows eat grass.
+great|adjective|F|very large; also, very good|It was a great party.|He was a great man.
+green|adjective|P||The grass is green.|She has green eyes.
+grey|adjective|P||His hair is grey.|The sky is grey today.
+ground|noun|F|the top of the earth that we walk on|He sat on the ground.|The ground is wet.
+group|noun|P||A group of children came in.|We worked in groups.
+grow|verb|A||Children grow quickly.|We grow rice.
+growth|noun|F|the act of growing; an increase|The growth of the city was quick.|There is growth in the business.
+guide|noun|F|a person who shows the way or tells people about a place; also, a book that gives information|Our guide showed us the old town.|I bought a guide to the city.
+gun|noun|P||He has a gun.|The police have guns.
+hair|noun|P||She has long hair.|Wash your hair.
+half|noun|F|one of two equal parts of something|Cut the apple in half.|Half of the class is ill.
+hand|noun|P||Wash your hands.|Give me your hand.
+hang|verb|A||Hang your coat on the hook.|The picture hangs on the wall.
+happen|verb|D||What happened?|It happened last night.
+happy|adjective|P||She is very happy.|Happy birthday!
+harbour|noun|F|an area of water near the land where ships can stay safe|The boats are in the harbour.|The ship came into the harbour.
+hard|adjective|F|not soft; also, not easy|The ground is hard.|The test was hard.
+hat|noun|P||He has a black hat.|Put on your hat.
+hate|verb|F|to have a very strong feeling of not liking someone or something|I hate cold weather.|She hates being late.
+have|verb|D||I have a big house.|We have a small dog.
+he|pronoun|D||He is a man.|He has a cat.
+head|noun|P||He has a pain in his head.|She put a hat on her head.
+health|noun|F|the condition of your body or mind|Smoking is bad for your health.|She is in good health.
+healthy|adjective|F|well and strong; not ill; also, good for your body|He is a healthy child.|Fruit is healthy food.
+hear|verb|D||Can you hear me?|I heard a noise.
+heart|noun|F|the part inside your chest that sends blood around your body; also, the centre of feelings|His heart is strong.|She has a kind heart.
+heat|noun|F|the quality of being hot|The heat of the sun is strong today.|Heat the milk.
+heavy|adjective|F|hard to lift or carry|This box is heavy.|The bag is too heavy for me.
+help|verb|F|to make it easier for someone to do something|Can you help me?|She helped her mother.
+here|adverb|D||The dog is here.|I am here.
+high|adjective|P||The bird is high in the sky.|Prices are high.
+history|noun|F|the study of past events; also, all the things that happened in the past|I like history.|This town has a long history.
+hold|verb|A||Hold my hand.|She is holding a baby.
+hole|noun|F|an opening or a space in something, with nothing in it|There is a hole in my shoe.|Do not fall in the hole.
+holiday|noun|F|a day or time when you do not work or go to school|We go to the sea on holiday.|Tomorrow is a holiday.
+home|noun|F|the place where you live|I am going home.|Is your home near here?
+hook|noun|F|a curved piece of metal for hanging things on or for catching fish|Hang your coat on the hook.|He caught a fish with a hook.

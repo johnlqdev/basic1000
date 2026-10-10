@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.DS_Store
+tools/pipeline/out/course.json
+tools/pipeline/out/vocab.py

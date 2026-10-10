@@ -1,0 +1,100 @@
+bone|noun|P||The dog has a bone.|He broke a bone in his leg.
+book|noun|P||I have a book.|This book is about birds.
+boot|noun|P||Put on your boots.|My boots are wet.
+both|determiner|F|the two; one and also the other|Both my brothers are tall.|I like both of them.
+bottle|noun|P||A bottle of water, please.|There is no milk in the bottle.
+box|noun|P||The box is on the table.|What is in the box?
+boy|noun|P||He is a boy.|The boy is big.
+brain|noun|F|the part inside your head that you use to think and feel|The brain controls the body.|Use your brain!
+branch|noun|F|a part of a tree that grows out from the main stem; also, one office of a large company|A bird sat on the branch.|The company has a branch in our town.
+bread|noun|P||I eat bread in the morning.|This bread is soft.
+break|verb|A||Do not break the glass.|The cup broke.
+breath|noun|F|the air that goes into and out of your body through your nose and mouth|Take a deep breath.|I could see my breath in the cold air.
+bridge|noun|P||We walked over the bridge.|The bridge goes across the river.
+bright|adjective|F|giving out a lot of light; also, quick to learn and understand|The sun is very bright.|She is a bright child.
+bring|verb|A||Bring me the book.|Please bring your friend.
+brother|noun|P||My brother is tall.|I have two brothers.
+brown|adjective|P||The dog is brown.|She has brown eyes.
+brush|noun|P||I need a brush for my hair.|He painted the wall with a brush.
+build|verb|F|to make something, like a house, by putting parts together|They built a new school.|Birds build their homes in trees.
+building|noun|F|a house, an office, a school or any other thing with walls and a roof|The building has ten floors.|This is an old building.
+burn|verb|F|to be on fire, or to damage something with fire or heat|The wood is burning.|I burnt my hand on the hot pot.
+burst|verb|F|to break open suddenly, because there is too much inside|The bag burst.|The water pipe burst in the night.
+business|noun|F|the work of buying, making or selling things for money; also, a company|My father has a small business.|Business is good this year.
+but|conjunction|D||I am tired but happy.|She is small but strong.
+butter|noun|P||Put some butter on the bread.|Butter is made from milk.
+button|noun|P||Push the red button.|A button fell off my shirt.
+buy|verb|F|to get something by paying money for it|I want to buy a new phone.|She bought some bread.
+by|preposition|D||The house is by the river.|The book was written by my mother.
+cake|noun|P||She made a cake.|Would you like some cake?
+call|verb|F|to say someone's name loudly to get them to come; also, to talk to someone on the phone|I will call you tomorrow.|Call the dog in.
+camera|noun|P||She has a new camera.|Take a picture with my camera.
+can|verb|D||I can swim.|Can you help me?
+car|noun|P||We went there by car.|His car is red.
+card|noun|F|a small, flat piece of thick paper with words or pictures on it|She sent me a birthday card.|Pay with your card.
+care|noun|F|the act of keeping someone or something safe and well; also, thinking about what you do so that you do not make errors|The baby needs care.|Do your work with care.
+carry|verb|A||Can you carry this bag?|She carried the baby.
+case|noun|F|a box or bag that holds or covers something; also, an example of something happening|Put your glasses in the case.|In this case, you are right.
+cat|noun|P||This is a cat.|The cat is small.
+catch|verb|A||Catch the ball!|He caught a fish.
+cause|noun|F|the thing that makes something happen|What was the cause of the fire?|The rain caused the river to rise.
+centre|noun|F|the middle point or part of something; also, a building used for a special activity|There is a table in the centre of the room.|We went to the town centre.
+century|noun|F|a period of one hundred years|This church is ten centuries old.|The house was built in the last century.
+certain|adjective|F|sure; with no doubt|I am certain that he is right.|It is certain to rain.
+chain|noun|F|a line of metal rings joined together|The dog is on a chain.|She has a gold chain round her neck.
+chair|noun|P||Sit on the chair.|There are four chairs at the table.
+chance|noun|F|a time when you are able to do something; also, how likely it is that something will happen|This is your last chance.|There is a chance of rain.
+change|verb|F|to become different, or to make something different|The weather changed.|I want to change my name.
+cheap|adjective|F|not costing much money|This shirt is cheap.|Bread is cheap here.
+check|verb|F|to look at something to see if it is right, safe or working|Check your answers.|Please check the door is locked.
+cheese|noun|P||I like bread and cheese.|Cheese is made from milk.
+chemical|noun|F|a substance made or used in science|Do not touch these chemicals.|Some chemicals are not safe to touch.
+chest|noun|F|the front of your body between your neck and your stomach; also, a large strong box|He has a pain in his chest.|The old chest is full of books.
+chief|noun|F|the person with the most power in a group|He is the chief of police.|The chief made a decision.
+child|noun|P||She is a child.|The child is in the house.
+choice|noun|F|the act of choosing; also, the things you are able to choose from|You have a choice of two rooms.|It was a good choice.
+choose|verb|F|to take one thing from a number of things because you want it most|Choose a colour.|She chose the red dress.
+church|noun|F|a building where people meet to take part in their religion|We go to church every week.|The church is in the centre of the town.
+circle|noun|P||Draw a circle.|We sat in a circle.
+city|noun|F|a large and important town|This is a big city.|I live in the city.
+class|noun|F|a group of students who learn together; also, the time when they learn together|There are ten students in my class.|My class starts at nine.
+clean|adjective|P||My hands are clean.|The room is clean now.
+clear|adjective|F|easy to see through or understand; with nothing in the way|The water is clear.|Is that clear?
+clock|noun|P||The clock is on the wall.|Look at the clock.
+close|verb|A||Close the door, please.|The shop closes at six.
+cloth|noun|P||I need some cloth to make a dress.|Clean the table with a wet cloth.
+cloud|noun|P||There are no clouds in the sky.|A dark cloud covered the sun.
+coal|noun|F|a hard black substance from under the ground that we burn to give heat|Put more coal on the fire.|They took coal out of the ground.
+coat|noun|P||Put on your coat. It is cold.|She has a long coat.
+cold|adjective|P||The water is cold.|It is cold today.
+colour|noun|F|red, blue, green, yellow and so on; what we see because of the light that comes from things|What colour is your car?|I like bright colours.
+come|verb|A||Come here!|She came to my house.
+comfort|noun|F|a good feeling of being free from pain or worry|This chair gives comfort to my back.|Her words gave me comfort.
+committee|noun|F|a small group of people who are chosen to make decisions for a larger group|The committee will meet tomorrow.|She is a member of the committee.
+common|adjective|F|happening often or found in many places; also, that two or more people have together|This is a common bird.|We have a friend in common.
+community|noun|F|the people who live in one area, or who have something in common|She helps the local community.|We are a small community.
+company|noun|F|a group of people who work together to make or sell things for money; also, being with other people|He works for a large company.|I enjoy her company.
+compare|verb|F|to look at two or more things to see how they are the same or different|Compare these two pictures.|Compared to his brother, he is tall.
+comparison|noun|F|the act of comparing things|There is no comparison between them.|In comparison with the city, this town is small.
+competition|noun|F|an event in which people try to be the best|She won the competition.|There is a lot of competition for jobs.
+complete|adjective|F|having all its parts; finished|The list is complete.|Is your work complete?
+complex|adjective|F|having many parts that are joined in a way that is hard to understand|This is a complex machine.|The problem is very complex.
+computer|noun|P||I do my work on a computer.|The computer is on the table.
+condition|noun|F|how good or bad something is at a certain time; also, something that must be true before another thing can happen|The car is in good condition.|You can go, on one condition.
+connection|noun|F|something that joins two things; also, the way two things have to do with each other|There is a connection between smoke and some diseases.|The phone connection is bad.
+consider|verb|F|to think about something with care before deciding|I will consider your offer.|Consider the cost.
+contain|verb|F|to have something inside|This box contains books.|Milk contains fat.
+continue|verb|F|to keep doing something; to go on|Please continue.|It continued to rain all day.
+control|verb|F|to have power over something or someone; to make something do what you want|She controls the money.|He could not control the car.
+cook|verb|A||I cook every night.|She is cooking rice.
+copy|noun|F|a thing made to be the same as another thing|Make a copy of this letter.|This is not the real picture. It is a copy.
+cost|noun|F|the amount of money needed to buy or do something|What is the cost of this shirt?|The ticket costs a lot of money.
+cough|verb|A||He has a bad cough.|She coughed all night.
+could|verb|D||I could swim when I was five.|Could you help me?
+country|noun|P||Which country are you from?|They live in the country.
+couple|noun|F|two people who are married or together; also, two or a few things|They are a happy couple.|Wait a couple of minutes.
+course|noun|F|a set of classes about a subject; also, the way something goes|I am taking a music course.|The river changed its course.
+cover|verb|F|to put something over another thing|Cover the food.|Snow covered the ground.
+cow|noun|P||The cow is in the field.|Cows give milk.
+crack|noun|F|a thin line where something is broken but not in pieces|There is a crack in the cup.|The glass cracked.
+create|verb|F|to make something new|She created a new design.|The rain created problems.

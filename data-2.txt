@@ -1,0 +1,250 @@
+expect|verb|F|51|to think that something will happen|We expect rain tomorrow.|51|I expect he will be late.|83||
+bad|adjective|P|51||This is a bad apple.|51|The weather is bad today.|129|worse, worst|
+grow|verb|A|51||Children grow quickly.|51|We grow rice.|73||
+quick|adjective|A|51||Take a quick look.|51|She is a quick learner.|53||
+tomorrow|adverb|F|51|on the day after today|See you tomorrow.|51|Tomorrow is a holiday.|100||
+already|adverb|F|52|before now, or before the time you expected|I have already eaten.|52|Is it ten already?|71||
+friend|noun|F|52|a person you know well and like, who is not part of your family|She is my best friend.|52|I met a friend in town.|72||
+carry|verb|A|52||Can you carry this bag?|52|She carried the baby.|94||
+fall|verb|A|52||Do not fall!|52|Leaves fall from the trees.|110||
+bag|noun|P|52||Put the books in your bag.|52|She has a red bag.|52||
+add|verb|F|53|to put one thing with another thing so that there is more|If you add two and three, you get five.|53|Add some sugar to your milk.|67||
+job|noun|F|53|the work that you do to get money|What is your job?|53|She has a new job.|53||
+ever|adverb|F|53|at any time|Have you ever been to the sea?|53|It is the best cake ever.|53||
+rather|adverb|F|53|more than a little; also, used to say what you would like more|It is rather cold.|53|I would rather stay at home.|60||
+learn|verb|D|53||I am learning to swim.|53|Children learn quickly.|53||
+school|noun|F|54|a place where children go to learn|I go to school every day.|54|The school is near my house.|98||
+offer|verb|F|54|to say that you will give or do something if someone wants it|He offered me a drink.|54|I accept your offer.|74||
+towards|preposition|A|54||He walked towards the door.|54|The dog ran towards me.|54||
+perhaps|adverb|F|54|possibly; it may be that|Perhaps it will rain.|54|Perhaps he is ill.|105||
+drink|verb|A|54||Drink some water.|54|What would you like to drink?|54||
+continue|verb|F|55|to keep doing something; to go on|Please continue.|55|It continued to rain all day.|55||
+mind|noun|D|55||She has a quick mind.|55|What is on your mind?|55||
+mother|noun|P|55||She is a mother of three.|55|My mother is a teacher.|97||
+face|noun|P|55||She has a happy face.|55|Wash your face.|108||
+talk|verb|A|55||Can I talk to you?|55|We talked for hours.|153||
+tell|verb|F|56|to give information to someone by talking|Tell me what you want.|56|She told me a story.|56||
+speak|verb|F|56|to say words; to talk|She speaks two languages.|56|Can you speak more slowly?|121||
+age|noun|F|56|how old someone or something is|What is your age?|56|She started school at the age of five.|56||
+break|verb|A|56||The cup broke.|56|Do not break the glass.|93||
+language|noun|F|56|the system of words that people use to talk and write to each other|How many languages do you speak?|56|Music is a language too.|56||
+order|noun|F|57|the way things are put one after another; also, words that tell someone to do something|Put the words in order.|57|The army gave the order to attack.|147||
+six|number|D|57||We have six cups.|57|An insect has six legs.|118||
+develop|verb|F|57|to grow or change into something bigger or better; also, to make something new|Children develop quickly.|57|They developed a new machine.|96||
+short|adjective|P|57||He is short.|57|It was a short meeting.|78||
+buy|verb|F|57|to get something by paying money for it|I want to buy a new phone.|57|She bought some bread.|105||
+enough|determiner|F|58|as much as you need|We have enough food.|58|Is it warm enough?|62||
+spend|verb|F|58|to use money to buy things; also, to use time doing something|I spent all my money.|58|We spent the day at the sea.|58||
+food|noun|F|58|things that people and animals eat|We need food and water.|58|The food here is good.|58||
+remember|verb|F|58|to keep something in your mind, or to bring it back to your mind|I remember his face.|58|Remember to lock the door.|158||
+build|verb|F|58|to make something, like a house, by putting parts together|They built a new school.|58|Birds build their homes in trees.|81||
+position|noun|F|59|the place where someone or something is; also, the way someone is standing or sitting; also, a job|The house is in a good position.|59|What is your position in the company?|83||
+across|preposition|A|59||We walked across the road.|59|The bridge goes across the river.|89||
+several|determiner|F|59|more than two, but not many|I have seen him several times.|59|Several people came.|59||
+hope|verb|F|59|to want something to happen and think that it may happen|I hope you are well.|59|We hope it will not rain.|59||
+road|noun|P|59||Do not play on the road.|59|This road goes to the city.|86||
+plan|noun|F|60|an idea of what you will do and how you will do it|What are your plans for tomorrow?|60|We plan to go to the sea.|60||
+actually|adverb|F|60|in fact; used when the true facts are different from what someone thinks|He looks young, but actually he is very old.|60|I thought it was easy, but actually it was hard.|106||
+behind|preposition|A|60||The cat is behind the door.|60|He walked behind me.|60||
+stay|verb|F|60|to not leave a place; also, to live in a place for a short time|Stay here.|60|We stayed in a hotel.|116||
+return|verb|F|60|to come or go back to a place; also, to give something back|Please return my book.|60|He returned home late.|83||
+suggest|verb|F|61|to say an idea or plan for other people to think about|I suggest we go home.|61|What do you suggest?|61||
+create|verb|F|61|to make something new|She created a new design.|61|The rain created problems.|154||
+describe|verb|F|61|to say what someone or something is like|Describe your house.|61|Can you describe the man?|61||
+design|noun|F|61|a plan or drawing that shows how something will look or work|I like the design of this chair.|61|She designs clothes.|109||
+chair|noun|P|61||Sit on the chair.|61|There are four chairs at the table.|61||
+action|noun|F|62|something that a person does|We need action, not words.|62|His quick action saved the child.|148||
+cause|noun|F|62|the thing that makes something happen|What was the cause of the fire?|62|The rain caused the river to rise.|75||
+cover|verb|F|62|to put something over another thing|Cover the food.|62|Snow covered the ground.|81||
+fire|noun|P|62||The fire is warm.|62|There was a fire in the building.|115||
+warm|adjective|P|62||The water is warm.|62|It is warm today.|62||
+common|adjective|F|63|happening often or found in many places; also, that two or more people have together|This is a common bird.|63|We have a friend in common.|63||
+subject|noun|F|63|what something is about; also, a thing you learn about at school|What is the subject of the book?|63|My best subject is music.|63||
+death|noun|F|63|the end of life|His death was sudden.|63|The news of her death made us sad.|100||
+easy|adjective|D|63||It is easy to make.|63|This question is easy.|106||
+sudden|adjective|F|63|happening quickly and when you do not expect it|His death was sudden.|63|There was a sudden noise.|121||
+help|verb|F|64|to make it easier for someone to do something|Can you help me?|64|She helped her mother.|64||
+white|adjective|P|64||Snow is white.|64|She has a white dress.|65||
+paper|noun|P|64||Write your name on the paper.|64|This bag is made of paper.|64||
+sometimes|adverb|F|64|at some times but not all the time|Sometimes I walk to work.|64|She sometimes forgets.|82||
+snow|noun|P|64||The snow is white.|64|It is snowing.|64||
+choose|verb|F|65|to take one thing from a number of things because you want it most|She chose the red dress.|65|Choose a colour.|174||
+soon|adverb|F|65|in a short time from now|I will be home soon.|65|Come back soon.|65||
+foot|noun|P|65||My foot is cold.|65|He has a pain in his foot.|146||
+light|noun|P|65||Turn on the light.|65|This bag is light.|65||
+dress|noun|P|65||She has a red dress.|65|That is a beautiful dress.|140||
+sure|adjective|D|66||Are you sure?|66|I am sure he will come.|66||
+father|noun|P|66||He is a good father.|66|My father is a doctor.|106||
+piece|noun|P|66||Can I have a piece of cake?|66|Give me a piece of paper.|66||
+likely|adjective|F|66|expected to happen|It is likely to rain.|66|He is likely to be late.|83||
+team|noun|F|66|a group of people who work or play together|She works in a small team.|66|Our team won.|156||
+believe|verb|F|67|to feel sure that something is true|I believe you.|67|Do you believe his story?|67||
+amount|noun|F|67|how much there is of something|Add a small amount of sugar.|67|He paid a large amount of money.|83||
+town|noun|P|67||I live in a small town.|67|We went into town.|67||
+step|noun|A|67||Mind the step.|67|Take a step forward.|75||
+sugar|noun|P|67||Do you take sugar in your milk?|67|This cake has a lot of sugar.|84||
+period|noun|F|68|an amount of time|He lived here for a short period.|68|It was a hard period in my life.|106||
+cost|noun|F|68|the amount of money needed to buy or do something|What is the cost of this shirt?|68|The ticket costs a lot of money.|132||
+price|noun|F|68|the amount of money that you must pay to buy something|What is the price of this shirt?|68|Prices are high this year.|81||
+bit|noun|F|68|a small piece or a small amount|Can I have a bit of cake?|68|Wait a bit.|152||
+shirt|noun|P|68||He has a white shirt.|68|Wash your shirt.|108||
+during|preposition|F|69|all through a period of time, or at some point in it|I sleep during the day.|69|He came during the meeting.|78||
+free|adjective|F|69|able to do what you want; also, not costing any money|You are free to go.|69|The tickets are free.|132||
+rate|noun|F|69|how quickly or how often something happens; also, a price or amount|What is the rate for a room?|69|The birth rate is going down.|114||
+else|adverb|F|69|other; different; more|Do you want anything else?|69|Someone else took my seat.|97||
+sleep|verb|A|69||I slept well.|69|The baby is sleeping.|94||
+only|adverb|F|70|no more than; also, no one or nothing else|I have only one brother.|70|Only you can help me.|70||
+own|adjective|F|70|that is yours and not anyone else's|I have my own room.|70|She made her own dress.|70||
+effect|noun|F|70|a change that happens because of something else|The rain had a good effect on the plants.|70|What is the effect of smoking?|144||
+along|preposition|A|70||We walked along the river.|70|There are trees along the road.|81||
+plant|noun|P|70||Water the plants.|70|This plant needs light.|70||
+public|adjective|F|71|for all people, not only for some|The information is public.|71|This is a public garden.|126||
+join|verb|F|71|to put or come together; also, to become a member of a group|Join the two pieces.|71|He joined the army.|127||
+especially|adverb|F|71|more than others; mostly|It is cold here, especially at night.|71|I like fruit, especially apples.|166||
+chance|noun|F|71|a time when you are able to do something; also, how likely it is that something will happen|This is your last chance.|71|There is a chance of rain.|71||
+ten|number|D|71||I have ten fingers.|71|Come at ten.|71||
+meet|verb|F|72|to come together with someone, by plan or by chance; also, to see someone for the first time|Let us meet at six.|72|I met her at a party.|149||
+detail|noun|F|72|a small fact or part of something|Tell me every detail.|72|The picture has a lot of detail.|84||
+human|noun|F|72|a person; a man, woman or child, not an animal|Humans need food and water.|72|It is a human problem.|154||
+necessary|adjective|F|72|needed; that must be done or had|Food is necessary for life.|72|Is it necessary to come early?|99||
+drive|verb|A|72||Can you drive?|72|She drives to work.|72||
+above|preposition|A|73||There is a light above the table.|73|The bird is above the tree.|81||
+practice|noun|F|73|doing something again and again to get better at it|With practice, you will get better.|73|Music needs a lot of practice.|84||
+serve|verb|F|73|to give food or drink to people; also, to work for someone or something|They served us rice and fish.|73|He served in the army.|127||
+rice|noun|P|73||We eat rice every day.|73|Cook the rice in water.|109||
+fish|noun|P|73||Fish live in water.|73|He caught a fish.|75||
+arm|noun|P|74||He broke his arm.|74|She held the baby in her arms.|94||
+private|adjective|F|74|for one person or group only; not public|This is a private room.|74|It is a private matter.|154||
+accept|verb|F|74|to take something that someone gives you, or to say yes to it|She accepted the money.|74|I accept your offer.|74||
+wish|verb|F|74|to want something that is not likely to happen; also, to hope something good for someone|I wish I could fly.|74|I wish you a happy birthday.|114||
+instead|adverb|F|74|in the place of someone or something else|I had milk instead of water.|74|He was ill, so I went instead.|105||
+rise|verb|F|75|to go up; to become higher|Prices are rising.|75|The sun rises in the east.|156||
+sell|verb|F|75|to give something to someone for money|I sold my car.|75|They sell fruit at the market.|166||
+million|number|D|75||The house cost a million.|75|A million people live in this city.|86||
+forward|adverb|A|75||Move forward.|75|She stepped forward.|75||
+catch|verb|A|75||He caught a fish.|75|Catch the ball!|105||
+value|noun|F|76|how much money something can be sold for; also, how much something is wanted or needed|The value of the house went up.|76|This book has great value to me.|84||
+record|noun|F|76|written information about things that happened, kept so it can be looked at later|Keep a record of what you spend.|76|She broke the world record.|76||
+wall|noun|P|76||There is a picture on the wall.|76|The wall is white.|76||
+black|adjective|P|76||The sky is black at night.|76|She has black hair.|91||
+prove|verb|F|76|to show that something is true|Can you prove it?|76|The test proved that he was right.|107||
+account|noun|F|77|a record of the money that you put in or take out over time|I put some money into my account.|77|He has an account with this company.|83||
+size|noun|F|77|how big or small something is|What size are your shoes?|77|The two rooms are the same size.|77||
+enter|verb|F|77|to go into a place|Please enter the room.|77|He entered the building.|115||
+rule|noun|F|77|something that says what you must or must not do|Follow the rules.|77|It is a rule of the school.|77||
+project|noun|F|77|a planned piece of work|We are working on a new project.|77|The project will take a year.|81||
+reduce|verb|F|78|to make something smaller in size or amount|Reduce the price.|78|We must reduce the noise.|121||
+meeting|noun|F|78|a time when people come together to talk about something|We have a meeting at nine.|78|The meeting was long.|85||
+compare|verb|F|78|to look at two or more things to see how they are the same or different|Compare these two pictures.|78|Compared to his brother, he is tall.|78||
+poor|adjective|F|78|having very little money; also, not good|They are very poor.|78|The food was poor.|78||
+nine|number|D|78||There are nine people in the room.|78|The shop opens at nine.|116||
+window|noun|P|79||Open the window.|79|I looked out of the window.|79||
+arrive|verb|F|79|to get to a place|When will the train arrive?|79|We arrived at the station at six.|116||
+past|noun|F|79|the time before now|In the past, people walked to work.|79|It is half past six.|143||
+close|verb|A|79||Close the door, please.|79|The shop closes at six.|116||
+future|noun|F|79|the time that will come after now|What will you do in the future?|79|We hope for a better future.|79||
+once|adverb|F|80|one time; also, at some time in the past|I have been there once.|80|I once lived in a small town.|80||
+top|noun|F|80|the highest part or point of something|We went to the top of the mountain.|80|Put it on the top shelf.|104||
+evening|noun|F|80|the end part of the day, before night|Good evening!|80|I read in the evening.|168||
+visit|verb|F|80|to go and see a person or a place for a short time|I visited my mother.|80|We visited the old church.|161||
+ready|adjective|F|80|having done everything needed, so that you can start|Are you ready?|80|The food is ready.|80||
+year|noun|F|81|the time it takes for the earth to go once around the sun|She is ten years old.|81|I will see you next year.|99||
+available|adjective|F|81|ready to be used, bought or seen|Is this room available?|81|The doctor is not available today.|106||
+ground|noun|F|81|the top of the earth that we walk on|He sat on the ground.|81|The ground is wet.|109||
+tree|noun|P|81||There is a bird in the tree.|81|The trees are green in summer.|131||
+throw|verb|A|81||She threw the paper away.|81|Throw the ball to me.|105||
+avoid|verb|F|82|to keep away from someone or something|Avoid that road at night.|82|He avoids sugar.|82||
+list|noun|F|82|a number of things written one under the other|Make a list of things to buy.|82|Is my name on the list?|82||
+normal|adjective|F|82|the same as most others; what you expect|It is normal to be tired after work.|82|The weather is normal for this time of year.|129||
+forget|verb|F|82|to not remember|I forgot his name.|82|Do not forget your bag.|82||
+floor|noun|P|82||The book fell on the floor.|82|We live on the second floor.|143||
+large|adjective|F|83|big; more than normal in size or amount|That is a large dog.|83|A large number of people came.|83||
+company|noun|F|83|a group of people who work together to make or sell things for money; also, being with other people|He works for a large company.|83|I enjoy her company.|155||
+late|adjective|F|83|after the normal or expected time|I was late for school.|83|It is late. Go to bed.|83||
+produce|verb|F|83|to make or grow something|The company produces cars.|83|This farm produces milk.|171||
+usually|adverb|F|83|most of the time; normally|I usually walk to work.|83|She is usually late.|83||
+great|adjective|F|84|very large; also, very good|He was a great man.|84|It was a great party.|149||
+business|noun|F|84|the work of buying, making or selling things for money; also, a company|My father has a small business.|84|Business is good this year.|84||
+lot|noun|F|84|a large number or amount|I have a lot of friends.|84|We ate a lot.|84||
+increase|verb|F|84|to become larger in number or amount, or to make something larger|The price increased.|84|We must increase the amount of food.|84||
+knowledge|noun|F|84|the facts and information that you have in your mind|He has a lot of knowledge about birds.|84|Knowledge is power.|135||
+long|adjective|F|85|going a great way from one end to the other, or going on for a great time|It was a long day.|85|She has long hair.|91||
+important|adjective|F|85|having a great effect, or being of great value|This is an important meeting.|85|Your health is important.|154||
+experience|noun|F|85|knowledge you get from doing something; also, something that happens to you|She has a lot of experience.|85|It was a strange experience.|122||
+page|noun|P|85||Open your book at page ten.|85|Read this page.|168||
+direction|noun|F|85|the way that someone or something goes or points|We walked in the direction of the river.|85|Which direction is the station?|116||
+far|adjective|F|86|a long way away|How far is it?|86|The station is not far from here.|116|further, furthest|
+stop|verb|F|86|to no longer move or do something|Stop the car!|86|The rain stopped.|86||
+city|noun|F|86|a large and important town|This is a big city.|86|I live in the city.|86||
+special|adjective|F|86|different from what is normal, and often better or more important|Today is a special day.|86|This is a special room for children.|86||
+main|adjective|F|86|most important; biggest|This is the main road.|86|The main problem is money.|154||
+particular|adjective|F|87|special; this one and not any other|Is there a particular book you want?|87|I like this particular colour.|174||
+event|noun|F|87|something that happens, mostly something important|The events of that day changed his life.|87|The party was a big event.|149||
+ago|adverb|F|87|before now; used to say how far back in time something happened|I saw him two days ago.|87|They married ten years ago.|140||
+die|verb|F|87|to stop living|The old dog died.|87|Plants die without water.|87||
+finally|adverb|F|87|at the end, after a long time|We finally arrived.|87|Finally, the rain stopped.|87||
+just|adverb|F|88|a very short time ago; also, only|I have just eaten.|88|It is just a small cut.|88||
+general|adjective|F|88|having to do with most people or things, not with one in particular; also, not detailed|Give me a general idea.|88|The general opinion is good.|95||
+present|noun|F|88|a thing that you give to someone on a special day; also, the time now|At present, I live in the city.|88|She gave me a birthday present.|114||
+recent|adjective|F|88|that happened a short time ago|In recent years, the town has grown.|88|This is a recent picture of my son.|114||
+deep|adjective|F|88|going a long way down from the top|The river is deep here.|88|Take a deep breath.|134||
+however|adverb|F|89|but; used to add something that is different from what was just said|It was cold. However, we went out.|89|He is rich. However, he is not happy.|103||
+news|noun|F|89|information about things that have just happened|Did you hear the news?|89|I have good news.|89||
+structure|noun|F|89|the way the parts of something are put together; also, something that is built|The bridge is a large structure.|89|The structure of the body is complex.|169||
+kill|verb|F|89|to make someone or something die|The cold killed the plants.|89|Smoking can kill you.|144||
+bridge|noun|P|89||We walked over the bridge.|89|The bridge goes across the river.|89||
+finish|verb|F|90|to come to the end of something|Have you finished your work?|90|The class finished at ten.|180||
+seven|number|D|90||She is seven.|90|There are seven days in a week.|91||
+statement|noun|F|90|something that someone says or writes, often in a public way|Is this statement true?|90|The police made a statement.|139||
+push|verb|A|90||Push the door.|90|Do not push me.|90||
+hundred|number|D|90||There are a hundred people here.|90|The house is a hundred years old.|90||
+week|noun|F|91|a period of seven days|She works five days a week.|91|I will see you next week.|99||
+century|noun|F|91|a period of one hundred years|The house was built in the last century.|91|This church is ten centuries old.|161||
+complete|adjective|F|91|having all its parts; finished|The list is complete.|91|Is your work complete?|91||
+south|noun|F|91|the direction on your right when you look at the place where the sun comes up|They live in the south of the country.|91|Birds go south in winter.|131||
+hair|noun|P|91||She has long hair.|91|Wash your hair.|108||
+month|noun|F|92|one of the parts of a year; each one is about four weeks long|She is three months old.|92|I will see you next month.|99||
+quite|adverb|F|92|more than a little, but not very; also, completely|It is quite cold today.|92|I am not quite ready.|92||
+whole|adjective|F|92|all of something; complete|I ate the whole cake.|92|She was ill for the whole week.|105||
+sound|noun|F|92|something that you hear|That sounds good.|92|I heard a strange sound.|122||
+computer|noun|P|92||I do my work on a computer.|92|The computer is on the table.|92||
+include|verb|F|93|to have something as one of the parts of a whole|The price includes food.|93|The group includes three children.|93||
+office|noun|F|93|a room where people do work at tables, often with papers and computers|I work in an office.|93|Her office is on the second floor.|143||
+voice|noun|F|93|the sound that you make when you speak|I heard his voice.|93|She has a soft voice.|105||
+discussion|noun|F|93|a talk about something between two or more people|We had a long discussion.|93|The discussion was about money.|93||
+glass|noun|P|93||A glass of water, please.|93|The window is made of glass.|93||
+fight|verb|A|94||The two boys are fighting.|94|They fought for their country.|94||
+box|noun|P|94||The box is on the table.|94|What is in the box?|94||
+blood|noun|P|94||There is blood on his hand.|94|Blood is red.|94||
+west|noun|F|94|the direction where the sun goes down in the evening|The sun goes down in the west.|94|They live in the west of the city.|94||
+baby|noun|P|94||The baby is sleeping.|94|She has a new baby.|94||
+trade|noun|F|95|the buying and selling of things between people or countries|Trade between the two countries is growing.|95|They trade in fruit.|166||
+imagine|verb|F|95|to make a picture of something in your mind|Imagine a big red house.|95|I cannot imagine life without music.|95||
+travel|verb|F|95|to go from one place to another, often a long way|I like to travel.|95|She travelled across the country.|95||
+opinion|noun|F|95|what you think or believe about something|What is your opinion?|95|In my opinion, he is right.|95||
+dead|adjective|F|95|not living any more|The bird is dead.|95|The plant is dead because it had no water.|95||
+agree|verb|F|96|to have the same opinion as someone|I agree with you.|96|We all agreed to meet at six.|96||
+thought|noun|F|96|an idea or opinion that you have in your mind|That is a good thought.|96|I had a thought.|96||
+drop|verb|A|96||Do not drop the glass.|96|He dropped his keys.|96||
+machine|noun|F|96|a thing with moving parts that does work|The machine is broken.|96|This machine washes clothes.|109||
+leg|noun|P|96||A dog has four legs.|96|He broke his leg.|96||
+support|verb|F|97|to hold something up so that it does not fall; also, to help someone or agree with them|My family supports my plan.|97|Two strong pieces of wood support the roof.|165||
+teach|verb|F|97|to help someone learn something by giving them knowledge|She teaches music.|97|My father taught me to swim.|97||
+north|noun|F|97|the direction on your left when you look at the place where the sun comes up|They live in the north of the country.|97|Birds go north in summer.|131||
+distance|noun|F|97|how far it is between two places|I saw a light in the distance.|97|What is the distance from here to the station?|116||
+seat|noun|F|97|a thing that you sit on, like a chair|Is this seat free?|97|Please take a seat.|97||
+further|adverb|F|98|to a greater distance; also, more|I cannot walk any further.|98|Do you have any further questions?|106||
+near|preposition|F|98|a short distance from|The school is near my house.|98|Do not go near the fire.|98||
+dark|adjective|P|98||It is dark at night.|98|She has dark hair.|98||
+green|adjective|P|98||She has green eyes.|98|The grass is green.|118||
+shape|noun|P|98||What shape is it?|98|A ball has a round shape.|105||
+next|adjective|F|99|coming right after this one; also, nearest|The next train is at six.|99|She sat at the next table.|99||
+almost|adverb|F|99|not quite, but very near to it|It is almost six.|99|I almost fell.|99||
+early|adjective|F|99|near the start of a period of time; also, before the expected time|I get up early.|99|The train was early.|99||
+low|adjective|F|99|not high; near the ground; also, small in amount|The wall is low.|99|Prices are low.|99||
+similar|adjective|F|99|nearly the same, but not quite|The two houses are similar.|99|My idea is similar to yours.|99||
+thank|verb|F|100|to say that you are pleased because someone did something for you|Thank you very much.|100|I thanked him for his help.|100||
+fix|verb|F|100|to make something work again after it is broken; also, to make something stay in one place|Can you fix my phone?|100|Fix the picture to the wall.|100||
+nation|noun|F|100|a country and its people|The whole nation was sad.|100|The leaders of many nations met.|137||
+holiday|noun|F|100|a day or time when you do not work or go to school|We go to the sea on holiday.|100|Tomorrow is a holiday.|100||
+sad|adjective|P|100||She is sad today.|100|It is a sad story.|100||

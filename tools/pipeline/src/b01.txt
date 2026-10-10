@@ -1,0 +1,102 @@
+a|article|D||I am a man.|She is a girl.
+able|adjective|F|when you can do something|She is able to swim.|He was not able to sleep.
+about|preposition|D||This book is about animals.|We talked about the weather.
+above|preposition|A||The bird is above the tree.|There is a light above the table.
+accept|verb|F|to take something that someone gives you, or to say yes to it|She accepted the money.|I accept your offer.
+account|noun|F|a record of the money that you put in or take out over time|I put some money into my account.|He has an account with this company.
+across|preposition|A||We walked across the road.|The bridge goes across the river.
+act|verb|F|to do something; also, to play a part in a story in front of people|You must act now.|She acts in plays at school.
+action|noun|F|something that a person does|His quick action saved the child.|We need action, not words.
+activity|noun|F|something that people do, often for pleasure|Swimming is a good activity for children.|The town has many activities in the summer.
+actually|adverb|F|in fact; used when the true facts are different from what someone thinks|I thought it was easy, but actually it was hard.|He looks young, but actually he is very old.
+add|verb|F|to put one thing with another thing so that there is more|Add some sugar to your milk.|If you add two and three, you get five.
+addition|noun|F|the act of adding numbers together; also, a thing that is added|Addition is one of the first things children learn about numbers.|The new room is an addition to the house.
+adjustment|noun|F|a small change that makes something work better or be the right size|He made an adjustment to the seat.|After a few adjustments, the machine worked.
+advertisement|noun|F|words or pictures that a company makes public to get people to buy something|I saw an advertisement for a new phone.|There is an advertisement on the side of the train.
+after|preposition|D||After the rain, the sky is blue.|We eat after work.
+afternoon|noun|F|the part of the day between the middle of the day and the evening|I sleep in the afternoon.|See you this afternoon.
+again|adverb|D||Please say it again.|He was late again.
+against|preposition|F|touching something and pushing on it; also, not agreeing with or fighting someone or something|He put the chair against the wall.|Many people are against the war.
+age|noun|F|how old someone or something is|What is your age?|She started school at the age of five.
+ago|adverb|F|before now; used to say how far back in time something happened|I saw him two days ago.|They married ten years ago.
+agree|verb|F|to have the same opinion as someone|I agree with you.|We all agreed to meet at six.
+agreement|noun|F|a plan or decision that two or more people agree on|The two countries made an agreement.|We are all in agreement.
+air|noun|F|what is all around us, which we take in through the nose and mouth to live|Open the window to let in some air.|The air in the mountains is clean.
+all|determiner|D||All the children are here.|She ate all the cake.
+allow|verb|F|to let someone do something|My mother does not allow dogs in the house.|Are we allowed to sit here?
+almost|adverb|F|not quite, but very near to it|It is almost six.|I almost fell.
+along|preposition|A||We walked along the river.|There are trees along the road.
+already|adverb|F|before now, or before the time you expected|I have already eaten.|Is it ten already?
+also|adverb|D||He is a doctor and also a father.|I also want some milk.
+always|adverb|F|at all times; every time|The sun always comes up in the east.|She is always happy.
+am|verb|D||I am a woman.|I am not a child.
+among|preposition|F|in the middle of a group of things or people|The house is among the trees.|There is a doctor among us.
+amount|noun|F|how much there is of something|Add a small amount of sugar.|He paid a large amount of money.
+and|conjunction|D||The dog and the cat are small.|I have a dog and a cat.
+angle|noun|F|the space between two lines that meet at a point|A square has four angles.|The road turns at a sharp angle.
+angry|adjective|P||He is angry with his brother.|Please do not be angry.
+animal|noun|F|a living thing that can move and feel, like a dog or a bird|A cow is a farm animal.|Do you like animals?
+another|determiner|F|one more; or a different one|Can I have another apple?|Let us go to another shop.
+answer|noun|F|what you say or write back when someone asks you a question|What is the answer?|Please answer the question.
+any|determiner|D||Do you have any money?|I do not have any brothers.
+appear|verb|F|to come into view; also, to seem|A man appeared at the door.|She appears to be ill.
+apple|noun|P||I eat an apple every day.|This apple is red.
+approval|noun|F|the feeling or statement that something is good or right|He wants his father's approval.|The plan needs the approval of the government.
+are|verb|D||You are a woman.|We are in the house.
+area|noun|F|a part of a place, a town or a country|We live in a quiet area.|This area is good for farming.
+argument|noun|F|an angry talk between people who do not agree; also, the reasons someone gives for an opinion|They had an argument about money.|Her argument was strong.
+arm|noun|P||He broke his arm.|She held the baby in her arms.
+army|noun|F|a large group of people trained to fight for a country on land|He joined the army.|The army came into the city.
+around|preposition|A||We walked around the house.|There are trees all around the garden.
+arrive|verb|F|to get to a place|We arrived at the station at six.|When will the train arrive?
+art|noun|F|paintings, pictures, music and other beautiful things that people make|She studies art.|There is a lot of art in this city.
+as|conjunction|D||He is as tall as his brother.|She works as a doctor.
+ask|verb|F|to say a question to someone; also, to say that you want something|Can I ask you a question?|He asked for water.
+at|preposition|D||Look at the dog.|I am at home.
+attack|verb|F|to use force to try to damage something or give someone pain or a wound|The dog attacked the man.|The army attacked the town.
+attempt|noun|F|the act of trying to do something, often something hard|It was his first attempt.|She made an attempt to get to the top of the mountain.
+attention|noun|F|the act of watching, listening or thinking hard about something|Please give me your attention.|He was not paying attention.
+attraction|noun|F|something that makes people want to go to it or be near it|The old bridge is the main attraction of the town.|There is a strong attraction between them.
+authority|noun|F|the power to give orders and make decisions; also, the people who have this power|The police have the authority to stop cars.|Ask the local authority.
+automatic|adjective|F|working by itself, without a person controlling it|The door is automatic.|It is an automatic machine.
+available|adjective|F|ready to be used, bought or seen|Is this room available?|The doctor is not available today.
+avoid|verb|F|to keep away from someone or something|Avoid that road at night.|He avoids sugar.
+awake|adjective|F|not sleeping|Are you awake?|The baby was awake all night.
+away|adverb|A||Go away!|The bird flew away.
+baby|noun|P||The baby is sleeping.|She has a new baby.
+back|noun|P||Put your hand on your back.|Please come back soon.
+bad|adjective|P||This is a bad apple.|The weather is bad today.
+bag|noun|P||Put the books in your bag.|She has a red bag.
+balance|noun|F|being able to stand or move without falling|She lost her balance and fell.|Keep a balance between work and rest.
+ball|noun|P||The boy kicked the ball.|Throw me the ball.
+band|noun|F|a group of people who play music together; also, a thin flat piece of material that goes around something|My brother plays in a band.|She has a band in her hair.
+base|noun|F|the lowest part of something, which it stands on|The base of the tree is wide.|The army has a base near the town.
+bath|noun|P||The baby is in the bath.|I take a bath every night.
+be|verb|D||Please be good.|I want to be a doctor.
+beautiful|adjective|F|very pleasing to look at or listen to|What a beautiful flower!|She has a beautiful voice.
+because|conjunction|D||I am happy because I have a dog.|He stayed at home because he was ill.
+become|verb|F|to start to be something|She became a doctor.|It is becoming cold.
+bed|noun|P||I go to bed at ten.|The cat is on my bed.
+before|preposition|D||Wash your hands before you eat.|I have seen him before.
+begin|verb|F|to start|The class begins at nine.|It began to rain.
+behaviour|noun|F|the way a person or animal acts|His behaviour at school is good.|We watched the behaviour of the birds.
+behind|preposition|A||The cat is behind the door.|He walked behind me.
+belief|noun|F|a feeling that something is true or real|She has a strong belief in her friends.|It is a common belief.
+believe|verb|F|to feel sure that something is true|I believe you.|Do you believe his story?
+bell|noun|P||The school bell rang.|I heard a bell.
+bend|verb|A||Bend your knees.|The road bends to the left.
+between|preposition|A||The ball is between the two boxes.|Come between two and three.
+big|adjective|P||It is a big house.|The house is big.
+bird|noun|P||A bird is in the tree.|Birds can fly.
+birth|noun|F|the time when a baby comes out of its mother's body|She gave birth to a son.|What is your date of birth?
+bit|noun|F|a small piece or a small amount|Can I have a bit of cake?|Wait a bit.
+bite|verb|A||This dog bites people.|He took a bite of the apple.
+bitter|adjective|F|having a strong, sharp taste that is not sweet|This drink is bitter.|Some leaves taste bitter.
+black|adjective|P||She has black hair.|The sky is black at night.
+blood|noun|P||There is blood on his hand.|Blood is red.
+blow|verb|A||Blow on your food if it is hot.|The wind is blowing.
+blue|adjective|P||The sky is blue.|He has blue eyes.
+board|noun|F|a long, flat piece of wood; also, a group of people who control a company|The teacher wrote on the board.|He is on the board of the company.
+boat|noun|P||We went out in a boat.|The boat is on the river.
+body|noun|P||Water is good for the body.|Your body has many bones.
+boil|verb|A||Boil the water.|The eggs are boiling.

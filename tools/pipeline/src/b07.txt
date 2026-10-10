@@ -1,0 +1,99 @@
+pain|noun|F|what you feel in your body when it is wounded or ill|I have a pain in my back.|She cried with pain.
+paint|noun|F|a coloured liquid that you put on walls or pictures|The paint is still wet.|We painted the room white.
+paper|noun|P||Write your name on the paper.|This bag is made of paper.
+parallel|adjective|F|going in the same direction and always the same distance from each other, like the two lines of a railway|Draw two parallel lines.|The road is parallel to the river.
+parent|noun|P||My parents live in the country.|She is a good parent.
+part|noun|D||A finger is a part of the hand.|This is the best part of the story.
+particular|adjective|F|special; this one and not any other|Is there a particular book you want?|I like this particular colour.
+party|noun|F|a time when people come together to eat, drink and have a good time; also, a political group|We had a party for her birthday.|Which party do you support?
+pass|verb|F|to go past something; also, to give something to someone; also, to do well in a test|We passed the school.|Pass me the salt.
+past|noun|F|the time before now|In the past, people walked to work.|It is half past six.
+pay|verb|A||I paid for the food.|How much do they pay you?
+payment|noun|F|an amount of money that is paid|The first payment is due today.|I made a payment for the car.
+peace|noun|F|a time when there is no war or fighting; also, a quiet state|The two countries are at peace.|I want some peace and quiet.
+pen|noun|P||Can I use your pen?|Write with a black pen.
+people|noun|P||Many people are here.|She likes meeting new people.
+percent|noun|F|a part of every hundred; for example, ten in every hundred|Ten percent of the students are ill.|Prices went up by five percent.
+perhaps|adverb|F|possibly; it may be that|Perhaps it will rain.|Perhaps he is ill.
+period|noun|F|an amount of time|He lived here for a short period.|It was a hard period in my life.
+person|noun|P||She is a kind person.|There is one person in the room.
+phone|noun|P||My phone is ringing.|Can I use your phone?
+physical|adjective|F|having to do with the body, not the mind; also, having to do with things you can touch and see|Physical work makes me tired.|He is in good physical condition.
+pick|verb|F|to choose; also, to take a flower or fruit from a plant|Pick a card.|We picked apples from the tree.
+picture|noun|P||She drew a picture of her dog.|Can I take your picture?
+piece|noun|P||Can I have a piece of cake?|Give me a piece of paper.
+pig|noun|P||The pig is fat.|They keep pigs on the farm.
+pipe|noun|F|a long, round piece of metal with a hole all the way through it, that water or other liquids go through|The water pipe burst.|The pipe is under the floor.
+place|noun|D||This is a cold place.|Put the book back in its place.
+plan|noun|F|an idea of what you will do and how you will do it|What are your plans for tomorrow?|We plan to go to the sea.
+plane|noun|P||The plane is in the sky.|We went there by plane.
+plant|noun|P||Water the plants.|This plant needs light.
+plate|noun|P||Put the food on a plate.|The plates are on the table.
+play|verb|A||The children are playing in the garden.|She plays music.
+please|adverb|D||Please sit down.|Two cups of milk, please.
+pleasure|noun|F|a feeling of being happy or pleased|It is a pleasure to meet you.|Reading gives me pleasure.
+pocket|noun|P||Put your hand in your pocket.|My keys are in my pocket.
+point|noun|A||The point of the knife is sharp.|He pointed at the door.
+poison|noun|F|a substance that makes you very ill or kills you if you eat or drink it|This plant is poison.|Rat poison is not safe for children.
+police|noun|F|the people whose job is to make others keep the law and to catch people who break it|Call the police!|The police stopped the car.
+political|adjective|F|having to do with government and the way a country is controlled|She is interested in political questions.|There are two big political parties.
+poor|adjective|F|having very little money; also, not good|They are very poor.|The food was poor.
+position|noun|F|the place where someone or something is; also, the way someone is standing or sitting; also, a job|The house is in a good position.|What is your position in the company?
+possible|adjective|F|able to happen or be done|Is it possible to go by train?|Come as soon as possible.
+pot|noun|P||Cook the rice in a pot.|There is a plant in the pot.
+potato|noun|P||I like potatoes.|Cook the potatoes in water.
+powder|noun|F|a dry substance made of very small bits|Put some powder on the baby's skin.|She washes her clothes with a white powder.
+power|noun|F|being able to do things, or to make others do what you want; also, the energy that makes machines and lights work|The government has a lot of power.|The power went off.
+practice|noun|F|doing something again and again to get better at it|Music needs a lot of practice.|With practice, you will get better.
+prepare|verb|F|to make something ready, or to get ready for something|She prepared the meal.|We prepared for the test.
+present|noun|F|a thing that you give to someone on a special day; also, the time now|She gave me a birthday present.|At present, I live in the city.
+price|noun|F|the amount of money that you must pay to buy something|What is the price of this shirt?|Prices are high this year.
+print|verb|F|to put words or pictures on paper using a machine|Print this letter.|The book was printed last year.
+prison|noun|F|a building where people who broke the law are kept and cannot go out|He was sent to prison.|The prison is on an island.
+private|adjective|F|for one person or group only; not public|This is a private room.|It is a private matter.
+problem|noun|F|a situation that is hard and that you must do something about|We have a problem with the car.|There is no problem.
+process|noun|F|a number of acts or steps done to get a certain result|Learning a language is a slow process.|Making bread is a simple process.
+produce|verb|F|to make or grow something|This farm produces milk.|The company produces cars.
+profit|noun|F|money that you get from a business after you have paid all the costs|The company made a profit.|They sold the house at a profit.
+project|noun|F|a planned piece of work|We are working on a new project.|The project will take a year.
+property|noun|F|the things that someone owns; also, a building and the land it is on|This is private property.|He has a lot of property in the city.
+protest|noun|F|a statement or act that shows that you strongly do not agree with something|There was a protest in the street.|They protested against the war.
+prove|verb|F|to show that something is true|Can you prove it?|The test proved that he was right.
+public|adjective|F|for all people, not only for some|This is a public garden.|The information is public.
+pull|verb|A||Pull the door.|The horse pulled the boat along the river.
+pump|noun|F|a machine that pushes liquid or air into or out of something|We need a pump to get the water out.|Pump some air into the ball.
+punishment|noun|F|something bad that is done to a person because they did something wrong|His punishment was to stay at home.|The punishment for this crime is prison.
+purpose|noun|F|the reason why something is done or made|What is the purpose of your visit?|She came here for a purpose.
+push|verb|A||Push the door.|Do not push me.
+put|verb|A||Put the book on the table.|She put on her coat.
+quality|noun|F|how good or bad something is; also, a part of someone's nature|This shirt is of good quality.|Her best quality is that she is kind.
+question|noun|D||This is a hard question.|Can I ask you a question?
+quick|adjective|A||She is a quick learner.|Take a quick look.
+quiet|adjective|F|making very little noise|Please be quiet.|It is a quiet street.
+quite|adverb|F|more than a little, but not very; also, completely|It is quite cold today.|I am not quite ready.
+rail|noun|F|a long piece of metal or wood that you can hold on to; also, the metal lines that trains go on|Hold the rail.|We went by rail.
+rain|noun|P||It is raining.|The rain stopped.
+raise|verb|F|to lift something up; also, to make something higher; also, to care for children until they are grown|Raise your hand.|They raised the price.
+range|noun|F|a number of different things of the same kind; also, the limits between which something changes|The shop has a wide range of shoes.|The price range is from five to ten.
+rat|noun|P||There is a rat in the house.|Rats are smaller than cats.
+rate|noun|F|how quickly or how often something happens; also, a price or amount|The birth rate is going down.|What is the rate for a room?
+rather|adverb|F|more than a little; also, used to say what you would like more|It is rather cold.|I would rather stay at home.
+reach|verb|F|to put out your arm to touch something; also, to arrive at a place|I cannot reach the top shelf.|We reached the station at six.
+reaction|noun|F|what you do or feel because of something that happens|What was his reaction to the news?|She had a bad reaction to the eggs.
+read|verb|F|to look at written words and understand them|I like to read.|Read the letter.
+ready|adjective|F|having done everything needed, so that you can start|Are you ready?|The food is ready.
+real|adjective|F|true; that is there in fact; not imagined or false|Is this gold real?|It is a real problem.
+reason|noun|F|the cause of something, or what explains it|What is the reason for this?|There is no reason to be angry.
+receive|verb|F|to get something that someone gives or sends you|I received a letter.|She received a lot of presents.
+recent|adjective|F|that happened a short time ago|This is a recent picture of my son.|In recent years, the town has grown.
+record|noun|F|written information about things that happened, kept so it can be looked at later|Keep a record of what you spend.|She broke the world record.
+red|adjective|P||The apple is red.|She has a red dress.
+reduce|verb|F|to make something smaller in size or amount|Reduce the price.|We must reduce the noise.
+regret|verb|F|to feel sad about something that you did or did not do|I regret what I said.|She regrets selling her house.
+regular|adjective|F|happening at the same times again and again; also, normal|He makes regular visits to the doctor.|Eat regular meals.
+relation|noun|F|a person in your family; also, the way two things have to do with each other|She is a relation of mine.|There is a relation between food and health.
+religion|noun|F|a belief in a power higher than humans, and the acts and rules that go with that belief|Religion is important to her.|There are many religions in the world.
+remember|verb|F|to keep something in your mind, or to bring it back to your mind|I remember his face.|Remember to lock the door.
+report|noun|F|a spoken or written account of something that happened|I read the report.|She reported the crime to the police.
+representative|noun|F|a person chosen to act or speak for others|She is our representative.|The company sent a representative.
+request|noun|F|the act of asking for something|I have a request.|They did not listen to my request.

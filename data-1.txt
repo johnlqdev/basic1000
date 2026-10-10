@@ -1,0 +1,250 @@
+I|pronoun|D|1||I am a man.|1|I have a dog.|6|me, my, mine, myself|
+am|verb|D|1||I am a woman.|1|I am not a child.|6||
+a|article|D|1||I am a man.|1|She is a girl.|3|an|
+man|noun|P|1||I am a man.|1|The man is big.|5||
+woman|noun|P|1||I am a woman.|1|The woman has a child.|6||
+you|pronoun|D|2||You are a man.|2|You have a big dog.|6|your, yours, yourself|
+are|verb|D|2||You are a woman.|2|We are in the house.|8||
+he|pronoun|D|2||He is a man.|2|He has a cat.|6|him, his, himself|
+she|pronoun|D|2||She is a woman.|2|She has a dog.|6|her, hers, herself|
+is|verb|D|2||He is a man.|2|The dog is big.|5||
+boy|noun|P|3||He is a boy.|3|The boy is big.|5||
+girl|noun|P|3||She is a girl.|3|The girl has a cat.|6||
+child|noun|P|3||She is a child.|3|The child is in the house.|8||
+this|determiner|D|3||This is a boy.|3|This house is small.|5|these|
+that|determiner|D|3||That is a girl.|3|That house is big.|4|those|
+house|noun|P|4||This is a house.|4|The house is small.|5||
+dog|noun|P|4||That is a big dog.|4|I have a dog.|6||
+cat|noun|P|4||This is a cat.|4|The cat is small.|5||
+it|pronoun|D|4||It is a dog.|4|It is big.|4|its, itself|
+big|adjective|P|4||It is a big house.|4|The house is big.|5||
+the|article|D|5||The dog is big.|5|The cat is small.|5||
+small|adjective|P|5||The cat is small.|5|It is a small house.|5||
+we|pronoun|D|5||We are children.|5|We have a dog.|6|us, our, ours, ourselves|
+they|pronoun|D|5||They are boys.|5|They have a cat.|6|them, their, theirs, themselves|
+and|conjunction|D|5||The dog and the cat are small.|5|I have a dog and a cat.|6||
+have|verb|D|6||I have a big house.|6|We have a small dog.|6||
+not|adverb|D|6||The dog is not big.|6|I am not a man.|6||
+yes|adverb|D|6||Yes, it is a cat.|6|Yes, I am here.|16||
+no|determiner|D|6||No, it is not a dog.|6|I have no cat.|6||
+what|pronoun|D|6||What is this?|6|What is that? It is a cat.|6||
+to|preposition|D|7||Give the apple to me.|7|I go to school.|54||
+give|verb|A|7||Give me the book.|7|She gave him some money.|20||
+book|noun|P|7||I have a book.|7|This book is about birds.|42||
+red|adjective|P|7||The apple is red.|7|She has a red dress.|65||
+apple|noun|P|7||This apple is red.|7|I eat an apple every day.|29||
+of|preposition|D|8||The door of the house is red.|8|I want a cup of milk.|19||
+in|preposition|A|8||The cat is in the house.|8|We are in the house.|8||
+thing|noun|D|8||What is that thing?|8|I have many things to do.|16||
+open|adjective|A|8||The door is open.|8|Open your book.|8||
+door|noun|P|8||Open the door.|8|Someone is at the door.|14||
+or|conjunction|D|9||Is it hot or cold?|9|Do you want milk or water?|10||
+do|verb|D|9||What do you do?|9|I did my work.|18||
+water|noun|P|9||The water is cold.|9|I drink a lot of water.|84||
+hot|adjective|P|9||The water is hot.|9|It is very hot today.|44||
+cold|adjective|P|9||The water is cold.|9|It is cold today.|44||
+some|determiner|D|10||I want some water.|10|Some people like music.|43||
+also|adverb|D|10||I also want some milk.|10|He is a doctor and also a father.|106||
+want|verb|D|10||I want some water.|10|She wants to be a doctor.|106||
+milk|noun|P|10||Cows give milk.|10|Would you like some milk?|27||
+cow|noun|P|10||Cows give milk.|10|The cow is in the field.|170||
+be|verb|D|11||Please be good.|11|I want to be a doctor.|106|was, were, been, being|
+good|adjective|P|11||This is a good apple.|11|She is a good doctor.|106|better, best|
+down|preposition|A|11||Sit down.|11|She walked down the road.|59||
+sit|verb|A|11||Sit down, please.|11|She is sitting on the chair.|61||
+please|adverb|D|11||Please sit down.|11|Two cups of milk, please.|19||
+on|preposition|A|12||Put your hat on.|12|The book is on the table.|36||
+for|preposition|D|12||This is for you.|12|I waited for an hour.|153||
+put|verb|A|12||She put on her coat.|12|Put the book on the table.|36||
+coat|noun|P|12||Put on your coat. It is cold.|12|She has a long coat.|85||
+hat|noun|P|12||Put on your hat.|12|He has a black hat.|76||
+one|number|D|13||I have one brother.|13|One of the cups is broken.|56||
+make|verb|A|13||I made a cake.|13|You make me happy.|24||
+brother|noun|P|13||My brother is tall.|13|I have two brothers.|17||
+cake|noun|P|13||She made a cake.|13|Would you like some cake?|27||
+tall|adjective|P|13||My brother is tall.|13|There is a tall tree in the garden.|126||
+at|preposition|D|14||Look at the dog.|14|I am at home.|27||
+there|adverb|D|14||Put it there.|14|There is a cat on the roof.|114||
+look|verb|A|14||Look at this picture.|14|She looks happy.|24||
+draw|verb|A|14||Draw a picture of a cat.|14|The child is drawing.|14||
+picture|noun|P|14||She drew a picture of her dog.|14|Can I take your picture?|18||
+go|verb|A|15||Go to bed.|15|I went to school.|54||
+with|preposition|D|15||I live with my parents.|15|Cut it with a knife.|109||
+live|verb|D|15||I live in this house.|15|Plants need light to live.|70||
+parent|noun|P|15||She is a good parent.|15|My parents live in the country.|36||
+bed|noun|P|15||The cat is on my bed.|15|I go to bed at ten.|71||
+people|noun|P|16||Many people are here.|16|She likes meeting new people.|78||
+from|preposition|D|16||The milk is from a cow.|16|This letter is from my mother.|168||
+how|adverb|D|16||How are you?|16|How do you make bread?|105||
+here|adverb|D|16||The dog is here.|16|I am here.|16||
+many|determiner|D|16||How many brothers do you have?|16|Many people came to the party.|149||
+can|verb|D|17||I can swim.|17|Can you help me?|64||
+time|noun|D|17||What time is it?|17|I do not have time.|17||
+come|verb|A|17||Come here!|17|She came to my house.|17||
+two|number|D|17||I have two cats.|17|Two and two is four.|47||
+swim|verb|A|17||I can swim.|17|We swam in the sea.|22||
+work|verb|A|18||I work with my hands.|18|The machine does not work.|96||
+get|verb|D|18||It is getting cold.|18|I got a letter today.|168||
+like|verb|D|18||I like milk.|18|She looks like her mother.|55||
+take|verb|A|18||Take my hand.|18|Take the book to your teacher.|97||
+hand|noun|P|18||Give me your hand.|18|Wash your hands.|108||
+by|preposition|D|19||The house is by the river.|19|The book was written by my mother.|55||
+very|adverb|D|19||It is very cold.|19|She is very happy.|24||
+other|adjective|D|19||Give me the other cup.|19|Where is the other shoe?|45||
+river|noun|P|19||We swam in the river.|19|The river goes to the sea.|22||
+cup|noun|P|19||A cup of milk, please.|19|The cup is on the table.|36||
+much|determiner|D|20||I do not have much money.|20|Thank you very much.|100|more, most|
+part|noun|D|20||A finger is a part of the hand.|20|This is the best part of the story.|39||
+money|noun|P|20||I have no money.|20|She saves money every week.|148||
+cut|verb|A|20||I cut my finger.|20|Cut the bread with a knife.|109||
+finger|noun|P|20||I cut my finger.|20|You have five fingers on each hand.|35||
+will|verb|D|21||I will come.|21|It will rain tonight.|44||
+use|verb|A|21||Can I use your phone?|21|We use a knife to cut bread.|109||
+say|verb|A|21||What did you say?|21|She said that she was tired.|24||
+who|pronoun|D|21||Who is that man?|21|The woman who lives here is a doctor.|106|whom, whose|
+phone|noun|P|21||Can I use your phone?|21|My phone is ringing.|134||
+when|adverb|D|22||When do you get up?|22|I was happy when I saw her.|24||
+see|verb|A|22||I can see the sea.|22|I see what you mean.|166||
+up|adverb|A|22||Stand up.|22|The bird flew up into the sky.|34||
+stand|verb|A|22||Stand up, please.|22|She is standing by the door.|22||
+sea|noun|P|22||We swam in the sea.|22|The sea is blue today.|44||
+all|determiner|D|23||All the children are here.|23|She ate all the cake.|27||
+day|noun|P|23||It is a hot day.|23|There are seven days in a week.|91||
+into|preposition|A|23||Go into the house.|23|She put the money into her bag.|52||
+out|adverb|A|23||Get out!|23|She went out of the room.|43||
+way|noun|D|23||Go this way.|23|This is the best way to cook rice.|109||
+as|conjunction|D|24||He is as tall as his brother.|24|She works as a doctor.|106||
+where|adverb|D|24||Where do you live?|24|Where is my bag?|52||
+but|conjunction|D|24||I am tired but happy.|24|She is small but strong.|137||
+happy|adjective|P|24||She is very happy.|24|Happy birthday!|114||
+tired|adjective|P|24||I am very tired.|24|She was tired after work.|27||
+which|pronoun|D|25||Which cup is yours?|25|Which book do you want?|25||
+need|verb|D|25||I need some water.|25|Plants need light.|70||
+so|adverb|D|25||It is so cold.|25|I was tired, so I went to bed.|25||
+now|adverb|D|25||Do it now.|25|I am at home now.|27||
+if|conjunction|D|25||If you are cold, put on a coat.|25|If it rains, we will stay at home.|60||
+than|conjunction|D|26||She is taller than me.|26|I have more books than you.|26||
+new|adjective|P|26||I have a new car.|26|This dress is new.|65||
+place|noun|D|26||This is a cold place.|26|Put the book back in its place.|29||
+any|determiner|D|26||Do you have any money?|26|I do not have any brothers.|26||
+car|noun|P|26||We went there by car.|26|His car is red.|26||
+after|preposition|D|27||We eat after work.|27|After the rain, the sky is blue.|38||
+know|verb|D|27||Do you know my brother?|27|I know the answer.|108||
+would|verb|D|27||Would you like some milk?|27|He said he would come.|27||
+home|noun|F|27|the place where you live|I am going home.|27|Is your home near here?|98||
+eat|verb|A|27||We ate at home.|27|I eat rice every day.|73||
+think|verb|D|28||What do you think?|28|I think it will rain.|38||
+between|preposition|A|28||Come between two and three.|28|The ball is between the two boxes.|105||
+well|adverb|D|28||She swims well.|28|I do not feel well.|35||
+because|conjunction|D|28||I am happy because I have a dog.|28|He stayed at home because he was ill.|105||
+three|number|D|28||I have three cats.|28|Come at three.|28||
+could|verb|D|29||I could swim when I was five.|29|Could you help me?|64||
+every|determiner|D|29||I go to work every day.|29|Every child has a ball.|105||
+back|noun|P|29||Put your hand on your back.|29|Please come back soon.|65||
+may|verb|D|29||May I come in?|29|It may rain today.|44||
+five|number|D|29||I have five fingers on this hand.|29|The child is five.|29||
+find|verb|A|30||I cannot find my keys.|30|She found a ring on the road.|134||
+then|adverb|D|30||I was young then.|30|First eat, then sleep.|69||
+before|preposition|D|30||I have seen him before.|30|Wash your hands before you eat.|108||
+young|adjective|P|30||The children are young.|30|She is a young woman.|30||
+key|noun|P|30||This key opens the door.|30|I lost my key.|157||
+first|adjective|D|31||This is my first time here.|31|She was the first to arrive.|79||
+same|adjective|D|31||She said the same thing again.|31|We have the same name.|42||
+show|verb|A|31||Show me your hands.|31|This shows that he is right.|50||
+must|verb|D|31||I must go now.|31|You must wash your hands.|108||
+again|adverb|D|31||Please say it again.|31|He was late again.|83||
+life|noun|D|32||There is no life on the moon.|32|She had a long and happy life.|85||
+keep|verb|D|32||You can keep the money.|32|Keep walking.|48||
+blue|adjective|P|32||The sky is blue.|32|He has blue eyes.|48||
+sky|noun|P|32||The sky is blue.|32|There are no clouds in the sky.|111||
+moon|noun|P|32||There is no moon in the sky.|32|The moon is bright tonight.|168||
+through|preposition|A|33||The train goes through the mountain.|33|The bird flew in through the window.|79||
+group|noun|P|33||A group of children came in.|33|We worked in groups.|33||
+too|adverb|F|33|more than is good or needed; also, as well|This milk is too hot.|33|I want to come too.|33||
+train|noun|P|33||We went there by train.|33|The train is late.|83||
+mountain|noun|P|33||We went up the mountain.|33|The mountain is very high.|35||
+over|preposition|A|34||The bird flew over the house.|34|Put a cover over the food.|62||
+old|adjective|P|34||This is an old house.|34|My father is old.|66||
+number|noun|D|34||What is your phone number?|34|Pick a number from one to ten.|167||
+fly|verb|A|34||Birds fly.|34|We flew to the city.|86||
+bird|noun|P|34||Birds can fly.|34|A bird is in the tree.|81||
+high|adjective|P|35||The bird is high in the sky.|35|Prices are high.|68||
+should|verb|D|35||You should go to bed.|35|What should I do?|35||
+feel|verb|D|35||I feel cold.|35|Feel how soft this is.|105||
+each|determiner|F|35|every one of two or more things, seen one by one|Each child has an apple.|35|Each house has a garden.|126||
+happen|verb|D|35||What happened?|35|It happened last night.|44||
+country|noun|P|36||Which country are you from?|36|They live in the country.|36||
+different|adjective|F|36|not the same|The two brothers are very different.|36|I want a different colour.|174||
+under|preposition|A|36||The cat is under the table.|36|He has a bag under his arm.|74||
+together|adverb|F|36|with each other; in one group or place|We work together.|36|Put the pieces together.|66||
+table|noun|P|36||Sit at the table.|36|The food is on the table.|58||
+another|determiner|F|37|one more; or a different one|Can I have another apple?|37|Let us go to another shop.|116||
+without|preposition|F|37|not having something; not with someone|She left without me.|37|I drink milk without sugar.|67||
+point|noun|A|37||He pointed at the door.|37|The point of the knife is sharp.|130||
+turn|verb|A|37||Turn left.|37|She turned round.|49||
+left|noun|A|37||Turn left.|37|He writes with his left hand.|42||
+leave|verb|A|38||I leave home at eight.|38|Leave your bag here.|52||
+might|verb|D|38||It might rain.|38|I might go to the party.|149||
+few|determiner|F|38|a small number of; not many|Few people came.|38|I have a few friends here.|52||
+eight|number|D|38||I have eight books.|38|She gets up at eight.|38||
+rain|noun|P|38||It is raining.|38|The rain stopped.|86||
+end|noun|D|39||This is the end of the story.|39|The road ends here.|59||
+why|adverb|D|39||I do not know why he left.|39|Why are you sad?|100||
+little|adjective|F|39|small; also, not much|They have a little house.|39|There is little water left.|39|less, least|
+true|adjective|D|39||Is it true?|39|It is a true story.|39||
+story|noun|D|39||It is a true story.|39|Tell me a story.|56||
+last|adjective|F|40|coming at the end, after all others; also, the one before now|This is the last cake.|40|I saw him last week.|91||
+often|adverb|F|40|many times|I often go there.|40|How often do you see her?|40||
+never|adverb|F|40|not at any time|She has never been to the sea.|40|I never eat meat.|147||
+start|verb|D|40||It started to rain.|40|The class starts at nine.|180||
+follow|verb|F|40|to go or come after someone or something|Follow me.|40|The dog followed him home.|40||
+become|verb|F|41|to start to be something|It is becoming cold.|41|She became a doctor.|106||
+pay|verb|A|41||How much do they pay you?|41|I paid for the food.|58||
+word|noun|D|41||I did not say a word.|41|What does this word mean?|166||
+move|verb|A|41||Do not move!|41|We moved to a new house.|41||
+always|adverb|F|41|at all times; every time|She is always happy.|41|The sun always comes up in the east.|156||
+about|preposition|D|42||This book is about animals.|42|We talked about the weather.|129||
+write|verb|A|42||Write your name here.|42|She wrote a letter to her mother.|168||
+bring|verb|A|42||Bring me the book.|42|Please bring your friend.|52||
+name|noun|F|42|the word or words that someone or something is known by|What is your name?|42|My name is on the list.|82||
+animal|noun|F|42|a living thing that can move and feel, like a dog or a bird|Do you like animals?|42|A cow is a farm animal.|171||
+hold|verb|A|43||Hold my hand.|43|She is holding a baby.|94||
+play|verb|A|43||She plays music.|43|The children are playing in the garden.|126||
+room|noun|P|43||My room is small.|43|There is no room for the table.|43||
+body|noun|P|43||Water is good for the body.|43|Your body has many bones.|115||
+music|noun|D|43||She plays music every day.|43|I love music.|148||
+set|verb|F|44|to put something in a place; also, a group of things that go together|Set the table.|44|I bought a set of cups.|57||
+idea|noun|D|44||I have an idea.|44|That is a good idea.|44||
+today|adverb|F|44|on this day|It is hot today.|44|Today is my birthday.|114||
+night|noun|P|44||Good night!|44|I sleep at night.|69||
+away|adverb|A|44||Go away!|44|The bird flew away.|44||
+seem|verb|F|45|to give the idea of being something|She seems happy.|45|It seems to be broken.|56||
+off|preposition|A|45||Take your shoes off.|45|He fell off the chair.|61||
+system|noun|F|45|a group of parts or ideas that work together; also, a way of doing things|We need a new system.|45|The city has a good train system.|86||
+family|noun|P|45||I have a big family.|45|My family lives in the country.|45||
+shoe|noun|P|45||Put on your shoes.|45|These shoes are new.|45||
+run|verb|A|46||The children are running.|46|He ran to the station.|116||
+both|determiner|F|46|the two; one and also the other|Both my brothers are tall.|46|I like both of them.|46||
+begin|verb|F|46|to start|It began to rain.|46|The class begins at nine.|180||
+head|noun|P|46||She put a hat on her head.|46|He has a pain in his head.|146||
+change|verb|F|46|to become different, or to make something different|I want to change my name.|46|The weather changed.|129||
+hear|verb|D|47||Can you hear me?|47|I heard a noise.|121||
+able|adjective|F|47|when you can do something|She is able to swim.|47|He was not able to sleep.|69||
+person|noun|P|47||There is one person in the room.|47|She is a kind person.|122||
+four|number|D|47||I get up at four.|47|A cat has four legs.|96||
+line|noun|P|47||Draw a line.|47|We stood in a line.|47||
+possible|adjective|F|48|able to happen or be done|Is it possible to go by train?|48|Come as soon as possible.|65||
+around|preposition|A|48||We walked around the house.|48|There are trees all around the garden.|126||
+eye|noun|P|48||She has blue eyes.|48|Close your eyes.|79||
+let|verb|D|48||Let us go.|48|Let me help you.|64||
+walk|verb|A|48||Let us go for a walk.|48|I walk to school.|54||
+fact|noun|F|49|something that is true|It is a fact that the earth is round.|49|Tell me the facts.|56||
+allow|verb|F|49|to let someone do something|Are we allowed to sit here?|49|My mother does not allow dogs in the house.|55||
+round|adjective|P|49||They sat at a round table.|49|The ball is round.|105||
+earth|noun|P|49||The earth goes around the sun.|49|Put the seeds in the earth.|118||
+sun|noun|P|49||The sun is hot today.|49|The sun comes up in the east.|156||
+world|noun|F|50|the earth and all the people and things on it|She has been all over the world.|50|It is the biggest city in the world.|86||
+information|noun|F|50|facts about something or someone|I need some information about trains.|50|Where can I get more information?|50||
+member|noun|F|50|a person who is part of a group|All members must come.|50|She is a member of the team.|66||
+later|adverb|F|50|at a time after now or after then|See you later.|50|Two days later, he came back.|50||
+right|adjective|A|50||Turn right here.|50|Your answer is right.|108||

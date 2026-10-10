@@ -1,0 +1,100 @@
+social|adjective|F|having to do with people living together in a society; also, having to do with meeting people for pleasure|Poor housing is a social problem.|She has a full social life.
+society|noun|F|people living together in a group, with the same laws and ways of life|We live in a free society.|Old people are important in our society.
+soft|adjective|P||The bed is soft.|She has a soft voice.
+solid|adjective|F|hard, and not a liquid; also, with no space inside|Ice is solid water.|The table is made of solid wood.
+some|determiner|D||I want some water.|Some people like music.
+sometimes|adverb|F|at some times but not all the time|Sometimes I walk to work.|She sometimes forgets.
+son|noun|F|a male child of a mother or father|They have two sons.|My son is at school.
+song|noun|F|a short piece of music with words that you make with your voice|Her songs are beautiful.|My mother likes this song best.
+soon|adverb|F|in a short time from now|I will be home soon.|Come back soon.
+sort|noun|D||What sort of music do you like?|Sort the books by colour.
+sound|noun|F|something that you hear|I heard a strange sound.|That sounds good.
+south|noun|F|the direction on your right when you look at the place where the sun comes up|Birds go south in winter.|They live in the south of the country.
+space|noun|F|an area with nothing in it; also, the area outside the earth where the stars are|There is no space for my bag.|They sent a man into space.
+speak|verb|F|to say words; to talk|Can you speak more slowly?|She speaks two languages.
+special|adjective|F|different from what is normal, and often better or more important|Today is a special day.|This is a special room for children.
+spend|verb|F|to use money to buy things; also, to use time doing something|I spent all my money.|We spent the day at the sea.
+spoon|noun|P||Eat your rice with a spoon.|I eat with a spoon.
+spring|noun|F|the season after winter, when plants start to grow; also, a twisted piece of metal that goes back to its shape after you push it|Flowers come out in spring.|The bed has metal springs inside.
+square|noun|P||Draw a square.|There is a market in the town square.
+stage|noun|F|the high part of a room where people act or play music; also, one step in a process|The band is on the stage.|The first stage of the work is complete.
+stamp|noun|F|a small piece of paper you put on a letter to show you paid to send it|Put a stamp on the letter.|I need a stamp.
+stand|verb|A||Stand up, please.|She is standing by the door.
+star|noun|P||There are many stars in the sky.|The star is very bright.
+start|verb|D||The class starts at nine.|It started to rain.
+state|noun|F|the condition that someone or something is in; also, a country or a part of a country with its own government|The house was in a bad state.|The state pays for the school.
+statement|noun|F|something that someone says or writes, often in a public way|The police made a statement.|Is this statement true?
+station|noun|F|a building where trains stop so that people can get on and off|I will meet you at the station.|The station is near the river.
+stay|verb|F|to not leave a place; also, to live in a place for a short time|Stay here.|We stayed in a hotel.
+steel|noun|F|a very strong metal made from iron|The bridge is made of steel.|This knife is made of steel.
+stem|noun|F|the long, thin part of a plant that the leaves and flowers grow on|The flower has a long stem.|Cut the stems.
+step|noun|A||Take a step forward.|Mind the step.
+stick|noun|F|a long, thin piece of wood; also, to join one thing to another so that they stay together|The old man walks with a stick.|Stick the stamp on the letter.
+still|adverb|F|continuing until now; also, not moving|I am still at work.|Please stand still.
+stomach|noun|F|the part inside your body where food goes after you eat it|My stomach is full.|I have a pain in my stomach.
+stone|noun|F|the hard material that mountains and the ground are made of; also, a small piece of it|The house is made of stone.|He threw a stone into the river.
+stop|verb|F|to no longer move or do something|Stop the car!|The rain stopped.
+store|noun|F|a shop; also, a place where things are kept for later use|I bought it at the store.|Store the food in a cold place.
+story|noun|D||Tell me a story.|It is a true story.
+straight|adjective|F|going in one direction, without a curve or a bend|Draw a straight line.|Go straight on.
+strange|adjective|F|not normal; different from what you expect|I heard a strange noise.|It is strange that he is late.
+street|noun|F|a road in a town or city with houses or shops on its sides|I live on this street.|The street is quiet at night.
+stretch|verb|A||Stretch your arms.|The cat stretched.
+strong|adjective|F|having a lot of power or force|He is very strong.|There is a strong wind.
+structure|noun|F|the way the parts of something are put together; also, something that is built|The structure of the body is complex.|The bridge is a large structure.
+student|noun|F|a person who is learning at a school or a place of higher education|She is a science student.|The students are in the library.
+study|verb|F|to learn about a subject by reading, listening and thinking|She studies science.|I study every night.
+subject|noun|F|what something is about; also, a thing you learn about at school|What is the subject of the book?|My best subject is music.
+substance|noun|F|anything that is solid or liquid or like air|Water is a common substance.|What is this white substance?
+such|determiner|F|of this kind; also, so very|It is such a big dog!|It was such a nice day.
+sudden|adjective|F|happening quickly and when you do not expect it|There was a sudden noise.|His death was sudden.
+sugar|noun|P||Do you take sugar in your milk?|This cake has a lot of sugar.
+suggest|verb|F|to say an idea or plan for other people to think about|I suggest we go home.|What do you suggest?
+suggestion|noun|F|an idea or plan that someone suggests|Do you have any suggestions?|That is a good suggestion.
+summer|noun|F|the hottest season of the year|We go to the sea in summer.|It is very hot this summer.
+sun|noun|P||The sun is hot today.|The sun comes up in the east.
+support|verb|F|to hold something up so that it does not fall; also, to help someone or agree with them|Two strong pieces of wood support the roof.|My family supports my plan.
+sure|adjective|D||Are you sure?|I am sure he will come.
+surprise|noun|F|something that you did not expect; the feeling it gives you|The party was a surprise.|She was surprised to see me.
+sweet|adjective|F|tasting of sugar; also, pleasing|This cake is very sweet.|What a sweet baby!
+swim|verb|A||I can swim.|We swam in the sea.
+system|noun|F|a group of parts or ideas that work together; also, a way of doing things|The city has a good train system.|We need a new system.
+table|noun|P||The food is on the table.|Sit at the table.
+tail|noun|P||The dog moved its tail.|A cat has a long tail.
+take|verb|A||Take my hand.|Take the book to your teacher.
+talk|verb|A||We talked for hours.|Can I talk to you?
+tall|adjective|P||My brother is tall.|There is a tall tree in the garden.
+taste|noun|F|the quality of food or drink that you know with your tongue|This has a sweet taste.|Taste the cake before you add more sugar.
+tax|noun|F|money that people must pay to the government|We pay tax on the money we get from work.|The tax on wine is high.
+teach|verb|F|to help someone learn something by giving them knowledge|She teaches music.|My father taught me to swim.
+team|noun|F|a group of people who work or play together|Our team won.|She works in a small team.
+technology|noun|F|the use of science to make machines and other things that help people|Technology has changed our lives.|The company uses new technology.
+tell|verb|F|to give information to someone by talking|Tell me what you want.|She told me a story.
+ten|number|D||I have ten fingers.|Come at ten.
+tendency|noun|F|a way of acting or happening that is common for someone or something|He has a tendency to be late.|There is a tendency for prices to rise.
+test|noun|F|a set of questions to see what someone knows; also, something done to see if a thing works|I passed the test.|They tested the machine.
+than|conjunction|D||She is taller than me.|I have more books than you.
+thank|verb|F|to say that you are pleased because someone did something for you|Thank you very much.|I thanked him for his help.
+that|determiner|D||That is a girl.|That house is big.
+the|article|D||The dog is big.|The cat is small.
+then|adverb|D||I was young then.|First eat, then sleep.
+theory|noun|F|an idea that tries to explain why something happens; also, the general ideas of a subject|He has a theory about the fire.|In theory, it is simple.
+there|adverb|D||Put it there.|There is a cat on the roof.
+they|pronoun|D||They are boys.|They have a cat.
+thick|adjective|P||This book is thick.|The walls are thick.
+thin|adjective|P||He is very thin.|Cut the bread into thin pieces.
+thing|noun|D||What is that thing?|I have many things to do.
+think|verb|D||What do you think?|I think it will rain.
+this|determiner|D||This is a boy.|This house is small.
+though|conjunction|F|but; even if this is true|Though it was raining, we went out.|It is cold, though.
+thought|noun|F|an idea or opinion that you have in your mind|That is a good thought.|I had a thought.
+thousand|number|D||A thousand people came.|The city is a thousand years old.
+three|number|D||I have three cats.|Come at three.
+throat|noun|F|the part at the back of your mouth where food and air go down into your body|I have a pain in my throat.|My throat is dry.
+through|preposition|A||The bird flew in through the window.|The train goes through the mountain.
+throw|verb|A||Throw the ball to me.|She threw the paper away.
+ticket|noun|F|a small piece of paper that shows you have paid to travel or to go into a place|I bought a train ticket.|Show your ticket at the door.
+tight|adjective|F|very close to the body, with no space; also, held strongly in place|These shoes are tight.|Hold on tight.
+till|preposition|F|until|Wait till I come back.|The shop is open till nine.
+time|noun|D||What time is it?|I do not have time.
+tired|adjective|P||I am very tired.|She was tired after work.
