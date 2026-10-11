@@ -1,13 +1,16 @@
 // tts: text to speech for Basic 1000, backed by Kokoro-82M (open source, Apache-2.0)
 // running on a RunPod pod that is switched on only when audio needs to be made.
 //
-// Public:  GET or POST  ?text=...&voice=woman|man
+// Public:  GET or POST  ?text=...&voice=woman|man  (optional &voiceId=af_bella, one of CHOICES)
 //   -> { url } of an MP3 in the public "audio" bucket. Clips are cached forever by (voice, text),
 //      so a sentence is synthesised once. If it is not cached and the voice server is off: 503.
+//   Every clip has a short silence before and after it (see pad.ts), so the first word is heard.
 // Admin (header x-admin-token): action = status | pods | create | start | stop | delete | batch
 //
 // Secrets: RUNPOD_API_KEY (set by the owner in the Supabase dashboard).
 // SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are provided by the platform.
+
+import { padMp3 } from "./pad.ts";
 
 const RP = "https://rest.runpod.io/v1";
 const RUNPOD_KEY = Deno.env.get("RUNPOD_API_KEY") ?? "";
@@ -20,7 +23,15 @@ const PORT = 8880;
 const BUCKET = "audio";
 // the course's two voices; change a Kokoro voice here and new clips use it (old ones stay cached under the old id)
 const VOICES: Record<string, string> = { woman: "af_heart", man: "am_michael" };
+// voices on trial: the site shows one button per voice so the owner can pick the nicest
+const CHOICES: Record<string, string[]> = {
+  woman: ["af_heart", "af_bella", "bf_emma"],
+  man: ["am_michael", "am_fenrir", "bm_george"],
+};
+const ALLOWED = new Set(Object.values(CHOICES).flat());
 const SPEED = 0.92; // a little slower than normal, for learners
+const LEAD = 0.5, TAIL = 0.4; // seconds of silence before and after each clip
+const VERSION = "v2"; // folder for padded clips; bump it whenever the way clips are made changes
 
 const cors = {
   "Access-Control-Allow-Origin": "*",
@@ -59,7 +70,7 @@ const norm = (t: string) => t.replace(/\s+/g, " ").trim();
 const publicUrl = (path: string) => `${SB}/storage/v1/object/public/${BUCKET}/${path}`;
 
 async function clipPath(voiceId: string, text: string) {
-  return `${voiceId}/${(await sha256(voiceId + "|" + text)).slice(0, 32)}.mp3`;
+  return `${VERSION}/${voiceId}/${(await sha256(voiceId + "|" + text)).slice(0, 32)}.mp3`;
 }
 async function cached(path: string) {
   const r = await fetch(publicUrl(path), { method: "HEAD" });
@@ -72,7 +83,7 @@ async function synth(podId: string, voiceId: string, text: string, speed: number
     body: JSON.stringify({ model: "kokoro", voice: voiceId, input: text, response_format: "mp3", speed }),
   });
   if (!r.ok) throw new Error(`kokoro ${r.status}: ${(await r.text()).slice(0, 200)}`);
-  return new Uint8Array(await r.arrayBuffer());
+  return padMp3(new Uint8Array(await r.arrayBuffer()), LEAD, TAIL);
 }
 async function upload(path: string, bytes: Uint8Array) {
   const r = await fetch(`${SB}/storage/v1/object/${BUCKET}/${path}`, {
@@ -110,17 +121,27 @@ Deno.serve(async (req) => {
       const voice = String(q("voice") ?? "woman");
       if (!text || text.length > 300) return json({ error: "text must be 1 to 300 characters" }, 400);
       if (!VOICES[voice]) return json({ error: "voice must be woman or man" }, 400);
-      const path = await clipPath(VOICES[voice], text);
+      const asked = q("voiceId") ? String(q("voiceId")) : "";
+      if (asked && !ALLOWED.has(asked)) return json({ error: "voiceId must be one of " + [...ALLOWED].join(", ") }, 400);
+      const voiceId = asked || VOICES[voice];
+      const path = await clipPath(voiceId, text);
       if (await cached(path)) return json({ url: publicUrl(path), cached: true });
       const pod = await findPod().catch(() => null);
       if (!pod || pod.desiredStatus !== "RUNNING") return json({ status: "unavailable", message: "voice server is off" }, 503);
-      return json(await speak(text, VOICES[voice], pod.id));
+      return json(await speak(text, voiceId, pod.id));
     }
 
     if ((await sha256(req.headers.get("x-admin-token") ?? "")) !== ADMIN_HASH) return json({ error: "forbidden" }, 403);
     if (!RUNPOD_KEY) return json({ error: "RUNPOD_API_KEY secret is not set" }, 500);
 
     if (action === "pods") return json(await rp("/pods"));
+    if (action === "head") {
+      // first bytes of a stored clip, as hex, for checking its format
+      const r = await fetch(body.url ? String(body.url) : publicUrl(String(body.path)));
+      const b = new Uint8Array(await r.arrayBuffer());
+      const hex = (a: Uint8Array) => [...a].map((x) => x.toString(16).padStart(2, "0")).join("");
+      return json({ status: r.status, size: b.length, head: hex(b.slice(0, Number(body.n ?? 700))) });
+    }
     if (action === "create") return json(await rp("/pods", { method: "POST", body: JSON.stringify(body.spec) }));
     if (action === "start" || action === "stop" || action === "delete") {
       const pod = await findPod();
@@ -140,15 +161,18 @@ Deno.serve(async (req) => {
       return json({ pod: { id: pod.id, desiredStatus: pod.desiredStatus, costPerHr: pod.costPerHr, image: pod.imageName }, server });
     }
     if (action === "batch") {
-      // items: [{ text, voice: 'woman'|'man' } or { text, voiceId: 'af_bella' }], optional speed, force
+      // items: [{ text, voice: 'woman'|'man' } or { text, voiceId: 'af_bella' }], optional speed, force;
+      // body.all = true makes each item in every CHOICES voice of its gender
       const pod = await findPod();
       const podId = pod && pod.desiredStatus === "RUNNING" ? pod.id : null;
       const out = [];
       for (const it of body.items ?? []) {
         const text = norm(String(it.text ?? ""));
-        const voiceId = it.voiceId ?? VOICES[it.voice ?? "woman"];
-        try { out.push({ text, voiceId, ...(await speak(text, voiceId, podId, it.speed ?? SPEED, !!it.force)) }); }
-        catch (e) { out.push({ text, voiceId, error: String(e) }); }
+        const ids: string[] = it.voiceId ? [it.voiceId] : body.all ? CHOICES[it.voice ?? "woman"] : [VOICES[it.voice ?? "woman"]];
+        for (const voiceId of ids) {
+          try { out.push({ text, voiceId, ...(await speak(text, voiceId, podId, it.speed ?? SPEED, !!it.force)) }); }
+          catch (e) { out.push({ text, voiceId, error: String(e) }); }
+        }
       }
       return json({ results: out });
     }

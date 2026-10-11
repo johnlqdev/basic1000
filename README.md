@@ -40,9 +40,11 @@ From this folder: `npx vercel --prod` (Vercel project `basic-1000`). Only `index
 
 Voices come from **Kokoro-82M** (open source, Apache-2.0), run with the Kokoro-FastAPI server on a RunPod CPU pod named `basic1000-tts` (about $0.12 an hour, only while it is running). Woman: `af_heart`. Man: `am_michael`. Speed 0.92.
 
-- Every clip is made once and kept in the public Supabase bucket `audio`, at `{voice}/{first 32 hex of sha256(voice + "|" + text)}.mp3`. The site works out that address itself, so stored clips play with no server call.
-- Ask for any text: `GET https://duptugctgzemfczbtvgj.supabase.co/functions/v1/tts?text=I%20am%20a%20woman.&voice=woman` returns `{ "url": ... }`. A new text is made only while the pod is running; otherwise the reply is 503 and the site falls back to the browser's own voice.
+- Every clip is made once and kept in the public Supabase bucket `audio`, at `v2/{voice}/{first 32 hex of sha256(voice + "|" + text)}.mp3`. The site works out that address itself, so stored clips play with no server call.
+- Every clip has 0.5 s of silence before the voice and 0.4 s after (`supabase/functions/tts/pad.ts`). Without it, many speakers and headphones swallow the first word while they wake up. The old unpadded clips (folders without `v2/`) are no longer used.
+- **Voice trial (test version):** each word and sentence shows three buttons. Woman: Heart (`af_heart`), Bella (`af_bella`), Emma (`bf_emma`, British). Man: Michael (`am_michael`), Fenrir (`am_fenrir`), George (`bm_george`, British). Once two voices are chosen, set them in `VOICES` and trim `CHOICES` to one each, in both `audio.js` and the tts function.
+- Ask for any text: `GET https://duptugctgzemfczbtvgj.supabase.co/functions/v1/tts?text=I%20am%20a%20woman.&voice=woman` returns `{ "url": ... }` (add `&voiceId=af_bella` for one of the trial voices). A new text is made only while the pod is running; otherwise the reply is 503 and the site falls back to the browser's own voice.
 - Admin actions need the `x-admin-token` header (the token is in the Supabase vault as `tts_admin_token`): `status`, `start`, `stop`, `batch`, `pods`, `create`, `delete`.
-- To add clips for new steps: start the pod, send `python3 tools/audio_items.py 11 20` as a `batch` (about 15 items per call), then stop the pod.
+- To add clips for new steps: start the pod, send `python3 tools/audio_items.py 11 20` as a `batch` (about 10 items per call; add `"all": true` to make every trial voice), then stop the pod.
 - To change a voice, edit `VOICES` in both `supabase/functions/tts/index.ts` and `audio.js`, redeploy both, and make the clips again.
 - The function reads the RunPod key from the Supabase secret `RUNPOD_API_KEY`.

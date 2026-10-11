@@ -155,14 +155,15 @@ h1, h2, h3 { text-wrap: balance; margin: 0; font-weight: 400; }
 .lk.ahead { border-bottom: 2px dashed var(--lock); }
 .lk:hover { background: var(--marker-soft); }
 .forms { font-size: .95rem; }
-.say { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; flex: none; border-radius: 999px; border: 1px solid var(--rule); background: var(--card); color: var(--tab); cursor: pointer; vertical-align: middle; padding: 0; }
-.say svg { width: 18px; height: 18px; }
+.says { display: inline-flex; gap: 6px; flex-wrap: wrap; vertical-align: middle; }
+.say { display: inline-flex; align-items: center; gap: 5px; height: 30px; padding: 0 10px 0 8px; border-radius: 999px; border: 1px solid var(--rule); background: var(--card); color: var(--tab); cursor: pointer; font: inherit; font-size: .78rem; font-weight: 600; line-height: 1; }
+.say svg { width: 15px; height: 15px; flex: none; }
 .say:hover { background: var(--tab-soft); }
 .say.playing { background: var(--tab); color: var(--card); border-color: var(--tab); }
-.entry-head .say { align-self: center; width: 42px; height: 42px; }
-.entry-head .say svg { width: 22px; height: 22px; }
-.examples li .say { width: 30px; height: 30px; margin-left: 8px; }
-.examples li .say svg { width: 16px; height: 16px; }
+.entry-head .says { align-self: center; }
+.examples li .says { margin-left: 8px; }
+.examples li .say { height: 26px; font-size: .72rem; padding: 0 8px 0 6px; }
+.examples li .say svg { width: 13px; height: 13px; }
 .lesson-nav { display: flex; justify-content: space-between; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
 
 /* ---------- quiz ---------- */
