@@ -1,11 +1,17 @@
-// tts: text to speech for Basic 1000, backed by Kokoro-82M (open source, Apache-2.0)
-// running on a RunPod pod that is switched on only when audio needs to be made.
+// tts: text to speech for Basic 1000, backed by open voice models running on RunPod pods
+// that are switched on only when audio needs to be made.
 //
 // Public:  GET or POST  ?text=...&voice=woman|man  (optional &voiceId=af_bella, one of CHOICES)
 //   -> { url } of an MP3 in the public "audio" bucket. Clips are cached forever by (voice, text),
 //      so a sentence is synthesised once. If it is not cached and the voice server is off: 503.
 //   Every clip has a short silence before and after it (see pad.ts), so the first word is heard.
-// Admin (header x-admin-token): action = status | pods | create | start | stop | delete | batch
+// Admin (header x-admin-token): action = status | pods | create | start | stop | delete | batch | head
+//   (start/stop/delete/status take "pod": kokoro | voxtral | lab; default kokoro)
+//
+// Voices come from several open models, each on its own RunPod pod (see VOICE_SPECS):
+//   kokoro  Kokoro-82M on CPU (Kokoro-FastAPI)
+//   voxtral Mistral Voxtral 4B TTS on GPU (vLLM-Omni), preset voices
+//   lab     Breeze TTS 2 and Qwen3-TTS on GPU (tools/tts-lab/lab_server.py)
 //
 // Secrets: RUNPOD_API_KEY (set by the owner in the Supabase dashboard).
 // SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are provided by the platform.
@@ -18,8 +24,11 @@ const SB = Deno.env.get("SUPABASE_URL") ?? "";
 const SERVICE = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "";
 // sha256 of the admin token (the token itself is kept in the database vault, not in code)
 const ADMIN_HASH = "fd386d8929b80a4bcadc5ada75095c854d0efbb50fb431ed975786cd6ad36fc8";
-const POD_NAME = "basic1000-tts";
-const PORT = 8880;
+const PODS: Record<string, { name: string; port: number }> = {
+  kokoro: { name: "basic1000-tts", port: 8880 },
+  voxtral: { name: "basic1000-voxtral", port: 8091 },
+  lab: { name: "basic1000-lab", port: 8880 },
+};
 const BUCKET = "audio";
 // the course's two voices; change a Kokoro voice here and new clips use it (old ones stay cached under the old id)
 const VOICES: Record<string, string> = { woman: "af_heart", man: "am_michael" };
@@ -28,7 +37,33 @@ const CHOICES: Record<string, string[]> = {
   woman: ["af_heart", "af_bella", "bf_emma"],
   man: ["am_michael", "am_fenrir", "bm_george"],
 };
-const ALLOWED = new Set(Object.values(CHOICES).flat());
+// every voice the function can make, and how
+const US_TEACHER = "speaking slowly and clearly, like a patient English teacher";
+const UK_ACCENT = "with standard southern British pronunciation, speaking slowly and clearly";
+const VOICE_SPECS: Record<string, { pod: string; req?: Record<string, unknown> }> = {
+  af_heart: { pod: "kokoro" }, af_bella: { pod: "kokoro" }, bf_emma: { pod: "kokoro" },
+  am_michael: { pod: "kokoro" }, am_fenrir: { pod: "kokoro" }, bm_george: { pod: "kokoro" },
+  vx_neutral_f: { pod: "voxtral", req: { voice: "neutral_female" } },
+  vx_casual_f: { pod: "voxtral", req: { voice: "casual_female" } },
+  vx_cheerful_f: { pod: "voxtral", req: { voice: "cheerful_female" } },
+  vx_neutral_m: { pod: "voxtral", req: { voice: "neutral_male" } },
+  vx_casual_m: { pod: "voxtral", req: { voice: "casual_male" } },
+  qw_ryan: { pod: "lab", req: { engine: "qwen_custom", speaker: "Ryan" } },
+  qw_aiden: { pod: "lab", req: { engine: "qwen_custom", speaker: "Aiden" } },
+  qw_lily: { pod: "lab", req: { engine: "qwen_design", key: "lily", seed: 11,
+    instruct: `A friendly American woman in her thirties with a clear, warm voice, ${US_TEACHER}.` } },
+  qw_nora: { pod: "lab", req: { engine: "qwen_design", key: "nora", seed: 12,
+    instruct: `A calm British woman in her thirties with a clear, gentle voice, ${UK_ACCENT}.` } },
+  br_clara: { pod: "lab", req: { engine: "breeze", key: "clara", seed: 21,
+    instruct: `A friendly American woman in her thirties with a clear, warm voice, ${US_TEACHER}.` } },
+  br_grace: { pod: "lab", req: { engine: "breeze", key: "grace", seed: 22,
+    instruct: `A calm British woman in her thirties with a clear, gentle voice, ${UK_ACCENT}.` } },
+  br_daniel: { pod: "lab", req: { engine: "breeze", key: "daniel", seed: 23,
+    instruct: `A friendly American man in his thirties with a clear, warm voice, ${US_TEACHER}.` } },
+  br_oliver: { pod: "lab", req: { engine: "breeze", key: "oliver", seed: 24,
+    instruct: `A calm British man in his thirties with a clear voice, ${UK_ACCENT}.` } },
+};
+const ALLOWED = new Set(Object.keys(VOICE_SPECS));
 const SPEED = 0.92; // a little slower than normal, for learners
 const LEAD = 0.5, TAIL = 0.4; // seconds of silence before and after each clip
 const VERSION = "v2"; // folder for padded clips; bump it whenever the way clips are made changes
@@ -58,14 +93,14 @@ async function rp(path: string, init: RequestInit = {}) {
 }
 
 // deno-lint-ignore no-explicit-any
-async function findPod(): Promise<any | null> {
+async function findPod(key = "kokoro"): Promise<any | null> {
   const r = await rp("/pods");
   if (r.status !== 200) throw new Error(`runpod list ${r.status}: ${JSON.stringify(r.body).slice(0, 300)}`);
   // deno-lint-ignore no-explicit-any
   const list: any[] = Array.isArray(r.body) ? r.body : ((r.body as any)?.pods ?? []);
-  return list.find((p) => p.name === POD_NAME) ?? null;
+  return list.find((p) => p.name === PODS[key].name) ?? null;
 }
-const podUrl = (id: string) => `https://${id}-${PORT}.proxy.runpod.net`;
+const podUrl = (id: string, key = "kokoro") => `https://${id}-${PODS[key].port}.proxy.runpod.net`;
 const norm = (t: string) => t.replace(/\s+/g, " ").trim();
 const publicUrl = (path: string) => `${SB}/storage/v1/object/public/${BUCKET}/${path}`;
 
@@ -77,12 +112,21 @@ async function cached(path: string) {
   return r.ok;
 }
 async function synth(podId: string, voiceId: string, text: string, speed: number) {
-  const r = await fetch(podUrl(podId) + "/v1/audio/speech", {
+  const spec = VOICE_SPECS[voiceId];
+  if (!spec) throw new Error("unknown voice " + voiceId);
+  const post = (path: string, body: unknown) => fetch(podUrl(podId, spec.pod) + path, {
     method: "POST",
     headers: { "content-type": "application/json" },
-    body: JSON.stringify({ model: "kokoro", voice: voiceId, input: text, response_format: "mp3", speed }),
+    body: JSON.stringify(body),
+    signal: AbortSignal.timeout(140000),
   });
-  if (!r.ok) throw new Error(`kokoro ${r.status}: ${(await r.text()).slice(0, 200)}`);
+  const r = spec.pod === "kokoro"
+    ? await post("/v1/audio/speech", { model: "kokoro", voice: voiceId, input: text, response_format: "mp3", speed })
+    : spec.pod === "voxtral"
+    ? await post("/v1/audio/speech", { model: "mistralai/Voxtral-4B-TTS-2603", input: text, language: "English",
+      response_format: "mp3", ...spec.req })
+    : await post("/tts", { ...spec.req, text });
+  if (!r.ok) throw new Error(`${spec.pod} ${r.status}: ${(await r.text()).slice(0, 200)}`);
   return padMp3(new Uint8Array(await r.arrayBuffer()), LEAD, TAIL);
 }
 async function upload(path: string, bytes: Uint8Array) {
@@ -126,7 +170,7 @@ Deno.serve(async (req) => {
       const voiceId = asked || VOICES[voice];
       const path = await clipPath(voiceId, text);
       if (await cached(path)) return json({ url: publicUrl(path), cached: true });
-      const pod = await findPod().catch(() => null);
+      const pod = await findPod(VOICE_SPECS[voiceId].pod).catch(() => null);
       if (!pod || pod.desiredStatus !== "RUNNING") return json({ status: "unavailable", message: "voice server is off" }, 503);
       return json(await speak(text, voiceId, pod.id));
     }
@@ -143,34 +187,43 @@ Deno.serve(async (req) => {
       return json({ status: r.status, size: b.length, head: hex(b.slice(0, Number(body.n ?? 700))) });
     }
     if (action === "create") return json(await rp("/pods", { method: "POST", body: JSON.stringify(body.spec) }));
+    const podKey = PODS[String(body.pod ?? "kokoro")] ? String(body.pod ?? "kokoro") : "kokoro";
     if (action === "start" || action === "stop" || action === "delete") {
-      const pod = await findPod();
-      if (!pod) return json({ error: "no pod named " + POD_NAME }, 404);
+      const pod = await findPod(podKey);
+      if (!pod) return json({ error: "no pod named " + PODS[podKey].name }, 404);
       return json(action === "delete"
         ? await rp(`/pods/${pod.id}`, { method: "DELETE" })
         : await rp(`/pods/${pod.id}/${action}`, { method: "POST" }));
     }
     if (action === "status") {
-      const pod = await findPod();
+      const pod = await findPod(podKey);
       if (!pod) return json({ pod: null });
       let server: unknown = null;
       try {
-        const r = await fetch(podUrl(pod.id) + "/v1/audio/voices", { signal: AbortSignal.timeout(8000) });
-        server = r.ok ? { ok: true, voices: ((await r.json())?.voices ?? []).length } : { ok: false, status: r.status };
+        const r = await fetch(podUrl(pod.id, podKey) + (podKey === "lab" ? "/status" : "/v1/audio/voices"),
+          { signal: AbortSignal.timeout(8000) });
+        server = r.ok ? { ok: true, body: await r.json() } : { ok: false, status: r.status, text: (await r.text()).slice(0, 300) };
       } catch (e) { server = { ok: false, error: String(e) }; }
       return json({ pod: { id: pod.id, desiredStatus: pod.desiredStatus, costPerHr: pod.costPerHr, image: pod.imageName }, server });
     }
     if (action === "batch") {
       // items: [{ text, voice: 'woman'|'man' } or { text, voiceId: 'af_bella' }], optional speed, force;
       // body.all = true makes each item in every CHOICES voice of its gender
-      const pod = await findPod();
-      const podId = pod && pod.desiredStatus === "RUNNING" ? pod.id : null;
+      const podIds: Record<string, string | null> = {};
+      const podFor = async (voiceId: string) => {
+        const key = VOICE_SPECS[voiceId]?.pod ?? "kokoro";
+        if (!(key in podIds)) {
+          const pod = await findPod(key);
+          podIds[key] = pod && pod.desiredStatus === "RUNNING" ? pod.id : null;
+        }
+        return podIds[key];
+      };
       const out = [];
       for (const it of body.items ?? []) {
         const text = norm(String(it.text ?? ""));
         const ids: string[] = it.voiceId ? [it.voiceId] : body.all ? CHOICES[it.voice ?? "woman"] : [VOICES[it.voice ?? "woman"]];
         for (const voiceId of ids) {
-          try { out.push({ text, voiceId, ...(await speak(text, voiceId, podId, it.speed ?? SPEED, !!it.force)) }); }
+          try { out.push({ text, voiceId, ...(await speak(text, voiceId, await podFor(voiceId), it.speed ?? SPEED, !!it.force)) }); }
           catch (e) { out.push({ text, voiceId, error: String(e) }); }
         }
       }
