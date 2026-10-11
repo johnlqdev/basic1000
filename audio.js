@@ -1,5 +1,5 @@
 // Basic 1000 audio: plays a word or sentence in a woman's or man's voice.
-// Clips are made once by the "tts" Supabase function (Kokoro-82M, open source) and kept in the
+// Clips are made once by the "tts" Supabase function (open voice models on RunPod) and kept in the
 // public "audio" bucket. The clip address is computed here from the text, so stored clips play
 // straight away with no server call. Order: stored clip -> ask the function -> browser voice.
 // Every clip starts and ends with a little silence, so the first word is not swallowed.
@@ -14,6 +14,24 @@
   var CHOICES = { woman: ['af_heart', 'af_bella', 'bf_emma'], man: ['am_michael', 'am_fenrir', 'bm_george'] };
   var NAMES = { af_heart: 'Heart', af_bella: 'Bella', bf_emma: 'Emma', am_michael: 'Michael', am_fenrir: 'Fenrir', bm_george: 'George' };
   var VERSION = 'v2';
+  // voice lab (test version, step 1 only): larger open models, grouped by model, to compare by ear
+  var LAB = {
+    woman: [
+      ['Voxtral', [['vx_neutral_f', 'Neutral'], ['vx_casual_f', 'Casual'], ['vx_cheerful_f', 'Cheerful']]],
+      ['Breeze', [['br_clara', 'Clara (US)'], ['br_grace', 'Grace (UK)']]],
+      ['Qwen3', [['qw_lily', 'Lily (US)'], ['qw_nora', 'Nora (UK)']]],
+      ['Kokoro', [['af_heart', 'Heart']]],
+    ],
+    man: [
+      ['Voxtral', [['vx_neutral_m', 'Neutral'], ['vx_casual_m', 'Casual']]],
+      ['Breeze', [['br_daniel', 'Daniel (US)'], ['br_oliver', 'Oliver (UK)']]],
+      ['Qwen3', [['qw_ryan', 'Ryan'], ['qw_aiden', 'Aiden']]],
+      ['Kokoro', [['am_michael', 'Michael']]],
+    ],
+  };
+  var KNOWN = {};
+  CHOICES.woman.concat(CHOICES.man).forEach(function (id) { KNOWN[id] = 1; });
+  ['woman', 'man'].forEach(function (g) { LAB[g].forEach(function (m) { m[1].forEach(function (v) { KNOWN[v[0]] = 1; NAMES[v[0]] = NAMES[v[0]] || v[1]; }); }); });
 
   var MALE = 'man|boy|father|brother|son|husband';
   var FEMALE = 'woman|girl|mother|sister|daughter|wife';
@@ -78,7 +96,7 @@
     stop();
     if (again) return Promise.resolve(); // a second tap stops it
     voice = VOICES[voice] ? voice : 'woman';
-    if (voiceId && CHOICES[voice].indexOf(voiceId) < 0) voiceId = '';
+    if (voiceId && !KNOWN[voiceId]) voiceId = '';
     if (btn) { btn.classList.add('playing'); playing = btn; }
     var done = function () { if (btn && playing === btn) { btn.classList.remove('playing'); playing = null; } };
     return clipUrl(text, voice, voiceId)
@@ -90,15 +108,24 @@
 
   // speaker buttons, one per trial voice, each labelled with the voice's name;
   // the page wires every [data-say] button through one click listener
+  var esc = function (x) { return String(x).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;'); };
+  var ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/>' +
+    '<path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
+  function pill(text, voice, id, name, label) {
+    return '<button class="say" type="button" data-say="' + esc(text) + '" data-voice="' + voice + '" data-vid="' + id +
+      '" aria-label="' + esc((label || 'Listen') + ', ' + name) + '">' + ICON + '<span>' + esc(name) + '</span></button>';
+  }
   function button(text, voice, label) {
-    var esc = function (x) { return String(x).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;'); };
     voice = CHOICES[voice] ? voice : 'woman';
-    var icon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/>' +
-      '<path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
-    return '<span class="says">' + CHOICES[voice].map(function (id) {
-      return '<button class="say" type="button" data-say="' + esc(text) + '" data-voice="' + voice + '" data-vid="' + id +
-        '" aria-label="' + esc((label || 'Listen') + ', ' + NAMES[id] + '’s voice') + '">' + icon + '<span>' + NAMES[id] + '</span></button>';
-    }).join('') + '</span>';
+    return '<span class="says">' + CHOICES[voice].map(function (id) { return pill(text, voice, id, NAMES[id], label); }).join('') + '</span>';
+  }
+  // the voice lab: one row per model, one button per voice
+  function labButtons(text, voice, label) {
+    voice = LAB[voice] ? voice : 'woman';
+    return '<div class="lab">' + LAB[voice].map(function (m) {
+      return '<div class="lab-row"><span class="lab-model">' + m[0] + '</span><span class="says">' +
+        m[1].map(function (v) { return pill(text, voice, v[0], v[1], label + ', ' + m[0]); }).join('') + '</span></div>';
+    }).join('') + '</div>';
   }
   document.addEventListener('click', function (e) {
     var b = e.target.closest && e.target.closest('[data-say]');
@@ -107,5 +134,5 @@
     say(b.dataset.say, b.dataset.voice, b, b.dataset.vid);
   });
 
-  window.BASIC_AUDIO = { say: say, stop: stop, voiceFor: voiceFor, clipUrl: clipUrl, button: button, VOICES: VOICES, CHOICES: CHOICES, NAMES: NAMES };
+  window.BASIC_AUDIO = { say: say, stop: stop, voiceFor: voiceFor, clipUrl: clipUrl, button: button, labButtons: labButtons, LAB: LAB, VOICES: VOICES, CHOICES: CHOICES, NAMES: NAMES };
 })();

@@ -17,6 +17,7 @@ Live site: https://basic-1000.vercel.app
 | `tools/build_data.py` | Rebuilds the four data files from `content/course.json` |
 | `supabase/migrations/` | Database table and security rules for saved progress; the public `audio` bucket |
 | `supabase/functions/tts/index.ts` | Text-to-speech function: text + voice in, MP3 address out |
+| `tools/tts-lab/lab_server.py` | Voice lab server for the GPU pod: Breeze TTS 2 and Qwen3-TTS |
 | `tools/audio_items.py` | Lists the clips a range of steps needs, as a request for the tts function |
 | `.vercelignore` | Keeps everything except the website files out of the Vercel deployment |
 
@@ -48,3 +49,19 @@ Voices come from **Kokoro-82M** (open source, Apache-2.0), run with the Kokoro-F
 - To add clips for new steps: start the pod, send `python3 tools/audio_items.py 11 20` as a `batch` (about 10 items per call; add `"all": true` to make every trial voice), then stop the pod.
 - To change a voice, edit `VOICES` in both `supabase/functions/tts/index.ts` and `audio.js`, redeploy both, and make the clips again.
 - The function reads the RunPod key from the Supabase secret `RUNPOD_API_KEY`.
+
+### Voice lab (test version, step 1 only)
+
+Step 1 shows one row of buttons per model, to compare larger open models by ear:
+
+| Model | Voices | Runs on | Licence of the weights |
+|---|---|---|---|
+| Voxtral 4B TTS (Mistral) | Neutral, Casual, Cheerful (women); Neutral, Casual (men) | pod `basic1000-voxtral`, image `vllm/vllm-omni:v0.30.0` | CC BY-NC 4.0 (non-commercial) |
+| Breeze TTS 2 (BreezeBlue) | Clara (US), Grace (UK), Daniel (US), Oliver (UK), each designed from a description | pod `basic1000-lab` | research and non-commercial only |
+| Qwen3-TTS 1.7B (Alibaba) | Lily (US), Nora (UK) designed; Ryan, Aiden presets | pod `basic1000-lab` | Apache-2.0 |
+| Kokoro 82M | Heart, Michael (for comparison) | pod `basic1000-tts` | Apache-2.0 |
+
+- The voices and their descriptions are in `VOICE_SPECS` in the tts function; the buttons are in `LAB` in `audio.js`.
+- A designed voice is made once from its description (the model reads a fixed sentence in that voice), then every clip is cloned from that recording so the speaker stays the same.
+- The lab pod downloads `tools/tts-lab/lab_server.py` from GitHub when it starts and installs everything itself (about 90 seconds). Its progress is at `{"action":"status","pod":"lab"}`.
+- Start, stop or check a pod with the admin actions and `"pod": "voxtral"` or `"pod": "lab"`. GPU pods cost about $0.60 to $0.90 an hour while running.
