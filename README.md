@@ -9,6 +9,7 @@ Live site: https://basic-1000.vercel.app
 | Path | What it is |
 |---|---|
 | `index.html` | The whole website: layout, lessons, quizzes, review, dictionary and Supabase sign-in |
+| `grammar.js` | Grammar: the topic list and the lessons (only "Am, is, are" so far) |
 | `figures.js` | Animated stick-figure scenes (D3), one per word; all of Unit 1 (steps 1-10) so far |
 | `audio.js` | Speaker buttons: plays each word and example (Daniel, or Sarah when a woman is speaking); slow buttons with highlighting |
 | `pron.js` | IPA for the words with slow audio, split into sound groups (which letters spell which sound) |
@@ -26,6 +27,18 @@ Live site: https://basic-1000.vercel.app
 | `tools/pron/` | Builds `pron.js` (IPA and sound groups) from the CMU Pronouncing Dictionary plus hand entries |
 | `content/jobs/` | Job lists the tts function reads from GitHub during a long audio run |
 | `.vercelignore` | Keeps everything except the website files out of the Vercel deployment |
+
+## Courses menu and grammar
+
+The menu on the left (a strip at the top on phones) lists the courses: Basic 1000, Grammar, and Basic 2000 and Basic 3000, which are marked "Coming later" and cannot be opened yet. The Path, Review and Dictionary tabs belong to Basic 1000 and are hidden in Grammar.
+
+Grammar (`grammar.js`) is a contents page of topics in learning order; only the first, "Am, is, are", is written so far. A lesson has three parts:
+
+1. **See it:** the sentence machine. Pick who the sentence is about (I, you, he, she, it, we, they), then say it, say it with *not*, or ask it. The word tiles glide to their new places, so in a question "is" visibly jumps to the front. A question also shows its short answers ("Yes, she is. No, she is not.").
+2. **The rule:** I → am; he, she, it → is; you, we, they → are. Tapping a word sends it to the machine.
+3. **Try it:** six exercises: fill the gap, put the words in order, find and fix the wrong word, and make a sentence with *not* or a question. The best score is saved with the learner's progress (`grammar` in the progress record).
+
+Every example uses only words from steps 1-6 (plus their plural forms).
 
 ## How learners move through the course
 

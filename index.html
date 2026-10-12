@@ -307,6 +307,97 @@ h1, h2, h3 { text-wrap: balance; margin: 0; font-weight: 400; }
 .sign-form { display: grid; gap: 8px; margin-top: 16px; }
 .sign-form .search { flex: none; width: 100%; }
 @media (max-width: 520px) { .brand small { display: none; } .top-in { gap: 8px; } .nav button { padding: 6px 8px; } .acct { padding: 6px 10px; } }
+
+/* ---------- course menu: Basic 1000, Grammar, ... ---------- */
+.courses { max-width: 880px; margin: 0 auto; padding: 14px 20px 0; display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; }
+.course { flex: none; display: flex; flex-direction: column; align-items: flex-start; gap: 1px; text-align: left; cursor: pointer;
+  padding: 7px 14px; border-radius: 10px; border: 1px solid var(--rule); background: transparent; color: var(--muted); }
+.course b { font-weight: 600; font-size: .95rem; color: var(--ink); }
+.course span { display: none; font-size: .8rem; }
+.course[aria-current="page"] { background: var(--card); border-color: var(--tab); box-shadow: inset 3px 0 0 var(--tab); }
+.course[aria-current="page"] b { color: var(--tab); }
+.course:hover:not(:disabled) b { color: var(--tab); }
+.course:disabled { cursor: default; border-style: dashed; }
+.course:disabled b { color: var(--muted); font-weight: 500; }
+@media (min-width: 1100px) {
+  .top-in { max-width: 1160px; }
+  .frame { display: grid; grid-template-columns: 200px minmax(0, 880px); gap: 40px; max-width: 1160px; margin: 0 auto; padding-inline: 20px; }
+  .frame .shell { padding-inline: 0; margin: 0; max-width: none; }
+  .courses { flex-direction: column; gap: 4px; padding: 26px 0 0; margin: 0; position: sticky; top: 64px; align-self: start; overflow: visible; }
+  .course { width: 100%; border: 0; border-left: 3px solid var(--rule); border-radius: 0 10px 10px 0; padding: 10px 14px; }
+  .course span { display: block; }
+  .course[aria-current="page"] { border-left-color: var(--tab); box-shadow: none; }
+  .course:disabled { border-left-style: dotted; }
+}
+
+/* ---------- grammar ---------- */
+.g-head { margin-block: 26px 22px; }
+.g-title { font-family: var(--display); font-weight: 400; font-size: clamp(2.4rem, 6vw, 3.4rem); line-height: 1; margin: 0 0 10px; }
+.g-lede { color: var(--muted); max-width: 52ch; margin: 0; font-size: 1.05rem; }
+.g-contents { list-style: none; margin: 0; padding: 0; background: var(--card); border: 1px solid var(--rule); border-radius: 16px; box-shadow: var(--shadow); }
+.g-topic { display: grid; grid-template-columns: 2.2rem minmax(0, 1fr) auto auto; align-items: center; gap: 4px 14px; padding: 14px 20px; border-top: 1px solid var(--rule); }
+.g-topic:first-child { border-top: 0; }
+.g-no { font-family: var(--display); font-size: 1.5rem; color: var(--muted); }
+.g-name { display: flex; flex-direction: column; min-width: 0; }
+.g-name b { font-family: var(--display); font-weight: 400; font-size: 1.35rem; }
+.g-name .muted { font-size: .9rem; }
+.g-topic:not(.ready) .g-name b, .g-topic:not(.ready) .g-no { color: var(--lock); }
+.g-topic.ready .g-no { color: var(--tab); }
+.g-soon { font-size: .85rem; }
+.g-best { font-size: .9rem; color: var(--good); }
+.g-lesson header { margin-block: 6px 26px; }
+.g-part { margin-bottom: 34px; }
+.g-part-title { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 400; font-size: 1.6rem; margin: 0 0 6px; }
+.g-part-title .num { display: grid; place-items: center; width: 30px; height: 30px; border-radius: 999px; background: var(--tab); color: var(--tab-ink); font: 600 .9rem/1 var(--body); }
+.g-note { font-size: .92rem; margin: 0 0 14px; max-width: 60ch; }
+/* the sentence machine */
+.gm { background: var(--card); border: 1px solid var(--rule); border-radius: 16px; box-shadow: var(--shadow); padding: 18px clamp(16px, 4vw, 30px) 20px; }
+.gm-who, .g-who { display: flex; flex-wrap: wrap; gap: 6px; }
+.gm-chip { padding: 5px 13px; border-radius: 999px; border: 1px solid var(--rule); background: var(--paper); cursor: pointer; font-size: .95rem; }
+.gm-chip:hover { border-color: var(--tab); }
+.gm-chip[aria-pressed="true"] { background: var(--tab); border-color: var(--tab); color: var(--tab-ink); }
+.gm-stage { display: flex; align-items: center; gap: 14px; min-height: 120px; margin-block: 16px 4px; padding: 18px 16px; border-radius: 12px;
+  background: repeating-linear-gradient(0deg, transparent 0 31px, color-mix(in srgb, var(--rule) 60%, transparent) 31px 32px), var(--paper); }
+.gm-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px 10px; flex: 1; perspective: 400px; }
+.gm-tile { display: inline-block; font-family: var(--display); font-size: clamp(1.45rem, 5vw, 2.5rem); line-height: 1.1; padding: 6px 14px 8px; border-radius: 10px;
+  border: 1px solid var(--rule); background: var(--card); color: var(--ink); will-change: transform; }
+.gm-s { background: var(--tab-soft); border-color: transparent; color: var(--tab); }
+.gm-be { background: var(--marker); border-color: transparent; color: var(--ink); box-shadow: 0 2px 0 color-mix(in srgb, var(--ink) 18%, transparent); }
+.gm-not { border: 2px solid var(--ink); }
+.gm-say { flex: none; }
+.gm-answer { min-height: 1.5em; margin: 6px 2px 14px; font-size: .98rem; }
+.gm-forms { display: inline-flex; flex-wrap: wrap; gap: 0; border: 1px solid var(--rule); border-radius: 12px; overflow: hidden; }
+.gm-form { padding: 9px 16px; border: 0; border-left: 1px solid var(--rule); background: var(--card); cursor: pointer; font-size: .95rem; }
+.gm-form:first-child { border-left: 0; }
+.gm-form[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+/* the rule */
+.g-rule { display: grid; grid-template-columns: max-content 56px max-content; align-items: center; gap: 10px 14px; width: fit-content; max-width: 100%; background: var(--card); border: 1px solid var(--rule); border-radius: 16px; padding: 18px clamp(16px, 4vw, 30px); box-shadow: var(--shadow); max-width: 560px; }
+.g-rule-row { display: contents; }
+.nav[hidden] + #account { margin-left: auto; }
+.g-rule .gm-tile { font-size: 1.6rem; text-align: center; min-width: 3.4em; }
+.g-arrow { height: 2px; background: var(--rule); position: relative; }
+.g-arrow::after { content: ""; position: absolute; right: -1px; top: -4px; border: 5px solid transparent; border-left: 7px solid var(--rule); border-right: 0; }
+/* try it */
+.g-try { max-width: 640px; }
+.gt-top { display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: .9rem; }
+.gt-top .dots { margin: 0; }
+.gt-ask { margin: 14px 0 8px; font-weight: 600; }
+.gt-sent { font-family: var(--display); font-size: clamp(1.6rem, 4.6vw, 2.2rem); line-height: 1.5; margin: 6px 0 16px; min-height: 1.6em; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; }
+.gt-gap { display: inline-block; min-width: 3em; border-bottom: 3px solid var(--ink); text-align: center; }
+.gt-gap.is-right, .gt-built.is-right .gt-placed, .gt-word.is-right { background: var(--good-soft); border-color: var(--good); color: var(--good); }
+.gt-gap.is-wrong, .gt-built.is-wrong .gt-placed, .gt-word.is-wrong { background: var(--bad-soft); border-color: var(--bad); color: var(--bad); }
+.gt-hint { font-family: var(--body); font-size: .95rem; }
+.gt-placed { font-size: inherit; padding: 2px 12px 4px; }
+.gt-opts { display: flex; flex-wrap: wrap; gap: 10px; }
+.gt-opt { cursor: pointer; font-size: 1.6rem; }
+.gt-opt:hover:not(:disabled) { border-color: var(--tab); }
+.gt-opt.gt-used { visibility: hidden; }
+.gt-opt:disabled { cursor: default; }
+.gt-word { font: inherit; border: 0; border-bottom: 2px dotted var(--muted); background: none; padding: 0 4px; border-radius: 6px 6px 0 0; cursor: pointer; color: inherit; }
+.gt-word:hover:not(:disabled) { background: var(--marker-soft); }
+.gt-word.is-picked { background: var(--marker); border-bottom-color: var(--ink); }
+.g-done-score { margin: 0 0 6px; }
+@media (max-width: 560px) { .g-topic { grid-template-columns: 1.6rem minmax(0, 1fr) auto; } .g-best { grid-column: 2; } .gm-stage { min-height: 96px; } }
 </style>
 
 </head>
@@ -322,7 +413,15 @@ h1, h2, h3 { text-wrap: balance; margin: 0; font-weight: 400; }
     <div id="account"></div>
   </div>
 </header>
-<main class="shell" id="view"><p class="muted" style="padding-block:40px">Loading the 1,000 words...</p></main>
+<div class="frame">
+  <nav class="courses" aria-label="Courses">
+    <button type="button" class="course" data-course="basic1000"><b>Basic 1000</b><span>The first 1,000 words</span></button>
+    <button type="button" class="course" data-course="grammar"><b>Grammar</b><span>How the words fit together</span></button>
+    <button type="button" class="course" disabled><b>Basic 2000</b><span>Coming later</span></button>
+    <button type="button" class="course" disabled><b>Basic 3000</b><span>Coming later</span></button>
+  </nav>
+  <main class="shell" id="view"><p class="muted" style="padding-block:40px">Loading the 1,000 words...</p></main>
+</div>
 <div id="scrim" class="scrim" hidden></div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
@@ -330,6 +429,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; font-weight: 400; }
 <script src="/figures.js"></script>
 <script src="/pron.js"></script>
 <script src="/audio.js"></script>
+<script src="/grammar.js"></script>
 <script>
 // Basic 1000: parse data.txt and link every word in definitions and examples to its headword.
 // The matching rules mirror vocab.py in the course data package.
@@ -478,6 +578,7 @@ function startApp(W, QUIZ) {
   const LS_KEY = 'basic1000-progress-v1';
   // Progress v2: done = { step: best score }, boxes = { headword: [box, due time] },
   // views = { headword: how many times the learner opened that word's page },
+  // grammar = { topic: best score in its exercises },
   // learned = { headword: time it was learned } (all of its learning buttons tapped in order, see renderLesson).
   // Boxes are keyed by word so a change to the step order keeps what was learned.
   const COURSE_VERSION = 'c2';
@@ -485,7 +586,7 @@ function startApp(W, QUIZ) {
   W.forEach((w, i) => { WI[w.w] = i; });
   const box = i => P.boxes[W[i].w];
   const setBox = (i, b) => { P.boxes[W[i].w] = b; };
-  let P = { v: 2, cv: COURSE_VERSION, done: {}, boxes: {}, views: {}, learned: {} };
+  let P = { v: 2, cv: COURSE_VERSION, done: {}, boxes: {}, views: {}, learned: {}, grammar: {} };
   let storeMode = 'browser', sb = null, session = null, pushTimer = null, lastSync = null;
   const SUPABASE_URL = 'https://duptugctgzemfczbtvgj.supabase.co';
   const SUPABASE_KEY = 'sb_publishable_4tPlF-9fs5oQtKGngr-TIQ_ancGSJHu';
@@ -496,8 +597,8 @@ function startApp(W, QUIZ) {
   }
   function normal(p) {
     // v1 records keyed boxes by position in the old word order, which no longer matches: start fresh
-    if (!p || p.v !== 2) return { v: 2, cv: COURSE_VERSION, done: {}, boxes: {}, views: {}, learned: {} };
-    const out = { v: 2, cv: COURSE_VERSION, done: p.done || {}, boxes: {}, views: {}, learned: {} };
+    if (!p || p.v !== 2) return { v: 2, cv: COURSE_VERSION, done: {}, boxes: {}, views: {}, learned: {}, grammar: {} };
+    const out = { v: 2, cv: COURSE_VERSION, done: p.done || {}, boxes: {}, views: {}, learned: {}, grammar: { ...(p.grammar || {}) } };
     Object.entries(p.learned || {}).forEach(([w, t]) => { if (w in WI) out.learned[w] = t; });
     Object.entries(p.boxes || {}).forEach(([w, b]) => { if (w in WI) out.boxes[w] = b; });
     Object.entries(p.views || {}).forEach(([w, n]) => { if (w in WI && n > 0) out.views[w] = Math.floor(n); });
@@ -531,6 +632,7 @@ function startApp(W, QUIZ) {
     // views: the higher count of the two (each device counts its own visits; summing would count twice)
     Object.entries(b.views || {}).forEach(([w, n]) => { if (w in WI) out.views[w] = Math.max(n, out.views[w] || 0); });
     Object.entries(b.learned || {}).forEach(([w, t]) => { if (w in WI) out.learned[w] = Math.min(t, out.learned[w] || t); });
+    Object.entries(b.grammar || {}).forEach(([g, sc]) => { out.grammar[g] = Math.max(sc, out.grammar[g] ?? -1); });
     return out;
   }
 
@@ -715,10 +817,29 @@ function startApp(W, QUIZ) {
     clearTimeout(lockedNote.timer);
     lockedNote.timer = setTimeout(() => t.classList.remove('show'), 3200);
   }
+  // the course menu on the left: Basic 1000 (path, review, dictionary) or Grammar
+  function setCourse(c) {
+    document.querySelectorAll('.courses [data-course]').forEach(b => {
+      if (b.dataset.course === c) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current');
+    });
+    document.querySelector('.nav').hidden = c !== 'basic1000';
+  }
+  const grammarCtx = {
+    say: (text, btn) => window.BASIC_AUDIO && BASIC_AUDIO.say(text, btn),
+    result: id => P.grammar[id],
+    save: (id, score) => { P.grammar[id] = Math.max(score, P.grammar[id] ?? -1); save(); },
+    open: id => route('grammar', { topic: id }),
+    back: () => route('grammar'),
+  };
   function route(view, arg, keepScroll) {
     current = { view, arg };
+    if (window.BASIC_AUDIO) BASIC_AUDIO.stop();
+    setCourse(view === 'grammar' ? 'grammar' : 'basic1000');
     setNav(view === 'lesson' || view === 'quiz' ? 'path' : view);
-    if (view === 'path') renderPath();
+    if (view === 'grammar') {
+      if (arg && arg.topic) BASIC_GRAMMAR.lesson($view, grammarCtx, arg.topic); else BASIC_GRAMMAR.home($view, grammarCtx);
+    }
+    else if (view === 'path') renderPath();
     else if ((view === 'lesson' || view === 'quiz') && !isOpen(arg.step)) { lockedNote(arg.step); return; }
     else if (view === 'lesson') renderLesson(arg.step, arg.i || 0, !keepScroll);
     else if (view === 'quiz') startQuiz(arg.step);
@@ -729,6 +850,7 @@ function startApp(W, QUIZ) {
   }
   document.querySelectorAll('.nav [data-go]').forEach(b => b.addEventListener('click', () => route(b.dataset.go)));
   document.getElementById('brand').addEventListener('click', () => route('path'));
+  document.querySelectorAll('.courses [data-course]').forEach(b => b.addEventListener('click', () => route(b.dataset.course === 'grammar' ? 'grammar' : 'path')));
 
   function renderSaved() {
     const el = document.getElementById('savedNote');
