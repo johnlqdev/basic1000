@@ -9,7 +9,9 @@ which questions have fewer than 3 good wrong answers (the quiz then shows fewer 
 import argparse
 import datetime
 
-from quizlib import CANDIDATES, QUIZ, checks, load, pending_for, save
+import json
+
+from quizlib import CANDIDATES, QUIZ, checks, load, pending_for
 
 
 def main():
@@ -31,7 +33,9 @@ def main():
             out[q["id"]] = good
         if len(good) < 3:
             few.append(f"{q['id']} ({len(good)})")
-    save(QUIZ, {"built": datetime.date.today().isoformat(), "questions": out})
+    with open(QUIZ, "w") as f:  # compact: the site downloads this file
+        json.dump({"built": datetime.date.today().isoformat(), "questions": out}, f, ensure_ascii=False,
+                  separators=(",", ":"), sort_keys=True)
     print(f"quiz.json: {len(out)} questions with checked wrong answers")
     if few:
         print(f"{len(few)} questions have fewer than 3 good wrong answers: {', '.join(few[:40])}{' ...' if len(few) > 40 else ''}")
