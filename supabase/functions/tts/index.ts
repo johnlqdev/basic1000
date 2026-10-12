@@ -5,7 +5,10 @@
 //   -> { url } of an MP3 in the public "audio" bucket. Clips are cached forever by (voice, text),
 //      so a sentence is synthesised once. If it is not cached and the voice server is off: 503.
 //   Every clip has a short silence before and after it (see pad.ts), so the first word is heard.
-// Admin (header x-admin-token): action = status | pods | create | start | stop | delete | batch | head
+//   Slow clips (steps 1-5 so far): slow1/{voice}/{same hash}.mp3 is the clip slowed down (pitch kept), and
+//   slow1/{voice}/{same hash}.json says when each letter (a word) or each word (a sentence) is spoken,
+//   so the site can highlight it while the clip plays. Made by the admin action "slow".
+// Admin (header x-admin-token): action = status | pods | create | start | stop | delete | batch | slow | head
 //   (start/stop/delete/status take "pod": lab | kokoro; default lab)
 //
 // Voices come from Qwen3-TTS 1.7B (Apache-2.0) on a RunPod GPU pod named basic1000-lab, which runs
@@ -67,6 +70,8 @@ const ALLOWED = new Set(Object.keys(VOICE_SPECS));
 const SPEED = 0.92; // a little slower than normal, for learners
 const LEAD = 0.5, TAIL = 0.4; // seconds of silence before and after each clip
 const VERSION = "v2"; // folder for padded clips; bump it whenever the way clips are made changes
+const SLOW_VERSION = "slow1"; // folder for slow clips and their timings; bump it when they are made differently
+const SLOW_TEMPO: Record<string, number> = { word: 0.6, sentence: 0.7 }; // share of normal speed
 
 const cors = {
   "Access-Control-Allow-Origin": "*",
@@ -110,6 +115,9 @@ async function clipPath(voiceId: string, text: string) {
 async function cached(path: string) {
   const r = await fetch(publicUrl(path), { method: "HEAD" });
   return r.ok;
+}
+async function slowPath(voiceId: string, text: string, ext: string) {
+  return `${SLOW_VERSION}/${voiceId}/${(await sha256(voiceId + "|" + text)).slice(0, 32)}.${ext}`;
 }
 // the stored reference recording of a designed voice
 const refPath = (spec: { req?: Record<string, unknown> }) => `refs/qwen_${spec.req?.key}.wav`;
@@ -272,6 +280,49 @@ Deno.serve(async (req) => {
           }
         }
         await saveRef(podId, spec).catch((e) => out.push({ voiceId, error: "reference not saved: " + String(e) }));
+      }
+      return json({ results: out });
+    }
+    if (action === "slow") {
+      // items: [{ text, kind: 'word'|'sentence', voice: 'man'|'woman' (or voiceId) }], optional force, chunk.
+      // The pod slows down the stored normal clip and times it; the clip is padded there.
+      const pod = await findPod("lab");
+      if (!pod || pod.desiredStatus !== "RUNNING") return json({ error: "voice server is off" }, 503);
+      const out: Record<string, unknown>[] = [];
+      const todo: { text: string; voiceId: string; kind: string; url: string; tempo: number; mp3: string; js: string }[] = [];
+      for (const it of body.items ?? []) {
+        const text = norm(String(it.text ?? ""));
+        const voiceId = String(it.voiceId ?? VOICES[it.voice ?? "man"] ?? "");
+        const kind = it.kind === "word" ? "word" : "sentence";
+        if (!VOICE_SPECS[voiceId]) { out.push({ text, voiceId, error: "unknown voice" }); continue; }
+        const src = await clipPath(voiceId, text);
+        if (!await cached(src)) { out.push({ text, voiceId, error: "the normal clip is not made yet" }); continue; }
+        const mp3 = await slowPath(voiceId, text, "mp3"), js = await slowPath(voiceId, text, "json");
+        if (!it.force && !body.force && await cached(mp3) && await cached(js)) { out.push({ text, voiceId, cached: true }); continue; }
+        todo.push({ text, voiceId, kind, url: publicUrl(src), tempo: Number(it.tempo ?? SLOW_TEMPO[kind]), mp3, js });
+      }
+      const size = Math.max(1, Math.min(30, Number(body.chunk ?? 10)));
+      for (let k = 0; k < todo.length; k += size) {
+        const chunk = todo.slice(k, k + size);
+        try {
+          const r = await fetch(podUrl(pod.id, "lab") + "/slow_batch", {
+            method: "POST", headers: { "content-type": "application/json" },
+            body: JSON.stringify({ items: chunk.map((c) => ({ url: c.url, text: c.text, kind: c.kind, tempo: c.tempo })) }),
+            signal: AbortSignal.timeout(140000),
+          });
+          if (!r.ok) throw new Error(`lab ${r.status}: ${(await r.text()).slice(0, 200)}`);
+          const res = await r.json();
+          await Promise.all(chunk.map(async (c, i) => {
+            const one = res.results?.[i];
+            if (!one || one.error) { out.push({ text: c.text, voiceId: c.voiceId, error: one?.error ?? "not made" }); return; }
+            const timing = { ...one.timing, voice: c.voiceId };
+            await upload(c.mp3, fromB64(one.mp3));
+            await upload(c.js, new TextEncoder().encode(JSON.stringify(timing)), "application/json");
+            out.push({ text: c.text, voiceId: c.voiceId, timing });
+          }));
+        } catch (e) {
+          chunk.forEach((c) => out.push({ text: c.text, voiceId: c.voiceId, error: String(e) }));
+        }
       }
       return json({ results: out });
     }
