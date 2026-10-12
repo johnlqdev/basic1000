@@ -1,5 +1,5 @@
 // Basic 1000 audio: plays a word or sentence in a woman's or man's voice.
-// Clips are made once by the "tts" Supabase function (open voice models on RunPod) and kept in the
+// Clips are made once by the "tts" Supabase function (Qwen3-TTS on a RunPod GPU) and kept in the
 // public "audio" bucket. The clip address is computed here from the text, so stored clips play
 // straight away with no server call. Order: stored clip -> ask the function -> browser voice.
 // Every clip starts and ends with a little silence, so the first word is not swallowed.
@@ -14,35 +14,31 @@
   var CHOICES = { woman: ['af_heart', 'af_bella', 'bf_emma'], man: ['am_michael', 'am_fenrir', 'bm_george'] };
   var NAMES = { af_heart: 'Heart', af_bella: 'Bella', bf_emma: 'Emma', am_michael: 'Michael', am_fenrir: 'Fenrir', bm_george: 'George' };
   var VERSION = 'v2';
-  // voice lab (test version, step 1 only): larger open models, grouped by model, to compare by ear
-  var LAB = {
-    woman: [
-      ['Voxtral', [['vx_neutral_f', 'Neutral'], ['vx_casual_f', 'Casual'], ['vx_cheerful_f', 'Cheerful']]],
-      ['Breeze', [['br_clara', 'Clara (US)'], ['br_grace', 'Grace (UK)']]],
-      ['Qwen3', [['qw_lily', 'Lily (US)'], ['qw_nora', 'Nora (UK)']]],
-      ['Kokoro', [['af_heart', 'Heart']]],
-    ],
-    man: [
-      ['Voxtral', [['vx_neutral_m', 'Neutral'], ['vx_casual_m', 'Casual']]],
-      ['Breeze', [['br_daniel', 'Daniel (US)'], ['br_oliver', 'Oliver (UK)']]],
-      ['Qwen3', [['qw_ryan', 'Ryan'], ['qw_aiden', 'Aiden']]],
-      ['Kokoro', [['am_michael', 'Michael']]],
-    ],
+  // voice trial (test version): Qwen3-TTS characters, all American English. Every word and sentence
+  // gets the same list; clips exist for steps 1 to MAX_STEP. Must match VOICE_SPECS in the tts function.
+  var QWEN = {
+    woman: [['us_lily', 'Lily'], ['us_emma', 'Emma'], ['us_grace', 'Grace'], ['us_olivia', 'Olivia'],
+      ['us_mia', 'Mia'], ['us_sarah', 'Sarah'], ['us_chloe', 'Chloe'], ['us_ruth', 'Ruth']],
+    man: [['qw_ryan', 'Ryan'], ['qw_aiden', 'Aiden'], ['us_daniel', 'Daniel'], ['us_james', 'James'],
+      ['us_jake', 'Jake'], ['us_michael', 'Michael'], ['us_ben', 'Ben'], ['us_frank', 'Frank']],
   };
+  var MAX_STEP = 5;
   var KNOWN = {};
   CHOICES.woman.concat(CHOICES.man).forEach(function (id) { KNOWN[id] = 1; });
-  ['woman', 'man'].forEach(function (g) { LAB[g].forEach(function (m) { m[1].forEach(function (v) { KNOWN[v[0]] = 1; NAMES[v[0]] = NAMES[v[0]] || v[1]; }); }); });
+  ['woman', 'man'].forEach(function (g) { QWEN[g].forEach(function (v) { KNOWN[v[0]] = 1; }); });
 
   var MALE = 'man|boy|father|brother|son|husband';
   var FEMALE = 'woman|girl|mother|sister|daughter|wife';
   var IS_MAN = new RegExp('\\bi am an? (' + MALE + ')\\b|\\bi am not an? (' + FEMALE + ')\\b');
   var IS_WOMAN = new RegExp('\\bi am an? (' + FEMALE + ')\\b|\\bi am not an? (' + MALE + ')\\b');
   // the speaker must fit the sentence: "I am a woman." is read by the woman
-  function voiceFor(text, fallback) {
+  // who must say this text: 'man', 'woman', or '' when anyone can
+  function lockFor(text) {
     var t = String(text).toLowerCase();
-    if (IS_MAN.test(t)) return 'man';
-    if (IS_WOMAN.test(t)) return 'woman';
-    return fallback || 'woman';
+    return IS_MAN.test(t) ? 'man' : IS_WOMAN.test(t) ? 'woman' : '';
+  }
+  function voiceFor(text, fallback) {
+    return lockFor(text) || fallback || 'woman';
   }
   function norm(t) { return String(t).replace(/\s+/g, ' ').trim(); }
 
@@ -119,12 +115,18 @@
     voice = CHOICES[voice] ? voice : 'woman';
     return '<span class="says">' + CHOICES[voice].map(function (id) { return pill(text, voice, id, NAMES[id], label); }).join('') + '</span>';
   }
-  // the voice lab: one row per model, one button per voice
-  function labButtons(text, voice, label) {
-    voice = LAB[voice] ? voice : 'woman';
-    return '<div class="lab">' + LAB[voice].map(function (m) {
-      return '<div class="lab-row"><span class="lab-model">' + m[0] + '</span><span class="says">' +
-        m[1].map(function (v) { return pill(text, voice, v[0], v[1], label + ', ' + m[0]); }).join('') + '</span></div>';
+  // the voice trial: a row of women and a row of men, the same for every word and sentence.
+  // A sentence that says who is speaking ("I am a woman.") can only be read by that speaker,
+  // so the other row's buttons are shown but switched off.
+  function voiceButtons(text, label) {
+    var lock = lockFor(text);
+    return '<div class="lab">' + [['woman', 'Women'], ['man', 'Men']].map(function (g) {
+      var off = lock && lock !== g[0];
+      return '<div class="lab-row"><span class="lab-model">' + g[1] + '</span><span class="says">' +
+        QWEN[g[0]].map(function (v) {
+          var b = pill(text, g[0], v[0], v[1], label);
+          return off ? b.replace('<button ', '<button disabled title="This sentence is said by a ' + lock + '" ') : b;
+        }).join('') + '</span></div>';
     }).join('') + '</div>';
   }
   document.addEventListener('click', function (e) {
@@ -134,5 +136,5 @@
     say(b.dataset.say, b.dataset.voice, b, b.dataset.vid);
   });
 
-  window.BASIC_AUDIO = { say: say, stop: stop, voiceFor: voiceFor, clipUrl: clipUrl, button: button, labButtons: labButtons, LAB: LAB, VOICES: VOICES, CHOICES: CHOICES, NAMES: NAMES };
+  window.BASIC_AUDIO = { say: say, stop: stop, voiceFor: voiceFor, clipUrl: clipUrl, button: button, voiceButtons: voiceButtons, QWEN: QWEN, MAX_STEP: MAX_STEP, VOICES: VOICES, CHOICES: CHOICES, NAMES: NAMES };
 })();

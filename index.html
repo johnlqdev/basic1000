@@ -166,6 +166,9 @@ h1, h2, h3 { text-wrap: balance; margin: 0; font-weight: 400; }
 .examples li .say svg { width: 13px; height: 13px; }
 .lab { display: grid; gap: 6px; margin-top: 10px; padding: 10px 12px; border: 1px dashed var(--rule); border-radius: 12px; }
 .lab-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.say[disabled] { opacity: .35; cursor: not-allowed; }
+.say[disabled]:hover { background: var(--card); }
+.noaudio { font-size: .85rem; margin-top: 8px; }
 .lab-model { font-family: var(--mono); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); min-width: 60px; }
 .examples li .lab { margin-top: 8px; padding: 8px 10px; }
 .examples li .lab .say { height: 26px; font-size: .72rem; padding: 0 8px 0 6px; }
@@ -677,11 +680,11 @@ function startApp(W) {
     opts = opts || {};
     const w = W[i], [mName, mHelp] = MODES[w.m];
     const A = window.BASIC_AUDIO;
-    // voice lab (test): step 1 compares larger open models; later steps keep the Kokoro buttons
-    const lab = A && w.s === 1 && A.labButtons;
-    const sayEx = (x, j) => !A ? '' : (lab ? A.labButtons : A.button)(x[0], A.voiceFor(x[0], j === 0 ? 'woman' : 'man'), 'Listen to the sentence');
-    let h = `<div class="entry-head"><span class="headword">${esc(w.w)}</span>${A && !lab ? A.button(w.w, 'woman', 'Listen to ' + w.w) : ''}<span class="pos">${esc(w.p)}</span>
-      ${opts.stepTag ? `<span class="tag">step ${w.s}</span>` : ''}</div>${lab ? A.labButtons(w.w, 'woman', 'Listen to ' + w.w) : ''}
+    // voice trial (test): the same list of Qwen voices for the word and each sentence, steps 1 to A.MAX_STEP
+    const audio = A && w.s <= A.MAX_STEP;
+    const sayEx = (x) => audio ? A.voiceButtons(x[0], 'Listen to the sentence') : '';
+    let h = `<div class="entry-head"><span class="headword">${esc(w.w)}</span><span class="pos">${esc(w.p)}</span>
+      ${opts.stepTag ? `<span class="tag">step ${w.s}</span>` : ''}</div>${audio ? A.voiceButtons(w.w, 'Listen to ' + w.w) : A ? '<p class="muted noaudio">Audio for this step is coming soon.</p>' : ''}
       <div class="mode ${w.m}">${mName}</div> <span class="muted" style="font-size:.88rem">${mHelp}</span>`;
     if (BASIC_FIGURES.has(w.w)) h += `<div class="scene" data-scene="${esc(w.w)}" role="img" aria-label="${esc(BASIC_FIGURES.label(w.w))}"></div>`;
     else h += `<div class="slot blank"><span class="eyebrow">Picture coming soon</span><b>${esc(w.w)}</b></div>`;
@@ -691,8 +694,8 @@ function startApp(W) {
         ${ahead ? '' : `<div class="promise">✓ <span>Every word in this definition comes from an earlier step. Tap one to look back.</span></div>`}</div>`;
     }
     const now = w.x.filter(x => x[1] <= ctxStep), later = w.x.filter(x => x[1] > ctxStep);
-    h += `<div class="section"><h3>Examples</h3><ul class="examples">${now.map(x => `<li>${linked(x[0], x[2], ctxStep, i)}${sayEx(x, w.x.indexOf(x))}</li>`).join('')}
-      ${later.map(x => opts.showLater ? `<li class="later">${linked(x[0], x[2], ctxStep, i)}${sayEx(x, w.x.indexOf(x))} <span class="tag">usable from step ${x[1]}</span></li>`
+    h += `<div class="section"><h3>Examples</h3><ul class="examples">${now.map(x => `<li>${linked(x[0], x[2], ctxStep, i)}${sayEx(x)}</li>`).join('')}
+      ${later.map(x => opts.showLater ? `<li class="later">${linked(x[0], x[2], ctxStep, i)}${sayEx(x)} <span class="tag">usable from step ${x[1]}</span></li>`
         : `<li class="later">One more example opens at step ${x[1]}, once you know all its words.</li>`).join('')}</ul></div>`;
     if (w.f || w.us) {
       h += `<div class="section forms">${w.f ? `<span class="muted">Also covers:</span> ${esc(w.f)}` : ''}${w.f && w.us ? ' · ' : ''}${w.us ? `<span class="muted">US spelling:</span> ${esc(w.us)}` : ''}</div>`;

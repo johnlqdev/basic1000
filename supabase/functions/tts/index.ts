@@ -6,12 +6,13 @@
 //      so a sentence is synthesised once. If it is not cached and the voice server is off: 503.
 //   Every clip has a short silence before and after it (see pad.ts), so the first word is heard.
 // Admin (header x-admin-token): action = status | pods | create | start | stop | delete | batch | head
-//   (start/stop/delete/status take "pod": kokoro | voxtral | lab; default kokoro)
+//   (start/stop/delete/status take "pod": lab | kokoro; default lab)
 //
-// Voices come from several open models, each on its own RunPod pod (see VOICE_SPECS):
-//   kokoro  Kokoro-82M on CPU (Kokoro-FastAPI)
-//   voxtral Mistral Voxtral 4B TTS on GPU (vLLM-Omni), preset voices
-//   lab     Breeze TTS 2 and Qwen3-TTS on GPU (tools/tts-lab/lab_server.py)
+// Voices come from Qwen3-TTS 1.7B (Apache-2.0) on a RunPod GPU pod named basic1000-lab, which runs
+// tools/tts-lab/lab_server.py. Some are Qwen's preset speakers; the others are designed from a
+// written description once, and their reference recording is kept in storage at refs/qwen_<key>.wav
+// so the same person can be brought back whenever the pod is started again.
+// (The earlier Kokoro clips are still in storage; the Kokoro pod itself has been removed.)
 //
 // Secrets: RUNPOD_API_KEY (set by the owner in the Supabase dashboard).
 // SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are provided by the platform.
@@ -25,43 +26,42 @@ const SERVICE = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "";
 // sha256 of the admin token (the token itself is kept in the database vault, not in code)
 const ADMIN_HASH = "fd386d8929b80a4bcadc5ada75095c854d0efbb50fb431ed975786cd6ad36fc8";
 const PODS: Record<string, { name: string; port: number }> = {
-  kokoro: { name: "basic1000-tts", port: 8880 },
-  voxtral: { name: "basic1000-voxtral", port: 8091 },
   lab: { name: "basic1000-lab", port: 8880 },
+  kokoro: { name: "basic1000-tts", port: 8880 },
 };
 const BUCKET = "audio";
-// the course's two voices; change a Kokoro voice here and new clips use it (old ones stay cached under the old id)
-const VOICES: Record<string, string> = { woman: "af_heart", man: "am_michael" };
-// voices on trial: the site shows one button per voice so the owner can pick the nicest
+// the voice used when a request names only "woman" or "man" (until the final two are chosen)
+const VOICES: Record<string, string> = { woman: "us_lily", man: "qw_aiden" };
+// the older Kokoro trial, kept so its stored clips still resolve
 const CHOICES: Record<string, string[]> = {
   woman: ["af_heart", "af_bella", "bf_emma"],
   man: ["am_michael", "am_fenrir", "bm_george"],
 };
-// every voice the function can make, and how
-const US_TEACHER = "speaking slowly and clearly, like a patient English teacher";
-const UK_ACCENT = "with standard southern British pronunciation, speaking slowly and clearly";
+// Qwen3 voices on trial, all American English. "us_*" voices are designed from these descriptions.
+const CLEAR = "speaking clearly at a calm, unhurried pace, with standard American pronunciation";
+const design = (key: string, seed: number, who: string) =>
+  ({ pod: "lab", req: { engine: "qwen_design", key, seed, instruct: `${who}, ${CLEAR}.` } });
 const VOICE_SPECS: Record<string, { pod: string; req?: Record<string, unknown> }> = {
   af_heart: { pod: "kokoro" }, af_bella: { pod: "kokoro" }, bf_emma: { pod: "kokoro" },
   am_michael: { pod: "kokoro" }, am_fenrir: { pod: "kokoro" }, bm_george: { pod: "kokoro" },
-  vx_neutral_f: { pod: "voxtral", req: { voice: "neutral_female" } },
-  vx_casual_f: { pod: "voxtral", req: { voice: "casual_female" } },
-  vx_cheerful_f: { pod: "voxtral", req: { voice: "cheerful_female" } },
-  vx_neutral_m: { pod: "voxtral", req: { voice: "neutral_male" } },
-  vx_casual_m: { pod: "voxtral", req: { voice: "casual_male" } },
+  // women
+  us_lily: design("lily", 11, "A friendly American woman in her thirties with a clear, warm voice, like a patient English teacher"),
+  us_emma: design("emma", 31, "A young American woman in her twenties with a bright, cheerful, lively voice"),
+  us_grace: design("grace", 32, "A calm American woman in her fifties with a soft, low, soothing voice"),
+  us_olivia: design("olivia", 33, "A confident American woman in her forties with a crisp, polished newsreader voice"),
+  us_mia: design("mia", 34, "A gentle young American woman with a light, sweet, soft voice"),
+  us_sarah: design("sarah", 35, "A warm American mother in her thirties with a kind, smiling voice, like reading to her children"),
+  us_chloe: design("chloe", 36, "An American college student with a natural, relaxed, friendly conversational voice"),
+  us_ruth: design("ruth", 37, "A kind American grandmother in her sixties with a warm, slightly husky voice"),
+  // men
   qw_ryan: { pod: "lab", req: { engine: "qwen_custom", speaker: "Ryan" } },
   qw_aiden: { pod: "lab", req: { engine: "qwen_custom", speaker: "Aiden" } },
-  qw_lily: { pod: "lab", req: { engine: "qwen_design", key: "lily", seed: 11,
-    instruct: `A friendly American woman in her thirties with a clear, warm voice, ${US_TEACHER}.` } },
-  qw_nora: { pod: "lab", req: { engine: "qwen_design", key: "nora", seed: 12,
-    instruct: `A calm British woman in her thirties with a clear, gentle voice, ${UK_ACCENT}.` } },
-  br_clara: { pod: "lab", req: { engine: "breeze", key: "clara", seed: 21,
-    instruct: `A friendly American woman in her thirties with a clear, warm voice, ${US_TEACHER}.` } },
-  br_grace: { pod: "lab", req: { engine: "breeze", key: "grace", seed: 22,
-    instruct: `A calm British woman in her thirties with a clear, gentle voice, ${UK_ACCENT}.` } },
-  br_daniel: { pod: "lab", req: { engine: "breeze", key: "daniel", seed: 23,
-    instruct: `A friendly American man in his thirties with a clear, warm voice, ${US_TEACHER}.` } },
-  br_oliver: { pod: "lab", req: { engine: "breeze", key: "oliver", seed: 24,
-    instruct: `A calm British man in his thirties with a clear voice, ${UK_ACCENT}.` } },
+  us_daniel: design("daniel", 41, "A friendly American man in his thirties with a clear, warm voice, like a patient English teacher"),
+  us_james: design("james", 42, "A calm American man in his fifties with a deep, rich, steady voice"),
+  us_jake: design("jake", 43, "A young American man in his twenties with a bright, friendly, upbeat voice"),
+  us_michael: design("michael", 44, "A confident American man in his forties with a crisp, polished newsreader voice"),
+  us_ben: design("ben", 45, "A gentle American man in his thirties with a soft-spoken, calm, reassuring voice"),
+  us_frank: design("frank", 46, "A kind American grandfather in his sixties with a warm, slightly gravelly voice"),
 };
 const ALLOWED = new Set(Object.keys(VOICE_SPECS));
 const SPEED = 0.92; // a little slower than normal, for learners
@@ -93,14 +93,14 @@ async function rp(path: string, init: RequestInit = {}) {
 }
 
 // deno-lint-ignore no-explicit-any
-async function findPod(key = "kokoro"): Promise<any | null> {
+async function findPod(key = "lab"): Promise<any | null> {
   const r = await rp("/pods");
   if (r.status !== 200) throw new Error(`runpod list ${r.status}: ${JSON.stringify(r.body).slice(0, 300)}`);
   // deno-lint-ignore no-explicit-any
   const list: any[] = Array.isArray(r.body) ? r.body : ((r.body as any)?.pods ?? []);
   return list.find((p) => p.name === PODS[key].name) ?? null;
 }
-const podUrl = (id: string, key = "kokoro") => `https://${id}-${PODS[key].port}.proxy.runpod.net`;
+const podUrl = (id: string, key = "lab") => `https://${id}-${PODS[key].port}.proxy.runpod.net`;
 const norm = (t: string) => t.replace(/\s+/g, " ").trim();
 const publicUrl = (path: string) => `${SB}/storage/v1/object/public/${BUCKET}/${path}`;
 
@@ -111,6 +111,18 @@ async function cached(path: string) {
   const r = await fetch(publicUrl(path), { method: "HEAD" });
   return r.ok;
 }
+// the stored reference recording of a designed voice
+const refPath = (spec: { req?: Record<string, unknown> }) => `refs/qwen_${spec.req?.key}.wav`;
+const labBody = (spec: { req?: Record<string, unknown> }) =>
+  spec.req?.engine === "qwen_design" ? { ...spec.req, ref_url: publicUrl(refPath(spec)) } : { ...spec.req };
+// after a designed voice is used for the first time, keep its reference recording in storage
+async function saveRef(podId: string, spec: { req?: Record<string, unknown> }) {
+  if (spec.req?.engine !== "qwen_design" || await cached(refPath(spec))) return;
+  const r = await fetch(podUrl(podId, "lab") + "/ref/" + spec.req.key, { signal: AbortSignal.timeout(30000) });
+  if (r.ok) await upload(refPath(spec), new Uint8Array(await r.arrayBuffer()), "audio/wav");
+}
+const fromB64 = (s: string) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));
+
 async function synth(podId: string, voiceId: string, text: string, speed: number) {
   const spec = VOICE_SPECS[voiceId];
   if (!spec) throw new Error("unknown voice " + voiceId);
@@ -122,18 +134,15 @@ async function synth(podId: string, voiceId: string, text: string, speed: number
   });
   const r = spec.pod === "kokoro"
     ? await post("/v1/audio/speech", { model: "kokoro", voice: voiceId, input: text, response_format: "mp3", speed })
-    : spec.pod === "voxtral"
-    ? await post("/v1/audio/speech", { model: "mistralai/Voxtral-4B-TTS-2603", input: text, language: "English",
-      response_format: "mp3", ...spec.req })
-    : await post("/tts", { ...spec.req, text });
+    : await post("/tts", { ...labBody(spec), text });
   if (!r.ok) throw new Error(`${spec.pod} ${r.status}: ${(await r.text()).slice(0, 200)}`);
   return padMp3(new Uint8Array(await r.arrayBuffer()), LEAD, TAIL);
 }
-async function upload(path: string, bytes: Uint8Array) {
+async function upload(path: string, bytes: Uint8Array, ctype = "audio/mpeg") {
   const r = await fetch(`${SB}/storage/v1/object/${BUCKET}/${path}`, {
     method: "POST",
     headers: {
-      Authorization: `Bearer ${SERVICE}`, apikey: SERVICE, "content-type": "audio/mpeg",
+      Authorization: `Bearer ${SERVICE}`, apikey: SERVICE, "content-type": ctype,
       "x-upsert": "true", "cache-control": "31536000",
     },
     body: bytes,
@@ -147,6 +156,7 @@ async function speak(text: string, voiceId: string, podId: string | null, speed 
   if (!podId) return { error: "voice server is off", status: 503 };
   const bytes = await synth(podId, voiceId, text, speed);
   await upload(path, bytes);
+  if (VOICE_SPECS[voiceId]?.pod === "lab") await saveRef(podId, VOICE_SPECS[voiceId]).catch(() => {});
   return { url: publicUrl(path), cached: false, bytes: bytes.length };
 }
 
@@ -187,7 +197,7 @@ Deno.serve(async (req) => {
       return json({ status: r.status, size: b.length, head: hex(b.slice(0, Number(body.n ?? 700))) });
     }
     if (action === "create") return json(await rp("/pods", { method: "POST", body: JSON.stringify(body.spec) }));
-    const podKey = PODS[String(body.pod ?? "kokoro")] ? String(body.pod ?? "kokoro") : "kokoro";
+    const podKey = PODS[String(body.pod ?? "lab")] ? String(body.pod ?? "lab") : "lab";
     if (action === "start" || action === "stop" || action === "delete") {
       const pod = await findPod(podKey);
       if (!pod) return json({ error: "no pod named " + PODS[podKey].name }, 404);
@@ -207,25 +217,61 @@ Deno.serve(async (req) => {
       return json({ pod: { id: pod.id, desiredStatus: pod.desiredStatus, costPerHr: pod.costPerHr, image: pod.imageName }, server });
     }
     if (action === "batch") {
-      // items: [{ text, voice: 'woman'|'man' } or { text, voiceId: 'af_bella' }], optional speed, force;
-      // body.all = true makes each item in every CHOICES voice of its gender
+      // items: [{ text, voice: 'woman'|'man' } or { text, voiceId }], optional speed, force;
+      // body.all = true makes each item in every CHOICES voice of its gender (old Kokoro trial).
+      // Qwen voices are made in GPU batches of body.chunk texts (default 12) per voice.
       const podIds: Record<string, string | null> = {};
       const podFor = async (voiceId: string) => {
-        const key = VOICE_SPECS[voiceId]?.pod ?? "kokoro";
+        const key = VOICE_SPECS[voiceId]?.pod ?? "lab";
         if (!(key in podIds)) {
           const pod = await findPod(key);
           podIds[key] = pod && pod.desiredStatus === "RUNNING" ? pod.id : null;
         }
         return podIds[key];
       };
-      const out = [];
+      const out: Record<string, unknown>[] = [];
+      const groups = new Map<string, { text: string; path: string }[]>();
       for (const it of body.items ?? []) {
         const text = norm(String(it.text ?? ""));
         const ids: string[] = it.voiceId ? [it.voiceId] : body.all ? CHOICES[it.voice ?? "woman"] : [VOICES[it.voice ?? "woman"]];
         for (const voiceId of ids) {
-          try { out.push({ text, voiceId, ...(await speak(text, voiceId, await podFor(voiceId), it.speed ?? SPEED, !!it.force)) }); }
-          catch (e) { out.push({ text, voiceId, error: String(e) }); }
+          if (!VOICE_SPECS[voiceId]) { out.push({ text, voiceId, error: "unknown voice" }); continue; }
+          if (VOICE_SPECS[voiceId].pod !== "lab") {
+            try { out.push({ text, voiceId, ...(await speak(text, voiceId, await podFor(voiceId), it.speed ?? SPEED, !!it.force)) }); }
+            catch (e) { out.push({ text, voiceId, error: String(e) }); }
+            continue;
+          }
+          const path = await clipPath(voiceId, text);
+          if (!it.force && await cached(path)) { out.push({ text, voiceId, url: publicUrl(path), cached: true }); continue; }
+          if (!groups.has(voiceId)) groups.set(voiceId, []);
+          groups.get(voiceId)!.push({ text, path });
         }
+      }
+      const size = Math.max(1, Math.min(32, Number(body.chunk ?? 12)));
+      for (const [voiceId, list] of groups) {
+        const spec = VOICE_SPECS[voiceId], podId = await podFor(voiceId);
+        if (!podId) { list.forEach((c) => out.push({ text: c.text, voiceId, error: "voice server is off" })); continue; }
+        for (let k = 0; k < list.length; k += size) {
+          const chunk = list.slice(k, k + size);
+          try {
+            const r = await fetch(podUrl(podId, "lab") + "/tts_batch", {
+              method: "POST", headers: { "content-type": "application/json" },
+              body: JSON.stringify({ ...labBody(spec), texts: chunk.map((c) => c.text) }),
+              signal: AbortSignal.timeout(140000),
+            });
+            if (!r.ok) throw new Error(`lab ${r.status}: ${(await r.text()).slice(0, 200)}`);
+            const res = await r.json();
+            await Promise.all(chunk.map(async (c, i) => {
+              const b64 = res.clips?.[i];
+              if (!b64) { out.push({ text: c.text, voiceId, error: "not made" }); return; }
+              await upload(c.path, padMp3(fromB64(b64), LEAD, TAIL));
+              out.push({ text: c.text, voiceId, url: publicUrl(c.path), cached: false });
+            }));
+          } catch (e) {
+            chunk.forEach((c) => out.push({ text: c.text, voiceId, error: String(e) }));
+          }
+        }
+        await saveRef(podId, spec).catch((e) => out.push({ voiceId, error: "reference not saved: " + String(e) }));
       }
       return json({ results: out });
     }

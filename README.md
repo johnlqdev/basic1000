@@ -50,18 +50,14 @@ Voices come from **Kokoro-82M** (open source, Apache-2.0), run with the Kokoro-F
 - To change a voice, edit `VOICES` in both `supabase/functions/tts/index.ts` and `audio.js`, redeploy both, and make the clips again.
 - The function reads the RunPod key from the Supabase secret `RUNPOD_API_KEY`.
 
-### Voice lab (test version, step 1 only)
+### Voice trial (test version, steps 1–5): Qwen3-TTS, American English
 
-Step 1 shows one row of buttons per model, to compare larger open models by ear:
+Every word and sentence in steps 1–5 shows the same 16 buttons: 8 women and 8 men, all from
+**Qwen3-TTS 1.7B** (Alibaba, Apache-2.0). Later steps say "Audio for this step is coming soon".
 
-| Model | Voices | Runs on | Licence of the weights |
-|---|---|---|---|
-| Voxtral 4B TTS (Mistral) | Neutral, Casual, Cheerful (women); Neutral, Casual (men) | pod `basic1000-voxtral`, image `vllm/vllm-omni:v0.30.0` | CC BY-NC 4.0 (non-commercial) |
-| Breeze TTS 2 (BreezeBlue) | Clara (US), Grace (UK), Daniel (US), Oliver (UK), each designed from a description | pod `basic1000-lab` | research and non-commercial only |
-| Qwen3-TTS 1.7B (Alibaba) | Lily (US), Nora (UK) designed; Ryan, Aiden presets | pod `basic1000-lab` | Apache-2.0 |
-| Kokoro 82M | Heart, Michael (for comparison) | pod `basic1000-tts` | Apache-2.0 |
-
-- The voices and their descriptions are in `VOICE_SPECS` in the tts function; the buttons are in `LAB` in `audio.js`.
-- A designed voice is made once from its description (the model reads a fixed sentence in that voice), then every clip is cloned from that recording so the speaker stays the same.
-- The lab pod downloads `tools/tts-lab/lab_server.py` from GitHub when it starts and installs everything itself (about 90 seconds). Its progress is at `{"action":"status","pod":"lab"}`.
-- Start, stop or check a pod with the admin actions and `"pod": "voxtral"` or `"pod": "lab"`. GPU pods cost about $0.60 to $0.90 an hour while running.
+- Women: Lily, Emma, Grace, Olivia, Mia, Sarah, Chloe, Ruth. Men: Ryan, Aiden, Daniel, James, Jake, Michael, Ben, Frank.
+- Ryan and Aiden are Qwen's preset speakers. The other 14 are designed from a written description (see `VOICE_SPECS` in the tts function): the model reads one sentence in that voice, the recording is kept at `refs/qwen_<name>.wav` in the `audio` bucket, and every clip is cloned from it, so the person stays the same now and in later sessions.
+- A sentence that says who is speaking ("I am a woman.") keeps the same button list, but the other speakers' buttons are switched off.
+- The buttons are `QWEN` in `audio.js` (`MAX_STEP` sets how many steps have audio).
+- The GPU pod `basic1000-lab` runs `tools/tts-lab/lab_server.py` (downloaded from GitHub at a fixed commit when the pod is created). It installs and loads in about a minute and makes clips in GPU batches: about 3 seconds for 32 clips of one designed voice. Preset speakers need smaller batches (8) or they run out of memory on a 24 GB card.
+- Making clips: start the pod (`{"action":"start","pod":"lab"}`), send `{"action":"batch","chunk":32,"items":[{"text","voiceId"}, ...]}`, then stop it. About $0.89 an hour on an RTX 4090 while running; nothing while stopped.
