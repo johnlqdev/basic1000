@@ -412,7 +412,9 @@ def make_slow(it):
                 out[o][0] = sp[0]
             out[o][1] = sp[1]
         timing = {"kind": "sentence", "words": [[sec(x[0]), sec(x[1])] for x in out]}
-    timing.update({"text": text, "tempo": tempo, "dur": round(len(dec) / dsr, 3), "heard": heard(wav16)})
+    loud = np.flatnonzero(np.abs(dec) > 0.03)  # where the voice starts and stops
+    speech = [round(loud[0] / dsr, 3), round(loud[-1] / dsr, 3)] if loud.size else None
+    timing.update({"text": text, "tempo": tempo, "dur": round(len(dec) / dsr, 3), "speech": speech, "heard": heard(wav16)})
     return {"mp3": base64.b64encode(mp3).decode(), "timing": timing}
 
 
