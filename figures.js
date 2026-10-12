@@ -1,10 +1,10 @@
 // Basic 1000 teaching pictures: stick figures in the "Faces" style, drawn live with D3.
 // A scene is a function of time that returns primitives (lines, shapes, text). Figures are
 // skeletons posed by joint angles; animals and objects are small line drawings in the same style.
-// Public API: BASIC_FIGURES.has(word), .label(word), .mountAll(container), .replay(sceneElement)
+// Public API: BASIC_FIGURES.has(word), .label(word), .mountAll(container)
 var BASIC_FIGURES = (function () {
   var d3 = window.d3;
-  if (!d3) return { has: function () { return false; }, label: function () { return ''; }, mountAll: function () {}, replay: function () {} };
+  if (!d3) return { has: function () { return false; }, label: function () { return ''; }, mountAll: function () {} };
 
   // ---------- geometry ----------
   var DEG = Math.PI / 180, G = 140; // G: the ground line
@@ -838,12 +838,6 @@ var BASIC_FIGURES = (function () {
     var entry = { el: el, timer: d3.timer(function (ms) { render(svg, scene, ms); }) };
     render(svg, scene, 0);
     live.push(entry);
-    // play the scene again from its first moment
-    el._replay = function () {
-      entry.timer.stop();
-      render(svg, scene, 0);
-      entry.timer = d3.timer(function (ms) { render(svg, scene, ms); });
-    };
   }
 
   return {
@@ -855,7 +849,6 @@ var BASIC_FIGURES = (function () {
       var svg = d3.select(el).append('svg').attr('viewBox', '0 0 200 150');
       ground(svg.append('g')); render(svg, SCENES[word], t);
     },
-    replay: function (el) { if (el && el._replay) el._replay(); },
     mountAll: function (container) {
       // stop animations whose picture has left the page
       live = live.filter(function (x) { if (!x.el.isConnected) { x.timer.stop(); return false; } return true; });

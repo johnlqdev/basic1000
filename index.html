@@ -220,17 +220,11 @@ h1, h2, h3 { text-wrap: balance; margin: 0; font-weight: 400; }
   font: 600 .66rem/18px var(--mono); text-align: center; pointer-events: none; }
 .seq-now .seq-n { background: var(--tab); }
 .seq-done .seq-n { background: var(--tab); opacity: .55; }
-.say.seq-now, .watch.seq-now { border-color: var(--tab); animation: seq-glow 1.6s ease-in-out infinite; }
+.say.seq-now { border-color: var(--tab); animation: seq-glow 1.6s ease-in-out infinite; }
 @keyframes seq-glow { 0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--tab) 45%, transparent); } 50% { box-shadow: 0 0 0 7px color-mix(in srgb, var(--tab) 0%, transparent); } }
-.say:disabled, .watch:disabled { opacity: .38; filter: grayscale(1); cursor: not-allowed; animation: none; }
+.say:disabled { opacity: .38; filter: grayscale(1); cursor: not-allowed; animation: none; }
 .say:disabled:hover { background: var(--card); }
-@media (prefers-reduced-motion: reduce) { .say.seq-now, .watch.seq-now { animation: none; box-shadow: 0 0 0 3px var(--tab-soft); } }
-.scene-bar { max-width: 520px; display: flex; justify-content: center; margin-top: 10px; }
-.watch { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px 8px 12px; border-radius: 999px; border: 1px solid var(--rule); background: var(--card); color: var(--tab); cursor: pointer; font-size: .92rem; }
-.watch svg { width: 18px; height: 18px; }
-.watch:hover { background: var(--tab-soft); }
-.watch.pulse svg { animation: watch-pop .4s ease-out; }
-@keyframes watch-pop { 50% { transform: scale(1.35); } }
+@media (prefers-reduced-motion: reduce) { .say.seq-now { animation: none; box-shadow: 0 0 0 3px var(--tab-soft); } }
 .nav-right { display: inline-flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: flex-end; margin-left: auto; }
 .nav-hint { font-size: .85rem; }
 .btn.primary:disabled { opacity: .45; cursor: not-allowed; }
@@ -815,18 +809,14 @@ function startApp(W, QUIZ) {
   // ---------- lesson ----------
   // how many times the learner has opened this word: a number and five bars that fill as the word
   // becomes familiar (1, 3, 5, 10 and 20 visits). fresh: this visit was just counted, so it pops.
-  const PLAY_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg>';
   const CHECK = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   // the "learned" mark: a small rubber stamp next to the word
   const STAMP = `<span class="stamp" role="img" aria-label="Learned">${CHECK}<span>Learned</span></span>`;
   // what each learning button is called on the progress track
-  const SEQ_NAMES = { 1: 'Word', 2: 'Word, slowly', 3: 'Watch', 4: 'Sentence', 5: 'Sentence, slowly' };
-  const SEQ_SHORT = { 1: 'Word', 2: 'Slowly', 3: 'Watch', 4: 'Sentence', 5: 'Slowly' }; // narrow screens
-  const SEQ_ICONS = {
-    1: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/></svg>',
-    3: PLAY_ICON
-  };
-  SEQ_ICONS[2] = SEQ_ICONS[1]; SEQ_ICONS[4] = SEQ_ICONS[1]; SEQ_ICONS[5] = SEQ_ICONS[1];
+  const SEQ_NAMES = { 1: 'Word', 2: 'Word, slowly', 3: 'Sentence', 4: 'Sentence, slowly' };
+  const SEQ_SHORT = { 1: 'Word', 2: 'Slowly', 3: 'Sentence', 4: 'Slowly' }; // narrow screens
+  const SPEAKER = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/></svg>';
+  const SEQ_ICONS = { 1: SPEAKER, 2: SPEAKER, 3: SPEAKER, 4: SPEAKER };
   const SEEN_STEPS = [1, 3, 5, 10, 20];
   function seenHTML(n, fresh) {
     if (!n) return '';
@@ -848,8 +838,8 @@ function startApp(W, QUIZ) {
     const pron = slow && window.BASIC_PRON && BASIC_PRON[w.w];
     // in a lesson, the learning buttons carry their place in the order (data-seq), see renderLesson
     const seq = (html, n) => opts.lesson ? html.replace('<button ', `<button data-seq="${n}" `) : html;
-    const sayEx = (x, first) => audio ? seq(A.button(x[0], 'Listen to the sentence'), first ? 4 : 0) +
-      (slow ? seq(A.slowButton(x[0], 'sentence', 'Listen slowly to the sentence'), first ? 5 : 0) : '') : '';
+    const sayEx = (x, first) => audio ? seq(A.button(x[0], 'Listen to the sentence'), first ? 3 : 0) +
+      (slow ? seq(A.slowButton(x[0], 'sentence', 'Listen slowly to the sentence'), first ? 4 : 0) : '') : '';
     const head = pron && pron.map(g => g[0]).join('') === w.w
       ? `<span class="hw-col"><span class="headword">${pron.map((g, k) => `<span class="ch" data-c="${k}">${esc(g[0])}</span>`).join('')}</span>
         <span class="ipa" title="How to say it (American English, IPA)">/${pron.map((g, k) => `<span class="ch" data-c="${k}">${esc(g[1])}</span>`).join('')}/</span></span>`
@@ -857,8 +847,7 @@ function startApp(W, QUIZ) {
     let h = `<div class="entry-head"${pron ? ' data-hl' : ''}>${head}${audio ? seq(A.button(w.w, 'Listen to ' + w.w), 1) : ''}${pron ? seq(A.slowButton(w.w, 'word', 'Listen slowly to ' + w.w), 2) : ''}<span class="pos">${esc(w.p)}</span>
       ${opts.stepTag ? `<span class="tag">step ${w.s}</span>` : ''}${seenHTML(opts.views, opts.fresh)}${opts.learned ? STAMP : ''}</div>${!audio && A ? '<p class="muted noaudio">Audio for this step is coming soon.</p>' : ''}
       <div class="mode ${w.m}">${mName}</div> <span class="muted" style="font-size:.88rem">${mHelp}</span>`;
-    if (BASIC_FIGURES.has(w.w)) h += `<div class="scene" data-scene="${esc(w.w)}" role="img" aria-label="${esc(BASIC_FIGURES.label(w.w))}"></div>
-      <div class="scene-bar">${seq(`<button class="watch" type="button" data-watch>${PLAY_ICON}<span>Watch from the start</span></button>`, 3)}</div>`;
+    if (BASIC_FIGURES.has(w.w)) h += `<div class="scene" data-scene="${esc(w.w)}" role="img" aria-label="${esc(BASIC_FIGURES.label(w.w))}"></div>`;
     else h += `<div class="slot blank"><span class="eyebrow">Picture coming soon</span><b>${esc(w.w)}</b></div>`;
     if (w.m === 'F') {
       const ahead = w.ds.filter(s => s[2] !== i && W[s[2]].s >= w.s).length;
@@ -877,9 +866,8 @@ function startApp(W, QUIZ) {
   }
 
   // counted: this is a new visit to the word (not a redraw after sign-in), so its view count goes up
-  // A word is learned by tapping its learning buttons in order: the word, the word slowly, "Watch
-  // from the start" under the picture, then the first sentence and the first sentence slowly (only the
-  // ones the word has). At first only the next button can be tapped; the others are grey. When the
+  // A word is learned by tapping its learning buttons in order: the word, the word slowly, then the
+  // first sentence and the first sentence slowly (only the ones the word has). At first only the next button can be tapped; the others are grey. When the
   // last one is tapped the word is learned and saved, and the way to the next word opens. A learned
   // word has no order: every button works straight away.
   function renderLesson(step, k, counted) {
@@ -919,7 +907,7 @@ function startApp(W, QUIZ) {
     const hint = document.getElementById('navHint');
     const btns = [...art.querySelectorAll('[data-seq]')].filter(b => +b.dataset.seq > 0).sort((a, b) => a.dataset.seq - b.dataset.seq);
     let pos = 0, track = null;
-    if (!btns.length) { finish(); return; } // nothing to tap on this word yet (no audio or picture): learned on sight
+    if (!btns.length) { finish(); return; } // nothing to tap on this word yet (no audio): learned on sight
     // the track: one numbered stop per button, at the top of the card
     track = document.createElement('div');
     track.className = 'learn-track';
@@ -1324,14 +1312,6 @@ function startApp(W, QUIZ) {
   function closeSheet() { $scrim.hidden = true; $scrim.innerHTML = ''; BASIC_FIGURES.mountAll($view); }
   $scrim.addEventListener('click', e => { if (e.target === $scrim) closeSheet(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$scrim.hidden) closeSheet(); });
-  // "Watch from the start": play the scene above the button again
-  document.addEventListener('click', e => {
-    const b = e.target.closest('[data-watch]');
-    if (!b) return;
-    const sc = b.closest('.scene-bar') && b.closest('.scene-bar').previousElementSibling;
-    if (sc && sc.classList.contains('scene')) BASIC_FIGURES.replay(sc);
-    b.classList.remove('pulse'); void b.offsetWidth; b.classList.add('pulse');
-  });
   document.addEventListener('click', e => {
     const b = e.target.closest('[data-word]');
     if (b) { e.preventDefault(); openSheet(+b.dataset.word); }
