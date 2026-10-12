@@ -3,3 +3,4 @@ __pycache__/
 .DS_Store
 tools/pipeline/out/course.json
 tools/pipeline/out/vocab.py
+content/quiz_pending.json

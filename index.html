@@ -155,23 +155,15 @@ h1, h2, h3 { text-wrap: balance; margin: 0; font-weight: 400; }
 .lk.ahead { border-bottom: 2px dashed var(--lock); }
 .lk:hover { background: var(--marker-soft); }
 .forms { font-size: .95rem; }
-.says { display: inline-flex; gap: 6px; flex-wrap: wrap; vertical-align: middle; }
-.say { display: inline-flex; align-items: center; gap: 5px; height: 30px; padding: 0 10px 0 8px; border-radius: 999px; border: 1px solid var(--rule); background: var(--card); color: var(--tab); cursor: pointer; font: inherit; font-size: .78rem; font-weight: 600; line-height: 1; }
-.say svg { width: 15px; height: 15px; flex: none; }
+.say { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; flex: none; padding: 0; border-radius: 999px; border: 1px solid var(--rule); background: var(--card); color: var(--tab); cursor: pointer; vertical-align: middle; }
+.say svg { width: 18px; height: 18px; }
 .say:hover { background: var(--tab-soft); }
 .say.playing { background: var(--tab); color: var(--card); border-color: var(--tab); }
-.entry-head .says { align-self: center; }
-.examples li .says { margin-left: 8px; }
-.examples li .say { height: 26px; font-size: .72rem; padding: 0 8px 0 6px; }
-.examples li .say svg { width: 13px; height: 13px; }
-.lab { display: grid; gap: 6px; margin-top: 10px; padding: 10px 12px; border: 1px dashed var(--rule); border-radius: 12px; }
-.lab-row { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-.say[disabled] { opacity: .35; cursor: not-allowed; }
-.say[disabled]:hover { background: var(--card); }
+.entry-head .say { align-self: center; width: 42px; height: 42px; }
+.entry-head .say svg { width: 22px; height: 22px; }
+.examples li .say { width: 30px; height: 30px; margin-left: 8px; }
+.examples li .say svg { width: 16px; height: 16px; }
 .noaudio { font-size: .85rem; margin-top: 8px; }
-.lab-model { font-family: var(--mono); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); min-width: 60px; }
-.examples li .lab { margin-top: 8px; padding: 8px 10px; }
-.examples li .lab .say { height: 26px; font-size: .72rem; padding: 0 8px 0 6px; }
 .lesson-nav { display: flex; justify-content: space-between; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
 
 /* ---------- quiz ---------- */
@@ -383,7 +375,8 @@ var BASIC1000 = (function () {
 })();
 </script>
 <script>
-function startApp(W) {
+function startApp(W, QUIZ) {
+  QUIZ = QUIZ || {};
   const TOTAL_STEPS = 200, PER = 5;
   const MODES = {
     P: ['Picture word', 'Shown with a picture, not defined.'],
@@ -680,11 +673,11 @@ function startApp(W) {
     opts = opts || {};
     const w = W[i], [mName, mHelp] = MODES[w.m];
     const A = window.BASIC_AUDIO;
-    // voice trial (test): the same list of Qwen voices for the word and each sentence, steps 1 to A.MAX_STEP
+    // audio: one speaker button for the word and for each sentence (steps 1 to A.MAX_STEP so far)
     const audio = A && w.s <= A.MAX_STEP;
-    const sayEx = (x) => audio ? A.voiceButtons(x[0], 'Listen to the sentence') : '';
-    let h = `<div class="entry-head"><span class="headword">${esc(w.w)}</span><span class="pos">${esc(w.p)}</span>
-      ${opts.stepTag ? `<span class="tag">step ${w.s}</span>` : ''}</div>${audio ? A.voiceButtons(w.w, 'Listen to ' + w.w) : A ? '<p class="muted noaudio">Audio for this step is coming soon.</p>' : ''}
+    const sayEx = (x) => audio ? A.button(x[0], 'Listen to the sentence') : '';
+    let h = `<div class="entry-head"><span class="headword">${esc(w.w)}</span>${audio ? A.button(w.w, 'Listen to ' + w.w) : ''}<span class="pos">${esc(w.p)}</span>
+      ${opts.stepTag ? `<span class="tag">step ${w.s}</span>` : ''}</div>${!audio && A ? '<p class="muted noaudio">Audio for this step is coming soon.</p>' : ''}
       <div class="mode ${w.m}">${mName}</div> <span class="muted" style="font-size:.88rem">${mHelp}</span>`;
     if (BASIC_FIGURES.has(w.w)) h += `<div class="scene" data-scene="${esc(w.w)}" role="img" aria-label="${esc(BASIC_FIGURES.label(w.w))}"></div>`;
     else h += `<div class="slot blank"><span class="eyebrow">Picture coming soon</span><b>${esc(w.w)}</b></div>`;
@@ -810,44 +803,97 @@ function startApp(W) {
     const surface = ex[0].slice(sp[0], sp[1]);
     return { sp, surface, kind: formKind(W[i].w, surface, ex[0].slice(sp[1])) };
   }
-  function distractors(i, pool) {
-    const w = W[i];
-    const same = shuffle(pool.filter(j => j !== i && W[j].p === w.p && W[j].w.toLowerCase() !== w.w.toLowerCase()));
-    const other = shuffle(pool.filter(j => j !== i && W[j].p !== w.p));
-    return same.concat(other);
+  // ---------- quiz questions ----------
+  // A question must have exactly one right answer. Every question the quizzes can ask has a fixed
+  // list of candidate wrong answers (quizBank below). Each candidate is checked by hand (the
+  // quiz-check skill, tools/quiz/) and the result is kept in content/quiz_checks.json; quiz.json,
+  // built from it, lists only the wrong answers that were checked and really are wrong.
+  // The quizzes offer nothing else, so "___ is a girl." can never show both "this" and "that".
+  const HEAD = new Map(W.map((w, i) => [w.w, i]));
+  const hash = s => { let x = 2166136261; for (let k = 0; k < s.length; k++) { x ^= s.charCodeAt(k); x = Math.imul(x, 16777619); } return x >>> 0; };
+  // a fixed shuffle, so the candidate lists (and so the checks) do not change from run to run
+  const fixedOrder = (ids, key) => ids.map(j => [hash(key + '|' + W[j].w), j]).sort((p, q) => p[0] - q[0]).map(p => p[1]);
+  const gapAnswer = (i, g) => g.kind === 'base' ? W[i].w : (W[i].w === 'I' && g.surface === 'I' ? 'I' : g.surface.toLowerCase());
+  const questionId = (i, k) => k < 0 ? 'd:' + W[i].w : 'g:' + W[i].w + ':' + k;
+  // candidate wrong answers for word i: k = example number for a gap question, -1 for the meaning question.
+  // They come only from words taught by the time the question can be asked, so they are always known words.
+  function candidates(i, k, n) {
+    const w = W[i], id = questionId(i, k);
+    const upTo = k < 0 ? w.s : Math.max(w.s, w.x[k][1]);
+    const pool = [];
+    for (let s = 1; s <= upTo; s++) if (STEPS[s]) pool.push(...STEPS[s]);
+    const others = pool.filter(j => j !== i && W[j].w.toLowerCase() !== w.w.toLowerCase());
+    const same = fixedOrder(others.filter(j => W[j].p === w.p), id), diff = fixedOrder(others.filter(j => W[j].p !== w.p), id);
+    const out = [], used = new Set();
+    if (k < 0) {
+      for (const j of same.concat(diff)) { if (out.length < n) out.push([W[j].w, W[j].w]); }
+      return { id, kind: 'def', word: w.w, text: w.d, prompt: w.d, answer: w.w, cands: out };
+    }
+    const ex = w.x[k], g = gapOf(i, ex);
+    if (!g) return null;
+    const answer = gapAnswer(i, g);
+    used.add(answer.toLowerCase());
+    const add = (j, label) => {
+      if (out.length >= n || !label || used.has(label.toLowerCase())) return;
+      if (SENTENCES.has((ex[0].slice(0, g.sp[0]) + label + ex[0].slice(g.sp[1])).toLowerCase())) return;
+      used.add(label.toLowerCase()); out.push([label, W[j].w]);
+    };
+    if (g.kind && g.kind !== 'base') same.forEach(j => { const l = inflect(W[j].w, g.kind); if (l && ATTESTED.has(l.toLowerCase())) add(j, l); });
+    same.concat(diff).forEach(j => add(j, W[j].w));
+    return { id, kind: 'gap', word: w.w, text: ex[0], prompt: ex[0].slice(0, g.sp[0]) + '___' + ex[0].slice(g.sp[1]), answer, cands: out };
   }
+  // every question with its candidates, for tools/quiz/candidates.py
+  window.BASIC1000_QUIZ_BANK = (n) => {
+    const all = [];
+    W.forEach((w, i) => {
+      if (w.m === 'F') all.push(candidates(i, -1, n));
+      w.x.forEach((_, k) => { const q = candidates(i, k, n); if (q) all.push(q); });
+    });
+    return all;
+  };
+  // the checked wrong answers for a question, as [label, word index] pairs (none if it was never checked)
+  const checked = id => (QUIZ[id] || []).map(([label, head]) => [label, HEAD.get(head)]).filter(p => p[1] !== undefined);
+
   function makeQuestion(i, maxStep, preferReview) {
     const w = W[i];
-    const pool = [];
-    for (let s = 1; s <= Math.max(maxStep, 1); s++) if (STEPS[s]) pool.push(...STEPS[s]);
-    const useDef = w.m === 'F' && (!preferReview || Math.random() < .5);
-    if (useDef) {
-      const options = shuffle([i].concat(distractors(i, pool).slice(0, 3)));
-      const labels = {}; options.forEach(o => { labels[o] = W[o].w; });
+    // how many checked wrong answers a question can show (at most 3); -1 if it cannot be asked
+    const nDef = w.m === 'F' ? Math.min(3, checked(questionId(i, -1)).length) : -1;
+    const nGap = k => k >= 0 && gapOf(i, w.x[k]) ? Math.min(3, checked(questionId(i, k)).length) : -1;
+    const usable = w.x.map((x, k) => k).filter(k => w.x[k][1] <= maxStep && nGap(k) >= 0);
+    // the step quiz asks about the sentence taught in the lesson; reviews use any unlocked sentence.
+    // A sentence where almost any word would fit (so few wrong answers survived the check) gives way
+    // to another sentence or to the meaning question.
+    let cands = preferReview ? usable : [w.x.indexOf(teachExample(i))].filter(k => nGap(k) >= 0);
+    const top = ks => ks.length ? Math.max(...ks.map(nGap)) : -1;
+    if (top(cands) < 3 && top(usable) > top(cands)) cands = usable;
+    // meaning words: the step quiz asks for the meaning, reviews mix meaning and sentence questions
+    const useDef = nDef >= 1 && (preferReview
+      ? nDef > top(cands) || (nDef === top(cands) && Math.random() < .5)
+      : nDef >= top(cands) || nDef >= 3);
+    if (useDef || (nDef >= 1 && !cands.length)) {
+      const picks = shuffle(checked(questionId(i, -1))).slice(0, 3);
+      const options = shuffle([i].concat(picks.map(p => p[1])));
+      const labels = { [i]: w.w }; picks.forEach(([l, j]) => { labels[j] = l; });
       return { i, kind: 'def', options, labels, ctx: maxStep };
     }
-    let cands = preferReview ? w.x.filter(x => x[1] <= maxStep) : [];
-    if (!cands.length) cands = [teachExample(i)];
-    // prefer sentences whose form the other choices can copy
-    const copyable = cands.filter(x => { const g = gapOf(i, x); return g && g.kind; });
-    const pickFrom = copyable.length ? copyable : cands;
-    const ex = pickFrom[Math.floor(Math.random() * pickFrom.length)];
-    const g = gapOf(i, ex);
-    const answer = g.kind === 'base' ? w.w : (w.w === 'I' && g.surface === 'I' ? 'I' : g.surface.toLowerCase());
-    const labels = { [i]: answer }, used = new Set([answer.toLowerCase()]);
-    const options = [i], others = distractors(i, pool);
-    const add = (j, label) => {
-      if (options.length === 4 || options.includes(j) || !label || used.has(label.toLowerCase())) return;
-      if (SENTENCES.has((ex[0].slice(0, g.sp[0]) + label + ex[0].slice(g.sp[1])).toLowerCase())) return;
-      used.add(label.toLowerCase()); labels[j] = label; options.push(j);
-    };
-    if (g.kind && g.kind !== 'base') {
-      // same kind of word, in the same form, and only forms the course itself uses
-      others.filter(j => W[j].p === w.p).forEach(j => { const l = inflect(W[j].w, g.kind); if (l && ATTESTED.has(l.toLowerCase())) add(j, l); });
-    }
-    others.forEach(j => add(j, W[j].w));
+    if (!cands.length) cands = [w.x.indexOf(teachExample(i))];
+    // among the sentences with the most wrong answers, prefer ones whose form the other choices can copy
+    const most = cands.filter(k => nGap(k) === top(cands));
+    const copyable = most.filter(k => gapOf(i, w.x[k]).kind);
+    const pickFrom = copyable.length ? copyable : most.length ? most : cands;
+    const k = pickFrom[Math.floor(Math.random() * pickFrom.length)];
+    const ex = w.x[k], g = gapOf(i, ex), answer = gapAnswer(i, g);
+    const picks = shuffle(checked(questionId(i, k))).slice(0, 3);
+    const labels = { [i]: answer }, options = [i];
+    picks.forEach(([l, j]) => { if (!options.includes(j)) { labels[j] = l; options.push(j); } });
     return { i, kind: 'gap', ex, gap: g.sp, options: shuffle(options), labels, answer, ctx: maxStep };
   }
+  // the questions a quiz would ask, as plain text, for checking (tools/quiz/sample.py)
+  window.BASIC1000_QUIZ_SAMPLE = (step, review) => STEPS[step].map(i => {
+    const q = makeQuestion(i, review ? 999 : step, !!review);
+    return { word: W[i].w, kind: q.kind, prompt: q.kind === 'def' ? W[i].d : q.ex[0].slice(0, q.gap[0]) + '___' + q.ex[0].slice(q.gap[1]),
+      answer: q.labels[i], options: q.options.map(o => q.labels[o]) };
+  });
 
   function questionHTML(q, n, total, label) {
     const w = W[q.i];
@@ -1045,7 +1091,11 @@ function startApp(W) {
 }
 Promise.all([1, 2, 3, 4].map(function (n) {
   return fetch('/data-' + n + '.txt').then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); });
-})).then(function (parts) { startApp(BASIC1000.parse(parts.join(''))); })
+})).then(function (parts) {
+  // quiz.json: the checked wrong answers for every quiz question (see tools/quiz)
+  return fetch('/quiz.json').then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; })
+    .then(function (quiz) { startApp(BASIC1000.parse(parts.join('')), quiz.questions || {}); });
+})
   .catch(function () {
     document.getElementById('view').innerHTML = '<div class="empty"><h2>The word list did not load</h2><p class="muted">Check your connection and reload the page.</p></div>';
   });

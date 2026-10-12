@@ -30,8 +30,8 @@ const PODS: Record<string, { name: string; port: number }> = {
   kokoro: { name: "basic1000-tts", port: 8880 },
 };
 const BUCKET = "audio";
-// the voice used when a request names only "woman" or "man" (until the final two are chosen)
-const VOICES: Record<string, string> = { woman: "us_lily", man: "qw_aiden" };
+// the voices used when a request names only "woman" or "man": Daniel for words and neutral sentences, Sarah for a woman speaking
+const VOICES: Record<string, string> = { woman: "us_sarah", man: "us_daniel" };
 // the older Kokoro trial, kept so its stored clips still resolve
 const CHOICES: Record<string, string[]> = {
   woman: ["af_heart", "af_bella", "bf_emma"],
