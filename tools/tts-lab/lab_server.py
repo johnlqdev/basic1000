@@ -53,6 +53,7 @@ REPOS = {"qwen_custom": "Qwen3-TTS-12Hz-1.7B-CustomVoice", "qwen_design": "Qwen3
 
 STATE = {"phase": "starting", "ready": [], "errors": {}, "started": time.time()}
 GPU_LOCK = threading.Lock()
+CTC_LOCK = threading.Lock()  # the aligner models; slow clips are otherwise made in parallel
 ENGINES = {}
 PROMPTS = {}
 
@@ -309,7 +310,7 @@ def emissions(name, wav16):
     import torch
     model = CTC[name][0]
     x = torch.from_numpy((wav16 - wav16.mean()) / (wav16.std() + 1e-7)).float()[None].to("cuda:0")
-    with torch.inference_mode():
+    with CTC_LOCK, torch.inference_mode():
         logits = model(x).logits[0].float()
     return torch.log_softmax(logits, dim=-1).cpu().numpy()
 
@@ -488,14 +489,18 @@ class Handler(BaseHTTPRequestHandler):
             if self.path.startswith("/slow_batch"):
                 if "slow" not in STATE["ready"]:
                     return self._send(503, {"error": "aligner not ready", "phase": STATE["phase"]})
-                t0, results = time.time(), []
-                with GPU_LOCK:
-                    for it in req.get("items", []):
-                        try:
-                            results.append(make_slow(it))
-                        except Exception as e:
-                            log("slow failed", repr(it.get("text")), traceback.format_exc()[-400:])
-                            results.append({"error": repr(e)[:300]})
+                t0 = time.time()
+                from concurrent.futures import ThreadPoolExecutor
+
+                def one(it):
+                    try:
+                        return make_slow(it)
+                    except Exception as e:
+                        log("slow failed", repr(it.get("text")), traceback.format_exc()[-400:])
+                        return {"error": repr(e)[:300]}
+                # downloading, stretching and encoding run side by side; only the GPU steps take turns
+                with ThreadPoolExecutor(max_workers=8) as pool:
+                    results = list(pool.map(one, req.get("items", [])))
                 log("slow batch", len(results), f"{time.time() - t0:.1f}s")
                 return self._send(200, {"results": results})
             if STATE["phase"] != "ready":

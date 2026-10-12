@@ -23,12 +23,14 @@ Live site: https://basic-1000.vercel.app
 | `tools/quiz/` | Quiz check tools: makes sure every quiz question has only one right answer |
 | `tools/audio_items.py` | Lists the clips a range of steps needs, as a request for the tts function |
 | `tools/slow_items.py` | Lists the slow clips a range of steps needs, as a request for the tts function |
+| `tools/pron/` | Builds `pron.js` (IPA and sound groups) from the CMU Pronouncing Dictionary plus hand entries |
+| `content/jobs/` | Job lists the tts function reads from GitHub during a long audio run |
 | `.vercelignore` | Keeps everything except the website files out of the Vercel deployment |
 
 ## How learners move through the course
 
 - **One step at a time.** A step opens once every step before it is done, meaning its quiz has been taken. Locked steps show a padlock on the path; tapping one explains what opens it. Finished steps can always be opened again. The Dictionary stays open for every word; its "Open step" button is locked the same way.
-- **Learning a word.** A word is learned when its four audio buttons are tapped in this order: the word, the word slowly, the first sentence, then the first sentence slowly. Only the buttons the word has count; steps 6-10 have no slow buttons yet, so they need two taps. At first only button 1 works. The others are grey and numbered, and the next one glows. A track at the top of the card shows the stops. "Next word" (or the step quiz) stays locked until the last tap. The word is then saved as learned (`learned` in the progress record), gets a "Learned" stamp and a teal top edge on its card, and its dot at the top of the lesson fills in. A learned word has no order: every button works straight away. Words with nothing to tap yet (from step 11, which has no audio) count as learned when opened. Words from steps finished before this rule existed count as learned. A lesson always opens at the first word of its step that is not learned yet.
+- **Learning a word.** A word is learned when its four audio buttons are tapped in this order: the word, the word slowly, the first sentence, then the first sentence slowly.  At first only button 1 works. The others are grey and numbered, and the next one glows. A track at the top of the card shows the stops. "Next word" (or the step quiz) stays locked until the last tap. The word is then saved as learned (`learned` in the progress record), gets a "Learned" stamp and a teal top edge on its card, and its dot at the top of the lesson fills in. A learned word has no order: every button works straight away. Words from steps finished before this rule existed count as learned. A lesson always opens at the first word of its step that is not learned yet.
 - **Visits.** Each time a learner opens a word's page (in a lesson, or from a tapped word or the Dictionary), its visit count goes up by one. The count is shown next to the word, with five bars that fill at 1, 3, 5, 10 and 20 visits. Counts are part of the learner's progress (`views` in the saved record), so they are kept in the browser and in their account when signed in. When two devices are merged, the higher count is kept.
 
 ## Editing the course
@@ -54,7 +56,7 @@ Every word and example sentence has a speaker button. The voices come from **Qwe
 
 - **Daniel** (`us_daniel`) reads every word and every neutral sentence.
 - **Sarah** (`us_sarah`) reads a sentence only when a woman must be the speaker ("I am a woman.", "I am not a man."). The rule is `voiceFor()` in `audio.js` and `voice_for()` in `tools/audio_items.py`; keep them the same.
-- Unit 1 (steps 1-10) has all its clips: 135 by Daniel, 2 by Sarah. `MAX_STEP` in `audio.js` sets how many steps show buttons; later steps say "Audio for this step is coming soon".
+- Every step has its clips: each word and both of its example sentences.
 
 How it works:
 
@@ -65,16 +67,16 @@ How it works:
 - Admin actions need the `x-admin-token` header (the token is in the Supabase vault as `tts_admin_token`): `status`, `start`, `stop`, `batch`, `pods`, `create`, `delete`. The function reads the RunPod key from the Supabase secret `RUNPOD_API_KEY`.
 - The GPU pod `basic1000-lab` runs `tools/tts-lab/lab_server.py` (downloaded from GitHub at a fixed commit when the pod is created). It loads in about a minute and makes about 32 clips in 3 seconds. About $0.89 an hour on an RTX 4090 while running; nothing while stopped. If it will not start ("not enough free GPUs"), delete it and create it again: the stored references keep the voices the same.
 
-To add audio for more steps (for example 11-20):
+To make audio for new words (for example a second thousand):
 
 1. Start the pod: `{"action":"start","pod":"lab"}`, then wait until `status` shows the server is ready.
-2. Send the output of `python3 tools/audio_items.py 11 20` as a `batch` request (about 60 items per call, so each call finishes within the time limit).
+2. Write the job list, for example `python3 tools/audio_items.py 201 400 > content/jobs/normal.json`, and push it to GitHub. Then send `{"action":"batch","chunk":32,"compact":true,"list":"https://raw.githubusercontent.com/johnlqdev/basic1000/<commit>/content/jobs/normal.json","offset":0,"count":160}`, raising `offset` by 160 each time. Clips already made are skipped.
 3. Stop the pod: `{"action":"stop","pod":"lab"}`.
-4. Raise `MAX_STEP` in `audio.js` and deploy.
+4. Make the slow clips (below), then raise `MAX_STEP` and `SLOW_MAX_STEP` in `audio.js` and deploy.
 
 The voice trial clips (16 Qwen voices for steps 1-5, and the older Kokoro clips) are still in storage but no longer used.
 
-### Slow buttons (steps 1-5)
+### Slow buttons
 
 Next to each speaker button is a tortoise button. It plays the same recording slowed down, with the pitch unchanged: words at 60 % speed, sentences at 70 %. While it plays:
 
@@ -83,14 +85,14 @@ Next to each speaker button is a tortoise button. It plays the same recording sl
 
 How it is made:
 
-- `pron.js` has the IPA for each word, split into sound groups such as `['ou', 'aʊ']` (the letters "ou" spell /aʊ/). The IPA follows what Daniel says when he reads the word alone, so "a" is /eɪ/ and "the" is /ði/.
+- `pron.js` has the IPA for each word, split into sound groups such as `['ou', 'aʊ']` (the letters "ou" spell /aʊ/). It is made by `python3 tools/pron/build_pron.py cmudict.dict --review` from the CMU Pronouncing Dictionary (https://github.com/cmusphinx/cmudict, BSD licence): the first pronunciation of each word, with its letters lined up with its sounds using the common spellings in `tools/pron/spellings.py`. Hand entries in `tools/pron/overrides.json` win; they cover the first 25 words, homographs taught in another sense (live /lɪv/, read /rid/, lead /lid/, wind /wɪnd/, close /kloʊz/, the noun record), and a few odd spellings. The IPA follows what Daniel says when he reads the word alone, so "a" is /eɪ/ and "the" is /ði/.
 - The voice server (`tools/tts-lab/lab_server.py`, `/slow_batch`) takes the stored normal clip and slows it down with Rubber Band (through ffmpeg). It then finds when each letter is heard with forced alignment, using `facebook/wav2vec2-large-960h-lv60-self`. It also writes down what a phoneme model (`facebook/wav2vec2-lv-60-espeak-cv-ft`) hears, as `heard`, which was used to check the IPA.
 - The tts function's admin action `slow` stores two files next to the normal clip: `slow1/{voice}/{same name}.mp3` and `.json`, the timing file. The page lights each sound from the moment the aligner marks until halfway to the next one. If a slow clip is missing, the page plays the normal clip slowed down by the browser, without highlighting.
 
-To add slow buttons for more steps (for example 6-10):
+To add slow buttons for new words:
 
-1. Add the words to `pron.js`. Their letters must spell the word exactly; silent letters join a neighbouring group.
-2. Start the pod, then send the output of `python3 tools/slow_items.py 6 10` as the request body, about 22 items per call. Check that each `heard` matches the IPA, then stop the pod.
+1. Run `tools/pron/build_pron.py` again and check its `--review` list, adding overrides where needed. A group's letters must spell the word exactly; silent letters join a neighbouring group.
+2. Write `python3 tools/slow_items.py 201 400 > content/jobs/slow.json`, push it, start the pod and send `{"action":"slow","chunk":10,"compact":true,"list":"…/content/jobs/slow.json","offset":0,"count":100}` until done. The report lists words whose IPA does not match what the phoneme model heard (`flagged`); check those, then stop the pod.
 3. Raise `SLOW_MAX_STEP` in `audio.js` and deploy.
 
 ## Quiz check

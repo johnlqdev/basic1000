@@ -6,7 +6,7 @@
 // straight away with no server call. Order: stored clip -> ask the function -> browser voice.
 // Every clip starts and ends with a little silence, so the first word is not swallowed.
 //
-// Slow buttons (steps 1 to SLOW_MAX_STEP): a slower clip (words at 60 % speed, sentences at 70 %,
+// Slow buttons (every step): a slower clip (words at 60 % speed, sentences at 70 %,
 // pitch unchanged) with a timing file made by the same function. While it plays, the sound being
 // heard is highlighted: in a word, its letters and IPA (sound groups from pron.js); in a sentence,
 // the word being read. Both files sit next to the normal clip: slow1/{voice}/{same name}.mp3 / .json.
@@ -19,9 +19,9 @@
   var VOICES = { man: 'us_daniel', woman: 'us_sarah' };
   var NAMES = { us_daniel: 'Daniel', us_sarah: 'Sarah' };
   var VERSION = 'v2';
-  var MAX_STEP = 10; // steps that have clips so far (Unit 1)
+  var MAX_STEP = 200; // steps that have clips (all of them)
   var SLOW_VERSION = 'slow1'; // must match SLOW_VERSION in the tts function
-  var SLOW_MAX_STEP = 5; // steps that have slow clips so far
+  var SLOW_MAX_STEP = 200; // steps that have slow clips (all of them)
   var WORD_RE = /[A-Za-z']+/g; // how sentences are split into words (same as the voice server)
 
   var MALE = 'man|boy|father|brother|son|husband';
