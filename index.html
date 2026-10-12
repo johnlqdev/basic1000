@@ -188,6 +188,62 @@ h1, h2, h3 { text-wrap: balance; margin: 0; font-weight: 400; }
 .seen.fresh .seen-n { animation: seen-pop .5s cubic-bezier(.3, 1.6, .5, 1) both; }
 @keyframes seen-pop { 0% { transform: translateY(6px) scale(.6); opacity: 0; } 100% { transform: none; opacity: 1; } }
 @media (prefers-reduced-motion: reduce) { .seen.fresh .seen-n { animation: none; } }
+/* learning a word: the track, numbered buttons, and the learned stamp */
+.entry { position: relative; }
+.entry.is-learning { border-top: 4px solid var(--rule); }
+.entry.is-learned { border-top: 4px solid var(--tab); }
+.learn-track { margin: -6px 0 22px; padding: 12px 14px 14px; border-radius: 12px; background: var(--paper); border: 1px solid var(--rule);
+  transition: opacity .4s, transform .4s, max-height .45s, margin .45s, padding .45s; max-height: 200px; overflow: hidden; }
+.learn-track.lt-finished { background: var(--tab-soft); border-color: transparent; }
+.learn-track.lt-gone { opacity: 0; transform: translateY(-6px); max-height: 0; margin: 0; padding-block: 0; }
+.lt-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+.lt-count { font-size: .85rem; }
+.learn-track ol { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(var(--n, 5), minmax(0, 1fr)); gap: 6px; }
+.ln-short { display: none; }
+@media (max-width: 520px) { .lt-name svg, .ln-long { display: none; } .ln-short { display: inline; } .learn-track li { font-size: .74rem; } }
+.learn-track li { position: relative; display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center; color: var(--muted); font-size: .8rem; line-height: 1.2; }
+.learn-track li + li::before { content: ""; position: absolute; top: 13px; right: calc(50% + 17px); width: calc(100% - 34px + 6px); height: 2px; background: var(--rule); }
+.learn-track li.done + li::before, .learn-track li.done + li.done::before { background: var(--tab); }
+.lt-dot { width: 28px; height: 28px; border-radius: 999px; display: grid; place-items: center; border: 2px solid var(--rule); background: var(--card); font-family: var(--mono); font-size: .8rem; color: var(--muted); position: relative; z-index: 1; }
+.lt-dot svg { display: none; width: 16px; height: 16px; }
+.learn-track li.now { color: var(--ink); font-weight: 600; }
+.learn-track li.now .lt-dot { border-color: var(--tab); color: var(--tab); box-shadow: 0 0 0 4px var(--tab-soft); }
+.learn-track li.done { color: var(--tab); }
+.learn-track li.done .lt-dot { background: var(--tab); border-color: var(--tab); color: var(--tab-ink); }
+.learn-track li.done .lt-dot b { display: none; }
+.learn-track li.done .lt-dot svg { display: block; }
+.lt-name { display: inline-flex; align-items: center; gap: 4px; }
+.lt-name svg { width: 13px; height: 13px; flex: none; }
+/* the numbered buttons: the next one glows, the ones after it wait in grey */
+[data-seq] { position: relative; }
+.seq-n { position: absolute; top: -7px; right: -7px; min-width: 18px; height: 18px; padding: 0 4px; border-radius: 999px; background: var(--muted); color: var(--card);
+  font: 600 .66rem/18px var(--mono); text-align: center; pointer-events: none; }
+.seq-now .seq-n { background: var(--tab); }
+.seq-done .seq-n { background: var(--tab); opacity: .55; }
+.say.seq-now, .watch.seq-now { border-color: var(--tab); animation: seq-glow 1.6s ease-in-out infinite; }
+@keyframes seq-glow { 0%, 100% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--tab) 45%, transparent); } 50% { box-shadow: 0 0 0 7px color-mix(in srgb, var(--tab) 0%, transparent); } }
+.say:disabled, .watch:disabled { opacity: .38; filter: grayscale(1); cursor: not-allowed; animation: none; }
+.say:disabled:hover { background: var(--card); }
+@media (prefers-reduced-motion: reduce) { .say.seq-now, .watch.seq-now { animation: none; box-shadow: 0 0 0 3px var(--tab-soft); } }
+.scene-bar { max-width: 520px; display: flex; justify-content: center; margin-top: 10px; }
+.watch { display: inline-flex; align-items: center; gap: 8px; padding: 8px 16px 8px 12px; border-radius: 999px; border: 1px solid var(--rule); background: var(--card); color: var(--tab); cursor: pointer; font-size: .92rem; }
+.watch svg { width: 18px; height: 18px; }
+.watch:hover { background: var(--tab-soft); }
+.watch.pulse svg { animation: watch-pop .4s ease-out; }
+@keyframes watch-pop { 50% { transform: scale(1.35); } }
+.nav-right { display: inline-flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: flex-end; margin-left: auto; }
+.nav-hint { font-size: .85rem; }
+.btn.primary:disabled { opacity: .45; cursor: not-allowed; }
+/* the stamp: a learned word, marked like a page in a well-used dictionary */
+.stamp { align-self: center; display: inline-flex; align-items: center; gap: 5px; padding: 4px 10px 4px 7px; border: 2px solid var(--tab); border-radius: 7px;
+  color: var(--tab); font: 600 .72rem/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; transform: rotate(-6deg);
+  box-shadow: inset 0 0 0 2px var(--card), inset 0 0 0 3px color-mix(in srgb, var(--tab) 40%, transparent); background: var(--card); }
+.stamp svg { width: 15px; height: 15px; }
+.just-learned .stamp { animation: stamp-in .55s cubic-bezier(.2, 1.4, .4, 1) both; }
+@keyframes stamp-in { 0% { transform: rotate(-18deg) scale(2.2); opacity: 0; } 60% { opacity: 1; } 100% { transform: rotate(-6deg) scale(1); } }
+@media (prefers-reduced-motion: reduce) { .just-learned .stamp { animation: none; } }
+.dots i.cur { box-shadow: 0 0 0 2px var(--paper), 0 0 0 3.5px var(--tab); }
+.dots i.quiz { width: 10px; }
 /* locked steps */
 .step.locked { cursor: not-allowed; position: relative; }
 .step .lock { width: 13px; height: 13px; opacity: .8; }
@@ -427,14 +483,15 @@ function startApp(W, QUIZ) {
   // ---------- progress ----------
   const LS_KEY = 'basic1000-progress-v1';
   // Progress v2: done = { step: best score }, boxes = { headword: [box, due time] },
-  // views = { headword: how many times the learner opened that word's page }.
+  // views = { headword: how many times the learner opened that word's page },
+  // learned = { headword: time it was learned } (all of its learning buttons tapped in order, see renderLesson).
   // Boxes are keyed by word so a change to the step order keeps what was learned.
   const COURSE_VERSION = 'c2';
   const WI = {};
   W.forEach((w, i) => { WI[w.w] = i; });
   const box = i => P.boxes[W[i].w];
   const setBox = (i, b) => { P.boxes[W[i].w] = b; };
-  let P = { v: 2, cv: COURSE_VERSION, done: {}, boxes: {}, views: {} };
+  let P = { v: 2, cv: COURSE_VERSION, done: {}, boxes: {}, views: {}, learned: {} };
   let storeMode = 'browser', sb = null, session = null, pushTimer = null, lastSync = null;
   const SUPABASE_URL = 'https://duptugctgzemfczbtvgj.supabase.co';
   const SUPABASE_KEY = 'sb_publishable_4tPlF-9fs5oQtKGngr-TIQ_ancGSJHu';
@@ -445,8 +502,9 @@ function startApp(W, QUIZ) {
   }
   function normal(p) {
     // v1 records keyed boxes by position in the old word order, which no longer matches: start fresh
-    if (!p || p.v !== 2) return { v: 2, cv: COURSE_VERSION, done: {}, boxes: {}, views: {} };
-    const out = { v: 2, cv: COURSE_VERSION, done: p.done || {}, boxes: {}, views: {} };
+    if (!p || p.v !== 2) return { v: 2, cv: COURSE_VERSION, done: {}, boxes: {}, views: {}, learned: {} };
+    const out = { v: 2, cv: COURSE_VERSION, done: p.done || {}, boxes: {}, views: {}, learned: {} };
+    Object.entries(p.learned || {}).forEach(([w, t]) => { if (w in WI) out.learned[w] = t; });
     Object.entries(p.boxes || {}).forEach(([w, b]) => { if (w in WI) out.boxes[w] = b; });
     Object.entries(p.views || {}).forEach(([w, n]) => { if (w in WI && n > 0) out.views[w] = Math.floor(n); });
     if (p.cv !== COURSE_VERSION) {
@@ -478,6 +536,7 @@ function startApp(W, QUIZ) {
     });
     // views: the higher count of the two (each device counts its own visits; summing would count twice)
     Object.entries(b.views || {}).forEach(([w, n]) => { if (w in WI) out.views[w] = Math.max(n, out.views[w] || 0); });
+    Object.entries(b.learned || {}).forEach(([w, t]) => { if (w in WI) out.learned[w] = Math.min(t, out.learned[w] || t); });
     return out;
   }
 
@@ -574,7 +633,14 @@ function startApp(W, QUIZ) {
   function nextStep() { for (let s = 1; s <= TOTAL_STEPS; s++) if (!isDone(s)) return s; return null; }
   // steps open one at a time: a step opens once every step before it is done (its quiz taken)
   function isOpen(s) { const n = nextStep(); return isDone(s) || n === null || s <= n; }
-  function learnedSet() { const set = new Set(); doneSteps().forEach(s => STEPS[s].forEach(i => set.add(i))); return set; }
+  function learnedSet() {
+    const set = new Set();
+    doneSteps().forEach(s => STEPS[s].forEach(i => set.add(i)));
+    Object.keys(P.learned).forEach(w => { if (w in WI) set.add(WI[w]); });
+    return set;
+  }
+  // a word is learned once its learning buttons were tapped in order (or its whole step was finished earlier)
+  const wordLearned = i => !!P.learned[W[i].w] || isDone(W[i].s);
   function maxDone() { return doneSteps().reduce((a, b) => Math.max(a, b), 0); }
   function dueList(now) {
     now = now || Date.now();
@@ -749,6 +815,18 @@ function startApp(W, QUIZ) {
   // ---------- lesson ----------
   // how many times the learner has opened this word: a number and five bars that fill as the word
   // becomes familiar (1, 3, 5, 10 and 20 visits). fresh: this visit was just counted, so it pops.
+  const PLAY_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z" fill="currentColor"/></svg>';
+  const CHECK = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  // the "learned" mark: a small rubber stamp next to the word
+  const STAMP = `<span class="stamp" role="img" aria-label="Learned">${CHECK}<span>Learned</span></span>`;
+  // what each learning button is called on the progress track
+  const SEQ_NAMES = { 1: 'Word', 2: 'Word, slowly', 3: 'Watch', 4: 'Sentence', 5: 'Sentence, slowly' };
+  const SEQ_SHORT = { 1: 'Word', 2: 'Slowly', 3: 'Watch', 4: 'Sentence', 5: 'Slowly' }; // narrow screens
+  const SEQ_ICONS = {
+    1: '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/></svg>',
+    3: PLAY_ICON
+  };
+  SEQ_ICONS[2] = SEQ_ICONS[1]; SEQ_ICONS[4] = SEQ_ICONS[1]; SEQ_ICONS[5] = SEQ_ICONS[1];
   const SEEN_STEPS = [1, 3, 5, 10, 20];
   function seenHTML(n, fresh) {
     if (!n) return '';
@@ -768,15 +846,19 @@ function startApp(W, QUIZ) {
     const audio = A && w.s <= A.MAX_STEP;
     const slow = audio && w.s <= A.SLOW_MAX_STEP;
     const pron = slow && window.BASIC_PRON && BASIC_PRON[w.w];
-    const sayEx = (x) => audio ? A.button(x[0], 'Listen to the sentence') + (slow ? A.slowButton(x[0], 'sentence', 'Listen slowly to the sentence') : '') : '';
+    // in a lesson, the learning buttons carry their place in the order (data-seq), see renderLesson
+    const seq = (html, n) => opts.lesson ? html.replace('<button ', `<button data-seq="${n}" `) : html;
+    const sayEx = (x, first) => audio ? seq(A.button(x[0], 'Listen to the sentence'), first ? 4 : 0) +
+      (slow ? seq(A.slowButton(x[0], 'sentence', 'Listen slowly to the sentence'), first ? 5 : 0) : '') : '';
     const head = pron && pron.map(g => g[0]).join('') === w.w
       ? `<span class="hw-col"><span class="headword">${pron.map((g, k) => `<span class="ch" data-c="${k}">${esc(g[0])}</span>`).join('')}</span>
         <span class="ipa" title="How to say it (American English, IPA)">/${pron.map((g, k) => `<span class="ch" data-c="${k}">${esc(g[1])}</span>`).join('')}/</span></span>`
       : `<span class="headword">${esc(w.w)}</span>`;
-    let h = `<div class="entry-head"${pron ? ' data-hl' : ''}>${head}${audio ? A.button(w.w, 'Listen to ' + w.w) : ''}${pron ? A.slowButton(w.w, 'word', 'Listen slowly to ' + w.w) : ''}<span class="pos">${esc(w.p)}</span>
-      ${opts.stepTag ? `<span class="tag">step ${w.s}</span>` : ''}${seenHTML(opts.views, opts.fresh)}</div>${!audio && A ? '<p class="muted noaudio">Audio for this step is coming soon.</p>' : ''}
+    let h = `<div class="entry-head"${pron ? ' data-hl' : ''}>${head}${audio ? seq(A.button(w.w, 'Listen to ' + w.w), 1) : ''}${pron ? seq(A.slowButton(w.w, 'word', 'Listen slowly to ' + w.w), 2) : ''}<span class="pos">${esc(w.p)}</span>
+      ${opts.stepTag ? `<span class="tag">step ${w.s}</span>` : ''}${seenHTML(opts.views, opts.fresh)}${opts.learned ? STAMP : ''}</div>${!audio && A ? '<p class="muted noaudio">Audio for this step is coming soon.</p>' : ''}
       <div class="mode ${w.m}">${mName}</div> <span class="muted" style="font-size:.88rem">${mHelp}</span>`;
-    if (BASIC_FIGURES.has(w.w)) h += `<div class="scene" data-scene="${esc(w.w)}" role="img" aria-label="${esc(BASIC_FIGURES.label(w.w))}"></div>`;
+    if (BASIC_FIGURES.has(w.w)) h += `<div class="scene" data-scene="${esc(w.w)}" role="img" aria-label="${esc(BASIC_FIGURES.label(w.w))}"></div>
+      <div class="scene-bar">${seq(`<button class="watch" type="button" data-watch>${PLAY_ICON}<span>Watch from the start</span></button>`, 3)}</div>`;
     else h += `<div class="slot blank"><span class="eyebrow">Picture coming soon</span><b>${esc(w.w)}</b></div>`;
     if (w.m === 'F') {
       const ahead = w.ds.filter(s => s[2] !== i && W[s[2]].s >= w.s).length;
@@ -785,7 +867,7 @@ function startApp(W, QUIZ) {
     }
     const now = w.x.filter(x => x[1] <= ctxStep), later = w.x.filter(x => x[1] > ctxStep);
     const li = slow ? ' data-hl' : '';
-    h += `<div class="section"><h3>Examples</h3><ul class="examples">${now.map(x => `<li${li}>${linked(x[0], x[2], ctxStep, i, null, slow)}${sayEx(x)}</li>`).join('')}
+    h += `<div class="section"><h3>Examples</h3><ul class="examples">${now.map((x, n) => `<li${li}>${linked(x[0], x[2], ctxStep, i, null, slow)}${sayEx(x, n === 0)}</li>`).join('')}
       ${later.map(x => opts.showLater ? `<li class="later"${li}>${linked(x[0], x[2], ctxStep, i, null, slow)}${sayEx(x)} <span class="tag">usable from step ${x[1]}</span></li>`
         : `<li class="later">One more example opens at step ${x[1]}, once you know all its words.</li>`).join('')}</ul></div>`;
     if (w.f || w.us) {
@@ -795,27 +877,90 @@ function startApp(W, QUIZ) {
   }
 
   // counted: this is a new visit to the word (not a redraw after sign-in), so its view count goes up
+  // A word is learned by tapping its learning buttons in order: the word, the word slowly, "Watch
+  // from the start" under the picture, then the first sentence and the first sentence slowly (only the
+  // ones the word has). At first only the next button can be tapped; the others are grey. When the
+  // last one is tapped the word is learned and saved, and the way to the next word opens. A learned
+  // word has no order: every button works straight away.
   function renderLesson(step, k, counted) {
     if (window.BASIC_AUDIO) BASIC_AUDIO.stop();
-    const ids = STEPS[step], i = ids[k];
+    const ids = STEPS[step];
+    // words are learned in order: an unlearned word before this one comes first
+    const firstNew = ids.findIndex(j => !wordLearned(j));
+    if (firstNew >= 0 && k > firstNew) k = firstNew;
+    current.arg = { step, i: k };
+    const i = ids[k], learned = wordLearned(i);
     const views = counted ? countView(i) : (P.views[W[i].w] || 0);
+    const dots = () => ids.map((j, n) => `<i class="${wordLearned(j) ? 'on' : ''}${n === k ? ' cur' : ''}" title="${esc(W[j].w)}${wordLearned(j) ? ' · learned' : ''}"></i>`).join('') + `<i class="quiz${isDone(step) ? ' on' : ''}" title="Step quiz"></i>`;
     let html = `<div class="lesson-top"><button class="btn quiet" type="button" id="back">← Path</button>
       <span class="eyebrow">Step ${step} · word ${k + 1} of ${PER}${isDone(step) ? ' · done' : ''}</span>
       ${isDone(step) ? '<button class="btn" type="button" id="requiz">Retake quiz</button>' : ''}
-      <div class="dots" aria-hidden="true">${ids.map((_, j) => `<i class="${j <= k ? 'on' : ''}"></i>`).join('')}<i></i></div></div>`;
-    html += `<article class="entry">${entryHTML(i, step, { views, fresh: counted })}</article>
+      <div class="dots" id="dots" aria-hidden="true">${dots()}</div></div>`;
+    html += `<article class="entry ${learned ? 'is-learned' : 'is-learning'}">${entryHTML(i, step, { views, fresh: counted, lesson: !learned, learned })}</article>
       <div class="lesson-nav"><button class="btn" type="button" id="prev" ${k === 0 ? 'disabled' : ''}>Previous word</button>
-      ${k < PER - 1 ? '<button class="btn primary" type="button" id="next">Next word</button>' : '<button class="btn primary" type="button" id="quiz">Take the step quiz</button>'}</div>`;
+      <span class="nav-right"><span class="nav-hint muted" id="navHint"></span>
+      ${k < PER - 1 ? '<button class="btn primary" type="button" id="next">Next word</button>' : '<button class="btn primary" type="button" id="quiz">Take the step quiz</button>'}</span></div>`;
     $view.innerHTML = html;
     BASIC_FIGURES.mountAll($view);
     document.getElementById('back').addEventListener('click', () => route('path'));
-    document.getElementById('prev').addEventListener('click', () => { current.arg = { step, i: k - 1 }; renderLesson(step, k - 1, true); window.scrollTo(0, 0); });
+    document.getElementById('prev').addEventListener('click', () => { renderLesson(step, k - 1, true); window.scrollTo(0, 0); });
     const n = document.getElementById('next');
-    if (n) n.addEventListener('click', () => { current.arg = { step, i: k + 1 }; renderLesson(step, k + 1, true); window.scrollTo(0, 0); });
+    if (n) n.addEventListener('click', () => { renderLesson(step, k + 1, true); window.scrollTo(0, 0); });
     const q = document.getElementById('quiz');
     if (q) q.addEventListener('click', () => route('quiz', { step }));
     const rq = document.getElementById('requiz');
     if (rq) rq.addEventListener('click', () => route('quiz', { step }));
+    if (!learned) teach(i, step, k);
+  }
+
+  // the learning order on an unlearned word's page: grey out, number and track its buttons
+  function teach(i, step, k) {
+    const art = $view.querySelector('.entry'), go = document.getElementById('next') || document.getElementById('quiz');
+    const hint = document.getElementById('navHint');
+    const btns = [...art.querySelectorAll('[data-seq]')].filter(b => +b.dataset.seq > 0).sort((a, b) => a.dataset.seq - b.dataset.seq);
+    let pos = 0, track = null;
+    if (!btns.length) { finish(); return; } // nothing to tap on this word yet (no audio or picture): learned on sight
+    // the track: one numbered stop per button, at the top of the card
+    track = document.createElement('div');
+    track.className = 'learn-track';
+    track.innerHTML = `<div class="lt-head"><span class="eyebrow">Learn this word</span><span class="lt-count muted" id="ltCount"></span></div>
+      <ol style="--n:${btns.length}">${btns.map((b, n) => `<li><span class="lt-dot"><b>${n + 1}</b>${CHECK}</span><span class="lt-name">${SEQ_ICONS[b.dataset.seq]}<span class="ln-long">${SEQ_NAMES[b.dataset.seq]}</span><span class="ln-short">${SEQ_SHORT[b.dataset.seq]}</span></span></li>`).join('')}</ol>`;
+    art.prepend(track);
+    btns.forEach((b, n) => {
+      b.insertAdjacentHTML('beforeend', `<span class="seq-n" aria-hidden="true">${n + 1}</span>`);
+      b.addEventListener('click', () => { if (n === pos) { pos++; paint(); if (pos === btns.length) finish(); } });
+    });
+    go.disabled = true;
+    function paint() {
+      btns.forEach((b, n) => {
+        b.disabled = n > pos;
+        b.classList.toggle('seq-done', n < pos);
+        b.classList.toggle('seq-now', n === pos);
+        b.classList.toggle('seq-wait', n > pos);
+      });
+      track.querySelectorAll('li').forEach((li, n) => { li.className = n < pos ? 'done' : n === pos ? 'now' : ''; });
+      document.getElementById('ltCount').textContent = `${pos} of ${btns.length}`;
+      if (hint && pos < btns.length) hint.textContent = `Tap the ${btns.length} numbered buttons in order to go on`;
+    }
+    function finish() {
+      P.learned[W[i].w] = Date.now();
+      save();
+      btns.forEach(b => { b.disabled = false; b.classList.remove('seq-now', 'seq-wait', 'seq-done'); const s = b.querySelector('.seq-n'); if (s) s.remove(); });
+      art.classList.remove('is-learning');
+      art.classList.add('is-learned', 'just-learned');
+      const head = art.querySelector('.entry-head');
+      if (head && !head.querySelector('.stamp')) head.insertAdjacentHTML('beforeend', STAMP);
+      if (track && track.isConnected) {
+        track.classList.add('lt-finished');
+        track.querySelector('.lt-head').innerHTML = `<span class="eyebrow">Learned</span><span class="lt-count muted">“${esc(W[i].w)}” is learned. Go on when you are ready.</span>`;
+        setTimeout(() => { track.classList.add('lt-gone'); setTimeout(() => track.remove(), 450); }, 1600);
+      }
+      go.disabled = false;
+      if (hint) hint.textContent = '';
+      const d = document.getElementById('dots');
+      if (d) d.children[k].classList.add('on');
+    }
+    paint();
   }
 
   // ---------- questions ----------
@@ -1166,7 +1311,7 @@ function startApp(W, QUIZ) {
     $scrim.innerHTML = `<div class="sheet" role="dialog" aria-modal="true" aria-label="${esc(w.w)}">
       <button class="btn quiet sheet-close" type="button" id="closeSheet">Close</button>
       <div class="eyebrow">${status}</div>
-      ${entryHTML(i, Math.max(maxDone(), w.s), { showLater: true, views, fresh: true })}
+      ${entryHTML(i, Math.max(maxDone(), w.s), { showLater: true, views, fresh: true, learned: wordLearned(i) })}
       <div class="row" style="margin-top:22px">${open ? `<button class="btn" type="button" id="openStep">Open step ${w.s}</button>`
         : `<button class="btn" type="button" disabled>${LOCK_ICON} Step ${w.s} opens after step ${w.s - 1}</button>`}</div></div>`;
     $scrim.hidden = false;
@@ -1179,6 +1324,14 @@ function startApp(W, QUIZ) {
   function closeSheet() { $scrim.hidden = true; $scrim.innerHTML = ''; BASIC_FIGURES.mountAll($view); }
   $scrim.addEventListener('click', e => { if (e.target === $scrim) closeSheet(); });
   document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$scrim.hidden) closeSheet(); });
+  // "Watch from the start": play the scene above the button again
+  document.addEventListener('click', e => {
+    const b = e.target.closest('[data-watch]');
+    if (!b) return;
+    const sc = b.closest('.scene-bar') && b.closest('.scene-bar').previousElementSibling;
+    if (sc && sc.classList.contains('scene')) BASIC_FIGURES.replay(sc);
+    b.classList.remove('pulse'); void b.offsetWidth; b.classList.add('pulse');
+  });
   document.addEventListener('click', e => {
     const b = e.target.closest('[data-word]');
     if (b) { e.preventDefault(); openSheet(+b.dataset.word); }
