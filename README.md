@@ -10,7 +10,8 @@ Live site: https://basic-1000.vercel.app
 |---|---|
 | `index.html` | The whole website: layout, lessons, quizzes, review, dictionary and Supabase sign-in |
 | `figures.js` | Animated stick-figure scenes (D3), one per word; all of Unit 1 (steps 1-10) so far |
-| `audio.js` | Speaker buttons: plays each word and example (Daniel, or Sarah when a woman is speaking) |
+| `audio.js` | Speaker buttons: plays each word and example (Daniel, or Sarah when a woman is speaking); slow buttons with highlighting |
+| `pron.js` | IPA for the words with slow audio, split into sound groups (which letters spell which sound) |
 | `quiz.json` | The checked wrong answers for every quiz question (see Quiz check) |
 | `data-1.txt` ... `data-4.txt` | The 1,000 words the site loads (250 per file) |
 | `content/course.json` | The full course data: steps, definitions, examples |
@@ -21,6 +22,7 @@ Live site: https://basic-1000.vercel.app
 | `tools/tts-lab/lab_server.py` | Voice server for the GPU pod: Qwen3-TTS |
 | `tools/quiz/` | Quiz check tools: makes sure every quiz question has only one right answer |
 | `tools/audio_items.py` | Lists the clips a range of steps needs, as a request for the tts function |
+| `tools/slow_items.py` | Lists the slow clips a range of steps needs, as a request for the tts function |
 | `.vercelignore` | Keeps everything except the website files out of the Vercel deployment |
 
 ## Editing the course
@@ -65,6 +67,25 @@ To add audio for more steps (for example 11-20):
 4. Raise `MAX_STEP` in `audio.js` and deploy.
 
 The voice trial clips (16 Qwen voices for steps 1-5, and the older Kokoro clips) are still in storage but no longer used.
+
+### Slow buttons (steps 1-5)
+
+Next to each speaker button is a tortoise button. It plays the same recording slowed down, with the pitch unchanged: words at 60 % speed, sentences at 70 %. While it plays:
+
+- **Words:** the headword's letters and its IPA (shown under the headword) light up one sound at a time. "woman" lights up w, o, m, a, n and, underneath, /ˈw/, /ʊ/, /m/, /ə/, /n/.
+- **Sentences:** each word lights up while it is read.
+
+How it is made:
+
+- `pron.js` has the IPA for each word, split into sound groups such as `['ou', 'aʊ']` (the letters "ou" spell /aʊ/). The IPA follows what Daniel says when he reads the word alone, so "a" is /eɪ/ and "the" is /ði/.
+- The voice server (`tools/tts-lab/lab_server.py`, `/slow_batch`) takes the stored normal clip and slows it down with Rubber Band (through ffmpeg). It then finds when each letter is heard with forced alignment, using `facebook/wav2vec2-large-960h-lv60-self`. It also writes down what a phoneme model (`facebook/wav2vec2-lv-60-espeak-cv-ft`) hears, as `heard`, which was used to check the IPA.
+- The tts function's admin action `slow` stores two files next to the normal clip: `slow1/{voice}/{same name}.mp3` and `.json`, the timing file. The page lights each sound from the moment the aligner marks until halfway to the next one. If a slow clip is missing, the page plays the normal clip slowed down by the browser, without highlighting.
+
+To add slow buttons for more steps (for example 6-10):
+
+1. Add the words to `pron.js`. Their letters must spell the word exactly; silent letters join a neighbouring group.
+2. Start the pod, then send the output of `python3 tools/slow_items.py 6 10` as the request body, about 22 items per call. Check that each `heard` matches the IPA, then stop the pod.
+3. Raise `SLOW_MAX_STEP` in `audio.js` and deploy.
 
 ## Quiz check
 

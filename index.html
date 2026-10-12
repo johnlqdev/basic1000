@@ -163,6 +163,19 @@ h1, h2, h3 { text-wrap: balance; margin: 0; font-weight: 400; }
 .entry-head .say svg { width: 22px; height: 22px; }
 .examples li .say { width: 30px; height: 30px; margin-left: 8px; }
 .examples li .say svg { width: 16px; height: 16px; }
+.examples li .say + .say { margin-left: 6px; }
+.say.slow .shell { stroke: var(--card); }
+.say.slow.playing .shell { stroke: var(--tab); }
+.say.slow svg, .entry-head .say.slow svg { width: 26px; height: 26px; }
+.examples li .say.slow svg { width: 20px; height: 20px; }
+/* slow playback: the IPA under the headword, and the sound or word being read lit like a highlighter */
+.hw-col { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 14px; }
+.ipa { font-family: "Charis SIL", "Doulos SIL", "Gentium Plus", "Noto Sans", "Segoe UI", "Lucida Grande", "DejaVu Sans", sans-serif;
+  font-size: 1.35rem; line-height: 1.2; color: var(--muted); letter-spacing: .02em; }
+.ch, .tk { border-radius: 4px; transition: background-color .08s, box-shadow .08s, color .08s; }
+.ch.hl, .tk.hl { background: var(--marker); box-shadow: 0 0 0 3px var(--marker); color: var(--ink); }
+.headword .ch.hl { box-shadow: none; }
+.ipa .ch.hl { box-shadow: 0 0 0 2px var(--marker); }
 .noaudio { font-size: .85rem; margin-top: 8px; }
 .lesson-nav { display: flex; justify-content: space-between; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
 
@@ -244,6 +257,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; font-weight: 400; }
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 <script src="/figures.js"></script>
+<script src="/pron.js"></script>
 <script src="/audio.js"></script>
 <script>
 // Basic 1000: parse data.txt and link every word in definitions and examples to its headword.
@@ -548,21 +562,36 @@ function startApp(W, QUIZ) {
   const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
   function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 
-  // text with every known headword turned into a button
-  function linked(text, spans, ctxStep, self, gapAt) {
+  // text with every known headword turned into a button.
+  // words = true also puts every word in a <span class="tk" data-t="n"> (n counts words from 0, split
+  // the same way as the voice server does), so the slow button can highlight the word being read.
+  function linked(text, spans, ctxStep, self, gapAt, words) {
+    const toks = [];
+    if (words) { const re = /[A-Za-z']+/g; let m; while ((m = re.exec(text))) toks.push([m.index, m.index + m[0].length]); }
+    const part = (a, b) => {
+      if (!words) return esc(text.slice(a, b));
+      let o = '', p = a;
+      toks.forEach(([s, e], n) => {
+        const s2 = Math.max(s, a), e2 = Math.min(e, b);
+        if (s2 >= e2) return;
+        o += esc(text.slice(p, s2)) + `<span class="tk" data-t="${n}">${esc(text.slice(s2, e2))}</span>`;
+        p = e2;
+      });
+      return o + esc(text.slice(p, b));
+    };
     let out = '', pos = 0;
     spans.forEach(([a, b, i]) => {
-      out += esc(text.slice(pos, a));
+      out += part(pos, a);
       if (gapAt && a === gapAt[0]) { out += '<span class="gap">&nbsp;</span>'; pos = b; return; }
       const w = W[i];
       let cls = 'lk';
       if (i === self) cls += ' self';
       else if (w.s === ctxStep) cls += ' same';
       else if (w.s > ctxStep) cls += ' ahead';
-      out += `<button type="button" class="${cls}" data-word="${i}" title="Step ${w.s}">${esc(text.slice(a, b))}</button>`;
+      out += `<button type="button" class="${cls}" data-word="${i}" title="Step ${w.s}">${part(a, b)}</button>`;
       pos = b;
     });
-    return out + esc(text.slice(pos));
+    return out + part(pos, text.length);
   }
 
   function teachExample(i) {
@@ -673,10 +702,17 @@ function startApp(W, QUIZ) {
     opts = opts || {};
     const w = W[i], [mName, mHelp] = MODES[w.m];
     const A = window.BASIC_AUDIO;
-    // audio: one speaker button for the word and for each sentence (steps 1 to A.MAX_STEP so far)
+    // audio: one speaker button for the word and for each sentence (steps 1 to A.MAX_STEP so far);
+    // steps 1 to A.SLOW_MAX_STEP also have a slow button that highlights each sound / word as it is read
     const audio = A && w.s <= A.MAX_STEP;
-    const sayEx = (x) => audio ? A.button(x[0], 'Listen to the sentence') : '';
-    let h = `<div class="entry-head"><span class="headword">${esc(w.w)}</span>${audio ? A.button(w.w, 'Listen to ' + w.w) : ''}<span class="pos">${esc(w.p)}</span>
+    const slow = audio && w.s <= A.SLOW_MAX_STEP;
+    const pron = slow && window.BASIC_PRON && BASIC_PRON[w.w];
+    const sayEx = (x) => audio ? A.button(x[0], 'Listen to the sentence') + (slow ? A.slowButton(x[0], 'sentence', 'Listen slowly to the sentence') : '') : '';
+    const head = pron && pron.map(g => g[0]).join('') === w.w
+      ? `<span class="hw-col"><span class="headword">${pron.map((g, k) => `<span class="ch" data-c="${k}">${esc(g[0])}</span>`).join('')}</span>
+        <span class="ipa" title="How to say it (American English, IPA)">/${pron.map((g, k) => `<span class="ch" data-c="${k}">${esc(g[1])}</span>`).join('')}/</span></span>`
+      : `<span class="headword">${esc(w.w)}</span>`;
+    let h = `<div class="entry-head"${pron ? ' data-hl' : ''}>${head}${audio ? A.button(w.w, 'Listen to ' + w.w) : ''}${pron ? A.slowButton(w.w, 'word', 'Listen slowly to ' + w.w) : ''}<span class="pos">${esc(w.p)}</span>
       ${opts.stepTag ? `<span class="tag">step ${w.s}</span>` : ''}</div>${!audio && A ? '<p class="muted noaudio">Audio for this step is coming soon.</p>' : ''}
       <div class="mode ${w.m}">${mName}</div> <span class="muted" style="font-size:.88rem">${mHelp}</span>`;
     if (BASIC_FIGURES.has(w.w)) h += `<div class="scene" data-scene="${esc(w.w)}" role="img" aria-label="${esc(BASIC_FIGURES.label(w.w))}"></div>`;
@@ -687,8 +723,9 @@ function startApp(W, QUIZ) {
         ${ahead ? '' : `<div class="promise">✓ <span>Every word in this definition comes from an earlier step. Tap one to look back.</span></div>`}</div>`;
     }
     const now = w.x.filter(x => x[1] <= ctxStep), later = w.x.filter(x => x[1] > ctxStep);
-    h += `<div class="section"><h3>Examples</h3><ul class="examples">${now.map(x => `<li>${linked(x[0], x[2], ctxStep, i)}${sayEx(x)}</li>`).join('')}
-      ${later.map(x => opts.showLater ? `<li class="later">${linked(x[0], x[2], ctxStep, i)}${sayEx(x)} <span class="tag">usable from step ${x[1]}</span></li>`
+    const li = slow ? ' data-hl' : '';
+    h += `<div class="section"><h3>Examples</h3><ul class="examples">${now.map(x => `<li${li}>${linked(x[0], x[2], ctxStep, i, null, slow)}${sayEx(x)}</li>`).join('')}
+      ${later.map(x => opts.showLater ? `<li class="later"${li}>${linked(x[0], x[2], ctxStep, i, null, slow)}${sayEx(x)} <span class="tag">usable from step ${x[1]}</span></li>`
         : `<li class="later">One more example opens at step ${x[1]}, once you know all its words.</li>`).join('')}</ul></div>`;
     if (w.f || w.us) {
       h += `<div class="section forms">${w.f ? `<span class="muted">Also covers:</span> ${esc(w.f)}` : ''}${w.f && w.us ? ' · ' : ''}${w.us ? `<span class="muted">US spelling:</span> ${esc(w.us)}` : ''}</div>`;
