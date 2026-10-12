@@ -130,6 +130,29 @@ async function saveRef(podId: string, spec: { req?: Record<string, unknown> }) {
   if (r.ok) await upload(refPath(spec), new Uint8Array(await r.arrayBuffer()), "audio/wav");
 }
 const fromB64 = (s: string) => Uint8Array.from(atob(s), (c) => c.charCodeAt(0));
+// the items of a batch or slow request: given in the body, or taken from a job list on GitHub
+// (body.list: a raw.githubusercontent.com address of {items: [...]}, with body.offset and body.count)
+// deno-lint-ignore no-explicit-any
+async function jobItems(body: any): Promise<any[]> {
+  if (!body.list) return body.items ?? [];
+  const url = String(body.list);
+  if (!url.startsWith("https://raw.githubusercontent.com/johnlqdev/basic1000/")) throw new Error("list must be in the basic1000 repository");
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(`list ${r.status}`);
+  const all = (await r.json()).items ?? [];
+  const from = Number(body.offset ?? 0);
+  return all.slice(from, from + Number(body.count ?? 100));
+}
+// a short report instead of every result (for long jobs): counts, plus the problems
+function summary(out: Record<string, unknown>[], extra: (o: Record<string, unknown>) => boolean = () => false) {
+  return {
+    items: out.length,
+    made: out.filter((o) => !o.error && !o.cached).length,
+    cached: out.filter((o) => o.cached).length,
+    errors: out.filter((o) => o.error).map((o) => ({ text: o.text, error: String(o.error).slice(0, 160) })),
+    flagged: out.filter(extra),
+  };
+}
 
 async function synth(podId: string, voiceId: string, text: string, speed: number) {
   const spec = VOICE_SPECS[voiceId];
@@ -225,7 +248,7 @@ Deno.serve(async (req) => {
       return json({ pod: { id: pod.id, desiredStatus: pod.desiredStatus, costPerHr: pod.costPerHr, image: pod.imageName }, server });
     }
     if (action === "batch") {
-      // items: [{ text, voice: 'woman'|'man' } or { text, voiceId }], optional speed, force;
+      // items: [{ text, voice: 'woman'|'man' } or { text, voiceId }] (or list/offset/count), optional speed, force, compact;
       // body.all = true makes each item in every CHOICES voice of its gender (old Kokoro trial).
       // Qwen voices are made in GPU batches of body.chunk texts (default 12) per voice.
       const podIds: Record<string, string | null> = {};
@@ -239,7 +262,7 @@ Deno.serve(async (req) => {
       };
       const out: Record<string, unknown>[] = [];
       const groups = new Map<string, { text: string; path: string }[]>();
-      for (const it of body.items ?? []) {
+      for (const it of await jobItems(body)) {
         const text = norm(String(it.text ?? ""));
         const ids: string[] = it.voiceId ? [it.voiceId] : body.all ? CHOICES[it.voice ?? "woman"] : [VOICES[it.voice ?? "woman"]];
         for (const voiceId of ids) {
@@ -281,16 +304,17 @@ Deno.serve(async (req) => {
         }
         await saveRef(podId, spec).catch((e) => out.push({ voiceId, error: "reference not saved: " + String(e) }));
       }
-      return json({ results: out });
+      return json(body.compact ? summary(out) : { results: out });
     }
     if (action === "slow") {
-      // items: [{ text, kind: 'word'|'sentence', voice: 'man'|'woman' (or voiceId) }], optional force, chunk.
+      // items: [{ text, kind: 'word'|'sentence', voice: 'man'|'woman' (or voiceId), ipa? }] (or list/offset/count),
+      // optional force, chunk, compact (short report; flag = the "match" below which a word is reported).
       // The pod slows down the stored normal clip and times it; the clip is padded there.
       const pod = await findPod("lab");
       if (!pod || pod.desiredStatus !== "RUNNING") return json({ error: "voice server is off" }, 503);
       const out: Record<string, unknown>[] = [];
-      const todo: { text: string; voiceId: string; kind: string; url: string; tempo: number; mp3: string; js: string }[] = [];
-      for (const it of body.items ?? []) {
+      const todo: { text: string; voiceId: string; kind: string; url: string; tempo: number; mp3: string; js: string; ipa?: string }[] = [];
+      for (const it of await jobItems(body)) {
         const text = norm(String(it.text ?? ""));
         const voiceId = String(it.voiceId ?? VOICES[it.voice ?? "man"] ?? "");
         const kind = it.kind === "word" ? "word" : "sentence";
@@ -299,7 +323,7 @@ Deno.serve(async (req) => {
         if (!await cached(src)) { out.push({ text, voiceId, error: "the normal clip is not made yet" }); continue; }
         const mp3 = await slowPath(voiceId, text, "mp3"), js = await slowPath(voiceId, text, "json");
         if (!it.force && !body.force && await cached(mp3) && await cached(js)) { out.push({ text, voiceId, cached: true }); continue; }
-        todo.push({ text, voiceId, kind, url: publicUrl(src), tempo: Number(it.tempo ?? SLOW_TEMPO[kind]), mp3, js });
+        todo.push({ text, voiceId, kind, url: publicUrl(src), tempo: Number(it.tempo ?? SLOW_TEMPO[kind]), mp3, js, ipa: it.ipa });
       }
       const size = Math.max(1, Math.min(30, Number(body.chunk ?? 10)));
       for (let k = 0; k < todo.length; k += size) {
@@ -307,7 +331,7 @@ Deno.serve(async (req) => {
         try {
           const r = await fetch(podUrl(pod.id, "lab") + "/slow_batch", {
             method: "POST", headers: { "content-type": "application/json" },
-            body: JSON.stringify({ items: chunk.map((c) => ({ url: c.url, text: c.text, kind: c.kind, tempo: c.tempo })) }),
+            body: JSON.stringify({ items: chunk.map((c) => ({ url: c.url, text: c.text, kind: c.kind, tempo: c.tempo, ipa: c.ipa })) }),
             signal: AbortSignal.timeout(140000),
           });
           if (!r.ok) throw new Error(`lab ${r.status}: ${(await r.text()).slice(0, 200)}`);
@@ -324,7 +348,17 @@ Deno.serve(async (req) => {
           chunk.forEach((c) => out.push({ text: c.text, voiceId: c.voiceId, error: String(e) }));
         }
       }
-      return json({ results: out });
+      if (!body.compact) return json({ results: out });
+      // compact: the words whose IPA and what the phoneme model heard disagree, for a person to check
+      const s = summary(out, (o) => {
+        const t = o.timing as Record<string, unknown> | undefined;
+        return !!t && typeof t.match === "number" && (t.match as number) < Number(body.flag ?? 0.6);
+      });
+      s.flagged = s.flagged.map((o) => {
+        const t = o.timing as Record<string, unknown>;
+        return { text: o.text, heard: t.heard, match: t.match };
+      });
+      return json(s);
     }
     return json({ error: "unknown action" }, 400);
   } catch (e) {

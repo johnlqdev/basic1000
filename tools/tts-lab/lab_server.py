@@ -9,12 +9,13 @@ Endpoints
   GET  /ref/<key>    -> the reference recording (WAV) of a designed voice
   POST /tts          JSON {"engine", "text", ...}   -> audio/mpeg
   POST /tts_batch    JSON {"engine", "texts": [...], ...} -> {"clips": [base64 MP3 or null], "errors": [...]}
-  POST /slow_batch   JSON {"items": [{"url", "text", "kind": "word"|"sentence", "tempo"}]}
+  POST /slow_batch   JSON {"items": [{"url", "text", "kind": "word"|"sentence", "tempo", "ipa"?}]}
                      -> {"results": [{"mp3": base64, "timing": {...}} or {"error"}]}
        Makes the slow version of a stored clip (time-stretched with Rubber Band, pitch kept) and finds
        when each letter (word clips) or each word (sentences) is spoken, with a wav2vec2 CTC model
        (facebook/wav2vec2-large-960h-lv60-self) and forced alignment. "heard" is what a phoneme model
-       (facebook/wav2vec2-lv-60-espeak-cv-ft) hears, for checking the IPA shown on the site.
+       (facebook/wav2vec2-lv-60-espeak-cv-ft) hears, for checking the IPA shown on the site; given
+       "ipa", "match" (0..1) says how well the two agree.
        engine "qwen_custom": {"speaker": "Ryan"}                              preset speaker
        engine "qwen_design": {"key", "instruct", "seed", "ref_url"?}          voice made from a description
 
@@ -369,6 +370,29 @@ def heard(wav16):
 WORD_RE = __import__("re").compile(r"[A-Za-z']+")  # the site splits sentences into words the same way
 
 
+def ipa_match(heard_ipa, ipa):
+    """0..1: how close what the phoneme model heard is to the IPA shown on the site.
+    Sounds that the model often mixes up are put together first, so only real differences count
+    (for example "live" said /laɪv/ where the site shows /lɪv/)."""
+    import re
+    def norm(s):
+        s = s.replace(" ", "").replace("ˈ", "").replace("ˌ", "").replace("ː", "")
+        for a, b in (("eɪ", "A"), ("aɪ", "Y"), ("aʊ", "W"), ("ɔɪ", "O"), ("oʊ", "o"), ("tʃ", "C"), ("dʒ", "J")):
+            s = s.replace(a, b)
+        table = {"ɪ": "i", "ɛ": "E", "æ": "E", "e": "A", "ɑ": "a", "ɔ": "a", "ə": "@", "ʌ": "@", "ɐ": "@", "ʊ": "u",
+                 "ɝ": "R", "ɚ": "R", "ɜ": "R", "ɹ": "r", "ɾ": "t", "ɡ": "g", "ʔ": "", "ɫ": "l", "ᵻ": "i"}
+        return "".join(table.get(c, c) for c in s if not c.isdigit() and c not in ".")
+    a, b = norm(heard_ipa), norm(ipa)
+    if not a or not b:
+        return 0.0
+    d = list(range(len(b) + 1))
+    for i, ca in enumerate(a, 1):
+        prev, d[0] = d[0], i
+        for j, cb in enumerate(b, 1):
+            prev, d[j] = d[j], min(d[j] + 1, d[j - 1] + 1, prev + (ca != cb))
+    return round(1 - d[len(b)] / max(len(a), len(b)), 2)
+
+
 def make_slow(it):
     import numpy as np
     text, kind, tempo = str(it["text"]), it.get("kind", "sentence"), float(it.get("tempo", 0.7))
@@ -415,6 +439,8 @@ def make_slow(it):
     loud = np.flatnonzero(np.abs(dec) > 0.03)  # where the voice starts and stops
     speech = [round(loud[0] / dsr, 3), round(loud[-1] / dsr, 3)] if loud.size else None
     timing.update({"text": text, "tempo": tempo, "dur": round(len(dec) / dsr, 3), "speech": speech, "heard": heard(wav16)})
+    if it.get("ipa"):
+        timing["match"] = ipa_match(timing["heard"], it["ipa"])
     return {"mp3": base64.b64encode(mp3).decode(), "timing": timing}
 
 
