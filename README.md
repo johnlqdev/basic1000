@@ -25,6 +25,11 @@ Live site: https://basic-1000.vercel.app
 | `tools/slow_items.py` | Lists the slow clips a range of steps needs, as a request for the tts function |
 | `.vercelignore` | Keeps everything except the website files out of the Vercel deployment |
 
+## How learners move through the course
+
+- **One step at a time.** A step opens once every step before it is done, meaning its quiz has been taken. Locked steps show a padlock on the path; tapping one explains what opens it. Finished steps can always be opened again. The Dictionary stays open for every word; its "Open step" button is locked the same way.
+- **Visits.** Each time a learner opens a word's page (in a lesson, or from a tapped word or the Dictionary), its visit count goes up by one. The count is shown next to the word, with five bars that fill at 1, 3, 5, 10 and 20 visits. Counts are part of the learner's progress (`views` in the saved record), so they are kept in the browser and in their account when signed in. When two devices are merged, the higher count is kept.
+
 ## Editing the course
 
 1. Edit `content/course.json`.

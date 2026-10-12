@@ -176,6 +176,27 @@ h1, h2, h3 { text-wrap: balance; margin: 0; font-weight: 400; }
 .ch.hl, .tk.hl { background: var(--marker); box-shadow: 0 0 0 3px var(--marker); color: var(--ink); }
 .headword .ch.hl { box-shadow: none; }
 .ipa .ch.hl { box-shadow: 0 0 0 2px var(--marker); }
+/* visits: how many times the learner opened this word */
+.seen { align-self: center; display: inline-flex; align-items: center; gap: 7px; padding: 6px 12px 6px 10px;
+  border-radius: 999px; background: var(--tab-soft); color: var(--tab); line-height: 1; white-space: nowrap; }
+.seen svg { width: 18px; height: 18px; flex: none; }
+.seen-n { font-family: var(--display); font-size: 1.45rem; color: var(--ink); font-variant-numeric: lining-nums tabular-nums; }
+.seen-l { font-family: var(--mono); font-size: .66rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.seen-bars { display: inline-flex; align-items: flex-end; gap: 2px; height: 15px; margin-left: 2px; }
+.seen-bars i { width: 3px; height: var(--h); border-radius: 2px; background: var(--rule); }
+.seen-bars i.on { background: var(--tab); }
+.seen.fresh .seen-n { animation: seen-pop .5s cubic-bezier(.3, 1.6, .5, 1) both; }
+@keyframes seen-pop { 0% { transform: translateY(6px) scale(.6); opacity: 0; } 100% { transform: none; opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .seen.fresh .seen-n { animation: none; } }
+/* locked steps */
+.step.locked { cursor: not-allowed; position: relative; }
+.step .lock { width: 13px; height: 13px; opacity: .8; }
+.btn .lock { width: 15px; height: 15px; vertical-align: -2px; margin-right: 4px; }
+.toast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translate(-50%, 20px); opacity: 0; pointer-events: none;
+  display: flex; align-items: center; gap: 10px; max-width: calc(100vw - 32px); padding: 12px 18px; border-radius: 12px;
+  background: var(--ink); color: var(--paper); box-shadow: var(--shadow); font-size: .95rem; transition: opacity .2s, transform .2s; z-index: 30; }
+.toast.show { opacity: 1; transform: translate(-50%, 0); }
+.toast .lock { width: 16px; height: 16px; flex: none; }
 .noaudio { font-size: .85rem; margin-top: 8px; }
 .lesson-nav { display: flex; justify-content: space-between; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
 
@@ -405,14 +426,15 @@ function startApp(W, QUIZ) {
 
   // ---------- progress ----------
   const LS_KEY = 'basic1000-progress-v1';
-  // Progress v2: done = { step: best score }, boxes = { headword: [box, due time] }.
+  // Progress v2: done = { step: best score }, boxes = { headword: [box, due time] },
+  // views = { headword: how many times the learner opened that word's page }.
   // Boxes are keyed by word so a change to the step order keeps what was learned.
   const COURSE_VERSION = 'c2';
   const WI = {};
   W.forEach((w, i) => { WI[w.w] = i; });
   const box = i => P.boxes[W[i].w];
   const setBox = (i, b) => { P.boxes[W[i].w] = b; };
-  let P = { v: 2, cv: COURSE_VERSION, done: {}, boxes: {} };
+  let P = { v: 2, cv: COURSE_VERSION, done: {}, boxes: {}, views: {} };
   let storeMode = 'browser', sb = null, session = null, pushTimer = null, lastSync = null;
   const SUPABASE_URL = 'https://duptugctgzemfczbtvgj.supabase.co';
   const SUPABASE_KEY = 'sb_publishable_4tPlF-9fs5oQtKGngr-TIQ_ancGSJHu';
@@ -423,9 +445,10 @@ function startApp(W, QUIZ) {
   }
   function normal(p) {
     // v1 records keyed boxes by position in the old word order, which no longer matches: start fresh
-    if (!p || p.v !== 2) return { v: 2, cv: COURSE_VERSION, done: {}, boxes: {} };
-    const out = { v: 2, cv: COURSE_VERSION, done: p.done || {}, boxes: {} };
+    if (!p || p.v !== 2) return { v: 2, cv: COURSE_VERSION, done: {}, boxes: {}, views: {} };
+    const out = { v: 2, cv: COURSE_VERSION, done: p.done || {}, boxes: {}, views: {} };
     Object.entries(p.boxes || {}).forEach(([w, b]) => { if (w in WI) out.boxes[w] = b; });
+    Object.entries(p.views || {}).forEach(([w, n]) => { if (w in WI && n > 0) out.views[w] = Math.floor(n); });
     if (p.cv !== COURSE_VERSION) {
       // the steps changed: a step counts as done when every one of its words has been learned
       out.done = {};
@@ -437,6 +460,13 @@ function startApp(W, QUIZ) {
     return out;
   }
   P = normal(readLocal());
+  // one more visit to word i's page (lesson or word sheet); returns the new count
+  function countView(i) {
+    const w = W[i].w;
+    P.views[w] = (P.views[w] || 0) + 1;
+    save();
+    return P.views[w];
+  }
 
   // combine two records: keep every finished step (best score) and the stronger memory box per word
   function merge(a, b) {
@@ -446,6 +476,8 @@ function startApp(W, QUIZ) {
       const cur = out.boxes[i];
       if (!cur || bx[0] > cur[0] || (bx[0] === cur[0] && bx[1] > cur[1])) out.boxes[i] = bx;
     });
+    // views: the higher count of the two (each device counts its own visits; summing would count twice)
+    Object.entries(b.views || {}).forEach(([w, n]) => { if (w in WI) out.views[w] = Math.max(n, out.views[w] || 0); });
     return out;
   }
 
@@ -540,6 +572,8 @@ function startApp(W, QUIZ) {
   const doneSteps = () => Object.keys(P.done).map(Number);
   const isDone = s => P.done[s] !== undefined;
   function nextStep() { for (let s = 1; s <= TOTAL_STEPS; s++) if (!isDone(s)) return s; return null; }
+  // steps open one at a time: a step opens once every step before it is done (its quiz taken)
+  function isOpen(s) { const n = nextStep(); return isDone(s) || n === null || s <= n; }
   function learnedSet() { const set = new Set(); doneSteps().forEach(s => STEPS[s].forEach(i => set.add(i))); return set; }
   function maxDone() { return doneSteps().reduce((a, b) => Math.max(a, b), 0); }
   function dueList(now) {
@@ -608,11 +642,25 @@ function startApp(W, QUIZ) {
     const due = dueList().length, el = document.getElementById('dueCount');
     el.hidden = !due; el.textContent = due;
   }
+  const LOCK_ICON = '<svg class="lock" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5" fill="currentColor"/>' +
+    '<path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5" fill="none" stroke="currentColor" stroke-width="2.2"/></svg>';
+  // a locked step was asked for: stay on the path and say what opens it
+  function lockedNote(step) {
+    const n = nextStep();
+    if (current.view !== 'path') { current = { view: 'path', arg: null }; setNav('path'); renderPath(); }
+    let t = document.getElementById('toast');
+    if (!t) { t = document.createElement('div'); t.id = 'toast'; t.className = 'toast'; t.setAttribute('role', 'status'); document.body.appendChild(t); }
+    t.innerHTML = `${LOCK_ICON}<span>Step ${step} opens after you finish step ${step - 1}.${n < step - 1 ? ` You are on step ${n} now.` : ''}</span>`;
+    t.classList.remove('show'); void t.offsetWidth; t.classList.add('show');
+    clearTimeout(lockedNote.timer);
+    lockedNote.timer = setTimeout(() => t.classList.remove('show'), 3200);
+  }
   function route(view, arg, keepScroll) {
     current = { view, arg };
     setNav(view === 'lesson' || view === 'quiz' ? 'path' : view);
     if (view === 'path') renderPath();
-    else if (view === 'lesson') renderLesson(arg.step, arg.i || 0);
+    else if ((view === 'lesson' || view === 'quiz') && !isOpen(arg.step)) { lockedNote(arg.step); return; }
+    else if (view === 'lesson') renderLesson(arg.step, arg.i || 0, !keepScroll);
     else if (view === 'quiz') startQuiz(arg.step);
     else if (view === 'review') renderReviewHome();
     else if (view === 'dict') renderDict();
@@ -664,11 +712,12 @@ function startApp(W, QUIZ) {
       for (let s = first; s <= last; s++) {
         const d = isDone(s);
         if (d) doneN++;
-        const cls = d ? 'done' : (s === nxt ? 'current' : (nxt && s > nxt ? 'locked' : ''));
+        const open = isOpen(s);
+        const cls = d ? 'done' : (s === nxt ? 'current' : (!open ? 'locked' : ''));
         const sc = d ? P.done[s] : 0;
         const label = STEPS[s].map(i => W[i].w).join(', ');
-        cells += `<button type="button" class="step ${cls}" data-open="${s}" aria-label="Step ${s}: ${esc(label)}${d ? ', done' : ''}" title="${esc(label)}">
-          <span class="num">${s}</span>${d ? `<span class="pips">${[0, 1, 2, 3, 4].map(k => `<i class="${k < sc ? 'on' : ''}"></i>`).join('')}</span>` : ''}</button>`;
+        cells += `<button type="button" class="step ${cls}" data-open="${s}" ${open ? '' : 'aria-disabled="true"'} aria-label="Step ${s}${open ? ': ' + esc(label) : ', locked'}${d ? ', done' : ''}" title="${open ? esc(label) : `Opens after step ${s - 1}`}">
+          ${open ? '' : LOCK_ICON}<span class="num">${s}</span>${d ? `<span class="pips">${[0, 1, 2, 3, 4].map(k => `<i class="${k < sc ? 'on' : ''}"></i>`).join('')}</span>` : ''}</button>`;
       }
       const sample = STEPS[first].slice(0, 3).map(i => W[i].w).join(', ');
       html += `<section class="unit ${doneN === 10 ? 'done' : ''}">
@@ -698,6 +747,18 @@ function startApp(W, QUIZ) {
   }
 
   // ---------- lesson ----------
+  // how many times the learner has opened this word: a number and five bars that fill as the word
+  // becomes familiar (1, 3, 5, 10 and 20 visits). fresh: this visit was just counted, so it pops.
+  const SEEN_STEPS = [1, 3, 5, 10, 20];
+  function seenHTML(n, fresh) {
+    if (!n) return '';
+    const label = n === 1 ? 'first visit' : 'visits';
+    const tip = n === 1 ? 'Your first time on this word' : `You have opened this word ${n} times`;
+    return `<span class="seen${fresh ? ' fresh' : ''}" title="${tip}" aria-label="${tip}">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="12" r="3.2" fill="currentColor"/></svg>
+      <b class="seen-n num">${n}</b><span class="seen-l">${label}</span>
+      <span class="seen-bars" aria-hidden="true">${SEEN_STEPS.map((m, k) => `<i class="${n >= m ? 'on' : ''}" style="--h:${5 + k * 2.5}px"></i>`).join('')}</span></span>`;
+  }
   function entryHTML(i, ctxStep, opts) {
     opts = opts || {};
     const w = W[i], [mName, mHelp] = MODES[w.m];
@@ -713,7 +774,7 @@ function startApp(W, QUIZ) {
         <span class="ipa" title="How to say it (American English, IPA)">/${pron.map((g, k) => `<span class="ch" data-c="${k}">${esc(g[1])}</span>`).join('')}/</span></span>`
       : `<span class="headword">${esc(w.w)}</span>`;
     let h = `<div class="entry-head"${pron ? ' data-hl' : ''}>${head}${audio ? A.button(w.w, 'Listen to ' + w.w) : ''}${pron ? A.slowButton(w.w, 'word', 'Listen slowly to ' + w.w) : ''}<span class="pos">${esc(w.p)}</span>
-      ${opts.stepTag ? `<span class="tag">step ${w.s}</span>` : ''}</div>${!audio && A ? '<p class="muted noaudio">Audio for this step is coming soon.</p>' : ''}
+      ${opts.stepTag ? `<span class="tag">step ${w.s}</span>` : ''}${seenHTML(opts.views, opts.fresh)}</div>${!audio && A ? '<p class="muted noaudio">Audio for this step is coming soon.</p>' : ''}
       <div class="mode ${w.m}">${mName}</div> <span class="muted" style="font-size:.88rem">${mHelp}</span>`;
     if (BASIC_FIGURES.has(w.w)) h += `<div class="scene" data-scene="${esc(w.w)}" role="img" aria-label="${esc(BASIC_FIGURES.label(w.w))}"></div>`;
     else h += `<div class="slot blank"><span class="eyebrow">Picture coming soon</span><b>${esc(w.w)}</b></div>`;
@@ -733,24 +794,24 @@ function startApp(W, QUIZ) {
     return h;
   }
 
-  function renderLesson(step, k) {
+  // counted: this is a new visit to the word (not a redraw after sign-in), so its view count goes up
+  function renderLesson(step, k, counted) {
     if (window.BASIC_AUDIO) BASIC_AUDIO.stop();
-    const ids = STEPS[step], i = ids[k], nxt = nextStep();
-    const preview = nxt !== null && step > nxt;
+    const ids = STEPS[step], i = ids[k];
+    const views = counted ? countView(i) : (P.views[W[i].w] || 0);
     let html = `<div class="lesson-top"><button class="btn quiet" type="button" id="back">← Path</button>
       <span class="eyebrow">Step ${step} · word ${k + 1} of ${PER}${isDone(step) ? ' · done' : ''}</span>
       ${isDone(step) ? '<button class="btn" type="button" id="requiz">Retake quiz</button>' : ''}
       <div class="dots" aria-hidden="true">${ids.map((_, j) => `<i class="${j <= k ? 'on' : ''}"></i>`).join('')}<i></i></div></div>`;
-    if (preview) html += `<div class="banner">Preview: you have not reached step ${step} yet. Some words below come from steps you have not done, and quiz results here are not saved.</div>`;
-    html += `<article class="entry">${entryHTML(i, step)}</article>
+    html += `<article class="entry">${entryHTML(i, step, { views, fresh: counted })}</article>
       <div class="lesson-nav"><button class="btn" type="button" id="prev" ${k === 0 ? 'disabled' : ''}>Previous word</button>
       ${k < PER - 1 ? '<button class="btn primary" type="button" id="next">Next word</button>' : '<button class="btn primary" type="button" id="quiz">Take the step quiz</button>'}</div>`;
     $view.innerHTML = html;
     BASIC_FIGURES.mountAll($view);
     document.getElementById('back').addEventListener('click', () => route('path'));
-    document.getElementById('prev').addEventListener('click', () => { current.arg = { step, i: k - 1 }; renderLesson(step, k - 1); window.scrollTo(0, 0); });
+    document.getElementById('prev').addEventListener('click', () => { current.arg = { step, i: k - 1 }; renderLesson(step, k - 1, true); window.scrollTo(0, 0); });
     const n = document.getElementById('next');
-    if (n) n.addEventListener('click', () => { current.arg = { step, i: k + 1 }; renderLesson(step, k + 1); window.scrollTo(0, 0); });
+    if (n) n.addEventListener('click', () => { current.arg = { step, i: k + 1 }; renderLesson(step, k + 1, true); window.scrollTo(0, 0); });
     const q = document.getElementById('quiz');
     if (q) q.addEventListener('click', () => route('quiz', { step }));
     const rq = document.getElementById('requiz');
@@ -990,11 +1051,10 @@ function startApp(W, QUIZ) {
 
   // ---------- step quiz ----------
   function startQuiz(step) {
-    const nxt = nextStep(), preview = nxt !== null && step > nxt;
     const qs = shuffle(STEPS[step].map(i => makeQuestion(i, step, false)));
     runQuestions(qs, 'Step ' + step, () => route('lesson', { step, i: 0 }), results => {
       const right = results.filter(r => r.ok).length;
-      if (!preview) {
+      {
         P.done[step] = Math.max(right, P.done[step] || 0);
         const now = Date.now();
         results.forEach(r => {
@@ -1002,11 +1062,11 @@ function startApp(W, QUIZ) {
         });
         save();
       }
-      const sub = preview ? 'Preview only. Nothing was saved.' : `Step ${step} is done. ${right < 5 ? 'Missed words go to review.' : 'Every word goes into review.'}`;
+      const sub = `Step ${step} is done. ${right < 5 ? 'Missed words go to review.' : 'Every word goes into review.'}`;
       $view.innerHTML = resultsHTML(results, 'Step ' + step + ' quiz', sub);
       const actions = document.getElementById('resultActions');
       const n2 = nextStep();
-      actions.innerHTML = (n2 && !preview ? `<button class="btn primary" type="button" id="toNext">Go to step ${n2}</button>` : '') +
+      actions.innerHTML = (n2 ? `<button class="btn primary" type="button" id="toNext">Go to step ${n2}</button>` : '') +
         `<button class="btn" type="button" id="toPath">Back to path</button><button class="btn quiet" type="button" id="again">Retake quiz</button>`;
       const tn = document.getElementById('toNext');
       if (tn) tn.addEventListener('click', () => route('lesson', { step: n2 }));
@@ -1101,18 +1161,20 @@ function startApp(W, QUIZ) {
 
   // ---------- word sheet ----------
   function openSheet(i) {
-    const w = W[i], learned = learnedSet(), nxt = nextStep();
+    const w = W[i], learned = learnedSet(), views = countView(i), open = isOpen(w.s);
     const status = learned.has(i) ? `Learned in step ${w.s}` : `Comes in step ${w.s}`;
     $scrim.innerHTML = `<div class="sheet" role="dialog" aria-modal="true" aria-label="${esc(w.w)}">
       <button class="btn quiet sheet-close" type="button" id="closeSheet">Close</button>
       <div class="eyebrow">${status}</div>
-      ${entryHTML(i, Math.max(maxDone(), w.s), { showLater: true })}
-      <div class="row" style="margin-top:22px"><button class="btn" type="button" id="openStep">Open step ${w.s}</button></div></div>`;
+      ${entryHTML(i, Math.max(maxDone(), w.s), { showLater: true, views, fresh: true })}
+      <div class="row" style="margin-top:22px">${open ? `<button class="btn" type="button" id="openStep">Open step ${w.s}</button>`
+        : `<button class="btn" type="button" disabled>${LOCK_ICON} Step ${w.s} opens after step ${w.s - 1}</button>`}</div></div>`;
     $scrim.hidden = false;
     BASIC_FIGURES.mountAll($scrim);
     document.getElementById('closeSheet').focus();
     document.getElementById('closeSheet').addEventListener('click', closeSheet);
-    document.getElementById('openStep').addEventListener('click', () => { closeSheet(); route('lesson', { step: w.s, i: STEPS[w.s].indexOf(i) }); });
+    const os = document.getElementById('openStep');
+    if (os) os.addEventListener('click', () => { closeSheet(); route('lesson', { step: w.s, i: STEPS[w.s].indexOf(i) }); });
   }
   function closeSheet() { $scrim.hidden = true; $scrim.innerHTML = ''; BASIC_FIGURES.mountAll($view); }
   $scrim.addEventListener('click', e => { if (e.target === $scrim) closeSheet(); });
