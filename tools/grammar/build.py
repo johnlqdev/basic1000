@@ -128,6 +128,8 @@ def main():
         rule = les.get('rule', {})
         for k, p in enumerate(rule.get('points', [])):
             check(nid, f'rule {k + 1}', p)
+        for k, row in enumerate(rule.get('table', [])):
+            check(nid, f'rule table {k + 1}', ' '.join(row))
         for k, e in enumerate(rule.get('examples', [])):
             check(nid, f'rule example {k + 1}', e['t'], with_terms=False)
         for k, t in enumerate(les.get('tasks', [])):

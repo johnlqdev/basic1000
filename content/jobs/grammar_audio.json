@@ -861,6 +861,3098 @@
 {
 "text": "The cat sleeps.",
 "voice": "man"
+},
+{
+"text": "This is my book.",
+"voice": "man"
+},
+{
+"text": "The book is near him, so he says this.",
+"voice": "man"
+},
+{
+"text": "That is my house.",
+"voice": "man"
+},
+{
+"text": "The house is far from him, so he says that.",
+"voice": "man"
+},
+{
+"text": "These are my apples.",
+"voice": "woman"
+},
+{
+"text": "These is for more than one thing near you.",
+"voice": "man"
+},
+{
+"text": "Those birds are very high.",
+"voice": "woman"
+},
+{
+"text": "Those is for more than one thing far from you.",
+"voice": "man"
+},
+{
+"text": "Near you: this for one, these for more than one.",
+"voice": "man"
+},
+{
+"text": "Far from you: that for one, those for more than one.",
+"voice": "man"
+},
+{
+"text": "These apples are red.",
+"voice": "man"
+},
+{
+"text": "Those birds are very high.",
+"voice": "man"
+},
+{
+"text": "These apples are mine.",
+"voice": "man"
+},
+{
+"text": "Look at that house over there.",
+"voice": "man"
+},
+{
+"text": "I like this book.",
+"voice": "man"
+},
+{
+"text": "This book is new.",
+"voice": "man"
+},
+{
+"text": "Those are my dogs.",
+"voice": "man"
+},
+{
+"text": "I saw a dog.",
+"voice": "woman"
+},
+{
+"text": "The dog is new to the man, so she says a dog.",
+"voice": "man"
+},
+{
+"text": "The dog was very big.",
+"voice": "woman"
+},
+{
+"text": "Now he knows about the dog. So she says the dog.",
+"voice": "man"
+},
+{
+"text": "The sun is hot.",
+"voice": "man"
+},
+{
+"text": "There is only one sun, so we say the sun.",
+"voice": "man"
+},
+{
+"text": "A dog: any dog, a dog that is new to you.",
+"voice": "man"
+},
+{
+"text": "The dog: the one we both know about.",
+"voice": "man"
+},
+{
+"text": "A, an and the are called articles.",
+"voice": "man"
+},
+{
+"text": "I saw a dog. The dog was very big.",
+"voice": "woman"
+},
+{
+"text": "Please open the door.",
+"voice": "man"
+},
+{
+"text": "She has an apple and a book.",
+"voice": "man"
+},
+{
+"text": "I have a cat.",
+"voice": "man"
+},
+{
+"text": "I have a cat. The cat is black.",
+"voice": "man"
+},
+{
+"text": "Look at the sun!",
+"voice": "man"
+},
+{
+"text": "She eats an egg every day.",
+"voice": "man"
+},
+{
+"text": "The bird is in the sky.",
+"voice": "man"
+},
+{
+"text": "The boy kicks the ball.",
+"voice": "man"
+},
+{
+"text": "Kicks is the verb.",
+"voice": "man"
+},
+{
+"text": "The boy does the action. The boy is the subject.",
+"voice": "man"
+},
+{
+"text": "The ball is what he kicks. The ball is the object.",
+"voice": "man"
+},
+{
+"text": "The cat eats the fish.",
+"voice": "man"
+},
+{
+"text": "The cat is the subject. The fish is the object.",
+"voice": "man"
+},
+{
+"text": "The dog sees the boy.",
+"voice": "man"
+},
+{
+"text": "The boy sees the dog.",
+"voice": "man"
+},
+{
+"text": "Change the order, and the meaning changes.",
+"voice": "man"
+},
+{
+"text": "The subject usually comes before the verb.",
+"voice": "man"
+},
+{
+"text": "The object usually comes after it.",
+"voice": "man"
+},
+{
+"text": "My mother drives the car.",
+"voice": "man"
+},
+{
+"text": "The girl opens the door.",
+"voice": "man"
+},
+{
+"text": "My father drives a car.",
+"voice": "man"
+},
+{
+"text": "Mary reads a book.",
+"voice": "man"
+},
+{
+"text": "I walk to school every day.",
+"voice": "man"
+},
+{
+"text": "This happens again and again. We use the present simple.",
+"voice": "man"
+},
+{
+"text": "She walks to school every day.",
+"voice": "man"
+},
+{
+"text": "With he, she and it, the verb gets s.",
+"voice": "man"
+},
+{
+"text": "I play. You play. We play. They play.",
+"voice": "man"
+},
+{
+"text": "He plays. She plays. It plays.",
+"voice": "man"
+},
+{
+"text": "After s, sh, ch, x and o, we add es.",
+"voice": "man"
+},
+{
+"text": "Watch, watches. Go, goes.",
+"voice": "man"
+},
+{
+"text": "The sun rises in the east.",
+"voice": "man"
+},
+{
+"text": "This is always true. We use the present simple for it too.",
+"voice": "man"
+},
+{
+"text": "He goes home at six.",
+"voice": "man"
+},
+{
+"text": "She walks to school.",
+"voice": "man"
+},
+{
+"text": "They play in the garden.",
+"voice": "man"
+},
+{
+"text": "He watches the birds.",
+"voice": "man"
+},
+{
+"text": "My father goes to work at eight.",
+"voice": "man"
+},
+{
+"text": "I drink milk every day.",
+"voice": "man"
+},
+{
+"text": "I have a red bag.",
+"voice": "woman"
+},
+{
+"text": "With he, she and it, we use has.",
+"voice": "man"
+},
+{
+"text": "We have two cats.",
+"voice": "man"
+},
+{
+"text": "With I, you, we and they, we use have.",
+"voice": "man"
+},
+{
+"text": "I have, you have, we have, they have.",
+"voice": "man"
+},
+{
+"text": "He has, she has, it has.",
+"voice": "man"
+},
+{
+"text": "We also use have for food and for time.",
+"voice": "man"
+},
+{
+"text": "We have a meal at seven.",
+"voice": "woman"
+},
+{
+"text": "He has a big house.",
+"voice": "man"
+},
+{
+"text": "They have a meal at seven.",
+"voice": "man"
+},
+{
+"text": "The dog has a long tail.",
+"voice": "man"
+},
+{
+"text": "I have a brother.",
+"voice": "man"
+},
+{
+"text": "They have a car.",
+"voice": "man"
+},
+{
+"text": "My sister has a cat.",
+"voice": "man"
+},
+{
+"text": "I have a dog.",
+"voice": "man"
+},
+{
+"text": "You have a car.",
+"voice": "man"
+},
+{
+"text": "He has a ball.",
+"voice": "man"
+},
+{
+"text": "It has a long tail.",
+"voice": "man"
+},
+{
+"text": "They have a big house.",
+"voice": "man"
+},
+{
+"text": "I do not like milk.",
+"voice": "man"
+},
+{
+"text": "He says do not before the verb.",
+"voice": "man"
+},
+{
+"text": "I like milk.",
+"voice": "man"
+},
+{
+"text": "Put do not before the verb.",
+"voice": "man"
+},
+{
+"text": "She likes milk.",
+"voice": "man"
+},
+{
+"text": "She does not like milk.",
+"voice": "man"
+},
+{
+"text": "With he, she and it, use does not. Then the verb has no s.",
+"voice": "man"
+},
+{
+"text": "When we talk, do not becomes don't.",
+"voice": "man"
+},
+{
+"text": "And does not becomes doesn't.",
+"voice": "man"
+},
+{
+"text": "He does not drive a car. He walks.",
+"voice": "man"
+},
+{
+"text": "I do not eat meat.",
+"voice": "man"
+},
+{
+"text": "He does not drive a car.",
+"voice": "man"
+},
+{
+"text": "We do not live here.",
+"voice": "man"
+},
+{
+"text": "She doesn't like milk.",
+"voice": "man"
+},
+{
+"text": "They do not eat meat.",
+"voice": "man"
+},
+{
+"text": "She does not like fish.",
+"voice": "man"
+},
+{
+"text": "I do not live here.",
+"voice": "man"
+},
+{
+"text": "We do not have a car.",
+"voice": "man"
+},
+{
+"text": "Do you live here?",
+"voice": "woman"
+},
+{
+"text": "Yes, I do.",
+"voice": "man"
+},
+{
+"text": "You live here.",
+"voice": "man"
+},
+{
+"text": "Do you live here?",
+"voice": "man"
+},
+{
+"text": "To ask, put do first.",
+"voice": "man"
+},
+{
+"text": "He works on Sunday.",
+"voice": "man"
+},
+{
+"text": "Does he work on Sunday?",
+"voice": "man"
+},
+{
+"text": "With he, she and it, use does. Then the verb has no s.",
+"voice": "man"
+},
+{
+"text": "Does she like music?",
+"voice": "man"
+},
+{
+"text": "Yes, she does.",
+"voice": "man"
+},
+{
+"text": "A short answer uses do or does again.",
+"voice": "man"
+},
+{
+"text": "Do they eat meat?",
+"voice": "woman"
+},
+{
+"text": "No, they do not.",
+"voice": "woman"
+},
+{
+"text": "Do you live here? Yes, I do.",
+"voice": "man"
+},
+{
+"text": "Does he work on Sunday? No, he does not.",
+"voice": "man"
+},
+{
+"text": "Do they like music?",
+"voice": "man"
+},
+{
+"text": "Do you like apples?",
+"voice": "man"
+},
+{
+"text": "Does she live here?",
+"voice": "man"
+},
+{
+"text": "Do you like fish?",
+"voice": "man"
+},
+{
+"text": "Does she like music? Yes, she does.",
+"voice": "man"
+},
+{
+"text": "Do they live here?",
+"voice": "man"
+},
+{
+"text": "The woman sees the man.",
+"voice": "man"
+},
+{
+"text": "She sees him.",
+"voice": "man"
+},
+{
+"text": "After a verb, I becomes me.",
+"voice": "man"
+},
+{
+"text": "He becomes him. She becomes her.",
+"voice": "man"
+},
+{
+"text": "We becomes us. They becomes them.",
+"voice": "man"
+},
+{
+"text": "You does not change: you see me, I see you.",
+"voice": "man"
+},
+{
+"text": "It does not change: it sees me, I see it.",
+"voice": "man"
+},
+{
+"text": "Give the book to them.",
+"voice": "woman"
+},
+{
+"text": "After to, with and for, we use me, him, her, us and them too.",
+"voice": "man"
+},
+{
+"text": "Come with me.",
+"voice": "woman"
+},
+{
+"text": "We help her.",
+"voice": "man"
+},
+{
+"text": "She likes him.",
+"voice": "man"
+},
+{
+"text": "Give the book to them.",
+"voice": "man"
+},
+{
+"text": "I know him .",
+"voice": "man"
+},
+{
+"text": "We help her .",
+"voice": "man"
+},
+{
+"text": "Give the book to them .",
+"voice": "man"
+},
+{
+"text": "Come with me .",
+"voice": "man"
+},
+{
+"text": "She likes us",
+"voice": "man"
+},
+{
+"text": "He sees her.",
+"voice": "man"
+},
+{
+"text": "This is my bag.",
+"voice": "man"
+},
+{
+"text": "My says who has the bag.",
+"voice": "man"
+},
+{
+"text": "This is his dog.",
+"voice": "man"
+},
+{
+"text": "This is her house.",
+"voice": "man"
+},
+{
+"text": "I: my. You: your.",
+"voice": "man"
+},
+{
+"text": "He: his. She: her.",
+"voice": "man"
+},
+{
+"text": "It: its. We: our. They: their.",
+"voice": "man"
+},
+{
+"text": "The dog wants its food.",
+"voice": "man"
+},
+{
+"text": "Its has no mark in it.",
+"voice": "man"
+},
+{
+"text": "The bag is mine.",
+"voice": "woman"
+},
+{
+"text": "Mine, yours, his, hers, ours and theirs stand on their own, with no noun after them.",
+"voice": "man"
+},
+{
+"text": "This is my house.",
+"voice": "man"
+},
+{
+"text": "The book is hers.",
+"voice": "man"
+},
+{
+"text": "Their dog is big.",
+"voice": "man"
+},
+{
+"text": "The book is hers .",
+"voice": "man"
+},
+{
+"text": "This is their house.",
+"voice": "man"
+},
+{
+"text": "Mary has a cat. It is her cat.",
+"voice": "man"
+},
+{
+"text": "Your book is new.",
+"voice": "man"
+},
+{
+"text": "This is the girl's book.",
+"voice": "man"
+},
+{
+"text": "We add 's to girl to show who has the book.",
+"voice": "man"
+},
+{
+"text": "This small mark is called an apostrophe.",
+"voice": "man"
+},
+{
+"text": "Two boys have one room.",
+"voice": "man"
+},
+{
+"text": "Boys ends in s. So we add only the mark: the boys' room.",
+"voice": "man"
+},
+{
+"text": "Children does not end in s.",
+"voice": "man"
+},
+{
+"text": "So we add 's: the children's toys.",
+"voice": "man"
+},
+{
+"text": "This is my brother's car.",
+"voice": "woman"
+},
+{
+"text": "The children's toys are on the floor.",
+"voice": "man"
+},
+{
+"text": "The girl's book is red.",
+"voice": "man"
+},
+{
+"text": "The boys' room is big.",
+"voice": "man"
+},
+{
+"text": "This is the girl's bag.",
+"voice": "man"
+},
+{
+"text": "Two boys live here. This is the boys' room.",
+"voice": "man"
+},
+{
+"text": "These are the children's toys.",
+"voice": "man"
+},
+{
+"text": "This is my sister's car.",
+"voice": "man"
+},
+{
+"text": "My father's car is red.",
+"voice": "man"
+},
+{
+"text": "The man's dog is black.",
+"voice": "man"
+},
+{
+"text": "Birds can fly.",
+"voice": "man"
+},
+{
+"text": "I can run very quickly.",
+"voice": "man"
+},
+{
+"text": "Can and a verb say what someone is able to do.",
+"voice": "man"
+},
+{
+"text": "I can swim.",
+"voice": "man"
+},
+{
+"text": "She can swim.",
+"voice": "man"
+},
+{
+"text": "They can swim.",
+"voice": "man"
+},
+{
+"text": "Can is the same with every subject. The verb after it has no s.",
+"voice": "man"
+},
+{
+"text": "I can not see the sea from here.",
+"voice": "man"
+},
+{
+"text": "We say can not, cannot or can't.",
+"voice": "man"
+},
+{
+"text": "Can you swim?",
+"voice": "woman"
+},
+{
+"text": "Yes, I can.",
+"voice": "man"
+},
+{
+"text": "To ask, put can first.",
+"voice": "man"
+},
+{
+"text": "Can you swim? Yes, I can.",
+"voice": "man"
+},
+{
+"text": "She can read.",
+"voice": "man"
+},
+{
+"text": "She can swim .",
+"voice": "man"
+},
+{
+"text": "I can swim .",
+"voice": "man"
+},
+{
+"text": "Can you swim?",
+"voice": "man"
+},
+{
+"text": "He can run.",
+"voice": "man"
+},
+{
+"text": "Fish can not walk.",
+"voice": "man"
+},
+{
+"text": "I can not swim.",
+"voice": "man"
+},
+{
+"text": "Can I swim?",
+"voice": "man"
+},
+{
+"text": "Yes, you can.",
+"voice": "man"
+},
+{
+"text": "No, you can not.",
+"voice": "man"
+},
+{
+"text": "You can read.",
+"voice": "man"
+},
+{
+"text": "You can not read.",
+"voice": "man"
+},
+{
+"text": "Can you read?",
+"voice": "man"
+},
+{
+"text": "No, I can not.",
+"voice": "man"
+},
+{
+"text": "He can not run.",
+"voice": "man"
+},
+{
+"text": "Can he run?",
+"voice": "man"
+},
+{
+"text": "Yes, he can.",
+"voice": "man"
+},
+{
+"text": "No, he can not.",
+"voice": "man"
+},
+{
+"text": "She can cook.",
+"voice": "man"
+},
+{
+"text": "She can not cook.",
+"voice": "man"
+},
+{
+"text": "Can she cook?",
+"voice": "man"
+},
+{
+"text": "Yes, she can.",
+"voice": "man"
+},
+{
+"text": "No, she can not.",
+"voice": "man"
+},
+{
+"text": "It can fly.",
+"voice": "man"
+},
+{
+"text": "It can not fly.",
+"voice": "man"
+},
+{
+"text": "Can it fly?",
+"voice": "man"
+},
+{
+"text": "Yes, it can.",
+"voice": "man"
+},
+{
+"text": "No, it can not.",
+"voice": "man"
+},
+{
+"text": "We can help.",
+"voice": "man"
+},
+{
+"text": "We can not help.",
+"voice": "man"
+},
+{
+"text": "Can we help?",
+"voice": "man"
+},
+{
+"text": "Yes, we can.",
+"voice": "man"
+},
+{
+"text": "No, we can not.",
+"voice": "man"
+},
+{
+"text": "They can write.",
+"voice": "man"
+},
+{
+"text": "They can not write.",
+"voice": "man"
+},
+{
+"text": "Can they write?",
+"voice": "man"
+},
+{
+"text": "Yes, they can.",
+"voice": "man"
+},
+{
+"text": "No, they can not.",
+"voice": "man"
+},
+{
+"text": "Sit down.",
+"voice": "woman"
+},
+{
+"text": "To tell someone to do something, begin with the verb.",
+"voice": "man"
+},
+{
+"text": "Open the door.",
+"voice": "man"
+},
+{
+"text": "We do not say you.",
+"voice": "man"
+},
+{
+"text": "The verb comes first.",
+"voice": "man"
+},
+{
+"text": "Do not touch it.",
+"voice": "woman"
+},
+{
+"text": "To tell someone not to do something, use do not.",
+"voice": "man"
+},
+{
+"text": "Close the window, please.",
+"voice": "woman"
+},
+{
+"text": "Please makes it kind.",
+"voice": "man"
+},
+{
+"text": "Do not run in the house.",
+"voice": "man"
+},
+{
+"text": "Sit down.",
+"voice": "man"
+},
+{
+"text": "Close the door.",
+"voice": "man"
+},
+{
+"text": "Do not run here.",
+"voice": "man"
+},
+{
+"text": "Do not touch it.",
+"voice": "man"
+},
+{
+"text": "Please sit down.",
+"voice": "man"
+},
+{
+"text": "Help me, please .",
+"voice": "man"
+},
+{
+"text": "The ball is in the box.",
+"voice": "man"
+},
+{
+"text": "The ball is on the box.",
+"voice": "man"
+},
+{
+"text": "The cat is under the table.",
+"voice": "man"
+},
+{
+"text": "The book is on the table.",
+"voice": "man"
+},
+{
+"text": "The dog is next to the house.",
+"voice": "man"
+},
+{
+"text": "The girl is between the boys.",
+"voice": "man"
+},
+{
+"text": "The boy is behind the tree.",
+"voice": "man"
+},
+{
+"text": "The girl is in front of the house.",
+"voice": "man"
+},
+{
+"text": "In, on, under and next to are prepositions.",
+"voice": "man"
+},
+{
+"text": "A preposition shows where one thing is, next to another.",
+"voice": "man"
+},
+{
+"text": "The book is on the shelf.",
+"voice": "man"
+},
+{
+"text": "The girl is between the two boys.",
+"voice": "man"
+},
+{
+"text": "The shop closes at six.",
+"voice": "man"
+},
+{
+"text": "At is for a time on the clock.",
+"voice": "man"
+},
+{
+"text": "We play games on Monday.",
+"voice": "man"
+},
+{
+"text": "On is for a day: on Monday, on my birthday.",
+"voice": "man"
+},
+{
+"text": "My birthday is in May.",
+"voice": "man"
+},
+{
+"text": "In is for a month or a year: in May, in this year.",
+"voice": "man"
+},
+{
+"text": "We say in the morning, in the afternoon and in the evening.",
+"voice": "man"
+},
+{
+"text": "But we say at night.",
+"voice": "man"
+},
+{
+"text": "At six.",
+"voice": "man"
+},
+{
+"text": "On Monday.",
+"voice": "man"
+},
+{
+"text": "In May.",
+"voice": "man"
+},
+{
+"text": "We play games in the afternoon.",
+"voice": "man"
+},
+{
+"text": "I see her on Monday.",
+"voice": "man"
+},
+{
+"text": "I sleep at night.",
+"voice": "man"
+},
+{
+"text": "We have a party on my birthday.",
+"voice": "man"
+},
+{
+"text": "Always, usually, often, sometimes, never.",
+"voice": "man"
+},
+{
+"text": "These words say how often something happens.",
+"voice": "man"
+},
+{
+"text": "I always drink milk in the morning.",
+"voice": "man"
+},
+{
+"text": "Every morning, with no change.",
+"voice": "man"
+},
+{
+"text": "I walk to school.",
+"voice": "man"
+},
+{
+"text": "I often walk to school.",
+"voice": "man"
+},
+{
+"text": "These words come before most verbs.",
+"voice": "man"
+},
+{
+"text": "She is happy.",
+"voice": "man"
+},
+{
+"text": "She is always happy.",
+"voice": "man"
+},
+{
+"text": "They come after am, is and are.",
+"voice": "man"
+},
+{
+"text": "He is never late.",
+"voice": "man"
+},
+{
+"text": "He comes at eight every day.",
+"voice": "man"
+},
+{
+"text": "We often walk to school.",
+"voice": "man"
+},
+{
+"text": "She sometimes reads at night.",
+"voice": "man"
+},
+{
+"text": "I always drink milk.",
+"voice": "man"
+},
+{
+"text": "He comes on time every day. He is never late.",
+"voice": "man"
+},
+{
+"text": "We sometimes play in the garden.",
+"voice": "man"
+},
+{
+"text": "Look! It is raining.",
+"voice": "woman"
+},
+{
+"text": "It is happening now, at this moment.",
+"voice": "man"
+},
+{
+"text": "I am walking.",
+"voice": "man"
+},
+{
+"text": "Am, is or are, then the verb with ing.",
+"voice": "man"
+},
+{
+"text": "The children are playing in the garden.",
+"voice": "man"
+},
+{
+"text": "This is the present continuous.",
+"voice": "man"
+},
+{
+"text": "She is sleeping.",
+"voice": "man"
+},
+{
+"text": "She is not sleeping.",
+"voice": "man"
+},
+{
+"text": "Is she sleeping?",
+"voice": "man"
+},
+{
+"text": "What are you doing?",
+"voice": "woman"
+},
+{
+"text": "I am reading.",
+"voice": "man"
+},
+{
+"text": "The children are playing.",
+"voice": "man"
+},
+{
+"text": "I am eating an apple.",
+"voice": "man"
+},
+{
+"text": "Are you listening?",
+"voice": "man"
+},
+{
+"text": "She is sleeping now.",
+"voice": "man"
+},
+{
+"text": "Look! It is raining .",
+"voice": "man"
+},
+{
+"text": "He is not working.",
+"voice": "man"
+},
+{
+"text": "I am not walking.",
+"voice": "man"
+},
+{
+"text": "Am I walking?",
+"voice": "man"
+},
+{
+"text": "You are reading.",
+"voice": "man"
+},
+{
+"text": "You are not reading.",
+"voice": "man"
+},
+{
+"text": "Are you reading?",
+"voice": "man"
+},
+{
+"text": "He is eating.",
+"voice": "man"
+},
+{
+"text": "He is not eating.",
+"voice": "man"
+},
+{
+"text": "Is he eating?",
+"voice": "man"
+},
+{
+"text": "It is raining.",
+"voice": "man"
+},
+{
+"text": "It is not raining.",
+"voice": "man"
+},
+{
+"text": "Is it raining?",
+"voice": "man"
+},
+{
+"text": "We are playing.",
+"voice": "man"
+},
+{
+"text": "We are not playing.",
+"voice": "man"
+},
+{
+"text": "Are we playing?",
+"voice": "man"
+},
+{
+"text": "They are swimming.",
+"voice": "man"
+},
+{
+"text": "They are not swimming.",
+"voice": "man"
+},
+{
+"text": "Are they swimming?",
+"voice": "man"
+},
+{
+"text": "I usually walk to school.",
+"voice": "man"
+},
+{
+"text": "But today I am going by car.",
+"voice": "man"
+},
+{
+"text": "Again and again: the present simple.",
+"voice": "man"
+},
+{
+"text": "Now, or for a short time: the present continuous.",
+"voice": "man"
+},
+{
+"text": "He works in a shop.",
+"voice": "man"
+},
+{
+"text": "Look, he is working now.",
+"voice": "man"
+},
+{
+"text": "She knows the answer.",
+"voice": "man"
+},
+{
+"text": "Know, like, want and need are about what we think or feel.",
+"voice": "man"
+},
+{
+"text": "We do not use them with ing.",
+"voice": "man"
+},
+{
+"text": "I usually walk to school, but today I am going by car.",
+"voice": "man"
+},
+{
+"text": "I know the answer.",
+"voice": "man"
+},
+{
+"text": "Be quiet! The baby is sleeping .",
+"voice": "man"
+},
+{
+"text": "He goes to school every day.",
+"voice": "man"
+},
+{
+"text": "What are you doing?",
+"voice": "man"
+},
+{
+"text": "Where is my bag?",
+"voice": "woman"
+},
+{
+"text": "Where asks about a place.",
+"voice": "man"
+},
+{
+"text": "Who is for people. What is for things.",
+"voice": "man"
+},
+{
+"text": "Where is for places. When is for time.",
+"voice": "man"
+},
+{
+"text": "Why asks for a reason. How asks for the way.",
+"voice": "man"
+},
+{
+"text": "Where do you live?",
+"voice": "man"
+},
+{
+"text": "The question word comes first. Then comes the rest of the question.",
+"voice": "man"
+},
+{
+"text": "Why is she sad?",
+"voice": "man"
+},
+{
+"text": "Her cat is ill.",
+"voice": "man"
+},
+{
+"text": "How do you go to school?",
+"voice": "woman"
+},
+{
+"text": "How do you go to school?",
+"voice": "man"
+},
+{
+"text": "Who is that man?",
+"voice": "man"
+},
+{
+"text": "Where do you live? In London.",
+"voice": "man"
+},
+{
+"text": "Who is that man? He is my father.",
+"voice": "man"
+},
+{
+"text": "When do you get up? At seven.",
+"voice": "man"
+},
+{
+"text": "Why are you sad? Because my dog is ill.",
+"voice": "man"
+},
+{
+"text": "Where is my bag?",
+"voice": "man"
+},
+{
+"text": "I have a dog and a cat.",
+"voice": "man"
+},
+{
+"text": "And adds an idea.",
+"voice": "man"
+},
+{
+"text": "I like apples, but I do not like eggs.",
+"voice": "woman"
+},
+{
+"text": "But shows a different idea.",
+"voice": "man"
+},
+{
+"text": "Do you want milk or water?",
+"voice": "woman"
+},
+{
+"text": "Or gives a choice.",
+"voice": "man"
+},
+{
+"text": "We stayed at home because it was raining.",
+"voice": "man"
+},
+{
+"text": "Because gives the reason.",
+"voice": "man"
+},
+{
+"text": "It was raining, so we stayed at home.",
+"voice": "man"
+},
+{
+"text": "So gives the result.",
+"voice": "man"
+},
+{
+"text": "And, but, or, because and so are conjunctions.",
+"voice": "man"
+},
+{
+"text": "A conjunction joins words or parts of a sentence.",
+"voice": "man"
+},
+{
+"text": "I like apples, but I do not like eggs.",
+"voice": "man"
+},
+{
+"text": "I am wearing a coat because it is cold.",
+"voice": "man"
+},
+{
+"text": "It is cold, so I am wearing a coat.",
+"voice": "man"
+},
+{
+"text": "Do you want milk or water?",
+"voice": "man"
+},
+{
+"text": "She is tired but happy.",
+"voice": "man"
+},
+{
+"text": "One apple. Two apples. Three apples.",
+"voice": "man"
+},
+{
+"text": "We can put a number before apple, and it has a plural.",
+"voice": "man"
+},
+{
+"text": "This is water.",
+"voice": "man"
+},
+{
+"text": "We do not say two waters. Water has no plural.",
+"voice": "man"
+},
+{
+"text": "Apple is countable. Water is uncountable.",
+"voice": "man"
+},
+{
+"text": "Milk, music and money are uncountable too.",
+"voice": "man"
+},
+{
+"text": "Many apples.",
+"voice": "man"
+},
+{
+"text": "Much water.",
+"voice": "man"
+},
+{
+"text": "Use many with countable nouns and much with uncountable nouns.",
+"voice": "man"
+},
+{
+"text": "How many eggs do we have?",
+"voice": "woman"
+},
+{
+"text": "We do not have much milk.",
+"voice": "man"
+},
+{
+"text": "I have two apples.",
+"voice": "man"
+},
+{
+"text": "Water is good for you.",
+"voice": "man"
+},
+{
+"text": "How many eggs do we have?",
+"voice": "man"
+},
+{
+"text": "I have three books",
+"voice": "man"
+},
+{
+"text": "There is a cat in the garden.",
+"voice": "man"
+},
+{
+"text": "There are two cats in the garden.",
+"voice": "man"
+},
+{
+"text": "There is for one. There are for more than one.",
+"voice": "man"
+},
+{
+"text": "There is water in the glass.",
+"voice": "man"
+},
+{
+"text": "With an uncountable noun, use there is too.",
+"voice": "man"
+},
+{
+"text": "There is a book on the table.",
+"voice": "man"
+},
+{
+"text": "Is there a book on the table?",
+"voice": "man"
+},
+{
+"text": "To ask, put is or are first.",
+"voice": "man"
+},
+{
+"text": "Are there any eggs?",
+"voice": "woman"
+},
+{
+"text": "Yes, there are.",
+"voice": "man"
+},
+{
+"text": "There are three eggs.",
+"voice": "man"
+},
+{
+"text": "Is there a book?",
+"voice": "man"
+},
+{
+"text": "There are two dogs.",
+"voice": "man"
+},
+{
+"text": "Are there any eggs?",
+"voice": "man"
+},
+{
+"text": "There are some birds in the tree.",
+"voice": "man"
+},
+{
+"text": "We say some when we do not say the number.",
+"voice": "man"
+},
+{
+"text": "We do not have any bread.",
+"voice": "man"
+},
+{
+"text": "After not, we use any.",
+"voice": "man"
+},
+{
+"text": "Do you have any milk?",
+"voice": "woman"
+},
+{
+"text": "Yes, I have some.",
+"voice": "man"
+},
+{
+"text": "In questions, we use any.",
+"voice": "man"
+},
+{
+"text": "Would you like some milk?",
+"voice": "man"
+},
+{
+"text": "Yes, please.",
+"voice": "woman"
+},
+{
+"text": "When we offer something, we use some, even in a question.",
+"voice": "man"
+},
+{
+"text": "I have some apples.",
+"voice": "man"
+},
+{
+"text": "I do not have any.",
+"voice": "man"
+},
+{
+"text": "Do you have any?",
+"voice": "man"
+},
+{
+"text": "I do not have any money.",
+"voice": "man"
+},
+{
+"text": "Do you have any brothers?",
+"voice": "man"
+},
+{
+"text": "Would you like some water?",
+"voice": "man"
+},
+{
+"text": "Today I am at school.",
+"voice": "man"
+},
+{
+"text": "Yesterday I was at home.",
+"voice": "man"
+},
+{
+"text": "Was is the past of am and is.",
+"voice": "man"
+},
+{
+"text": "I am at home.",
+"voice": "man"
+},
+{
+"text": "Yesterday they were at home.",
+"voice": "man"
+},
+{
+"text": "I, he, she and it: was.",
+"voice": "man"
+},
+{
+"text": "You, we and they: were.",
+"voice": "man"
+},
+{
+"text": "The shops were closed.",
+"voice": "man"
+},
+{
+"text": "We were not happy.",
+"voice": "man"
+},
+{
+"text": "Was it cold?",
+"voice": "woman"
+},
+{
+"text": "Yes, it was.",
+"voice": "man"
+},
+{
+"text": "I was at home yesterday.",
+"voice": "man"
+},
+{
+"text": "Was it cold? Yes, it was.",
+"voice": "man"
+},
+{
+"text": "We were not late.",
+"voice": "man"
+},
+{
+"text": "Were you there?",
+"voice": "man"
+},
+{
+"text": "They were late.",
+"voice": "man"
+},
+{
+"text": "It was not cold.",
+"voice": "man"
+},
+{
+"text": "I was at home.",
+"voice": "man"
+},
+{
+"text": "I was not at home.",
+"voice": "man"
+},
+{
+"text": "Was I at home?",
+"voice": "man"
+},
+{
+"text": "Yes, you were.",
+"voice": "man"
+},
+{
+"text": "No, you were not.",
+"voice": "man"
+},
+{
+"text": "You were late.",
+"voice": "man"
+},
+{
+"text": "You were not late.",
+"voice": "man"
+},
+{
+"text": "Were you late?",
+"voice": "man"
+},
+{
+"text": "Yes, I was.",
+"voice": "man"
+},
+{
+"text": "No, I was not.",
+"voice": "man"
+},
+{
+"text": "He was tired.",
+"voice": "man"
+},
+{
+"text": "He was not tired.",
+"voice": "man"
+},
+{
+"text": "Was he tired?",
+"voice": "man"
+},
+{
+"text": "Yes, he was.",
+"voice": "man"
+},
+{
+"text": "No, he was not.",
+"voice": "man"
+},
+{
+"text": "She was at school.",
+"voice": "man"
+},
+{
+"text": "She was not at school.",
+"voice": "man"
+},
+{
+"text": "Was she at school?",
+"voice": "man"
+},
+{
+"text": "Yes, she was.",
+"voice": "man"
+},
+{
+"text": "No, she was not.",
+"voice": "man"
+},
+{
+"text": "It was cold.",
+"voice": "man"
+},
+{
+"text": "Was it cold?",
+"voice": "man"
+},
+{
+"text": "No, it was not.",
+"voice": "man"
+},
+{
+"text": "We were happy.",
+"voice": "man"
+},
+{
+"text": "Were we happy?",
+"voice": "man"
+},
+{
+"text": "Yes, we were.",
+"voice": "man"
+},
+{
+"text": "No, we were not.",
+"voice": "man"
+},
+{
+"text": "They were ill.",
+"voice": "man"
+},
+{
+"text": "They were not ill.",
+"voice": "man"
+},
+{
+"text": "Were they ill?",
+"voice": "man"
+},
+{
+"text": "Yes, they were.",
+"voice": "man"
+},
+{
+"text": "No, they were not.",
+"voice": "man"
+},
+{
+"text": "Today I play.",
+"voice": "man"
+},
+{
+"text": "Yesterday I played.",
+"voice": "man"
+},
+{
+"text": "The past simple is for things that happened and ended before now.",
+"voice": "man"
+},
+{
+"text": "For most verbs, we add ed.",
+"voice": "man"
+},
+{
+"text": "She opened the window.",
+"voice": "man"
+},
+{
+"text": "I walked. She walked. They walked.",
+"voice": "man"
+},
+{
+"text": "The past simple is the same with every subject.",
+"voice": "man"
+},
+{
+"text": "We played a game yesterday.",
+"voice": "woman"
+},
+{
+"text": "I walked to school.",
+"voice": "man"
+},
+{
+"text": "They watched the birds.",
+"voice": "man"
+},
+{
+"text": "We played a game yesterday.",
+"voice": "man"
+},
+{
+"text": "She opened the window an hour ago.",
+"voice": "man"
+},
+{
+"text": "He walked home last night.",
+"voice": "man"
+},
+{
+"text": "They watched the birds yesterday.",
+"voice": "man"
+},
+{
+"text": "I closed the door.",
+"voice": "man"
+},
+{
+"text": "Today I go to the shop.",
+"voice": "man"
+},
+{
+"text": "Yesterday I went to the shop.",
+"voice": "man"
+},
+{
+"text": "Some verbs do not add ed. They have their own past form.",
+"voice": "man"
+},
+{
+"text": "Go, went. See, saw.",
+"voice": "man"
+},
+{
+"text": "Come, came. Eat, ate.",
+"voice": "man"
+},
+{
+"text": "We saw a big cow.",
+"voice": "woman"
+},
+{
+"text": "See becomes saw.",
+"voice": "man"
+},
+{
+"text": "She came home and ate an apple.",
+"voice": "man"
+},
+{
+"text": "Take, took. Give, gave. Make, made.",
+"voice": "man"
+},
+{
+"text": "We learn these forms one by one.",
+"voice": "man"
+},
+{
+"text": "I went to the shop.",
+"voice": "man"
+},
+{
+"text": "We saw a big ship.",
+"voice": "man"
+},
+{
+"text": "She came home at six.",
+"voice": "man"
+},
+{
+"text": "They ate some bread.",
+"voice": "man"
+},
+{
+"text": "I went to the shop yesterday.",
+"voice": "man"
+},
+{
+"text": "Last week we saw a big ship.",
+"voice": "man"
+},
+{
+"text": "He went to school.",
+"voice": "man"
+},
+{
+"text": "Did you sleep well?",
+"voice": "woman"
+},
+{
+"text": "Yes, I did.",
+"voice": "man"
+},
+{
+"text": "You slept well.",
+"voice": "man"
+},
+{
+"text": "Did you sleep well?",
+"voice": "man"
+},
+{
+"text": "Put did first. Then the verb goes back to its simple form.",
+"voice": "man"
+},
+{
+"text": "He came to school.",
+"voice": "man"
+},
+{
+"text": "He did not come to school.",
+"voice": "man"
+},
+{
+"text": "Did not, then the simple form.",
+"voice": "man"
+},
+{
+"text": "Did she go?",
+"voice": "man"
+},
+{
+"text": "Did they go?",
+"voice": "man"
+},
+{
+"text": "Did is the same with every subject.",
+"voice": "man"
+},
+{
+"text": "Did you see the dog?",
+"voice": "woman"
+},
+{
+"text": "No, I did not.",
+"voice": "man"
+},
+{
+"text": "Did you sleep well? Yes, I did.",
+"voice": "man"
+},
+{
+"text": "Did they eat the bread?",
+"voice": "man"
+},
+{
+"text": "I did not go out.",
+"voice": "man"
+},
+{
+"text": "I did not go to school.",
+"voice": "man"
+},
+{
+"text": "Did you see him yesterday?",
+"voice": "man"
+},
+{
+"text": "Did you see the dog?",
+"voice": "man"
+},
+{
+"text": "She did not come",
+"voice": "man"
+},
+{
+"text": "Did you eat? Yes, I did.",
+"voice": "man"
+},
+{
+"text": "I am going to visit my mother.",
+"voice": "man"
+},
+{
+"text": "This is a plan for the future.",
+"voice": "man"
+},
+{
+"text": "I am going to swim.",
+"voice": "man"
+},
+{
+"text": "Am, is or are, then going to, then the verb.",
+"voice": "man"
+},
+{
+"text": "Look at the clouds. It is going to rain.",
+"voice": "woman"
+},
+{
+"text": "We can see that it will happen.",
+"voice": "man"
+},
+{
+"text": "We are going to play a game after school.",
+"voice": "woman"
+},
+{
+"text": "She is not going to come.",
+"voice": "man"
+},
+{
+"text": "Is she going to come?",
+"voice": "man"
+},
+{
+"text": "We are going to play a game.",
+"voice": "man"
+},
+{
+"text": "Look at the clouds. It is going to rain .",
+"voice": "man"
+},
+{
+"text": "Are you going to swim?",
+"voice": "man"
+},
+{
+"text": "They are going to swim.",
+"voice": "man"
+},
+{
+"text": "I am not going to swim.",
+"voice": "man"
+},
+{
+"text": "Am I going to swim?",
+"voice": "man"
+},
+{
+"text": "You are going to cook.",
+"voice": "man"
+},
+{
+"text": "You are not going to cook.",
+"voice": "man"
+},
+{
+"text": "Are you going to cook?",
+"voice": "man"
+},
+{
+"text": "He is going to sleep.",
+"voice": "man"
+},
+{
+"text": "He is not going to sleep.",
+"voice": "man"
+},
+{
+"text": "Is he going to sleep?",
+"voice": "man"
+},
+{
+"text": "She is going to come.",
+"voice": "man"
+},
+{
+"text": "It is going to rain.",
+"voice": "man"
+},
+{
+"text": "It is not going to rain.",
+"voice": "man"
+},
+{
+"text": "Is it going to rain?",
+"voice": "man"
+},
+{
+"text": "We are going to play.",
+"voice": "man"
+},
+{
+"text": "We are not going to play.",
+"voice": "man"
+},
+{
+"text": "Are we going to play?",
+"voice": "man"
+},
+{
+"text": "They are going to help.",
+"voice": "man"
+},
+{
+"text": "They are not going to help.",
+"voice": "man"
+},
+{
+"text": "Are they going to help?",
+"voice": "man"
+},
+{
+"text": "It will be cold tomorrow.",
+"voice": "man"
+},
+{
+"text": "We use will and a verb to say what we think will happen.",
+"voice": "man"
+},
+{
+"text": "This bag is very heavy.",
+"voice": "woman"
+},
+{
+"text": "I will help you.",
+"voice": "man"
+},
+{
+"text": "He chooses to help at that moment, so he says will.",
+"voice": "man"
+},
+{
+"text": "I will help.",
+"voice": "man"
+},
+{
+"text": "She will help.",
+"voice": "man"
+},
+{
+"text": "They will help.",
+"voice": "man"
+},
+{
+"text": "Will is the same with every subject. The verb has no s.",
+"voice": "man"
+},
+{
+"text": "The shop will not open on Sunday.",
+"voice": "man"
+},
+{
+"text": "In talk, will not becomes won't.",
+"voice": "man"
+},
+{
+"text": "I will call you tonight.",
+"voice": "woman"
+},
+{
+"text": "She will help you.",
+"voice": "man"
+},
+{
+"text": "I will call you tonight.",
+"voice": "man"
+},
+{
+"text": "He will come.",
+"voice": "man"
+},
+{
+"text": "Will you come?",
+"voice": "man"
+},
+{
+"text": "I will not help you.",
+"voice": "man"
+},
+{
+"text": "Will I help you?",
+"voice": "man"
+},
+{
+"text": "Yes, you will.",
+"voice": "man"
+},
+{
+"text": "No, you will not.",
+"voice": "man"
+},
+{
+"text": "You will be late.",
+"voice": "man"
+},
+{
+"text": "You will not be late.",
+"voice": "man"
+},
+{
+"text": "Will you be late?",
+"voice": "man"
+},
+{
+"text": "Yes, I will.",
+"voice": "man"
+},
+{
+"text": "No, I will not.",
+"voice": "man"
+},
+{
+"text": "He will call.",
+"voice": "man"
+},
+{
+"text": "He will not call.",
+"voice": "man"
+},
+{
+"text": "Will he call?",
+"voice": "man"
+},
+{
+"text": "Yes, he will.",
+"voice": "man"
+},
+{
+"text": "No, he will not.",
+"voice": "man"
+},
+{
+"text": "She will come.",
+"voice": "man"
+},
+{
+"text": "She will not come.",
+"voice": "man"
+},
+{
+"text": "Will she come?",
+"voice": "man"
+},
+{
+"text": "Yes, she will.",
+"voice": "man"
+},
+{
+"text": "No, she will not.",
+"voice": "man"
+},
+{
+"text": "It will be cold.",
+"voice": "man"
+},
+{
+"text": "It will not be cold.",
+"voice": "man"
+},
+{
+"text": "Will it be cold?",
+"voice": "man"
+},
+{
+"text": "Yes, it will.",
+"voice": "man"
+},
+{
+"text": "No, it will not.",
+"voice": "man"
+},
+{
+"text": "We will wait.",
+"voice": "man"
+},
+{
+"text": "We will not wait.",
+"voice": "man"
+},
+{
+"text": "Will we wait?",
+"voice": "man"
+},
+{
+"text": "Yes, we will.",
+"voice": "man"
+},
+{
+"text": "No, we will not.",
+"voice": "man"
+},
+{
+"text": "They will win.",
+"voice": "man"
+},
+{
+"text": "They will not win.",
+"voice": "man"
+},
+{
+"text": "Will they win?",
+"voice": "man"
+},
+{
+"text": "Yes, they will.",
+"voice": "man"
+},
+{
+"text": "No, they will not.",
+"voice": "man"
+},
+{
+"text": "This dog is big. That dog is small.",
+"voice": "man"
+},
+{
+"text": "The big dog is bigger than the small dog.",
+"voice": "man"
+},
+{
+"text": "For short adjectives, add er.",
+"voice": "man"
+},
+{
+"text": "Big, bigger. Small, smaller.",
+"voice": "man"
+},
+{
+"text": "For long adjectives, use more.",
+"voice": "man"
+},
+{
+"text": "Beautiful, more beautiful.",
+"voice": "man"
+},
+{
+"text": "A cow is bigger than a dog.",
+"voice": "man"
+},
+{
+"text": "Use than after it.",
+"voice": "man"
+},
+{
+"text": "Some are different: good, better; bad, worse.",
+"voice": "man"
+},
+{
+"text": "My brother is taller than me.",
+"voice": "woman"
+},
+{
+"text": "This book is more interesting than that one.",
+"voice": "man"
+},
+{
+"text": "Your bag is better than mine.",
+"voice": "man"
+},
+{
+"text": "This flower is more beautiful than that one.",
+"voice": "man"
+},
+{
+"text": "He is taller than me.",
+"voice": "man"
+},
+{
+"text": "My house is smaller than yours.",
+"voice": "man"
+},
+{
+"text": "This boy is tall.",
+"voice": "man"
+},
+{
+"text": "This boy is taller.",
+"voice": "man"
+},
+{
+"text": "This boy is the tallest.",
+"voice": "man"
+},
+{
+"text": "For short adjectives, use the and est.",
+"voice": "man"
+},
+{
+"text": "Tall, taller, the tallest.",
+"voice": "man"
+},
+{
+"text": "For long adjectives, use the most.",
+"voice": "man"
+},
+{
+"text": "This is the most beautiful flower.",
+"voice": "man"
+},
+{
+"text": "Good, better, the best.",
+"voice": "man"
+},
+{
+"text": "Bad, worse, the worst.",
+"voice": "man"
+},
+{
+"text": "She is the tallest girl in the class.",
+"voice": "man"
+},
+{
+"text": "This is the best day of my life.",
+"voice": "man"
+},
+{
+"text": "The cow is the biggest animal here.",
+"voice": "man"
+},
+{
+"text": "It is the smallest house here.",
+"voice": "man"
+},
+{
+"text": "She is the tallest.",
+"voice": "man"
+},
+{
+"text": "He walks slowly.",
+"voice": "man"
+},
+{
+"text": "She walks quickly.",
+"voice": "man"
+},
+{
+"text": "Slowly says how he walks.",
+"voice": "man"
+},
+{
+"text": "Many adverbs are an adjective and ly.",
+"voice": "man"
+},
+{
+"text": "He drives very slowly.",
+"voice": "man"
+},
+{
+"text": "An adverb says more about a verb: how, when or where.",
+"voice": "man"
+},
+{
+"text": "She is a good cook.",
+"voice": "man"
+},
+{
+"text": "She cooks well.",
+"voice": "man"
+},
+{
+"text": "Good is an adjective. Its adverb is well.",
+"voice": "man"
+},
+{
+"text": "The children ran quickly to the door.",
+"voice": "man"
+},
+{
+"text": "Please speak slowly.",
+"voice": "man"
+},
+{
+"text": "He drives very slowly .",
+"voice": "man"
+},
+{
+"text": "She cooks well .",
+"voice": "man"
+},
+{
+"text": "Please speak slowly",
+"voice": "man"
+},
+{
+"text": "He walks slowly to school.",
+"voice": "man"
+},
+{
+"text": "How many apples are there?",
+"voice": "woman"
+},
+{
+"text": "There are three.",
+"voice": "man"
+},
+{
+"text": "How much milk is there?",
+"voice": "woman"
+},
+{
+"text": "There is not much.",
+"voice": "man"
+},
+{
+"text": "How many is for countable nouns.",
+"voice": "man"
+},
+{
+"text": "How much is for uncountable nouns.",
+"voice": "man"
+},
+{
+"text": "How much is this bag?",
+"voice": "woman"
+},
+{
+"text": "We also use how much to ask the price.",
+"voice": "man"
+},
+{
+"text": "How many people are in the room?",
+"voice": "man"
+},
+{
+"text": "How much milk is there?",
+"voice": "man"
+},
+{
+"text": "How many brothers do you have?",
+"voice": "man"
+},
+{
+"text": "How much water do you drink?",
+"voice": "man"
+},
+{
+"text": "How much is this bag?",
+"voice": "man"
+},
+{
+"text": "We have to wear a uniform at school.",
+"voice": "man"
+},
+{
+"text": "Must and have to say that something is necessary.",
+"voice": "man"
+},
+{
+"text": "I must go now.",
+"voice": "man"
+},
+{
+"text": "I have to go now.",
+"voice": "man"
+},
+{
+"text": "You must not touch the fire.",
+"voice": "man"
+},
+{
+"text": "Must not means it is not allowed.",
+"voice": "man"
+},
+{
+"text": "You do not have to come.",
+"voice": "woman"
+},
+{
+"text": "Do not have to means it is not necessary. You can choose.",
+"voice": "man"
+},
+{
+"text": "Must not: not allowed.",
+"voice": "man"
+},
+{
+"text": "Do not have to: not necessary.",
+"voice": "man"
+},
+{
+"text": "You must not smoke here. It is not allowed.",
+"voice": "man"
+},
+{
+"text": "You do not have to come. It is your choice.",
+"voice": "man"
+},
+{
+"text": "She has to go now.",
+"voice": "man"
+},
+{
+"text": "He has to work today.",
+"voice": "man"
+},
+{
+"text": "We have to wear a uniform.",
+"voice": "man"
+},
+{
+"text": "I am so tired.",
+"voice": "man"
+},
+{
+"text": "You should drink more water.",
+"voice": "woman"
+},
+{
+"text": "Should says what is a good idea.",
+"voice": "man"
+},
+{
+"text": "Should I take an umbrella?",
+"voice": "woman"
+},
+{
+"text": "Yes, you should.",
+"voice": "woman"
+},
+{
+"text": "You should go.",
+"voice": "man"
+},
+{
+"text": "You should not go.",
+"voice": "man"
+},
+{
+"text": "Should not: it is not a good idea.",
+"voice": "man"
+},
+{
+"text": "It is late. You should go to bed early.",
+"voice": "woman"
+},
+{
+"text": "You should go to bed early.",
+"voice": "man"
+},
+{
+"text": "Should we wait for them?",
+"voice": "man"
+},
+{
+"text": "You should not eat so much sugar.",
+"voice": "man"
+},
+{
+"text": "You are tired. You should go to bed.",
+"voice": "man"
+},
+{
+"text": "It is very cold. You should not go out with no coat.",
+"voice": "man"
+},
+{
+"text": "Should I take an umbrella?",
+"voice": "man"
+},
+{
+"text": "Should we wait?",
+"voice": "man"
+},
+{
+"text": "She should rest.",
+"voice": "man"
+},
+{
+"text": "He should eat more fruit.",
+"voice": "man"
+},
+{
+"text": "I should rest.",
+"voice": "man"
+},
+{
+"text": "I should not rest.",
+"voice": "man"
+},
+{
+"text": "Should I rest?",
+"voice": "man"
+},
+{
+"text": "Yes, you should.",
+"voice": "man"
+},
+{
+"text": "No, you should not.",
+"voice": "man"
+},
+{
+"text": "You should go to bed.",
+"voice": "man"
+},
+{
+"text": "You should not go to bed.",
+"voice": "man"
+},
+{
+"text": "Should you go to bed?",
+"voice": "man"
+},
+{
+"text": "Yes, I should.",
+"voice": "man"
+},
+{
+"text": "No, I should not.",
+"voice": "man"
+},
+{
+"text": "He should drink water.",
+"voice": "man"
+},
+{
+"text": "He should not drink water.",
+"voice": "man"
+},
+{
+"text": "Should he drink water?",
+"voice": "man"
+},
+{
+"text": "Yes, he should.",
+"voice": "man"
+},
+{
+"text": "No, he should not.",
+"voice": "man"
+},
+{
+"text": "She should wait.",
+"voice": "man"
+},
+{
+"text": "She should not wait.",
+"voice": "man"
+},
+{
+"text": "Should she wait?",
+"voice": "man"
+},
+{
+"text": "Yes, she should.",
+"voice": "man"
+},
+{
+"text": "No, she should not.",
+"voice": "man"
+},
+{
+"text": "It should stop.",
+"voice": "man"
+},
+{
+"text": "It should not stop.",
+"voice": "man"
+},
+{
+"text": "Should it stop?",
+"voice": "man"
+},
+{
+"text": "Yes, it should.",
+"voice": "man"
+},
+{
+"text": "No, it should not.",
+"voice": "man"
+},
+{
+"text": "We should go home.",
+"voice": "man"
+},
+{
+"text": "We should not go home.",
+"voice": "man"
+},
+{
+"text": "Should we go home?",
+"voice": "man"
+},
+{
+"text": "Yes, we should.",
+"voice": "man"
+},
+{
+"text": "No, we should not.",
+"voice": "man"
+},
+{
+"text": "They should come.",
+"voice": "man"
+},
+{
+"text": "They should not come.",
+"voice": "man"
+},
+{
+"text": "Should they come?",
+"voice": "man"
+},
+{
+"text": "Yes, they should.",
+"voice": "man"
+},
+{
+"text": "No, they should not.",
+"voice": "man"
+},
+{
+"text": "I was walking home",
+"voice": "man"
+},
+{
+"text": "when it started to rain.",
+"voice": "man"
+},
+{
+"text": "I was walking.",
+"voice": "man"
+},
+{
+"text": "Was or were, then the verb with ing. This is the past continuous.",
+"voice": "man"
+},
+{
+"text": "We were having a meal at eight.",
+"voice": "woman"
+},
+{
+"text": "At eight, the meal was going on.",
+"voice": "man"
+},
+{
+"text": "The long action: I was walking.",
+"voice": "man"
+},
+{
+"text": "The short action that came in the middle: it started to rain.",
+"voice": "man"
+},
+{
+"text": "What were you doing?",
+"voice": "woman"
+},
+{
+"text": "I was reading.",
+"voice": "man"
+},
+{
+"text": "I was walking home when it started to rain.",
+"voice": "man"
+},
+{
+"text": "They were not sleeping.",
+"voice": "man"
+},
+{
+"text": "We were having a meal at eight.",
+"voice": "man"
+},
+{
+"text": "I was walking home.",
+"voice": "man"
+},
+{
+"text": "She was reading when I came.",
+"voice": "man"
+},
+{
+"text": "What were you doing?",
+"voice": "man"
+},
+{
+"text": "They were sleeping.",
+"voice": "man"
+},
+{
+"text": "I was not walking.",
+"voice": "man"
+},
+{
+"text": "Was I walking?",
+"voice": "man"
+},
+{
+"text": "You were reading.",
+"voice": "man"
+},
+{
+"text": "You were not reading.",
+"voice": "man"
+},
+{
+"text": "Were you reading?",
+"voice": "man"
+},
+{
+"text": "He was sleeping.",
+"voice": "man"
+},
+{
+"text": "He was not sleeping.",
+"voice": "man"
+},
+{
+"text": "Was he sleeping?",
+"voice": "man"
+},
+{
+"text": "She was cooking.",
+"voice": "man"
+},
+{
+"text": "She was not cooking.",
+"voice": "man"
+},
+{
+"text": "Was she cooking?",
+"voice": "man"
+},
+{
+"text": "It was raining.",
+"voice": "man"
+},
+{
+"text": "It was not raining.",
+"voice": "man"
+},
+{
+"text": "Was it raining?",
+"voice": "man"
+},
+{
+"text": "We were eating.",
+"voice": "man"
+},
+{
+"text": "We were not eating.",
+"voice": "man"
+},
+{
+"text": "Were we eating?",
+"voice": "man"
+},
+{
+"text": "They were playing.",
+"voice": "man"
+},
+{
+"text": "They were not playing.",
+"voice": "man"
+},
+{
+"text": "Were they playing?",
+"voice": "man"
+},
+{
+"text": "She cooks.",
+"voice": "man"
+},
+{
+"text": "He cleans the house.",
+"voice": "man"
+},
+{
+"text": "Each one has a subject and a verb.",
+"voice": "man"
+},
+{
+"text": "A group of words with its own subject and verb is a clause.",
+"voice": "man"
+},
+{
+"text": "She cooks and he cleans the house.",
+"voice": "man"
+},
+{
+"text": "A conjunction joins the two clauses.",
+"voice": "man"
+},
+{
+"text": "I was tired, so I went to bed.",
+"voice": "man"
+},
+{
+"text": "Two subjects, two verbs: two clauses in one sentence.",
+"voice": "man"
+},
+{
+"text": "One subject, one verb: one clause.",
+"voice": "man"
+},
+{
+"text": "I stayed at home because I was ill.",
+"voice": "man"
+},
+{
+"text": "She plays the piano.",
+"voice": "man"
+},
+{
+"text": "I stayed home because I was ill.",
+"voice": "man"
+},
+{
+"text": "She cooks and he cleans.",
+"voice": "man"
 }
 ]
 }

@@ -3,7 +3,8 @@
 //   lines  [{t: text, v: 'woman' (Sarah; Daniel by default), by: cast id (the line is that figure's
 //          speech bubble), hl: [words to mark in the subtitle]}]  - spoken one after another;
 //   cast   [{id, k: man|woman|boy|girl|dog|cat|cow|house|apple|book|glass|ball|box|egg|bird|tree|sun|
-//           table|chair|car|clock (h, m)|moon|cloud (rain)|fish|bag|door (open)|window (open)|bottle|coin|flower, y,
+//           table|chair|car|clock (h, m)|moon|cloud (rain)|fish|bag|door (open)|window (open)|bottle|coin|flower|fire, y,
+//           up: raise a person or animal, dur: ms a move (to) takes,
 //           x, face: 1|-1, s: size, n: copies, gap, in/out: line number when it comes / goes,
 //           enter: 'walk'|'pop', pose, poseAt, to: new x, toAt, holds: thing in the hand,
 //           accent: true (teal), label, labelAt, spot, spotAt}];
@@ -15,7 +16,7 @@
 //   opts.link(text) -> html: makes the words of the subtitle buttons (word pages); touching one pauses the film.
 var BASIC_FILMS = (function () {
   'use strict';
-  var W = 320, H = 180;
+  var W = 320, H = 180, DROP = 16;
   var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
   var ROLE = { n: 'noun', p: 'pron', v: 'verb', b: 'be', a: 'adj', art: 'art', neg: 'neg', q: 'q', x: 'bad', ok: 'good' };
@@ -56,6 +57,10 @@ var BASIC_FILMS = (function () {
     var states = (shot.board || []).filter(function (b) { return since(st, b.at || 0) >= 0; });
     if (!states.length) return false;
     var cur = states[states.length - 1], prev = states.length > 1 ? states[states.length - 2] : null;
+    // a long row of words is made a little smaller so it always fits the screen
+    var span = function (words) { var l = boardLayout(svg, words); return l.length ? l[l.length - 1].x + l[l.length - 1].w - l[0].x : 0; };
+    var widest = Math.max(span(cur.w), prev ? span(prev.w) : 0);
+    if (widest > W - 16) { var sc = (W - 16) / widest; g.attr('transform', 'translate(' + W / 2 + ',4) scale(' + sc + ') translate(' + (-W / 2) + ',0)'); }
     var k = reduce ? 1 : ease(since(st, cur.at || 0) / 700);
     var L = boardLayout(svg, cur.w), K = keys(cur.w), pos = {};
     if (prev) {
@@ -109,7 +114,7 @@ var BASIC_FILMS = (function () {
     else if (c.k === 'ball') out.push([{ t: 'circle', x: x, y: (c.y || G) - 7 * s, r: 7 * s, c: K.COL.ink, w: 2.4, fill: K.COL.marker },
       { t: 'path', d: 'M' + (x - 7 * s) + ',' + ((c.y || G) - 7 * s) + 'q' + 7 * s + ',' + 5 * s + ' ' + 14 * s + ',0', c: K.COL.ink, w: 1.6 }]);
     else if (c.k === 'box') out.push({ t: 'path', d: 'M' + (x - 10 * s) + ',' + (c.y || G) + 'v' + (-16 * s) + 'h' + 20 * s + 'v' + 16 * s + 'Z', c: K.COL.ink, w: 2.6, fill: K.COL.ground });
-    else if (c.k === 'egg') out.push({ t: 'path', d: 'M' + x + ',' + (G - 16 * s) + 'c' + 7 * s + ',0 ' + 8 * s + ',' + 15 * s + ' 0,' + 16 * s + 'c' + -8 * s + ',' + -1 * s + ' ' + -7 * s + ',' + -16 * s + ' 0,' + -16 * s + 'Z', c: K.COL.ink, w: 2.2, fill: K.COL.milk });
+    else if (c.k === 'egg') { var ey = c.y || G; out.push({ t: 'path', d: 'M' + x + ',' + (ey - 16 * s) + 'c' + 7 * s + ',0 ' + 8 * s + ',' + 15 * s + ' 0,' + 16 * s + 'c' + -8 * s + ',' + -1 * s + ' ' + -7 * s + ',' + -16 * s + ' 0,' + -16 * s + 'Z', c: K.COL.ink, w: 2.2, fill: K.COL.milk }); }
     else if (c.k === 'tree') out.push([{ t: 'path', d: 'M' + x + ',' + G + 'V' + (G - 30 * s), c: K.COL.ink, w: 3.4 },
       { t: 'circle', x: x, y: G - 44 * s, r: 18 * s, c: K.COL.ink, w: 2.6, fill: K.COL.leaf }]);
     else if (c.k === 'sun') {
@@ -133,7 +138,7 @@ var BASIC_FILMS = (function () {
         { t: 'path', d: 'M' + x + ',' + ky + 'L' + (x + kr * 0.8 * Math.cos(ma * Math.PI / 180)) + ',' + (ky + kr * 0.8 * Math.sin(ma * Math.PI / 180)), c: K.COL.ink, w: 1.8 }]);
     } else if (c.k === 'moon') {
       var my = c.y || 34;
-      out.push({ t: 'path', d: 'M' + (x + 4) + ',' + (my - 12) + 'A12,12 0 1,0 ' + (x + 4) + ',' + (my + 12) + 'A9,9 0 1,1 ' + (x + 4) + ',' + (my - 12) + 'Z', c: K.COL.ink, w: 2, fill: K.COL.marker });
+      out.push({ t: 'path', d: 'M' + x + ',' + (my - 12) + 'A12,12 0 0,0 ' + x + ',' + (my + 12) + 'A6,12 0 0,1 ' + x + ',' + (my - 12) + 'Z', c: K.COL.ink, w: 2, fill: K.COL.marker });
     } else if (c.k === 'cloud') { // rain: true makes it rain
       var ly = c.y || 36;
       if (c.rain) {
@@ -158,7 +163,11 @@ var BASIC_FILMS = (function () {
       var wy0 = c.y || 66, ws = 15 * s;
       out.push({ t: 'path', d: 'M' + (x - ws) + ',' + (wy0 - ws) + 'H' + (x + ws) + 'V' + (wy0 + ws) + 'H' + (x - ws) + 'Z' + (c.open ? '' : 'M' + x + ',' + (wy0 - ws) + 'V' + (wy0 + ws) + 'M' + (x - ws) + ',' + wy0 + 'H' + (x + ws)), c: K.COL.ink, w: 2.6, fill: c.open ? K.COL.cold : K.COL.card });
     } else if (c.k === 'bottle') out.push(K.bottle({ x: x, y: c.y || G, s: s }));
-    else if (c.k === 'coin') out.push([{ t: 'circle', x: x, y: (c.y || G) - 6 * s, r: 6 * s, c: K.COL.ink, w: 2, fill: K.COL.marker }, { t: 'path', d: 'M' + x + ',' + ((c.y || G) - 9 * s) + 'v' + 6 * s, c: K.COL.ink, w: 1.6 }]);
+    else if (c.k === 'fire') {
+      var fy0 = c.y || G, fl = 2 * Math.sin(t / 90);
+      out.push([{ t: 'path', d: 'M' + (x - 14 * s) + ',' + fy0 + 'L' + (x + 14 * s) + ',' + (fy0 - 4 * s) + 'M' + (x - 14 * s) + ',' + (fy0 - 4 * s) + 'L' + (x + 14 * s) + ',' + fy0, c: K.COL.ink, w: 3 },
+        { t: 'path', d: 'M' + (x - 10 * s) + ',' + (fy0 - 3 * s) + 'Q' + (x - 12 * s) + ',' + (fy0 - 16 * s) + ' ' + (x - 2 * s + fl) + ',' + (fy0 - 30 * s) + 'Q' + (x + 2 * s) + ',' + (fy0 - 18 * s) + ' ' + (x + 6 * s) + ',' + (fy0 - 22 * s) + 'Q' + (x + 13 * s) + ',' + (fy0 - 12 * s) + ' ' + (x + 10 * s) + ',' + (fy0 - 3 * s) + 'Z', c: K.COL.ink, w: 2, fill: K.COL.hot }]);
+    } else if (c.k === 'coin') out.push([{ t: 'circle', x: x, y: (c.y || G) - 6 * s, r: 6 * s, c: K.COL.ink, w: 2, fill: K.COL.marker }, { t: 'path', d: 'M' + x + ',' + ((c.y || G) - 9 * s) + 'v' + 6 * s, c: K.COL.ink, w: 1.6 }]);
     else if (c.k === 'flower') {
       var fl0 = c.y || G;
       out.push([{ t: 'path', d: 'M' + x + ',' + fl0 + 'V' + (fl0 - 22 * s), c: K.COL.leaf, w: 2.4 }]);
@@ -183,7 +192,7 @@ var BASIC_FILMS = (function () {
         x = lerp(from, c.x, k); moving = k < 1;
       }
       if (c.to != null && since(st, c.toAt || 0) >= 0) {
-        var km = reduce ? 1 : ease(since(st, c.toAt || 0) / 1300);
+        var km = reduce ? 1 : ease(since(st, c.toAt || 0) / (c.dur || 1300)); // dur: how long the move takes, in ms
         x = lerp(c.x, c.to, km); moving = moving || (km > 0 && km < 1);
       }
       var n = c.n || 1, gap = c.gap || 26;
@@ -215,10 +224,16 @@ var BASIC_FILMS = (function () {
   function render(svg, shot, st) {
     var root = d3.select(svg).select('g.film-scene');
     root.selectAll('*').remove();
-    root.append('path').attr('class', 'film-ground').attr('d', 'M12,' + (kit().G + 0.5) + 'H' + (W - 12));
+    var ground = root.append('path').attr('class', 'film-ground').attr('d', 'M12,' + (kit().G + 0.5) + 'H' + (W - 12));
     // the cast first, then the word board on top of it, so tags under the words stay readable
     var castG = root.append('g'), b = root.append('g');
     var shown = drawBoard(b, svg, shot, st);
+    // while the board is up, the scene sits a little lower so heads stay clear of the tags
+    if (shown) {
+      var first = Math.min.apply(null, shot.board.map(function (x) { return x.at || 0; }));
+      var dy = DROP * (reduce ? 1 : ease(since(st, first) / 500));
+      castG.attr('transform', 'translate(0,' + dy + ')'); ground.attr('transform', 'translate(0,' + dy + ')');
+    }
     drawCast(castG, shot, st, shown);
   }
 
@@ -227,7 +242,10 @@ var BASIC_FILMS = (function () {
     var A = window.BASIC_AUDIO, voice = line.v === 'woman' ? 'woman' : 'man';
     return new Promise(function (done) {
       var finished = false, finish = function () { if (!finished) { finished = true; ctl.audio = null; done(); } };
-      var fallback = function () {
+      var fell = false;
+      var fallback = function () { // the browser's own voice, when there is no recording yet (once per line)
+        if (fell || finished) return;
+        fell = true;
         if (!window.speechSynthesis) { setTimeout(finish, 450 * line.t.split(' ').length + 600); return; }
         // some browsers never end an utterance; do not let the film hang on one
         setTimeout(finish, 650 * line.t.split(' ').length + 2500);

@@ -30,7 +30,10 @@ var BASIC_FIGURES = (function () {
     shrug: pose([-50, -140, 50, 140]),
     pull: pose([-26, -14, 12, 165]),
     eat: pose([-26, -14, 30, 168]),
-    sit: pose([-26, -14, 26, 60], [88, 0, 96, 6])
+    sit: pose([-26, -14, 26, 60], [88, 0, 96, 6]),
+    kick: pose([-40, -24, 30, 18], [-12, -4, 62, 70]),
+    reach: pose([-26, -14, 150, 168]),
+    sad: pose([-12, -4, 12, 4])
   };
   var mix = function (a, b, k) { return d3.interpolate(a, b)(k); };
   function waving(t) { return pose([-26, -14, 152, 172 + 22 * Math.sin(t / 140)]); }

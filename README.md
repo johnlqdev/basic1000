@@ -12,7 +12,7 @@ Live site: https://basic-1000.vercel.app
 | `grammar.js` | Grammar: the map of topics (a dependency tree), topic cards and lesson pages |
 | `grammar-data.js` | The grammar curriculum and lessons, built from `content/grammar/` (do not edit by hand) |
 | `films.js` | The stick-figure film player for grammar lessons |
-| `content/grammar/` | `curriculum.py` (all 109 topics) and `lessons.py` (full lessons: films, rules, exercises) |
+| `content/grammar/` | `curriculum.py` (all 109 topics); full lessons (films, rules, exercises): `lessons.py` (Starting out) and `lessons_elem1-3.py` (Elementary school), written with the helpers in `lessons_kit.py` |
 | `tools/grammar/build.py` | Checks the grammar content and writes `grammar-data.js` and the recording list |
 | `figures.js` | Animated stick-figure scenes (D3), one per word; all of Unit 1 (steps 1-10) so far |
 | `audio.js` | Speaker buttons: plays each word and example (Daniel, or Sarah when a woman is speaking); slow buttons with highlighting |
@@ -24,6 +24,7 @@ Live site: https://basic-1000.vercel.app
 | `tools/build_data.py` | Rebuilds the four data files from `content/course.json` |
 | `supabase/migrations/` | Database table and security rules for saved progress; the public `audio` bucket |
 | `supabase/functions/tts/index.ts` | Text-to-speech function: text + voice in, MP3 address out |
+| `supabase/functions/backup/index.ts` | Backup function: copies the audio, the progress table and a code snapshot to Dropbox (see Backups) |
 | `tools/tts-lab/lab_server.py` | Voice server for the GPU pod: Qwen3-TTS |
 | `tools/quiz/` | Quiz check tools: makes sure every quiz question has only one right answer |
 | `tools/audio_items.py` | Lists the clips a range of steps needs, as a request for the tts function |
@@ -44,7 +45,7 @@ The courses share one set of words and one progress record. Every word in a gram
 
 `content/grammar/curriculum.py` lists 109 topics in four bands: Starting out (10), Elementary school (36), Middle school (37) and High school (26). Each topic names the topics it needs first ("Past tense" needs "Verbs"), so together they form a dependency tree. Every word in every topic is one of the 1,000 words. A grammar word such as "noun" is not one of them, so the topic that first uses it gives it a meaning in basic words, and only that topic and the ones that build on it may use it.
 
-`python3 tools/grammar/build.py` checks all of this: the words, the order (a topic always comes after the topics it needs, so there are no loops), that the first 10 topics have a full lesson, and that a woman's or girl's lines use Sarah's voice. It then writes `grammar-data.js` and `content/jobs/grammar_audio.json` (every sentence a lesson can say). Use `--check` to check only.
+`python3 tools/grammar/build.py` checks all of this: the words, the order (a topic always comes after the topics it needs, so there are no loops), that every Starting out and Elementary school topic has a full lesson with six well-formed exercises (the right answer is among the options, and so on), and that a woman's or girl's lines use Sarah's voice. It then writes `grammar-data.js` and `content/jobs/grammar_audio.json` (every sentence a lesson can say). Use `--check` to check only.
 
 ### The map
 
@@ -52,7 +53,7 @@ The Grammar page shows the tree: one section per band, each topic a card, with l
 
 ### A lesson
 
-1. **Watch:** a narrated stick-figure film (`films.js`), 4-6 parts and about a minute long. Words appear as tiles at the top and glide into new orders; colours show what each word is (noun, pronoun, verb, am/is/are, adjective). Lines are read by Daniel, or by Sarah when a woman or girl speaks. The bar under the film jumps to any part.
+1. **Watch:** a narrated stick-figure film (`films.js`), 4-6 parts and about a minute long. Besides people and animals, films can show a table, chair, car, clock, moon, rain cloud, fish, bag, door, window, bottle, flower and fire. Words appear as tiles at the top and glide into new orders; colours show what each word is (noun, pronoun, verb, am/is/are, adjective). Lines are read by Daniel, or by Sarah when a woman or girl speaks. The bar under the film jumps to any part.
 2. **The rule:** new grammar words with their meanings, the rule in short points, a table where it helps, and examples with listen buttons.
 3. **Play** (some topics): the sentence machine. Pick who the sentence is about, then say it, say it with *not*, or ask it; the tiles glide so "is" visibly jumps to the front of a question.
 4. **Try it:** six exercises: pick the right word, put the words in order, find and fix the wrong word, or touch every word of one kind. Getting 4 of 6 right finishes the topic and opens the topics under it.
@@ -77,7 +78,18 @@ Grammar sentences use the same clips as the rest of the site (`v2/{voice}/...` i
 
 ## Deploying
 
-From this folder: `npx vercel --prod` (Vercel project `basic-1000`). Only the website files in the top folder are uploaded (`.vercelignore` keeps `content`, `tools` and `supabase` out). Pushing to `main` on GitHub (`johnlqdev/basic1000`) also deploys.
+From this folder: `npx vercel --prod` (Vercel project `basic-1000`). Only the website files in the top folder are uploaded (`.vercelignore` keeps `content`, `tools` and `supabase` out). Pushing to `main` on GitHub (`johnlqdev/basic1000`) does not deploy by itself: start a production deployment from the pushed commit (Vercel dashboard, or the Vercel API with the commit SHA).
+
+## Backups
+
+Code and course content are in GitHub. Everything else is copied to Dropbox by the `backup` edge function, into one folder: `basic1000-backup/` inside the Dropbox app's folder.
+
+- `audio/`: every file in the `audio` storage bucket, path for path (word and sentence clips, slow clips and their timing, and `refs/`, the reference recordings that define Daniel's and Sarah's voices).
+- `database/progress-<date>.json`: the learners' saved progress.
+- `code/basic1000-<date>-<commit>.zip`: the GitHub repo at that commit.
+- `manifest.json`: when each part was last copied, and how to restore.
+
+The `backup_log` table remembers which storage files are copied, so a run sends only new or changed files. Run it from SQL with the admin token (as for the tts function): `{"action":"all"}` does the database, the code and one batch of audio; `{"action":"audio","limit":400}` copies more audio, until `pending` is 0; `{"action":"status"}` reports progress. Secrets `DROPBOX_APP_KEY`, `DROPBOX_APP_SECRET` and `DROPBOX_REFRESH_TOKEN` are set in the Supabase dashboard. Secrets themselves are not backed up: keep them in a password manager.
 
 ## Services
 
