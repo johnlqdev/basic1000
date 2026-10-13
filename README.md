@@ -56,7 +56,7 @@ The Grammar page shows the tree: one section per band, each topic a card, with l
 1. **Watch:** a narrated stick-figure film (`films.js`), 4-6 parts and about a minute long. Besides people and animals, films can show a table, chair, car, clock, moon, rain cloud, fish, bag, door, window, bottle, flower and fire. Words appear as tiles at the top and glide into new orders; colours show what each word is (noun, pronoun, verb, am/is/are, adjective). Lines are read by Daniel, or by Sarah when a woman or girl speaks. The bar under the film jumps to any part.
 2. **The rule:** new grammar words with their meanings, the rule in short points, a table where it helps, and examples with listen buttons.
 3. **Play** (some topics): the sentence machine. Pick who the sentence is about, then say it, say it with *not*, or ask it; the tiles glide so "is" visibly jumps to the front of a question.
-4. **Try it:** six exercises: pick the right word, put the words in order, find and fix the wrong word, or touch every word of one kind. Getting 4 of 6 right finishes the topic and opens the topics under it.
+4. **Try it:** six exercises: pick the right word, put the words in order (a word can be taken back by touching it, or with Undo, until Check is pressed), find and fix the wrong word, or touch every word of one kind. Getting 4 of 6 right finishes the topic and opens the topics under it.
 
 ### Recording the grammar sentences
 

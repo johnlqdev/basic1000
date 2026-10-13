@@ -34,6 +34,7 @@ var BASIC_GRAMMAR = (function () {
     });
   });
 
+  var UNDO_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true" class="gt-undo-ic"><path d="M9 7 4 12l5 5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4.5 12H15a5 5 0 0 1 0 10h-3" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>';
   var SAY_ICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
   var ICON = {
     done: '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 8.4l3 3 6-6.6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>',
@@ -428,7 +429,8 @@ var BASIC_GRAMMAR = (function () {
   }
 
   // ---------- try it ----------
-  // kinds: pick (choose the word for the space, or the right answer), build (touch the tiles in order),
+  // kinds: pick (choose the word for the space, or the right answer), build (touch the tiles in order;
+  // a placed word can be taken back, then Check),
   // fix (touch the wrong word, then pick the right one), tap (touch every word of one kind)
   function runTasks(box, ctx, tasks, done) {
     var n = 0, right = 0;
@@ -442,8 +444,10 @@ var BASIC_GRAMMAR = (function () {
         body = (gap ? '<p class="gt-sent">' + (t.before ? esc(t.before) + ' ' : '') + '<span class="gt-gap">&nbsp;</span>' + (t.after ? (/^[.?!,]/.test(t.after) ? '' : ' ') + esc(t.after) : '') + '</p>' : '') +
           '<div class="gt-opts' + (long ? ' gt-long' : '') + '">' + t.opts.map(function (o) { return '<button type="button" class="gm-tile gt-opt" data-o="' + esc(o) + '">' + esc(o) + '</button>'; }).join('') + '</div>';
       } else if (t.kind === 'build') {
-        body = '<p class="gt-sent gt-built" aria-live="polite"><span class="muted gt-hint">Touch the words below.</span></p>' +
-          '<div class="gt-opts">' + t.tiles.map(function (o, i) { return '<button type="button" class="gm-tile gt-opt" data-i="' + i + '">' + esc(o) + '</button>'; }).join('') + '</div>';
+        body = '<p class="gt-sent gt-built" aria-live="polite"><span class="muted gt-hint">Touch the words below in order. Touch a word up here to put it back.</span></p>' +
+          '<div class="gt-opts">' + t.tiles.map(function (o, i) { return '<button type="button" class="gm-tile gt-opt" data-i="' + i + '">' + esc(o) + '</button>'; }).join('') + '</div>' +
+          '<div class="row gt-build-go"><button type="button" class="btn quiet" id="gtUndo" disabled>' + UNDO_ICON + 'Undo</button>' +
+          '<button type="button" class="btn" id="gtCheck" disabled>Check</button></div>';
       } else if (t.kind === 'tap') {
         body = '<p class="gt-sent gt-taps">' + t.words.map(function (w, i) { return '<button type="button" class="gt-word" data-w="' + i + '" aria-pressed="false">' + esc(w) + '</button>'; }).join(' ') + '</p>' +
           (t.right.length > 1 ? '<div class="row"><button type="button" class="btn" id="gtCheck" disabled>Check</button></div>' : '');
@@ -460,7 +464,7 @@ var BASIC_GRAMMAR = (function () {
         fb.className = 'feedback ' + (ok ? 'good' : 'bad');
         fb.innerHTML = '<p>' + (ok ? 'Right. ' : 'Not quite. ' + (full ? '<b>' + esc(full) + '</b> ' : '')) + '<span class="muted">' + esc(t.why) + '</span></p>' +
           (t.answer ? '<p class="gt-listen">' + sayBtn(t.answer, t.v, 'Listen to the sentence') + '<span>' + LINK(t.answer) + '</span></p>' : '');
-        box.querySelectorAll('.gt-opt, .gt-word, #gtCheck').forEach(function (b) { b.disabled = true; });
+        box.querySelectorAll('.gt-opt, .gt-word, .gt-placed, #gtCheck, #gtUndo').forEach(function (b) { b.disabled = true; });
         var s = fb.querySelector('[data-say]');
         if (s) s.addEventListener('click', function () { ctx.say(s.dataset.say, s, s.dataset.voice); });
         next.hidden = false;
@@ -478,27 +482,59 @@ var BASIC_GRAMMAR = (function () {
           });
         });
       } else if (t.kind === 'build') {
-        var built = [], sent = box.querySelector('.gt-built');
+        // words go up into the sentence in the order they are touched; any of them can be taken back
+        // (touch it, or Undo for the last one) until Check is pressed
+        var built = [], sent = box.querySelector('.gt-built'), hint = sent.innerHTML;
+        var undo = box.querySelector('#gtUndo'), checkB = box.querySelector('#gtCheck');
+        var glide = function (el, from) {
+          if (reduce || !from) return;
+          var r2 = el.getBoundingClientRect();
+          el.animate([{ transform: 'translate(' + (from.left - r2.left) + 'px,' + (from.top - r2.top) + 'px)' }, { transform: 'none' }], { duration: 300, easing: 'cubic-bezier(.3,.7,.2,1)' });
+        };
+        var refresh = function () {
+          undo.disabled = !built.length;
+          checkB.disabled = built.length !== t.tiles.length;
+          checkB.classList.toggle('primary', built.length === t.tiles.length);
+          if (!built.length) sent.innerHTML = hint;
+        };
+        var takeBack = function (i) {
+          var k = built.indexOf(i);
+          if (k < 0) return;
+          built.splice(k, 1);
+          var placed = sent.querySelector('.gt-placed[data-i="' + i + '"]'), from = placed && placed.getBoundingClientRect();
+          if (placed) placed.remove();
+          var src = box.querySelector('.gt-opt[data-i="' + i + '"]');
+          src.disabled = false; src.classList.remove('gt-used');
+          glide(src, from);
+          refresh();
+          src.focus();
+        };
         box.querySelectorAll('.gt-opt').forEach(function (b) {
           b.addEventListener('click', function () {
+            var i = +b.dataset.i;
             if (!built.length) sent.innerHTML = '';
-            built.push(t.tiles[+b.dataset.i]);
-            var r = b.getBoundingClientRect(), tile = document.createElement('span');
+            built.push(i);
+            var from = b.getBoundingClientRect(), tile = document.createElement('button');
+            tile.type = 'button';
             tile.className = 'gm-tile gt-placed';
-            tile.textContent = t.tiles[+b.dataset.i];
+            tile.dataset.i = i;
+            tile.textContent = t.tiles[i];
+            tile.setAttribute('aria-label', t.tiles[i] + ', touch to put it back');
+            tile.addEventListener('click', function () { takeBack(i); });
             sent.appendChild(tile);
-            if (!reduce) {
-              var r2 = tile.getBoundingClientRect();
-              tile.animate([{ transform: 'translate(' + (r.left - r2.left) + 'px,' + (r.top - r2.top) + 'px)' }, { transform: 'none' }], { duration: 320, easing: 'cubic-bezier(.3,.7,.2,1)' });
-            }
+            glide(tile, from);
             b.disabled = true;
             b.classList.add('gt-used');
-            if (built.length === t.tiles.length) {
-              var ok = built.join(' ') === t.right.join(' ');
-              sent.classList.add(ok ? 'is-right' : 'is-wrong');
-              finish(ok, t.right.join(' '));
-            }
+            refresh();
+            if (built.length === t.tiles.length) checkB.focus();
           });
+        });
+        undo.addEventListener('click', function () { if (built.length) takeBack(built[built.length - 1]); });
+        checkB.addEventListener('click', function () {
+          if (built.length !== t.tiles.length) return;
+          var ok = built.map(function (i) { return t.tiles[i]; }).join(' ') === t.right.join(' ');
+          sent.classList.add(ok ? 'is-right' : 'is-wrong');
+          finish(ok, t.right.join(' '));
         });
       } else if (t.kind === 'tap') {
         var check = box.querySelector('#gtCheck');
