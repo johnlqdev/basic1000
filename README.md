@@ -14,7 +14,7 @@ Live site: https://basic-1000.vercel.app
 | `films.js` | The stick-figure film player for grammar lessons |
 | `content/grammar/` | `curriculum.py` (all 109 topics); full lessons (films, rules, exercises): `lessons.py` (Starting out) and `lessons_elem1-3.py` (Elementary school), written with the helpers in `lessons_kit.py` |
 | `tools/grammar/build.py` | Checks the grammar content and writes `grammar-data.js` and the recording list |
-| `figures.js` | Animated stick-figure scenes (D3), one per word; all of Unit 1 (steps 1-10) so far |
+| `figures.js` | Animated stick-figure scenes (D3), one per word; Units 1 and 2 (steps 1-20) so far |
 | `audio.js` | Speaker buttons: plays each word and example (Daniel, or Sarah when a woman is speaking); slow buttons with highlighting |
 | `pron.js` | IPA for the words with slow audio, split into sound groups (which letters spell which sound) |
 | `quiz.json` | The checked wrong answers for every quiz question (see Quiz check) |

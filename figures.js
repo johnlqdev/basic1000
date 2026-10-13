@@ -78,8 +78,8 @@ var BASIC_FIGURES = (function () {
       { t: 'head', c: hc, r: r, f: f, col: c, look: o.look || 0 }
     );
     if (o.say) out.push({ t: 'bubble', text: o.say.text, hl: o.say.hl, cx: hc[0], top: hc[1] - r, f: f, col: c });
-    out.hand = k.hR; out.backHand = k.hL; out.head = hc; out.r = r;
-    if (o.op != null && o.op < 1) { var g = [{ t: 'group', op: o.op, prims: out }]; g.hand = out.hand; g.head = hc; g.r = r; return g; }
+    out.hand = k.hR; out.backHand = k.hL; out.head = hc; out.r = r; out.sh = k.sh; out.hip = k.hip;
+    if (o.op != null && o.op < 1) { var g = [{ t: 'group', op: o.op, prims: out }]; g.hand = out.hand; g.backHand = out.backHand; g.head = hc; g.r = r; g.sh = k.sh; g.hip = k.hip; return g; }
     return out;
   }
 
@@ -242,6 +242,122 @@ var BASIC_FIGURES = (function () {
     return out.concat([{ t: 'group', op: op, prims: inner }]);
   }
   function wrap(prims, o) { return (o.op != null && o.op < 1) ? [{ t: 'group', op: o.op, prims: prims }] : prims; }
+
+  // ---------- more things (Unit 2) ----------
+  // move drawn primitives up or down (things that are drawn standing on the ground: animals, figures)
+  function at(dx, dy, prims, op) { return [{ t: 'group', op: op == null ? 1 : op, transform: 'translate(' + dx + ',' + dy + ')', prims: prims }]; }
+  function hat(o) { // y: where the brim sits (on a head: head[1] - r * 0.55)
+    var x = o.x, y = o.y, s = o.s || 1, c = o.c || COL.ink;
+    return wrap([{ t: 'path', d: M(x - 7 * s, y) + 'V' + (y - 9 * s) + 'Q' + x + ',' + (y - 13 * s) + ' ' + (x + 7 * s) + ',' + (y - 9 * s) + 'V' + y + 'Z', c: c, w: 2, fill: o.fill || COL.red },
+      { t: 'path', d: M(x - 12 * s, y) + 'H' + (x + 12 * s), c: c, w: 2.8 }], o);
+  }
+  function hatOn(fig, o) { return hat({ x: fig.head[0], y: fig.head[1] - fig.r * 0.55, s: fig.r / 12, fill: o && o.fill, op: o && o.op }); }
+  function coat(fig, o) { // a coat over a figure's body; draw it before the figure so the arms stay on top
+    var sh = fig.sh, hp = fig.hip, s = fig.r / 12;
+    return wrap([{ t: 'path', d: M(sh[0] - 7 * s, sh[1] - 1) + L(sh[0] + 7 * s, sh[1] - 1) + L(hp[0] + 11 * s, hp[1] + 12 * s) + L(hp[0] - 11 * s, hp[1] + 12 * s) + 'Z', c: COL.ink, w: 2.2, fill: (o && o.fill) || COL.book }], o || {});
+  }
+  function cake(o) {
+    var x = o.x, y = o.y || G, s = o.s || 1, c = COL.ink;
+    return wrap([{ t: 'path', d: M(x - 18 * s, y) + 'V' + (y - 14 * s) + 'H' + (x + 18 * s) + 'V' + y + 'Z', c: c, w: 2.4, fill: COL.milk },
+      { t: 'path', d: M(x - 18 * s, y - 9 * s) + 'q4.5,4 9,0 t9,0 t9,0 t9,0', c: COL.red, w: 2.2 },
+      { t: 'path', d: M(x - 12 * s, y - 14 * s) + 'V' + (y - 23 * s) + 'H' + (x + 12 * s) + 'V' + (y - 14 * s), c: c, w: 2.2, fill: COL.marker },
+      { t: 'path', d: M(x, y - 23 * s) + 'V' + (y - 30 * s), c: c, w: 2 },
+      { t: 'path', d: M(x, y - 31 * s) + 'q-2.5,-3 0,-6.5 q2.5,3.5 0,6.5Z', c: COL.hot, w: 1.4, fill: COL.marker, op: o.flame == null ? 1 : o.flame }], o);
+  }
+  function frame(o) { // a picture: x, y = bottom middle; inner = primitives already placed inside
+    var x = o.x, y = o.y, w = o.w || 44, h = o.h || 34;
+    return wrap([{ t: 'path', d: M(x - w / 2, y) + 'V' + (y - h) + 'H' + (x + w / 2) + 'V' + y + 'Z', c: COL.ink, w: 3, fill: COL.card },
+      { t: 'path', d: M(x - w / 2 + 4, y - 4) + 'V' + (y - h + 4) + 'H' + (x + w / 2 - 4) + 'V' + (y - 4) + 'Z', c: COL.rule, w: 1 }].concat(o.inner || []), o);
+  }
+  function easel(x) { return { t: 'path', d: M(x - 14, G) + L(x - 4, G - 66) + M(x + 14, G) + L(x + 4, G - 66) + M(x, G - 66) + L(x, G), c: COL.ink, w: 2.2 }; }
+  function bed(o) { // the mattress top is at G - 18 * s (things on the bed: at(0, -18 * s, ...))
+    var x = o.x, s = o.s || 1, c = COL.ink, w = 34 * s;
+    return wrap([{ t: 'path', d: M(x - w, G) + 'V' + (G - 40 * s) + M(x + w, G) + 'V' + (G - 24 * s), c: c, w: 3.2 },
+      { t: 'path', d: M(x - w, G - 8 * s) + 'H' + (x + w) + 'V' + (G - 18 * s) + 'H' + (x - w) + 'Z', c: c, w: 2.4, fill: COL.book },
+      { t: 'path', d: ell(x - w + 9 * s, G - 21 * s, 7 * s, 3.5 * s), c: c, w: 1.8, fill: COL.milk }], o);
+  }
+  function river(o) { // a band of water along the ground from x0 to x1
+    var x0 = o.x0, x1 = o.x1, t = o.t || 0, d = M(x0, G + 14), n = 8;
+    for (var i = 0; i <= n; i++) { var xx = x0 + (x1 - x0) * i / n; d += L(xx, G - 7 + 2.2 * Math.sin(t / 260 + i * 1.3)); }
+    d += L(x1, G + 14) + 'Z';
+    var waves = '';
+    for (var j = 0; j < 3; j++) { var wx = x0 + 14 + ((t / 40 + j * 37) % Math.max(20, x1 - x0 - 28)); waves += M(wx, G + 1 + j) + 'q3,-2 6,0 t6,0'; }
+    return [{ t: 'path', d: d, fill: COL.water }, { t: 'path', d: waves, c: COL.card, w: 1.2, op: 0.8 }];
+  }
+  // a person swimming: only the head and arms are above the water (draw river() after this)
+  function swimmer(o) {
+    var t = o.t || 0, k = Math.sin(t / 260); // arms turn over one after the other, as in a crawl
+    var fig = figure({ x: o.x, kind: o.kind, facing: o.facing || 1, accent: o.accent, pose: pose([-90 + 75 * k, -80 + 75 * k, 90 + 75 * k, 100 + 75 * k]) });
+    return at(0, 58, fig);
+  }
+  function cup(o) {
+    var x = o.x, y = o.y || G, s = o.s || 1, c = o.c || COL.ink, out = [];
+    out.push({ t: 'path', d: M(x - 8 * s, y - 15 * s) + L(x - 7 * s, y) + 'H' + (x + 7 * s) + L(x + 8 * s, y - 15 * s) + 'Z', c: c, w: 2.4, fill: o.fill || COL.card });
+    out.push({ t: 'path', d: M(x + 8 * s, y - 12 * s) + 'q6,0 6,5 t-6,5', c: c, w: 2.2 });
+    if (o.milk) out.push({ t: 'path', d: M(x - 6 * s, y - 12 * s) + 'H' + (x + 6 * s), c: COL.ink, w: 1.2 });
+    return wrap(out, o);
+  }
+  function coins(o) {
+    var out = [];
+    for (var i = 0; i < (o.n || 3); i++) {
+      var cx = o.x + (i % 3) * 9 * (o.s || 1) - 9, cy = (o.y || G) - 5 - Math.floor(i / 3) * 4;
+      out.push({ t: 'path', d: ell(cx, cy, 6 * (o.s || 1), 2.6 * (o.s || 1)), c: COL.ink, w: 1.6, fill: COL.marker });
+    }
+    return wrap(out, o);
+  }
+  function note(o) { // a paper note of money
+    var x = o.x, y = o.y || G, s = o.s || 1;
+    return wrap([{ t: 'path', d: M(x - 14 * s, y) + 'V' + (y - 9 * s) + 'H' + (x + 14 * s) + 'V' + y + 'Z', c: COL.ink, w: 2, fill: COL.leaf, op: 1 },
+      { t: 'circle', x: x, y: y - 4.5 * s, r: 2.6 * s, c: COL.card, w: 1.4 }], o);
+  }
+  // a big open hand, palm out: hl = the finger (0 thumb .. 4 little) to mark, cut = a small red cut on it
+  function bigHand(o) {
+    var x = o.x, y = o.y, s = o.s || 1, out = [], fing = [[-15, -6, -36, -20], [-8, -18, -10, -52], [0, -20, 0, -58], [8, -18, 10, -53], [15, -14, 19, -44]];
+    out.push({ t: 'path', d: M(x - 17 * s, y + 18 * s) + 'Q' + (x - 20 * s) + ',' + (y - 8 * s) + ' ' + (x - 12 * s) + ',' + (y - 18 * s) + 'H' + (x + 13 * s) + 'Q' + (x + 20 * s) + ',' + (y - 8 * s) + ' ' + (x + 16 * s) + ',' + (y + 18 * s) + 'Z', c: COL.ink, w: 2.6, fill: COL.ground });
+    fing.forEach(function (f, i) {
+      var a = 'M' + (x + f[0] * s) + ',' + (y + f[1] * s) + 'L' + (x + f[2] * s) + ',' + (y + f[3] * s);
+      out.push({ t: 'path', d: a, c: COL.ink, w: 11 * s });
+      out.push({ t: 'path', d: a, c: o.hl === i ? COL.marker : COL.ground, w: 6.6 * s });
+    });
+    if (o.cut != null) {
+      var f = fing[o.cut], cx = x + (f[0] + (f[2] - f[0]) * 0.6) * s, cy = y + (f[1] + (f[3] - f[1]) * 0.6) * s;
+      out.push({ t: 'path', d: M(cx - 3 * s, cy - 1 * s) + L(cx + 3 * s, cy + 1 * s), c: COL.red, w: 2.2, op: o.cutOp == null ? 1 : o.cutOp });
+    }
+    return wrap(out, o);
+  }
+  function knife(o) {
+    var x = o.x, y = o.y, a = (o.angle || 0) * DEG, ca = Math.cos(a), sa = Math.sin(a), tp = function (u, v) { return (x + u * ca - v * sa) + ',' + (y + u * sa + v * ca); };
+    return [{ t: 'path', d: 'M' + tp(0, 0) + 'L' + tp(14, 0) + 'L' + tp(16, 3) + 'L' + tp(0, 3) + 'Z', c: COL.ink, w: 1.6, fill: COL.card },
+      { t: 'path', d: 'M' + tp(-9, 1.5) + 'L' + tp(0, 1.5), c: COL.ink, w: 4 }];
+  }
+  function clock(o) {
+    var x = o.x, y = o.y, r = o.r || 14, ha = ((o.h || 12) % 12 + (o.m || 0) / 60) * 30, ma = (o.m || 0) * 6;
+    return wrap([{ t: 'circle', x: x, y: y, r: r, c: COL.ink, w: 2.4, fill: COL.card },
+      { t: 'path', d: M(x, y) + L(x + 0.5 * r * Math.sin(ha * DEG), y - 0.5 * r * Math.cos(ha * DEG)), c: COL.ink, w: 2.6 },
+      { t: 'path', d: M(x, y) + L(x + 0.8 * r * Math.sin(ma * DEG), y - 0.8 * r * Math.cos(ma * DEG)), c: COL.ink, w: 1.8 },
+      { t: 'circle', x: x, y: y, r: 1.4, fill: COL.ink }], o);
+  }
+  function gift(o) {
+    var x = o.x, y = o.y || G, s = o.s || 1;
+    return wrap([{ t: 'path', d: M(x - 11 * s, y) + 'V' + (y - 18 * s) + 'H' + (x + 11 * s) + 'V' + y + 'Z', c: COL.ink, w: 2.2, fill: COL.acc },
+      { t: 'path', d: M(x, y) + 'V' + (y - 18 * s) + M(x - 11 * s, y - 10 * s) + 'H' + (x + 11 * s), c: COL.marker, w: 2.6 },
+      { t: 'path', d: M(x, y - 18 * s) + 'q-7,-7 -8,-1 q1,3 8,1 q7,-7 8,-1 q-1,3 -8,1', c: COL.ink, w: 1.6, fill: COL.marker }], o);
+  }
+  function chair(o) { // a person sitting on it: figure at the same x, same facing, with the sit pose
+    var x = o.x, f = o.f || 1;
+    return { t: 'path', d: M(x - 11, G - 21) + 'H' + (x + 11) + M(x - 9, G - 21) + 'V' + G + M(x + 9, G - 21) + 'V' + G + M(x - 11 * f, G - 21) + 'V' + (G - 50), c: COL.ink, w: 2.6, op: o.op == null ? 1 : o.op };
+  }
+  function table(o) { var x = o.x, w = o.w || 30; return { t: 'path', d: M(x - w, G - 26) + 'H' + (x + w) + M(x - w + 5, G - 26) + 'V' + G + M(x + w - 5, G - 26) + 'V' + G, c: COL.ink, w: 3 }; }
+  function heart(o) {
+    var x = o.x, y = o.y, s = o.s || 1;
+    return { t: 'path', d: M(x, y + 6 * s) + 'C' + (x - 10 * s) + ',' + (y - 1 * s) + ' ' + (x - 6 * s) + ',' + (y - 9 * s) + ' ' + x + ',' + (y - 4 * s) + 'C' + (x + 6 * s) + ',' + (y - 9 * s) + ' ' + (x + 10 * s) + ',' + (y - 1 * s) + ' ' + x + ',' + (y + 6 * s) + 'Z', c: COL.ink, w: 1.6, fill: COL.red, op: o.op == null ? 1 : o.op };
+  }
+  function snow(t, n, op) { // falling snow over the picture
+    var out = [];
+    for (var i = 0; i < n; i++) { var x = (i * 53 + 17) % 190 + 5, y = ((t / (14 + (i % 5) * 3) + i * 37) % 150); out.push({ t: 'circle', x: x + 3 * Math.sin(t / 400 + i), y: y, r: 1.6 + (i % 3) * 0.5, fill: COL.cold, op: op }); }
+    return out;
+  }
+  function tag(x, y, text, op, size) { return { t: 'tag', x: x, y: y, text: text, op: op == null ? 1 : op, size: size }; }
 
   // ---------- drawing ----------
   var smooth = d3.line().curve(d3.curveCatmullRom.alpha(0.5));
@@ -819,6 +935,488 @@ var BASIC_FIGURES = (function () {
         var b = beat(t);
         return [{ t: 'spot', x: 90, op: b.e, rx: 40 }, cow({ x: 90, s: 1.3, f: 1, t: t, c: COL.acc }), bucket({ x: 165, y: G, s: 0.9, level: 0.8 }),
           cap(b.on, 'Cows give milk.', 'Cows')];
+      }
+    },
+    // step 11
+    be: {
+      label: 'A woman says to a boy: Please be good. The boy nods.',
+      period: BEAT, rest: 2200,
+      frame: function (t) {
+        var b = beat(t);
+        return [{ t: 'spot', x: 140, op: b.e, rx: 18 }, figure({ x: 140, kind: 'boy', facing: -1, pose: b.v > 2200 && b.v < 3800 ? nodding(b.v) : POSES.stand }),
+          figure({ x: 56, kind: 'woman', accent: true, pose: toPoint(b.e * 0.7), say: say(b.on, 'Please be good.', 'be') })];
+      }
+    },
+    good: {
+      label: 'A man holds up a red apple and smiles: This is a good apple. A brown, bad apple lies on the ground.',
+      period: BEAT, rest: 2400,
+      frame: function (t) {
+        var b = beat(t), m = figure({ x: 70, accent: true, pose: toGive(b.e), say: say(b.on, 'This is a good apple.', 'good') });
+        var ax = m.hand[0] + 3, ay = m.hand[1] - 6;
+        return [{ t: 'spot', x: 70, op: b.e }, apple({ x: 155, y: G - 7, r: 7, fill: COL.hot, op: 0.4 }), m, apple({ x: ax, y: ay, r: 7, fill: COL.red }),
+          { t: 'path', d: M(ax + 10, ay - 10) + L(ax + 14, ay - 6) + L(ax + 22, ay - 16), c: COL.leaf, w: 3, op: ramp(b.v, 900, 1300) * b.e }];
+      }
+    },
+    down: {
+      label: 'A man points at a boy and says: Sit down. The boy sits down on a chair.',
+      period: BEAT, rest: 3000,
+      frame: function (t) {
+        var b = beat(t), k = ramp(b.v, 1500, 2300) * (1 - ramp(b.v, 3900, 4350));
+        return [{ t: 'spot', x: 140, op: b.e, rx: 18 }, chair({ x: 140, f: -1 }), figure({ x: 140, kind: 'boy', facing: -1, pose: mix(POSES.stand, POSES.sit, k) }),
+          figure({ x: 50, accent: true, pose: toPoint(b.e), say: say(b.on, 'Sit down.', 'down') })];
+      }
+    },
+    sit: {
+      label: 'A woman holds out her hand to a chair and says: Sit down, please. A man sits on the chair.',
+      period: BEAT, rest: 3000,
+      frame: function (t) {
+        var b = beat(t), k = ramp(b.v, 1700, 2500) * (1 - ramp(b.v, 3900, 4350));
+        return [{ t: 'spot', x: 145, op: b.e, rx: 18 }, chair({ x: 145, f: -1 }), figure({ x: 145, facing: -1, pose: mix(POSES.stand, POSES.sit, k) }),
+          figure({ x: 55, kind: 'woman', accent: true, pose: toGive(b.e), say: say(b.on, 'Sit down, please.', 'sit') })];
+      }
+    },
+    please: {
+      label: 'A man holds out his hand kindly and says: Please sit down. A woman sits on the chair.',
+      period: BEAT, rest: 3000,
+      frame: function (t) {
+        var b = beat(t), k = ramp(b.v, 1700, 2500) * (1 - ramp(b.v, 3900, 4350));
+        return [{ t: 'spot', x: 145, op: b.e, rx: 18 }, chair({ x: 145, f: -1 }), figure({ x: 145, kind: 'woman', facing: -1, pose: mix(POSES.stand, POSES.sit, k) }),
+          figure({ x: 55, accent: true, pose: toGive(b.e), look: 0.3, say: say(b.on, 'Please sit down.', 'Please') })];
+      }
+    },
+    // step 12
+    on: {
+      label: 'A woman gives a boy a hat and says: Put your hat on. The hat goes on his head.',
+      period: BEAT * 1.4, rest: 4600,
+      frame: function (t) {
+        var u = t % this.period, ask = envelope(u, 100, 5800, 500), move = ramp(u, 2000, 3300), off = ramp(u, 5600, 6000);
+        var w = figure({ x: 55, kind: 'woman', accent: true, pose: toGive(ask * (1 - move)), say: say(between(u, 500, 5400), 'Put your hat on.', 'on') });
+        var bo = figure({ x: 140, kind: 'boy', facing: -1, pose: mix(POSES.stand, POSES.reach, envelope(u, 2400, 3600, 400)) });
+        var tx = bo.head[0], ty = bo.head[1] - bo.r * 0.55, p = along([w.hand[0] + 4, w.hand[1] - 2], [tx, ty], move);
+        return [{ t: 'spot', x: 140, op: move * (1 - off), rx: 16 }, w, bo, hat({ x: p[0], y: p[1], s: lerp(1, bo.r / 12, move), op: 1 - off })];
+      }
+    },
+    'for': {
+      label: 'A man gives a woman a present and says: This is for you.',
+      period: BEAT * 1.25, rest: 3600,
+      frame: function (t) {
+        var u = t % this.period, e = envelope(u, 100, 5300, 500), move = ramp(u, 1800, 3000);
+        var m = figure({ x: 60, accent: true, pose: toGive(e), say: say(between(u, 500, 5000), 'This is for you.', 'for') });
+        var w = figure({ x: 145, kind: 'woman', facing: -1, pose: toGive(envelope(u, 2400, 5300, 500)) });
+        var p = along([m.hand[0] + 6, m.hand[1] + 4], [w.hand[0] - 6, w.hand[1] + 4], move);
+        return [{ t: 'spot', x: 145, op: move * e }, w, m, gift({ x: p[0], y: p[1] + 14, s: 0.8, op: e > 0.05 ? 1 : 0 })];
+      }
+    },
+    put: {
+      label: 'A coat comes off a hook and a woman puts it on: She put on her coat.',
+      period: BEAT, rest: 3200,
+      frame: function (t) {
+        var b = beat(t), k = ramp(b.v, 400, 1800), w = figure({ x: 90, kind: 'woman', accent: true, pose: mix(POSES.stand, POSES.shrug, envelope(b.v, 300, 2000, 400) * 0.5) });
+        return [{ t: 'spot', x: 90, op: b.e }, { t: 'path', d: M(165, G) + 'V58' + M(165, 64) + L(157, 56) + M(165, 64) + L(173, 56) + M(154, G) + 'H176', c: COL.ink, w: 2.6 },
+          at(lerp(75, 0, k), lerp(-12, 0, k), coat(w, { fill: COL.book }), b.e > 0.02 ? 1 : 0), w, cap(b.on, 'She put on her coat.', 'put')];
+      }
+    },
+    coat: {
+      label: 'Snow falls. A woman says to a girl: Put on your coat. It is cold. The girl now has a coat on.',
+      period: BEAT * 1.25, rest: 4200,
+      frame: function (t) {
+        var u = t % this.period, e = envelope(u, 100, 5300, 500), k = ramp(u, 2200, 3200) * (1 - ramp(u, 5200, 5500));
+        var g = figure({ x: 140, kind: 'girl', facing: -1, dx: (1 - k) * 0.8 * Math.sin(t / 35) });
+        return snow(t, 14, 0.7).concat([{ t: 'spot', x: 140, op: k, rx: 16 }, coat(g, { fill: COL.red, op: k }), g,
+          figure({ x: 55, kind: 'woman', accent: true, pose: toPoint(e * 0.7), say: say(between(u, 500, 5000), 'Put on your coat. It is cold.', 'coat') })]);
+      }
+    },
+    hat: {
+      label: 'A woman says: Put on your hat. A man puts a hat on his head.',
+      period: BEAT, rest: 3400,
+      frame: function (t) {
+        var b = beat(t), up = envelope(b.v, 1300, 3000, 500), on = ramp(b.v, 1800, 2600) * (1 - ramp(b.v, 4000, 4350));
+        var m = figure({ x: 140, facing: -1, pose: mix(POSES.stand, POSES.reach, up) });
+        var hx = lerp(m.hand[0], m.head[0], on), hy = lerp(m.hand[1] - 4, m.head[1] - m.r * 0.55, on);
+        return [{ t: 'spot', x: 140, op: b.e, rx: 18 }, m, hat({ x: on > 0.98 ? m.head[0] : hx, y: on > 0.98 ? m.head[1] - m.r * 0.55 : hy, fill: COL.acc }),
+          figure({ x: 55, kind: 'woman', accent: true, pose: toPoint(b.e * 0.7), say: say(b.on, 'Put on your hat.', 'hat') })];
+      }
+    },
+    // step 13
+    one: {
+      label: 'A girl puts her hand on her chest next to a boy and says: I have one brother. A 1 is over the boy.',
+      period: BEAT, rest: 2200,
+      frame: function (t) {
+        var b = beat(t);
+        return [{ t: 'spot', x: 140, op: b.e, rx: 18 }, figure({ x: 140, kind: 'boy', facing: -1 }), tag(166, 90, '1', b.e, 20),
+          figure({ x: 70, kind: 'girl', accent: true, pose: toChest(b.e), say: say(b.on, 'I have one brother.', 'one') })];
+      }
+    },
+    make: {
+      label: 'A woman stands by a table. A cake appears on it and she says: I made a cake.',
+      period: BEAT, rest: 2600,
+      frame: function (t) {
+        var b = beat(t), k = ramp(b.v, 300, 1200);
+        return [{ t: 'spot', x: 140, op: b.e, rx: 24 }, table({ x: 140 }), cake({ x: 140, y: G - 26, s: 0.6 + 0.4 * k, op: k, flame: 0.7 + 0.3 * Math.sin(t / 90) }),
+          figure({ x: 62, kind: 'woman', accent: true, pose: toChest(b.e), say: say(b.on, 'I made a cake.', 'made') })];
+      }
+    },
+    brother: {
+      label: 'A girl points at a tall young man and says: My brother is tall.',
+      period: BEAT, rest: 2200,
+      frame: function (t) {
+        var b = beat(t);
+        return [{ t: 'spot', x: 155, op: b.e, rx: 18 }, figure({ x: 155, facing: -1, s: 1.08 }),
+          figure({ x: 48, kind: 'girl', accent: true, pose: toPoint(b.e), say: say(b.on, 'My brother is tall.', 'brother') })];
+      }
+    },
+    cake: {
+      label: 'A woman stands next to a cake with a candle on a table: She made a cake.',
+      period: BEAT, rest: 2400,
+      frame: function (t) {
+        var b = beat(t);
+        return [{ t: 'spot', x: 130, op: b.e, rx: 26 }, table({ x: 130 }), cake({ x: 130, y: G - 26, s: 1.15, flame: 0.7 + 0.3 * Math.sin(t / 90) }),
+          figure({ x: 60, kind: 'woman', pose: toPoint(b.e * 0.6) }), cap(b.on, 'She made a cake.', 'cake')];
+      }
+    },
+    tall: {
+      label: 'A girl and her brother. He grows tall, much higher than her: My brother is tall.',
+      period: BEAT, rest: 2600,
+      frame: function (t) {
+        var b = beat(t), g = ramp(b.v, 200, 1400) * (1 - ramp(b.v, 3900, 4350));
+        return [{ t: 'spot', x: 125, op: b.e, rx: 18 }, figure({ x: 70, kind: 'girl', facing: 1 }),
+          figure({ x: 125, facing: -1, s: 0.8 + 0.35 * g, accent: true }), cap(b.on, 'My brother is tall.', 'tall')];
+      }
+    },
+    // step 14
+    at: {
+      label: 'A man points at a dog and says: Look at the dog. A woman turns to look at it.',
+      period: BEAT, rest: 2600,
+      frame: function (t) {
+        var b = beat(t), turned = b.v > 1700 && b.v < 4000;
+        return [{ t: 'spot', x: 160, op: b.e, rx: 22 }, dog({ x: 160, s: 1, f: -1, t: t }),
+          figure({ x: 105, kind: 'woman', facing: turned ? 1 : -1, look: turned ? 0.5 : 0 }),
+          figure({ x: 45, accent: true, pose: toPoint(b.e), say: say(b.on, 'Look at the dog.', 'at') })];
+      }
+    },
+    there: {
+      label: 'A woman points at a table and says: Put it there. A man puts a box on the table.',
+      period: BEAT * 1.25, rest: 4000,
+      frame: function (t) {
+        var u = t % this.period, e = envelope(u, 100, 5300, 500), move = ramp(u, 2000, 3200);
+        var m = figure({ x: 100, facing: 1, pose: toGive(1 - ramp(u, 3200, 3700)) });
+        var p = along([m.hand[0] + 4, m.hand[1] + 10], [158, G - 26], move);
+        return [{ t: 'spot', x: 158, op: e, rx: 22 }, table({ x: 158, w: 26 }), m,
+          { t: 'path', d: M(p[0] - 8, p[1]) + 'v-12h16v12Z', c: COL.ink, w: 2.4, fill: COL.marker },
+          figure({ x: 38, kind: 'woman', accent: true, pose: toPoint(e), say: say(between(u, 500, 5000), 'Put it there.', 'there') })];
+      }
+    },
+    look: {
+      label: 'A man holds up a picture of a cat and says: Look at this picture. A woman looks at it.',
+      period: BEAT, rest: 2400,
+      frame: function (t) {
+        var b = beat(t), m = figure({ x: 60, accent: true, pose: toGive(b.e), say: say(b.on, 'Look at this picture.', 'Look') });
+        var fx = m.hand[0] + 16, fy = m.hand[1] + 10;
+        return [{ t: 'spot', x: 145, op: b.e }, figure({ x: 145, kind: 'woman', facing: -1, look: 0.4 * b.e }), m,
+          frame({ x: fx, y: fy, w: 34, h: 26, inner: at(fx, fy - 4 - G, cat({ x: 0, s: 0.5, f: 1, t: t })) })];
+      }
+    },
+    draw: {
+      label: 'A child stands at a picture and draws. A cat appears, one line at a time: Draw a picture of a cat.',
+      period: BEAT * 1.25, rest: 4800,
+      frame: function (t) {
+        var u = t % this.period, k = ramp(u, 600, 4200), wig = 6 * Math.sin(t / 90) * (k > 0 && k < 1 ? 1 : 0);
+        var c = figure({ x: 82, kind: 'girl', accent: true, pose: pose([-26, -14, 70 + wig, 95 - wig]) });
+        return [easel(135), frame({ x: 135, y: G - 30, w: 52, h: 40, inner: at(135, G - 36 - G, cat({ x: 0, s: 0.75, f: -1, t: 0 }), k) }),
+          { t: 'path', d: M(c.hand[0], c.hand[1]) + L(c.hand[0] + 8, c.hand[1] - 5), c: COL.red, w: 2.4 }, c,
+          cap(between(u, 300, 5200), 'Draw a picture of a cat.', 'Draw')];
+      }
+    },
+    picture: {
+      label: 'A woman holds a picture of her dog. The dog sits next to her: She drew a picture of her dog.',
+      period: BEAT, rest: 2400,
+      frame: function (t) {
+        var b = beat(t), w = figure({ x: 80, kind: 'woman', pose: toGive(b.e) }), fx = w.hand[0] + 16, fy = w.hand[1] + 12;
+        return [{ t: 'spot', x: fx, op: b.e, rx: 22 }, dog({ x: 160, s: 0.9, f: -1, t: t }), w,
+          frame({ x: fx, y: fy, w: 38, h: 30, inner: at(fx, fy - 5 - G, dog({ x: 0, s: 0.55, f: 1, t: 0 })) }), cap(b.on, 'She drew a picture of her dog.', 'picture')];
+      }
+    },
+    // step 15
+    go: {
+      label: 'A woman points at a bed and says to a boy: Go to bed. The boy walks to the bed.',
+      period: BEAT * 1.4, rest: 5600,
+      frame: function (t) {
+        var u = t % this.period, e = envelope(u, 100, 5900, 500), walk = ramp(u, 1800, 4200), moving = walk > 0 && walk < 1;
+        var bx = lerp(90, 140, walk);
+        return [{ t: 'spot', x: 158, op: walk * e, rx: 30 }, bed({ x: 160, s: 0.9 }),
+          figure({ x: bx, kind: 'boy', facing: 1, pose: moving ? walking(t) : POSES.stand }),
+          figure({ x: 40, kind: 'woman', accent: true, pose: toPoint(e), say: say(between(u, 500, 5600), 'Go to bed.', 'Go') })];
+      }
+    },
+    'with': {
+      label: 'A boy stands between his mother and father in front of their house and says: I live with my parents.',
+      period: BEAT, rest: 2200,
+      frame: function (t) {
+        var b = beat(t);
+        return [house({ x: 168, s: 0.6, op: 0.5 }), { t: 'spot', x: 95, op: b.e, rx: 48 }, figure({ x: 58, facing: 1 }), figure({ x: 132, kind: 'woman', facing: -1 }),
+          figure({ x: 95, kind: 'boy', accent: true, pose: toChest(b.e) }), cap(b.on, 'I live with my parents.', 'with')];
+      }
+    },
+    live: {
+      label: 'A man points at a house and says: I live in this house.',
+      period: BEAT, rest: 2400,
+      frame: function (t) {
+        var b = beat(t);
+        return [{ t: 'spot', x: 140, op: b.e, rx: 36 }, house({ x: 140, s: 1.05 }), figure({ x: 55, accent: true, pose: toPoint(b.e), say: say(b.on, 'I live in this house.', 'live') })];
+      }
+    },
+    parent: {
+      label: 'A woman holds her child by the hand: She is a good parent.',
+      period: BEAT, rest: 2400,
+      frame: function (t) {
+        var b = beat(t), w = figure({ x: 90, kind: 'woman', accent: true, pose: toHold(0.6) }), g = figure({ x: 118, kind: 'girl', facing: -1, pose: mix(POSES.stand, POSES.reach, 0.35) });
+        return [{ t: 'spot', x: 104, op: b.e, rx: 36 }, w, g, { t: 'path', d: M(w.hand[0], w.hand[1]) + L(g.hand[0], g.hand[1]), c: COL.acc, w: 2.4 },
+          heart({ x: 104, y: 40, s: 1.1, op: ramp(b.v, 800, 1300) * b.e }), cap(b.on, 'She is a good parent.', 'parent')];
+      }
+    },
+    bed: {
+      label: 'A cat sleeps on a bed: The cat is on my bed.',
+      period: BEAT, rest: 2400,
+      frame: function (t) {
+        var b = beat(t);
+        return [{ t: 'spot', x: 100, op: b.e, rx: 40 }, bed({ x: 100, s: 1.25 }), at(8, -22, cat({ x: 100, s: 0.9, f: -1, t: t })),
+          { t: 'text', x: 128, y: 92 - 3 * Math.sin(t / 500), text: 'z', size: 12, op: 0.6 }, cap(b.on, 'The cat is on my bed.', 'bed')];
+      }
+    },
+    // step 16
+    people: {
+      label: 'People come into the picture one after another: Many people are here.',
+      period: BEAT * 1.25, rest: 4800,
+      frame: function (t) {
+        var u = t % this.period, all = envelope(u, 0, 5400, 400), list = [[30, 'man'], [62, 'girl'], [90, 'woman'], [116, 'boy'], [142, 'man'], [170, 'woman']], out = [];
+        list.forEach(function (p, i) { var k = ramp(u, 200 + i * 380, 600 + i * 380); out.push(figure({ x: p[0], kind: p[1], facing: i < 3 ? 1 : -1, op: k * all })); });
+        out.push(cap(between(u, 2600, 5200), 'Many people are here.', 'people'));
+        return out;
+      }
+    },
+    from: {
+      label: 'A cow, an arrow, and a bottle of milk: The milk is from a cow.',
+      period: BEAT, rest: 3000,
+      frame: function (t) {
+        var b = beat(t), k = ramp(b.v, 600, 1500);
+        return [{ t: 'spot', x: 160, op: b.e, rx: 16 }, cow({ x: 66, s: 1, f: 1, t: t }),
+          { t: 'path', d: M(110, 112) + L(110 + 30 * k, 112) + M(134, 106) + L(140, 112) + L(134, 118), c: COL.acc, w: 2.6, op: k },
+          bottle({ x: 160, y: G, s: 1.1, op: ramp(b.v, 1200, 1700) }), cap(b.on, 'The milk is from a cow.', 'from')];
+      }
+    },
+    how: {
+      label: 'A woman waves and asks a man: How are you? He answers: I am good.',
+      period: 2 * BEAT, rest: 5400,
+      frame: function (t) {
+        var b = beat(t, 2), first = b.i === 0;
+        return [{ t: 'spot', x: first ? 145 : 55, op: b.e }, figure({ x: 55, kind: 'woman', accent: first, pose: first ? mix(POSES.stand, waving(t), b.e) : POSES.stand, say: say(first && b.on, 'How are you?', 'How') }),
+          figure({ x: 145, facing: -1, accent: !first, pose: first ? POSES.stand : nodding(b.v), say: say(!first && b.on, 'I am good.', null) })];
+      }
+    },
+    here: {
+      label: 'A man points down at a dog right next to him and says: The dog is here.',
+      period: BEAT, rest: 2400,
+      frame: function (t) {
+        var b = beat(t);
+        return [{ t: 'spot', x: 118, op: b.e, rx: 22 }, dog({ x: 118, s: 0.95, f: -1, t: t }),
+          figure({ x: 78, accent: true, pose: mix(POSES.stand, pose([-26, -14, 50, 40]), b.e), say: say(b.on, 'The dog is here.', 'here') })];
+      }
+    },
+    many: {
+      label: 'A woman asks a man: How many brothers do you have? Boys appear next to him one by one, with numbers.',
+      period: BEAT * 1.4, rest: 5800,
+      frame: function (t) {
+        var u = t % this.period, e = envelope(u, 100, 5900, 500), xs = [118, 145, 172], out = [];
+        xs.forEach(function (x, i) { var k = ramp(u, 2300 + i * 600, 2700 + i * 600) * e; out.push(figure({ x: x, kind: 'boy', facing: -1, op: k }), tag(x, 62, String(i + 1), k, 14)); });
+        return out.concat([figure({ x: 86, facing: -1 }),
+          figure({ x: 30, kind: 'woman', accent: true, pose: toPoint(e * 0.7), say: say(between(u, 500, 5600), 'How many brothers do you have?', 'many') })]);
+      }
+    },
+    // step 17
+    can: {
+      label: 'A man by a river says: I can swim. Then he swims in the river.',
+      period: 2 * BEAT, rest: 2200,
+      frame: function (t) {
+        var b = beat(t, 2), first = b.i === 0;
+        if (first) return [{ t: 'spot', x: 60, op: b.e }].concat(river({ x0: 100, x1: 196, t: t }), [figure({ x: 60, accent: true, pose: toChest(b.e), say: say(b.on, 'I can swim.', 'can') })]);
+        return swimmer({ x: lerp(120, 165, b.v / BEAT), t: t, accent: true }).concat(river({ x0: 100, x1: 196, t: t }), [cap(b.on, 'I can swim.', 'can')]);
+      }
+    },
+    time: {
+      label: 'A man looks up at a clock on the wall and asks: What time is it? The hands of the clock move.',
+      period: BEAT, rest: 2400,
+      frame: function (t) {
+        var b = beat(t), mins = (t / 40) % 60;
+        return [{ t: 'spot', x: 80, op: b.e }, clock({ x: 145, y: 50, r: 18, h: 3, m: mins }),
+          figure({ x: 80, accent: true, pose: mix(POSES.stand, POSES.shrug, b.e * 0.6), look: 0.6, say: say(b.on, 'What time is it?', 'time') })];
+      }
+    },
+    come: {
+      label: 'A woman waves to a boy and calls: Come here! The boy walks to her.',
+      period: BEAT * 1.4, rest: 5600,
+      frame: function (t) {
+        var u = t % this.period, e = envelope(u, 100, 5900, 500), walk = ramp(u, 1800, 4000), moving = walk > 0 && walk < 1;
+        return [{ t: 'spot', x: 50, op: walk * e }, figure({ x: lerp(170, 92, walk), kind: 'boy', facing: -1, pose: moving ? walking(t) : POSES.stand }),
+          figure({ x: 50, kind: 'woman', accent: true, pose: mix(POSES.stand, waving(t), e), say: say(between(u, 500, 5600), 'Come here!', 'Come') })];
+      }
+    },
+    two: {
+      label: 'A woman puts her hand on her chest next to two cats and says: I have two cats. The cats are marked 1 and 2.',
+      period: BEAT, rest: 2400,
+      frame: function (t) {
+        var b = beat(t);
+        return [{ t: 'spot', x: 140, op: b.e, rx: 40 }, cat({ x: 122, s: 0.95, f: -1, t: t }), cat({ x: 166, s: 0.95, f: -1, t: t + 400 }),
+          tag(122, 102, '1', b.e, 14), tag(166, 102, '2', b.e, 14),
+          figure({ x: 55, kind: 'woman', accent: true, pose: toChest(b.e), say: say(b.on, 'I have two cats.', 'two') })];
+      }
+    },
+    swim: {
+      label: 'A man swims across a river, moving his arms: I can swim.',
+      period: BEAT, rest: 2400,
+      frame: function (t) {
+        var b = beat(t);
+        return swimmer({ x: lerp(50, 150, (t % 8800) / 8800), t: t, accent: true }).concat(river({ x0: 6, x1: 194, t: t }), [cap(b.on, 'I can swim.', 'swim')]);
+      }
+    },
+    // step 18
+    work: {
+      label: 'A man works with a hammer at a table and says: I work with my hands.',
+      period: BEAT, rest: 2400,
+      frame: function (t) {
+        var b = beat(t), hit = Math.max(0, Math.sin(t / 130)), m = figure({ x: 70, accent: true, pose: pose([-26, -14, 40 + 60 * hit, 120 + 40 * hit]), say: say(b.on, 'I work with my hands.', 'work') });
+        var hx = m.hand[0], hy = m.hand[1];
+        return [{ t: 'spot', x: 70, op: b.e }, table({ x: 118, w: 22 }), { t: 'path', d: M(110, G - 26) + 'v-8h18v8Z', c: COL.ink, w: 2.2, fill: COL.book }, m,
+          { t: 'path', d: M(hx, hy) + L(hx + 10, hy - 4) + M(hx + 7, hy - 9) + L(hx + 13, hy + 1), c: COL.ink, w: 3 }];
+      }
+    },
+    get: {
+      label: 'Snow begins to fall, more and more. A man starts to shake with cold: It is getting cold.',
+      period: BEAT * 1.25, rest: 4800,
+      frame: function (t) {
+        var u = t % this.period, k = ramp(u, 0, 4000), n = Math.round(2 + 20 * k);
+        return snow(t, n, 0.8).concat([{ t: 'spot', x: 100, op: k }, figure({ x: 100, accent: true, pose: mix(POSES.stand, pose([-60, 160, 60, -160]), k), dx: k * 1.4 * Math.sin(t / 30) }),
+          cap(between(u, 1200, 5200), 'It is getting cold.', 'getting')]);
+      }
+    },
+    like: {
+      label: 'A man drinks milk, smiles, and a red heart appears: I like milk.',
+      period: BEAT, rest: 2600,
+      frame: function (t) {
+        var b = beat(t), drink = envelope(b.v, 200, 2200, 400), m = figure({ x: 90, accent: true, pose: mix(POSES.stand, POSES.eat, drink), say: say(b.on && b.v > 1800, 'I like milk.', 'like') });
+        return [{ t: 'spot', x: 90, op: b.e }, m, glass({ x: m.hand[0] + 2, y: m.hand[1] + 10, s: 0.8, level: 0.7 - 0.3 * ramp(b.v, 600, 1800), liquid: COL.milk, line: COL.ink }),
+          heart({ x: 140, y: 60, s: 1.2, op: ramp(b.v, 2000, 2400) * b.e })];
+      }
+    },
+    take: {
+      label: 'A woman holds out her hand to a girl and says: Take my hand. The girl takes it.',
+      period: BEAT * 1.25, rest: 4400,
+      frame: function (t) {
+        var u = t % this.period, e = envelope(u, 100, 5300, 500), reach = ramp(u, 1800, 2800) * (1 - ramp(u, 5100, 5400));
+        var w = figure({ x: 80, kind: 'woman', accent: true, pose: toGive(e), say: say(between(u, 500, 5000), 'Take my hand.', 'Take') });
+        var g = figure({ x: 130, kind: 'girl', facing: -1, pose: mix(POSES.stand, pose([-26, -14, 60, 80]), reach) });
+        return [{ t: 'spot', x: 106, op: reach, rx: 30 }, w, g, { t: 'circle', x: (w.hand[0] + g.hand[0]) / 2, y: (w.hand[1] + g.hand[1]) / 2, r: 8, c: COL.marker, w: 2.6, op: reach > 0.95 ? 1 : 0 }];
+      }
+    },
+    hand: {
+      label: 'A man holds out his hand and says: Give me your hand. A woman gives him her hand, and their hands meet.',
+      period: BEAT * 1.25, rest: 4400,
+      frame: function (t) {
+        var u = t % this.period, e = envelope(u, 100, 5300, 500), reach = ramp(u, 1800, 2800) * (1 - ramp(u, 5100, 5400));
+        var m = figure({ x: 72, accent: true, pose: toGive(e), say: say(between(u, 500, 5000), 'Give me your hand.', 'hand') });
+        var w = figure({ x: 130, kind: 'woman', facing: -1, pose: mix(POSES.stand, POSES.give, reach) });
+        return [{ t: 'spot', x: 101, op: reach, rx: 30 }, m, w, { t: 'circle', x: (m.hand[0] + w.hand[0]) / 2, y: (m.hand[1] + w.hand[1]) / 2, r: 9, c: COL.marker, w: 2.6, op: reach > 0.95 ? 1 : 0 }];
+      }
+    },
+    // step 19
+    by: {
+      label: 'A house stands next to a river: The house is by the river.',
+      period: BEAT, rest: 2400,
+      frame: function (t) {
+        var b = beat(t);
+        return [{ t: 'spot', x: 70, op: b.e, rx: 36 }, house({ x: 70, s: 1 })].concat(river({ x0: 112, x1: 196, t: t }), [cap(b.on, 'The house is by the river.', 'by')]);
+      }
+    },
+    very: {
+      label: 'Snow falls hard and a man shakes a lot with his arms around him: It is very cold.',
+      period: BEAT, rest: 2600,
+      frame: function (t) {
+        var b = beat(t);
+        return snow(t, 26, 0.85).concat([{ t: 'spot', x: 100, op: b.e }, figure({ x: 100, accent: true, pose: pose([-60, 160, 60, -160]), dx: 2.2 * Math.sin(t / 25) }),
+          tag(150, 70, 'very', b.e, 14), cap(b.on, 'It is very cold.', 'very')]);
+      }
+    },
+    other: {
+      label: 'Two cups on a table, a red one and a blue one. A man points past the red cup and says: Give me the other cup.',
+      period: BEAT, rest: 2400,
+      frame: function (t) {
+        var b = beat(t);
+        return [{ t: 'spot', x: 160, op: b.e, rx: 14 }, table({ x: 140, w: 36 }), cup({ x: 122, y: G - 26, fill: COL.red, op: 1 - 0.55 * b.e }), cup({ x: 160, y: G - 26, fill: COL.water }),
+          figure({ x: 50, accent: true, pose: toPoint(b.e), say: say(b.on, 'Give me the other cup.', 'other') })];
+      }
+    },
+    river: {
+      label: 'Two people swim in a river: We swam in the river.',
+      period: BEAT, rest: 2400,
+      frame: function (t) {
+        var b = beat(t);
+        return swimmer({ x: 70, t: t, accent: true }).concat(swimmer({ x: 125, kind: 'woman', t: t + 300, accent: true }), river({ x0: 6, x1: 194, t: t }), [cap(b.on, 'We swam in the river.', 'river')]);
+      }
+    },
+    cup: {
+      label: 'A man asks: A cup of milk, please. A woman gives him a cup of milk.',
+      period: BEAT * 1.25, rest: 3800,
+      frame: function (t) {
+        var u = t % this.period, e = envelope(u, 100, 5300, 500), move = ramp(u, 2000, 3200);
+        var m = figure({ x: 55, accent: true, pose: toGive(e), say: say(between(u, 500, 5000), 'A cup of milk, please.', 'cup') });
+        var w = figure({ x: 148, kind: 'woman', facing: -1, pose: toGive(envelope(u, 1300, 4000, 500)) });
+        var p = along([w.hand[0] - 2, w.hand[1] + 10], [m.hand[0] + 4, m.hand[1] + 10], move);
+        return [{ t: 'spot', x: 55, op: move * e }, w, m, cup({ x: p[0], y: p[1], s: 0.8, milk: true })];
+      }
+    },
+    // step 20
+    much: {
+      label: 'A man holds out two small coins and shrugs: I do not have much money.',
+      period: BEAT, rest: 2400,
+      frame: function (t) {
+        var b = beat(t), m = figure({ x: 90, accent: true, pose: toGive(b.e), say: say(b.on, 'I do not have much money.', 'much') });
+        return [{ t: 'spot', x: 90, op: b.e }, m, coins({ x: m.hand[0] + 14, y: m.hand[1] + 4, n: 2, s: 1.1 })];
+      }
+    },
+    part: {
+      label: 'A big hand. One finger of it is marked: A finger is a part of the hand.',
+      period: BEAT, rest: 2400,
+      frame: function (t) {
+        var b = beat(t), hl = Math.floor(t / 1200) % 5;
+        return [bigHand({ x: 100, y: 112, s: 1, hl: b.on ? 1 : hl }), cap(b.on, 'A finger is a part of the hand.', 'part')];
+      }
+    },
+    money: {
+      label: 'Coins and a note lie on a table. They go away, and a man shrugs: I have no money.',
+      period: BEAT, rest: 1200,
+      frame: function (t) {
+        var b = beat(t), gone = ramp(b.v, 1400, 2200);
+        return [{ t: 'spot', x: 140, op: b.e, rx: 26 }, table({ x: 140, w: 28 }), coins({ x: 132, y: G - 26, n: 4, op: 1 - gone }), note({ x: 152, y: G - 26, op: 1 - gone }),
+          figure({ x: 60, accent: true, pose: mix(POSES.stand, POSES.shrug, gone * b.e), say: say(b.on && b.v > 1800, 'I have no money.', 'money') })];
+      }
+    },
+    cut: {
+      label: 'A man cuts an apple with a knife at a table. The knife slips, he lifts his hand, and there is a red cut on his finger: I cut my finger.',
+      period: BEAT * 1.25, rest: 4600,
+      frame: function (t) {
+        var u = t % this.period, ow = ramp(u, 1900, 2200) * (1 - ramp(u, 5200, 5500)), saw = ow > 0 ? 0 : 3 * Math.sin(u / 70);
+        var m = figure({ x: 98, accent: true, pose: mix(pose([-26, -14, 62, 96]), POSES.reach, ow), say: say(between(u, 2300, 5000), 'I cut my finger.', 'cut') });
+        var kx = ow > 0 ? 150 : m.hand[0] + 2 + saw, ky = ow > 0 ? G - 28 : m.hand[1] - 1;
+        return [{ t: 'spot', x: 98, op: ow }, table({ x: 145, w: 28 }), apple({ x: 140, y: G - 33, r: 7, fill: COL.red }), m,
+          knife({ x: kx, y: ky, angle: ow > 0 ? 0 : 15 }), { t: 'circle', x: m.hand[0], y: m.hand[1] - 3, r: 2.4, fill: COL.red, op: ow }];
+      }
+    },
+    finger: {
+      label: 'A big hand. One finger is marked and has a small red cut on it: I cut my finger.',
+      period: BEAT, rest: 2400,
+      frame: function (t) {
+        var b = beat(t);
+        return [{ t: 'spot', x: 100, op: b.e, rx: 30 }, bigHand({ x: 100, y: 112, s: 1, hl: b.e > 0.5 ? 1 : -1, cut: 1, cutOp: ramp(b.v, 700, 1100) }),
+          tag(155, 58, 'finger', b.e, 13), cap(b.on, 'I cut my finger.', 'finger')];
       }
     }
   };
