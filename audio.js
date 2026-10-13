@@ -90,11 +90,12 @@
       .then(function (j) { if (!j.url) throw new Error('no url'); return j.url; });
   }
 
-  function say(text, btn) {
+  // voice: 'man' (Daniel) or 'woman' (Sarah); left out, it follows voiceFor()
+  function say(text, btn, voice) {
     var again = btn && btn === playing;
     stop();
     if (again) return Promise.resolve(); // a second tap stops it
-    var voice = voiceFor(text);
+    voice = voice === 'woman' || voice === 'man' ? voice : voiceFor(text);
     if (btn) { btn.classList.add('playing'); playing = btn; }
     var done = function () { if (btn && playing === btn) { btn.classList.remove('playing'); playing = null; } };
     return clipUrl(text, voice)

@@ -28,7 +28,9 @@ var BASIC_FIGURES = (function () {
     give: pose([-26, -14, 60, 92]),
     hold: pose([-26, -14, 22, 100]),
     shrug: pose([-50, -140, 50, 140]),
-    pull: pose([-26, -14, 12, 165])
+    pull: pose([-26, -14, 12, 165]),
+    eat: pose([-26, -14, 30, 168]),
+    sit: pose([-26, -14, 26, 60], [88, 0, 96, 6])
   };
   var mix = function (a, b, k) { return d3.interpolate(a, b)(k); };
   function waving(t) { return pose([-26, -14, 152, 172 + 22 * Math.sin(t / 140)]); }
@@ -261,9 +263,10 @@ var BASIC_FIGURES = (function () {
     });
   }
   var FONT = '400 11px "Atkinson Hyperlegible", system-ui, sans-serif';
+  var VW = 200; // width of the picture; films draw on a wider one (see kit.width)
   function drawBubble(g, p) {
     var h = 21, w = p.text.length * 5.8 + 18;
-    var x = Math.max(4, Math.min(196 - w, p.cx - w / 2)), bottom = p.top - 7, y = bottom - h, r = 10.5;
+    var x = Math.max(4, Math.min(VW - 4 - w, p.cx - w / 2)), bottom = p.top - 7, y = bottom - h, r = 10.5;
     var tx = Math.max(x + 12, Math.min(x + w - 12, p.cx + p.f * 3)), tip = [p.cx + p.f * 1.5, p.top - 1.5];
     var d = 'M' + (x + r) + ',' + y + 'H' + (x + w - r) + 'Q' + (x + w) + ',' + y + ' ' + (x + w) + ',' + (y + r) + 'V' + (bottom - r) +
       'Q' + (x + w) + ',' + bottom + ' ' + (x + w - r) + ',' + bottom + 'H' + (tx + 4) + 'L' + tip[0] + ',' + tip[1] + 'L' + (tx - 4) + ',' + bottom +
@@ -273,10 +276,10 @@ var BASIC_FIGURES = (function () {
     words(b.append('text').attr('x', x + w / 2).attr('y', y + h / 2 + 3.8).attr('text-anchor', 'middle').style('font', FONT).style('fill', COL.ink), p.text, p.hl);
   }
   function drawCaption(g, p) { // a sentence box at the top of the picture, for scenes without a speaker
-    var h = 21, w = p.text.length * 5.8 + 18, x = 100 - w / 2, y = 6;
+    var h = 21, w = p.text.length * 5.8 + 18, x = VW / 2 - w / 2, y = 6;
     var b = g.append('g').style('opacity', p.op == null ? 1 : p.op);
     stroke(b.append('rect').attr('x', x).attr('y', y).attr('width', w).attr('height', h).attr('rx', 10.5), COL.ink, 1.6).style('fill', COL.card);
-    words(b.append('text').attr('x', 100).attr('y', y + h / 2 + 3.8).attr('text-anchor', 'middle').style('font', FONT).style('fill', COL.ink), p.text, p.hl);
+    words(b.append('text').attr('x', VW / 2).attr('y', y + h / 2 + 3.8).attr('text-anchor', 'middle').style('font', FONT).style('fill', COL.ink), p.text, p.hl);
   }
   function draw(g, prims, late) {
     prims.forEach(function (p) {
@@ -848,6 +851,17 @@ var BASIC_FIGURES = (function () {
     renderAt: function (el, word, t) {
       var svg = d3.select(el).append('svg').attr('viewBox', '0 0 200 150');
       ground(svg.append('g')); render(svg, SCENES[word], t);
+    },
+    // the drawing kit, for films.js: people, animals, things, poses and the primitive drawer
+    kit: {
+      G: G, COL: COL, POSES: POSES, figure: figure, dog: dog, cat: cat, cow: cow, house: house, apple: apple, book: book,
+      glass: glass, bottle: bottle, bucket: bucket, thing: thing, thought: thought, walking: walking, waving: waving,
+      nodding: nodding, ramp: ramp, ease: ease, draw: function (g, prims) {
+        var late = [];
+        draw(g, prims, late);
+        late.forEach(function (p) { if (p.t === 'caption') drawCaption(g, p); else drawBubble(g, p); });
+      },
+      width: function (w) { VW = w || 200; }
     },
     mountAll: function (container) {
       // stop animations whose picture has left the page

@@ -1,0 +1,866 @@
+{
+"action": "batch",
+"chunk": 16,
+"items": [
+{
+"text": "Here are four words: dog, big, the, is.",
+"voice": "man"
+},
+{
+"text": "In this order, they do not say anything.",
+"voice": "man"
+},
+{
+"text": "Now put them in the right order.",
+"voice": "man"
+},
+{
+"text": "The dog is big.",
+"voice": "man"
+},
+{
+"text": "Now the words give one full idea.",
+"voice": "man"
+},
+{
+"text": "A group of words like this is a sentence.",
+"voice": "man"
+},
+{
+"text": "A sentence begins with a big letter.",
+"voice": "man"
+},
+{
+"text": "And it ends with a full stop.",
+"voice": "man"
+},
+{
+"text": "Now change the order again.",
+"voice": "man"
+},
+{
+"text": "Is the dog big?",
+"voice": "man"
+},
+{
+"text": "This sentence asks something.",
+"voice": "man"
+},
+{
+"text": "So it ends with a question mark.",
+"voice": "man"
+},
+{
+"text": "If the words are in the wrong order, it is not a sentence.",
+"voice": "man"
+},
+{
+"text": "The words in a sentence always come in the right order.",
+"voice": "man"
+},
+{
+"text": "The cat is small.",
+"voice": "man"
+},
+{
+"text": "The house is big.",
+"voice": "man"
+},
+{
+"text": "Is the cat big?",
+"voice": "man"
+},
+{
+"text": "Is the cat small?",
+"voice": "man"
+},
+{
+"text": "This is a man.",
+"voice": "man"
+},
+{
+"text": "This is a house.",
+"voice": "man"
+},
+{
+"text": "This is a dog.",
+"voice": "man"
+},
+{
+"text": "This is an apple.",
+"voice": "man"
+},
+{
+"text": "A man is a person.",
+"voice": "man"
+},
+{
+"text": "A house is a place.",
+"voice": "man"
+},
+{
+"text": "A dog is an animal.",
+"voice": "man"
+},
+{
+"text": "An apple is a thing.",
+"voice": "man"
+},
+{
+"text": "Man, house, dog and apple are words that name something.",
+"voice": "man"
+},
+{
+"text": "A word that names a person, an animal, a place or a thing is a noun.",
+"voice": "man"
+},
+{
+"text": "Here is a sentence: the man has a dog.",
+"voice": "man"
+},
+{
+"text": "Man is a noun. Dog is a noun.",
+"voice": "man"
+},
+{
+"text": "Has is not a noun. It does not name anything.",
+"voice": "man"
+},
+{
+"text": "The name of one person or one place is a noun too.",
+"voice": "man"
+},
+{
+"text": "It begins with a big letter: Mary, London.",
+"voice": "man"
+},
+{
+"text": "The man has a dog.",
+"voice": "man"
+},
+{
+"text": "The cat is in the house.",
+"voice": "man"
+},
+{
+"text": "Mary has an apple.",
+"voice": "man"
+},
+{
+"text": "The boy has a ball.",
+"voice": "man"
+},
+{
+"text": "Mary has a red apple.",
+"voice": "man"
+},
+{
+"text": "The boy is tall.",
+"voice": "man"
+},
+{
+"text": "The boy is happy.",
+"voice": "man"
+},
+{
+"text": "The boy has a dog.",
+"voice": "man"
+},
+{
+"text": "We say the boy again and again.",
+"voice": "man"
+},
+{
+"text": "In place of the boy, we can say he.",
+"voice": "man"
+},
+{
+"text": "He has a dog.",
+"voice": "man"
+},
+{
+"text": "He is a pronoun: a short word we use in place of a noun.",
+"voice": "man"
+},
+{
+"text": "For a man or a boy, we say he.",
+"voice": "man"
+},
+{
+"text": "For a woman or a girl, we say she.",
+"voice": "man"
+},
+{
+"text": "For an animal, we say it.",
+"voice": "man"
+},
+{
+"text": "For a thing, we also say it.",
+"voice": "man"
+},
+{
+"text": "I am a teacher.",
+"voice": "man"
+},
+{
+"text": "I is the person who is talking.",
+"voice": "man"
+},
+{
+"text": "You are a doctor.",
+"voice": "man"
+},
+{
+"text": "You is the person you talk to.",
+"voice": "man"
+},
+{
+"text": "We is you and other people together.",
+"voice": "man"
+},
+{
+"text": "They is other people, or other things.",
+"voice": "man"
+},
+{
+"text": "The girl is happy. She is happy.",
+"voice": "man"
+},
+{
+"text": "The dog is small. It is small.",
+"voice": "man"
+},
+{
+"text": "You are my friend.",
+"voice": "man"
+},
+{
+"text": "She has a cat.",
+"voice": "man"
+},
+{
+"text": "He is a man.",
+"voice": "man"
+},
+{
+"text": "I am a man.",
+"voice": "man"
+},
+{
+"text": "I am a woman.",
+"voice": "woman"
+},
+{
+"text": "With I, we use am.",
+"voice": "man"
+},
+{
+"text": "She is a woman.",
+"voice": "man"
+},
+{
+"text": "It is a dog.",
+"voice": "man"
+},
+{
+"text": "With he, she and it, we use is.",
+"voice": "man"
+},
+{
+"text": "You are a child.",
+"voice": "man"
+},
+{
+"text": "We are children.",
+"voice": "man"
+},
+{
+"text": "They are children.",
+"voice": "man"
+},
+{
+"text": "With you, we and they, we use are.",
+"voice": "man"
+},
+{
+"text": "So: I am.",
+"voice": "man"
+},
+{
+"text": "He is, she is, it is.",
+"voice": "man"
+},
+{
+"text": "You are, we are, they are.",
+"voice": "man"
+},
+{
+"text": "She is a girl.",
+"voice": "man"
+},
+{
+"text": "It is a cat.",
+"voice": "man"
+},
+{
+"text": "He is a boy.",
+"voice": "man"
+},
+{
+"text": "They are dogs.",
+"voice": "man"
+},
+{
+"text": "You are a woman.",
+"voice": "man"
+},
+{
+"text": "I am a boy.",
+"voice": "man"
+},
+{
+"text": "They are cats.",
+"voice": "man"
+},
+{
+"text": "This is a cat.",
+"voice": "man"
+},
+{
+"text": "We use a before one person or thing.",
+"voice": "man"
+},
+{
+"text": "This is an egg.",
+"voice": "man"
+},
+{
+"text": "Apple and egg begin with the sound of a and e. So we use an.",
+"voice": "man"
+},
+{
+"text": "Before the sound of a, e, i, o or u, we use an.",
+"voice": "man"
+},
+{
+"text": "A dog.",
+"voice": "man"
+},
+{
+"text": "An apple.",
+"voice": "man"
+},
+{
+"text": "An egg.",
+"voice": "man"
+},
+{
+"text": "A house.",
+"voice": "man"
+},
+{
+"text": "Hour begins with h, but we do not say the h. So: an hour.",
+"voice": "man"
+},
+{
+"text": "University begins with u, but it sounds like you. So: a university.",
+"voice": "man"
+},
+{
+"text": "It is the first sound that matters, not the first letter.",
+"voice": "man"
+},
+{
+"text": "I have a dog and an apple.",
+"voice": "man"
+},
+{
+"text": "It is an old house.",
+"voice": "man"
+},
+{
+"text": "She has an egg.",
+"voice": "man"
+},
+{
+"text": "an apple",
+"voice": "man"
+},
+{
+"text": "a cat",
+"voice": "man"
+},
+{
+"text": "an egg",
+"voice": "man"
+},
+{
+"text": "It is a big apple.",
+"voice": "man"
+},
+{
+"text": "One cat.",
+"voice": "man"
+},
+{
+"text": "Two cats.",
+"voice": "man"
+},
+{
+"text": "For more than one, we add s: cat, cats.",
+"voice": "man"
+},
+{
+"text": "One box.",
+"voice": "man"
+},
+{
+"text": "Three boxes.",
+"voice": "man"
+},
+{
+"text": "After s, sh, ch and x, we add es: box, boxes.",
+"voice": "man"
+},
+{
+"text": "One man.",
+"voice": "man"
+},
+{
+"text": "Two men.",
+"voice": "man"
+},
+{
+"text": "Some nouns change: man, men.",
+"voice": "man"
+},
+{
+"text": "One child.",
+"voice": "man"
+},
+{
+"text": "Three children.",
+"voice": "man"
+},
+{
+"text": "Child, children. Woman, women.",
+"voice": "man"
+},
+{
+"text": "The plural is the form of a noun for more than one.",
+"voice": "man"
+},
+{
+"text": "Two apples, three boxes, four children.",
+"voice": "man"
+},
+{
+"text": "I have two cats.",
+"voice": "man"
+},
+{
+"text": "The children are in the garden.",
+"voice": "man"
+},
+{
+"text": "Two men and a woman.",
+"voice": "man"
+},
+{
+"text": "one dog, two dogs",
+"voice": "man"
+},
+{
+"text": "one box, two boxes",
+"voice": "man"
+},
+{
+"text": "one man, two men",
+"voice": "man"
+},
+{
+"text": "one child, three children",
+"voice": "man"
+},
+{
+"text": "The boys have two dogs.",
+"voice": "man"
+},
+{
+"text": "Now look at this dog.",
+"voice": "man"
+},
+{
+"text": "The dog is not big.",
+"voice": "man"
+},
+{
+"text": "We put not after is.",
+"voice": "man"
+},
+{
+"text": "I am not a woman.",
+"voice": "man"
+},
+{
+"text": "I am not a man.",
+"voice": "woman"
+},
+{
+"text": "After am, is and are, we put not.",
+"voice": "man"
+},
+{
+"text": "They are here.",
+"voice": "man"
+},
+{
+"text": "They are not here.",
+"voice": "man"
+},
+{
+"text": "In talk, we often make is not shorter.",
+"voice": "man"
+},
+{
+"text": "Is not becomes isn't.",
+"voice": "man"
+},
+{
+"text": "Are not becomes aren't.",
+"voice": "man"
+},
+{
+"text": "I am not becomes I'm not.",
+"voice": "man"
+},
+{
+"text": "I am not a child.",
+"voice": "man"
+},
+{
+"text": "She is not a girl.",
+"voice": "man"
+},
+{
+"text": "I am not a dog.",
+"voice": "man"
+},
+{
+"text": "The cats are not big.",
+"voice": "man"
+},
+{
+"text": "It is not a dog.",
+"voice": "man"
+},
+{
+"text": "You are not a woman.",
+"voice": "man"
+},
+{
+"text": "He is not a boy.",
+"voice": "man"
+},
+{
+"text": "We are not children.",
+"voice": "man"
+},
+{
+"text": "They are not cats.",
+"voice": "man"
+},
+{
+"text": "To ask, we put is first: is she a girl?",
+"voice": "man"
+},
+{
+"text": "Now it is a question. It ends with a question mark.",
+"voice": "man"
+},
+{
+"text": "Is she a girl?",
+"voice": "man"
+},
+{
+"text": "Yes, she is.",
+"voice": "woman"
+},
+{
+"text": "A short answer uses the same word: yes, she is.",
+"voice": "man"
+},
+{
+"text": "You are a teacher.",
+"voice": "man"
+},
+{
+"text": "Are you a teacher?",
+"voice": "man"
+},
+{
+"text": "No, I am not.",
+"voice": "woman"
+},
+{
+"text": "With are, it is the same: are goes first.",
+"voice": "man"
+},
+{
+"text": "Is it big?",
+"voice": "man"
+},
+{
+"text": "Am I late?",
+"voice": "man"
+},
+{
+"text": "Am, is and are go first in a question.",
+"voice": "man"
+},
+{
+"text": "Is she a girl? Yes, she is.",
+"voice": "man"
+},
+{
+"text": "Are you a teacher? No, I am not.",
+"voice": "man"
+},
+{
+"text": "Is he a boy?",
+"voice": "man"
+},
+{
+"text": "Are they children?",
+"voice": "man"
+},
+{
+"text": "Is the dog small? Yes, it is.",
+"voice": "man"
+},
+{
+"text": "Are you a doctor?",
+"voice": "man"
+},
+{
+"text": "Are they here?",
+"voice": "man"
+},
+{
+"text": "Am I a man?",
+"voice": "man"
+},
+{
+"text": "Yes, you are.",
+"voice": "man"
+},
+{
+"text": "No, you are not.",
+"voice": "man"
+},
+{
+"text": "Are you a woman?",
+"voice": "man"
+},
+{
+"text": "Yes, I am.",
+"voice": "man"
+},
+{
+"text": "No, I am not.",
+"voice": "man"
+},
+{
+"text": "Yes, he is.",
+"voice": "man"
+},
+{
+"text": "No, he is not.",
+"voice": "man"
+},
+{
+"text": "Yes, she is.",
+"voice": "man"
+},
+{
+"text": "No, she is not.",
+"voice": "man"
+},
+{
+"text": "Is it a dog?",
+"voice": "man"
+},
+{
+"text": "Yes, it is.",
+"voice": "man"
+},
+{
+"text": "No, it is not.",
+"voice": "man"
+},
+{
+"text": "Are we children?",
+"voice": "man"
+},
+{
+"text": "Yes, we are.",
+"voice": "man"
+},
+{
+"text": "No, we are not.",
+"voice": "man"
+},
+{
+"text": "Are they cats?",
+"voice": "man"
+},
+{
+"text": "Yes, they are.",
+"voice": "man"
+},
+{
+"text": "No, they are not.",
+"voice": "man"
+},
+{
+"text": "This dog is big.",
+"voice": "man"
+},
+{
+"text": "This dog is small.",
+"voice": "man"
+},
+{
+"text": "Big and small say what the dog is like.",
+"voice": "man"
+},
+{
+"text": "A big house.",
+"voice": "man"
+},
+{
+"text": "A small house.",
+"voice": "man"
+},
+{
+"text": "A word that says what a person or a thing is like is an adjective.",
+"voice": "man"
+},
+{
+"text": "An adjective can come before a noun: a big dog.",
+"voice": "man"
+},
+{
+"text": "Or after is: the dog is big.",
+"voice": "man"
+},
+{
+"text": "One big dog.",
+"voice": "man"
+},
+{
+"text": "Two big dogs.",
+"voice": "man"
+},
+{
+"text": "The adjective does not change. Only the noun gets s.",
+"voice": "man"
+},
+{
+"text": "The man is happy.",
+"voice": "man"
+},
+{
+"text": "The woman is tired.",
+"voice": "man"
+},
+{
+"text": "Happy and tired are adjectives too.",
+"voice": "man"
+},
+{
+"text": "It is a small house.",
+"voice": "man"
+},
+{
+"text": "The children are happy.",
+"voice": "man"
+},
+{
+"text": "She has a red bag.",
+"voice": "man"
+},
+{
+"text": "The big dog is happy.",
+"voice": "man"
+},
+{
+"text": "It is a big house.",
+"voice": "man"
+},
+{
+"text": "I have two big dogs.",
+"voice": "man"
+},
+{
+"text": "The cats are small.",
+"voice": "man"
+},
+{
+"text": "The boy runs.",
+"voice": "man"
+},
+{
+"text": "The girl eats an apple.",
+"voice": "man"
+},
+{
+"text": "The man sits.",
+"voice": "man"
+},
+{
+"text": "The dog runs.",
+"voice": "man"
+},
+{
+"text": "Runs, eats and sits are words for things we do.",
+"voice": "man"
+},
+{
+"text": "A word for something we do, or something that happens, is a verb.",
+"voice": "man"
+},
+{
+"text": "Every sentence has a verb.",
+"voice": "man"
+},
+{
+"text": "Am, is and are are verbs too.",
+"voice": "man"
+},
+{
+"text": "I walk.",
+"voice": "man"
+},
+{
+"text": "I walked.",
+"voice": "man"
+},
+{
+"text": "A verb can change its form to show the time. This is called the tense.",
+"voice": "man"
+},
+{
+"text": "The children play in the garden.",
+"voice": "man"
+},
+{
+"text": "I eat an apple.",
+"voice": "man"
+},
+{
+"text": "The cat sleeps.",
+"voice": "man"
+}
+]
+}
