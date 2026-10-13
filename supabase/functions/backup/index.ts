@@ -2,13 +2,13 @@
 //
 // Admin only (header x-admin-token). POST JSON { action }:
 //   check     can we reach Dropbox? -> { ok, folder, entries }
-//   audio     copy up to `limit` (default 400) audio files that are new or changed since their last
-//             copy -> { copied, failed, pending }. Call again until pending is 0. Every file keeps its
+//   audio     copy up to `limit` (default 400, at most 1000) audio files that are new or changed since
+//             their last copy -> { copied, failed, pending }. Call again until pending is 0. Every file keeps its
 //             path: audio/v2/us_daniel/<hash>.mp3, audio/slow1/..., audio/refs/qwen_daniel.wav
 //   database  a dated JSON export of the progress table -> database/progress-<date>.json
 //   code      a zip of the GitHub repo at the newest commit on main -> code/basic1000-<date>-<sha>.zip
 //   manifest  manifest.json: when each part was last backed up, and how much is in it
-//   all       database + code + one audio batch + manifest (the scheduled run)
+//   all       database + code + one audio batch + manifest (the scheduled run; use a small limit)
 //   status    how much of the audio is backed up, with no Dropbox call
 //
 // Dropbox: an app with "App folder" access, so it can only see Apps/<app name>/ in the owner's
@@ -26,7 +26,7 @@ const DBX_REFRESH = Deno.env.get("DROPBOX_REFRESH_TOKEN") ?? "";
 const ADMIN_HASH = "fd386d8929b80a4bcadc5ada75095c854d0efbb50fb431ed975786cd6ad36fc8";
 const ROOT = "/basic1000-backup";
 const REPO = "johnlqdev/basic1000";
-const BUDGET_MS = 120_000; // stop starting new uploads after this long, so a call ends in time
+const BUDGET_MS = 90_000; // stop starting new uploads after this long, so a call ends in time
 
 const json = (body: unknown, status = 200) =>
   new Response(JSON.stringify(body), { status, headers: { "content-type": "application/json" } });
@@ -103,9 +103,40 @@ async function dropboxList() {
 }
 
 // ---------- the parts ----------
+// Many small files: each is sent as its own upload session (no folder lock, so many at once), then
+// they are all committed together with finish_batch_v2, which takes the folder lock only once.
+async function startSession(body: Uint8Array) {
+  for (let attempt = 0; ; attempt++) {
+    const r = await fetch("https://content.dropboxapi.com/2/files/upload_session/start", {
+      method: "POST",
+      headers: { authorization: `Bearer ${await dropboxToken()}`, "content-type": "application/octet-stream", "dropbox-api-arg": asciiJson({ close: true }) },
+      body,
+    });
+    if (r.ok) return (await r.json()).session_id as string;
+    const text = await r.text();
+    if ((r.status === 429 || r.status >= 500) && attempt < 5) { await sleep(Number(r.headers.get("retry-after") ?? "0") * 1000 || 400 * 2 ** attempt); continue; }
+    throw new Error(`session ${r.status} ${text.slice(0, 150)}`);
+  }
+}
+async function finishBatch(entries: { session: string; size: number; path: string }[]) {
+  for (let attempt = 0; ; attempt++) {
+    const r = await fetch("https://api.dropboxapi.com/2/files/upload_session/finish_batch_v2", {
+      method: "POST",
+      headers: { authorization: `Bearer ${await dropboxToken()}`, "content-type": "application/json" },
+      body: JSON.stringify({ entries: entries.map((e) => ({
+        cursor: { session_id: e.session, offset: e.size },
+        commit: { path: ROOT + "/" + e.path, mode: "overwrite", autorename: false, mute: true },
+      })) }),
+    });
+    if (r.ok) return ((await r.json()).entries as { ".tag": string }[]).map((x) => x[".tag"] === "success");
+    const text = await r.text();
+    if ((r.status === 429 || r.status >= 500) && attempt < 5) { await sleep(Number(r.headers.get("retry-after") ?? "0") * 1000 || 1000 * 2 ** attempt); continue; }
+    throw new Error(`finish_batch ${r.status} ${text.slice(0, 200)}`);
+  }
+}
 async function backupAudio(limit: number, started: number) {
-  const todo: { name: string; size: number; updated_at: string }[] = await rpc("backup_pending", { n: limit });
-  const done: { path: string; size: number; src_updated: string }[] = [];
+  const todo: { name: string; size: number; updated_at: string }[] = await rpc("backup_pending", { n: Math.min(limit, 1000) });
+  const sent: { session: string; size: number; path: string; src_updated: string }[] = [];
   const failed: string[] = [];
   let next = 0;
   const worker = async () => {
@@ -114,19 +145,24 @@ async function backupAudio(limit: number, started: number) {
       try {
         const r = await fetch(`${SB}/storage/v1/object/audio/${f.name.split("/").map(encodeURIComponent).join("/")}`, { headers: sbHeaders });
         if (!r.ok) throw new Error(`download ${r.status}`);
-        await upload("audio/" + f.name, new Uint8Array(await r.arrayBuffer()));
-        done.push({ path: "audio/" + f.name, size: f.size, src_updated: f.updated_at });
-        if (done.length % 50 === 0) await logCopied(done.splice(0, done.length).map((x) => x)).catch(() => {});
+        const body = new Uint8Array(await r.arrayBuffer());
+        sent.push({ session: await startSession(body), size: body.length, path: "audio/" + f.name, src_updated: f.updated_at });
       } catch (e) {
         failed.push(`${f.name}: ${(e as Error).message}`);
       }
     }
   };
-  // a few at a time: Dropbox slows down writes that come too fast into one folder
-  await Promise.all([1, 2, 3, 4].map(worker));
-  await logCopied(done);
+  await Promise.all(Array.from({ length: 10 }, worker));
+  let copied = 0;
+  if (sent.length) {
+    const ok = await finishBatch(sent);
+    const rows = sent.filter((_, i) => ok[i]).map((x) => ({ path: x.path, size: x.size, src_updated: x.src_updated }));
+    sent.forEach((x, i) => { if (!ok[i]) failed.push(`${x.path}: commit failed`); });
+    for (let i = 0; i < rows.length; i += 500) await logCopied(rows.slice(i, i + 500));
+    copied = rows.length;
+  }
   const [c] = await rpc("backup_counts");
-  return { tried: todo.length, failed: failed.slice(0, 10), failures: failed.length, ...c };
+  return { copied, failed: failed.slice(0, 10), failures: failed.length, ...c };
 }
 
 async function backupDatabase() {
