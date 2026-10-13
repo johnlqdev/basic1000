@@ -9,7 +9,11 @@ Live site: https://basic-1000.vercel.app
 | Path | What it is |
 |---|---|
 | `index.html` | The whole website: layout, lessons, quizzes, review, dictionary and Supabase sign-in |
-| `grammar.js` | Grammar: the topic list and the lessons (only "Am, is, are" so far) |
+| `grammar.js` | Grammar: the map of topics (a dependency tree), topic cards and lesson pages |
+| `grammar-data.js` | The grammar curriculum and lessons, built from `content/grammar/` (do not edit by hand) |
+| `films.js` | The stick-figure film player for grammar lessons |
+| `content/grammar/` | `curriculum.py` (all 109 topics) and `lessons.py` (full lessons: films, rules, exercises) |
+| `tools/grammar/build.py` | Checks the grammar content and writes `grammar-data.js` and the recording list |
 | `figures.js` | Animated stick-figure scenes (D3), one per word; all of Unit 1 (steps 1-10) so far |
 | `audio.js` | Speaker buttons: plays each word and example (Daniel, or Sarah when a woman is speaking); slow buttons with highlighting |
 | `pron.js` | IPA for the words with slow audio, split into sound groups (which letters spell which sound) |
@@ -32,13 +36,30 @@ Live site: https://basic-1000.vercel.app
 
 The menu on the left (a strip at the top on phones) lists the courses: Basic 1000, Grammar, and Basic 2000 and Basic 3000, which are marked "Coming later" and cannot be opened yet. The Path, Review and Dictionary tabs belong to Basic 1000 and are hidden in Grammar.
 
-Grammar (`grammar.js`) is a contents page of topics in learning order; only the first, "Am, is, are", is written so far. A lesson has three parts:
+### One site, not separate courses
 
-1. **See it:** the sentence machine. Pick who the sentence is about (I, you, he, she, it, we, they), then say it, say it with *not*, or ask it. The word tiles glide to their new places, so in a question "is" visibly jumps to the front. A question also shows its short answers ("Yes, she is. No, she is not.").
-2. **The rule:** I → am; he, she, it → is; you, we, they → are. Tapping a word sends it to the machine.
-3. **Try it:** six exercises: fill the gap, put the words in order, find and fix the wrong word, and make a sentence with *not* or a question. The best score is saved with the learner's progress (`grammar` in the progress record).
+The courses share one set of words and one progress record. Every word in a grammar rule, example, film subtitle or exercise answer is a link: touching it opens that word's page from Basic 1000 (the same card the Dictionary opens), which counts a visit, and from there the learner can jump to the word's step. Grammar progress is saved in the same record as everything else (`grammar` in the progress record), in the browser and in the learner's account.
 
-Every example uses only words from steps 1-6 (plus their plural forms).
+### The curriculum
+
+`content/grammar/curriculum.py` lists 109 topics in four bands: Starting out (10), Elementary school (36), Middle school (37) and High school (26). Each topic names the topics it needs first ("Past tense" needs "Verbs"), so together they form a dependency tree. Every word in every topic is one of the 1,000 words. A grammar word such as "noun" is not one of them, so the topic that first uses it gives it a meaning in basic words, and only that topic and the ones that build on it may use it.
+
+`python3 tools/grammar/build.py` checks all of this: the words, the order (a topic always comes after the topics it needs, so there are no loops), that the first 10 topics have a full lesson, and that a woman's or girl's lines use Sarah's voice. It then writes `grammar-data.js` and `content/jobs/grammar_audio.json` (every sentence a lesson can say). Use `--check` to check only.
+
+### The map
+
+The Grammar page shows the tree: one section per band, each topic a card, with lines from each topic to the ones it opens. A topic is **done** (green tick), **open** (teal, ready to learn), **locked** (needs a topic that is not done yet), or **coming soon** (dashed, no lesson yet). Pointing at or touching a topic highlights everything it needs (yellow) and what it opens (teal). Touching opens a card with its goal, what to learn first, what comes after, and a button to start it. A locked topic can still be opened with "Look inside"; answers there are not saved. A coming-soon topic's card shows its rules and examples.
+
+### A lesson
+
+1. **Watch:** a narrated stick-figure film (`films.js`), 4-6 parts and about a minute long. Words appear as tiles at the top and glide into new orders; colours show what each word is (noun, pronoun, verb, am/is/are, adjective). Lines are read by Daniel, or by Sarah when a woman or girl speaks. The bar under the film jumps to any part.
+2. **The rule:** new grammar words with their meanings, the rule in short points, a table where it helps, and examples with listen buttons.
+3. **Play** (some topics): the sentence machine. Pick who the sentence is about, then say it, say it with *not*, or ask it; the tiles glide so "is" visibly jumps to the front of a question.
+4. **Try it:** six exercises: pick the right word, put the words in order, find and fix the wrong word, or touch every word of one kind. Getting 4 of 6 right finishes the topic and opens the topics under it.
+
+### Recording the grammar sentences
+
+Grammar sentences use the same clips as the rest of the site (`v2/{voice}/...` in the `audio` bucket). Until a sentence is recorded the browser's own voice reads it. To record new ones, commit `content/jobs/grammar_audio.json` and run the `batch` action with `list` pointing at it (chunk 16), as in the Audio section.
 
 ## How learners move through the course
 
@@ -56,7 +77,7 @@ Every example uses only words from steps 1-6 (plus their plural forms).
 
 ## Deploying
 
-From this folder: `npx vercel --prod` (Vercel project `basic-1000`). Only `index.html`, `figures.js`, `audio.js`, `quiz.json` and the data files are uploaded. Pushing to `main` on GitHub (`johnlqdev/basic1000`) also deploys.
+From this folder: `npx vercel --prod` (Vercel project `basic-1000`). Only the website files in the top folder are uploaded (`.vercelignore` keeps `content`, `tools` and `supabase` out). Pushing to `main` on GitHub (`johnlqdev/basic1000`) also deploys.
 
 ## Services
 
