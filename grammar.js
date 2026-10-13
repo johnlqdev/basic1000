@@ -110,46 +110,75 @@ var BASIC_GRAMMAR = (function () {
 
     var map = el.querySelector('.g-map'), svg = map.querySelector('.g-edges');
     var focus = null;
-    // Lines: a gentle S from a topic down to the one it opens. A line that skips rows would pass
-    // behind the topics in between and look as if it started or ended there, so instead it threads
-    // through the gaps between topics in every row it crosses, then is smoothed into one curve.
-    // Routes are worked out once per layout.
+    // Lines: a gentle S from a topic down to each topic it opens. Two lines never share a stretch:
+    // every line leaves from its own point along the bottom of its topic and arrives at its own point
+    // along the top of the next one, ordered so that neighbouring lines do not cross. A line that would
+    // run straight down behind another topic (it skips a row in the same column) leaves from the corner
+    // of its topic and makes a small swing around the topics it could be mistaken for (the others its
+    // start opens, or its end needs). Routes are worked out once per layout.
     var routes = {}, routeKey = '';
-    var smooth = window.d3 && d3.line ? d3.line().curve(d3.curveMonotoneY) : null;
-    function rowsOf(rects) { // the visual lines of topics (a long row can wrap), top to bottom
-      var lines = [];
-      rects.slice().sort(function (p, q) { return p.top - q.top || p.left - q.left; }).forEach(function (r) {
-        var line = lines.length && Math.abs(lines[lines.length - 1].top - r.top) < 6 ? lines[lines.length - 1] : null;
-        if (!line) { line = { top: r.top, bottom: r.bottom, items: [] }; lines.push(line); }
-        line.items.push(r); line.bottom = Math.max(line.bottom, r.bottom);
-      });
-      return lines;
+    function bez(p0, p1, p2, p3, t) {
+      var u = 1 - t;
+      return [u * u * u * p0[0] + 3 * u * u * t * p1[0] + 3 * u * t * t * p2[0] + t * t * t * p3[0],
+        u * u * u * p0[1] + 3 * u * u * t * p1[1] + 3 * u * t * t * p2[1] + t * t * t * p3[1]];
     }
-    function gapX(line, want, width) { // the x nearest to `want` where a line can pass through this row
-      var best = null, items = line.items, edges = [[-Infinity, items[0].left]];
-      for (var i = 0; i + 1 < items.length; i++) edges.push([items[i].right, items[i + 1].left]);
-      edges.push([items[items.length - 1].right, Infinity]);
-      edges.forEach(function (g) {
-        var lo = Math.max(g[0] + 9, 4), hi = Math.min(g[1] - 9, width - 4);
-        if (lo > hi) { if (g[1] - g[0] >= 6 && isFinite(g[0]) && isFinite(g[1])) lo = hi = (g[0] + g[1]) / 2; else return; }
-        var x = Math.min(hi, Math.max(lo, want));
-        if (!best || Math.abs(x - want) < Math.abs(best - want)) best = x;
-      });
-      return best == null ? want : best;
-    }
-    function route(a, c, lines, width) {
-      var y1 = a.bottom, y2 = c.top, mid = lines.filter(function (l) { return l.top > y1 + 2 && l.bottom < y2 - 2; });
-      if (!mid.length || !smooth) {
-        var m = Math.max(18, (y2 - y1) / 2);
-        return 'M' + a.x + ',' + y1 + 'C' + a.x + ',' + (y1 + m) + ' ' + c.x + ',' + (y2 - m) + ' ' + c.x + ',' + y2;
+    // does this curve pass behind a topic other than its two ends? (only the topics in `only`, if given)
+    function behind(P, rects, skip, only) {
+      for (var i = 1; i < 40; i++) {
+        var q = bez(P[0], P[1], P[2], P[3], i / 40);
+        for (var k = 0; k < rects.length; k++) {
+          var r = rects[k];
+          if (r.id === skip[0] || r.id === skip[1] || (only && !only[r.id])) continue;
+          if (q[0] > r.left - 6 && q[0] < r.right + 6 && q[1] > r.top - 3 && q[1] < r.bottom + 3) return true;
+        }
       }
-      var pts = [[a.x, y1]];
-      mid.forEach(function (l) {
-        var k = ((l.top + l.bottom) / 2 - y1) / (y2 - y1), x = gapX(l, a.x + (c.x - a.x) * k, width);
-        pts.push([x, l.top - 5], [x, l.bottom + 5]);
+      return false;
+    }
+    function sCurve(x1, y1, x2, y2) { var m = Math.max(18, (y2 - y1) / 2); return [[x1, y1], [x1, y1 + m], [x2, y2 - m], [x2, y2]]; }
+    function computeRoutes(pos, rects, width) {
+      var out = {}, swing = {};
+      // 1. which lines would run down behind another topic in their own column
+      EDGES.forEach(function (e) {
+        var a = pos[e[0]], c = pos[e[1]];
+        if (a && c && Math.abs(a.x - c.x) < 60 && behind(sCurve(a.x, a.bottom, c.x, c.top), rects, e)) swing[e] = c.x >= a.x ? 1 : -1;
       });
-      pts.push([c.x, y2]);
-      return smooth(pts);
+      // 2. give each line its own start and end point; swinging lines take the outermost ones
+      var starts = {}, ends = {};
+      function spread(list, node, keyOf, other, slots) {
+        var lo = node.left + 10, hi = node.right - 10, n = list.length;
+        var left = list.filter(function (e) { return swing[e] === -1; }), right = list.filter(function (e) { return swing[e] === 1; });
+        var mid = list.filter(function (e) { return !swing[e]; }).sort(function (p, q) { return other(p) - other(q); });
+        var order = left.concat(mid, right.reverse()), step = n > 1 ? Math.min(14, (hi - lo) / (n - 1)) : 0;
+        var x0 = node.x - step * (n - 1) / 2;
+        order.forEach(function (e, i) { slots[e] = x0 + i * step; });
+        left.forEach(function (e, i) { slots[e] = lo + i * 8; });
+        right.forEach(function (e, i) { slots[e] = hi - (right.length - 1 - i) * 8; });
+      }
+      Object.keys(pos).forEach(function (id) {
+        var outE = EDGES.filter(function (e) { return e[0] === id && pos[e[1]]; }), inE = EDGES.filter(function (e) { return e[1] === id && pos[e[0]]; });
+        spread(outE, pos[id], 0, function (e) { return pos[e[1]].x; }, starts);
+        spread(inE, pos[id], 1, function (e) { return pos[e[0]].x; }, ends);
+      });
+      // 3. the curves
+      EDGES.forEach(function (e) {
+        var a = pos[e[0]], c = pos[e[1]];
+        if (!a || !c) return;
+        var x1 = starts[e], y1 = a.bottom, x2 = ends[e], y2 = c.top, P = sCurve(x1, y1, x2, y2);
+        if (swing[e]) {
+          // swing out just far enough to clear the topics this line could be mistaken for: the other
+          // topics its start opens, and the other topics its end needs
+          var near = {};
+          KIDS[e[0]].forEach(function (k) { near[k] = 1; });
+          BY[e[1]].needs.forEach(function (k) { near[k] = 1; });
+          for (var B = 8; B <= 120; B += 8) {
+            var Q = [[x1, y1], [x1 + swing[e] * B, y1 + 14], [x2 + swing[e] * B, y2 - 14], [x2, y2]];
+            if (Q[1][0] < 4 || Q[1][0] > width - 4) break; // never off the side of the map
+            if (!behind(Q, rects, e, near)) { P = Q; break; }
+          }
+        }
+        out[e[0] + '>' + e[1]] = 'M' + P[0] + 'C' + P[1] + ' ' + P[2] + ' ' + P[3];
+      });
+      return out;
     }
     function draw() {
       if (!map.isConnected) { if (ro) ro.disconnect(); return; }
@@ -162,11 +191,7 @@ var BASIC_GRAMMAR = (function () {
       });
       // the layout changes when the width changes or the fonts arrive: recompute the routes then
       var key = Math.round(box.width) + ':' + rects.map(function (r) { return Math.round(r.left) + ',' + Math.round(r.top); }).join(';');
-      if (key !== routeKey) {
-        routeKey = key; routes = {};
-        var lines = rowsOf(rects);
-        EDGES.forEach(function (e) { if (pos[e[0]] && pos[e[1]]) routes[e[0] + '>' + e[1]] = route(pos[e[0]], pos[e[1]], lines, box.width); });
-      }
+      if (key !== routeKey) { routeKey = key; routes = computeRoutes(pos, rects, box.width); }
       svg.setAttribute('width', box.width); svg.setAttribute('height', box.height);
       svg.setAttribute('viewBox', '0 0 ' + box.width + ' ' + box.height);
       var lit = focus ? Object.assign({}, ANC[focus], (function () { var o = {}; o[focus] = 1; return o; })()) : null;
