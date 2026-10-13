@@ -2,7 +2,8 @@
 // A film is data (content/grammar/lessons.py): a list of shots. Each shot has
 //   lines  [{t: text, v: 'woman' (Sarah; Daniel by default), by: cast id (the line is that figure's
 //          speech bubble), hl: [words to mark in the subtitle]}]  - spoken one after another;
-//   cast   [{id, k: man|woman|boy|girl|dog|cat|cow|house|apple|book|glass|ball|box|egg|bird|tree|sun,
+//   cast   [{id, k: man|woman|boy|girl|dog|cat|cow|house|apple|book|glass|ball|box|egg|bird|tree|sun|
+//           table|chair|car|clock (h, m)|moon|cloud (rain)|fish|bag|door (open)|window (open)|bottle|coin|flower, y,
 //           x, face: 1|-1, s: size, n: copies, gap, in/out: line number when it comes / goes,
 //           enter: 'walk'|'pop', pose, poseAt, to: new x, toAt, holds: thing in the hand,
 //           accent: true (teal), label, labelAt, spot, spotAt}];
@@ -107,7 +108,7 @@ var BASIC_FILMS = (function () {
     else if (c.k === 'glass') out.push(K.glass({ x: x, y: c.y || G, s: s, level: 0.6 }));
     else if (c.k === 'ball') out.push([{ t: 'circle', x: x, y: (c.y || G) - 7 * s, r: 7 * s, c: K.COL.ink, w: 2.4, fill: K.COL.marker },
       { t: 'path', d: 'M' + (x - 7 * s) + ',' + ((c.y || G) - 7 * s) + 'q' + 7 * s + ',' + 5 * s + ' ' + 14 * s + ',0', c: K.COL.ink, w: 1.6 }]);
-    else if (c.k === 'box') out.push({ t: 'path', d: 'M' + (x - 10 * s) + ',' + G + 'v' + (-16 * s) + 'h' + 20 * s + 'v' + 16 * s + 'Z', c: K.COL.ink, w: 2.6, fill: K.COL.ground });
+    else if (c.k === 'box') out.push({ t: 'path', d: 'M' + (x - 10 * s) + ',' + (c.y || G) + 'v' + (-16 * s) + 'h' + 20 * s + 'v' + 16 * s + 'Z', c: K.COL.ink, w: 2.6, fill: K.COL.ground });
     else if (c.k === 'egg') out.push({ t: 'path', d: 'M' + x + ',' + (G - 16 * s) + 'c' + 7 * s + ',0 ' + 8 * s + ',' + 15 * s + ' 0,' + 16 * s + 'c' + -8 * s + ',' + -1 * s + ' ' + -7 * s + ',' + -16 * s + ' 0,' + -16 * s + 'Z', c: K.COL.ink, w: 2.2, fill: K.COL.milk });
     else if (c.k === 'tree') out.push([{ t: 'path', d: 'M' + x + ',' + G + 'V' + (G - 30 * s), c: K.COL.ink, w: 3.4 },
       { t: 'circle', x: x, y: G - 44 * s, r: 18 * s, c: K.COL.ink, w: 2.6, fill: K.COL.leaf }]);
@@ -115,6 +116,54 @@ var BASIC_FILMS = (function () {
       var sy = c.y || 34, rays = '';
       for (var a = 0; a < 8; a++) { var an = a * Math.PI / 4 + t / 3000; rays += 'M' + (x + 14 * Math.cos(an)) + ',' + (sy + 14 * Math.sin(an)) + 'L' + (x + 19 * Math.cos(an)) + ',' + (sy + 19 * Math.sin(an)); }
       out.push([{ t: 'circle', x: x, y: sy, r: 10, fill: K.COL.marker, c: K.COL.hot, w: 2 }, { t: 'path', d: rays, c: K.COL.hot, w: 2 }]);
+    } else if (c.k === 'table') { // things on the table use y: G - 26 (TOP in lessons.py)
+      var ty = G - 26 * s;
+      out.push({ t: 'path', d: 'M' + (x - 32 * s) + ',' + ty + 'H' + (x + 32 * s) + 'M' + (x - 26 * s) + ',' + ty + 'V' + G + 'M' + (x + 26 * s) + ',' + ty + 'V' + G, c: K.COL.ink, w: 3.2 });
+    } else if (c.k === 'chair') {
+      var cy0 = G - 16 * s;
+      out.push({ t: 'path', d: 'M' + (x - 9 * s) + ',' + cy0 + 'H' + (x + 9 * s) + 'M' + (x - f * 9 * s) + ',' + G + 'V' + (G - 38 * s) + 'M' + (x + f * 9 * s) + ',' + cy0 + 'V' + G, c: K.COL.ink, w: 2.8 });
+    } else if (c.k === 'car') {
+      var cb = G - 7 * s;
+      out.push([{ t: 'path', d: 'M' + (x - 28 * s) + ',' + cb + 'V' + (cb - 12 * s) + 'L' + (x - f * 16 * s) + ',' + (cb - 13 * s) + 'L' + (x - f * 8 * s) + ',' + (cb - 24 * s) + 'H' + (x + f * 10 * s) + 'L' + (x + f * 18 * s) + ',' + (cb - 13 * s) + 'L' + (x + 28 * s) + ',' + (cb - 11 * s) + 'V' + cb + 'Z', c: K.COL.ink, w: 2.6, fill: c.accent ? K.COL.acc : K.COL.red },
+        { t: 'circle', x: x - 16 * s, y: cb, r: 6 * s, c: K.COL.ink, w: 2.4, fill: K.COL.card }, { t: 'circle', x: x + 16 * s, y: cb, r: 6 * s, c: K.COL.ink, w: 2.4, fill: K.COL.card }]);
+    } else if (c.k === 'clock') { // h: hour, m: minutes
+      var ky = c.y || 40, kr = 14 * s, ha = ((c.h || 12) % 12 + (c.m || 0) / 60) * 30 - 90, ma = (c.m || 0) * 6 - 90;
+      out.push([{ t: 'circle', x: x, y: ky, r: kr, c: K.COL.ink, w: 2.4, fill: K.COL.card },
+        { t: 'path', d: 'M' + x + ',' + ky + 'L' + (x + kr * 0.5 * Math.cos(ha * Math.PI / 180)) + ',' + (ky + kr * 0.5 * Math.sin(ha * Math.PI / 180)), c: K.COL.ink, w: 2.6 },
+        { t: 'path', d: 'M' + x + ',' + ky + 'L' + (x + kr * 0.8 * Math.cos(ma * Math.PI / 180)) + ',' + (ky + kr * 0.8 * Math.sin(ma * Math.PI / 180)), c: K.COL.ink, w: 1.8 }]);
+    } else if (c.k === 'moon') {
+      var my = c.y || 34;
+      out.push({ t: 'path', d: 'M' + (x + 4) + ',' + (my - 12) + 'A12,12 0 1,0 ' + (x + 4) + ',' + (my + 12) + 'A9,9 0 1,1 ' + (x + 4) + ',' + (my - 12) + 'Z', c: K.COL.ink, w: 2, fill: K.COL.marker });
+    } else if (c.k === 'cloud') { // rain: true makes it rain
+      var ly = c.y || 36;
+      if (c.rain) {
+        var drops = '';
+        for (var dI = 0; dI < 6; dI++) { var dy2 = ((t / 9 + dI * 23) % (G - ly - 14)); drops += 'M' + (x - 18 * s + dI * 7 * s) + ',' + (ly + 10 + dy2) + 'l-2,7'; }
+        out.push({ t: 'path', d: drops, c: K.COL.water, w: 2 });
+      }
+      out.push({ t: 'path', d: 'M' + (x - 22 * s) + ',' + (ly + 8) + 'q' + -9 * s + ',0 ' + -8 * s + ',' + -8 * s + 'q0,' + -8 * s + ' ' + 10 * s + ',' + -8 * s + 'q' + 4 * s + ',' + -9 * s + ' ' + 14 * s + ',' + -6 * s + 'q' + 8 * s + ',' + -6 * s + ' ' + 15 * s + ',1q' + 11 * s + ',0 ' + 10 * s + ',' + 9 * s + 'q' + 3 * s + ',' + 11 * s + ' ' + -9 * s + ',' + 12 * s + 'Z', c: K.COL.ink, w: 2, fill: K.COL.card });
+    } else if (c.k === 'fish') {
+      var fy = (c.y || G - 7 * s);
+      out.push({ t: 'path', d: 'M' + (x + f * 11 * s) + ',' + fy + 'Q' + x + ',' + (fy - 9 * s) + ' ' + (x - f * 8 * s) + ',' + fy + 'L' + (x - f * 15 * s) + ',' + (fy - 6 * s) + 'V' + (fy + 6 * s) + 'L' + (x - f * 8 * s) + ',' + fy + 'Q' + x + ',' + (fy + 9 * s) + ' ' + (x + f * 11 * s) + ',' + fy + 'Z', c: K.COL.ink, w: 2.2, fill: K.COL.cold });
+    } else if (c.k === 'bag') {
+      var gy = c.y || G;
+      out.push([{ t: 'path', d: 'M' + (x - 5 * s) + ',' + (gy - 14 * s) + 'q0,' + -8 * s + ' ' + 5 * s + ',' + -8 * s + 'q' + 5 * s + ',0 ' + 5 * s + ',' + 8 * s, c: K.COL.ink, w: 2 },
+        { t: 'path', d: 'M' + (x - 10 * s) + ',' + gy + 'V' + (gy - 14 * s) + 'H' + (x + 10 * s) + 'V' + gy + 'Z', c: K.COL.ink, w: 2.4, fill: c.accent ? K.COL.acc : K.COL.red }]);
+    } else if (c.k === 'door') { // open: true shows it open
+      var dw = 13 * s, dh = 46 * s;
+      out.push({ t: 'path', d: 'M' + (x - dw) + ',' + G + 'V' + (G - dh) + 'H' + (x + dw) + 'V' + G, c: K.COL.ink, w: 3 });
+      if (c.open) out.push({ t: 'path', d: 'M' + (x - dw) + ',' + G + 'L' + (x - dw - 9 * s) + ',' + (G + 3 * s) + 'V' + (G - dh - 3 * s) + 'L' + (x - dw) + ',' + (G - dh) + 'Z', c: K.COL.ink, w: 2.4, fill: K.COL.book });
+      else out.push([{ t: 'path', d: 'M' + (x - dw) + ',' + G + 'V' + (G - dh) + 'H' + (x + dw) + 'V' + G + 'Z', c: K.COL.ink, w: 2.4, fill: K.COL.book }, { t: 'circle', x: x + dw - 5 * s, y: G - dh / 2, r: 1.8, fill: K.COL.ink }]);
+    } else if (c.k === 'window') {
+      var wy0 = c.y || 66, ws = 15 * s;
+      out.push({ t: 'path', d: 'M' + (x - ws) + ',' + (wy0 - ws) + 'H' + (x + ws) + 'V' + (wy0 + ws) + 'H' + (x - ws) + 'Z' + (c.open ? '' : 'M' + x + ',' + (wy0 - ws) + 'V' + (wy0 + ws) + 'M' + (x - ws) + ',' + wy0 + 'H' + (x + ws)), c: K.COL.ink, w: 2.6, fill: c.open ? K.COL.cold : K.COL.card });
+    } else if (c.k === 'bottle') out.push(K.bottle({ x: x, y: c.y || G, s: s }));
+    else if (c.k === 'coin') out.push([{ t: 'circle', x: x, y: (c.y || G) - 6 * s, r: 6 * s, c: K.COL.ink, w: 2, fill: K.COL.marker }, { t: 'path', d: 'M' + x + ',' + ((c.y || G) - 9 * s) + 'v' + 6 * s, c: K.COL.ink, w: 1.6 }]);
+    else if (c.k === 'flower') {
+      var fl0 = c.y || G;
+      out.push([{ t: 'path', d: 'M' + x + ',' + fl0 + 'V' + (fl0 - 22 * s), c: K.COL.leaf, w: 2.4 }]);
+      for (var pI = 0; pI < 5; pI++) { var pa = pI * 72 * Math.PI / 180; out.push({ t: 'circle', x: x + 5 * s * Math.cos(pa), y: fl0 - 26 * s + 5 * s * Math.sin(pa), r: 3.6 * s, c: K.COL.ink, w: 1.4, fill: c.accent ? K.COL.acc : K.COL.red }); }
+      out.push({ t: 'circle', x: x, y: fl0 - 26 * s, r: 2.6 * s, fill: K.COL.marker, c: K.COL.ink, w: 1.2 });
     } else if (c.k === 'bird') {
       var by = (c.y || 60) + 3 * Math.sin(t / 300), fl = 4 * Math.sin(t / 120);
       out.push({ t: 'path', d: 'M' + (x - 8) + ',' + (by - fl) + 'Q' + (x - 4) + ',' + (by - 4) + ' ' + x + ',' + by + 'Q' + (x + 4) + ',' + (by - 4) + ' ' + (x + 8) + ',' + (by - fl), c: K.COL.ink, w: 2 });
@@ -147,6 +196,8 @@ var BASIC_FILMS = (function () {
           prims.push(fig);
           if (c.holds) drawThing({ k: c.holds, s: 0.7, y: fig.hand[1] + 6 }, fig.hand[0], st, prims);
         } else drawThing(c, xj, st, prims);
+        // up: raise a figure or animal off the ground (a cat on a table: up 26)
+        if (c.up && (PEOPLE[c.k] || c.k === 'dog' || c.k === 'cat' || c.k === 'cow' || c.k === 'fish')) prims = [{ t: 'group', op: 1, transform: 'translate(0,' + (-c.up) + ')', prims: prims }];
         out.push(op < 1 ? [{ t: 'group', op: op, prims: prims }] : prims);
       }
       if (c.label && since(st, c.labelAt || 0) >= 0) {

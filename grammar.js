@@ -8,6 +8,7 @@
 // topics), then Try it. Getting at least two thirds of the exercises right finishes the topic.
 // Public API: BASIC_GRAMMAR.home(container, ctx), BASIC_GRAMMAR.lesson(container, ctx, topicId)
 //   ctx = { say(text, button, voice), result(id) -> best score or undefined, save(id, score), open(id), back(),
+//           reset() -> clears every grammar score (the map offers it after the learner types "yes"),
 //           link(text) -> html with every Basic 1000 word as a button that opens its word page }
 // The courses are one site: every word in a rule, an example or a film line opens that word's page
 // (which counts a visit), and from there its step in Basic 1000.
@@ -104,7 +105,8 @@ var BASIC_GRAMMAR = (function () {
         var bdone = b.rows.reduce(function (s, r) { return s + r.filter(function (n) { return states[n.id] === 'done'; }).length; }, 0);
         return '<section class="g-band"><h3 class="g-band-t"><span>' + esc(D.bands[b.band]) + '</span><small class="num">' + bdone + ' / ' + count + '</small></h3>' +
           b.rows.map(function (r) { return '<div class="g-row">' + r.map(pill).join('') + '</div>'; }).join('') + '</section>';
-      }).join('') + '</div>';
+      }).join('') + '</div>' +
+      (ctx.reset ? '<div class="g-reset"><button type="button" class="btn quiet g-reset-btn" id="gReset">Reset grammar progress</button></div>' : '');
 
     var map = el.querySelector('.g-map'), svg = map.querySelector('.g-edges');
     var focus = null;
@@ -153,6 +155,37 @@ var BASIC_GRAMMAR = (function () {
       if (b && !sheetOpen()) setFocus(b.dataset.id);
     });
     map.addEventListener('mouseleave', function () { if (!sheetOpen()) setFocus(null); });
+    var rb = el.querySelector('#gReset');
+    if (rb) rb.addEventListener('click', function () { openReset(ctx); });
+  }
+
+  // ---------- reset: every grammar topic back to not done, after typing "yes" ----------
+  function openReset(ctx) {
+    ensureScrim();
+    var tried = NODES.filter(function (n) { return ctx.result(n.id) != null; }).length;
+    var done = NODES.filter(function (n) { return isDone(ctx, n.id); }).length;
+    scrim.innerHTML = '<div class="sheet g-sheet g-reset-sheet" role="alertdialog" aria-modal="true" aria-labelledby="gResetT" aria-describedby="gResetW">' +
+      '<button class="btn quiet sheet-close" type="button" data-close>Close</button>' +
+      '<p class="eyebrow">Grammar</p><h2 class="g-sheet-t" id="gResetT">Reset grammar progress?</h2>' +
+      '<div class="g-warn" id="gResetW"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 21h20L12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 10v5M12 18v.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>' +
+      '<div><p><b>Warning: this can not be undone.</b></p>' +
+      '<p>Every grammar topic goes back to the start. You will lose ' + (tried
+        ? '<b class="num">' + done + '</b> finished ' + (done === 1 ? 'topic' : 'topics') + ' and your best scores in <b class="num">' + tried + '</b> ' + (tried === 1 ? 'topic' : 'topics')
+        : 'nothing yet, because you have not tried any topic') +
+      '. Only the first topic will be open again.</p>' +
+      '<p>This happens in this browser and, if you are signed in, in your account on every device. Your Basic 1000 words, steps, reviews and visit counts are not changed.</p></div></div>' +
+      '<label class="g-confirm"><span>Type <b>yes</b> to confirm</span><input type="text" id="gResetIn" autocomplete="off" autocapitalize="off" spellcheck="false" aria-describedby="gResetW"></label>' +
+      '<div class="row g-sheet-go"><button type="button" class="btn g-danger" id="gResetGo" disabled>Reset grammar progress</button>' +
+      '<button type="button" class="btn quiet" data-close>Keep my progress</button></div></div>';
+    scrim.hidden = false;
+    scrim.onclose = null;
+    var input = scrim.querySelector('#gResetIn'), go = scrim.querySelector('#gResetGo');
+    var ok = function () { return input.value.trim().toLowerCase() === 'yes'; };
+    input.addEventListener('input', function () { go.disabled = !ok(); });
+    input.addEventListener('keydown', function (e) { if (e.key === 'Enter' && ok()) go.click(); });
+    scrim.querySelectorAll('[data-close]').forEach(function (b) { b.addEventListener('click', closeSheet); });
+    go.addEventListener('click', function () { if (!ok()) return; closeSheet(); ctx.reset(); });
+    input.focus();
   }
 
   // ---------- the topic card (opens over the map) ----------
@@ -171,7 +204,7 @@ var BASIC_GRAMMAR = (function () {
       return '<button type="button" class="g-node is-' + s + '" data-go="' + id + '"><span class="g-node-ic">' + ICON[s] + '</span><span class="g-node-t">' + esc(BY[id].title) + '</span></button>';
     }).join('') + '</div>';
   }
-  function openSheet(ctx, id, states, setFocus) {
+  function ensureScrim() {
     if (!scrim) {
       scrim = document.createElement('div');
       scrim.className = 'scrim g-scrim';
@@ -184,6 +217,9 @@ var BASIC_GRAMMAR = (function () {
         if (e.key === 'Escape' && sheetOpen() && !(word && !word.hidden)) closeSheet();
       }, true);
     }
+  }
+  function openSheet(ctx, id, states, setFocus) {
+    ensureScrim();
     useLinks(ctx);
     var n = BY[id], s = states[id], best = ctx.result(id), les = LESSONS[id];
     var status = s === 'done' ? 'Done. Your best: <b class="num">' + best + ' / ' + total(id) + '</b>'
@@ -232,7 +268,11 @@ var BASIC_GRAMMAR = (function () {
   function answers(p, form) {
     if (form !== 'question') return [];
     var s = p.s === 'I' ? 'you' : p.s === 'you' ? 'I' : p.s;
-    var be = s === 'I' ? 'am' : s === 'you' || s === 'we' || s === 'they' ? 'are' : 'is';
+    var many = s === 'you' || s === 'we' || s === 'they';
+    // the answer repeats the first word of the question: am/is/are and was/were follow the new subject,
+    // other words (can, will, should) stay the same
+    var be = /^(am|is|are)$/.test(p.be) ? (s === 'I' ? 'am' : many ? 'are' : 'is')
+      : /^(was|were)$/.test(p.be) ? (many ? 'were' : 'was') : p.be;
     return ['Yes, ' + subj(s, false) + ' ' + be + '.', 'No, ' + subj(s, false) + ' ' + be + ' not.'];
   }
   // move tiles to their new order with a FLIP animation (first, last, invert, play)

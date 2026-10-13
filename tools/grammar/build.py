@@ -14,7 +14,8 @@ Rules checked here:
         directly or further back, and
       - words the node or an earlier needed node "teaches" (although, either ...);
     example sentences, board words and exercise sentences may use the taught words but not terms;
-  * the first FULL nodes in the list have a complete lesson (content/grammar/lessons.py);
+  * every node in the FULL_BANDS has a complete lesson (content/grammar/lessons*.py), and each
+    exercise is well formed (the right answer is among the options, and so on);
   * a line spoken by a woman or girl in a film uses Sarah's voice.
 """
 import json
@@ -31,7 +32,7 @@ from audio_items import voice_for  # noqa: E402  (same rule as voiceFor in audio
 from curriculum import NODES, BANDS  # noqa: E402
 from lessons import LESSONS  # noqa: E402
 
-FULL = 10  # this many nodes, from the start of the list, must have a complete lesson
+FULL_BANDS = ('start', 'elementary')  # every node in these bands must have a complete lesson
 WOMEN = {'woman', 'girl'}
 # letters and word endings, written as spelling in rules ("add s", "ends in ing"): not vocabulary
 LETTERS = set('abcdefghijklmnopqrstuvwxyz') | {'es', 'ed', 'ing', 'er', 'est', 'ly', 'ch', 'sh'}
@@ -104,9 +105,9 @@ def main():
             problems.append(f"{nid}: needs at least 1 point and 2 examples")
 
     # lessons
-    for i, n in enumerate(NODES[:FULL]):
-        if n['id'] not in LESSONS:
-            problems.append(f"{n['id']}: one of the first {FULL} nodes but has no lesson")
+    for n in NODES:
+        if n['band'] in FULL_BANDS and n['id'] not in LESSONS:
+            problems.append(f"{n['id']}: in band {n['band']} but has no lesson")
     for nid, les in LESSONS.items():
         if nid not in by_id:
             problems.append(f"lesson {nid}: no such node")
@@ -139,6 +140,29 @@ def main():
             for f in ('tiles', 'words', 'opts'):
                 if t.get(f):
                     check(nid, f'task {k + 1} {f}', ' '.join(t[f]), with_terms=False)
+        if les.get('machine'):
+            for ms in machine_sentences(les['machine']):
+                check(nid, 'machine', ms, with_terms=False)
+        kinds = [t.get('kind') for t in les.get('tasks', [])]
+        if len(kinds) < 6 or any(k not in ('pick', 'build', 'fix', 'tap') for k in kinds):
+            problems.append(f"lesson {nid}: needs 6 exercises of known kinds, has {kinds}")
+        for k, t in enumerate(les.get('tasks', [])):
+            if t.get('kind') == 'pick' and t.get('right') not in t.get('opts', []):
+                problems.append(f"lesson {nid} task {k + 1}: the right answer is not one of the options")
+            if t.get('kind') == 'build' and sorted(t['tiles']) != sorted(t['right']):
+                problems.append(f"lesson {nid} task {k + 1}: tiles and right order do not match")
+            if t.get('kind') == 'fix' and t.get('right') not in t.get('opts', []):
+                problems.append(f"lesson {nid} task {k + 1}: the right word is not one of the options")
+            if t.get('kind') == 'tap' and any(i >= len(t['words']) for i in t['right']):
+                problems.append(f"lesson {nid} task {k + 1}: a right index is past the last word")
+        for s_i, shot in enumerate(les.get('film', [])):
+            n_lines = len(shot.get('lines', []))
+            for b in shot.get('board', []):
+                if b.get('at', 0) >= n_lines:
+                    problems.append(f"lesson {nid} film {s_i + 1}: a board state comes at line {b.get('at')} but the shot has {n_lines} lines")
+                for key in list(b.get('r', {})) + list(b.get('tag', {})):
+                    if int(key) >= len(b['w']):
+                        problems.append(f"lesson {nid} film {s_i + 1}: a role or tag points past the last word")
         if not les.get('film') or not les.get('tasks') or not les.get('rule'):
             problems.append(f"lesson {nid}: needs film, rule and tasks")
 
@@ -189,7 +213,9 @@ def machine_sentences(m):
             if form == 'question':
                 out.append(f"{cap(p['be'])} {subj(p['s'], False)} {p['rest']}?")
                 s = 'you' if p['s'] == 'I' else 'I' if p['s'] == 'you' else p['s']
-                be = 'am' if s == 'I' else 'are' if s in ('you', 'we', 'they') else 'is'
+                many = s in ('you', 'we', 'they')
+                be = (('am' if s == 'I' else 'are' if many else 'is') if p['be'] in ('am', 'is', 'are')
+                      else ('were' if many else 'was') if p['be'] in ('was', 'were') else p['be'])
                 out.append(f"Yes, {subj(s, False)} {be}.")
                 out.append(f"No, {subj(s, False)} {be} not.")
             elif form == 'not':

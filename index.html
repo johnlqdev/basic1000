@@ -422,6 +422,18 @@ h1, h2, h3 { text-wrap: balance; margin: 0; font-weight: 400; }
 .g-links { display: flex; flex-wrap: wrap; gap: 8px; }
 .g-links .g-node { max-width: 100%; }
 
+.g-reset { margin-top: 34px; padding-top: 18px; border-top: 1px solid var(--rule); display: flex; justify-content: flex-end; }
+.g-reset-btn { color: var(--bad); font-size: .9rem; }
+.g-reset-btn:hover { color: var(--bad); text-decoration: underline; }
+.g-warn { display: flex; gap: 12px; align-items: flex-start; background: var(--bad-soft); color: var(--ink); border: 1px solid color-mix(in srgb, var(--bad) 45%, transparent); border-radius: 12px; padding: 14px 16px; margin: 6px 0 16px; }
+.g-warn svg { flex: none; width: 24px; height: 24px; color: var(--bad); margin-top: 1px; }
+.g-warn p { margin: 0 0 8px; } .g-warn p:last-child { margin-bottom: 0; }
+.g-confirm { display: grid; gap: 6px; font-size: .95rem; }
+.g-confirm input { font: inherit; font-size: 1.05rem; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--rule); background: var(--paper); color: var(--ink); max-width: 240px; }
+.g-confirm input:focus { outline: 2px solid var(--bad); outline-offset: 1px; border-color: transparent; }
+.btn.g-danger { background: var(--bad); border-color: var(--bad); color: var(--card); }
+.btn.g-danger:disabled { opacity: .4; cursor: not-allowed; }
+
 /* grammar: a topic page */
 .g-lesson-head .eyebrow { margin: 0 0 8px; }
 .g-builds { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin-top: 16px; font-size: .9rem; }
@@ -695,7 +707,7 @@ function startApp(W, QUIZ) {
   const LS_KEY = 'basic1000-progress-v1';
   // Progress v2: done = { step: best score }, boxes = { headword: [box, due time] },
   // views = { headword: how many times the learner opened that word's page },
-  // grammar = { topic: best score in its exercises },
+  // grammar = { topic: best score in its exercises }, gr = time grammar was last reset (0 = never),
   // learned = { headword: time it was learned } (all of its learning buttons tapped in order, see renderLesson).
   // Boxes are keyed by word so a change to the step order keeps what was learned.
   const COURSE_VERSION = 'c2';
@@ -703,7 +715,7 @@ function startApp(W, QUIZ) {
   W.forEach((w, i) => { WI[w.w] = i; });
   const box = i => P.boxes[W[i].w];
   const setBox = (i, b) => { P.boxes[W[i].w] = b; };
-  let P = { v: 2, cv: COURSE_VERSION, done: {}, boxes: {}, views: {}, learned: {}, grammar: {} };
+  let P = { v: 2, cv: COURSE_VERSION, done: {}, boxes: {}, views: {}, learned: {}, grammar: {}, gr: 0 };
   let storeMode = 'browser', sb = null, session = null, pushTimer = null, lastSync = null;
   const SUPABASE_URL = 'https://duptugctgzemfczbtvgj.supabase.co';
   const SUPABASE_KEY = 'sb_publishable_4tPlF-9fs5oQtKGngr-TIQ_ancGSJHu';
@@ -714,8 +726,8 @@ function startApp(W, QUIZ) {
   }
   function normal(p) {
     // v1 records keyed boxes by position in the old word order, which no longer matches: start fresh
-    if (!p || p.v !== 2) return { v: 2, cv: COURSE_VERSION, done: {}, boxes: {}, views: {}, learned: {}, grammar: {} };
-    const out = { v: 2, cv: COURSE_VERSION, done: p.done || {}, boxes: {}, views: {}, learned: {}, grammar: { ...(p.grammar || {}) } };
+    if (!p || p.v !== 2) return { v: 2, cv: COURSE_VERSION, done: {}, boxes: {}, views: {}, learned: {}, grammar: {}, gr: 0 };
+    const out = { v: 2, cv: COURSE_VERSION, done: p.done || {}, boxes: {}, views: {}, learned: {}, grammar: { ...(p.grammar || {}) }, gr: +p.gr || 0 };
     Object.entries(p.learned || {}).forEach(([w, t]) => { if (w in WI) out.learned[w] = t; });
     Object.entries(p.boxes || {}).forEach(([w, b]) => { if (w in WI) out.boxes[w] = b; });
     Object.entries(p.views || {}).forEach(([w, n]) => { if (w in WI && n > 0) out.views[w] = Math.floor(n); });
@@ -749,7 +761,10 @@ function startApp(W, QUIZ) {
     // views: the higher count of the two (each device counts its own visits; summing would count twice)
     Object.entries(b.views || {}).forEach(([w, n]) => { if (w in WI) out.views[w] = Math.max(n, out.views[w] || 0); });
     Object.entries(b.learned || {}).forEach(([w, t]) => { if (w in WI) out.learned[w] = Math.min(t, out.learned[w] || t); });
-    Object.entries(b.grammar || {}).forEach(([g, sc]) => { out.grammar[g] = Math.max(sc, out.grammar[g] ?? -1); });
+    // grammar: if one side was reset later, the other side's scores are from before that reset and are dropped
+    const gb = +b.gr || 0;
+    if (gb > out.gr) { out.grammar = { ...(b.grammar || {}) }; out.gr = gb; }
+    else if (gb === out.gr) Object.entries(b.grammar || {}).forEach(([g, sc]) => { out.grammar[g] = Math.max(sc, out.grammar[g] ?? -1); });
     return out;
   }
 
@@ -924,15 +939,19 @@ function startApp(W, QUIZ) {
   const LOCK_ICON = '<svg class="lock" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5" fill="currentColor"/>' +
     '<path d="M8.5 10.5V8a3.5 3.5 0 0 1 7 0v2.5" fill="none" stroke="currentColor" stroke-width="2.2"/></svg>';
   // a locked step was asked for: stay on the path and say what opens it
+  // a short note at the bottom of the screen; html is trusted markup
+  function toast(html) {
+    let t = document.getElementById('toast');
+    if (!t) { t = document.createElement('div'); t.id = 'toast'; t.className = 'toast'; t.setAttribute('role', 'status'); document.body.appendChild(t); }
+    t.innerHTML = html.indexOf('<') === 0 ? html : `<span>${esc(html)}</span>`;
+    t.classList.remove('show'); void t.offsetWidth; t.classList.add('show');
+    clearTimeout(toast.timer);
+    toast.timer = setTimeout(() => t.classList.remove('show'), 3200);
+  }
   function lockedNote(step) {
     const n = nextStep();
     if (current.view !== 'path') { current = { view: 'path', arg: null }; setNav('path'); renderPath(); }
-    let t = document.getElementById('toast');
-    if (!t) { t = document.createElement('div'); t.id = 'toast'; t.className = 'toast'; t.setAttribute('role', 'status'); document.body.appendChild(t); }
-    t.innerHTML = `${LOCK_ICON}<span>Step ${step} opens after you finish step ${step - 1}.${n < step - 1 ? ` You are on step ${n} now.` : ''}</span>`;
-    t.classList.remove('show'); void t.offsetWidth; t.classList.add('show');
-    clearTimeout(lockedNote.timer);
-    lockedNote.timer = setTimeout(() => t.classList.remove('show'), 3200);
+    toast(`${LOCK_ICON}<span>Step ${step} opens after you finish step ${step - 1}.${n < step - 1 ? ` You are on step ${n} now.` : ''}</span>`);
   }
   // the course menu on the left: Basic 1000 (path, review, dictionary) or Grammar
   function setCourse(c) {
@@ -949,6 +968,7 @@ function startApp(W, QUIZ) {
     save: (id, score) => { P.grammar[id] = Math.max(score, P.grammar[id] ?? -1); save(); },
     open: id => route('grammar', { topic: id }),
     back: () => route('grammar'),
+    reset: () => { P.grammar = {}; P.gr = Date.now(); save(); route('grammar'); toast('Grammar progress is reset. Start again from the first topic.'); },
   };
   function route(view, arg, keepScroll) {
     current = { view, arg };
