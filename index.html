@@ -515,7 +515,8 @@ h1, h2, h3 { text-wrap: balance; margin: 0; font-weight: 400; }
 .gt-gap.is-wrong, .gt-built.is-wrong .gt-placed, .gt-word.is-wrong { background: var(--bad-soft); border-color: var(--bad); color: var(--bad); }
 .gt-hint { font-family: var(--body); font-size: .95rem; }
 .gt-placed { font-size: inherit; padding: 2px 12px 4px; cursor: pointer; color: inherit; }
-.gt-placed:hover:not(:disabled) { border-color: var(--bad); text-decoration: line-through; text-decoration-color: var(--bad); text-decoration-thickness: 2px; }
+/* the "take it back" look: only while a mouse moves over a word in the sentence (set in grammar.js) */
+.gt-placed.gt-hover:not(:disabled) { border-color: var(--bad); text-decoration: line-through; text-decoration-color: var(--bad); text-decoration-thickness: 2px; }
 .gt-placed:disabled { cursor: default; }
 .gt-build-go { margin-top: 14px; }
 .gt-undo-ic { width: 17px; height: 17px; }

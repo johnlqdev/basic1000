@@ -489,7 +489,10 @@ var BASIC_GRAMMAR = (function () {
         var glide = function (el, from) {
           if (reduce || !from) return;
           var r2 = el.getBoundingClientRect();
-          el.animate([{ transform: 'translate(' + (from.left - r2.left) + 'px,' + (from.top - r2.top) + 'px)' }, { transform: 'none' }], { duration: 300, easing: 'cubic-bezier(.3,.7,.2,1)' });
+          // while a word is moving it shows no hover look (it starts under the pointer)
+          el.classList.add('gt-moving');
+          el.animate([{ transform: 'translate(' + (from.left - r2.left) + 'px,' + (from.top - r2.top) + 'px)' }, { transform: 'none' }], { duration: 300, easing: 'cubic-bezier(.3,.7,.2,1)' })
+            .finished.then(function () { el.classList.remove('gt-moving'); }, function () { el.classList.remove('gt-moving'); });
         };
         var refresh = function () {
           undo.disabled = !built.length;
@@ -521,6 +524,10 @@ var BASIC_GRAMMAR = (function () {
             tile.textContent = t.tiles[i];
             tile.setAttribute('aria-label', t.tiles[i] + ', touch to put it back');
             tile.addEventListener('click', function () { takeBack(i); });
+            // the "put it back" look shows only while a real pointer moves over the word: a word that
+            // glides in under a resting pointer, or a tap on a phone, does not trigger it
+            tile.addEventListener('pointermove', function (ev) { if (ev.pointerType === 'mouse' && (ev.movementX || ev.movementY) && !tile.classList.contains('gt-moving')) tile.classList.add('gt-hover'); });
+            tile.addEventListener('pointerleave', function () { tile.classList.remove('gt-hover'); });
             sent.appendChild(tile);
             glide(tile, from);
             b.disabled = true;
