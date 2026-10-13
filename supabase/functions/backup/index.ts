@@ -1,21 +1,26 @@
 // backup: copies everything that is not code into one Dropbox folder, and a snapshot of the code too.
 //
+// Layout in Dropbox (under /basic1000-backup in the app's folder):
+//   audio/                one mirror of the 'audio' storage bucket, path for path. Files are added or
+//                         updated, never duplicated, so it costs the bucket's size once.
+//   snapshots/<date>/     progress.json (the progress table) and basic1000-<commit>.zip (the GitHub repo).
+//                         Only the newest KEEP (5) snapshots are kept; older ones are deleted.
+//   manifest.json         what is there, when it was written, and how to restore.
+//
 // Admin only (header x-admin-token). POST JSON { action }:
 //   check     can we reach Dropbox? -> { ok, folder, entries }
 //   audio     copy up to `limit` (default 400, at most 1000) audio files that are new or changed since
-//             their last copy -> { copied, failed, pending }. Call again until pending is 0. Every file keeps its
-//             path: audio/v2/us_daniel/<hash>.mp3, audio/slow1/..., audio/refs/qwen_daniel.wav
-//   database  a dated JSON export of the progress table -> database/progress-<date>.json
-//   code      a zip of the GitHub repo at the newest commit on main -> code/basic1000-<date>-<sha>.zip
-//   manifest  manifest.json: when each part was last backed up, and how much is in it
-//   all       database + code + one audio batch + manifest (the scheduled run; use a small limit)
+//             their last copy -> { copied, failed, pending }. Call again until pending is 0.
+//   snapshot  today's snapshot folder, then delete all but the newest KEEP snapshots
+//   manifest  rewrite manifest.json
+//   all       snapshot + one audio batch + manifest (the weekly scheduled run)
 //   status    how much of the audio is backed up, with no Dropbox call
+// Scheduled in the database with pg_cron (migration 0004): weekly "all", daily "audio".
 //
-// Dropbox: an app with "App folder" access, so it can only see Apps/<app name>/ in the owner's
-// Dropbox. Everything goes under /basic1000-backup inside that folder.
-// Secrets (set by the owner in the Supabase dashboard): DROPBOX_APP_KEY, DROPBOX_APP_SECRET,
-// DROPBOX_REFRESH_TOKEN. SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are provided by the platform.
-// The backup_log table (migration 0003) remembers which storage files are copied already.
+// Dropbox: the app's folder is the only place the function can see. Secrets (set by the owner in the
+// Supabase dashboard): DROPBOX_APP_KEY, DROPBOX_APP_SECRET, DROPBOX_REFRESH_TOKEN. SUPABASE_URL and
+// SUPABASE_SERVICE_ROLE_KEY are provided by the platform. The backup_log table (migration 0003)
+// remembers which storage files are copied already.
 
 const SB = Deno.env.get("SUPABASE_URL") ?? "";
 const SERVICE = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "";
@@ -26,6 +31,7 @@ const DBX_REFRESH = Deno.env.get("DROPBOX_REFRESH_TOKEN") ?? "";
 const ADMIN_HASH = "fd386d8929b80a4bcadc5ada75095c854d0efbb50fb431ed975786cd6ad36fc8";
 const ROOT = "/basic1000-backup";
 const REPO = "johnlqdev/basic1000";
+const KEEP = 5; // snapshots to keep
 const BUDGET_MS = 90_000; // stop starting new uploads after this long, so a call ends in time
 
 const json = (body: unknown, status = 200) =>
@@ -69,7 +75,7 @@ async function dropboxToken() {
   return token;
 }
 // Dropbox wants the JSON argument header in plain ASCII
-const asciiJson = (o: unknown) => JSON.stringify(o).replace(/[\u007f-￿]/g, (c) => "\\u" + c.charCodeAt(0).toString(16).padStart(4, "0"));
+const asciiJson = (o: unknown) => JSON.stringify(o).replace(/[\u007f-\uffff]/g, (c) => "\\u" + c.charCodeAt(0).toString(16).padStart(4, "0"));
 async function upload(path: string, body: Uint8Array) {
   for (let attempt = 0; ; attempt++) {
     const r = await fetch("https://content.dropboxapi.com/2/files/upload", {
@@ -92,14 +98,26 @@ async function upload(path: string, body: Uint8Array) {
     throw new Error(`upload ${path}: ${r.status} ${text.slice(0, 200)}`);
   }
 }
-async function dropboxList() {
-  const r = await fetch("https://api.dropboxapi.com/2/files/list_folder", {
+async function dropboxApi(endpoint: string, args: unknown) {
+  const r = await fetch("https://api.dropboxapi.com/2/files/" + endpoint, {
     method: "POST",
     headers: { authorization: `Bearer ${await dropboxToken()}`, "content-type": "application/json" },
-    body: JSON.stringify({ path: "", recursive: false }),
+    body: JSON.stringify(args),
   });
-  if (!r.ok) throw new Error(`list: ${r.status} ${await r.text()}`);
-  return (await r.json()).entries as { name: string }[];
+  const text = await r.text();
+  return { ok: r.ok, status: r.status, body: text ? JSON.parse(text) : null, text };
+}
+// the names in one folder ("" is the app folder itself); a folder that is not there yet is empty
+async function dropboxList(path = "") {
+  const r = await dropboxApi("list_folder", { path, recursive: false });
+  if (r.status === 409 && r.text.includes("not_found")) return [];
+  if (!r.ok) throw new Error(`list ${path}: ${r.status} ${r.text.slice(0, 200)}`);
+  return r.body.entries as { name: string; ".tag": string }[];
+}
+async function dropboxDelete(path: string) {
+  const r = await dropboxApi("delete_v2", { path });
+  if (r.ok || (r.status === 409 && r.text.includes("not_found"))) return r.ok;
+  throw new Error(`delete ${path}: ${r.status} ${r.text.slice(0, 200)}`);
 }
 
 // ---------- the parts ----------
@@ -165,26 +183,28 @@ async function backupAudio(limit: number, started: number) {
   return { copied, failed: failed.slice(0, 10), failures: failed.length, ...c };
 }
 
-async function backupDatabase() {
+async function snapshot() {
+  const date = today(), dir = `snapshots/${date}`;
+  // the progress table
   const r = await fetch(`${SB}/rest/v1/progress?select=*`, { headers: sbHeaders });
   if (!r.ok) throw new Error(`progress: ${r.status} ${await r.text()}`);
   const rows = await r.json();
-  const body = new TextEncoder().encode(JSON.stringify({ table: "progress", exported_at: new Date().toISOString(), rows }, null, 1));
-  const path = `database/progress-${today()}.json`;
-  await upload(path, body);
-  return { path, rows: rows.length };
-}
-
-async function backupCode() {
+  await upload(`${dir}/progress.json`, new TextEncoder().encode(JSON.stringify({ table: "progress", exported_at: new Date().toISOString(), rows }, null, 1)));
+  // the code, at the newest commit on main
   const c = await fetch(`https://api.github.com/repos/${REPO}/commits/main`, { headers: { "user-agent": "basic1000-backup", accept: "application/vnd.github+json" } });
   if (!c.ok) throw new Error(`GitHub commit: ${c.status}`);
   const sha: string = (await c.json()).sha;
   const z = await fetch(`https://codeload.github.com/${REPO}/zip/${sha}`, { headers: { "user-agent": "basic1000-backup" } });
   if (!z.ok) throw new Error(`GitHub zip: ${z.status}`);
-  const body = new Uint8Array(await z.arrayBuffer());
-  const path = `code/basic1000-${today()}-${sha.slice(0, 7)}.zip`;
-  await upload(path, body);
-  return { path, sha, bytes: body.length };
+  const zip = new Uint8Array(await z.arrayBuffer());
+  await upload(`${dir}/basic1000-${sha.slice(0, 7)}.zip`, zip);
+  // keep the newest KEEP snapshots (folder names are dates, so they sort in time order)
+  const all = (await dropboxList(ROOT + "/snapshots")).filter((e) => e[".tag"] === "folder").map((e) => e.name).sort().reverse();
+  const removed: string[] = [];
+  for (const old of all.slice(KEEP)) { await dropboxDelete(`${ROOT}/snapshots/${old}`); removed.push(old); }
+  // the first version wrote database/ and code/ at the top; those now live in snapshots/
+  for (const legacy of ["database", "code"]) if (await dropboxDelete(`${ROOT}/${legacy}`)) removed.push(legacy);
+  return { folder: dir, rows: rows.length, commit: sha, zip_bytes: zip.length, kept: all.slice(0, KEEP), removed };
 }
 
 async function writeManifest(parts: Record<string, unknown>) {
@@ -193,9 +213,10 @@ async function writeManifest(parts: Record<string, unknown>) {
     project: "Basic 1000",
     written_at: new Date().toISOString(),
     folder: ROOT,
-    audio: { ...c, note: "audio/ mirrors the public 'audio' bucket in Supabase storage, path for path" },
+    audio: { ...c, note: "audio/ mirrors the public 'audio' bucket in Supabase storage, path for path (one copy, kept up to date)" },
+    snapshots: { keep: KEEP, folders: (await dropboxList(ROOT + "/snapshots")).map((e) => e.name).sort().reverse() },
     last_run: parts,
-    restore: "Audio: upload audio/* back into the 'audio' bucket at the same paths. Database: insert database/progress-*.json rows into public.progress. Code: the zip is the GitHub repo; secrets are not backed up and live in the Supabase dashboard.",
+    restore: "Audio: upload audio/* back into the 'audio' bucket at the same paths. Progress: insert snapshots/<date>/progress.json rows into public.progress. Code: snapshots/<date>/basic1000-<commit>.zip is the GitHub repo at that commit. Secrets are not backed up; they live in the Supabase dashboard.",
   };
   await upload("manifest.json", new TextEncoder().encode(JSON.stringify(manifest, null, 1)));
   return manifest;
@@ -212,18 +233,15 @@ Deno.serve(async (req) => {
   try {
     if (action === "status") return json((await rpc("backup_counts"))[0]);
     if (action === "check") {
-      const entries = await dropboxList();
+      const entries = await dropboxList(ROOT);
       return json({ ok: true, folder: ROOT, entries: entries.map((e) => e.name) });
     }
     if (action === "audio") return json(await backupAudio(limit, started));
-    if (action === "database") return json(await backupDatabase());
-    if (action === "code") return json(await backupCode());
+    if (action === "snapshot") return json(await snapshot());
     if (action === "manifest") return json(await writeManifest({}));
     if (action === "all") {
       const out: Record<string, unknown> = {};
-      for (const [name, fn] of [["database", backupDatabase], ["code", backupCode]] as const) {
-        try { out[name] = await fn(); } catch (e) { out[name] = { error: (e as Error).message }; }
-      }
+      try { out.snapshot = await snapshot(); } catch (e) { out.snapshot = { error: (e as Error).message }; }
       try { out.audio = await backupAudio(limit, started); } catch (e) { out.audio = { error: (e as Error).message }; }
       out.manifest = (await writeManifest(out)).written_at;
       return json(out);

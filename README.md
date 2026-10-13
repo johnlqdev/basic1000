@@ -24,7 +24,7 @@ Live site: https://basic-1000.vercel.app
 | `tools/build_data.py` | Rebuilds the four data files from `content/course.json` |
 | `supabase/migrations/` | Database table and security rules for saved progress; the public `audio` bucket |
 | `supabase/functions/tts/index.ts` | Text-to-speech function: text + voice in, MP3 address out |
-| `supabase/functions/backup/index.ts` | Backup function: copies the audio, the progress table and a code snapshot to Dropbox (see Backups) |
+| `supabase/functions/backup/index.ts` | Backup function: copies the audio, the progress table and a code snapshot to Dropbox, keeping the newest 5 snapshots (see Backups) |
 | `tools/tts-lab/lab_server.py` | Voice server for the GPU pod: Qwen3-TTS |
 | `tools/quiz/` | Quiz check tools: makes sure every quiz question has only one right answer |
 | `tools/audio_items.py` | Lists the clips a range of steps needs, as a request for the tts function |
@@ -82,14 +82,15 @@ From this folder: `npx vercel --prod` (Vercel project `basic-1000`). Only the we
 
 ## Backups
 
-Code and course content are in GitHub. Everything else is copied to Dropbox by the `backup` edge function, into one folder: `basic1000-backup/` inside the Dropbox app's folder.
+Code and course content are in GitHub. Everything else is copied to Dropbox by the `backup` edge function, into one folder: `basic1000-backup/` inside the Dropbox app's folder. Nothing outside that folder is touched.
 
-- `audio/`: every file in the `audio` storage bucket, path for path (word and sentence clips, slow clips and their timing, and `refs/`, the reference recordings that define Daniel's and Sarah's voices).
-- `database/progress-<date>.json`: the learners' saved progress.
-- `code/basic1000-<date>-<commit>.zip`: the GitHub repo at that commit.
-- `manifest.json`: when each part was last copied, and how to restore.
+- `audio/`: one copy of every file in the `audio` storage bucket, path for path (word and sentence clips, slow clips and their timing, and `refs/`, the reference recordings that define Daniel's and Sarah's voices). New and changed files are added; nothing is duplicated, so it takes the bucket's size once (about 310 MB).
+- `snapshots/<date>/`: `progress.json` (the learners' saved progress) and `basic1000-<commit>.zip` (the GitHub repo at that commit), about 1 MB each week. Only the newest 5 snapshots are kept; older ones are deleted.
+- `manifest.json`: what is there, when it was written, and how to restore.
 
-The `backup_log` table remembers which storage files are copied, so a run sends only new or changed files. Run it from SQL with the admin token (as for the tts function): `{"action":"all"}` does the database, the code and one batch of audio; `{"action":"audio","limit":400}` copies more audio, until `pending` is 0; `{"action":"status"}` reports progress. Secrets `DROPBOX_APP_KEY`, `DROPBOX_APP_SECRET` and `DROPBOX_REFRESH_TOKEN` are set in the Supabase dashboard. Secrets themselves are not backed up: keep them in a password manager.
+**Schedule** (pg_cron in the database, migration `0004_backup_schedule.sql`): every Sunday at 03:17 Singapore time a snapshot, one batch of audio and the manifest; every day at 03:37 any new or changed audio (up to 700 files; when nothing changed it costs one database query). Results are in `net._http_response`; the jobs are listed in `cron.job`.
+
+The `backup_log` table remembers which storage files are copied. To run by hand from SQL with the admin token (as for the tts function): `{"action":"all"}`, `{"action":"snapshot"}`, `{"action":"audio","limit":700}` (repeat until `pending` is 0) or `{"action":"status"}`. Secrets `DROPBOX_APP_KEY`, `DROPBOX_APP_SECRET` and `DROPBOX_REFRESH_TOKEN` are set in the Supabase dashboard. Secrets themselves are not backed up: keep them in a password manager.
 
 ## Services
 
