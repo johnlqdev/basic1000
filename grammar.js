@@ -110,23 +110,72 @@ var BASIC_GRAMMAR = (function () {
 
     var map = el.querySelector('.g-map'), svg = map.querySelector('.g-edges');
     var focus = null;
+    // Lines: a gentle S from a topic down to the one it opens. A line that skips rows would pass
+    // behind the topics in between and look as if it started or ended there, so instead it threads
+    // through the gaps between topics in every row it crosses, then is smoothed into one curve.
+    // Routes are worked out once per layout.
+    var routes = {}, routeKey = '';
+    var smooth = window.d3 && d3.line ? d3.line().curve(d3.curveMonotoneY) : null;
+    function rowsOf(rects) { // the visual lines of topics (a long row can wrap), top to bottom
+      var lines = [];
+      rects.slice().sort(function (p, q) { return p.top - q.top || p.left - q.left; }).forEach(function (r) {
+        var line = lines.length && Math.abs(lines[lines.length - 1].top - r.top) < 6 ? lines[lines.length - 1] : null;
+        if (!line) { line = { top: r.top, bottom: r.bottom, items: [] }; lines.push(line); }
+        line.items.push(r); line.bottom = Math.max(line.bottom, r.bottom);
+      });
+      return lines;
+    }
+    function gapX(line, want, width) { // the x nearest to `want` where a line can pass through this row
+      var best = null, items = line.items, edges = [[-Infinity, items[0].left]];
+      for (var i = 0; i + 1 < items.length; i++) edges.push([items[i].right, items[i + 1].left]);
+      edges.push([items[items.length - 1].right, Infinity]);
+      edges.forEach(function (g) {
+        var lo = Math.max(g[0] + 9, 4), hi = Math.min(g[1] - 9, width - 4);
+        if (lo > hi) { if (g[1] - g[0] >= 6 && isFinite(g[0]) && isFinite(g[1])) lo = hi = (g[0] + g[1]) / 2; else return; }
+        var x = Math.min(hi, Math.max(lo, want));
+        if (!best || Math.abs(x - want) < Math.abs(best - want)) best = x;
+      });
+      return best == null ? want : best;
+    }
+    function route(a, c, lines, width) {
+      var y1 = a.bottom, y2 = c.top, mid = lines.filter(function (l) { return l.top > y1 + 2 && l.bottom < y2 - 2; });
+      if (!mid.length || !smooth) {
+        var m = Math.max(18, (y2 - y1) / 2);
+        return 'M' + a.x + ',' + y1 + 'C' + a.x + ',' + (y1 + m) + ' ' + c.x + ',' + (y2 - m) + ' ' + c.x + ',' + y2;
+      }
+      var pts = [[a.x, y1]];
+      mid.forEach(function (l) {
+        var k = ((l.top + l.bottom) / 2 - y1) / (y2 - y1), x = gapX(l, a.x + (c.x - a.x) * k, width);
+        pts.push([x, l.top - 5], [x, l.bottom + 5]);
+      });
+      pts.push([c.x, y2]);
+      return smooth(pts);
+    }
     function draw() {
       if (!map.isConnected) { if (ro) ro.disconnect(); return; }
-      var box = map.getBoundingClientRect(), pos = {};
+      var box = map.getBoundingClientRect(), pos = {}, rects = [];
+      if (box.width < 60) return; // not laid out yet (or hidden)
       map.querySelectorAll('.g-row .g-node').forEach(function (b) {
         var r = b.getBoundingClientRect();
-        pos[b.dataset.id] = { x: r.left - box.left + r.width / 2, top: r.top - box.top, bottom: r.bottom - box.top };
+        var p = { id: b.dataset.id, x: r.left - box.left + r.width / 2, left: r.left - box.left, right: r.right - box.left, top: r.top - box.top, bottom: r.bottom - box.top };
+        pos[p.id] = p; rects.push(p);
       });
+      // the layout changes when the width changes or the fonts arrive: recompute the routes then
+      var key = Math.round(box.width) + ':' + rects.map(function (r) { return Math.round(r.left) + ',' + Math.round(r.top); }).join(';');
+      if (key !== routeKey) {
+        routeKey = key; routes = {};
+        var lines = rowsOf(rects);
+        EDGES.forEach(function (e) { if (pos[e[0]] && pos[e[1]]) routes[e[0] + '>' + e[1]] = route(pos[e[0]], pos[e[1]], lines, box.width); });
+      }
       svg.setAttribute('width', box.width); svg.setAttribute('height', box.height);
       svg.setAttribute('viewBox', '0 0 ' + box.width + ' ' + box.height);
       var lit = focus ? Object.assign({}, ANC[focus], (function () { var o = {}; o[focus] = 1; return o; })()) : null;
       svg.innerHTML = EDGES.map(function (e) {
-        var a = pos[e[0]], c = pos[e[1]];
-        if (!a || !c) return '';
-        var y1 = a.bottom, y2 = c.top, m = Math.max(18, (y2 - y1) / 2);
+        var d = routes[e[0] + '>' + e[1]];
+        if (!d) return '';
         var cls = states[e[0]] === 'done' && states[e[1]] === 'done' ? 'on' : states[e[0]] === 'done' && states[e[1]] === 'open' ? 'next' : '';
         if (focus) cls += lit[e[0]] && lit[e[1]] ? ' need' : e[0] === focus ? ' kid' : ' dim';
-        return '<path class="' + cls + '" d="M' + a.x + ',' + y1 + 'C' + a.x + ',' + (y1 + m) + ' ' + c.x + ',' + (y2 - m) + ' ' + c.x + ',' + y2 + '"/>';
+        return '<path class="' + cls + '" d="' + d + '"/>';
       }).join('');
     }
     function setFocus(id) {
