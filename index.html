@@ -546,6 +546,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; font-weight: 400; }
 .lang-name { font-weight: 700; font-size: 1.05rem; }
 .lang-sub { color: var(--muted); font-size: .88rem; }
 .lang-on { margin-left: auto; color: var(--tab); font-weight: 700; }
+.lang-sample[hidden] { display: none; }
 .lang-sample { margin-top: 16px; display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px; }
 </style>
 
@@ -860,7 +861,7 @@ function startApp(W, QUIZ) {
     const el = document.getElementById('langPick');
     if (!el) return;
     const code = BASIC_LANG.current(), l = BASIC_LANG.info(code);
-    el.innerHTML = `<button type="button" class="acct lang-btn" id="langBtn" aria-haspopup="dialog" title="Your language: ${esc(l ? l.name : 'none (English only)')}">${GLOBE}<span>${code ? code.toUpperCase() : 'EN'}</span></button>`;
+    el.innerHTML = `<button type="button" class="acct lang-btn" id="langBtn" aria-haspopup="dialog" title="Your language: ${esc(l ? l.name : 'English only')}">${GLOBE}<span>${code ? code.toUpperCase() : 'EN'}</span></button>`;
     document.getElementById('langBtn').addEventListener('click', openLang);
   }
   function openLang() {
@@ -870,12 +871,12 @@ function startApp(W, QUIZ) {
     const sample = (W[WI.make] || W[0]).w;
     $scrim.innerHTML = `<div class="sheet" role="dialog" aria-modal="true" aria-label="Your language"><button class="btn quiet sheet-close" type="button" id="closeSheet">Close</button>
       <div class="eyebrow">Your language</div><h2 class="acct-title">Words in your mother language</h2>
-      <p class="muted">Every word shows a short translation in your language, in the meaning its example sentences teach. The sentences stay in English.</p>
+      <p class="muted">The course teaches English through English. If you like, every word can also show a short translation in your language, in the meaning its example sentences teach. The sentences stay in English.</p>
       <div class="lang-list" role="group" aria-label="Languages">
+        ${opt('', 'English', 'English only: learn English through English')}
         ${BASIC_LANG.languages().map(l => opt(l.code, l.name, l.english)).join('')}
-        ${opt('', 'None', 'English only')}
       </div>
-      <p class="lang-sample muted">Example: <b>${esc(sample)}</b> ${mlSpan(sample)}</p></div>`;
+      <p class="lang-sample muted" ${BASIC_LANG.current() ? '' : 'hidden'}>Example: <b>${esc(sample)}</b> ${mlSpan(sample)}</p></div>`;
     $scrim.hidden = false;
     document.getElementById('closeSheet').addEventListener('click', closeSheet);
     $scrim.querySelectorAll('.lang-opt').forEach(b => b.addEventListener('click', () => {
@@ -888,6 +889,8 @@ function startApp(W, QUIZ) {
           if (on && !mark) o.insertAdjacentHTML('beforeend', '<span class="lang-on">✓</span>');
           if (!on && mark) mark.remove();
         });
+        const smp = $scrim.querySelector('.lang-sample');
+        if (smp) smp.hidden = !BASIC_LANG.current();
       });
     }));
     ($scrim.querySelector('.lang-opt[aria-pressed="true"]') || document.getElementById('closeSheet')).focus();

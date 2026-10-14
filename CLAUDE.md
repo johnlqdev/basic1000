@@ -26,7 +26,8 @@ when the owner gives them, with the date.
 7. **Modules are linked.** Every word shown in grammar (examples, rules, answers) links to its
    Basic 1000 word page and counts as a visit.
 8. **Mother-language annotations.** (2026-10-14) Every word has a short, intuitive translation in
-   every listed language (German by default, French as an option), in the meaning its example
+   every listed language (German and French as options; the default is English only, no
+   translation shown — learn English through English), in the meaning its example
    sentences teach (several senses: "; ", the first example's sense first). Words only, never
    sentences, and never shown in quiz questions. Sources: `content/lang/<code>.tsv` plus
    `content/lang/languages.json`; build with `python3 tools/lang/build.py` (writes `lang/`). A new
