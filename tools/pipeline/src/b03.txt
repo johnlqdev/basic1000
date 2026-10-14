@@ -1,25 +1,25 @@
 credit|noun|F|a way of getting something now and paying for it later; also, people saying that you did something good|We bought the car on credit.|She got the credit for the idea.
 crime|noun|F|an act that is against the law|Taking things that are not yours is a crime.|There is not much crime in this town.
-cry|verb|A||The baby is crying.|She cried when her dog died.
+cry|verb|A||Do not cry.|She cried when her dog died.
 cup|noun|P||A cup of milk, please.|The cup is on the table.
 current|adjective|F|happening or being used now; also, water, air or electric power moving in one direction|What is your current job?|The river has a strong current.
-curtain|noun|P||Open the curtains.|The curtains are blue.
+curtain|noun|P||Open the curtain.|The curtains are blue.
 curve|noun|F|a line that bends smoothly, like part of a circle|The road has a sharp curve.|Draw a curve.
 cut|verb|A||Cut the bread with a knife.|I cut my finger.
 damage|noun|F|a change to something that makes it less good or less able to work|The rain did a lot of damage.|The fire damaged the house.
 danger|noun|F|the chance that something bad will happen to you; something that may give you pain, a wound or death|There is danger in the water.|The child is in danger.
 dark|adjective|P||It is dark at night.|She has dark hair.
 date|noun|F|the day, month and year when something happens; also, a meeting with someone you love or may love|What is the date today?|They went out on a date.
-daughter|noun|F|a female child of a mother or father|They have two daughters.|My daughter is five.
+daughter|noun|F|a female child of a mother or father|My daughter is five.|They have two daughters.
 day|noun|P||It is a hot day.|There are seven days in a week.
 dead|adjective|F|not living any more|The bird is dead.|The plant is dead because it had no water.
 dear|adjective|F|loved very much; also, a word at the start of a letter|She is a dear friend.|Dear Mother, I am well.
 death|noun|F|the end of life|His death was sudden.|The news of her death made us sad.
 debt|noun|F|money that you have to pay back to someone|He has a lot of debt.|She paid her debts.
-decide|verb|F|to make a choice about what to do after thinking|I decided to stay at home.|Have you decided?
+decide|verb|F|to make a choice about what to do after thinking|You must decide.|Have you decided?
 decision|noun|F|a choice that you make after thinking|It was a hard decision.|We need a decision today.
 deep|adjective|F|going a long way down from the top|The river is deep here.|Take a deep breath.
-degree|noun|F|a unit for measuring heat or angles; also, how much of something there is|The water is a hundred degrees.|I agree with you to some degree.
+degree|noun|F|a unit for measuring heat or angles; also, how much of something there is|It is one degree today.|I agree with you to some degree.
 dependent|adjective|F|needing someone or something to live or work|Children are dependent on their parents.|The town is dependent on the farm industry.
 describe|verb|F|to say what someone or something is like|Describe your house.|Can you describe the man?
 design|noun|F|a plan or drawing that shows how something will look or work|I like the design of this chair.|She designs clothes.
@@ -28,7 +28,7 @@ destruction|noun|F|the act of damaging something so badly that it is gone or of 
 detail|noun|F|a small fact or part of something|Tell me every detail.|The picture has a lot of detail.
 develop|verb|F|to grow or change into something bigger or better; also, to make something new|Children develop quickly.|They developed a new machine.
 development|noun|F|the act of growing or changing into something bigger or better|The development of a child takes years.|There is a lot of new development in the city.
-die|verb|F|to stop living|The old dog died.|Plants die without water.
+die|verb|F|to stop living|Plants die without water.|The old dog died.
 different|adjective|F|not the same|The two brothers are very different.|I want a different colour.
 difficult|adjective|F|not easy; needing a lot of effort or knowledge|This question is difficult.|It was a difficult time.
 direction|noun|F|the way that someone or something goes or points|Which direction is the station?|We walked in the direction of the river.
@@ -54,17 +54,17 @@ due|adjective|F|expected to happen or arrive at a certain time; also, needing to
 during|preposition|F|all through a period of time, or at some point in it|I sleep during the day.|He came during the meeting.
 dust|noun|F|very small bits of dry earth in the air or on things|There is dust on the table.|The car made a cloud of dust.
 each|determiner|F|every one of two or more things, seen one by one|Each child has an apple.|Each house has a garden.
-ear|noun|P||A cat has two ears.|Put your hands over your ears.
+ear|noun|P||Put your hand over your ear.|Put your hands over your ears.
 early|adjective|F|near the start of a period of time; also, before the expected time|I get up early.|The train was early.
 earth|noun|P||The earth goes around the sun.|Put the seeds in the earth.
 east|noun|F|the direction where the sun comes up in the morning|The sun comes up in the east.|We live in the east of the city.
 easy|adjective|D||This question is easy.|It is easy to make.
-eat|verb|A||I eat rice every day.|We ate at home.
+eat|verb|A||We eat at home.|I eat rice every day.
 edge|noun|F|the outside line or end of something|Do not stand near the edge.|He sat on the edge of the bed.
 education|noun|F|the process of teaching and learning, mostly in schools|Education is important.|She had a good education.
 effect|noun|F|a change that happens because of something else|The rain had a good effect on the plants.|What is the effect of smoking?
 effort|noun|F|the work or energy you use to do something|It took a lot of effort.|Make an effort to come.
-egg|noun|P||I had an egg for my morning meal.|Birds come out of eggs.
+egg|noun|P||A bird comes out of an egg.|I had an egg for my morning meal.
 eight|number|D||I have eight books.|She gets up at eight.
 electric|adjective|F|using or carrying the power that makes lights and machines work through wires|This is an electric car.|The electric light went out.
 else|adverb|F|other; different; more|Do you want anything else?|Someone else took my seat.
@@ -79,21 +79,21 @@ error|noun|F|something that is not right; a wrong act or answer|There is an erro
 especially|adverb|F|more than others; mostly|I like fruit, especially apples.|It is cold here, especially at night.
 even|adverb|F|used to say something is surprising; also, flat and smooth|Even a child can do it.|The ground is even.
 evening|noun|F|the end part of the day, before night|I read in the evening.|Good evening!
-event|noun|F|something that happens, mostly something important|The party was a big event.|The events of that day changed his life.
+event|noun|F|something that happens, mostly something important|It was a big event.|The party was a big event.
 ever|adverb|F|at any time|Have you ever been to the sea?|It is the best cake ever.
 every|determiner|D||Every child has a ball.|I go to work every day.
 example|noun|F|one thing that shows what other things of the same kind are like|An apple is an example of a fruit.|Give me an example.
-exchange|verb|F|to give something and get something else for it|We exchanged phone numbers.|Can I exchange this shirt?
+exchange|verb|F|to give something and get something else for it|Can I exchange this shirt?|We exchanged phone numbers.
 existence|noun|F|the state of being real or living|Do you believe in the existence of life on other worlds?|The town came into existence a hundred years ago.
 expansion|noun|F|the act of becoming larger|The expansion of the city is quick.|The company plans an expansion.
 expect|verb|F|to think that something will happen|I expect he will be late.|We expect rain tomorrow.
 experience|noun|F|knowledge you get from doing something; also, something that happens to you|She has a lot of experience.|It was a strange experience.
 expert|noun|F|a person who knows a lot about a subject|He is an expert in birds.|Ask an expert.
 explain|verb|F|to make something clear and easy to understand|Please explain the question.|He explained why he was late.
-eye|noun|P||She has blue eyes.|Close your eyes.
+eye|noun|P||Something is in my eye.|Close your eyes.
 face|noun|P||Wash your face.|She has a happy face.
 fact|noun|F|something that is true|It is a fact that the earth is round.|Tell me the facts.
-fail|verb|F|to not do what you tried to do|He failed the test.|The plan failed.
+fail|verb|F|to not do what you tried to do|Do not fail the test.|The plan failed.
 fall|verb|A||Do not fall!|Leaves fall from the trees.
 false|adjective|F|not true; not right|His story is false.|True or false?
 family|noun|P||I have a big family.|My family lives in the country.

@@ -9,24 +9,24 @@ rice|noun|P||We eat rice every day.|Cook the rice in water.
 rich|adjective|F|having a lot of money|He is a rich man.|They became rich.
 right|adjective|A||Turn right here.|Your answer is right.
 ring|noun|F|a circle of metal that you wear on a finger; also, the sound of a bell|She has a gold ring.|The phone is ringing.
-rise|verb|F|to go up; to become higher|The sun rises in the east.|Prices are rising.
+rise|verb|F|to go up; to become higher|The sun will rise soon.|The sun rises in the east.
 river|noun|P||We swam in the river.|The river goes to the sea.
 road|noun|P||Do not play on the road.|This road goes to the city.
-roll|verb|A||The ball rolled down the street.|Roll the paper.
+roll|verb|A||Roll the paper.|The ball rolled down the street.
 roof|noun|P||There is a cat on the roof.|The roof is red.
 room|noun|P||My room is small.|There is no room for the table.
-root|noun|F|the part of a plant that grows under the ground; also, the cause of something|The roots of the tree are deep.|Money is the root of the problem.
+root|noun|F|the part of a plant that grows under the ground; also, the cause of something|The root of the tree is deep.|Money is the root of the problem.
 rough|adjective|F|not smooth|The road is rough.|Give me a rough idea of the cost.
 round|adjective|P||The ball is round.|They sat at a round table.
-rule|noun|F|something that says what you must or must not do|Follow the rules.|It is a rule of the school.
-run|verb|A||The children are running.|He ran to the station.
+rule|noun|F|something that says what you must or must not do|It is a rule of the school.|Follow the rules.
+run|verb|A||I can run.|He ran to the station.
 sad|adjective|P||She is sad today.|It is a sad story.
 safe|adjective|F|not in danger; also, not able to cause damage or pain|The children are safe.|Is this water safe to drink?
 sail|noun|F|a large piece of cloth on a boat that the wind pushes; also, to go on water in a boat|The boat has a white sail.|We sailed to the island.
 salt|noun|P||Put some salt on the potatoes.|The sea has salt in it.
 same|adjective|D||We have the same name.|She said the same thing again.
 sand|noun|P||The children are playing in the sand.|There is sand in my shoes.
-save|verb|F|to take someone out of danger; also, to keep money to use later|He saved the child from the fire.|I save money every month.
+save|verb|F|to take someone out of danger; also, to keep money to use later|I save money every month.|He saved the child from the fire.
 say|verb|A||What did you say?|She said that she was tired.
 scale|noun|F|a machine for measuring weight; also, a set of numbers or levels for measuring something|Put the bag on the scale.|On a scale of one to ten, how happy are you?
 school|noun|F|a place where children go to learn|I go to school every day.|The school is near my house.
@@ -38,24 +38,24 @@ second|adjective|F|coming after the first; also, a very short unit of time|This 
 secret|noun|F|something that is known only to a few people and not told to others|Can you keep a secret?|It is a secret.
 secretary|noun|F|a person whose job is to write letters, keep records and help in an office|Ask the secretary.|She is the secretary of the committee.
 see|verb|A||I can see the sea.|I see what you mean.
-seed|noun|F|the small, hard part of a plant from which a new plant grows|Plant the seeds in the spring.|Apples have seeds inside.
-seem|verb|F|to give the idea of being something|She seems happy.|It seems to be broken.
+seed|noun|F|the small, hard part of a plant from which a new plant grows|Put a seed in the ground.|Plant the seeds in the spring.
+seem|verb|F|to give the idea of being something|You seem happy.|It seems to be broken.
 selection|noun|F|the act of choosing; also, a number of things to choose from|The shop has a good selection of shoes.|The selection of the team took a week.
 self|noun|F|the person you are; your nature|He is not his normal self today.|She has a strong sense of self.
-sell|verb|F|to give something to someone for money|I sold my car.|They sell fruit at the market.
-send|verb|F|to make something or someone go to another place|Send me a letter.|She sent her son to school.
+sell|verb|F|to give something to someone for money|I will sell my car.|They sell fruit at the market.
+send|verb|F|to make something or someone go to another place|Send her to school.|Send me a letter.
 sense|noun|F|one of the five powers of seeing, hearing, smelling, tasting and touching; also, the power to make good decisions|Dogs have a strong sense of smell.|He has a lot of sense.
 separate|adjective|F|not joined; different; on its own|We sleep in separate rooms.|Separate the eggs.
 serious|adjective|F|important and needing attention, because it may cause danger or damage; also, not said for a laugh|It is a serious disease.|Are you serious?
-servant|noun|F|a person who is paid to work in another person's house|The family had two servants.|The servant opened the door.
-serve|verb|F|to give food or drink to people; also, to work for someone or something|They served us rice and fish.|He served in the army.
+servant|noun|F|a person who is paid to work in another person's house|The servant opened the door.|The family had two servants.
+serve|verb|F|to give food or drink to people; also, to work for someone or something|They serve rice and fish.|He served in the army.
 service|noun|F|work that is done to help people, like in a shop or hotel; also, a system that gives people something they need|The service in this hotel is good.|There is a train service to the city.
 set|verb|F|to put something in a place; also, a group of things that go together|Set the table.|I bought a set of cups.
 seven|number|D||There are seven days in a week.|She is seven.
 several|determiner|F|more than two, but not many|I have seen him several times.|Several people came.
 sex|noun|F|the state of being male or female|What is the sex of the baby?|The school is open to people of both sexes.
 shade|noun|F|an area where the light of the sun cannot get, because something is in the way; also, how dark or light a colour is|Let us sit in the shade.|I like this shade of blue.
-shake|verb|A||Shake the bottle.|She was shaking with cold.
+shake|verb|A||Shake my hand.|Shake the bottle.
 shape|noun|P||A ball has a round shape.|What shape is it?
 sharp|adjective|F|having a thin edge that can cut, or an end that can make a hole|This knife is sharp.|I felt a sharp pain.
 she|pronoun|D||She is a woman.|She has a dog.
@@ -64,14 +64,14 @@ shelf|noun|P||The books are on the shelf.|Put the cups on the top shelf.
 ship|noun|P||The ship is in the harbour.|We went by ship.
 shirt|noun|P||He has a white shirt.|Wash your shirt.
 shock|noun|F|a sudden, bad surprise; also, the feeling when electric current goes through your body|The news was a shock.|I got a shock from the machine.
-shoe|noun|P||Put on your shoes.|These shoes are new.
+shoe|noun|P||This shoe is new.|These shoes are new.
 shop|noun|F|a building or room where things are sold|I went to the shop to buy bread.|She has a small shop.
 short|adjective|P||He is short.|It was a short meeting.
 should|verb|D||You should go to bed.|What should I do?
 shoulder|noun|P||He put his hand on my shoulder.|I have a pain in my shoulder.
 show|verb|A||Show me your hands.|This shows that he is right.
 shut|verb|A||Shut the door.|The shop is shut.
-side|noun|F|one of the parts at the edge of something; also, the part on the left or the right|A box has six sides.|He sat at my side.
+side|noun|F|one of the parts at the edge of something; also, the part on the left or the right|He sat at my side.|A box has six sides.
 sign|noun|F|a board with words or pictures that gives information; also, something that shows that another thing is true|The sign says "Stop".|Dark clouds are a sign of rain.
 silver|noun|F|a white, bright metal of great value|She has a silver ring.|Silver costs less than gold.
 similar|adjective|F|nearly the same, but not quite|The two houses are similar.|My idea is similar to yours.
@@ -86,13 +86,13 @@ size|noun|F|how big or small something is|What size are your shoes?|The two room
 skin|noun|F|the part that covers the body of a person or animal; also, the part that covers a fruit|She has soft skin.|Take the skin off the orange.
 skirt|noun|P||She has a long skirt.|This skirt is too short.
 sky|noun|P||The sky is blue.|There are no clouds in the sky.
-sleep|verb|A||The baby is sleeping.|I slept well.
-slip|verb|F|to move suddenly on something smooth, without wanting to, and fall or nearly fall|She slipped on the ice.|Take care not to slip on the wet floor.
+sleep|verb|A||I sleep well.|The baby is sleeping.
+slip|verb|F|to move suddenly on something smooth, without wanting to, and fall or nearly fall|Take care not to slip on the wet floor.|She slipped on the ice.
 slope|noun|F|ground that goes up or down|The house is on a slope.|We walked up the slope.
 slow|adjective|F|not quick; taking a long time|The train is very slow.|He is a slow reader.
 small|adjective|P||The cat is small.|It is a small house.
 smell|verb|F|to know something through your nose; also, to give out something that the nose knows|I can smell bread.|The flowers smell sweet.
-smile|verb|A||She smiled at me.|He has a nice smile.
+smile|verb|A||Smile at me.|He has a nice smile.
 smoke|noun|F|the grey or black cloud that comes from something burning|There is smoke in the room.|He does not smoke.
 smooth|adjective|P||Her skin is smooth.|The road is smooth.
 snow|noun|P||The snow is white.|It is snowing.

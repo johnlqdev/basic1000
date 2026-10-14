@@ -10,11 +10,11 @@ female|adjective|P||A cow is a female animal.|Is the cat male or female?
 few|determiner|F|a small number of; not many|I have a few friends here.|Few people came.
 fiction|noun|F|stories about people and events that are not real|I like to read fiction.|His story was fiction, not fact.
 field|noun|F|an area of land with grass, used for animals or for growing things; also, an area of study|The cows are in the field.|She is an expert in her field.
-fight|verb|A||The two boys are fighting.|They fought for their country.
+fight|verb|A||Do not fight.|They fought for their country.
 finally|adverb|F|at the end, after a long time|We finally arrived.|Finally, the rain stopped.
 find|verb|A||I cannot find my keys.|She found a ring on the road.
 finger|noun|P||I cut my finger.|You have five fingers on each hand.
-finish|verb|F|to come to the end of something|Have you finished your work?|The class finished at ten.
+finish|verb|F|to come to the end of something|Finish your work.|The class finished at ten.
 fire|noun|P||The fire is warm.|There was a fire in the building.
 first|adjective|D||She was the first to arrive.|This is my first time here.
 fish|noun|P||He caught a fish.|Fish live in water.
@@ -32,7 +32,7 @@ food|noun|F|things that people and animals eat|We need food and water.|The food 
 foot|noun|P||My foot is cold.|He has a pain in his foot.
 for|preposition|D||This is for you.|I waited for an hour.
 force|noun|F|power; also, the use of power to make someone do something|The force of the wind broke the tree.|They used force to open the door.
-forget|verb|F|to not remember|I forgot his name.|Do not forget your bag.
+forget|verb|F|to not remember|Do not forget your bag.|I forgot his name.
 fork|noun|P||Eat with a knife and fork.|Put the fork on the table.
 form|noun|F|the shape of something; also, a kind or type; also, a paper with spaces where you write facts about yourself|Ice is a form of water.|Please write your name on this form.
 forward|adverb|A||Move forward.|She stepped forward.
@@ -50,7 +50,7 @@ future|noun|F|the time that will come after now|What will you do in the future?|
 game|noun|F|an activity that you play for pleasure, often with rules|Let us play a game.|We won the game.
 garden|noun|F|an area of land near a house where people grow flowers or food|The children are playing in the garden.|She grows flowers in her garden.
 general|adjective|F|having to do with most people or things, not with one in particular; also, not detailed|The general opinion is good.|Give me a general idea.
-get|verb|D||I got a letter today.|It is getting cold.
+get|verb|D||Please get me the book.|I got a letter today.
 girl|noun|P||She is a girl.|The girl has a cat.
 give|verb|A||Give me the book.|She gave him some money.
 glass|noun|P||A glass of water, please.|The window is made of glass.
@@ -72,8 +72,8 @@ gun|noun|P||He has a gun.|The police have guns.
 hair|noun|P||She has long hair.|Wash your hair.
 half|noun|F|one of two equal parts of something|Cut the apple in half.|Half of the class is ill.
 hand|noun|P||Wash your hands.|Give me your hand.
-hang|verb|A||Hang your coat on the hook.|The picture hangs on the wall.
-happen|verb|D||What happened?|It happened last night.
+hang|verb|A||Hang the picture on the wall.|Hang your coat on the hook.
+happen|verb|D||What will happen?|It happened last night.
 happy|adjective|P||She is very happy.|Happy birthday!
 harbour|noun|F|an area of water near the land where ships can stay safe|The boats are in the harbour.|The ship came into the harbour.
 hard|adjective|F|not soft; also, not easy|The ground is hard.|The test was hard.

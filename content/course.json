@@ -4522,8 +4522,9 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "Cows give milk.",
+     "text": "A cow gives milk.",
      "uses": [
+      "a",
       "cow",
       "give",
       "milk"
@@ -4987,7 +4988,7 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "I made a cake.",
+     "text": "I make a cake.",
      "uses": [
       "I",
       "make",
@@ -5939,12 +5940,13 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "It is getting cold.",
+     "text": "Please get me the book.",
      "uses": [
-      "it",
-      "is",
+      "please",
       "get",
-      "cold"
+      "I",
+      "the",
+      "book"
      ],
      "available_from_step": 18,
      "role": "teach"
@@ -7810,7 +7812,7 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "We ate at home.",
+     "text": "We eat at home.",
      "uses": [
       "we",
       "eat",
@@ -9180,8 +9182,9 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "Birds can fly.",
+     "text": "A bird can fly.",
      "uses": [
+      "a",
       "bird",
       "can",
       "fly"
@@ -9380,9 +9383,10 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "What happened?",
+     "text": "What will happen?",
      "uses": [
       "what",
+      "will",
       "happen"
      ],
      "available_from_step": 35,
@@ -9712,9 +9716,8 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "He pointed at the door.",
+     "text": "Point at the door.",
      "uses": [
-      "he",
       "point",
       "at",
       "the",
@@ -9981,11 +9984,12 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "It is raining.",
+     "text": "The rain is cold.",
      "uses": [
-      "it",
+      "the",
+      "rain",
       "is",
-      "rain"
+      "cold"
      ],
      "available_from_step": 38,
      "role": "teach"
@@ -10355,12 +10359,11 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "It started to rain.",
+     "text": "Start the car.",
      "uses": [
-      "it",
       "start",
-      "to",
-      "rain"
+      "the",
+      "car"
      ],
      "available_from_step": 40,
      "role": "teach"
@@ -10444,10 +10447,10 @@
    ],
    "examples": [
     {
-     "text": "It is becoming cold.",
+     "text": "It will become cold.",
      "uses": [
       "it",
-      "is",
+      "will",
       "become",
       "cold"
      ],
@@ -10822,11 +10825,11 @@
    ],
    "examples": [
     {
-     "text": "Do you like animals?",
+     "text": "A dog is an animal.",
      "uses": [
-      "do",
-      "you",
-      "like",
+      "a",
+      "dog",
+      "is",
       "animal"
      ],
      "available_from_step": 42,
@@ -10897,9 +10900,9 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "She plays music.",
+     "text": "I play music.",
      "uses": [
-      "she",
+      "I",
       "play",
       "music"
      ],
@@ -11263,9 +11266,9 @@
    ],
    "examples": [
     {
-     "text": "She seems happy.",
+     "text": "You seem happy.",
      "uses": [
-      "she",
+      "you",
       "seem",
       "happy"
      ],
@@ -11433,12 +11436,12 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "Put on your shoes.",
+     "text": "This shoe is new.",
      "uses": [
-      "put",
-      "on",
-      "you",
-      "shoe"
+      "this",
+      "shoe",
+      "is",
+      "new"
      ],
      "available_from_step": 45,
      "role": "teach"
@@ -11470,11 +11473,10 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "The children are running.",
+     "text": "I can run.",
      "uses": [
-      "the",
-      "child",
-      "are",
+      "I",
+      "can",
       "run"
      ],
      "available_from_step": 46,
@@ -11557,9 +11559,10 @@
    ],
    "examples": [
     {
-     "text": "It began to rain.",
+     "text": "It will begin to rain.",
      "uses": [
       "it",
+      "will",
       "begin",
       "to",
       "rain"
@@ -11970,11 +11973,13 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "She has blue eyes.",
+     "text": "Something is in my eye.",
      "uses": [
-      "she",
-      "have",
-      "blue",
+      "some",
+      "thing",
+      "is",
+      "in",
+      "I",
       "eye"
      ],
      "available_from_step": 48,
@@ -12135,14 +12140,16 @@
    ],
    "examples": [
     {
-     "text": "Are we allowed to sit here?",
+     "text": "We do not allow dogs in the house.",
      "uses": [
-      "are",
       "we",
+      "do",
+      "not",
       "allow",
-      "to",
-      "sit",
-      "here"
+      "dog",
+      "in",
+      "the",
+      "house"
      ],
      "available_from_step": 49,
      "role": "teach"
@@ -12405,12 +12412,15 @@
    ],
    "examples": [
     {
-     "text": "All members must come.",
+     "text": "You are a member of the family.",
      "uses": [
-      "all",
+      "you",
+      "are",
+      "a",
       "member",
-      "must",
-      "come"
+      "of",
+      "the",
+      "family"
      ],
      "available_from_step": 50,
      "role": "teach"
@@ -13145,6 +13155,16 @@
    "definition_uses": [],
    "examples": [
     {
+     "text": "Children learn quickly.",
+     "uses": [
+      "child",
+      "learn",
+      "quick"
+     ],
+     "available_from_step": 53,
+     "role": "teach"
+    },
+    {
      "text": "I am learning to swim.",
      "uses": [
       "I",
@@ -13152,16 +13172,6 @@
       "learn",
       "to",
       "swim"
-     ],
-     "available_from_step": 53,
-     "role": "teach"
-    },
-    {
-     "text": "Children learn quickly.",
-     "uses": [
-      "child",
-      "learn",
-      "quick"
      ],
      "available_from_step": 53,
      "role": "teach"
@@ -13246,11 +13256,12 @@
    ],
    "examples": [
     {
-     "text": "He offered me a drink.",
+     "text": "Can I offer you a drink?",
      "uses": [
-      "he",
-      "offer",
+      "can",
       "I",
+      "offer",
+      "you",
       "a",
       "drink"
      ],
@@ -13655,12 +13666,12 @@
    ],
    "examples": [
     {
-     "text": "She speaks two languages.",
+     "text": "Please speak to me.",
      "uses": [
-      "she",
+      "please",
       "speak",
-      "two",
-      "language"
+      "to",
+      "I"
      ],
      "available_from_step": 56,
      "role": "teach"
@@ -13742,11 +13753,13 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "The cup broke.",
+     "text": "Do not break the cup.",
      "uses": [
+      "do",
+      "not",
+      "break",
       "the",
-      "cup",
-      "break"
+      "cup"
      ],
      "available_from_step": 56,
      "role": "teach"
@@ -13793,6 +13806,18 @@
    ],
    "examples": [
     {
+     "text": "Music is a language too.",
+     "uses": [
+      "music",
+      "is",
+      "a",
+      "language",
+      "too"
+     ],
+     "available_from_step": 56,
+     "role": "teach"
+    },
+    {
      "text": "How many languages do you speak?",
      "uses": [
       "how",
@@ -13801,18 +13826,6 @@
       "do",
       "you",
       "speak"
-     ],
-     "available_from_step": 56,
-     "role": "teach"
-    },
-    {
-     "text": "Music is a language too.",
-     "uses": [
-      "music",
-      "is",
-      "a",
-      "language",
-      "too"
      ],
      "available_from_step": 56,
      "role": "teach"
@@ -14116,11 +14129,13 @@
    ],
    "examples": [
     {
-     "text": "I spent all my money.",
+     "text": "Do not spend all your money.",
      "uses": [
-      "I",
+      "do",
+      "not",
       "spend",
       "all",
+      "you",
       "money"
      ],
      "available_from_step": 58,
@@ -14263,9 +14278,10 @@
    ],
    "examples": [
     {
-     "text": "They built a new school.",
+     "text": "They will build a new school.",
      "uses": [
       "they",
+      "will",
       "build",
       "a",
       "new",
@@ -14548,10 +14564,10 @@
    ],
    "examples": [
     {
-     "text": "What are your plans for tomorrow?",
+     "text": "What is your plan for tomorrow?",
      "uses": [
       "what",
-      "are",
+      "is",
       "you",
       "plan",
       "for",
@@ -14839,9 +14855,10 @@
    ],
    "examples": [
     {
-     "text": "She created a new design.",
+     "text": "We can create a new design.",
      "uses": [
-      "she",
+      "we",
+      "can",
       "create",
       "a",
       "new",
@@ -15689,12 +15706,10 @@
    ],
    "examples": [
     {
-     "text": "She chose the red dress.",
+     "text": "Choose a dress.",
      "uses": [
-      "she",
       "choose",
-      "the",
-      "red",
+      "a",
       "dress"
      ],
      "available_from_step": 65,
@@ -16750,7 +16765,7 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "I slept well.",
+     "text": "I sleep well.",
      "uses": [
       "I",
       "sleep",
@@ -16973,22 +16988,22 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "Water the plants.",
-     "uses": [
-      "water",
-      "the",
-      "plant"
-     ],
-     "available_from_step": 70,
-     "role": "teach"
-    },
-    {
      "text": "This plant needs light.",
      "uses": [
       "this",
       "plant",
       "need",
       "light"
+     ],
+     "available_from_step": 70,
+     "role": "teach"
+    },
+    {
+     "text": "Water the plants.",
+     "uses": [
+      "water",
+      "the",
+      "plant"
      ],
      "available_from_step": 70,
      "role": "teach"
@@ -17358,8 +17373,9 @@
    ],
    "examples": [
     {
-     "text": "Humans need food and water.",
+     "text": "A human needs food and water.",
      "uses": [
+      "a",
       "human",
       "need",
       "food",
@@ -17587,11 +17603,10 @@
    ],
    "examples": [
     {
-     "text": "They served us rice and fish.",
+     "text": "They serve rice and fish.",
      "uses": [
       "they",
       "serve",
-      "we",
       "rice",
       "and",
       "fish"
@@ -17802,23 +17817,23 @@
    ],
    "examples": [
     {
-     "text": "She accepted the money.",
-     "uses": [
-      "she",
-      "accept",
-      "the",
-      "money"
-     ],
-     "available_from_step": 74,
-     "role": "teach"
-    },
-    {
      "text": "I accept your offer.",
      "uses": [
       "I",
       "accept",
       "you",
       "offer"
+     ],
+     "available_from_step": 74,
+     "role": "teach"
+    },
+    {
+     "text": "She accepted the money.",
+     "uses": [
+      "she",
+      "accept",
+      "the",
+      "money"
      ],
      "available_from_step": 74,
      "role": "teach"
@@ -17952,11 +17967,13 @@
    ],
    "examples": [
     {
-     "text": "Prices are rising.",
+     "text": "The sun will rise soon.",
      "uses": [
-      "price",
-      "are",
-      "rise"
+      "the",
+      "sun",
+      "will",
+      "rise",
+      "soon"
      ],
      "available_from_step": 75,
      "role": "teach"
@@ -17997,9 +18014,10 @@
    ],
    "examples": [
     {
-     "text": "I sold my car.",
+     "text": "I will sell my car.",
      "uses": [
       "I",
+      "will",
       "sell",
       "car"
      ],
@@ -18110,9 +18128,10 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "He caught a fish.",
+     "text": "He can catch a fish.",
      "uses": [
       "he",
+      "can",
       "catch",
       "a",
       "fish"
@@ -18545,16 +18564,6 @@
    ],
    "examples": [
     {
-     "text": "Follow the rules.",
-     "uses": [
-      "follow",
-      "the",
-      "rule"
-     ],
-     "available_from_step": 77,
-     "role": "teach"
-    },
-    {
      "text": "It is a rule of the school.",
      "uses": [
       "it",
@@ -18564,6 +18573,16 @@
       "of",
       "the",
       "school"
+     ],
+     "available_from_step": 77,
+     "role": "teach"
+    },
+    {
+     "text": "Follow the rules.",
+     "uses": [
+      "follow",
+      "the",
+      "rule"
      ],
      "available_from_step": 77,
      "role": "teach"
@@ -19244,7 +19263,7 @@
    ],
    "examples": [
     {
-     "text": "I visited my mother.",
+     "text": "I visit my mother.",
      "uses": [
       "I",
       "visit",
@@ -19340,11 +19359,11 @@
    ],
    "examples": [
     {
-     "text": "She is ten years old.",
+     "text": "She is one year old.",
      "uses": [
       "she",
       "is",
-      "ten",
+      "one",
       "year",
       "old"
      ],
@@ -19516,9 +19535,8 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "She threw the paper away.",
+     "text": "Throw the paper away.",
      "uses": [
-      "she",
       "throw",
       "the",
       "paper",
@@ -19712,17 +19730,6 @@
    ],
    "examples": [
     {
-     "text": "I forgot his name.",
-     "uses": [
-      "I",
-      "forget",
-      "he",
-      "name"
-     ],
-     "available_from_step": 82,
-     "role": "teach"
-    },
-    {
      "text": "Do not forget your bag.",
      "uses": [
       "do",
@@ -19730,6 +19737,17 @@
       "forget",
       "you",
       "bag"
+     ],
+     "available_from_step": 82,
+     "role": "teach"
+    },
+    {
+     "text": "I forgot his name.",
+     "uses": [
+      "I",
+      "forget",
+      "he",
+      "name"
      ],
      "available_from_step": 82,
      "role": "teach"
@@ -19951,10 +19969,11 @@
    ],
    "examples": [
     {
-     "text": "The company produces cars.",
+     "text": "The company can produce cars.",
      "uses": [
       "the",
       "company",
+      "can",
       "produce",
       "car"
      ],
@@ -20186,16 +20205,6 @@
    ],
    "examples": [
     {
-     "text": "The price increased.",
-     "uses": [
-      "the",
-      "price",
-      "increase"
-     ],
-     "available_from_step": 84,
-     "role": "teach"
-    },
-    {
      "text": "We must increase the amount of food.",
      "uses": [
       "we",
@@ -20205,6 +20214,16 @@
       "amount",
       "of",
       "food"
+     ],
+     "available_from_step": 84,
+     "role": "teach"
+    },
+    {
+     "text": "The price increased.",
+     "uses": [
+      "the",
+      "price",
+      "increase"
      ],
      "available_from_step": 84,
      "role": "teach"
@@ -20805,16 +20824,13 @@
    ],
    "examples": [
     {
-     "text": "The events of that day changed his life.",
+     "text": "It was a big event.",
      "uses": [
-      "the",
-      "event",
-      "of",
-      "that",
-      "day",
-      "change",
-      "he",
-      "life"
+      "it",
+      "be",
+      "a",
+      "big",
+      "event"
      ],
      "available_from_step": 87,
      "role": "teach"
@@ -20906,23 +20922,23 @@
    ],
    "examples": [
     {
-     "text": "The old dog died.",
-     "uses": [
-      "the",
-      "old",
-      "dog",
-      "die"
-     ],
-     "available_from_step": 87,
-     "role": "teach"
-    },
-    {
      "text": "Plants die without water.",
      "uses": [
       "plant",
       "die",
       "without",
       "water"
+     ],
+     "available_from_step": 87,
+     "role": "teach"
+    },
+    {
+     "text": "The old dog died.",
+     "uses": [
+      "the",
+      "old",
+      "dog",
+      "die"
      ],
      "available_from_step": 87,
      "role": "teach"
@@ -21411,10 +21427,11 @@
    ],
    "examples": [
     {
-     "text": "The cold killed the plants.",
+     "text": "The cold can kill plants.",
      "uses": [
       "the",
       "cold",
+      "can",
       "kill",
       "plant"
      ],
@@ -21495,11 +21512,10 @@
    ],
    "examples": [
     {
-     "text": "Have you finished your work?",
+     "text": "Finish your work.",
      "uses": [
-      "have",
-      "you",
       "finish",
+      "you",
       "work"
      ],
      "available_from_step": 90,
@@ -21944,11 +21960,11 @@
    ],
    "examples": [
     {
-     "text": "She is three months old.",
+     "text": "She is one month old.",
      "uses": [
       "she",
       "is",
-      "three",
+      "one",
       "month",
       "old"
      ],
@@ -22086,11 +22102,12 @@
    ],
    "examples": [
     {
-     "text": "That sounds good.",
+     "text": "What is that sound?",
      "uses": [
+      "what",
+      "is",
       "that",
-      "sound",
-      "good"
+      "sound"
      ],
      "available_from_step": 92,
      "role": "teach"
@@ -22175,8 +22192,9 @@
    ],
    "examples": [
     {
-     "text": "The price includes food.",
+     "text": "Does the price include food?",
      "uses": [
+      "do",
       "the",
       "price",
       "include",
@@ -22404,12 +22422,10 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "The two boys are fighting.",
+     "text": "Do not fight.",
      "uses": [
-      "the",
-      "two",
-      "boy",
-      "are",
+      "do",
+      "not",
       "fight"
      ],
      "available_from_step": 94,
@@ -23035,22 +23051,22 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "A dog has four legs.",
+     "text": "He broke his leg.",
      "uses": [
-      "a",
-      "dog",
-      "have",
-      "four",
+      "he",
+      "break",
       "leg"
      ],
      "available_from_step": 96,
      "role": "teach"
     },
     {
-     "text": "He broke his leg.",
+     "text": "A dog has four legs.",
      "uses": [
-      "he",
-      "break",
+      "a",
+      "dog",
+      "have",
+      "four",
       "leg"
      ],
      "available_from_step": 96,
@@ -23091,11 +23107,11 @@
    ],
    "examples": [
     {
-     "text": "My family supports my plan.",
+     "text": "We support your plan.",
      "uses": [
-      "I",
-      "family",
+      "we",
       "support",
+      "you",
       "plan"
      ],
      "available_from_step": 97,
@@ -23143,9 +23159,9 @@
    ],
    "examples": [
     {
-     "text": "She teaches music.",
+     "text": "I teach music.",
      "uses": [
-      "she",
+      "I",
       "teach",
       "music"
      ],
@@ -24033,22 +24049,22 @@
    ],
    "examples": [
     {
+     "text": "I miss my mother.",
+     "uses": [
+      "I",
+      "miss",
+      "mother"
+     ],
+     "available_from_step": 101,
+     "role": "teach"
+    },
+    {
      "text": "I missed the train.",
      "uses": [
       "I",
       "miss",
       "the",
       "train"
-     ],
-     "available_from_step": 101,
-     "role": "teach"
-    },
-    {
-     "text": "I miss my mother.",
-     "uses": [
-      "I",
-      "miss",
-      "mother"
      ],
      "available_from_step": 101,
      "role": "teach"
@@ -24162,11 +24178,11 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "The picture hangs on the wall.",
+     "text": "Hang the picture on the wall.",
      "uses": [
+      "hang",
       "the",
       "picture",
-      "hang",
       "on",
       "wall"
      ],
@@ -24240,15 +24256,13 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "There are many stars in the sky.",
+     "text": "I can see a star.",
      "uses": [
-      "there",
-      "are",
-      "many",
-      "star",
-      "in",
-      "the",
-      "sky"
+      "I",
+      "can",
+      "see",
+      "a",
+      "star"
      ],
      "available_from_step": 102,
      "role": "teach"
@@ -24525,13 +24539,11 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "She was shaking with cold.",
+     "text": "Shake my hand.",
      "uses": [
-      "she",
-      "be",
       "shake",
-      "with",
-      "cold"
+      "I",
+      "hand"
      ],
      "available_from_step": 103,
      "role": "teach"
@@ -25439,12 +25451,12 @@
    ],
    "examples": [
     {
-     "text": "They tested the machine.",
+     "text": "The test is hard.",
      "uses": [
-      "they",
-      "test",
       "the",
-      "machine"
+      "test",
+      "is",
+      "hard"
      ],
      "available_from_step": 107,
      "role": "teach"
@@ -25485,9 +25497,10 @@
    ],
    "examples": [
     {
-     "text": "We prepared for the test.",
+     "text": "We must prepare for the test.",
      "uses": [
       "we",
+      "must",
       "prepare",
       "for",
       "the",
@@ -25622,12 +25635,12 @@
    ],
    "examples": [
     {
-     "text": "We passed the school.",
+     "text": "Pass me the cup.",
      "uses": [
-      "we",
       "pass",
+      "I",
       "the",
-      "school"
+      "cup"
      ],
      "available_from_step": 108,
      "role": "teach"
@@ -26055,14 +26068,11 @@
    ],
    "examples": [
     {
-     "text": "She is wearing a red dress.",
+     "text": "Wear your coat.",
      "uses": [
-      "she",
-      "is",
       "wear",
-      "a",
-      "red",
-      "dress"
+      "you",
+      "coat"
      ],
      "available_from_step": 110,
      "role": "teach"
@@ -26294,6 +26304,19 @@
    "definition_uses": [],
    "examples": [
     {
+     "text": "A dark cloud covered the sun.",
+     "uses": [
+      "a",
+      "dark",
+      "cloud",
+      "cover",
+      "the",
+      "sun"
+     ],
+     "available_from_step": 111,
+     "role": "teach"
+    },
+    {
      "text": "There are no clouds in the sky.",
      "uses": [
       "there",
@@ -26303,19 +26326,6 @@
       "in",
       "the",
       "sky"
-     ],
-     "available_from_step": 111,
-     "role": "teach"
-    },
-    {
-     "text": "A dark cloud covered the sun.",
-     "uses": [
-      "a",
-      "dark",
-      "cloud",
-      "cover",
-      "the",
-      "sun"
      ],
      "available_from_step": 111,
      "role": "teach"
@@ -26336,13 +26346,11 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "The road bends to the left.",
+     "text": "Bend your arm.",
      "uses": [
-      "the",
-      "road",
       "bend",
-      "to",
-      "left"
+      "you",
+      "arm"
      ],
      "available_from_step": 111,
      "role": "teach"
@@ -26449,8 +26457,9 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "Birds come out of eggs.",
+     "text": "A bird comes out of an egg.",
      "uses": [
+      "a",
       "bird",
       "come",
       "out",
@@ -26657,23 +26666,23 @@
    ],
    "examples": [
     {
-     "text": "They have two daughters.",
-     "uses": [
-      "they",
-      "have",
-      "two",
-      "daughter"
-     ],
-     "available_from_step": 113,
-     "role": "teach"
-    },
-    {
      "text": "My daughter is five.",
      "uses": [
       "I",
       "daughter",
       "is",
       "five"
+     ],
+     "available_from_step": 113,
+     "role": "teach"
+    },
+    {
+     "text": "They have two daughters.",
+     "uses": [
+      "they",
+      "have",
+      "two",
+      "daughter"
      ],
      "available_from_step": 113,
      "role": "teach"
@@ -26861,11 +26870,10 @@
    ],
    "examples": [
     {
-     "text": "She sent her son to school.",
+     "text": "Send her to school.",
      "uses": [
-      "she",
       "send",
-      "son",
+      "she",
       "to",
       "school"
      ],
@@ -26966,17 +26974,6 @@
    ],
    "examples": [
     {
-     "text": "They have two sons.",
-     "uses": [
-      "they",
-      "have",
-      "two",
-      "son"
-     ],
-     "available_from_step": 114,
-     "role": "teach"
-    },
-    {
      "text": "My son is at school.",
      "uses": [
       "I",
@@ -26984,6 +26981,17 @@
       "is",
       "at",
       "school"
+     ],
+     "available_from_step": 114,
+     "role": "teach"
+    },
+    {
+     "text": "They have two sons.",
+     "uses": [
+      "they",
+      "have",
+      "two",
+      "son"
      ],
      "available_from_step": 114,
      "role": "teach"
@@ -27108,13 +27116,12 @@
    ],
    "examples": [
     {
-     "text": "She received a lot of presents.",
+     "text": "Did you receive my present?",
      "uses": [
-      "she",
+      "do",
+      "you",
       "receive",
-      "a",
-      "lot",
-      "of",
+      "I",
       "present"
      ],
      "available_from_step": 115,
@@ -27857,24 +27864,24 @@
    ],
    "examples": [
     {
-     "text": "A box has six sides.",
-     "uses": [
-      "a",
-      "box",
-      "have",
-      "six",
-      "side"
-     ],
-     "available_from_step": 118,
-     "role": "teach"
-    },
-    {
      "text": "He sat at my side.",
      "uses": [
       "he",
       "sit",
       "at",
       "I",
+      "side"
+     ],
+     "available_from_step": 118,
+     "role": "teach"
+    },
+    {
+     "text": "A box has six sides.",
+     "uses": [
+      "a",
+      "box",
+      "have",
+      "six",
       "side"
      ],
      "available_from_step": 118,
@@ -27967,13 +27974,14 @@
    ],
    "examples": [
     {
-     "text": "Apples have seeds inside.",
+     "text": "Put a seed in the ground.",
      "uses": [
-      "apple",
-      "have",
+      "put",
+      "a",
       "seed",
       "in",
-      "side"
+      "the",
+      "ground"
      ],
      "available_from_step": 118,
      "role": "teach"
@@ -28205,8 +28213,9 @@
    ],
    "examples": [
     {
-     "text": "This box contains books.",
+     "text": "Does this box contain books?",
      "uses": [
+      "do",
       "this",
       "box",
       "contain",
@@ -28387,13 +28396,13 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "She laughed at his story.",
+     "text": "Do not laugh at me.",
      "uses": [
-      "she",
+      "do",
+      "not",
       "laugh",
       "at",
-      "he",
-      "story"
+      "I"
      ],
      "available_from_step": 120,
      "role": "teach"
@@ -29329,14 +29338,12 @@
    ],
    "examples": [
     {
-     "text": "A man appeared at the door.",
+     "text": "Stars appear at night.",
      "uses": [
-      "a",
-      "man",
+      "star",
       "appear",
       "at",
-      "the",
-      "door"
+      "night"
      ],
      "available_from_step": 124,
      "role": "teach"
@@ -30594,14 +30601,11 @@
    ],
    "examples": [
     {
-     "text": "I decided to stay at home.",
+     "text": "You must decide.",
      "uses": [
-      "I",
-      "decide",
-      "to",
-      "stay",
-      "at",
-      "home"
+      "you",
+      "must",
+      "decide"
      ],
      "available_from_step": 129,
      "role": "teach"
@@ -31603,15 +31607,13 @@
    ],
    "examples": [
     {
-     "text": "I burnt my hand on the hot pot.",
+     "text": "Do not burn your hand.",
      "uses": [
-      "I",
+      "do",
+      "not",
       "burn",
-      "hand",
-      "on",
-      "the",
-      "hot",
-      "pot"
+      "you",
+      "hand"
      ],
      "available_from_step": 133,
      "role": "teach"
@@ -32257,11 +32259,10 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "The baby is crying.",
+     "text": "Do not cry.",
      "uses": [
-      "the",
-      "baby",
-      "is",
+      "do",
+      "not",
       "cry"
      ],
      "available_from_step": 135,
@@ -32353,17 +32354,6 @@
    ],
    "examples": [
     {
-     "text": "She controls the money.",
-     "uses": [
-      "she",
-      "control",
-      "the",
-      "money"
-     ],
-     "available_from_step": 136,
-     "role": "teach"
-    },
-    {
      "text": "He could not control the car.",
      "uses": [
       "he",
@@ -32372,6 +32362,17 @@
       "control",
       "the",
       "car"
+     ],
+     "available_from_step": 136,
+     "role": "teach"
+    },
+    {
+     "text": "She controls the money.",
+     "uses": [
+      "she",
+      "control",
+      "the",
+      "money"
      ],
      "available_from_step": 136,
      "role": "teach"
@@ -32465,7 +32466,7 @@
    ],
    "examples": [
     {
-     "text": "We watched the birds.",
+     "text": "We watch the birds.",
      "uses": [
       "we",
       "watch",
@@ -32614,9 +32615,8 @@
    ],
    "examples": [
     {
-     "text": "She led us to the station.",
+     "text": "Lead us to the station.",
      "uses": [
-      "she",
       "lead",
       "we",
       "to",
@@ -32769,9 +32769,10 @@
    ],
    "examples": [
     {
-     "text": "She manages a small hotel.",
+     "text": "She can manage a small hotel.",
      "uses": [
       "she",
+      "can",
       "manage",
       "a",
       "small",
@@ -32867,9 +32868,10 @@
    ],
    "examples": [
     {
-     "text": "He failed the test.",
+     "text": "Do not fail the test.",
      "uses": [
-      "he",
+      "do",
+      "not",
       "fail",
       "the",
       "test"
@@ -33071,14 +33073,12 @@
    ],
    "examples": [
     {
-     "text": "She reported the crime to the police.",
+     "text": "I wrote a report.",
      "uses": [
-      "she",
-      "report",
-      "the",
-      "crime",
-      "to",
-      "police"
+      "I",
+      "write",
+      "a",
+      "report"
      ],
      "available_from_step": 139,
      "role": "teach"
@@ -33546,12 +33546,12 @@
    ],
    "examples": [
     {
-     "text": "She married a doctor.",
+     "text": "Will you marry me?",
      "uses": [
-      "she",
+      "will",
+      "you",
       "marry",
-      "a",
-      "doctor"
+      "I"
      ],
      "available_from_step": 140,
      "role": "teach"
@@ -33901,12 +33901,12 @@
    ],
    "examples": [
     {
-     "text": "The book has ten units.",
+     "text": "This is the last unit.",
      "uses": [
+      "this",
+      "is",
       "the",
-      "book",
-      "have",
-      "ten",
+      "last",
       "unit"
      ],
      "available_from_step": 142,
@@ -34194,14 +34194,13 @@
    ],
    "examples": [
     {
-     "text": "The water is a hundred degrees.",
+     "text": "It is one degree today.",
      "uses": [
-      "the",
-      "water",
+      "it",
       "is",
-      "a",
-      "hundred",
-      "degree"
+      "one",
+      "degree",
+      "today"
      ],
      "available_from_step": 143,
      "role": "teach"
@@ -35176,12 +35175,13 @@
    ],
    "examples": [
     {
-     "text": "The dog attacked the man.",
+     "text": "The dog may attack you.",
      "uses": [
       "the",
       "dog",
+      "may",
       "attack",
-      "man"
+      "you"
      ],
      "available_from_step": 147,
      "role": "teach"
@@ -35538,6 +35538,18 @@
    ],
    "examples": [
     {
+     "text": "I save money every month.",
+     "uses": [
+      "I",
+      "save",
+      "money",
+      "every",
+      "month"
+     ],
+     "available_from_step": 148,
+     "role": "teach"
+    },
+    {
      "text": "He saved the child from the fire.",
      "uses": [
       "he",
@@ -35546,18 +35558,6 @@
       "child",
       "from",
       "fire"
-     ],
-     "available_from_step": 148,
-     "role": "teach"
-    },
-    {
-     "text": "I save money every month.",
-     "uses": [
-      "I",
-      "save",
-      "money",
-      "every",
-      "month"
      ],
      "available_from_step": 148,
      "role": "teach"
@@ -37442,10 +37442,10 @@
    ],
    "examples": [
     {
-     "text": "Our team won.",
+     "text": "We will win.",
      "uses": [
       "we",
-      "team",
+      "will",
       "win"
      ],
      "available_from_step": 156,
@@ -37710,10 +37710,12 @@
    ],
    "examples": [
     {
-     "text": "I lost my key.",
+     "text": "Do not lose your key.",
      "uses": [
-      "I",
+      "do",
+      "not",
       "lose",
+      "you",
       "key"
      ],
      "available_from_step": 157,
@@ -37760,6 +37762,18 @@
    ],
    "examples": [
     {
+     "text": "That was a good meal.",
+     "uses": [
+      "that",
+      "be",
+      "a",
+      "good",
+      "meal"
+     ],
+     "available_from_step": 157,
+     "role": "teach"
+    },
+    {
      "text": "We have three meals a day.",
      "uses": [
       "we",
@@ -37768,18 +37782,6 @@
       "meal",
       "a",
       "day"
-     ],
-     "available_from_step": 157,
-     "role": "teach"
-    },
-    {
-     "text": "That was a good meal.",
-     "uses": [
-      "that",
-      "be",
-      "a",
-      "good",
-      "meal"
      ],
      "available_from_step": 157,
      "role": "teach"
@@ -38371,11 +38373,13 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "I like potatoes.",
+     "text": "Cook the potato in water.",
      "uses": [
-      "I",
-      "like",
-      "potato"
+      "cook",
+      "the",
+      "potato",
+      "in",
+      "water"
      ],
      "available_from_step": 159,
      "role": "teach"
@@ -41760,18 +41764,6 @@
    ],
    "examples": [
     {
-     "text": "The wires are under the floor.",
-     "uses": [
-      "the",
-      "wire",
-      "are",
-      "under",
-      "floor"
-     ],
-     "available_from_step": 172,
-     "role": "teach"
-    },
-    {
      "text": "Do not touch that wire.",
      "uses": [
       "do",
@@ -41779,6 +41771,18 @@
       "touch",
       "that",
       "wire"
+     ],
+     "available_from_step": 172,
+     "role": "teach"
+    },
+    {
+     "text": "The wires are under the floor.",
+     "uses": [
+      "the",
+      "wire",
+      "are",
+      "under",
+      "floor"
      ],
      "available_from_step": 172,
      "role": "teach"
@@ -42273,12 +42277,13 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "This dog bites people.",
+     "text": "The dog may bite you.",
      "uses": [
-      "this",
+      "the",
       "dog",
+      "may",
       "bite",
-      "people"
+      "you"
      ],
      "available_from_step": 174,
      "role": "teach"
@@ -42511,12 +42516,13 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "Put on your boots.",
+     "text": "This boot is too small.",
      "uses": [
-      "put",
-      "on",
-      "you",
-      "boot"
+      "this",
+      "boot",
+      "is",
+      "too",
+      "small"
      ],
      "available_from_step": 175,
      "role": "teach"
@@ -43177,7 +43183,7 @@
    ],
    "examples": [
     {
-     "text": "Do not touch these chemicals.",
+     "text": "Do not touch this chemical.",
      "uses": [
       "do",
       "not",
@@ -43738,7 +43744,7 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "Open the curtains.",
+     "text": "Open the curtain.",
      "uses": [
       "open",
       "the",
@@ -44194,12 +44200,12 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "A cat has two ears.",
+     "text": "Put your hand over your ear.",
      "uses": [
-      "a",
-      "cat",
-      "have",
-      "two",
+      "put",
+      "you",
+      "hand",
+      "over",
       "ear"
      ],
      "available_from_step": 182,
@@ -44291,17 +44297,6 @@
    ],
    "examples": [
     {
-     "text": "We exchanged phone numbers.",
-     "uses": [
-      "we",
-      "exchange",
-      "phone",
-      "number"
-     ],
-     "available_from_step": 183,
-     "role": "teach"
-    },
-    {
      "text": "Can I exchange this shirt?",
      "uses": [
       "can",
@@ -44309,6 +44304,17 @@
       "exchange",
       "this",
       "shirt"
+     ],
+     "available_from_step": 183,
+     "role": "teach"
+    },
+    {
+     "text": "We exchanged phone numbers.",
+     "uses": [
+      "we",
+      "exchange",
+      "phone",
+      "number"
      ],
      "available_from_step": 183,
      "role": "teach"
@@ -45085,11 +45091,12 @@
    ],
    "examples": [
     {
-     "text": "She plays two instruments.",
+     "text": "Can you play an instrument?",
      "uses": [
-      "she",
+      "can",
+      "you",
       "play",
-      "two",
+      "a",
       "instrument"
      ],
      "available_from_step": 186,
@@ -45294,19 +45301,6 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "The cat jumped onto the table.",
-     "uses": [
-      "the",
-      "cat",
-      "jump",
-      "on",
-      "to",
-      "table"
-     ],
-     "available_from_step": 187,
-     "role": "teach"
-    },
-    {
      "text": "Can you jump over the wall?",
      "uses": [
       "can",
@@ -45315,6 +45309,19 @@
       "over",
       "the",
       "wall"
+     ],
+     "available_from_step": 187,
+     "role": "teach"
+    },
+    {
+     "text": "The cat jumped onto the table.",
+     "uses": [
+      "the",
+      "cat",
+      "jump",
+      "on",
+      "to",
+      "table"
      ],
      "available_from_step": 187,
      "role": "teach"
@@ -45335,16 +45342,6 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "She kissed her baby.",
-     "uses": [
-      "she",
-      "kiss",
-      "baby"
-     ],
-     "available_from_step": 187,
-     "role": "teach"
-    },
-    {
      "text": "He gave her a kiss.",
      "uses": [
       "he",
@@ -45352,6 +45349,16 @@
       "she",
       "a",
       "kiss"
+     ],
+     "available_from_step": 187,
+     "role": "teach"
+    },
+    {
+     "text": "She kissed her baby.",
+     "uses": [
+      "she",
+      "kiss",
+      "baby"
      ],
      "available_from_step": 187,
      "role": "teach"
@@ -45426,11 +45433,13 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "She has red lips.",
+     "text": "She has a cut on her lip.",
      "uses": [
       "she",
       "have",
-      "red",
+      "a",
+      "cut",
+      "on",
       "lip"
      ],
      "available_from_step": 187,
@@ -45774,17 +45783,6 @@
    ],
    "examples": [
     {
-     "text": "He has strong muscles.",
-     "uses": [
-      "he",
-      "have",
-      "strong",
-      "muscle"
-     ],
-     "available_from_step": 189,
-     "role": "teach"
-    },
-    {
      "text": "I have a pain in a muscle in my leg.",
      "uses": [
       "I",
@@ -45794,6 +45792,17 @@
       "in",
       "muscle",
       "leg"
+     ],
+     "available_from_step": 189,
+     "role": "teach"
+    },
+    {
+     "text": "He has strong muscles.",
+     "uses": [
+      "he",
+      "have",
+      "strong",
+      "muscle"
      ],
      "available_from_step": 189,
      "role": "teach"
@@ -46866,6 +46875,16 @@
    "definition_uses": [],
    "examples": [
     {
+     "text": "Roll the paper.",
+     "uses": [
+      "roll",
+      "the",
+      "paper"
+     ],
+     "available_from_step": 193,
+     "role": "teach"
+    },
+    {
      "text": "The ball rolled down the street.",
      "uses": [
       "the",
@@ -46873,16 +46892,6 @@
       "roll",
       "down",
       "street"
-     ],
-     "available_from_step": 193,
-     "role": "teach"
-    },
-    {
-     "text": "Roll the paper.",
-     "uses": [
-      "roll",
-      "the",
-      "paper"
      ],
      "available_from_step": 193,
      "role": "teach"
@@ -46917,13 +46926,13 @@
    ],
    "examples": [
     {
-     "text": "The roots of the tree are deep.",
+     "text": "The root of the tree is deep.",
      "uses": [
       "the",
       "root",
       "of",
       "tree",
-      "are",
+      "is",
       "deep"
      ],
      "available_from_step": 193,
@@ -47235,6 +47244,17 @@
    ],
    "examples": [
     {
+     "text": "The servant opened the door.",
+     "uses": [
+      "the",
+      "servant",
+      "open",
+      "door"
+     ],
+     "available_from_step": 194,
+     "role": "teach"
+    },
+    {
      "text": "The family had two servants.",
      "uses": [
       "the",
@@ -47242,17 +47262,6 @@
       "have",
       "two",
       "servant"
-     ],
-     "available_from_step": 194,
-     "role": "teach"
-    },
-    {
-     "text": "The servant opened the door.",
-     "uses": [
-      "the",
-      "servant",
-      "open",
-      "door"
      ],
      "available_from_step": 194,
      "role": "teach"
@@ -47585,18 +47594,6 @@
    ],
    "examples": [
     {
-     "text": "She slipped on the ice.",
-     "uses": [
-      "she",
-      "slip",
-      "on",
-      "the",
-      "ice"
-     ],
-     "available_from_step": 196,
-     "role": "teach"
-    },
-    {
      "text": "Take care not to slip on the wet floor.",
      "uses": [
       "take",
@@ -47608,6 +47605,18 @@
       "the",
       "wet",
       "floor"
+     ],
+     "available_from_step": 196,
+     "role": "teach"
+    },
+    {
+     "text": "She slipped on the ice.",
+     "uses": [
+      "she",
+      "slip",
+      "on",
+      "the",
+      "ice"
      ],
      "available_from_step": 196,
      "role": "teach"
@@ -47675,9 +47684,8 @@
    "definition_uses": [],
    "examples": [
     {
-     "text": "She smiled at me.",
+     "text": "Smile at me.",
      "uses": [
-      "she",
       "smile",
       "at",
       "I"
@@ -47934,24 +47942,24 @@
    ],
    "examples": [
     {
-     "text": "Do you have any suggestions?",
-     "uses": [
-      "do",
-      "you",
-      "have",
-      "any",
-      "suggestion"
-     ],
-     "available_from_step": 197,
-     "role": "teach"
-    },
-    {
      "text": "That is a good suggestion.",
      "uses": [
       "that",
       "is",
       "a",
       "good",
+      "suggestion"
+     ],
+     "available_from_step": 197,
+     "role": "teach"
+    },
+    {
+     "text": "Do you have any suggestions?",
+     "uses": [
+      "do",
+      "you",
+      "have",
+      "any",
       "suggestion"
      ],
      "available_from_step": 197,
@@ -48507,13 +48515,13 @@
    ],
    "examples": [
     {
-     "text": "The waves are big today.",
+     "text": "Look at that big wave.",
      "uses": [
-      "the",
-      "wave",
-      "are",
+      "look",
+      "at",
+      "that",
       "big",
-      "today"
+      "wave"
      ],
      "available_from_step": 200,
      "role": "teach"
@@ -48545,6 +48553,17 @@
    "definition_uses": [],
    "examples": [
     {
+     "text": "The wheel is broken.",
+     "uses": [
+      "the",
+      "wheel",
+      "is",
+      "break"
+     ],
+     "available_from_step": 200,
+     "role": "teach"
+    },
+    {
      "text": "A car has four wheels.",
      "uses": [
       "a",
@@ -48552,17 +48571,6 @@
       "have",
       "four",
       "wheel"
-     ],
-     "available_from_step": 200,
-     "role": "teach"
-    },
-    {
-     "text": "The wheel is broken.",
-     "uses": [
-      "the",
-      "wheel",
-      "is",
-      "break"
      ],
      "available_from_step": 200,
      "role": "teach"
@@ -48599,12 +48607,13 @@
    ],
    "examples": [
     {
-     "text": "The bird opened its wings.",
+     "text": "The bird has a broken wing.",
      "uses": [
       "the",
       "bird",
-      "open",
-      "it",
+      "have",
+      "a",
+      "break",
       "wing"
      ],
      "available_from_step": 200,

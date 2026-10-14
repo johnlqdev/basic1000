@@ -211,12 +211,20 @@ def synth_many(req, texts):
 
 
 def trim(a, sr):
-    """Cut silence at both ends, keeping 40 ms of margin."""
+    """Cut silence at both ends: 40 ms of margin before the speech, 100 ms after it.
+
+    "Silence" is measured against the clip's own loudest 10 ms (40 dB below it), not a fixed level.
+    A fixed level (it was 0.02) cut quiet word endings: the short burst of a final k, p or t comes
+    after a silent closure, and was taken for the end of the speech ("make" sounded like "may")."""
     import numpy as np
-    loud = np.flatnonzero(np.abs(a) > 0.02)
+    n = max(1, int(0.01 * sr))
+    frames = len(a) // n
+    if not frames:
+        return a
+    rms = np.sqrt(np.mean(np.square(a[:frames * n].reshape(frames, n)), axis=1))
+    loud = np.flatnonzero(rms > max(float(rms.max()) * 0.01, 1e-4))
     if loud.size:
-        m = int(0.04 * sr)
-        a = a[max(0, loud[0] - m): loud[-1] + m]
+        a = a[max(0, loud[0] * n - int(0.04 * sr)): min(len(a), (loud[-1] + 1) * n + int(0.10 * sr))]
     return a
 
 

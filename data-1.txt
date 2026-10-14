@@ -47,7 +47,7 @@ some|determiner|D|10||I want some water.|10|Some people like music.|43||
 also|adverb|D|10||I also want some milk.|10|He is a doctor and also a father.|106||
 want|verb|D|10||I want some water.|10|She wants to be a doctor.|106||
 milk|noun|P|10||Cows give milk.|10|Would you like some milk?|27||
-cow|noun|P|10||Cows give milk.|10|The cow is in the field.|170||
+cow|noun|P|10||A cow gives milk.|10|The cow is in the field.|170||
 be|verb|D|11||Please be good.|11|I want to be a doctor.|106|was, were, been, being|
 good|adjective|P|11||This is a good apple.|11|She is a good doctor.|106|better, best|
 down|preposition|A|11||Sit down.|11|She walked down the road.|59||
@@ -59,7 +59,7 @@ put|verb|A|12||She put on her coat.|12|Put the book on the table.|36||
 coat|noun|P|12||Put on your coat. It is cold.|12|She has a long coat.|85||
 hat|noun|P|12||Put on your hat.|12|He has a black hat.|76||
 one|number|D|13||I have one brother.|13|One of the cups is broken.|56||
-make|verb|A|13||I made a cake.|13|You make me happy.|24||
+make|verb|A|13||I make a cake.|13|You make me happy.|24||
 brother|noun|P|13||My brother is tall.|13|I have two brothers.|17||
 cake|noun|P|13||She made a cake.|13|Would you like some cake?|27||
 tall|adjective|P|13||My brother is tall.|13|There is a tall tree in the garden.|126||
@@ -84,7 +84,7 @@ come|verb|A|17||Come here!|17|She came to my house.|17||
 two|number|D|17||I have two cats.|17|Two and two is four.|47||
 swim|verb|A|17||I can swim.|17|We swam in the sea.|22||
 work|verb|A|18||I work with my hands.|18|The machine does not work.|96||
-get|verb|D|18||It is getting cold.|18|I got a letter today.|168||
+get|verb|D|18||Please get me the book.|18|I got a letter today.|168||
 like|verb|D|18||I like milk.|18|She looks like her mother.|55||
 take|verb|A|18||Take my hand.|18|Take the book to your teacher.|97||
 hand|noun|P|18||Give me your hand.|18|Wash your hands.|108||
@@ -132,7 +132,7 @@ after|preposition|D|27||We eat after work.|27|After the rain, the sky is blue.|3
 know|verb|D|27||Do you know my brother?|27|I know the answer.|108||
 would|verb|D|27||Would you like some milk?|27|He said he would come.|27||
 home|noun|F|27|the place where you live|I am going home.|27|Is your home near here?|98||
-eat|verb|A|27||We ate at home.|27|I eat rice every day.|73||
+eat|verb|A|27||We eat at home.|27|I eat rice every day.|73||
 think|verb|D|28||What do you think?|28|I think it will rain.|38||
 between|preposition|A|28||Come between two and three.|28|The ball is between the two boxes.|105||
 well|adverb|D|28||She swims well.|28|I do not feel well.|35||
@@ -167,12 +167,12 @@ over|preposition|A|34||The bird flew over the house.|34|Put a cover over the foo
 old|adjective|P|34||This is an old house.|34|My father is old.|66||
 number|noun|D|34||What is your phone number?|34|Pick a number from one to ten.|167||
 fly|verb|A|34||Birds fly.|34|We flew to the city.|86||
-bird|noun|P|34||Birds can fly.|34|A bird is in the tree.|81||
+bird|noun|P|34||A bird can fly.|34|A bird is in the tree.|81||
 high|adjective|P|35||The bird is high in the sky.|35|Prices are high.|68||
 should|verb|D|35||You should go to bed.|35|What should I do?|35||
 feel|verb|D|35||I feel cold.|35|Feel how soft this is.|105||
 each|determiner|F|35|every one of two or more things, seen one by one|Each child has an apple.|35|Each house has a garden.|126||
-happen|verb|D|35||What happened?|35|It happened last night.|44||
+happen|verb|D|35||What will happen?|35|It happened last night.|44||
 country|noun|P|36||Which country are you from?|36|They live in the country.|36||
 different|adjective|F|36|not the same|The two brothers are very different.|36|I want a different colour.|174||
 under|preposition|A|36||The cat is under the table.|36|He has a bag under his arm.|74||
@@ -180,14 +180,14 @@ together|adverb|F|36|with each other; in one group or place|We work together.|36
 table|noun|P|36||Sit at the table.|36|The food is on the table.|58||
 another|determiner|F|37|one more; or a different one|Can I have another apple?|37|Let us go to another shop.|116||
 without|preposition|F|37|not having something; not with someone|She left without me.|37|I drink milk without sugar.|67||
-point|noun|A|37||He pointed at the door.|37|The point of the knife is sharp.|130||
+point|noun|A|37||Point at the door.|37|The point of the knife is sharp.|130||
 turn|verb|A|37||Turn left.|37|She turned round.|49||
 left|noun|A|37||Turn left.|37|He writes with his left hand.|42||
 leave|verb|A|38||I leave home at eight.|38|Leave your bag here.|52||
 might|verb|D|38||It might rain.|38|I might go to the party.|149||
 few|determiner|F|38|a small number of; not many|Few people came.|38|I have a few friends here.|52||
 eight|number|D|38||I have eight books.|38|She gets up at eight.|38||
-rain|noun|P|38||It is raining.|38|The rain stopped.|86||
+rain|noun|P|38||The rain is cold.|38|The rain stopped.|86||
 end|noun|D|39||This is the end of the story.|39|The road ends here.|59||
 why|adverb|D|39||I do not know why he left.|39|Why are you sad?|100||
 little|adjective|F|39|small; also, not much|They have a little house.|39|There is little water left.|39|less, least|
@@ -196,9 +196,9 @@ story|noun|D|39||It is a true story.|39|Tell me a story.|56||
 last|adjective|F|40|coming at the end, after all others; also, the one before now|This is the last cake.|40|I saw him last week.|91||
 often|adverb|F|40|many times|I often go there.|40|How often do you see her?|40||
 never|adverb|F|40|not at any time|She has never been to the sea.|40|I never eat meat.|147||
-start|verb|D|40||It started to rain.|40|The class starts at nine.|180||
+start|verb|D|40||Start the car.|40|The class starts at nine.|180||
 follow|verb|F|40|to go or come after someone or something|Follow me.|40|The dog followed him home.|40||
-become|verb|F|41|to start to be something|It is becoming cold.|41|She became a doctor.|106||
+become|verb|F|41|to start to be something|It will become cold.|41|She became a doctor.|106||
 pay|verb|A|41||How much do they pay you?|41|I paid for the food.|58||
 word|noun|D|41||I did not say a word.|41|What does this word mean?|166||
 move|verb|A|41||Do not move!|41|We moved to a new house.|41||
@@ -207,9 +207,9 @@ about|preposition|D|42||This book is about animals.|42|We talked about the weath
 write|verb|A|42||Write your name here.|42|She wrote a letter to her mother.|168||
 bring|verb|A|42||Bring me the book.|42|Please bring your friend.|52||
 name|noun|F|42|the word or words that someone or something is known by|What is your name?|42|My name is on the list.|82||
-animal|noun|F|42|a living thing that can move and feel, like a dog or a bird|Do you like animals?|42|A cow is a farm animal.|171||
+animal|noun|F|42|a living thing that can move and feel, like a dog or a bird|A dog is an animal.|42|A cow is a farm animal.|171||
 hold|verb|A|43||Hold my hand.|43|She is holding a baby.|94||
-play|verb|A|43||She plays music.|43|The children are playing in the garden.|126||
+play|verb|A|43||I play music.|43|The children are playing in the garden.|126||
 room|noun|P|43||My room is small.|43|There is no room for the table.|43||
 body|noun|P|43||Water is good for the body.|43|Your body has many bones.|115||
 music|noun|D|43||She plays music every day.|43|I love music.|148||
@@ -218,14 +218,14 @@ idea|noun|D|44||I have an idea.|44|That is a good idea.|44||
 today|adverb|F|44|on this day|It is hot today.|44|Today is my birthday.|114||
 night|noun|P|44||Good night!|44|I sleep at night.|69||
 away|adverb|A|44||Go away!|44|The bird flew away.|44||
-seem|verb|F|45|to give the idea of being something|She seems happy.|45|It seems to be broken.|56||
+seem|verb|F|45|to give the idea of being something|You seem happy.|45|It seems to be broken.|56||
 off|preposition|A|45||Take your shoes off.|45|He fell off the chair.|61||
 system|noun|F|45|a group of parts or ideas that work together; also, a way of doing things|We need a new system.|45|The city has a good train system.|86||
 family|noun|P|45||I have a big family.|45|My family lives in the country.|45||
-shoe|noun|P|45||Put on your shoes.|45|These shoes are new.|45||
-run|verb|A|46||The children are running.|46|He ran to the station.|116||
+shoe|noun|P|45||This shoe is new.|45|These shoes are new.|45||
+run|verb|A|46||I can run.|46|He ran to the station.|116||
 both|determiner|F|46|the two; one and also the other|Both my brothers are tall.|46|I like both of them.|46||
-begin|verb|F|46|to start|It began to rain.|46|The class begins at nine.|180||
+begin|verb|F|46|to start|It will begin to rain.|46|The class begins at nine.|180||
 head|noun|P|46||She put a hat on her head.|46|He has a pain in his head.|146||
 change|verb|F|46|to become different, or to make something different|I want to change my name.|46|The weather changed.|129||
 hear|verb|D|47||Can you hear me?|47|I heard a noise.|121||
@@ -235,16 +235,16 @@ four|number|D|47||I get up at four.|47|A cat has four legs.|96||
 line|noun|P|47||Draw a line.|47|We stood in a line.|47||
 possible|adjective|F|48|able to happen or be done|Is it possible to go by train?|48|Come as soon as possible.|65||
 around|preposition|A|48||We walked around the house.|48|There are trees all around the garden.|126||
-eye|noun|P|48||She has blue eyes.|48|Close your eyes.|79||
+eye|noun|P|48||Something is in my eye.|48|Close your eyes.|79||
 let|verb|D|48||Let us go.|48|Let me help you.|64||
 walk|verb|A|48||Let us go for a walk.|48|I walk to school.|54||
 fact|noun|F|49|something that is true|It is a fact that the earth is round.|49|Tell me the facts.|56||
-allow|verb|F|49|to let someone do something|Are we allowed to sit here?|49|My mother does not allow dogs in the house.|55||
+allow|verb|F|49|to let someone do something|We do not allow dogs in the house.|49|My mother does not allow dogs in the house.|55||
 round|adjective|P|49||They sat at a round table.|49|The ball is round.|105||
 earth|noun|P|49||The earth goes around the sun.|49|Put the seeds in the earth.|118||
 sun|noun|P|49||The sun is hot today.|49|The sun comes up in the east.|156||
 world|noun|F|50|the earth and all the people and things on it|She has been all over the world.|50|It is the biggest city in the world.|86||
 information|noun|F|50|facts about something or someone|I need some information about trains.|50|Where can I get more information?|50||
-member|noun|F|50|a person who is part of a group|All members must come.|50|She is a member of the team.|66||
+member|noun|F|50|a person who is part of a group|You are a member of the family.|50|She is a member of the team.|66||
 later|adverb|F|50|at a time after now or after then|See you later.|50|Two days later, he came back.|50||
 right|adjective|A|50||Turn right here.|50|Your answer is right.|108||

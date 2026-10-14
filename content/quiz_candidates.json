@@ -20726,75 +20726,75 @@
    "word": "above"
   },
   {
-   "answer": "accepted",
+   "answer": "accept",
    "cands": [
     [
-     "added",
+     "add",
      "add"
     ],
     [
-     "told",
+     "tell",
      "tell"
     ],
     [
-     "wanted",
+     "want",
      "want"
     ],
     [
-     "followed",
+     "follow",
      "follow"
     ],
     [
-     "flew",
+     "fly",
      "fly"
     ],
     [
-     "continued",
-     "continue"
-    ],
-    [
-     "helped",
-     "help"
+     "describe",
+     "describe"
     ]
    ],
    "id": "g:accept:0",
    "kind": "gap",
-   "prompt": "She ___ the money.",
-   "text": "She accepted the money.",
+   "prompt": "I ___ your offer.",
+   "text": "I accept your offer.",
    "word": "accept"
   },
   {
-   "answer": "accept",
+   "answer": "accepted",
    "cands": [
     [
-     "keep",
+     "kept",
      "keep"
     ],
     [
-     "know",
+     "knew",
      "know"
     ],
     [
-     "speak",
-     "speak"
-    ],
-    [
-     "seem",
-     "seem"
-    ],
-    [
-     "spend",
+     "spent",
      "spend"
     ],
     [
-     "talk",
+     "talked",
      "talk"
+    ],
+    [
+     "saw",
+     "see"
+    ],
+    [
+     "swam",
+     "swim"
+    ],
+    [
+     "flew",
+     "fly"
     ]
    ],
    "id": "g:accept:1",
    "kind": "gap",
-   "prompt": "I ___ your offer.",
-   "text": "I accept your offer.",
+   "prompt": "She ___ the money.",
+   "text": "She accepted the money.",
    "word": "accept"
   },
   {
@@ -21031,12 +21031,12 @@
      "worry"
     ],
     [
-     "speaks",
-     "speak"
-    ],
-    [
      "washes",
      "wash"
+    ],
+    [
+     "needs",
+     "need"
     ]
    ],
    "id": "g:act:1",
@@ -22206,37 +22206,37 @@
    "word": "all"
   },
   {
-   "answer": "allowed",
+   "answer": "allow",
    "cands": [
     [
-     "found",
+     "are",
+     "are"
+    ],
+    [
+     "can",
+     "can"
+    ],
+    [
+     "find",
      "find"
     ],
     [
-     "moved",
+     "move",
      "move"
     ],
     [
-     "flew",
+     "fly",
      "fly"
     ],
     [
-     "happened",
+     "happen",
      "happen"
-    ],
-    [
-     "gave",
-     "give"
-    ],
-    [
-     "followed",
-     "follow"
     ]
    ],
    "id": "g:allow:0",
    "kind": "gap",
-   "prompt": "Are we ___ to sit here?",
-   "text": "Are we allowed to sit here?",
+   "prompt": "We do not ___ dogs in the house.",
+   "text": "We do not allow dogs in the house.",
    "word": "allow"
   },
   {
@@ -23062,77 +23062,37 @@
    "word": "angry"
   },
   {
-   "answer": "animals",
+   "answer": "animal",
    "cands": [
     [
-     "ways",
+     "bed",
+     "bed"
+    ],
+    [
+     "door",
+     "door"
+    ],
+    [
+     "way",
      "way"
     ],
     [
-     "things",
+     "thing",
      "thing"
     ],
     [
-     "parents",
+     "parent",
      "parent"
     ],
     [
-     "boys",
-     "boy"
-    ],
-    [
-     "parts",
-     "part"
-    ],
-    [
-     "children",
-     "child"
-    ],
-    [
-     "keys",
-     "key"
-    ],
-    [
-     "days",
-     "day"
-    ],
-    [
-     "dogs",
-     "dog"
-    ],
-    [
-     "stories",
-     "story"
-    ],
-    [
-     "mountains",
-     "mountain"
-    ],
-    [
-     "tables",
-     "table"
-    ],
-    [
-     "pictures",
-     "picture"
-    ],
-    [
-     "houses",
-     "house"
-    ],
-    [
-     "groups",
-     "group"
-    ],
-    [
-     "fingers",
-     "finger"
+     "phone",
+     "phone"
     ]
    ],
    "id": "g:animal:0",
    "kind": "gap",
-   "prompt": "Do you like ___?",
-   "text": "Do you like animals?",
+   "prompt": "A dog is an ___.",
+   "text": "A dog is an animal.",
    "word": "animal"
   },
   {
@@ -23430,37 +23390,37 @@
    "word": "any"
   },
   {
-   "answer": "appeared",
+   "answer": "appear",
    "cands": [
     [
-     "bought",
+     "buy",
      "buy"
     ],
     [
-     "passed",
+     "bring",
+     "bring"
+    ],
+    [
+     "pass",
      "pass"
     ],
     [
-     "found",
+     "find",
      "find"
     ],
     [
-     "developed",
+     "develop",
      "develop"
     ],
     [
-     "moved",
+     "move",
      "move"
-    ],
-    [
-     "touched",
-     "touch"
     ]
    ],
    "id": "g:appear:0",
    "kind": "gap",
-   "prompt": "A man ___ at the door.",
-   "text": "A man appeared at the door.",
+   "prompt": "Stars ___ at night.",
+   "text": "Stars appear at night.",
    "word": "appear"
   },
   {
@@ -24430,37 +24390,37 @@
    "word": "at"
   },
   {
-   "answer": "attacked",
+   "answer": "attack",
    "cands": [
     [
-     "took",
+     "seem",
+     "seem"
+    ],
+    [
+     "take",
      "take"
     ],
     [
-     "cried",
+     "cry",
      "cry"
     ],
     [
-     "sold",
+     "burst",
+     "burst"
+    ],
+    [
+     "should",
+     "should"
+    ],
+    [
+     "sell",
      "sell"
-    ],
-    [
-     "played",
-     "play"
-    ],
-    [
-     "compared",
-     "compare"
-    ],
-    [
-     "met",
-     "meet"
     ]
    ],
    "id": "g:attack:0",
    "kind": "gap",
-   "prompt": "The dog ___ the man.",
-   "text": "The dog attacked the man.",
+   "prompt": "The dog may ___ you.",
+   "text": "The dog may attack you.",
    "word": "attack"
   },
   {
@@ -24991,10 +24951,6 @@
      "change"
     ],
     [
-     "speaks",
-     "speak"
-    ],
-    [
      "plays",
      "play"
     ],
@@ -25009,6 +24965,14 @@
     [
      "takes",
      "take"
+    ],
+    [
+     "makes",
+     "make"
+    ],
+    [
+     "rises",
+     "rise"
     ]
    ],
    "id": "g:avoid:1",
@@ -26054,37 +26018,37 @@
    "word": "because"
   },
   {
-   "answer": "becoming",
+   "answer": "become",
    "cands": [
     [
-     "taking",
+     "start",
+     "start"
+    ],
+    [
+     "take",
      "take"
     ],
     [
-     "making",
+     "eat",
+     "eat"
+    ],
+    [
+     "make",
      "make"
     ],
     [
-     "moving",
+     "move",
      "move"
     ],
     [
-     "finding",
+     "find",
      "find"
-    ],
-    [
-     "having",
-     "have"
-    ],
-    [
-     "happening",
-     "happen"
     ]
    ],
    "id": "g:become:0",
    "kind": "gap",
-   "prompt": "It is ___ cold.",
-   "text": "It is becoming cold.",
+   "prompt": "It will ___ cold.",
+   "text": "It will become cold.",
    "word": "become"
   },
   {
@@ -26270,37 +26234,37 @@
    "word": "before"
   },
   {
-   "answer": "began",
+   "answer": "begin",
    "cands": [
     [
-     "drew",
+     "may",
+     "may"
+    ],
+    [
+     "should",
+     "should"
+    ],
+    [
+     "draw",
      "draw"
     ],
     [
-     "held",
+     "hold",
      "hold"
     ],
     [
-     "gave",
+     "give",
      "give"
     ],
     [
-     "played",
-     "play"
-    ],
-    [
-     "left",
-     "leave"
-    ],
-    [
-     "felt",
-     "feel"
+     "can",
+     "can"
     ]
    ],
    "id": "g:begin:0",
    "kind": "gap",
-   "prompt": "It ___ to rain.",
-   "text": "It began to rain.",
+   "prompt": "It will ___ to rain.",
+   "text": "It will begin to rain.",
    "word": "begin"
   },
   {
@@ -26327,8 +26291,8 @@
      "write"
     ],
     [
-     "supports",
-     "support"
+     "explains",
+     "explain"
     ]
    ],
    "id": "g:begin:1",
@@ -26718,37 +26682,37 @@
    "word": "bell"
   },
   {
-   "answer": "bends",
+   "answer": "bend",
    "cands": [
     [
-     "swims",
+     "return",
+     "return"
+    ],
+    [
+     "swim",
      "swim"
     ],
     [
-     "needs",
+     "set",
+     "set"
+    ],
+    [
+     "need",
      "need"
     ],
     [
-     "goes",
+     "sit",
+     "sit"
+    ],
+    [
+     "go",
      "go"
-    ],
-    [
-     "does",
-     "do"
-    ],
-    [
-     "changes",
-     "change"
-    ],
-    [
-     "makes",
-     "make"
     ]
    ],
    "id": "g:bend:0",
    "kind": "gap",
-   "prompt": "The road ___ to the left.",
-   "text": "The road bends to the left.",
+   "prompt": "___ your arm.",
+   "text": "Bend your arm.",
    "word": "bend"
   },
   {
@@ -26922,37 +26886,37 @@
    "word": "big"
   },
   {
-   "answer": "birds",
+   "answer": "bird",
    "cands": [
     [
-     "ways",
+     "way",
      "way"
     ],
     [
-     "parts",
+     "part",
      "part"
     ],
     [
-     "times",
+     "time",
      "time"
     ],
     [
-     "keys",
+     "door",
+     "door"
+    ],
+    [
+     "cake",
+     "cake"
+    ],
+    [
+     "key",
      "key"
-    ],
-    [
-     "books",
-     "book"
-    ],
-    [
-     "trains",
-     "train"
     ]
    ],
    "id": "g:bird:0",
    "kind": "gap",
-   "prompt": "___ can fly.",
-   "text": "Birds can fly.",
+   "prompt": "A ___ can fly.",
+   "text": "A bird can fly.",
    "word": "bird"
   },
   {
@@ -27130,37 +27094,41 @@
    "word": "bit"
   },
   {
-   "answer": "bites",
+   "answer": "bite",
    "cands": [
     [
-     "needs",
+     "is",
+     "is"
+    ],
+    [
+     "raise",
+     "raise"
+    ],
+    [
+     "need",
      "need"
     ],
     [
-     "moves",
+     "move",
      "move"
     ],
     [
-     "thinks",
+     "think",
      "think"
     ],
     [
-     "takes",
+     "take",
      "take"
     ],
     [
-     "acts",
+     "act",
      "act"
-    ],
-    [
-     "bends",
-     "bend"
     ]
    ],
    "id": "g:bite:0",
    "kind": "gap",
-   "prompt": "This dog ___ people.",
-   "text": "This dog bites people.",
+   "prompt": "The dog may ___ you.",
+   "text": "The dog may bite you.",
    "word": "bite"
   },
   {
@@ -27982,37 +27950,65 @@
    "word": "book"
   },
   {
-   "answer": "boots",
+   "answer": "boot",
    "cands": [
     [
-     "flowers",
+     "flower",
      "flower"
     ],
     [
-     "weeks",
+     "week",
      "week"
     ],
     [
-     "boats",
+     "coal",
+     "coal"
+    ],
+    [
+     "boat",
      "boat"
     ],
     [
-     "spaces",
+     "body",
+     "body"
+    ],
+    [
+     "space",
      "space"
     ],
     [
-     "parts",
+     "agreement",
+     "agreement"
+    ],
+    [
+     "river",
+     "river"
+    ],
+    [
+     "research",
+     "research"
+    ],
+    [
+     "station",
+     "station"
+    ],
+    [
+     "part",
      "part"
     ],
     [
-     "legs",
+     "leg",
      "leg"
+    ],
+    [
+     "law",
+     "law"
     ]
    ],
    "id": "g:boot:0",
    "kind": "gap",
-   "prompt": "Put on your ___.",
-   "text": "Put on your boots.",
+   "prompt": "This ___ is too small.",
+   "text": "This boot is too small.",
    "word": "boot"
   },
   {
@@ -28043,8 +28039,24 @@
      "cat"
     ],
     [
-     "units",
-     "unit"
+     "cars",
+     "car"
+    ],
+    [
+     "shops",
+     "shop"
+    ],
+    [
+     "glasses",
+     "glass"
+    ],
+    [
+     "teams",
+     "team"
+    ],
+    [
+     "sounds",
+     "sound"
     ]
    ],
    "id": "g:boot:1",
@@ -28586,37 +28598,37 @@
    "word": "bread"
   },
   {
-   "answer": "broke",
+   "answer": "break",
    "cands": [
     [
-     "turned",
+     "turn",
      "turn"
     ],
     [
-     "began",
+     "begin",
      "begin"
     ],
     [
-     "flew",
+     "fly",
      "fly"
     ],
     [
-     "added",
+     "are",
+     "are"
+    ],
+    [
+     "will",
+     "will"
+    ],
+    [
+     "add",
      "add"
-    ],
-    [
-     "did",
-     "do"
-    ],
-    [
-     "said",
-     "say"
     ]
    ],
    "id": "g:break:0",
    "kind": "gap",
-   "prompt": "The cup ___.",
-   "text": "The cup broke.",
+   "prompt": "Do not ___ the cup.",
+   "text": "Do not break the cup.",
    "word": "break"
   },
   {
@@ -29178,37 +29190,37 @@
    "word": "brush"
   },
   {
-   "answer": "built",
+   "answer": "build",
    "cands": [
     [
-     "heard",
+     "set",
+     "set"
+    ],
+    [
+     "hear",
      "hear"
     ],
     [
-     "left",
+     "leave",
      "leave"
     ],
     [
-     "spent",
+     "spend",
      "spend"
     ],
     [
-     "flew",
-     "fly"
+     "is",
+     "is"
     ],
     [
-     "went",
-     "go"
-    ],
-    [
-     "added",
-     "add"
+     "are",
+     "are"
     ]
    ],
    "id": "g:build:0",
    "kind": "gap",
-   "prompt": "They ___ a new school.",
-   "text": "They built a new school.",
+   "prompt": "They will ___ a new school.",
+   "text": "They will build a new school.",
    "word": "build"
   },
   {
@@ -29326,37 +29338,37 @@
    "word": "building"
   },
   {
-   "answer": "burnt",
+   "answer": "burn",
    "cands": [
     [
-     "developed",
+     "develop",
      "develop"
     ],
     [
-     "used",
+     "use",
      "use"
     ],
     [
-     "proved",
+     "prove",
      "prove"
     ],
     [
-     "ran",
+     "run",
      "run"
     ],
     [
-     "went",
+     "go",
      "go"
     ],
     [
-     "fixed",
+     "fix",
      "fix"
     ]
    ],
    "id": "g:burn:0",
    "kind": "gap",
-   "prompt": "I ___ my hand on the hot pot.",
-   "text": "I burnt my hand on the hot pot.",
+   "prompt": "Do not ___ your hand.",
+   "text": "Do not burn your hand.",
    "word": "burn"
   },
   {
@@ -29379,12 +29391,12 @@
      "do"
     ],
     [
-     "running",
-     "run"
-    ],
-    [
      "cooking",
      "cook"
+    ],
+    [
+     "watching",
+     "watch"
     ]
    ],
    "id": "g:burn:1",
@@ -30443,10 +30455,6 @@
      "visit"
     ],
     [
-     "killed",
-     "kill"
-    ],
-    [
      "entered",
      "enter"
     ],
@@ -30634,45 +30642,37 @@
    "word": "cat"
   },
   {
-   "answer": "caught",
+   "answer": "catch",
    "cands": [
     [
-     "needed",
+     "need",
      "need"
     ],
     [
-     "met",
+     "meet",
      "meet"
     ],
     [
-     "began",
+     "begin",
      "begin"
     ],
     [
-     "bought",
+     "buy",
      "buy"
     ],
     [
-     "played",
+     "play",
      "play"
     ],
     [
-     "heard",
+     "hear",
      "hear"
-    ],
-    [
-     "helped",
-     "help"
-    ],
-    [
-     "came",
-     "come"
     ]
    ],
    "id": "g:catch:0",
    "kind": "gap",
-   "prompt": "He ___ a fish.",
-   "text": "He caught a fish.",
+   "prompt": "He can ___ a fish.",
+   "text": "He can catch a fish.",
    "word": "catch"
   },
   {
@@ -30751,10 +30751,6 @@
      "step"
     ],
     [
-     "pointed",
-     "point"
-    ],
-    [
      "detailed",
      "detail"
     ],
@@ -30769,6 +30765,10 @@
     [
      "lit",
      "light"
+    ],
+    [
+     "book",
+     "book"
     ]
    ],
    "id": "g:cause:1",
@@ -30883,10 +30883,6 @@
    "answer": "centuries",
    "cands": [
     [
-     "presents",
-     "present"
-    ],
-    [
      "designs",
      "design"
     ],
@@ -30905,6 +30901,10 @@
     [
      "oranges",
      "orange"
+    ],
+    [
+     "decisions",
+     "decision"
     ]
    ],
    "id": "g:century:1",
@@ -31518,41 +31518,57 @@
    "word": "cheese"
   },
   {
-   "answer": "chemicals",
+   "answer": "chemical",
    "cands": [
     [
-     "coats",
+     "summer",
+     "summer"
+    ],
+    [
+     "coat",
      "coat"
     ],
     [
-     "groups",
+     "group",
      "group"
     ],
     [
-     "colours",
+     "street",
+     "street"
+    ],
+    [
+     "rate",
+     "rate"
+    ],
+    [
+     "agreement",
+     "agreement"
+    ],
+    [
+     "colour",
      "colour"
     ],
     [
-     "teams",
+     "ground",
+     "ground"
+    ],
+    [
+     "fruit",
+     "fruit"
+    ],
+    [
+     "cake",
+     "cake"
+    ],
+    [
+     "team",
      "team"
-    ],
-    [
-     "orders",
-     "order"
-    ],
-    [
-     "leaves",
-     "leaf"
-    ],
-    [
-     "members",
-     "member"
     ]
    ],
    "id": "g:chemical:0",
    "kind": "gap",
-   "prompt": "Do not touch these ___.",
-   "text": "Do not touch these chemicals.",
+   "prompt": "Do not touch this ___.",
+   "text": "Do not touch this chemical.",
    "word": "chemical"
   },
   {
@@ -31926,37 +31942,37 @@
    "word": "choice"
   },
   {
-   "answer": "chose",
+   "answer": "choose",
    "cands": [
     [
-     "worked",
+     "work",
      "work"
     ],
     [
-     "did",
+     "do",
      "do"
     ],
     [
-     "went",
+     "go",
      "go"
     ],
     [
-     "was",
+     "must",
+     "must"
+    ],
+    [
+     "be",
      "be"
     ],
     [
-     "had",
+     "have",
      "have"
-    ],
-    [
-     "felt",
-     "feel"
     ]
    ],
    "id": "g:choose:0",
    "kind": "gap",
-   "prompt": "She ___ the red dress.",
-   "text": "She chose the red dress.",
+   "prompt": "___ a dress.",
+   "text": "Choose a dress.",
    "word": "choose"
   },
   {
@@ -32647,12 +32663,12 @@
      "tell"
     ],
     [
-     "teaches",
-     "teach"
-    ],
-    [
      "uses",
      "use"
+    ],
+    [
+     "thinks",
+     "think"
     ]
    ],
    "id": "g:close:1",
@@ -32730,71 +32746,71 @@
    "word": "cloth"
   },
   {
-   "answer": "clouds",
+   "answer": "cloud",
    "cands": [
     [
-     "computers",
+     "computer",
      "computer"
     ],
     [
-     "stories",
+     "story",
      "story"
     ],
     [
-     "pieces",
-     "piece"
+     "ground",
+     "ground"
     ],
     [
-     "schools",
-     "school"
+     "seat",
+     "seat"
     ],
     [
-     "amounts",
-     "amount"
+     "family",
+     "family"
     ],
     [
-     "trees",
-     "tree"
+     "discussion",
+     "discussion"
     ]
    ],
    "id": "g:cloud:0",
    "kind": "gap",
-   "prompt": "There are no ___ in the sky.",
-   "text": "There are no clouds in the sky.",
+   "prompt": "A dark ___ covered the sun.",
+   "text": "A dark cloud covered the sun.",
    "word": "cloud"
   },
   {
-   "answer": "cloud",
+   "answer": "clouds",
    "cands": [
     [
-     "parent",
+     "parents",
      "parent"
     ],
     [
-     "bird",
+     "birds",
      "bird"
     ],
     [
-     "thing",
+     "things",
      "thing"
     ],
     [
-     "owner",
-     "owner"
+     "houses",
+     "house"
     ],
     [
-     "knife",
-     "knife"
+     "glasses",
+     "glass"
     ],
     [
-     "dress",
-     "dress"
+     "snows",
+     "snow"
     ]
    ],
    "id": "g:cloud:1",
    "kind": "gap",
-   "prompt": "A dark ___ covered the sun.",
-   "text": "A dark cloud covered the sun.",
+   "prompt": "There are no ___ in the sky.",
+   "text": "There are no clouds in the sky.",
    "word": "cloud"
   },
   {
@@ -34114,37 +34130,37 @@
    "word": "consider"
   },
   {
-   "answer": "contains",
+   "answer": "contain",
    "cands": [
     [
-     "does",
+     "could",
+     "could"
+    ],
+    [
+     "am",
+     "am"
+    ],
+    [
+     "do",
      "do"
     ],
     [
-     "makes",
+     "receive",
+     "receive"
+    ],
+    [
+     "describe",
+     "describe"
+    ],
+    [
+     "make",
      "make"
-    ],
-    [
-     "thinks",
-     "think"
-    ],
-    [
-     "goes",
-     "go"
-    ],
-    [
-     "gives",
-     "give"
-    ],
-    [
-     "moves",
-     "move"
     ]
    ],
    "id": "g:contain:0",
    "kind": "gap",
-   "prompt": "This box ___ books.",
-   "text": "This box contains books.",
+   "prompt": "Does this box ___ books?",
+   "text": "Does this box contain books?",
    "word": "contain"
   },
   {
@@ -34262,75 +34278,83 @@
    "word": "continue"
   },
   {
-   "answer": "controls",
+   "answer": "control",
    "cands": [
     [
-     "knows",
+     "know",
      "know"
     ],
     [
-     "speaks",
+     "fly",
+     "fly"
+    ],
+    [
+     "speak",
      "speak"
     ],
     [
-     "says",
+     "set",
+     "set"
+    ],
+    [
+     "sit",
+     "sit"
+    ],
+    [
+     "say",
      "say"
-    ],
-    [
-     "seems",
-     "seem"
-    ],
-    [
-     "works",
-     "work"
-    ],
-    [
-     "supports",
-     "support"
     ]
    ],
    "id": "g:control:0",
    "kind": "gap",
-   "prompt": "She ___ the money.",
-   "text": "She controls the money.",
+   "prompt": "He could not ___ the car.",
+   "text": "He could not control the car.",
    "word": "control"
   },
   {
-   "answer": "control",
+   "answer": "controls",
    "cands": [
     [
-     "touch",
-     "touch"
-    ],
-    [
-     "fall",
-     "fall"
-    ],
-    [
-     "join",
+     "joins",
      "join"
     ],
     [
-     "push",
+     "pushes",
      "push"
     ],
     [
-     "drop",
-     "drop"
+     "uses",
+     "use"
     ],
     [
-     "buy",
-     "buy"
+     "drives",
+     "drive"
     ],
     [
-     "shut",
-     "shut"
+     "gives",
+     "give"
+    ],
+    [
+     "produces",
+     "produce"
+    ],
+    [
+     "plays",
+     "play"
+    ],
+    [
+     "moves",
+     "move"
+    ],
+    [
+     "begins",
+     "begin"
     ]
    ],
    "id": "g:control:1",
    "kind": "gap",
-   "prompt": "He could not ___ the car.",
-   "text": "He could not control the car.",
+   "prompt": "She ___ the money.",
+   "text": "She controls the money.",
    "word": "control"
   },
   {
@@ -34519,16 +34543,16 @@
      "ticket"
     ],
     [
-     "months",
-     "month"
-    ],
-    [
      "coats",
      "coat"
     ],
     [
      "books",
      "book"
+    ],
+    [
+     "brothers",
+     "brother"
     ]
    ],
    "id": "g:cost:1",
@@ -34587,16 +34611,20 @@
      "stand"
     ],
     [
-     "offered",
-     "offer"
-    ],
-    [
      "died",
      "die"
     ],
     [
      "took",
      "take"
+    ],
+    [
+     "explained",
+     "explain"
+    ],
+    [
+     "became",
+     "become"
     ]
    ],
    "id": "g:cough:1",
@@ -34946,37 +34974,37 @@
    "word": "cover"
   },
   {
-   "answer": "cows",
+   "answer": "cow",
    "cands": [
     [
-     "cats",
+     "cat",
      "cat"
     ],
     [
-     "things",
+     "girl",
+     "girl"
+    ],
+    [
+     "thing",
      "thing"
     ],
     [
-     "children",
+     "child",
      "child"
     ],
     [
-     "books",
+     "door",
+     "door"
+    ],
+    [
+     "book",
      "book"
-    ],
-    [
-     "boys",
-     "boy"
-    ],
-    [
-     "apples",
-     "apple"
     ]
    ],
    "id": "g:cow:0",
    "kind": "gap",
-   "prompt": "___ give milk.",
-   "text": "Cows give milk.",
+   "prompt": "A ___ gives milk.",
+   "text": "A cow gives milk.",
    "word": "cow"
   },
   {
@@ -35082,57 +35110,53 @@
    "word": "crack"
   },
   {
-   "answer": "created",
+   "answer": "create",
    "cands": [
     [
-     "heard",
+     "hear",
      "hear"
     ],
     [
-     "found",
+     "find",
      "find"
     ],
     [
-     "built",
+     "build",
      "build"
     ],
     [
-     "learned",
+     "learn",
      "learn"
     ],
     [
-     "began",
+     "begin",
      "begin"
     ],
     [
-     "saw",
+     "see",
      "see"
     ],
     [
-     "returned",
+     "seem",
+     "seem"
+    ],
+    [
+     "return",
      "return"
     ],
     [
-     "took",
+     "take",
      "take"
     ],
     [
-     "played",
-     "play"
-    ],
-    [
-     "happened",
-     "happen"
-    ],
-    [
-     "went",
-     "go"
+     "set",
+     "set"
     ]
    ],
    "id": "g:create:0",
    "kind": "gap",
-   "prompt": "She ___ a new design.",
-   "text": "She created a new design.",
+   "prompt": "We can ___ a new design.",
+   "text": "We can create a new design.",
    "word": "create"
   },
   {
@@ -35306,37 +35330,37 @@
    "word": "crime"
   },
   {
-   "answer": "crying",
+   "answer": "cry",
    "cands": [
     [
-     "cooking",
+     "cook",
      "cook"
     ],
     [
-     "giving",
+     "give",
      "give"
     ],
     [
-     "selling",
+     "avoid",
+     "avoid"
+    ],
+    [
+     "drop",
+     "drop"
+    ],
+    [
+     "sell",
      "sell"
     ],
     [
-     "wearing",
-     "wear"
-    ],
-    [
-     "comparing",
-     "compare"
-    ],
-    [
-     "writing",
-     "write"
+     "let",
+     "let"
     ]
    ],
    "id": "g:cry:0",
    "kind": "gap",
-   "prompt": "The baby is ___.",
-   "text": "The baby is crying.",
+   "prompt": "Do not ___.",
+   "text": "Do not cry.",
    "word": "cry"
   },
   {
@@ -35363,8 +35387,8 @@
      "see"
     ],
     [
-     "offered",
-     "offer"
+     "served",
+     "serve"
     ]
    ],
    "id": "g:cry:1",
@@ -35518,37 +35542,37 @@
    "word": "current"
   },
   {
-   "answer": "curtains",
+   "answer": "curtain",
    "cands": [
     [
-     "centuries",
+     "date",
+     "date"
+    ],
+    [
+     "account",
+     "account"
+    ],
+    [
+     "century",
      "century"
     ],
     [
-     "glasses",
+     "glass",
      "glass"
     ],
     [
-     "homes",
+     "home",
      "home"
     ],
     [
-     "adjustments",
+     "adjustment",
      "adjustment"
-    ],
-    [
-     "brothers",
-     "brother"
-    ],
-    [
-     "rats",
-     "rat"
     ]
    ],
    "id": "g:curtain:0",
    "kind": "gap",
    "prompt": "Open the ___.",
-   "text": "Open the curtains.",
+   "text": "Open the curtain.",
    "word": "curtain"
   },
   {
@@ -35759,10 +35783,6 @@
    "answer": "damaged",
    "cands": [
     [
-     "pointed",
-     "point"
-    ],
-    [
      "detailed",
      "detail"
     ],
@@ -35781,6 +35801,10 @@
     [
      "planned",
      "plan"
+    ],
+    [
+     "caused",
+     "cause"
     ]
    ],
    "id": "g:damage:1",
@@ -35994,111 +36018,111 @@
    "word": "date"
   },
   {
-   "answer": "daughters",
+   "answer": "daughter",
    "cands": [
     [
-     "plans",
+     "plan",
      "plan"
     ],
     [
-     "shoes",
+     "hat",
+     "hat"
+    ],
+    [
+     "shoe",
      "shoe"
     ],
     [
-     "pieces",
+     "piece",
      "piece"
     ],
     [
-     "leaves",
+     "fish",
+     "fish"
+    ],
+    [
+     "leaf",
      "leaf"
-    ],
-    [
-     "mountains",
-     "mountain"
-    ],
-    [
-     "boats",
-     "boat"
-    ],
-    [
-     "members",
-     "member"
-    ],
-    [
-     "children",
-     "child"
-    ],
-    [
-     "arms",
-     "arm"
-    ],
-    [
-     "stars",
-     "star"
-    ],
-    [
-     "points",
-     "point"
-    ],
-    [
-     "companies",
-     "company"
-    ],
+    ]
+   ],
+   "id": "g:daughter:0",
+   "kind": "gap",
+   "prompt": "My ___ is five.",
+   "text": "My daughter is five.",
+   "word": "daughter"
+  },
+  {
+   "answer": "daughters",
+   "cands": [
     [
      "brothers",
      "brother"
     ],
     [
-     "cups",
-     "cup"
-    ],
-    [
-     "cows",
-     "cow"
-    ],
-    [
-     "cats",
-     "cat"
-    ]
-   ],
-   "id": "g:daughter:0",
-   "kind": "gap",
-   "prompt": "They have two ___.",
-   "text": "They have two daughters.",
-   "word": "daughter"
-  },
-  {
-   "answer": "daughter",
-   "cands": [
-    [
-     "brother",
-     "brother"
-    ],
-    [
-     "language",
+     "languages",
      "language"
     ],
     [
-     "key",
+     "keys",
      "key"
     ],
     [
-     "knee",
+     "knees",
      "knee"
     ],
     [
-     "box",
+     "boxes",
      "box"
     ],
     [
-     "line",
+     "lines",
      "line"
+    ],
+    [
+     "boys",
+     "boy"
+    ],
+    [
+     "hands",
+     "hand"
+    ],
+    [
+     "plans",
+     "plan"
+    ],
+    [
+     "ends",
+     "end"
+    ],
+    [
+     "orders",
+     "order"
+    ],
+    [
+     "eyes",
+     "eye"
+    ],
+    [
+     "bits",
+     "bit"
+    ],
+    [
+     "legs",
+     "leg"
+    ],
+    [
+     "floors",
+     "floor"
+    ],
+    [
+     "children",
+     "child"
     ]
    ],
    "id": "g:daughter:1",
    "kind": "gap",
-   "prompt": "My ___ is five.",
-   "text": "My daughter is five.",
+   "prompt": "They have two ___.",
+   "text": "They have two daughters.",
    "word": "daughter"
   },
   {
@@ -36450,37 +36474,57 @@
    "word": "debt"
   },
   {
-   "answer": "decided",
+   "answer": "decide",
    "cands": [
     [
-     "passed",
+     "pass",
      "pass"
     ],
     [
-     "visited",
+     "visit",
      "visit"
     ],
     [
-     "helped",
+     "help",
      "help"
     ],
     [
-     "closed",
+     "close",
      "close"
     ],
     [
-     "heard",
+     "should",
+     "should"
+    ],
+    [
+     "hear",
      "hear"
     ],
     [
-     "finished",
+     "finish",
      "finish"
+    ],
+    [
+     "bend",
+     "bend"
+    ],
+    [
+     "carry",
+     "carry"
+    ],
+    [
+     "may",
+     "may"
+    ],
+    [
+     "happen",
+     "happen"
     ]
    ],
    "id": "g:decide:0",
    "kind": "gap",
-   "prompt": "I ___ to stay at home.",
-   "text": "I decided to stay at home.",
+   "prompt": "You must ___.",
+   "text": "You must decide.",
    "word": "decide"
   },
   {
@@ -36654,37 +36698,37 @@
    "word": "deep"
   },
   {
-   "answer": "degrees",
+   "answer": "degree",
    "cands": [
     [
-     "lives",
+     "behaviour",
+     "behaviour"
+    ],
+    [
+     "neck",
+     "neck"
+    ],
+    [
+     "life",
      "life"
     ],
     [
-     "languages",
+     "project",
+     "project"
+    ],
+    [
+     "language",
      "language"
     ],
     [
-     "memories",
-     "memory"
-    ],
-    [
-     "presents",
-     "present"
-    ],
-    [
-     "seeds",
-     "seed"
-    ],
-    [
-     "faces",
-     "face"
+     "list",
+     "list"
     ]
    ],
    "id": "g:degree:0",
    "kind": "gap",
-   "prompt": "The water is a hundred ___.",
-   "text": "The water is a hundred degrees.",
+   "prompt": "It is one ___ today.",
+   "text": "It is one degree today.",
    "word": "degree"
   },
   {
@@ -37266,79 +37310,71 @@
    "word": "development"
   },
   {
-   "answer": "died",
+   "answer": "die",
    "cands": [
     [
-     "came",
+     "come",
      "come"
     ],
     [
-     "left",
+     "leave",
      "leave"
     ],
     [
-     "changed",
+     "can",
+     "can"
+    ],
+    [
+     "change",
      "change"
     ],
     [
-     "allowed",
+     "allow",
      "allow"
     ],
     [
-     "returned",
+     "return",
      "return"
-    ],
-    [
-     "expected",
-     "expect"
-    ],
-    [
-     "accepted",
-     "accept"
-    ],
-    [
-     "spent",
-     "spend"
     ]
    ],
    "id": "g:die:0",
    "kind": "gap",
-   "prompt": "The old dog ___.",
-   "text": "The old dog died.",
+   "prompt": "Plants ___ without water.",
+   "text": "Plants die without water.",
    "word": "die"
   },
   {
-   "answer": "die",
+   "answer": "died",
    "cands": [
     [
-     "tell",
+     "told",
      "tell"
     ],
     [
-     "describe",
-     "describe"
-    ],
-    [
-     "must",
-     "must"
-    ],
-    [
-     "compare",
+     "compared",
      "compare"
     ],
     [
-     "enter",
+     "entered",
      "enter"
     ],
     [
-     "happen",
+     "happened",
      "happen"
+    ],
+    [
+     "helped",
+     "help"
+    ],
+    [
+     "developed",
+     "develop"
     ]
    ],
    "id": "g:die:1",
    "kind": "gap",
-   "prompt": "Plants ___ without water.",
-   "text": "Plants die without water.",
+   "prompt": "The old dog ___.",
+   "text": "The old dog died.",
    "word": "die"
   },
   {
@@ -38775,10 +38811,6 @@
      "move"
     ],
     [
-     "speaks",
-     "speak"
-    ],
-    [
      "goes",
      "go"
     ],
@@ -38793,6 +38825,10 @@
     [
      "changes",
      "change"
+    ],
+    [
+     "takes",
+     "take"
     ]
    ],
    "id": "g:drive:1",
@@ -39250,37 +39286,37 @@
    "word": "each"
   },
   {
-   "answer": "ears",
+   "answer": "ear",
    "cands": [
     [
-     "months",
+     "couple",
+     "couple"
+    ],
+    [
+     "month",
      "month"
     ],
     [
-     "bags",
-     "bag"
+     "hospital",
+     "hospital"
     ],
     [
-     "stems",
-     "stem"
+     "ground",
+     "ground"
     ],
     [
-     "limits",
-     "limit"
+     "discovery",
+     "discovery"
     ],
     [
-     "springs",
-     "spring"
-    ],
-    [
-     "signs",
-     "sign"
+     "chance",
+     "chance"
     ]
    ],
    "id": "g:ear:0",
    "kind": "gap",
-   "prompt": "A cat has two ___.",
-   "text": "A cat has two ears.",
+   "prompt": "Put your hand over your ___.",
+   "text": "Put your hand over your ear.",
    "word": "ear"
   },
   {
@@ -39590,37 +39626,37 @@
    "word": "easy"
   },
   {
-   "answer": "ate",
+   "answer": "eat",
    "cands": [
     [
-     "made",
+     "make",
      "make"
     ],
     [
-     "needed",
+     "are",
+     "are"
+    ],
+    [
+     "need",
      "need"
     ],
     [
-     "was",
+     "be",
      "be"
     ],
     [
-     "had",
+     "have",
      "have"
     ],
     [
-     "did",
+     "do",
      "do"
-    ],
-    [
-     "went",
-     "go"
     ]
    ],
    "id": "g:eat:0",
    "kind": "gap",
    "prompt": "We ___ at home.",
-   "text": "We ate at home.",
+   "text": "We eat at home.",
    "word": "eat"
   },
   {
@@ -39942,37 +39978,37 @@
    "word": "effort"
   },
   {
-   "answer": "eggs",
+   "answer": "egg",
    "cands": [
     [
-     "designs",
+     "ball",
+     "ball"
+    ],
+    [
+     "night",
+     "night"
+    ],
+    [
+     "design",
      "design"
     ],
     [
-     "sounds",
+     "sound",
      "sound"
     ],
     [
-     "events",
+     "event",
      "event"
     ],
     [
-     "stars",
-     "star"
-    ],
-    [
-     "glasses",
-     "glass"
-    ],
-    [
-     "teams",
-     "team"
+     "city",
+     "city"
     ]
    ],
    "id": "g:egg:0",
    "kind": "gap",
-   "prompt": "Birds come out of ___.",
-   "text": "Birds come out of eggs.",
+   "prompt": "A bird comes out of an ___.",
+   "text": "A bird comes out of an egg.",
    "word": "egg"
   },
   {
@@ -40271,10 +40307,6 @@
    "answer": "ends",
    "cands": [
     [
-     "members",
-     "member"
-    ],
-    [
      "stories",
      "story"
     ],
@@ -40293,6 +40325,10 @@
     [
      "orders",
      "order"
+    ],
+    [
+     "fingers",
+     "finger"
     ]
    ],
    "id": "g:end:1",
@@ -41010,37 +41046,77 @@
    "word": "evening"
   },
   {
-   "answer": "events",
+   "answer": "event",
    "cands": [
     [
-     "eyes",
+     "detail",
+     "detail"
+    ],
+    [
+     "eye",
      "eye"
     ],
     [
-     "brothers",
+     "direction",
+     "direction"
+    ],
+    [
+     "woman",
+     "woman"
+    ],
+    [
+     "brother",
      "brother"
     ],
     [
-     "jobs",
+     "sun",
+     "sun"
+    ],
+    [
+     "job",
      "job"
     ],
     [
-     "children",
+     "death",
+     "death"
+    ],
+    [
+     "child",
      "child"
     ],
     [
-     "apples",
+     "apple",
      "apple"
     ],
     [
-     "steps",
+     "step",
      "step"
+    ],
+    [
+     "thing",
+     "thing"
+    ],
+    [
+     "paper",
+     "paper"
+    ],
+    [
+     "milk",
+     "milk"
+    ],
+    [
+     "sky",
+     "sky"
+    ],
+    [
+     "member",
+     "member"
     ]
    ],
    "id": "g:event:0",
    "kind": "gap",
-   "prompt": "The ___ of that day changed his life.",
-   "text": "The events of that day changed his life.",
+   "prompt": "It was a big ___.",
+   "text": "It was a big event.",
    "word": "event"
   },
   {
@@ -41294,71 +41370,111 @@
    "word": "example"
   },
   {
-   "answer": "exchanged",
+   "answer": "exchange",
    "cands": [
     [
-     "used",
+     "should",
+     "should"
+    ],
+    [
+     "use",
      "use"
     ],
     [
-     "pulled",
+     "pull",
      "pull"
     ],
     [
-     "ran",
+     "run",
      "run"
     ],
     [
-     "touched",
+     "touch",
      "touch"
+    ],
+    [
+     "make",
+     "make"
+    ],
+    [
+     "carry",
+     "carry"
+    ],
+    [
+     "throw",
+     "throw"
+    ],
+    [
+     "move",
+     "move"
+    ],
+    [
+     "finish",
+     "finish"
+    ],
+    [
+     "play",
+     "play"
+    ],
+    [
+     "arrive",
+     "arrive"
+    ]
+   ],
+   "id": "g:exchange:0",
+   "kind": "gap",
+   "prompt": "Can I ___ this shirt?",
+   "text": "Can I exchange this shirt?",
+   "word": "exchange"
+  },
+  {
+   "answer": "exchanged",
+   "cands": [
+    [
+     "carried",
+     "carry"
+    ],
+    [
+     "visited",
+     "visit"
+    ],
+    [
+     "helped",
+     "help"
+    ],
+    [
+     "blew",
+     "blow"
+    ],
+    [
+     "picked",
+     "pick"
     ],
     [
      "made",
      "make"
     ],
     [
-     "carried",
-     "carry"
-    ]
-   ],
-   "id": "g:exchange:0",
-   "kind": "gap",
-   "prompt": "We ___ phone numbers.",
-   "text": "We exchanged phone numbers.",
-   "word": "exchange"
-  },
-  {
-   "answer": "exchange",
-   "cands": [
-    [
-     "carry",
-     "carry"
+     "kept",
+     "keep"
     ],
     [
-     "visit",
-     "visit"
+     "got",
+     "get"
     ],
     [
-     "help",
-     "help"
+     "wrote",
+     "write"
     ],
     [
-     "offer",
-     "offer"
-    ],
-    [
-     "sleep",
-     "sleep"
-    ],
-    [
-     "are",
-     "are"
+     "thanked",
+     "thank"
     ]
    ],
    "id": "g:exchange:1",
    "kind": "gap",
-   "prompt": "Can I ___ this shirt?",
-   "text": "Can I exchange this shirt?",
+   "prompt": "We ___ phone numbers.",
+   "text": "We exchanged phone numbers.",
    "word": "exchange"
   },
   {
@@ -41795,16 +41911,16 @@
      "enter"
     ],
     [
-     "killed",
-     "kill"
-    ],
-    [
      "took",
      "take"
     ],
     [
      "continued",
      "continue"
+    ],
+    [
+     "talked",
+     "talk"
     ]
    ],
    "id": "g:explain:1",
@@ -41814,37 +41930,61 @@
    "word": "explain"
   },
   {
-   "answer": "eyes",
+   "answer": "eye",
    "cands": [
     [
-     "ideas",
+     "cake",
+     "cake"
+    ],
+    [
+     "left",
+     "left"
+    ],
+    [
+     "head",
+     "head"
+    ],
+    [
+     "idea",
      "idea"
     ],
     [
-     "days",
+     "day",
      "day"
     ],
     [
-     "cars",
+     "family",
+     "family"
+    ],
+    [
+     "car",
      "car"
     ],
     [
-     "dogs",
+     "dog",
      "dog"
     ],
     [
-     "cats",
+     "cat",
      "cat"
     ],
     [
-     "people",
+     "person",
      "person"
+    ],
+    [
+     "woman",
+     "woman"
+    ],
+    [
+     "mountain",
+     "mountain"
     ]
    ],
    "id": "g:eye:0",
    "kind": "gap",
-   "prompt": "She has blue ___.",
-   "text": "She has blue eyes.",
+   "prompt": "Something is in my ___.",
+   "text": "Something is in my eye.",
    "word": "eye"
   },
   {
@@ -42018,57 +42158,45 @@
    "word": "fact"
   },
   {
-   "answer": "failed",
+   "answer": "fail",
    "cands": [
     [
-     "took",
+     "set",
+     "set"
+    ],
+    [
+     "take",
      "take"
     ],
     [
-     "dropped",
+     "drop",
      "drop"
     ],
     [
-     "created",
+     "would",
+     "would"
+    ],
+    [
+     "create",
      "create"
     ],
     [
-     "blew",
+     "reduce",
+     "reduce"
+    ],
+    [
+     "blow",
      "blow"
     ],
     [
-     "needed",
+     "need",
      "need"
-    ],
-    [
-     "became",
-     "become"
-    ],
-    [
-     "drew",
-     "draw"
-    ],
-    [
-     "saw",
-     "see"
-    ],
-    [
-     "tried",
-     "try"
-    ],
-    [
-     "broke",
-     "break"
-    ],
-    [
-     "reached",
-     "reach"
     ]
    ],
    "id": "g:fail:0",
    "kind": "gap",
-   "prompt": "He ___ the test.",
-   "text": "He failed the test.",
+   "prompt": "Do not ___ the test.",
+   "text": "Do not fail the test.",
    "word": "fail"
   },
   {
@@ -42983,8 +43111,8 @@
      "day"
     ],
     [
-     "degrees",
-     "degree"
+     "pipes",
+     "pipe"
     ]
    ],
    "id": "g:feeling:1",
@@ -43266,37 +43394,41 @@
    "word": "field"
   },
   {
-   "answer": "fighting",
+   "answer": "fight",
    "cands": [
     [
-     "buying",
+     "believe",
+     "believe"
+    ],
+    [
+     "is",
+     "is"
+    ],
+    [
+     "tell",
+     "tell"
+    ],
+    [
+     "drink",
+     "drink"
+    ],
+    [
+     "buy",
      "buy"
     ],
     [
-     "working",
+     "work",
      "work"
     ],
     [
-     "using",
+     "use",
      "use"
-    ],
-    [
-     "being",
-     "be"
-    ],
-    [
-     "holding",
-     "hold"
-    ],
-    [
-     "meeting",
-     "meet"
     ]
    ],
    "id": "g:fight:0",
    "kind": "gap",
-   "prompt": "The two boys are ___.",
-   "text": "The two boys are fighting.",
+   "prompt": "Do not ___.",
+   "text": "Do not fight.",
    "word": "fight"
   },
   {
@@ -43491,8 +43623,8 @@
      "use"
     ],
     [
-     "appeared",
-     "appear"
+     "learned",
+     "learn"
     ]
    ],
    "id": "g:find:1",
@@ -43570,37 +43702,37 @@
    "word": "finger"
   },
   {
-   "answer": "finished",
+   "answer": "finish",
    "cands": [
     [
-     "met",
+     "meet",
      "meet"
     ],
     [
-     "knew",
+     "are",
+     "are"
+    ],
+    [
+     "know",
      "know"
     ],
     [
-     "added",
+     "add",
      "add"
     ],
     [
-     "swam",
+     "believe",
+     "believe"
+    ],
+    [
+     "swim",
      "swim"
-    ],
-    [
-     "came",
-     "come"
-    ],
-    [
-     "found",
-     "find"
     ]
    ],
    "id": "g:finish:0",
    "kind": "gap",
-   "prompt": "Have you ___ your work?",
-   "text": "Have you finished your work?",
+   "prompt": "___ your work.",
+   "text": "Finish your work.",
    "word": "finish"
   },
   {
@@ -43611,24 +43743,24 @@
      "give"
     ],
     [
-     "led",
-     "lead"
-    ],
-    [
      "picked",
      "pick"
-    ],
-    [
-     "began",
-     "begin"
     ],
     [
      "kicked",
      "kick"
     ],
     [
-     "slept",
-     "sleep"
+     "thanked",
+     "thank"
+    ],
+    [
+     "married",
+     "marry"
+    ],
+    [
+     "raised",
+     "raise"
     ]
    ],
    "id": "g:finish:1",
@@ -44814,71 +44946,71 @@
    "word": "force"
   },
   {
-   "answer": "forgot",
+   "answer": "forget",
    "cands": [
     [
-     "continued",
+     "continue",
      "continue"
     ],
     [
-     "happened",
+     "may",
+     "may"
+    ],
+    [
+     "happen",
      "happen"
     ],
     [
-     "ran",
+     "run",
      "run"
     ],
     [
-     "drew",
+     "draw",
      "draw"
     ],
     [
-     "visited",
+     "visit",
      "visit"
-    ],
-    [
-     "worked",
-     "work"
     ]
    ],
    "id": "g:forget:0",
    "kind": "gap",
-   "prompt": "I ___ his name.",
-   "text": "I forgot his name.",
+   "prompt": "Do not ___ your bag.",
+   "text": "Do not forget your bag.",
    "word": "forget"
   },
   {
-   "answer": "forget",
+   "answer": "forgot",
    "cands": [
     [
-     "let",
-     "let"
-    ],
-    [
-     "drive",
-     "drive"
-    ],
-    [
-     "know",
+     "knew",
      "know"
     ],
     [
-     "describe",
-     "describe"
-    ],
-    [
-     "become",
+     "became",
      "become"
     ],
     [
-     "might",
-     "might"
+     "added",
+     "add"
+    ],
+    [
+     "kept",
+     "keep"
+    ],
+    [
+     "accepted",
+     "accept"
+    ],
+    [
+     "talked",
+     "talk"
     ]
    ],
    "id": "g:forget:1",
    "kind": "gap",
-   "prompt": "Do not ___ your bag.",
-   "text": "Do not forget your bag.",
+   "prompt": "I ___ his name.",
+   "text": "I forgot his name.",
    "word": "forget"
   },
   {
@@ -46078,37 +46210,37 @@
    "word": "general"
   },
   {
-   "answer": "getting",
+   "answer": "get",
    "cands": [
     [
-     "wanting",
+     "want",
      "want"
     ],
     [
-     "drawing",
+     "draw",
      "draw"
     ],
     [
-     "working",
+     "work",
      "work"
     ],
     [
-     "swimming",
+     "swim",
      "swim"
     ],
     [
-     "sitting",
+     "sit",
      "sit"
     ],
     [
-     "taking",
-     "take"
+     "are",
+     "are"
     ]
    ],
    "id": "g:get:0",
    "kind": "gap",
-   "prompt": "It is ___ cold.",
-   "text": "It is getting cold.",
+   "prompt": "Please ___ me the book.",
+   "text": "Please get me the book.",
    "word": "get"
   },
   {
@@ -47427,10 +47559,6 @@
      "thing"
     ],
     [
-     "months",
-     "month"
-    ],
-    [
      "debts",
      "debt"
     ],
@@ -47453,6 +47581,22 @@
     [
      "sides",
      "side"
+    ],
+    [
+     "houses",
+     "house"
+    ],
+    [
+     "walls",
+     "wall"
+    ],
+    [
+     "prices",
+     "price"
+    ],
+    [
+     "centuries",
+     "century"
     ]
    ],
    "id": "g:gun:1",
@@ -47710,37 +47854,41 @@
    "word": "hand"
   },
   {
-   "answer": "hangs",
+   "answer": "hang",
    "cands": [
     [
-     "uses",
+     "draw",
+     "draw"
+    ],
+    [
+     "add",
+     "add"
+    ],
+    [
+     "cut",
+     "cut"
+    ],
+    [
+     "imagine",
+     "imagine"
+    ],
+    [
+     "reduce",
+     "reduce"
+    ],
+    [
+     "use",
      "use"
     ],
     [
-     "looks",
+     "look",
      "look"
-    ],
-    [
-     "takes",
-     "take"
-    ],
-    [
-     "drives",
-     "drive"
-    ],
-    [
-     "visits",
-     "visit"
-    ],
-    [
-     "begins",
-     "begin"
     ]
    ],
    "id": "g:hang:0",
    "kind": "gap",
-   "prompt": "The picture ___ on the wall.",
-   "text": "The picture hangs on the wall.",
+   "prompt": "___ the picture on the wall.",
+   "text": "Hang the picture on the wall.",
    "word": "hang"
   },
   {
@@ -47778,37 +47926,37 @@
    "word": "hang"
   },
   {
-   "answer": "happened",
+   "answer": "happen",
    "cands": [
     [
-     "came",
+     "come",
      "come"
     ],
     [
-     "needed",
+     "need",
      "need"
     ],
     [
-     "sat",
+     "will",
+     "will"
+    ],
+    [
+     "may",
+     "may"
+    ],
+    [
+     "sit",
      "sit"
     ],
     [
-     "saw",
+     "see",
      "see"
-    ],
-    [
-     "said",
-     "say"
-    ],
-    [
-     "stood",
-     "stand"
     ]
    ],
    "id": "g:happen:0",
    "kind": "gap",
-   "prompt": "What ___?",
-   "text": "What happened?",
+   "prompt": "What will ___?",
+   "text": "What will happen?",
    "word": "happen"
   },
   {
@@ -48607,10 +48755,6 @@
      "come"
     ],
     [
-     "chose",
-     "choose"
-    ],
-    [
      "dropped",
      "drop"
     ],
@@ -48621,6 +48765,10 @@
     [
      "swam",
      "swim"
+    ],
+    [
+     "cooked",
+     "cook"
     ]
    ],
    "id": "g:hear:1",
@@ -50126,37 +50274,37 @@
    "word": "however"
   },
   {
-   "answer": "humans",
+   "answer": "human",
    "cands": [
     [
-     "animals",
+     "animal",
      "animal"
     ],
     [
-     "amounts",
+     "hat",
+     "hat"
+    ],
+    [
+     "amount",
      "amount"
     ],
     [
-     "papers",
+     "paper",
      "paper"
     ],
     [
-     "things",
+     "thing",
      "thing"
     ],
     [
-     "rains",
-     "rain"
-    ],
-    [
-     "friends",
-     "friend"
+     "cause",
+     "cause"
     ]
    ],
    "id": "g:human:0",
    "kind": "gap",
-   "prompt": "___ need food and water.",
-   "text": "Humans need food and water.",
+   "prompt": "A ___ needs food and water.",
+   "text": "A human needs food and water.",
    "word": "human"
   },
   {
@@ -50846,37 +50994,37 @@
    "word": "in"
   },
   {
-   "answer": "includes",
+   "answer": "include",
    "cands": [
     [
-     "pushes",
+     "prove",
+     "prove"
+    ],
+    [
+     "push",
      "push"
     ],
     [
-     "drives",
-     "drive"
+     "throw",
+     "throw"
     ],
     [
-     "rises",
-     "rise"
+     "see",
+     "see"
     ],
     [
-     "seems",
-     "seem"
+     "must",
+     "must"
     ],
     [
-     "visits",
-     "visit"
-    ],
-    [
-     "turns",
-     "turn"
+     "create",
+     "create"
     ]
    ],
    "id": "g:include:0",
    "kind": "gap",
-   "prompt": "The price ___ food.",
-   "text": "The price includes food.",
+   "prompt": "Does the price ___ food?",
+   "text": "Does the price include food?",
    "word": "include"
   },
   {
@@ -50922,71 +51070,75 @@
    "word": "include"
   },
   {
-   "answer": "increased",
+   "answer": "increase",
    "cands": [
     [
-     "became",
+     "become",
      "become"
     ],
     [
-     "happened",
+     "happen",
      "happen"
     ],
     [
-     "talked",
+     "talk",
      "talk"
     ],
     [
-     "held",
+     "hold",
      "hold"
     ],
     [
-     "got",
+     "get",
      "get"
     ],
     [
-     "lived",
+     "grow",
+     "grow"
+    ],
+    [
+     "live",
      "live"
     ]
    ],
    "id": "g:increase:0",
    "kind": "gap",
-   "prompt": "The price ___.",
-   "text": "The price increased.",
+   "prompt": "We must ___ the amount of food.",
+   "text": "We must increase the amount of food.",
    "word": "increase"
   },
   {
-   "answer": "increase",
+   "answer": "increased",
    "cands": [
     [
-     "need",
+     "needed",
      "need"
     ],
     [
-     "leave",
+     "left",
      "leave"
     ],
     [
-     "meet",
+     "met",
      "meet"
     ],
     [
-     "know",
+     "knew",
      "know"
     ],
     [
-     "begin",
-     "begin"
+     "heard",
+     "hear"
     ],
     [
-     "hear",
-     "hear"
+     "came",
+     "come"
     ]
    ],
    "id": "g:increase:1",
    "kind": "gap",
-   "prompt": "We must ___ the amount of food.",
-   "text": "We must increase the amount of food.",
+   "prompt": "The price ___.",
+   "text": "The price increased.",
    "word": "increase"
   },
   {
@@ -51266,37 +51418,37 @@
    "word": "instead"
   },
   {
-   "answer": "instruments",
+   "answer": "instrument",
    "cands": [
     [
-     "facts",
+     "meat",
+     "meat"
+    ],
+    [
+     "window",
+     "window"
+    ],
+    [
+     "discovery",
+     "discovery"
+    ],
+    [
+     "fact",
      "fact"
     ],
     [
-     "armies",
+     "expert",
+     "expert"
+    ],
+    [
+     "army",
      "army"
-    ],
-    [
-     "shops",
-     "shop"
-    ],
-    [
-     "costs",
-     "cost"
-    ],
-    [
-     "activities",
-     "activity"
-    ],
-    [
-     "coats",
-     "coat"
     ]
    ],
    "id": "g:instrument:0",
    "kind": "gap",
-   "prompt": "She plays two ___.",
-   "text": "She plays two instruments.",
+   "prompt": "Can you play an ___?",
+   "text": "Can you play an instrument?",
    "word": "instrument"
   },
   {
@@ -52282,71 +52434,71 @@
    "word": "judge"
   },
   {
-   "answer": "jumped",
+   "answer": "jump",
    "cands": [
     [
-     "fell",
+     "fall",
      "fall"
     ],
     [
-     "entered",
+     "might",
+     "might"
+    ],
+    [
+     "contain",
+     "contain"
+    ],
+    [
+     "enter",
      "enter"
     ],
     [
-     "looked",
+     "look",
      "look"
     ],
     [
-     "gave",
-     "give"
-    ],
-    [
-     "swam",
-     "swim"
-    ],
-    [
-     "expected",
-     "expect"
+     "control",
+     "control"
     ]
    ],
    "id": "g:jump:0",
    "kind": "gap",
-   "prompt": "The cat ___ onto the table.",
-   "text": "The cat jumped onto the table.",
+   "prompt": "Can you ___ over the wall?",
+   "text": "Can you jump over the wall?",
    "word": "jump"
   },
   {
-   "answer": "jump",
+   "answer": "jumped",
    "cands": [
     [
-     "cry",
+     "cried",
      "cry"
     ],
     [
-     "put",
-     "put"
-    ],
-    [
-     "cut",
-     "cut"
-    ],
-    [
-     "choose",
-     "choose"
-    ],
-    [
-     "pay",
+     "paid",
      "pay"
     ],
     [
-     "hate",
-     "hate"
+     "took",
+     "take"
+    ],
+    [
+     "felt",
+     "feel"
+    ],
+    [
+     "lifted",
+     "lift"
+    ],
+    [
+     "loved",
+     "love"
     ]
    ],
    "id": "g:jump:1",
    "kind": "gap",
-   "prompt": "Can you ___ over the wall?",
-   "text": "Can you jump over the wall?",
+   "prompt": "The cat ___ onto the table.",
+   "text": "The cat jumped onto the table.",
    "word": "jump"
   },
   {
@@ -52630,37 +52782,37 @@
    "word": "kick"
   },
   {
-   "answer": "killed",
+   "answer": "kill",
    "cands": [
     [
-     "learned",
+     "learn",
      "learn"
     ],
     [
-     "told",
+     "tell",
      "tell"
     ],
     [
-     "became",
+     "become",
      "become"
     ],
     [
-     "ate",
+     "believe",
+     "believe"
+    ],
+    [
+     "eat",
      "eat"
     ],
     [
-     "looked",
+     "look",
      "look"
-    ],
-    [
-     "went",
-     "go"
     ]
    ],
    "id": "g:kill:0",
    "kind": "gap",
-   "prompt": "The cold ___ the plants.",
-   "text": "The cold killed the plants.",
+   "prompt": "The cold can ___ plants.",
+   "text": "The cold can kill plants.",
    "word": "kill"
   },
   {
@@ -52766,79 +52918,111 @@
    "word": "kind"
   },
   {
-   "answer": "kissed",
+   "answer": "kiss",
    "cands": [
     [
-     "used",
+     "use",
      "use"
     ],
     [
-     "played",
+     "play",
      "play"
     ],
     [
-     "heard",
+     "hear",
      "hear"
     ],
     [
-     "washed",
+     "wash",
      "wash"
     ],
     [
-     "dropped",
-     "drop"
+     "mean",
+     "mean"
     ],
     [
-     "worked",
-     "work"
-    ],
-    [
-     "walked",
-     "walk"
-    ],
-    [
-     "reached",
-     "reach"
+     "control",
+     "control"
     ]
    ],
    "id": "g:kiss:0",
    "kind": "gap",
-   "prompt": "She ___ her baby.",
-   "text": "She kissed her baby.",
+   "prompt": "He gave her a ___.",
+   "text": "He gave her a kiss.",
    "word": "kiss"
   },
   {
-   "answer": "kiss",
+   "answer": "kissed",
    "cands": [
     [
-     "take",
+     "took",
      "take"
     ],
     [
-     "get",
+     "got",
      "get"
     ],
     [
-     "develop",
+     "developed",
      "develop"
     ],
     [
-     "grow",
-     "grow"
+     "finished",
+     "finish"
     ],
     [
-     "sleep",
-     "sleep"
+     "kicked",
+     "kick"
     ],
     [
-     "worry",
-     "worry"
+     "spent",
+     "spend"
+    ],
+    [
+     "made",
+     "make"
+    ],
+    [
+     "passed",
+     "pass"
+    ],
+    [
+     "moved",
+     "move"
+    ],
+    [
+     "paid",
+     "pay"
+    ],
+    [
+     "visited",
+     "visit"
+    ],
+    [
+     "taught",
+     "teach"
+    ],
+    [
+     "lost",
+     "lose"
+    ],
+    [
+     "bought",
+     "buy"
+    ],
+    [
+     "found",
+     "find"
+    ],
+    [
+     "wrote",
+     "write"
     ]
    ],
    "id": "g:kiss:1",
    "kind": "gap",
-   "prompt": "He gave her a ___.",
-   "text": "He gave her a kiss.",
+   "prompt": "She ___ her baby.",
+   "text": "She kissed her baby.",
    "word": "kiss"
   },
   {
@@ -53182,71 +53366,71 @@
    "word": "land"
   },
   {
-   "answer": "languages",
+   "answer": "language",
    "cands": [
     [
-     "brothers",
+     "brother",
      "brother"
     ],
     [
-     "shoes",
+     "shoe",
      "shoe"
     ],
     [
-     "cows",
+     "cow",
      "cow"
     ],
     [
-     "cups",
+     "cup",
      "cup"
     ],
     [
-     "children",
-     "child"
+     "woman",
+     "woman"
     ],
     [
-     "coats",
-     "coat"
+     "people",
+     "people"
     ]
    ],
    "id": "g:language:0",
    "kind": "gap",
-   "prompt": "How many ___ do you speak?",
-   "text": "How many languages do you speak?",
+   "prompt": "Music is a ___ too.",
+   "text": "Music is a language too.",
    "word": "language"
   },
   {
-   "answer": "language",
+   "answer": "languages",
    "cands": [
     [
-     "coat",
+     "coats",
      "coat"
     ],
     [
-     "word",
+     "words",
      "word"
     ],
     [
-     "rain",
+     "rains",
      "rain"
     ],
     [
-     "person",
+     "people",
      "person"
     ],
     [
-     "house",
+     "houses",
      "house"
     ],
     [
-     "friend",
+     "friends",
      "friend"
     ]
    ],
    "id": "g:language:1",
    "kind": "gap",
-   "prompt": "Music is a ___ too.",
-   "text": "Music is a language too.",
+   "prompt": "How many ___ do you speak?",
+   "text": "How many languages do you speak?",
    "word": "language"
   },
   {
@@ -53590,37 +53774,37 @@
    "word": "later"
   },
   {
-   "answer": "laughed",
+   "answer": "laugh",
    "cands": [
     [
-     "ate",
+     "eat",
      "eat"
     ],
     [
-     "missed",
+     "miss",
      "miss"
     ],
     [
-     "cooked",
+     "cook",
      "cook"
     ],
     [
-     "turned",
+     "let",
+     "let"
+    ],
+    [
+     "turn",
      "turn"
     ],
     [
-     "talked",
+     "talk",
      "talk"
-    ],
-    [
-     "came",
-     "come"
     ]
    ],
    "id": "g:laugh:0",
    "kind": "gap",
-   "prompt": "She ___ at his story.",
-   "text": "She laughed at his story.",
+   "prompt": "Do not ___ at me.",
+   "text": "Do not laugh at me.",
    "word": "laugh"
   },
   {
@@ -53726,37 +53910,37 @@
    "word": "law"
   },
   {
-   "answer": "led",
+   "answer": "lead",
    "cands": [
     [
-     "tried",
+     "try",
      "try"
     ],
     [
-     "followed",
+     "follow",
      "follow"
     ],
     [
-     "fixed",
+     "wish",
+     "wish"
+    ],
+    [
+     "fix",
      "fix"
     ],
     [
-     "flew",
-     "fly"
+     "shake",
+     "shake"
     ],
     [
-     "saw",
-     "see"
-    ],
-    [
-     "knew",
-     "know"
+     "will",
+     "will"
     ]
    ],
    "id": "g:lead:0",
    "kind": "gap",
-   "prompt": "She ___ us to the station.",
-   "text": "She led us to the station.",
+   "prompt": "___ us to the station.",
+   "text": "Lead us to the station.",
    "word": "lead"
   },
   {
@@ -53870,71 +54054,71 @@
    "word": "leaf"
   },
   {
-   "answer": "learning",
+   "answer": "learn",
    "cands": [
     [
-     "taking",
+     "take",
      "take"
     ],
     [
-     "holding",
+     "show",
+     "show"
+    ],
+    [
+     "hold",
      "hold"
     ],
     [
-     "feeling",
+     "feel",
      "feel"
     ],
     [
-     "finding",
+     "find",
      "find"
     ],
     [
-     "growing",
-     "grow"
-    ],
-    [
-     "writing",
-     "write"
+     "could",
+     "could"
     ]
    ],
    "id": "g:learn:0",
    "kind": "gap",
-   "prompt": "I am ___ to swim.",
-   "text": "I am learning to swim.",
+   "prompt": "Children ___ quickly.",
+   "text": "Children learn quickly.",
    "word": "learn"
   },
   {
-   "answer": "learn",
+   "answer": "learning",
    "cands": [
     [
-     "follow",
-     "follow"
-    ],
-    [
-     "might",
-     "might"
-    ],
-    [
-     "come",
+     "coming",
      "come"
     ],
     [
-     "cut",
+     "cutting",
      "cut"
     ],
     [
-     "hear",
+     "hearing",
      "hear"
     ],
     [
-     "add",
+     "adding",
      "add"
+    ],
+    [
+     "swimming",
+     "swim"
+    ],
+    [
+     "needing",
+     "need"
     ]
    ],
    "id": "g:learn:1",
    "kind": "gap",
-   "prompt": "Children ___ quickly.",
-   "text": "Children learn quickly.",
+   "prompt": "I am ___ to swim.",
+   "text": "I am learning to swim.",
    "word": "learn"
   },
   {
@@ -54142,71 +54326,71 @@
    "word": "left"
   },
   {
-   "answer": "legs",
+   "answer": "leg",
    "cands": [
     [
-     "steps",
+     "step",
      "step"
     ],
     [
-     "ways",
+     "way",
      "way"
     ],
     [
-     "ideas",
+     "left",
+     "left"
+    ],
+    [
+     "idea",
      "idea"
     ],
     [
-     "glasses",
+     "door",
+     "door"
+    ],
+    [
+     "glass",
      "glass"
-    ],
-    [
-     "plans",
-     "plan"
-    ],
-    [
-     "sounds",
-     "sound"
     ]
    ],
    "id": "g:leg:0",
    "kind": "gap",
-   "prompt": "A dog has four ___.",
-   "text": "A dog has four legs.",
+   "prompt": "He broke his ___.",
+   "text": "He broke his leg.",
    "word": "leg"
   },
   {
-   "answer": "leg",
+   "answer": "legs",
    "cands": [
     [
-     "people",
-     "people"
-    ],
-    [
-     "woman",
-     "woman"
-    ],
-    [
-     "cup",
+     "cups",
      "cup"
     ],
     [
-     "meeting",
-     "meeting"
-    ],
-    [
-     "subject",
-     "subject"
-    ],
-    [
-     "point",
+     "points",
      "point"
+    ],
+    [
+     "animals",
+     "animal"
+    ],
+    [
+     "countries",
+     "country"
+    ],
+    [
+     "lines",
+     "line"
+    ],
+    [
+     "hands",
+     "hand"
     ]
    ],
    "id": "g:leg:1",
    "kind": "gap",
-   "prompt": "He broke his ___.",
-   "text": "He broke his leg.",
+   "prompt": "A dog has four ___.",
+   "text": "A dog has four legs.",
    "word": "leg"
   },
   {
@@ -54667,10 +54851,6 @@
      "stand"
     ],
     [
-     "killed",
-     "kill"
-    ],
-    [
      "gave",
      "give"
     ],
@@ -54685,6 +54865,10 @@
     [
      "created",
      "create"
+    ],
+    [
+     "started",
+     "start"
     ]
    ],
    "id": "g:lift:1",
@@ -55042,37 +55226,45 @@
    "word": "line"
   },
   {
-   "answer": "lips",
+   "answer": "lip",
    "cands": [
     [
-     "stems",
+     "stem",
      "stem"
     ],
     [
-     "classes",
+     "head",
+     "head"
+    ],
+    [
+     "class",
      "class"
     ],
     [
-     "ideas",
+     "idea",
      "idea"
     ],
     [
-     "boats",
+     "body",
+     "body"
+    ],
+    [
+     "fruit",
+     "fruit"
+    ],
+    [
+     "boat",
      "boat"
     ],
     [
-     "groups",
+     "group",
      "group"
-    ],
-    [
-     "books",
-     "book"
     ]
    ],
    "id": "g:lip:0",
    "kind": "gap",
-   "prompt": "She has red ___.",
-   "text": "She has red lips.",
+   "prompt": "She has a cut on her ___.",
+   "text": "She has a cut on her lip.",
    "word": "lip"
   },
   {
@@ -55806,45 +55998,41 @@
    "word": "loose"
   },
   {
-   "answer": "lost",
+   "answer": "lose",
    "cands": [
     [
-     "sold",
+     "sell",
      "sell"
     ],
     [
-     "gave",
+     "must",
+     "must"
+    ],
+    [
+     "give",
      "give"
     ],
     [
-     "happened",
+     "happen",
      "happen"
     ],
     [
-     "made",
+     "make",
      "make"
     ],
     [
-     "cooked",
+     "cook",
      "cook"
     ],
     [
-     "taught",
+     "teach",
      "teach"
-    ],
-    [
-     "chose",
-     "choose"
-    ],
-    [
-     "drew",
-     "draw"
     ]
    ],
    "id": "g:lose:0",
    "kind": "gap",
-   "prompt": "I ___ my key.",
-   "text": "I lost my key.",
+   "prompt": "Do not ___ your key.",
+   "text": "Do not lose your key.",
    "word": "lose"
   },
   {
@@ -56422,41 +56610,37 @@
    "word": "main"
   },
   {
-   "answer": "made",
+   "answer": "make",
    "cands": [
-    [
-     "was",
-     "be"
-    ],
-    [
-     "gave",
-     "give"
-    ],
-    [
-     "sat",
-     "sit"
-    ],
-    [
-     "had",
-     "have"
-    ],
-    [
-     "wanted",
-     "want"
-    ],
-    [
-     "did",
-     "do"
-    ],
     [
      "be",
      "be"
+    ],
+    [
+     "are",
+     "are"
+    ],
+    [
+     "give",
+     "give"
+    ],
+    [
+     "put",
+     "put"
+    ],
+    [
+     "sit",
+     "sit"
+    ],
+    [
+     "have",
+     "have"
     ]
    ],
    "id": "g:make:0",
    "kind": "gap",
    "prompt": "I ___ a cake.",
-   "text": "I made a cake.",
+   "text": "I make a cake.",
    "word": "make"
   },
   {
@@ -56634,37 +56818,37 @@
    "word": "man"
   },
   {
-   "answer": "manages",
+   "answer": "manage",
    "cands": [
     [
-     "gives",
+     "give",
      "give"
     ],
     [
-     "pays",
+     "compare",
+     "compare"
+    ],
+    [
+     "stay",
+     "stay"
+    ],
+    [
+     "pay",
      "pay"
     ],
     [
-     "avoids",
+     "avoid",
      "avoid"
     ],
     [
-     "includes",
-     "include"
-    ],
-    [
-     "makes",
-     "make"
-    ],
-    [
-     "suggests",
-     "suggest"
+     "sleep",
+     "sleep"
     ]
    ],
    "id": "g:manage:0",
    "kind": "gap",
-   "prompt": "She ___ a small hotel.",
-   "text": "She manages a small hotel.",
+   "prompt": "She can ___ a small hotel.",
+   "text": "She can manage a small hotel.",
    "word": "manage"
   },
   {
@@ -56673,10 +56857,6 @@
     [
      "washed",
      "wash"
-    ],
-    [
-     "killed",
-     "kill"
     ],
     [
      "came",
@@ -56693,6 +56873,10 @@
     [
      "added",
      "add"
+    ],
+    [
+     "dropped",
+     "drop"
     ]
    ],
    "id": "g:manage:1",
@@ -57086,45 +57270,57 @@
    "word": "market"
   },
   {
-   "answer": "married",
+   "answer": "marry",
    "cands": [
     [
-     "killed",
+     "kill",
      "kill"
     ],
     [
-     "joined",
+     "describe",
+     "describe"
+    ],
+    [
+     "join",
      "join"
     ],
     [
-     "proved",
+     "prove",
      "prove"
     ],
     [
-     "increased",
+     "include",
+     "include"
+    ],
+    [
+     "increase",
      "increase"
     ],
     [
-     "met",
+     "meet",
      "meet"
     ],
     [
-     "forgot",
+     "forget",
      "forget"
     ],
     [
-     "bought",
+     "worry",
+     "worry"
+    ],
+    [
+     "buy",
      "buy"
     ],
     [
-     "prepared",
-     "prepare"
+     "speak",
+     "speak"
     ]
    ],
    "id": "g:marry:0",
    "kind": "gap",
-   "prompt": "She ___ a doctor.",
-   "text": "She married a doctor.",
+   "prompt": "Will you ___ me?",
+   "text": "Will you marry me?",
    "word": "marry"
   },
   {
@@ -57502,111 +57698,111 @@
    "word": "may"
   },
   {
-   "answer": "meals",
+   "answer": "meal",
    "cands": [
     [
-     "things",
+     "man",
+     "man"
+    ],
+    [
+     "thing",
      "thing"
     ],
     [
-     "months",
+     "month",
      "month"
     ],
     [
-     "bones",
+     "bridge",
+     "bridge"
+    ],
+    [
+     "range",
+     "range"
+    ],
+    [
+     "wife",
+     "wife"
+    ],
+    [
+     "bone",
      "bone"
     ],
     [
-     "diseases",
+     "phone",
+     "phone"
+    ],
+    [
+     "cause",
+     "cause"
+    ],
+    [
+     "game",
+     "game"
+    ],
+    [
+     "disease",
      "disease"
     ],
     [
-     "computers",
+     "computer",
      "computer"
     ],
     [
-     "teams",
-     "team"
+     "half",
+     "half"
+    ],
+    [
+     "attempt",
+     "attempt"
+    ],
+    [
+     "hook",
+     "hook"
+    ],
+    [
+     "fear",
+     "fear"
     ]
    ],
    "id": "g:meal:0",
    "kind": "gap",
-   "prompt": "We have three ___ a day.",
-   "text": "We have three meals a day.",
+   "prompt": "That was a good ___.",
+   "text": "That was a good meal.",
    "word": "meal"
   },
   {
-   "answer": "meal",
+   "answer": "meals",
    "cands": [
     [
-     "thought",
-     "thought"
-    ],
-    [
-     "ring",
+     "rings",
      "ring"
     ],
     [
-     "case",
-     "case"
-    ],
-    [
-     "dress",
-     "dress"
-    ],
-    [
-     "weather",
-     "weather"
-    ],
-    [
-     "side",
+     "sides",
      "side"
     ],
     [
-     "bag",
+     "bags",
      "bag"
     ],
     [
-     "rule",
+     "rules",
      "rule"
     ],
     [
-     "discussion",
-     "discussion"
-    ],
-    [
-     "limit",
+     "limits",
      "limit"
     ],
     [
-     "matter",
-     "matter"
-    ],
-    [
-     "plant",
+     "plants",
      "plant"
-    ],
-    [
-     "seat",
-     "seat"
-    ],
-    [
-     "cloud",
-     "cloud"
-    ],
-    [
-     "seed",
-     "seed"
-    ],
-    [
-     "knowledge",
-     "knowledge"
     ]
    ],
    "id": "g:meal:1",
    "kind": "gap",
-   "prompt": "That was a good ___.",
-   "text": "That was a good meal.",
+   "prompt": "We have three ___ a day.",
+   "text": "We have three meals a day.",
    "word": "meal"
   },
   {
@@ -58034,37 +58230,37 @@
    "word": "meeting"
   },
   {
-   "answer": "members",
+   "answer": "member",
    "cands": [
     [
-     "homes",
+     "sky",
+     "sky"
+    ],
+    [
+     "sea",
+     "sea"
+    ],
+    [
+     "home",
      "home"
     ],
     [
-     "mountains",
+     "water",
+     "water"
+    ],
+    [
+     "cake",
+     "cake"
+    ],
+    [
+     "mountain",
      "mountain"
-    ],
-    [
-     "numbers",
-     "number"
-    ],
-    [
-     "dogs",
-     "dog"
-    ],
-    [
-     "points",
-     "point"
-    ],
-    [
-     "keys",
-     "key"
     ]
    ],
    "id": "g:member:0",
    "kind": "gap",
-   "prompt": "All ___ must come.",
-   "text": "All members must come.",
+   "prompt": "You are a ___ of the family.",
+   "text": "You are a member of the family.",
    "word": "member"
   },
   {
@@ -58791,10 +58987,6 @@
    "answer": "minutes",
    "cands": [
     [
-     "presents",
-     "present"
-    ],
-    [
      "tables",
      "table"
     ],
@@ -58813,6 +59005,10 @@
     [
      "jobs",
      "job"
+    ],
+    [
+     "things",
+     "thing"
     ]
    ],
    "id": "g:minute:1",
@@ -58822,91 +59018,75 @@
    "word": "minute"
   },
   {
-   "answer": "missed",
+   "answer": "miss",
    "cands": [
     [
-     "served",
+     "can",
+     "can"
+    ],
+    [
+     "rise",
+     "rise"
+    ],
+    [
+     "could",
+     "could"
+    ],
+    [
+     "let",
+     "let"
+    ],
+    [
+     "serve",
      "serve"
     ],
     [
-     "needed",
-     "need"
+     "will",
+     "will"
+    ]
+   ],
+   "id": "g:miss:0",
+   "kind": "gap",
+   "prompt": "I ___ my mother.",
+   "text": "I miss my mother.",
+   "word": "miss"
+  },
+  {
+   "answer": "missed",
+   "cands": [
+    [
+     "carried",
+     "carry"
     ],
     [
-     "joined",
-     "join"
+     "drew",
+     "draw"
+    ],
+    [
+     "continued",
+     "continue"
     ],
     [
      "moved",
      "move"
     ],
     [
-     "entered",
-     "enter"
-    ],
-    [
-     "made",
-     "make"
-    ],
-    [
-     "ate",
-     "eat"
-    ],
-    [
      "closed",
      "close"
     ],
     [
-     "found",
-     "find"
+     "ran",
+     "run"
     ],
     [
-     "arrived",
-     "arrive"
-    ]
-   ],
-   "id": "g:miss:0",
-   "kind": "gap",
-   "prompt": "I ___ the train.",
-   "text": "I missed the train.",
-   "word": "miss"
-  },
-  {
-   "answer": "miss",
-   "cands": [
-    [
-     "carry",
-     "carry"
-    ],
-    [
-     "hang",
-     "hang"
-    ],
-    [
-     "draw",
-     "draw"
-    ],
-    [
-     "continue",
-     "continue"
-    ],
-    [
-     "offer",
-     "offer"
-    ],
-    [
-     "move",
-     "move"
-    ],
-    [
-     "close",
-     "close"
+     "dropped",
+     "drop"
     ]
    ],
    "id": "g:miss:1",
    "kind": "gap",
-   "prompt": "I ___ my mother.",
-   "text": "I miss my mother.",
+   "prompt": "I ___ the train.",
+   "text": "I missed the train.",
    "word": "miss"
   },
   {
@@ -59154,37 +59334,37 @@
    "word": "money"
   },
   {
-   "answer": "months",
+   "answer": "month",
    "cands": [
     [
-     "worlds",
+     "world",
      "world"
     ],
     [
-     "papers",
+     "paper",
      "paper"
     ],
     [
-     "groups",
+     "group",
      "group"
     ],
     [
-     "lights",
+     "door",
+     "door"
+    ],
+    [
+     "night",
+     "night"
+    ],
+    [
+     "light",
      "light"
-    ],
-    [
-     "centuries",
-     "century"
-    ],
-    [
-     "schools",
-     "school"
     ]
    ],
    "id": "g:month:0",
    "kind": "gap",
-   "prompt": "She is three ___ old.",
-   "text": "She is three months old.",
+   "prompt": "She is one ___ old.",
+   "text": "She is one month old.",
    "word": "month"
   },
   {
@@ -59774,71 +59954,95 @@
    "word": "much"
   },
   {
-   "answer": "muscles",
+   "answer": "muscle",
    "cands": [
     [
-     "problems",
+     "invention",
+     "invention"
+    ],
+    [
+     "problem",
      "problem"
     ],
     [
-     "curtains",
-     "curtain"
+     "library",
+     "library"
     ],
     [
-     "eggs",
-     "egg"
+     "mark",
+     "mark"
     ],
     [
-     "shoes",
-     "shoe"
+     "pain",
+     "pain"
     ],
     [
-     "flowers",
-     "flower"
-    ],
-    [
-     "nations",
-     "nation"
+     "guide",
+     "guide"
     ]
    ],
    "id": "g:muscle:0",
    "kind": "gap",
-   "prompt": "He has strong ___.",
-   "text": "He has strong muscles.",
+   "prompt": "I have a pain in a ___ in my leg.",
+   "text": "I have a pain in a muscle in my leg.",
    "word": "muscle"
   },
   {
-   "answer": "muscle",
+   "answer": "muscles",
    "cands": [
     [
-     "grass",
-     "grass"
-    ],
-    [
-     "hook",
-     "hook"
-    ],
-    [
-     "moment",
-     "moment"
-    ],
-    [
-     "government",
-     "government"
-    ],
-    [
-     "computer",
+     "computers",
      "computer"
     ],
     [
-     "internet",
-     "internet"
+     "liquids",
+     "liquid"
+    ],
+    [
+     "colours",
+     "colour"
+    ],
+    [
+     "edges",
+     "edge"
+    ],
+    [
+     "boats",
+     "boat"
+    ],
+    [
+     "feelings",
+     "feeling"
+    ],
+    [
+     "rains",
+     "rain"
+    ],
+    [
+     "answers",
+     "answer"
+    ],
+    [
+     "countries",
+     "country"
+    ],
+    [
+     "trees",
+     "tree"
+    ],
+    [
+     "homes",
+     "home"
+    ],
+    [
+     "hours",
+     "hour"
     ]
    ],
    "id": "g:muscle:1",
    "kind": "gap",
-   "prompt": "I have a pain in a ___ in my leg.",
-   "text": "I have a pain in a muscle in my leg.",
+   "prompt": "He has strong ___.",
+   "text": "He has strong muscles.",
    "word": "muscle"
   },
   {
@@ -62154,37 +62358,37 @@
    "word": "off"
   },
   {
-   "answer": "offered",
+   "answer": "offer",
    "cands": [
     [
-     "said",
+     "like",
+     "like"
+    ],
+    [
+     "say",
      "say"
     ],
     [
-     "lived",
+     "live",
      "live"
     ],
     [
-     "sat",
+     "sit",
      "sit"
     ],
     [
-     "allowed",
+     "set",
+     "set"
+    ],
+    [
+     "allow",
      "allow"
-    ],
-    [
-     "turned",
-     "turn"
-    ],
-    [
-     "was",
-     "be"
     ]
    ],
    "id": "g:offer:0",
    "kind": "gap",
-   "prompt": "He ___ me a drink.",
-   "text": "He offered me a drink.",
+   "prompt": "Can I ___ you a drink?",
+   "text": "Can I offer you a drink?",
    "word": "offer"
   },
   {
@@ -64418,53 +64622,45 @@
    "word": "party"
   },
   {
-   "answer": "passed",
+   "answer": "pass",
    "cands": [
     [
-     "increased",
+     "include",
+     "include"
+    ],
+    [
+     "increase",
      "increase"
     ],
     [
-     "bought",
+     "buy",
      "buy"
     ],
     [
-     "sold",
+     "sell",
      "sell"
     ],
     [
-     "chose",
+     "choose",
      "choose"
     ],
     [
-     "drew",
+     "draw",
      "draw"
     ],
     [
-     "finished",
+     "finish",
      "finish"
     ],
     [
-     "missed",
-     "miss"
-    ],
-    [
-     "turned",
-     "turn"
-    ],
-    [
-     "proved",
-     "prove"
-    ],
-    [
-     "felt",
-     "feel"
+     "speak",
+     "speak"
     ]
    ],
    "id": "g:pass:0",
    "kind": "gap",
-   "prompt": "We ___ the school.",
-   "text": "We passed the school.",
+   "prompt": "___ me the cup.",
+   "text": "Pass me the cup.",
    "word": "pass"
   },
   {
@@ -65367,16 +65563,16 @@
      "pull"
     ],
     [
-     "laughed",
-     "laugh"
-    ],
-    [
-     "led",
-     "lead"
-    ],
-    [
      "threw",
      "throw"
+    ],
+    [
+     "was",
+     "be"
+    ],
+    [
+     "heard",
+     "hear"
     ]
    ],
    "id": "g:pick:1",
@@ -65754,37 +65950,37 @@
    "word": "place"
   },
   {
-   "answer": "plans",
+   "answer": "plan",
    "cands": [
     [
-     "facts",
+     "man",
+     "man"
+    ],
+    [
+     "head",
+     "head"
+    ],
+    [
+     "fact",
      "fact"
     ],
     [
-     "rains",
+     "rain",
      "rain"
     ],
     [
-     "trains",
+     "train",
      "train"
     ],
     [
-     "members",
+     "member",
      "member"
-    ],
-    [
-     "friends",
-     "friend"
-    ],
-    [
-     "houses",
-     "house"
     ]
    ],
    "id": "g:plan:0",
    "kind": "gap",
-   "prompt": "What are your ___ for tomorrow?",
-   "text": "What are your plans for tomorrow?",
+   "prompt": "What is your ___ for tomorrow?",
+   "text": "What is your plan for tomorrow?",
    "word": "plan"
   },
   {
@@ -65890,71 +66086,71 @@
    "word": "plane"
   },
   {
-   "answer": "plants",
+   "answer": "plant",
    "cands": [
     [
-     "places",
+     "cause",
+     "cause"
+    ],
+    [
+     "place",
      "place"
     ],
     [
-     "fingers",
+     "finger",
      "finger"
     ],
     [
-     "jobs",
+     "job",
      "job"
     ],
     [
-     "schools",
+     "school",
      "school"
     ],
     [
-     "days",
-     "day"
-    ],
-    [
-     "dogs",
-     "dog"
+     "sun",
+     "sun"
     ]
    ],
    "id": "g:plant:0",
    "kind": "gap",
-   "prompt": "Water the ___.",
-   "text": "Water the plants.",
+   "prompt": "This ___ needs light.",
+   "text": "This plant needs light.",
    "word": "plant"
   },
   {
-   "answer": "plant",
+   "answer": "plants",
    "cands": [
     [
-     "animal",
+     "animals",
      "animal"
     ],
     [
-     "country",
+     "countries",
      "country"
     ],
     [
-     "face",
+     "faces",
      "face"
     ],
     [
-     "cake",
-     "cake"
-    ],
-    [
-     "idea",
+     "ideas",
      "idea"
     ],
     [
-     "girl",
-     "girl"
+     "shirts",
+     "shirt"
+    ],
+    [
+     "plans",
+     "plan"
     ]
    ],
    "id": "g:plant:1",
    "kind": "gap",
-   "prompt": "This ___ needs light.",
-   "text": "This plant needs light.",
+   "prompt": "Water the ___.",
+   "text": "Water the plants.",
    "word": "plant"
   },
   {
@@ -66007,16 +66203,16 @@
      "house"
     ],
     [
-     "units",
-     "unit"
-    ],
-    [
      "arms",
      "arm"
     ],
     [
      "languages",
      "language"
+    ],
+    [
+     "lives",
+     "life"
     ]
    ],
    "id": "g:plate:1",
@@ -66026,41 +66222,49 @@
    "word": "plate"
   },
   {
-   "answer": "plays",
+   "answer": "play",
    "cands": [
     [
-     "needs",
+     "feel",
+     "feel"
+    ],
+    [
+     "need",
      "need"
     ],
     [
-     "swims",
+     "swim",
      "swim"
     ],
     [
-     "moves",
+     "move",
      "move"
     ],
     [
-     "writes",
+     "write",
      "write"
     ],
     [
-     "has",
+     "have",
      "have"
     ],
     [
-     "does",
+     "do",
      "do"
     ],
     [
-     "holds",
+     "am",
+     "am"
+    ],
+    [
+     "hold",
      "hold"
     ]
    ],
    "id": "g:play:0",
    "kind": "gap",
-   "prompt": "She ___ music.",
-   "text": "She plays music.",
+   "prompt": "I ___ music.",
+   "text": "I play music.",
    "word": "play"
   },
   {
@@ -66306,12 +66510,8 @@
    "word": "pocket"
   },
   {
-   "answer": "pointed",
+   "answer": "point",
    "cands": [
-    [
-     "trained",
-     "train"
-    ],
     [
      "back",
      "back"
@@ -66331,12 +66531,16 @@
     [
      "home",
      "home"
+    ],
+    [
+     "girl",
+     "girl"
     ]
    ],
    "id": "g:point:0",
    "kind": "gap",
-   "prompt": "He ___ at the door.",
-   "text": "He pointed at the door.",
+   "prompt": "___ at the door.",
+   "text": "Point at the door.",
    "word": "point"
   },
   {
@@ -66854,37 +67058,37 @@
    "word": "pot"
   },
   {
-   "answer": "potatoes",
+   "answer": "potato",
    "cands": [
     [
-     "minutes",
+     "experience",
+     "experience"
+    ],
+    [
+     "minute",
      "minute"
     ],
     [
-     "insects",
+     "insect",
      "insect"
     ],
     [
-     "oranges",
+     "orange",
      "orange"
     ],
     [
-     "countries",
+     "front",
+     "front"
+    ],
+    [
+     "country",
      "country"
-    ],
-    [
-     "costs",
-     "cost"
-    ],
-    [
-     "papers",
-     "paper"
     ]
    ],
    "id": "g:potato:0",
    "kind": "gap",
-   "prompt": "I like ___.",
-   "text": "I like potatoes.",
+   "prompt": "Cook the ___ in water.",
+   "text": "Cook the potato in water.",
    "word": "potato"
   },
   {
@@ -66907,12 +67111,12 @@
      "end"
     ],
     [
-     "degrees",
-     "degree"
-    ],
-    [
      "eggs",
      "egg"
+    ],
+    [
+     "bits",
+     "bit"
     ]
    ],
    "id": "g:potato:1",
@@ -67126,37 +67330,37 @@
    "word": "practice"
   },
   {
-   "answer": "prepared",
+   "answer": "prepare",
    "cands": [
     [
-     "developed",
+     "develop",
      "develop"
     ],
     [
-     "allowed",
+     "shake",
+     "shake"
+    ],
+    [
+     "hang",
+     "hang"
+    ],
+    [
+     "travel",
+     "travel"
+    ],
+    [
+     "allow",
      "allow"
     ],
     [
-     "stood",
+     "stand",
      "stand"
-    ],
-    [
-     "held",
-     "hold"
-    ],
-    [
-     "lifted",
-     "lift"
-    ],
-    [
-     "looked",
-     "look"
     ]
    ],
    "id": "g:prepare:0",
    "kind": "gap",
-   "prompt": "We ___ for the test.",
-   "text": "We prepared for the test.",
+   "prompt": "We must ___ for the test.",
+   "text": "We must prepare for the test.",
    "word": "prepare"
   },
   {
@@ -67395,12 +67599,12 @@
      "work"
     ],
     [
-     "led",
-     "lead"
-    ],
-    [
      "gave",
      "give"
+    ],
+    [
+     "served",
+     "serve"
     ]
    ],
    "id": "g:print:1",
@@ -67722,46 +67926,42 @@
    "word": "process"
   },
   {
-   "answer": "produces",
+   "answer": "produce",
    "cands": [
     [
-     "closes",
+     "is",
+     "is"
+    ],
+    [
+     "close",
      "close"
     ],
     [
-     "walks",
+     "walk",
      "walk"
     ],
     [
-     "covers",
+     "cover",
      "cover"
     ],
     [
-     "uses",
+     "use",
      "use"
     ],
     [
-     "forgets",
-     "forget"
-    ],
-    [
-     "goes",
-     "go"
+     "am",
+     "am"
     ]
    ],
    "id": "g:produce:0",
    "kind": "gap",
-   "prompt": "The company ___ cars.",
-   "text": "The company produces cars.",
+   "prompt": "The company can ___ cars.",
+   "text": "The company can produce cars.",
    "word": "produce"
   },
   {
    "answer": "produces",
    "cands": [
-    [
-     "speaks",
-     "speak"
-    ],
     [
      "saves",
      "save"
@@ -67781,6 +67981,10 @@
     [
      "walks",
      "walk"
+    ],
+    [
+     "drives",
+     "drive"
     ]
    ],
    "id": "g:produce:1",
@@ -68279,8 +68483,8 @@
      "buy"
     ],
     [
-     "killed",
-     "kill"
+     "developed",
+     "develop"
     ]
    ],
    "id": "g:pull:1",
@@ -69054,16 +69258,8 @@
    "word": "rail"
   },
   {
-   "answer": "raining",
+   "answer": "rain",
    "cands": [
-    [
-     "housing",
-     "house"
-    ],
-    [
-     "training",
-     "train"
-    ],
     [
      "hand",
      "hand"
@@ -69079,12 +69275,56 @@
     [
      "time",
      "time"
+    ],
+    [
+     "people",
+     "people"
+    ],
+    [
+     "life",
+     "life"
+    ],
+    [
+     "mountain",
+     "mountain"
+    ],
+    [
+     "dog",
+     "dog"
+    ],
+    [
+     "house",
+     "house"
+    ],
+    [
+     "day",
+     "day"
+    ],
+    [
+     "cat",
+     "cat"
+    ],
+    [
+     "cow",
+     "cow"
+    ],
+    [
+     "car",
+     "car"
+    ],
+    [
+     "sea",
+     "sea"
+    ],
+    [
+     "left",
+     "left"
     ]
    ],
    "id": "g:rain:0",
    "kind": "gap",
-   "prompt": "It is ___.",
-   "text": "It is raining.",
+   "prompt": "The ___ is cold.",
+   "text": "The rain is cold.",
    "word": "rain"
   },
   {
@@ -69187,8 +69427,8 @@
      "see"
     ],
     [
-     "burnt",
-     "burn"
+     "sold",
+     "sell"
     ]
    ],
    "id": "g:raise:1",
@@ -69303,14 +69543,6 @@
    "answer": "rats",
    "cands": [
     [
-     "units",
-     "unit"
-    ],
-    [
-     "degrees",
-     "degree"
-    ],
-    [
      "lives",
      "life"
     ],
@@ -69325,6 +69557,14 @@
     [
      "books",
      "book"
+    ],
+    [
+     "prices",
+     "price"
+    ],
+    [
+     "humans",
+     "human"
     ]
    ],
    "id": "g:rat:1",
@@ -69890,37 +70130,37 @@
    "word": "reason"
   },
   {
-   "answer": "received",
+   "answer": "receive",
    "cands": [
     [
-     "covered",
+     "cover",
      "cover"
     ],
     [
-     "met",
+     "shake",
+     "shake"
+    ],
+    [
+     "is",
+     "is"
+    ],
+    [
+     "meet",
      "meet"
     ],
     [
-     "wrote",
+     "push",
+     "push"
+    ],
+    [
+     "write",
      "write"
-    ],
-    [
-     "swam",
-     "swim"
-    ],
-    [
-     "sent",
-     "send"
-    ],
-    [
-     "needed",
-     "need"
     ]
    ],
    "id": "g:receive:0",
    "kind": "gap",
-   "prompt": "She ___ a lot of presents.",
-   "text": "She received a lot of presents.",
+   "prompt": "Did you ___ my present?",
+   "text": "Did you receive my present?",
    "word": "receive"
   },
   {
@@ -69943,12 +70183,12 @@
      "increase"
     ],
     [
-     "chose",
-     "choose"
-    ],
-    [
      "moved",
      "move"
+    ],
+    [
+     "sold",
+     "sell"
     ]
    ],
    "id": "g:receive:1",
@@ -70499,16 +70739,16 @@
      "space"
     ],
     [
-     "months",
-     "month"
-    ],
-    [
      "activities",
      "activity"
     ],
     [
      "snows",
      "snow"
+    ],
+    [
+     "brothers",
+     "brother"
     ]
    ],
    "id": "g:religion:1",
@@ -70590,37 +70830,37 @@
    "word": "remember"
   },
   {
-   "answer": "reported",
+   "answer": "report",
    "cands": [
     [
-     "planned",
-     "plan"
+     "attention",
+     "attention"
     ],
     [
-     "tested",
-     "test"
+     "design",
+     "design"
     ],
     [
-     "trained",
-     "train"
+     "food",
+     "food"
     ],
     [
-     "stepped",
-     "step"
+     "home",
+     "home"
     ],
     [
-     "rang",
-     "ring"
+     "news",
+     "news"
     ],
     [
-     "pointed",
-     "point"
+     "finger",
+     "finger"
     ]
    ],
    "id": "g:report:0",
    "kind": "gap",
-   "prompt": "She ___ the crime to the police.",
-   "text": "She reported the crime to the police.",
+   "prompt": "I wrote a ___.",
+   "text": "I wrote a report.",
    "word": "report"
   },
   {
@@ -71554,37 +71794,37 @@
    "word": "ring"
   },
   {
-   "answer": "rising",
+   "answer": "rise",
    "cands": [
     [
-     "hearing",
+     "allow",
+     "allow"
+    ],
+    [
+     "can",
+     "can"
+    ],
+    [
+     "hear",
      "hear"
     ],
     [
-     "cutting",
+     "know",
+     "know"
+    ],
+    [
+     "should",
+     "should"
+    ],
+    [
+     "cut",
      "cut"
-    ],
-    [
-     "writing",
-     "write"
-    ],
-    [
-     "happening",
-     "happen"
-    ],
-    [
-     "working",
-     "work"
-    ],
-    [
-     "selling",
-     "sell"
     ]
    ],
    "id": "g:rise:0",
    "kind": "gap",
-   "prompt": "Prices are ___.",
-   "text": "Prices are rising.",
+   "prompt": "The sun will ___ soon.",
+   "text": "The sun will rise soon.",
    "word": "rise"
   },
   {
@@ -71593,10 +71833,6 @@
     [
      "drives",
      "drive"
-    ],
-    [
-     "manages",
-     "manage"
     ],
     [
      "saves",
@@ -71613,6 +71849,10 @@
     [
      "makes",
      "make"
+    ],
+    [
+     "helps",
+     "help"
     ]
    ],
    "id": "g:rise:1",
@@ -71762,83 +72002,71 @@
    "word": "road"
   },
   {
-   "answer": "rolled",
+   "answer": "roll",
    "cands": [
     [
-     "gave",
+     "let",
+     "let"
+    ],
+    [
+     "give",
      "give"
     ],
     [
-     "managed",
+     "manage",
      "manage"
     ],
     [
-     "walked",
+     "walk",
      "walk"
     ],
     [
-     "agreed",
+     "agree",
      "agree"
     ],
     [
-     "watched",
+     "watch",
      "watch"
-    ],
-    [
-     "forgot",
-     "forget"
     ]
    ],
    "id": "g:roll:0",
    "kind": "gap",
-   "prompt": "The ball ___ down the street.",
-   "text": "The ball rolled down the street.",
+   "prompt": "___ the paper.",
+   "text": "Roll the paper.",
    "word": "roll"
   },
   {
-   "answer": "roll",
+   "answer": "rolled",
    "cands": [
     [
-     "miss",
+     "missed",
      "miss"
     ],
     [
-     "finish",
+     "finished",
      "finish"
     ],
     [
-     "lie",
-     "lie"
-    ],
-    [
-     "change",
+     "changed",
      "change"
     ],
     [
-     "develop",
+     "developed",
      "develop"
     ],
     [
-     "return",
+     "returned",
      "return"
     ],
     [
-     "think",
+     "thought",
      "think"
-    ],
-    [
-     "pass",
-     "pass"
-    ],
-    [
-     "love",
-     "love"
     ]
    ],
    "id": "g:roll:1",
    "kind": "gap",
-   "prompt": "___ the paper.",
-   "text": "Roll the paper.",
+   "prompt": "The ball ___ down the street.",
+   "text": "The ball rolled down the street.",
    "word": "roll"
   },
   {
@@ -71982,37 +72210,37 @@
    "word": "room"
   },
   {
-   "answer": "roots",
+   "answer": "root",
    "cands": [
     [
-     "degrees",
-     "degree"
+     "brush",
+     "brush"
     ],
     [
-     "sounds",
-     "sound"
+     "connection",
+     "connection"
     ],
     [
-     "weeks",
-     "week"
+     "force",
+     "force"
     ],
     [
-     "dogs",
-     "dog"
+     "discovery",
+     "discovery"
     ],
     [
-     "insects",
-     "insect"
+     "past",
+     "past"
     ],
     [
-     "snows",
-     "snow"
+     "payment",
+     "payment"
     ]
    ],
    "id": "g:root:0",
    "kind": "gap",
-   "prompt": "The ___ of the tree are deep.",
-   "text": "The roots of the tree are deep.",
+   "prompt": "The ___ of the tree is deep.",
+   "text": "The root of the tree is deep.",
    "word": "root"
   },
   {
@@ -72194,105 +72422,125 @@
    "word": "round"
   },
   {
-   "answer": "rules",
-   "cands": [
-    [
-     "members",
-     "member"
-    ],
-    [
-     "chairs",
-     "chair"
-    ],
-    [
-     "brothers",
-     "brother"
-    ],
-    [
-     "plants",
-     "plant"
-    ],
-    [
-     "costs",
-     "cost"
-    ],
-    [
-     "fingers",
-     "finger"
-    ]
-   ],
-   "id": "g:rule:0",
-   "kind": "gap",
-   "prompt": "Follow the ___.",
-   "text": "Follow the rules.",
-   "word": "rule"
-  },
-  {
    "answer": "rule",
    "cands": [
     [
-     "piece",
-     "piece"
+     "member",
+     "member"
     ],
     [
-     "age",
-     "age"
+     "fish",
+     "fish"
     ],
     [
-     "account",
-     "account"
+     "chair",
+     "chair"
     ],
     [
-     "sun",
-     "sun"
+     "hat",
+     "hat"
     ],
     [
-     "brother",
-     "brother"
+     "chance",
+     "chance"
     ],
     [
-     "left",
-     "left"
+     "period",
+     "period"
+    ],
+    [
+     "sky",
+     "sky"
     ]
    ],
-   "id": "g:rule:1",
+   "id": "g:rule:0",
    "kind": "gap",
    "prompt": "It is a ___ of the school.",
    "text": "It is a rule of the school.",
    "word": "rule"
   },
   {
-   "answer": "running",
+   "answer": "rules",
    "cands": [
     [
-     "making",
+     "pieces",
+     "piece"
+    ],
+    [
+     "brothers",
+     "brother"
+    ],
+    [
+     "humans",
+     "human"
+    ],
+    [
+     "records",
+     "record"
+    ],
+    [
+     "ideas",
+     "idea"
+    ],
+    [
+     "groups",
+     "group"
+    ],
+    [
+     "facts",
+     "fact"
+    ],
+    [
+     "arms",
+     "arm"
+    ],
+    [
+     "lights",
+     "light"
+    ],
+    [
+     "chairs",
+     "chair"
+    ]
+   ],
+   "id": "g:rule:1",
+   "kind": "gap",
+   "prompt": "Follow the ___.",
+   "text": "Follow the rules.",
+   "word": "rule"
+  },
+  {
+   "answer": "run",
+   "cands": [
+    [
+     "make",
      "make"
     ],
     [
-     "saying",
+     "say",
      "say"
     ],
     [
-     "living",
+     "are",
+     "are"
+    ],
+    [
+     "live",
      "live"
     ],
     [
-     "sitting",
+     "know",
+     "know"
+    ],
+    [
+     "sit",
      "sit"
-    ],
-    [
-     "getting",
-     "get"
-    ],
-    [
-     "seeing",
-     "see"
     ]
    ],
    "id": "g:run:0",
    "kind": "gap",
-   "prompt": "The children are ___.",
-   "text": "The children are running.",
+   "prompt": "I can ___.",
+   "text": "I can run.",
    "word": "run"
   },
   {
@@ -72742,71 +72990,71 @@
    "word": "sand"
   },
   {
-   "answer": "saved",
+   "answer": "save",
    "cands": [
     [
-     "watched",
+     "watch",
      "watch"
     ],
     [
-     "sat",
+     "sit",
      "sit"
     ],
     [
-     "blew",
+     "set",
+     "set"
+    ],
+    [
+     "blow",
      "blow"
     ],
     [
-     "talked",
+     "talk",
      "talk"
     ],
     [
-     "lived",
+     "live",
      "live"
-    ],
-    [
-     "carried",
-     "carry"
     ]
    ],
    "id": "g:save:0",
    "kind": "gap",
-   "prompt": "He ___ the child from the fire.",
-   "text": "He saved the child from the fire.",
+   "prompt": "I ___ money every month.",
+   "text": "I save money every month.",
    "word": "save"
   },
   {
-   "answer": "save",
+   "answer": "saved",
    "cands": [
     [
-     "wear",
+     "wore",
      "wear"
     ],
     [
-     "try",
+     "tried",
      "try"
     ],
     [
-     "feel",
+     "felt",
      "feel"
     ],
     [
-     "get",
+     "got",
      "get"
     ],
     [
-     "carry",
+     "carried",
      "carry"
     ],
     [
-     "is",
-     "is"
+     "forgot",
+     "forget"
     ]
    ],
    "id": "g:save:1",
    "kind": "gap",
-   "prompt": "I ___ money every month.",
-   "text": "I save money every month.",
+   "prompt": "He ___ the child from the fire.",
+   "text": "He saved the child from the fire.",
    "word": "save"
   },
   {
@@ -73622,37 +73870,37 @@
    "word": "see"
   },
   {
-   "answer": "seeds",
+   "answer": "seed",
    "cands": [
     [
-     "languages",
+     "system",
+     "system"
+    ],
+    [
+     "language",
      "language"
     ],
     [
-     "shirts",
+     "shirt",
      "shirt"
     ],
     [
-     "events",
+     "event",
      "event"
     ],
     [
-     "sons",
+     "son",
      "son"
     ],
     [
-     "clouds",
+     "cloud",
      "cloud"
-    ],
-    [
-     "nations",
-     "nation"
     ]
    ],
    "id": "g:seed:0",
    "kind": "gap",
-   "prompt": "Apples have ___ inside.",
-   "text": "Apples have seeds inside.",
+   "prompt": "Put a ___ in the ground.",
+   "text": "Put a seed in the ground.",
    "word": "seed"
   },
   {
@@ -73690,37 +73938,37 @@
    "word": "seed"
   },
   {
-   "answer": "seems",
+   "answer": "seem",
    "cands": [
     [
-     "knows",
+     "will",
+     "will"
+    ],
+    [
+     "could",
+     "could"
+    ],
+    [
+     "eat",
+     "eat"
+    ],
+    [
+     "know",
      "know"
     ],
     [
-     "holds",
+     "hold",
      "hold"
     ],
     [
-     "plays",
-     "play"
-    ],
-    [
-     "starts",
-     "start"
-    ],
-    [
-     "writes",
-     "write"
-    ],
-    [
-     "shows",
-     "show"
+     "can",
+     "can"
     ]
    ],
    "id": "g:seem:0",
    "kind": "gap",
-   "prompt": "She ___ happy.",
-   "text": "She seems happy.",
+   "prompt": "You ___ happy.",
+   "text": "You seem happy.",
    "word": "seem"
   },
   {
@@ -73894,37 +74142,37 @@
    "word": "self"
   },
   {
-   "answer": "sold",
+   "answer": "sell",
    "cands": [
     [
-     "chose",
+     "hope",
+     "hope"
+    ],
+    [
+     "choose",
      "choose"
     ],
     [
-     "thought",
+     "think",
      "think"
     ],
     [
-     "held",
+     "hold",
      "hold"
     ],
     [
-     "created",
+     "create",
      "create"
     ],
     [
-     "played",
+     "play",
      "play"
-    ],
-    [
-     "caught",
-     "catch"
     ]
    ],
    "id": "g:sell:0",
    "kind": "gap",
-   "prompt": "I ___ my car.",
-   "text": "I sold my car.",
+   "prompt": "I will ___ my car.",
+   "text": "I will sell my car.",
    "word": "sell"
   },
   {
@@ -73962,37 +74210,37 @@
    "word": "sell"
   },
   {
-   "answer": "sent",
+   "answer": "send",
    "cands": [
     [
-     "used",
+     "use",
      "use"
     ],
     [
-     "thought",
+     "think",
      "think"
     ],
     [
-     "chose",
+     "choose",
      "choose"
     ],
     [
-     "served",
+     "serve",
      "serve"
     ],
     [
-     "wrote",
+     "write",
      "write"
     ],
     [
-     "stood",
+     "stand",
      "stand"
     ]
    ],
    "id": "g:send:0",
    "kind": "gap",
-   "prompt": "She ___ her son to school.",
-   "text": "She sent her son to school.",
+   "prompt": "___ her to school.",
+   "text": "Send her to school.",
    "word": "send"
   },
   {
@@ -74250,105 +74498,141 @@
    "word": "serious"
   },
   {
-   "answer": "servants",
-   "cands": [
-    [
-     "months",
-     "month"
-    ],
-    [
-     "problems",
-     "problem"
-    ],
-    [
-     "pieces",
-     "piece"
-    ],
-    [
-     "cows",
-     "cow"
-    ],
-    [
-     "words",
-     "word"
-    ],
-    [
-     "teeth",
-     "tooth"
-    ]
-   ],
-   "id": "g:servant:0",
-   "kind": "gap",
-   "prompt": "The family had two ___.",
-   "text": "The family had two servants.",
-   "word": "servant"
-  },
-  {
    "answer": "servant",
    "cands": [
     [
-     "lip",
-     "lip"
+     "self",
+     "self"
     ],
     [
-     "ice",
-     "ice"
+     "hat",
+     "hat"
     ],
     [
-     "lot",
-     "lot"
+     "danger",
+     "danger"
     ],
     [
-     "desire",
-     "desire"
+     "metal",
+     "metal"
     ],
     [
-     "land",
-     "land"
+     "month",
+     "month"
     ],
     [
-     "pocket",
-     "pocket"
+     "problem",
+     "problem"
     ]
    ],
-   "id": "g:servant:1",
+   "id": "g:servant:0",
    "kind": "gap",
    "prompt": "The ___ opened the door.",
    "text": "The servant opened the door.",
    "word": "servant"
   },
   {
-   "answer": "served",
+   "answer": "servants",
    "cands": [
     [
-     "slept",
+     "lips",
+     "lip"
+    ],
+    [
+     "memories",
+     "memory"
+    ],
+    [
+     "centuries",
+     "century"
+    ],
+    [
+     "buildings",
+     "building"
+    ],
+    [
+     "countries",
+     "country"
+    ],
+    [
+     "houses",
+     "house"
+    ],
+    [
+     "brothers",
+     "brother"
+    ],
+    [
+     "humans",
+     "human"
+    ],
+    [
+     "sisters",
+     "sister"
+    ],
+    [
+     "parents",
+     "parent"
+    ],
+    [
+     "letters",
+     "letter"
+    ],
+    [
+     "records",
+     "record"
+    ],
+    [
+     "powers",
+     "power"
+    ]
+   ],
+   "id": "g:servant:1",
+   "kind": "gap",
+   "prompt": "The family had two ___.",
+   "text": "The family had two servants.",
+   "word": "servant"
+  },
+  {
+   "answer": "serve",
+   "cands": [
+    [
+     "will",
+     "will"
+    ],
+    [
+     "are",
+     "are"
+    ],
+    [
+     "sleep",
      "sleep"
     ],
     [
-     "carried",
+     "carry",
      "carry"
     ],
     [
-     "added",
+     "show",
+     "show"
+    ],
+    [
+     "describe",
+     "describe"
+    ],
+    [
+     "add",
      "add"
     ],
     [
-     "learned",
+     "learn",
      "learn"
-    ],
-    [
-     "began",
-     "begin"
-    ],
-    [
-     "found",
-     "find"
     ]
    ],
    "id": "g:serve:0",
    "kind": "gap",
-   "prompt": "They ___ us rice and fish.",
-   "text": "They served us rice and fish.",
+   "prompt": "They ___ rice and fish.",
+   "text": "They serve rice and fish.",
    "word": "serve"
   },
   {
@@ -74367,16 +74651,16 @@
      "join"
     ],
     [
-     "killed",
-     "kill"
-    ],
-    [
      "flew",
      "fly"
     ],
     [
      "was",
      "be"
+    ],
+    [
+     "started",
+     "start"
     ]
    ],
    "id": "g:serve:1",
@@ -74830,37 +75114,37 @@
    "word": "shade"
   },
   {
-   "answer": "shaking",
+   "answer": "shake",
    "cands": [
     [
-     "adding",
+     "allow",
+     "allow"
+    ],
+    [
+     "add",
      "add"
     ],
     [
-     "coming",
+     "know",
+     "know"
+    ],
+    [
+     "come",
      "come"
     ],
     [
-     "saying",
+     "say",
      "say"
     ],
     [
-     "building",
+     "build",
      "build"
-    ],
-    [
-     "working",
-     "work"
-    ],
-    [
-     "growing",
-     "grow"
     ]
    ],
    "id": "g:shake:0",
    "kind": "gap",
-   "prompt": "She was ___ with cold.",
-   "text": "She was shaking with cold.",
+   "prompt": "___ my hand.",
+   "text": "Shake my hand.",
    "word": "shake"
   },
   {
@@ -75450,37 +75734,77 @@
    "word": "shock"
   },
   {
-   "answer": "shoes",
+   "answer": "shoe",
    "cands": [
     [
-     "keys",
+     "key",
      "key"
     ],
     [
-     "tables",
+     "table",
      "table"
     ],
     [
-     "ends",
+     "end",
      "end"
     ],
     [
-     "times",
+     "time",
      "time"
     ],
     [
-     "countries",
+     "country",
      "country"
     ],
     [
-     "parts",
+     "people",
+     "people"
+    ],
+    [
+     "part",
      "part"
+    ],
+    [
+     "phone",
+     "phone"
+    ],
+    [
+     "word",
+     "word"
+    ],
+    [
+     "girl",
+     "girl"
+    ],
+    [
+     "money",
+     "money"
+    ],
+    [
+     "train",
+     "train"
+    ],
+    [
+     "dog",
+     "dog"
+    ],
+    [
+     "hat",
+     "hat"
+    ],
+    [
+     "thing",
+     "thing"
+    ],
+    [
+     "way",
+     "way"
     ]
    ],
    "id": "g:shoe:0",
    "kind": "gap",
-   "prompt": "Put on your ___.",
-   "text": "Put on your shoes.",
+   "prompt": "This ___ is new.",
+   "text": "This shoe is new.",
    "word": "shoe"
   },
   {
@@ -75942,71 +76266,71 @@
    "word": "shut"
   },
   {
-   "answer": "sides",
-   "cands": [
-    [
-     "lines",
-     "line"
-    ],
-    [
-     "knees",
-     "knee"
-    ],
-    [
-     "seeds",
-     "seed"
-    ],
-    [
-     "eggs",
-     "egg"
-    ],
-    [
-     "pictures",
-     "picture"
-    ],
-    [
-     "people",
-     "person"
-    ]
-   ],
-   "id": "g:side:0",
-   "kind": "gap",
-   "prompt": "A box has six ___.",
-   "text": "A box has six sides.",
-   "word": "side"
-  },
-  {
    "answer": "side",
    "cands": [
-    [
-     "dog",
-     "dog"
-    ],
-    [
-     "mother",
-     "mother"
-    ],
-    [
-     "cake",
-     "cake"
-    ],
-    [
-     "ship",
-     "ship"
-    ],
     [
      "line",
      "line"
     ],
     [
-     "system",
-     "system"
+     "water",
+     "water"
+    ],
+    [
+     "knee",
+     "knee"
+    ],
+    [
+     "reaction",
+     "reaction"
+    ],
+    [
+     "period",
+     "period"
+    ],
+    [
+     "action",
+     "action"
+    ]
+   ],
+   "id": "g:side:0",
+   "kind": "gap",
+   "prompt": "He sat at my ___.",
+   "text": "He sat at my side.",
+   "word": "side"
+  },
+  {
+   "answer": "sides",
+   "cands": [
+    [
+     "dogs",
+     "dog"
+    ],
+    [
+     "ships",
+     "ship"
+    ],
+    [
+     "lines",
+     "line"
+    ],
+    [
+     "groups",
+     "group"
+    ],
+    [
+     "shops",
+     "shop"
+    ],
+    [
+     "houses",
+     "house"
     ]
    ],
    "id": "g:side:1",
    "kind": "gap",
-   "prompt": "He sat at my ___.",
-   "text": "He sat at my side.",
+   "prompt": "A box has six ___.",
+   "text": "A box has six sides.",
    "word": "side"
   },
   {
@@ -76543,10 +76867,6 @@
      "finger"
     ],
     [
-     "presents",
-     "present"
-    ],
-    [
      "numbers",
      "number"
     ],
@@ -76557,6 +76877,10 @@
     [
      "hands",
      "hand"
+    ],
+    [
+     "plans",
+     "plan"
     ]
    ],
    "id": "g:sister:1",
@@ -76603,10 +76927,6 @@
    "answer": "sitting",
    "cands": [
     [
-     "running",
-     "run"
-    ],
-    [
      "holding",
      "hold"
     ],
@@ -76625,6 +76945,10 @@
     [
      "becoming",
      "become"
+    ],
+    [
+     "learning",
+     "learn"
     ]
    ],
    "id": "g:sit:1",
@@ -77058,37 +77382,37 @@
    "word": "sky"
   },
   {
-   "answer": "slept",
+   "answer": "sleep",
    "cands": [
     [
-     "helped",
+     "speak",
+     "speak"
+    ],
+    [
+     "help",
      "help"
     ],
     [
-     "went",
+     "go",
      "go"
     ],
     [
-     "created",
+     "create",
      "create"
     ],
     [
-     "continued",
+     "continue",
      "continue"
     ],
     [
-     "wanted",
+     "want",
      "want"
-    ],
-    [
-     "heard",
-     "hear"
     ]
    ],
    "id": "g:sleep:0",
    "kind": "gap",
    "prompt": "I ___ well.",
-   "text": "I slept well.",
+   "text": "I sleep well.",
    "word": "sleep"
   },
   {
@@ -77126,71 +77450,71 @@
    "word": "sleep"
   },
   {
-   "answer": "slipped",
+   "answer": "slip",
    "cands": [
     [
-     "touched",
+     "enjoy",
+     "enjoy"
+    ],
+    [
+     "touch",
      "touch"
     ],
     [
-     "increased",
+     "increase",
      "increase"
     ],
     [
-     "smiled",
+     "smile",
      "smile"
     ],
     [
-     "burnt",
+     "burn",
      "burn"
     ],
     [
-     "fixed",
-     "fix"
-    ],
-    [
-     "flew",
-     "fly"
+     "must",
+     "must"
     ]
    ],
    "id": "g:slip:0",
    "kind": "gap",
-   "prompt": "She ___ on the ice.",
-   "text": "She slipped on the ice.",
+   "prompt": "Take care not to ___ on the wet floor.",
+   "text": "Take care not to slip on the wet floor.",
    "word": "slip"
   },
   {
-   "answer": "slip",
+   "answer": "slipped",
    "cands": [
     [
-     "exchange",
+     "exchanged",
      "exchange"
     ],
     [
-     "check",
-     "check"
-    ],
-    [
-     "return",
+     "returned",
      "return"
     ],
     [
-     "shut",
-     "shut"
-    ],
-    [
-     "show",
-     "show"
-    ],
-    [
-     "play",
+     "played",
      "play"
+    ],
+    [
+     "did",
+     "do"
+    ],
+    [
+     "asked",
+     "ask"
+    ],
+    [
+     "told",
+     "tell"
     ]
    ],
    "id": "g:slip:1",
    "kind": "gap",
-   "prompt": "Take care not to ___ on the wet floor.",
-   "text": "Take care not to slip on the wet floor.",
+   "prompt": "She ___ on the ice.",
+   "text": "She slipped on the ice.",
    "word": "slip"
   },
   {
@@ -77466,37 +77790,37 @@
    "word": "smell"
   },
   {
-   "answer": "smiled",
+   "answer": "smile",
    "cands": [
     [
-     "stayed",
+     "contain",
+     "contain"
+    ],
+    [
+     "stay",
      "stay"
     ],
     [
-     "killed",
+     "kill",
      "kill"
     ],
     [
-     "visited",
+     "might",
+     "might"
+    ],
+    [
+     "hang",
+     "hang"
+    ],
+    [
+     "visit",
      "visit"
-    ],
-    [
-     "accepted",
-     "accept"
-    ],
-    [
-     "followed",
-     "follow"
-    ],
-    [
-     "kissed",
-     "kiss"
     ]
    ],
    "id": "g:smile:0",
    "kind": "gap",
-   "prompt": "She ___ at me.",
-   "text": "She smiled at me.",
+   "prompt": "___ at me.",
+   "text": "Smile at me.",
    "word": "smile"
   },
   {
@@ -77731,6 +78055,10 @@
      "train"
     ],
     [
+     "raining",
+     "rain"
+    ],
+    [
      "shoe",
      "shoe"
     ],
@@ -77741,10 +78069,6 @@
     [
      "country",
      "country"
-    ],
-    [
-     "table",
-     "table"
     ]
    ],
    "id": "g:snow:1",
@@ -78330,71 +78654,111 @@
    "word": "sometimes"
   },
   {
-   "answer": "sons",
+   "answer": "son",
    "cands": [
     [
-     "eggs",
+     "mother",
+     "mother"
+    ],
+    [
+     "knowledge",
+     "knowledge"
+    ],
+    [
+     "egg",
      "egg"
     ],
     [
-     "weeks",
+     "week",
      "week"
     ],
     [
-     "schools",
-     "school"
+     "period",
+     "period"
     ],
     [
-     "animals",
-     "animal"
+     "birth",
+     "birth"
+    ]
+   ],
+   "id": "g:son:0",
+   "kind": "gap",
+   "prompt": "My ___ is at school.",
+   "text": "My son is at school.",
+   "word": "son"
+  },
+  {
+   "answer": "sons",
+   "cands": [
+    [
+     "sisters",
+     "sister"
+    ],
+    [
+     "companies",
+     "company"
+    ],
+    [
+     "cows",
+     "cow"
+    ],
+    [
+     "parents",
+     "parent"
+    ],
+    [
+     "cups",
+     "cup"
+    ],
+    [
+     "points",
+     "point"
     ],
     [
      "snows",
      "snow"
     ],
     [
-     "ways",
-     "way"
-    ]
-   ],
-   "id": "g:son:0",
-   "kind": "gap",
-   "prompt": "They have two ___.",
-   "text": "They have two sons.",
-   "word": "son"
-  },
-  {
-   "answer": "son",
-   "cands": [
-    [
-     "sister",
-     "sister"
+     "glasses",
+     "glass"
     ],
     [
-     "account",
-     "account"
+     "fingers",
+     "finger"
     ],
     [
-     "blood",
-     "blood"
+     "teams",
+     "team"
     ],
     [
-     "company",
-     "company"
+     "answers",
+     "answer"
     ],
     [
-     "foot",
-     "foot"
+     "friends",
+     "friend"
     ],
     [
-     "expert",
-     "expert"
+     "questions",
+     "question"
+    ],
+    [
+     "times",
+     "time"
+    ],
+    [
+     "homes",
+     "home"
+    ],
+    [
+     "leaves",
+     "leaf"
     ]
    ],
    "id": "g:son:1",
    "kind": "gap",
-   "prompt": "My ___ is at school.",
-   "text": "My son is at school.",
+   "prompt": "They have two ___.",
+   "text": "They have two sons.",
    "word": "son"
   },
   {
@@ -78642,37 +79006,77 @@
    "word": "sort"
   },
   {
-   "answer": "sounds",
+   "answer": "sound",
    "cands": [
     [
-     "times",
+     "time",
      "time"
     ],
     [
-     "arms",
+     "arm",
      "arm"
     ],
     [
-     "people",
+     "person",
      "person"
     ],
     [
-     "shoes",
+     "sky",
+     "sky"
+    ],
+    [
+     "music",
+     "music"
+    ],
+    [
+     "page",
+     "page"
+    ],
+    [
+     "shoe",
      "shoe"
     ],
     [
-     "schools",
+     "value",
+     "value"
+    ],
+    [
+     "subject",
+     "subject"
+    ],
+    [
+     "sun",
+     "sun"
+    ],
+    [
+     "school",
      "school"
     ],
     [
-     "faces",
+     "father",
+     "father"
+    ],
+    [
+     "age",
+     "age"
+    ],
+    [
+     "face",
      "face"
+    ],
+    [
+     "hat",
+     "hat"
+    ],
+    [
+     "hair",
+     "hair"
     ]
    ],
    "id": "g:sound:0",
    "kind": "gap",
-   "prompt": "That ___ good.",
-   "text": "That sounds good.",
+   "prompt": "What is that ___?",
+   "text": "What is that sound?",
    "word": "sound"
   },
   {
@@ -78846,37 +79250,37 @@
    "word": "space"
   },
   {
-   "answer": "speaks",
+   "answer": "speak",
    "cands": [
     [
-     "swims",
+     "should",
+     "should"
+    ],
+    [
+     "add",
+     "add"
+    ],
+    [
+     "fall",
+     "fall"
+    ],
+    [
+     "swim",
      "swim"
     ],
     [
-     "thinks",
+     "think",
      "think"
     ],
     [
-     "grows",
+     "grow",
      "grow"
-    ],
-    [
-     "holds",
-     "hold"
-    ],
-    [
-     "happens",
-     "happen"
-    ],
-    [
-     "gives",
-     "give"
     ]
    ],
    "id": "g:speak:0",
    "kind": "gap",
-   "prompt": "She ___ two languages.",
-   "text": "She speaks two languages.",
+   "prompt": "Please ___ to me.",
+   "text": "Please speak to me.",
    "word": "speak"
   },
   {
@@ -78982,37 +79386,37 @@
    "word": "special"
   },
   {
-   "answer": "spent",
+   "answer": "spend",
    "cands": [
     [
-     "knew",
+     "know",
      "know"
     ],
     [
-     "ate",
+     "eat",
      "eat"
     ],
     [
-     "carried",
+     "carry",
      "carry"
     ],
     [
-     "began",
+     "show",
+     "show"
+    ],
+    [
+     "begin",
      "begin"
     ],
     [
-     "walked",
+     "walk",
      "walk"
-    ],
-    [
-     "wanted",
-     "want"
     ]
    ],
    "id": "g:spend:0",
    "kind": "gap",
-   "prompt": "I ___ all my money.",
-   "text": "I spent all my money.",
+   "prompt": "Do not ___ all your money.",
+   "text": "Do not spend all your money.",
    "word": "spend"
   },
   {
@@ -79458,37 +79862,37 @@
    "word": "stand"
   },
   {
-   "answer": "stars",
+   "answer": "star",
    "cands": [
     [
-     "designs",
+     "design",
      "design"
     ],
     [
-     "rules",
-     "rule"
+     "reaction",
+     "reaction"
     ],
     [
-     "walls",
-     "wall"
+     "trade",
+     "trade"
     ],
     [
-     "people",
-     "person"
+     "mind",
+     "mind"
     ],
     [
-     "coats",
-     "coat"
+     "account",
+     "account"
     ],
     [
-     "trains",
-     "train"
+     "road",
+     "road"
     ]
    ],
    "id": "g:star:0",
    "kind": "gap",
-   "prompt": "There are many ___ in the sky.",
-   "text": "There are many stars in the sky.",
+   "prompt": "I can see a ___.",
+   "text": "I can see a star.",
    "word": "star"
   },
   {
@@ -79526,37 +79930,37 @@
    "word": "star"
   },
   {
-   "answer": "started",
+   "answer": "start",
    "cands": [
     [
-     "thought",
+     "can",
+     "can"
+    ],
+    [
+     "think",
      "think"
     ],
     [
-     "gave",
+     "cut",
+     "cut"
+    ],
+    [
+     "give",
      "give"
     ],
     [
-     "went",
+     "am",
+     "am"
+    ],
+    [
+     "go",
      "go"
-    ],
-    [
-     "was",
-     "be"
-    ],
-    [
-     "sat",
-     "sit"
-    ],
-    [
-     "saw",
-     "see"
     ]
    ],
    "id": "g:start:0",
    "kind": "gap",
-   "prompt": "It ___ to rain.",
-   "text": "It started to rain.",
+   "prompt": "___ the car.",
+   "text": "Start the car.",
    "word": "start"
   },
   {
@@ -79979,10 +80383,6 @@
      "piece"
     ],
     [
-     "members",
-     "member"
-    ],
-    [
      "angles",
      "angle"
     ],
@@ -79993,6 +80393,14 @@
     [
      "crimes",
      "crime"
+    ],
+    [
+     "leaves",
+     "leaf"
+    ],
+    [
+     "children",
+     "child"
     ]
    ],
    "id": "g:stem:1",
@@ -81015,8 +81423,8 @@
      "job"
     ],
     [
-     "months",
-     "month"
+     "snows",
+     "snow"
     ]
    ],
    "id": "g:student:1",
@@ -81071,10 +81479,6 @@
      "begin"
     ],
     [
-     "teaches",
-     "teach"
-    ],
-    [
      "lives",
      "live"
     ],
@@ -81085,6 +81489,10 @@
     [
      "seems",
      "seem"
+    ],
+    [
+     "avoids",
+     "avoid"
     ]
    ],
    "id": "g:study:1",
@@ -81502,71 +81910,151 @@
    "word": "suggest"
   },
   {
-   "answer": "suggestions",
+   "answer": "suggestion",
    "cands": [
     [
-     "machines",
+     "machine",
      "machine"
     ],
     [
-     "coats",
+     "hotel",
+     "hotel"
+    ],
+    [
+     "coat",
      "coat"
     ],
     [
-     "memories",
+     "summer",
+     "summer"
+    ],
+    [
+     "result",
+     "result"
+    ],
+    [
+     "hole",
+     "hole"
+    ],
+    [
+     "discussion",
+     "discussion"
+    ],
+    [
+     "memory",
      "memory"
     ],
     [
-     "times",
+     "leather",
+     "leather"
+    ],
+    [
+     "distance",
+     "distance"
+    ],
+    [
+     "secret",
+     "secret"
+    ],
+    [
+     "invention",
+     "invention"
+    ],
+    [
+     "sort",
+     "sort"
+    ],
+    [
+     "birth",
+     "birth"
+    ],
+    [
+     "breath",
+     "breath"
+    ],
+    [
+     "time",
      "time"
-    ],
-    [
-     "feathers",
-     "feather"
-    ],
-    [
-     "curtains",
-     "curtain"
     ]
    ],
    "id": "g:suggestion:0",
    "kind": "gap",
-   "prompt": "Do you have any ___?",
-   "text": "Do you have any suggestions?",
+   "prompt": "That is a good ___.",
+   "text": "That is a good suggestion.",
    "word": "suggestion"
   },
   {
-   "answer": "suggestion",
+   "answer": "suggestions",
    "cands": [
     [
-     "edge",
+     "edges",
      "edge"
     ],
     [
-     "salt",
-     "salt"
-    ],
-    [
-     "pump",
-     "pump"
-    ],
-    [
-     "tooth",
+     "teeth",
      "tooth"
     ],
     [
-     "loss",
-     "loss"
+     "levels",
+     "level"
     ],
     [
-     "roof",
-     "roof"
+     "rooms",
+     "room"
+    ],
+    [
+     "companies",
+     "company"
+    ],
+    [
+     "stars",
+     "star"
+    ],
+    [
+     "points",
+     "point"
+    ],
+    [
+     "bags",
+     "bag"
+    ],
+    [
+     "students",
+     "student"
+    ],
+    [
+     "wires",
+     "wire"
+    ],
+    [
+     "fingers",
+     "finger"
+    ],
+    [
+     "religions",
+     "religion"
+    ],
+    [
+     "daughters",
+     "daughter"
+    ],
+    [
+     "answers",
+     "answer"
+    ],
+    [
+     "laws",
+     "law"
+    ],
+    [
+     "friends",
+     "friend"
     ]
    ],
    "id": "g:suggestion:1",
    "kind": "gap",
-   "prompt": "That is a good ___.",
-   "text": "That is a good suggestion.",
+   "prompt": "Do you have any ___?",
+   "text": "Do you have any suggestions?",
    "word": "suggestion"
   },
   {
@@ -81706,41 +82194,45 @@
    "word": "sun"
   },
   {
-   "answer": "supports",
+   "answer": "support",
    "cands": [
     [
-     "keeps",
+     "keep",
      "keep"
     ],
     [
-     "holds",
+     "compare",
+     "compare"
+    ],
+    [
+     "hold",
      "hold"
     ],
     [
-     "knows",
+     "know",
      "know"
     ],
     [
-     "changes",
+     "throw",
+     "throw"
+    ],
+    [
+     "change",
      "change"
     ],
     [
-     "seems",
-     "seem"
+     "let",
+     "let"
     ],
     [
-     "grows",
-     "grow"
-    ],
-    [
-     "rises",
-     "rise"
+     "arrive",
+     "arrive"
     ]
    ],
    "id": "g:support:0",
    "kind": "gap",
-   "prompt": "My family ___ my plan.",
-   "text": "My family supports my plan.",
+   "prompt": "We ___ your plan.",
+   "text": "We support your plan.",
    "word": "support"
   },
   {
@@ -81911,10 +82403,6 @@
    "answer": "surprised",
    "cands": [
     [
-     "reported",
-     "report"
-    ],
-    [
      "planned",
      "plan"
     ],
@@ -81933,6 +82421,10 @@
     [
      "caused",
      "cause"
+    ],
+    [
+     "cared",
+     "care"
     ]
    ],
    "id": "g:surprise:1",
@@ -82634,37 +83126,37 @@
    "word": "tax"
   },
   {
-   "answer": "teaches",
+   "answer": "teach",
    "cands": [
     [
-     "seems",
+     "spend",
+     "spend"
+    ],
+    [
+     "seem",
      "seem"
     ],
     [
-     "works",
+     "work",
      "work"
     ],
     [
-     "thinks",
-     "think"
+     "sell",
+     "sell"
     ],
     [
-     "changes",
-     "change"
+     "would",
+     "would"
     ],
     [
-     "supports",
-     "support"
-    ],
-    [
-     "pushes",
-     "push"
+     "throw",
+     "throw"
     ]
    ],
    "id": "g:teach:0",
    "kind": "gap",
-   "prompt": "She ___ music.",
-   "text": "She teaches music.",
+   "prompt": "I ___ music.",
+   "text": "I teach music.",
    "word": "teach"
   },
   {
@@ -82879,10 +83371,6 @@
      "change"
     ],
     [
-     "began",
-     "begin"
-    ],
-    [
      "said",
      "say"
     ],
@@ -82897,6 +83385,10 @@
     [
      "carried",
      "carry"
+    ],
+    [
+     "became",
+     "become"
     ]
    ],
    "id": "g:tell:1",
@@ -83074,37 +83566,53 @@
    "word": "tendency"
   },
   {
-   "answer": "tested",
+   "answer": "test",
    "cands": [
     [
-     "planned",
-     "plan"
+     "idea",
+     "idea"
     ],
     [
-     "lit",
-     "light"
+     "shelf",
+     "shelf"
     ],
     [
-     "detailed",
-     "detail"
+     "left",
+     "left"
     ],
     [
-     "caused",
-     "cause"
+     "death",
+     "death"
     ],
     [
-     "trained",
-     "train"
+     "door",
+     "door"
     ],
     [
-     "pointed",
-     "point"
+     "town",
+     "town"
+    ],
+    [
+     "question",
+     "question"
+    ],
+    [
+     "moon",
+     "moon"
+    ],
+    [
+     "father",
+     "father"
+    ],
+    [
+     "voice",
+     "voice"
     ]
    ],
    "id": "g:test:0",
    "kind": "gap",
-   "prompt": "They ___ the machine.",
-   "text": "They tested the machine.",
+   "prompt": "The ___ is hard.",
+   "text": "The test is hard.",
    "word": "test"
   },
   {
@@ -84558,37 +85066,37 @@
    "word": "through"
   },
   {
-   "answer": "threw",
+   "answer": "throw",
    "cands": [
     [
-     "expected",
+     "expect",
      "expect"
     ],
     [
-     "stood",
+     "stand",
      "stand"
     ],
     [
-     "ate",
+     "like",
+     "like"
+    ],
+    [
+     "eat",
      "eat"
     ],
     [
-     "had",
+     "have",
      "have"
     ],
     [
-     "accepted",
+     "accept",
      "accept"
-    ],
-    [
-     "wrote",
-     "write"
     ]
    ],
    "id": "g:throw:0",
    "kind": "gap",
-   "prompt": "She ___ the paper away.",
-   "text": "She threw the paper away.",
+   "prompt": "___ the paper away.",
+   "text": "Throw the paper away.",
    "word": "throw"
   },
   {
@@ -85639,16 +86147,16 @@
      "sell"
     ],
     [
-     "killed",
-     "kill"
-    ],
-    [
      "took",
      "take"
     ],
     [
      "talked",
      "talk"
+    ],
+    [
+     "finished",
+     "finish"
     ]
    ],
    "id": "g:touch:1",
@@ -86175,10 +86683,6 @@
      "order"
     ],
     [
-     "presents",
-     "present"
-    ],
-    [
      "birds",
      "bird"
     ],
@@ -86193,6 +86697,10 @@
     [
      "pieces",
      "piece"
+    ],
+    [
+     "faces",
+     "face"
     ]
    ],
    "id": "g:trick:1",
@@ -86962,37 +87470,65 @@
    "word": "understand"
   },
   {
-   "answer": "units",
+   "answer": "unit",
    "cands": [
     [
-     "sides",
+     "expert",
+     "expert"
+    ],
+    [
+     "noise",
+     "noise"
+    ],
+    [
+     "test",
+     "test"
+    ],
+    [
+     "sea",
+     "sea"
+    ],
+    [
+     "view",
+     "view"
+    ],
+    [
+     "side",
      "side"
     ],
     [
-     "months",
+     "evening",
+     "evening"
+    ],
+    [
+     "tax",
+     "tax"
+    ],
+    [
+     "north",
+     "north"
+    ],
+    [
+     "future",
+     "future"
+    ],
+    [
+     "music",
+     "music"
+    ],
+    [
+     "month",
      "month"
     ],
     [
-     "songs",
-     "song"
-    ],
-    [
-     "things",
-     "thing"
-    ],
-    [
-     "doctors",
-     "doctor"
-    ],
-    [
-     "trees",
-     "tree"
+     "foot",
+     "foot"
     ]
    ],
    "id": "g:unit:0",
    "kind": "gap",
-   "prompt": "The book has ten ___.",
-   "text": "The book has ten units.",
+   "prompt": "This is the last ___.",
+   "text": "This is the last unit.",
    "word": "unit"
   },
   {
@@ -87658,37 +88194,37 @@
    "word": "violent"
   },
   {
-   "answer": "visited",
+   "answer": "visit",
    "cands": [
     [
-     "became",
+     "become",
      "become"
     ],
     [
-     "sat",
+     "sit",
      "sit"
     ],
     [
-     "said",
+     "set",
+     "set"
+    ],
+    [
+     "would",
+     "would"
+    ],
+    [
+     "say",
      "say"
     ],
     [
-     "looked",
+     "look",
      "look"
-    ],
-    [
-     "carried",
-     "carry"
-    ],
-    [
-     "told",
-     "tell"
     ]
    ],
    "id": "g:visit:0",
    "kind": "gap",
    "prompt": "I ___ my mother.",
-   "text": "I visited my mother.",
+   "text": "I visit my mother.",
    "word": "visit"
   },
   {
@@ -87697,10 +88233,6 @@
     [
      "kicked",
      "kick"
-    ],
-    [
-     "led",
-     "lead"
     ],
     [
      "proved",
@@ -87717,6 +88249,10 @@
     [
      "sold",
      "sell"
+    ],
+    [
+     "got",
+     "get"
     ]
    ],
    "id": "g:visit:1",
@@ -88251,16 +88787,16 @@
      "add"
     ],
     [
-     "offered",
-     "offer"
-    ],
-    [
      "stopped",
      "stop"
     ],
     [
      "proved",
      "prove"
+    ],
+    [
+     "stayed",
+     "stay"
     ]
    ],
    "id": "g:wash:1",
@@ -88338,37 +88874,37 @@
    "word": "waste"
   },
   {
-   "answer": "watched",
+   "answer": "watch",
    "cands": [
     [
-     "looked",
+     "look",
      "look"
     ],
     [
-     "was",
+     "be",
      "be"
     ],
     [
-     "began",
-     "begin"
+     "is",
+     "is"
     ],
     [
-     "kept",
-     "keep"
+     "like",
+     "like"
     ],
     [
-     "measured",
-     "measure"
+     "should",
+     "should"
     ],
     [
-     "sat",
-     "sit"
+     "are",
+     "are"
     ]
    ],
    "id": "g:watch:0",
    "kind": "gap",
    "prompt": "We ___ the birds.",
-   "text": "We watched the birds.",
+   "text": "We watch the birds.",
    "word": "watch"
   },
   {
@@ -88514,37 +89050,73 @@
    "word": "water"
   },
   {
-   "answer": "waves",
+   "answer": "wave",
    "cands": [
     [
-     "people",
+     "choice",
+     "choice"
+    ],
+    [
+     "person",
      "person"
     ],
     [
-     "potatoes",
+     "potato",
      "potato"
     ],
     [
-     "friends",
+     "growth",
+     "growth"
+    ],
+    [
+     "bed",
+     "bed"
+    ],
+    [
+     "pleasure",
+     "pleasure"
+    ],
+    [
+     "wound",
+     "wound"
+    ],
+    [
+     "branch",
+     "branch"
+    ],
+    [
+     "friend",
      "friend"
     ],
     [
-     "classes",
+     "pain",
+     "pain"
+    ],
+    [
+     "man",
+     "man"
+    ],
+    [
+     "class",
      "class"
     ],
     [
-     "clouds",
+     "office",
+     "office"
+    ],
+    [
+     "cloud",
      "cloud"
     ],
     [
-     "lights",
-     "light"
+     "grain",
+     "grain"
     ]
    ],
    "id": "g:wave:0",
    "kind": "gap",
-   "prompt": "The ___ are big today.",
-   "text": "The waves are big today.",
+   "prompt": "Look at that big ___.",
+   "text": "Look at that big wave.",
    "word": "wave"
   },
   {
@@ -88718,37 +89290,37 @@
    "word": "we"
   },
   {
-   "answer": "wearing",
+   "answer": "wear",
    "cands": [
     [
-     "buying",
+     "seem",
+     "seem"
+    ],
+    [
+     "travel",
+     "travel"
+    ],
+    [
+     "visit",
+     "visit"
+    ],
+    [
+     "pass",
+     "pass"
+    ],
+    [
+     "help",
+     "help"
+    ],
+    [
+     "buy",
      "buy"
-    ],
-    [
-     "learning",
-     "learn"
-    ],
-    [
-     "writing",
-     "write"
-    ],
-    [
-     "working",
-     "work"
-    ],
-    [
-     "hearing",
-     "hear"
-    ],
-    [
-     "moving",
-     "move"
     ]
    ],
    "id": "g:wear:0",
    "kind": "gap",
-   "prompt": "She is ___ a red dress.",
-   "text": "She is wearing a red dress.",
+   "prompt": "___ your coat.",
+   "text": "Wear your coat.",
    "word": "wear"
   },
   {
@@ -89262,71 +89834,71 @@
    "word": "what"
   },
   {
-   "answer": "wheels",
-   "cands": [
-    [
-     "computers",
-     "computer"
-    ],
-    [
-     "degrees",
-     "degree"
-    ],
-    [
-     "signs",
-     "sign"
-    ],
-    [
-     "tickets",
-     "ticket"
-    ],
-    [
-     "nations",
-     "nation"
-    ],
-    [
-     "debts",
-     "debt"
-    ]
-   ],
-   "id": "g:wheel:0",
-   "kind": "gap",
-   "prompt": "A car has four ___.",
-   "text": "A car has four wheels.",
-   "word": "wheel"
-  },
-  {
    "answer": "wheel",
    "cands": [
     [
-     "boat",
-     "boat"
+     "purpose",
+     "purpose"
+    ],
+    [
+     "size",
+     "size"
     ],
     [
      "afternoon",
      "afternoon"
     ],
     [
-     "art",
-     "art"
+     "computer",
+     "computer"
     ],
     [
-     "bone",
+     "degree",
+     "degree"
+    ],
+    [
+     "garden",
+     "garden"
+    ]
+   ],
+   "id": "g:wheel:0",
+   "kind": "gap",
+   "prompt": "The ___ is broken.",
+   "text": "The wheel is broken.",
+   "word": "wheel"
+  },
+  {
+   "answer": "wheels",
+   "cands": [
+    [
+     "boats",
+     "boat"
+    ],
+    [
+     "bones",
      "bone"
     ],
     [
-     "bird",
+     "birds",
      "bird"
     ],
     [
-     "fear",
-     "fear"
+     "stems",
+     "stem"
+    ],
+    [
+     "countries",
+     "country"
+    ],
+    [
+     "oranges",
+     "orange"
     ]
    ],
    "id": "g:wheel:1",
    "kind": "gap",
-   "prompt": "The ___ is broken.",
-   "text": "The wheel is broken.",
+   "prompt": "A car has four ___.",
+   "text": "A car has four wheels.",
    "word": "wheel"
   },
   {
@@ -90134,37 +90706,37 @@
    "word": "will"
   },
   {
-   "answer": "won",
+   "answer": "win",
    "cands": [
     [
-     "happened",
+     "happen",
      "happen"
     ],
     [
-     "made",
+     "make",
      "make"
     ],
     [
-     "asked",
+     "shut",
+     "shut"
+    ],
+    [
+     "ask",
      "ask"
     ],
     [
-     "lifted",
+     "lift",
      "lift"
     ],
     [
-     "stood",
-     "stand"
-    ],
-    [
-     "talked",
-     "talk"
+     "act",
+     "act"
     ]
    ],
    "id": "g:win:0",
    "kind": "gap",
-   "prompt": "Our team ___.",
-   "text": "Our team won.",
+   "prompt": "We will ___.",
+   "text": "We will win.",
    "word": "win"
   },
   {
@@ -90422,37 +90994,37 @@
    "word": "wine"
   },
   {
-   "answer": "wings",
+   "answer": "wing",
    "cands": [
     [
-     "insects",
-     "insect"
+     "hair",
+     "hair"
     ],
     [
-     "arms",
-     "arm"
+     "structure",
+     "structure"
     ],
     [
-     "classes",
-     "class"
+     "chief",
+     "chief"
     ],
     [
-     "songs",
-     "song"
+     "net",
+     "net"
     ],
     [
-     "letters",
-     "letter"
+     "half",
+     "half"
     ],
     [
-     "ships",
-     "ship"
+     "milk",
+     "milk"
     ]
    ],
    "id": "g:wing:0",
    "kind": "gap",
-   "prompt": "The bird opened its ___.",
-   "text": "The bird opened its wings.",
+   "prompt": "The bird has a broken ___.",
+   "text": "The bird has a broken wing.",
    "word": "wing"
   },
   {
@@ -90558,71 +91130,71 @@
    "word": "winter"
   },
   {
-   "answer": "wires",
+   "answer": "wire",
    "cands": [
     [
-     "centuries",
+     "theory",
+     "theory"
+    ],
+    [
+     "fear",
+     "fear"
+    ],
+    [
+     "hook",
+     "hook"
+    ],
+    [
+     "century",
      "century"
     ],
     [
-     "diseases",
+     "disease",
      "disease"
     ],
     [
-     "keys",
-     "key"
-    ],
-    [
-     "amounts",
-     "amount"
-    ],
-    [
-     "brothers",
-     "brother"
-    ],
-    [
-     "eyes",
-     "eye"
+     "hole",
+     "hole"
     ]
    ],
    "id": "g:wire:0",
    "kind": "gap",
-   "prompt": "The ___ are under the floor.",
-   "text": "The wires are under the floor.",
+   "prompt": "Do not touch that ___.",
+   "text": "Do not touch that wire.",
    "word": "wire"
   },
   {
-   "answer": "wire",
+   "answer": "wires",
    "cands": [
     [
-     "liquid",
+     "liquids",
      "liquid"
     ],
     [
-     "bath",
-     "bath"
-    ],
-    [
-     "half",
-     "half"
-    ],
-    [
-     "religion",
+     "religions",
      "religion"
     ],
     [
-     "story",
+     "stories",
      "story"
     ],
     [
-     "snow",
+     "snows",
      "snow"
+    ],
+    [
+     "knees",
+     "knee"
+    ],
+    [
+     "diseases",
+     "disease"
     ]
    ],
    "id": "g:wire:1",
    "kind": "gap",
-   "prompt": "Do not touch that ___.",
-   "text": "Do not touch that wire.",
+   "prompt": "The ___ are under the floor.",
+   "text": "The wires are under the floor.",
    "word": "wire"
   },
   {
@@ -91431,16 +92003,16 @@
      "curve"
     ],
     [
-     "tested",
-     "test"
-    ],
-    [
-     "reported",
-     "report"
-    ],
-    [
      "rang",
      "ring"
+    ],
+    [
+     "lit",
+     "light"
+    ],
+    [
+     "stepped",
+     "step"
     ]
    ],
    "id": "g:wound:1",
@@ -91586,37 +92158,37 @@
    "word": "wrong"
   },
   {
-   "answer": "years",
+   "answer": "year",
    "cands": [
     [
-     "members",
+     "cause",
+     "cause"
+    ],
+    [
+     "foot",
+     "foot"
+    ],
+    [
+     "value",
+     "value"
+    ],
+    [
+     "member",
      "member"
     ],
     [
-     "parents",
+     "parent",
      "parent"
     ],
     [
-     "countries",
-     "country"
-    ],
-    [
-     "schools",
-     "school"
-    ],
-    [
-     "ends",
-     "end"
-    ],
-    [
-     "homes",
-     "home"
+     "effect",
+     "effect"
     ]
    ],
    "id": "g:year:0",
    "kind": "gap",
-   "prompt": "She is ten ___ old.",
-   "text": "She is ten years old.",
+   "prompt": "She is one ___ old.",
+   "text": "She is one year old.",
    "word": "year"
   },
   {

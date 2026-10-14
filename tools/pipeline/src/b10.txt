@@ -25,7 +25,7 @@ two|number|D||I have two cats.|Two and two is four.
 type|noun|F|a sort of something|What type of car is it?|I do not like this type of music.
 under|preposition|A||The cat is under the table.|He has a bag under his arm.
 understand|verb|F|to know what something means or why something happens|I do not understand.|Do you understand the question?
-unit|noun|F|one single thing, part or group; also, an amount used for measuring|The book has ten units.|A minute is a unit of time.
+unit|noun|F|one single thing, part or group; also, an amount used for measuring|This is the last unit.|A minute is a unit of time.
 until|preposition|F|up to a certain time, and then no longer|Wait until I come back.|The shop is open until six.
 up|adverb|A||Stand up.|The bird flew up into the sky.
 use|verb|A||Can I use your phone?|We use a knife to cut bread.
@@ -35,7 +35,7 @@ very|adverb|D||It is very cold.|She is very happy.
 vessel|noun|F|a ship or large boat; also, one of the thin pipes in the body that carry blood|The vessel came into the harbour.|Blood vessels carry blood around the body.
 view|noun|F|what you can see from a place; also, an opinion|There is a beautiful view from the top.|In my view, he is wrong.
 violent|adjective|F|using force to wound or damage; also, very strong and sudden|He is a violent man.|There was a violent wind.
-visit|verb|F|to go and see a person or a place for a short time|I visited my mother.|We visited the old church.
+visit|verb|F|to go and see a person or a place for a short time|I visit my mother.|We visited the old church.
 voice|noun|F|the sound that you make when you speak|She has a soft voice.|I heard his voice.
 wait|verb|F|to stay in a place until something happens or someone comes|Wait for me.|I waited for an hour.
 walk|verb|A||I walk to school.|Let us go for a walk.
@@ -45,12 +45,12 @@ war|noun|F|fighting between countries or groups using armies|The war lasted five
 warm|adjective|P||The water is warm.|It is warm today.
 wash|verb|A||Wash your hands.|I washed the cups.
 waste|verb|F|to use more of something than you need, or to use it badly; also, things that are no longer wanted|Do not waste water.|It is a waste of time.
-watch|verb|F|to look at something for a period of time; also, a small clock that you wear on your arm|We watched the birds.|My watch is new.
+watch|verb|F|to look at something for a period of time; also, a small clock that you wear on your arm|We watch the birds.|My watch is new.
 water|noun|P||I drink a lot of water.|The water is cold.
-wave|noun|F|a line of water that moves across the top of the sea; also, to move your hand from side to side|The waves are big today.|She waved at me.
+wave|noun|F|a line of water that moves across the top of the sea; also, to move your hand from side to side|Look at that big wave.|She waved at me.
 way|noun|D||Go this way.|This is the best way to cook rice.
 we|pronoun|D||We are children.|We have a dog.
-wear|verb|F|to have clothes, shoes or other things on your body|She is wearing a red dress.|I wear a coat in winter.
+wear|verb|F|to have clothes, shoes or other things on your body|Wear your coat.|I wear a coat in winter.
 weather|noun|F|how hot, cold, wet or dry it is outside, and if there is wind or sun|The weather is good today.|What will the weather be like tomorrow?
 week|noun|F|a period of seven days|I will see you next week.|She works five days a week.
 weight|noun|F|how heavy someone or something is|What is your weight?|The weight of the box is too much for me.
@@ -58,7 +58,7 @@ well|adverb|D||She swims well.|I do not feel well.
 west|noun|F|the direction where the sun goes down in the evening|The sun goes down in the west.|They live in the west of the city.
 wet|adjective|P||My shirt is wet.|The ground is wet after the rain.
 what|pronoun|D||What is this?|What is that? It is a cat.
-wheel|noun|P||A car has four wheels.|The wheel is broken.
+wheel|noun|P||The wheel is broken.|A car has four wheels.
 when|adverb|D||When do you get up?|I was happy when I saw her.
 where|adverb|D||Where is my bag?|Where do you live?
 which|pronoun|D||Which cup is yours?|Which book do you want?
@@ -70,13 +70,13 @@ why|adverb|D||Why are you sad?|I do not know why he left.
 wide|adjective|F|large from one side to the other|The river is very wide.|This road is wide.
 wife|noun|F|the woman that a man is married to|This is my wife.|His wife is a doctor.
 will|verb|D||I will come.|It will rain tonight.
-win|verb|F|to be the best or first in a game, competition or war|Our team won.|She won the competition.
+win|verb|F|to be the best or first in a game, competition or war|We will win.|She won the competition.
 wind|noun|F|air that moves quickly across the land|The wind is strong today.|The wind blew the leaves away.
 window|noun|P||Open the window.|I looked out of the window.
 wine|noun|F|a strong drink made from fruit, mostly from small round fruit that grows in groups on plants|They had a glass of red wine with their meal.|This wine is from a small farm.
-wing|noun|F|one of the parts of a bird or insect that it uses to fly; also, a part of a plane|The bird opened its wings.|The plane has two wings.
+wing|noun|F|one of the parts of a bird or insect that it uses to fly; also, a part of a plane|The bird has a broken wing.|The plane has two wings.
 winter|noun|F|the coldest season of the year|It snows in winter.|Winter is cold here.
-wire|noun|F|a long, thin piece of metal that is easy to bend; it can carry power for lights and machines|The wires are under the floor.|Do not touch that wire.
+wire|noun|F|a long, thin piece of metal that is easy to bend; it can carry power for lights and machines|Do not touch that wire.|The wires are under the floor.
 wise|adjective|F|having good sense and knowledge from experience|The old man is very wise.|That was a wise decision.
 wish|verb|F|to want something that is not likely to happen; also, to hope something good for someone|I wish I could fly.|I wish you a happy birthday.
 with|preposition|D||I live with my parents.|Cut it with a knife.
@@ -91,7 +91,7 @@ would|verb|D||Would you like some milk?|He said he would come.
 wound|noun|F|a cut or other damage to the body, often caused by a knife or a gun|The wound is not deep.|He was wounded in the war.
 write|verb|A||Write your name here.|She wrote a letter to her mother.
 wrong|adjective|F|not right; not true; also, not good or kind|Your answer is wrong.|It is wrong to take things that are not yours.
-year|noun|F|the time it takes for the earth to go once around the sun|I will see you next year.|She is ten years old.
+year|noun|F|the time it takes for the earth to go once around the sun|She is one year old.|I will see you next year.
 yellow|adjective|P||The sun is yellow.|She has a yellow dress.
 yes|adverb|D||Yes, it is a cat.|Yes, I am here.
 yesterday|adverb|F|on the day before today|I saw him yesterday.|Yesterday was cold.

@@ -8632,39 +8632,40 @@
    "text": "The bird is above the tree."
   },
   "g:accept:0": {
-   "answer": "accepted",
-   "bad": [
-    "added",
-    "followed",
-    "wanted"
-   ],
-   "checked": [
-    "added",
-    "continued",
-    "flew",
-    "followed",
-    "helped",
-    "told",
-    "wanted"
-   ],
-   "date": "2026-10-12",
-   "text": "She accepted the money."
-  },
-  "g:accept:1": {
    "answer": "accept",
    "bad": [
-    "know"
+    "describe",
+    "want"
    ],
    "checked": [
-    "keep",
-    "know",
-    "seem",
-    "speak",
-    "spend",
-    "talk"
+    "add",
+    "describe",
+    "fly",
+    "follow",
+    "tell",
+    "want"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "I accept your offer."
+  },
+  "g:accept:1": {
+   "answer": "accepted",
+   "bad": [
+    "kept",
+    "saw",
+    "spent"
+   ],
+   "checked": [
+    "flew",
+    "kept",
+    "knew",
+    "saw",
+    "spent",
+    "swam",
+    "talked"
+   ],
+   "date": "2026-10-14",
+   "text": "She accepted the money."
   },
   "g:account:0": {
    "answer": "account",
@@ -8777,13 +8778,14 @@
    ],
    "checked": [
     "closes",
+    "needs",
     "speaks",
     "turns",
     "walks",
     "washes",
     "worries"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "She acts in plays at school."
   },
   "g:action:0": {
@@ -9296,18 +9298,21 @@
    "text": "She ate all the cake."
   },
   "g:allow:0": {
-   "answer": "allowed",
-   "bad": [],
-   "checked": [
-    "flew",
-    "followed",
-    "found",
-    "gave",
-    "happened",
-    "moved"
+   "answer": "allow",
+   "bad": [
+    "find",
+    "move"
    ],
-   "date": "2026-10-12",
-   "text": "Are we allowed to sit here?"
+   "checked": [
+    "are",
+    "can",
+    "find",
+    "fly",
+    "happen",
+    "move"
+   ],
+   "date": "2026-10-14",
+   "text": "We do not allow dogs in the house."
   },
   "g:allow:1": {
    "answer": "allow",
@@ -9688,42 +9693,18 @@
    "text": "Please do not be angry."
   },
   "g:animal:0": {
-   "answer": "animals",
-   "bad": [
-    "boys",
-    "children",
-    "dogs",
-    "fingers",
-    "groups",
-    "houses",
-    "mountains",
-    "parents",
-    "parts",
-    "pictures",
-    "stories",
-    "tables",
-    "things"
-   ],
+   "answer": "animal",
+   "bad": [],
    "checked": [
-    "boys",
-    "children",
-    "days",
-    "dogs",
-    "fingers",
-    "groups",
-    "houses",
-    "keys",
-    "mountains",
-    "parents",
-    "parts",
-    "pictures",
-    "stories",
-    "tables",
-    "things",
-    "ways"
+    "bed",
+    "door",
+    "parent",
+    "phone",
+    "thing",
+    "way"
    ],
-   "date": "2026-10-12",
-   "text": "Do you like animals?"
+   "date": "2026-10-14",
+   "text": "A dog is an animal."
   },
   "g:animal:1": {
    "answer": "animal",
@@ -9870,20 +9851,21 @@
    "text": "I do not have any brothers."
   },
   "g:appear:0": {
-   "answer": "appeared",
+   "answer": "appear",
    "bad": [
-    "moved"
+    "move",
+    "pass"
    ],
    "checked": [
-    "bought",
-    "developed",
-    "found",
-    "moved",
-    "passed",
-    "touched"
+    "bring",
+    "buy",
+    "develop",
+    "find",
+    "move",
+    "pass"
    ],
-   "date": "2026-10-12",
-   "text": "A man appeared at the door."
+   "date": "2026-10-14",
+   "text": "Stars appear at night."
   },
   "g:appear:1": {
    "answer": "appears",
@@ -10325,21 +10307,20 @@
    "text": "I am at home."
   },
   "g:attack:0": {
-   "answer": "attacked",
+   "answer": "attack",
    "bad": [
-    "met",
-    "took"
+    "take"
    ],
    "checked": [
-    "compared",
-    "cried",
-    "met",
-    "played",
-    "sold",
-    "took"
+    "burst",
+    "cry",
+    "seem",
+    "sell",
+    "should",
+    "take"
    ],
-   "date": "2026-10-12",
-   "text": "The dog attacked the man."
+   "date": "2026-10-14",
+   "text": "The dog may attack you."
   },
   "g:attack:1": {
    "answer": "attacked",
@@ -10590,17 +10571,20 @@
    "answer": "avoids",
    "bad": [
     "holds",
+    "makes",
     "takes"
    ],
    "checked": [
     "changes",
     "happens",
     "holds",
+    "makes",
     "plays",
+    "rises",
     "speaks",
     "takes"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "He avoids sugar."
   },
   "g:awake:0": {
@@ -11090,18 +11074,20 @@
    "text": "He stayed at home because he was ill."
   },
   "g:become:0": {
-   "answer": "becoming",
-   "bad": [],
-   "checked": [
-    "finding",
-    "happening",
-    "having",
-    "making",
-    "moving",
-    "taking"
+   "answer": "become",
+   "bad": [
+    "start"
    ],
-   "date": "2026-10-12",
-   "text": "It is becoming cold."
+   "checked": [
+    "eat",
+    "find",
+    "make",
+    "move",
+    "start",
+    "take"
+   ],
+   "date": "2026-10-14",
+   "text": "It will become cold."
   },
   "g:become:1": {
    "answer": "became",
@@ -11185,18 +11171,18 @@
    "text": "Wash your hands before you eat."
   },
   "g:begin:0": {
-   "answer": "began",
+   "answer": "begin",
    "bad": [],
    "checked": [
-    "drew",
-    "felt",
-    "gave",
-    "held",
-    "left",
-    "played"
+    "can",
+    "draw",
+    "give",
+    "hold",
+    "may",
+    "should"
    ],
-   "date": "2026-10-12",
-   "text": "It began to rain."
+   "date": "2026-10-14",
+   "text": "It will begin to rain."
   },
   "g:begin:1": {
    "answer": "begins",
@@ -11204,6 +11190,7 @@
     "happens"
    ],
    "checked": [
+    "explains",
     "happens",
     "loses",
     "seems",
@@ -11211,7 +11198,7 @@
     "swims",
     "writes"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "The class begins at nine."
   },
   "g:behaviour:0": {
@@ -11390,20 +11377,20 @@
    "text": "The school bell rang."
   },
   "g:bend:0": {
-   "answer": "bends",
+   "answer": "bend",
    "bad": [
-    "goes"
+    "set"
    ],
    "checked": [
-    "changes",
-    "does",
-    "goes",
-    "makes",
-    "needs",
-    "swims"
+    "go",
+    "need",
+    "return",
+    "set",
+    "sit",
+    "swim"
    ],
-   "date": "2026-10-12",
-   "text": "The road bends to the left."
+   "date": "2026-10-14",
+   "text": "Bend your arm."
   },
   "g:bend:1": {
    "answer": "bend",
@@ -11484,18 +11471,18 @@
    "text": "The house is big."
   },
   "g:bird:0": {
-   "answer": "birds",
+   "answer": "bird",
    "bad": [],
    "checked": [
-    "books",
-    "keys",
-    "parts",
-    "times",
-    "trains",
-    "ways"
+    "cake",
+    "door",
+    "key",
+    "part",
+    "time",
+    "way"
    ],
-   "date": "2026-10-12",
-   "text": "Birds can fly."
+   "date": "2026-10-14",
+   "text": "A bird can fly."
   },
   "g:bird:1": {
    "answer": "bird",
@@ -11575,21 +11562,23 @@
    "text": "Wait a bit."
   },
   "g:bite:0": {
-   "answer": "bites",
+   "answer": "bite",
    "bad": [
-    "moves",
-    "needs"
+    "move",
+    "need",
+    "take"
    ],
    "checked": [
-    "acts",
-    "bends",
-    "moves",
-    "needs",
-    "takes",
-    "thinks"
+    "act",
+    "is",
+    "move",
+    "need",
+    "raise",
+    "take",
+    "think"
    ],
-   "date": "2026-10-12",
-   "text": "This dog bites people."
+   "date": "2026-10-14",
+   "text": "The dog may bite you."
   },
   "g:bite:1": {
    "answer": "bite",
@@ -11958,36 +11947,62 @@
    "text": "This book is about birds."
   },
   "g:boot:0": {
-   "answer": "boots",
-   "bad": [],
-   "checked": [
-    "boats",
-    "flowers",
-    "legs",
-    "parts",
-    "spaces",
-    "weeks"
+   "answer": "boot",
+   "bad": [
+    "boat",
+    "body",
+    "coal",
+    "flower",
+    "leg",
+    "part",
+    "river",
+    "space",
+    "station"
    ],
-   "date": "2026-10-12",
-   "text": "Put on your boots."
+   "checked": [
+    "agreement",
+    "boat",
+    "body",
+    "coal",
+    "flower",
+    "law",
+    "leg",
+    "part",
+    "research",
+    "river",
+    "space",
+    "station",
+    "week"
+   ],
+   "date": "2026-10-14",
+   "text": "This boot is too small."
   },
   "g:boot:1": {
    "answer": "boots",
    "bad": [
+    "cars",
     "cats",
+    "glasses",
     "shoes",
+    "shops",
+    "teams",
     "tickets"
    ],
    "checked": [
+    "cars",
     "cats",
     "facts",
+    "glasses",
     "laws",
     "shoes",
+    "shops",
+    "sounds",
     "springs",
+    "teams",
     "tickets",
     "units"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "My boots are wet."
   },
   "g:both:0": {
@@ -12246,21 +12261,20 @@
    "text": "I eat bread in the morning."
   },
   "g:break:0": {
-   "answer": "broke",
+   "answer": "break",
    "bad": [
-    "flew",
-    "turned"
+    "turn"
    ],
    "checked": [
-    "added",
-    "began",
-    "did",
-    "flew",
-    "said",
-    "turned"
+    "add",
+    "are",
+    "begin",
+    "fly",
+    "turn",
+    "will"
    ],
-   "date": "2026-10-12",
-   "text": "The cup broke."
+   "date": "2026-10-14",
+   "text": "Do not break the cup."
   },
   "g:break:1": {
    "answer": "break",
@@ -12523,20 +12537,20 @@
    "text": "He painted the wall with a brush."
   },
   "g:build:0": {
-   "answer": "built",
+   "answer": "build",
    "bad": [
-    "added"
+    "leave"
    ],
    "checked": [
-    "added",
-    "flew",
-    "heard",
-    "left",
-    "spent",
-    "went"
+    "are",
+    "hear",
+    "is",
+    "leave",
+    "set",
+    "spend"
    ],
-   "date": "2026-10-12",
-   "text": "They built a new school."
+   "date": "2026-10-14",
+   "text": "They will build a new school."
   },
   "g:build:1": {
    "answer": "build",
@@ -12593,18 +12607,21 @@
    "text": "This is an old building."
   },
   "g:burn:0": {
-   "answer": "burnt",
-   "bad": [],
-   "checked": [
-    "developed",
-    "fixed",
-    "proved",
-    "ran",
-    "used",
-    "went"
+   "answer": "burn",
+   "bad": [
+    "fix",
+    "use"
    ],
-   "date": "2026-10-12",
-   "text": "I burnt my hand on the hot pot."
+   "checked": [
+    "develop",
+    "fix",
+    "go",
+    "prove",
+    "run",
+    "use"
+   ],
+   "date": "2026-10-14",
+   "text": "Do not burn your hand."
   },
   "g:burn:1": {
    "answer": "burning",
@@ -12615,9 +12632,10 @@
     "doing",
     "running",
     "thinking",
+    "watching",
     "writing"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "The wood is burning."
   },
   "g:burst:0": {
@@ -13188,25 +13206,21 @@
    "text": "The cat is small."
   },
   "g:catch:0": {
-   "answer": "caught",
+   "answer": "catch",
    "bad": [
-    "bought",
-    "heard",
-    "met",
-    "needed"
+    "buy",
+    "need"
    ],
    "checked": [
-    "began",
-    "bought",
-    "came",
-    "heard",
-    "helped",
-    "met",
-    "needed",
-    "played"
+    "begin",
+    "buy",
+    "hear",
+    "meet",
+    "need",
+    "play"
    ],
-   "date": "2026-10-12",
-   "text": "He caught a fish."
+   "date": "2026-10-14",
+   "text": "He can catch a fish."
   },
   "g:catch:1": {
    "answer": "catch",
@@ -13246,6 +13260,7 @@
    "answer": "caused",
    "bad": [],
    "checked": [
+    "book",
     "detailed",
     "lit",
     "planned",
@@ -13253,7 +13268,7 @@
     "stepped",
     "trained"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "The rain caused the river to rise."
   },
   "g:centre:0": {
@@ -13304,6 +13319,7 @@
    "answer": "centuries",
    "bad": [],
    "checked": [
+    "decisions",
     "designs",
     "friends",
     "legs",
@@ -13311,7 +13327,7 @@
     "presents",
     "worlds"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "This church is ten centuries old."
   },
   "g:certain:0": {
@@ -13592,23 +13608,31 @@
    "text": "Cheese is made from milk."
   },
   "g:chemical:0": {
-   "answer": "chemicals",
+   "answer": "chemical",
    "bad": [
-    "coats",
-    "colours",
-    "leaves"
+    "cake",
+    "coat",
+    "colour",
+    "fruit",
+    "ground",
+    "group",
+    "street"
    ],
    "checked": [
-    "coats",
-    "colours",
-    "groups",
-    "leaves",
-    "members",
-    "orders",
-    "teams"
+    "agreement",
+    "cake",
+    "coat",
+    "colour",
+    "fruit",
+    "ground",
+    "group",
+    "rate",
+    "street",
+    "summer",
+    "team"
    ],
-   "date": "2026-10-12",
-   "text": "Do not touch these chemicals."
+   "date": "2026-10-14",
+   "text": "Do not touch this chemical."
   },
   "g:chemical:1": {
    "answer": "chemicals",
@@ -13786,21 +13810,20 @@
    "text": "It was a good choice."
   },
   "g:choose:0": {
-   "answer": "chose",
+   "answer": "choose",
    "bad": [
-    "felt",
-    "had"
+    "have"
    ],
    "checked": [
-    "did",
-    "felt",
-    "had",
-    "was",
-    "went",
-    "worked"
+    "be",
+    "do",
+    "go",
+    "have",
+    "must",
+    "work"
    ],
-   "date": "2026-10-12",
-   "text": "She chose the red dress."
+   "date": "2026-10-14",
+   "text": "Choose a dress."
   },
   "g:choose:1": {
    "answer": "choose",
@@ -14134,9 +14157,10 @@
     "looks",
     "teaches",
     "tells",
+    "thinks",
     "uses"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "The shop closes at six."
   },
   "g:cloth:0": {
@@ -14168,35 +14192,35 @@
    "text": "Clean the table with a wet cloth."
   },
   "g:cloud:0": {
-   "answer": "clouds",
+   "answer": "cloud",
    "bad": [],
    "checked": [
-    "amounts",
-    "computers",
-    "pieces",
-    "schools",
-    "stories",
-    "trees"
+    "computer",
+    "discussion",
+    "family",
+    "ground",
+    "seat",
+    "story"
    ],
-   "date": "2026-10-12",
-   "text": "There are no clouds in the sky."
+   "date": "2026-10-14",
+   "text": "A dark cloud covered the sun."
   },
   "g:cloud:1": {
-   "answer": "cloud",
+   "answer": "clouds",
    "bad": [
-    "bird",
-    "thing"
+    "birds",
+    "things"
    ],
    "checked": [
-    "bird",
-    "dress",
-    "knife",
-    "owner",
-    "parent",
-    "thing"
+    "birds",
+    "glasses",
+    "houses",
+    "parents",
+    "snows",
+    "things"
    ],
-   "date": "2026-10-12",
-   "text": "A dark cloud covered the sun."
+   "date": "2026-10-14",
+   "text": "There are no clouds in the sky."
   },
   "g:coal:0": {
    "answer": "coal",
@@ -14789,18 +14813,20 @@
    "text": "Consider the cost."
   },
   "g:contain:0": {
-   "answer": "contains",
-   "bad": [],
-   "checked": [
-    "does",
-    "gives",
-    "goes",
-    "makes",
-    "moves",
-    "thinks"
+   "answer": "contain",
+   "bad": [
+    "receive"
    ],
-   "date": "2026-10-12",
-   "text": "This box contains books."
+   "checked": [
+    "am",
+    "could",
+    "describe",
+    "do",
+    "make",
+    "receive"
+   ],
+   "date": "2026-10-14",
+   "text": "Does this box contain books?"
   },
   "g:contain:1": {
    "answer": "contains",
@@ -14854,39 +14880,41 @@
    "text": "It continued to rain all day."
   },
   "g:control:0": {
-   "answer": "controls",
-   "bad": [
-    "knows"
-   ],
+   "answer": "control",
+   "bad": [],
    "checked": [
-    "knows",
-    "says",
-    "seems",
-    "speaks",
-    "supports",
-    "works"
+    "fly",
+    "know",
+    "say",
+    "set",
+    "sit",
+    "speak"
    ],
-   "date": "2026-10-12",
-   "text": "She controls the money."
+   "date": "2026-10-14",
+   "text": "He could not control the car."
   },
   "g:control:1": {
-   "answer": "control",
+   "answer": "controls",
    "bad": [
-    "buy",
-    "push",
-    "touch"
+    "gives",
+    "moves",
+    "produces",
+    "pushes",
+    "uses"
    ],
    "checked": [
-    "buy",
-    "drop",
-    "fall",
-    "join",
-    "push",
-    "shut",
-    "touch"
+    "begins",
+    "drives",
+    "gives",
+    "joins",
+    "moves",
+    "plays",
+    "produces",
+    "pushes",
+    "uses"
    ],
-   "date": "2026-10-12",
-   "text": "He could not control the car."
+   "date": "2026-10-14",
+   "text": "She controls the money."
   },
   "g:cook:0": {
    "answer": "cook",
@@ -14965,13 +14993,14 @@
    "bad": [],
    "checked": [
     "books",
+    "brothers",
     "coats",
     "months",
     "shirts",
     "spaces",
     "tickets"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "The ticket costs a lot of money."
   },
   "g:cough:0": {
@@ -14991,18 +15020,21 @@
   "g:cough:1": {
    "answer": "coughed",
    "bad": [
+    "explained",
     "stood",
     "watched"
    ],
    "checked": [
+    "became",
     "died",
+    "explained",
     "offered",
     "saw",
     "stood",
     "took",
     "watched"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "She coughed all night."
   },
   "g:could:0": {
@@ -15152,18 +15184,20 @@
    "text": "Snow covered the ground."
   },
   "g:cow:0": {
-   "answer": "cows",
-   "bad": [],
-   "checked": [
-    "apples",
-    "books",
-    "boys",
-    "cats",
-    "children",
-    "things"
+   "answer": "cow",
+   "bad": [
+    "cat"
    ],
-   "date": "2026-10-12",
-   "text": "Cows give milk."
+   "checked": [
+    "book",
+    "cat",
+    "child",
+    "door",
+    "girl",
+    "thing"
+   ],
+   "date": "2026-10-14",
+   "text": "A cow gives milk."
   },
   "g:cow:1": {
    "answer": "cow",
@@ -15210,31 +15244,29 @@
    "text": "The glass cracked."
   },
   "g:create:0": {
-   "answer": "created",
+   "answer": "create",
    "bad": [
-    "began",
-    "built",
-    "found",
-    "learned",
-    "returned",
-    "saw",
-    "took"
+    "begin",
+    "build",
+    "find",
+    "learn",
+    "see",
+    "take"
    ],
    "checked": [
-    "began",
-    "built",
-    "found",
-    "happened",
-    "heard",
-    "learned",
-    "played",
-    "returned",
-    "saw",
-    "took",
-    "went"
+    "begin",
+    "build",
+    "find",
+    "hear",
+    "learn",
+    "return",
+    "see",
+    "seem",
+    "set",
+    "take"
    ],
-   "date": "2026-10-12",
-   "text": "She created a new design."
+   "date": "2026-10-14",
+   "text": "We can create a new design."
   },
   "g:create:1": {
    "answer": "created",
@@ -15307,18 +15339,20 @@
    "text": "There is not much crime in this town."
   },
   "g:cry:0": {
-   "answer": "crying",
-   "bad": [],
-   "checked": [
-    "comparing",
-    "cooking",
-    "giving",
-    "selling",
-    "wearing",
-    "writing"
+   "answer": "cry",
+   "bad": [
+    "cook"
    ],
-   "date": "2026-10-12",
-   "text": "The baby is crying."
+   "checked": [
+    "avoid",
+    "cook",
+    "drop",
+    "give",
+    "let",
+    "sell"
+   ],
+   "date": "2026-10-14",
+   "text": "Do not cry."
   },
   "g:cry:1": {
    "answer": "cried",
@@ -15328,10 +15362,11 @@
     "offered",
     "sat",
     "saw",
+    "served",
     "stayed",
     "stopped"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "She cried when her dog died."
   },
   "g:cup:0": {
@@ -15400,18 +15435,20 @@
    "text": "The river has a strong current."
   },
   "g:curtain:0": {
-   "answer": "curtains",
-   "bad": [],
-   "checked": [
-    "adjustments",
-    "brothers",
-    "centuries",
-    "glasses",
-    "homes",
-    "rats"
+   "answer": "curtain",
+   "bad": [
+    "account"
    ],
-   "date": "2026-10-12",
-   "text": "Open the curtains."
+   "checked": [
+    "account",
+    "adjustment",
+    "century",
+    "date",
+    "glass",
+    "home"
+   ],
+   "date": "2026-10-14",
+   "text": "Open the curtain."
   },
   "g:curtain:1": {
    "answer": "curtains",
@@ -15506,6 +15543,7 @@
    "answer": "damaged",
    "bad": [],
    "checked": [
+    "caused",
     "detailed",
     "lit",
     "planned",
@@ -15513,7 +15551,7 @@
     "stepped",
     "trained"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "The fire damaged the house."
   },
   "g:danger:0": {
@@ -15603,58 +15641,61 @@
    "text": "They went out on a date."
   },
   "g:daughter:0": {
-   "answer": "daughters",
-   "bad": [
-    "arms",
-    "boats",
-    "brothers",
-    "cats",
-    "children",
-    "companies",
-    "cows",
-    "cups",
-    "members",
-    "plans",
-    "points",
-    "shoes",
-    "stars"
-   ],
-   "checked": [
-    "arms",
-    "boats",
-    "brothers",
-    "cats",
-    "children",
-    "companies",
-    "cows",
-    "cups",
-    "leaves",
-    "members",
-    "mountains",
-    "pieces",
-    "plans",
-    "points",
-    "shoes",
-    "stars"
-   ],
-   "date": "2026-10-12",
-   "text": "They have two daughters."
-  },
-  "g:daughter:1": {
    "answer": "daughter",
    "bad": [
-    "brother"
+    "fish"
    ],
    "checked": [
-    "box",
-    "brother",
-    "key",
-    "knee",
-    "language",
-    "line"
+    "fish",
+    "hat",
+    "leaf",
+    "piece",
+    "plan",
+    "shoe"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "My daughter is five."
+  },
+  "g:daughter:1": {
+   "answer": "daughters",
+   "bad": [
+    "bits",
+    "boxes",
+    "boys",
+    "brothers",
+    "children",
+    "ends",
+    "eyes",
+    "floors",
+    "hands",
+    "keys",
+    "knees",
+    "languages",
+    "legs",
+    "lines",
+    "orders",
+    "plans"
+   ],
+   "checked": [
+    "bits",
+    "boxes",
+    "boys",
+    "brothers",
+    "children",
+    "ends",
+    "eyes",
+    "floors",
+    "hands",
+    "keys",
+    "knees",
+    "languages",
+    "legs",
+    "lines",
+    "orders",
+    "plans"
+   ],
+   "date": "2026-10-14",
+   "text": "They have two daughters."
   },
   "g:day:0": {
    "answer": "day",
@@ -15814,18 +15855,31 @@
    "text": "She paid her debts."
   },
   "g:decide:0": {
-   "answer": "decided",
-   "bad": [],
-   "checked": [
-    "closed",
-    "finished",
-    "heard",
-    "helped",
-    "passed",
-    "visited"
+   "answer": "decide",
+   "bad": [
+    "bend",
+    "close",
+    "finish",
+    "hear",
+    "help",
+    "pass",
+    "visit"
    ],
-   "date": "2026-10-12",
-   "text": "I decided to stay at home."
+   "checked": [
+    "bend",
+    "carry",
+    "close",
+    "finish",
+    "happen",
+    "hear",
+    "help",
+    "may",
+    "pass",
+    "should",
+    "visit"
+   ],
+   "date": "2026-10-14",
+   "text": "You must decide."
   },
   "g:decide:1": {
    "answer": "decided",
@@ -15905,18 +15959,18 @@
    "text": "Take a deep breath."
   },
   "g:degree:0": {
-   "answer": "degrees",
+   "answer": "degree",
    "bad": [],
    "checked": [
-    "faces",
-    "languages",
-    "lives",
-    "memories",
-    "presents",
-    "seeds"
+    "behaviour",
+    "language",
+    "life",
+    "list",
+    "neck",
+    "project"
    ],
-   "date": "2026-10-12",
-   "text": "The water is a hundred degrees."
+   "date": "2026-10-14",
+   "text": "It is one degree today."
   },
   "g:degree:1": {
    "answer": "degree",
@@ -16166,39 +16220,37 @@
    "text": "There is a lot of new development in the city."
   },
   "g:die:0": {
-   "answer": "died",
+   "answer": "die",
    "bad": [
-    "came",
-    "changed",
-    "left",
-    "returned"
+    "change"
    ],
    "checked": [
-    "accepted",
-    "allowed",
-    "came",
-    "changed",
-    "expected",
-    "left",
-    "returned",
-    "spent"
+    "allow",
+    "can",
+    "change",
+    "come",
+    "leave",
+    "return"
    ],
-   "date": "2026-10-12",
-   "text": "The old dog died."
+   "date": "2026-10-14",
+   "text": "Plants die without water."
   },
   "g:die:1": {
-   "answer": "die",
-   "bad": [],
-   "checked": [
-    "compare",
-    "describe",
-    "enter",
-    "happen",
-    "must",
-    "tell"
+   "answer": "died",
+   "bad": [
+    "entered",
+    "helped"
    ],
-   "date": "2026-10-12",
-   "text": "Plants die without water."
+   "checked": [
+    "compared",
+    "developed",
+    "entered",
+    "happened",
+    "helped",
+    "told"
+   ],
+   "date": "2026-10-14",
+   "text": "The old dog died."
   },
   "g:different:0": {
    "answer": "different",
@@ -16868,9 +16920,10 @@
     "goes",
     "moves",
     "speaks",
-    "suggests"
+    "suggests",
+    "takes"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "She drives to work."
   },
   "g:drop:0": {
@@ -17086,18 +17139,18 @@
    "text": "Each house has a garden."
   },
   "g:ear:0": {
-   "answer": "ears",
+   "answer": "ear",
    "bad": [],
    "checked": [
-    "bags",
-    "limits",
-    "months",
-    "signs",
-    "springs",
-    "stems"
+    "chance",
+    "couple",
+    "discovery",
+    "ground",
+    "hospital",
+    "month"
    ],
-   "date": "2026-10-12",
-   "text": "A cat has two ears."
+   "date": "2026-10-14",
+   "text": "Put your hand over your ear."
   },
   "g:ear:1": {
    "answer": "ears",
@@ -17245,18 +17298,20 @@
    "text": "This question is easy."
   },
   "g:eat:0": {
-   "answer": "ate",
-   "bad": [],
-   "checked": [
-    "did",
-    "had",
-    "made",
-    "needed",
-    "was",
-    "went"
+   "answer": "eat",
+   "bad": [
+    "are"
    ],
-   "date": "2026-10-12",
-   "text": "We ate at home."
+   "checked": [
+    "are",
+    "be",
+    "do",
+    "have",
+    "make",
+    "need"
+   ],
+   "date": "2026-10-14",
+   "text": "We eat at home."
   },
   "g:eat:1": {
    "answer": "eat",
@@ -17408,18 +17463,18 @@
    "text": "Make an effort to come."
   },
   "g:egg:0": {
-   "answer": "eggs",
+   "answer": "egg",
    "bad": [],
    "checked": [
-    "designs",
-    "events",
-    "glasses",
-    "sounds",
-    "stars",
-    "teams"
+    "ball",
+    "city",
+    "design",
+    "event",
+    "night",
+    "sound"
    ],
-   "date": "2026-10-12",
-   "text": "Birds come out of eggs."
+   "date": "2026-10-14",
+   "text": "A bird comes out of an egg."
   },
   "g:egg:1": {
    "answer": "egg",
@@ -17563,13 +17618,14 @@
    "bad": [],
    "checked": [
     "countries",
+    "fingers",
     "houses",
     "jobs",
     "members",
     "orders",
     "stories"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "The road ends here."
   },
   "g:energy:0": {
@@ -17899,18 +17955,43 @@
    "text": "I read in the evening."
   },
   "g:event:0": {
-   "answer": "events",
-   "bad": [],
-   "checked": [
-    "apples",
-    "brothers",
-    "children",
-    "eyes",
-    "jobs",
-    "steps"
+   "answer": "event",
+   "bad": [
+    "apple",
+    "brother",
+    "child",
+    "death",
+    "detail",
+    "eye",
+    "job",
+    "member",
+    "paper",
+    "sky",
+    "step",
+    "sun",
+    "thing",
+    "woman"
    ],
-   "date": "2026-10-12",
-   "text": "The events of that day changed his life."
+   "checked": [
+    "apple",
+    "brother",
+    "child",
+    "death",
+    "detail",
+    "direction",
+    "eye",
+    "job",
+    "member",
+    "milk",
+    "paper",
+    "sky",
+    "step",
+    "sun",
+    "thing",
+    "woman"
+   ],
+   "date": "2026-10-14",
+   "text": "It was a big event."
   },
   "g:event:1": {
    "answer": "event",
@@ -18028,37 +18109,58 @@
    "text": "An apple is an example of a fruit."
   },
   "g:exchange:0": {
-   "answer": "exchanged",
-   "bad": [
-    "used"
-   ],
-   "checked": [
-    "carried",
-    "made",
-    "pulled",
-    "ran",
-    "touched",
-    "used"
-   ],
-   "date": "2026-10-12",
-   "text": "We exchanged phone numbers."
-  },
-  "g:exchange:1": {
    "answer": "exchange",
    "bad": [
     "carry",
-    "offer"
+    "finish",
+    "make",
+    "move",
+    "pull",
+    "throw",
+    "touch",
+    "use"
    ],
    "checked": [
-    "are",
+    "arrive",
     "carry",
-    "help",
-    "offer",
-    "sleep",
-    "visit"
+    "finish",
+    "make",
+    "move",
+    "play",
+    "pull",
+    "run",
+    "should",
+    "throw",
+    "touch",
+    "use"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "Can I exchange this shirt?"
+  },
+  "g:exchange:1": {
+   "answer": "exchanged",
+   "bad": [
+    "carried",
+    "got",
+    "kept",
+    "made",
+    "picked",
+    "wrote"
+   ],
+   "checked": [
+    "blew",
+    "carried",
+    "got",
+    "helped",
+    "kept",
+    "made",
+    "picked",
+    "thanked",
+    "visited",
+    "wrote"
+   ],
+   "date": "2026-10-14",
+   "text": "We exchanged phone numbers."
   },
   "g:existence:0": {
    "answer": "existence",
@@ -18257,26 +18359,40 @@
     "killed",
     "sent",
     "sold",
+    "talked",
     "took"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "He explained why he was late."
   },
   "g:eye:0": {
-   "answer": "eyes",
+   "answer": "eye",
    "bad": [
-    "cars"
+    "cake",
+    "car",
+    "cat",
+    "dog",
+    "family",
+    "head",
+    "idea",
+    "person"
    ],
    "checked": [
-    "cars",
-    "cats",
-    "days",
-    "dogs",
-    "ideas",
-    "people"
+    "cake",
+    "car",
+    "cat",
+    "day",
+    "dog",
+    "family",
+    "head",
+    "idea",
+    "left",
+    "mountain",
+    "person",
+    "woman"
    ],
-   "date": "2026-10-12",
-   "text": "She has blue eyes."
+   "date": "2026-10-14",
+   "text": "Something is in my eye."
   },
   "g:eye:1": {
    "answer": "eyes",
@@ -18356,31 +18472,25 @@
    "text": "Tell me the facts."
   },
   "g:fail:0": {
-   "answer": "failed",
+   "answer": "fail",
    "bad": [
-    "broke",
-    "created",
-    "dropped",
-    "needed",
-    "saw",
-    "took",
-    "tried"
+    "create",
+    "drop",
+    "set",
+    "take"
    ],
    "checked": [
-    "became",
-    "blew",
-    "broke",
-    "created",
-    "drew",
-    "dropped",
-    "needed",
-    "reached",
-    "saw",
-    "took",
-    "tried"
+    "blow",
+    "create",
+    "drop",
+    "need",
+    "reduce",
+    "set",
+    "take",
+    "would"
    ],
-   "date": "2026-10-12",
-   "text": "He failed the test."
+   "date": "2026-10-14",
+   "text": "Do not fail the test."
   },
   "g:fail:1": {
    "answer": "failed",
@@ -18811,12 +18921,13 @@
     "friends",
     "jobs",
     "numbers",
+    "pipes",
     "prices",
     "snows",
     "stories",
     "tickets"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "She did not show her feelings."
   },
   "g:female:0": {
@@ -18940,21 +19051,23 @@
    "text": "She is an expert in her field."
   },
   "g:fight:0": {
-   "answer": "fighting",
+   "answer": "fight",
    "bad": [
-    "meeting",
-    "working"
+    "believe",
+    "drink",
+    "work"
    ],
    "checked": [
-    "being",
-    "buying",
-    "holding",
-    "meeting",
-    "using",
-    "working"
+    "believe",
+    "buy",
+    "drink",
+    "is",
+    "tell",
+    "use",
+    "work"
    ],
-   "date": "2026-10-12",
-   "text": "The two boys are fighting."
+   "date": "2026-10-14",
+   "text": "Do not fight."
   },
   "g:fight:1": {
    "answer": "fought",
@@ -19048,11 +19161,12 @@
     "had",
     "kept",
     "knew",
+    "learned",
     "left",
     "used",
     "worked"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "She found a ring on the road."
   },
   "g:finger:0": {
@@ -19086,20 +19200,20 @@
    "text": "You have five fingers on each hand."
   },
   "g:finish:0": {
-   "answer": "finished",
+   "answer": "finish",
    "bad": [
-    "found"
+    "know"
    ],
    "checked": [
-    "added",
-    "came",
-    "found",
-    "knew",
-    "met",
-    "swam"
+    "add",
+    "are",
+    "believe",
+    "know",
+    "meet",
+    "swim"
    ],
-   "date": "2026-10-12",
-   "text": "Have you finished your work?"
+   "date": "2026-10-14",
+   "text": "Finish your work."
   },
   "g:finish:1": {
    "answer": "finished",
@@ -19111,10 +19225,13 @@
     "gave",
     "kicked",
     "led",
+    "married",
     "picked",
-    "slept"
+    "raised",
+    "slept",
+    "thanked"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "The class finished at ten."
   },
   "g:fire:0": {
@@ -19649,32 +19766,37 @@
    "text": "They used force to open the door."
   },
   "g:forget:0": {
-   "answer": "forgot",
-   "bad": [],
-   "checked": [
-    "continued",
-    "drew",
-    "happened",
-    "ran",
-    "visited",
-    "worked"
+   "answer": "forget",
+   "bad": [
+    "draw"
    ],
-   "date": "2026-10-12",
-   "text": "I forgot his name."
+   "checked": [
+    "continue",
+    "draw",
+    "happen",
+    "may",
+    "run",
+    "visit"
+   ],
+   "date": "2026-10-14",
+   "text": "Do not forget your bag."
   },
   "g:forget:1": {
-   "answer": "forget",
-   "bad": [],
-   "checked": [
-    "become",
-    "describe",
-    "drive",
-    "know",
-    "let",
-    "might"
+   "answer": "forgot",
+   "bad": [
+    "kept",
+    "knew"
    ],
-   "date": "2026-10-12",
-   "text": "Do not forget your bag."
+   "checked": [
+    "accepted",
+    "added",
+    "became",
+    "kept",
+    "knew",
+    "talked"
+   ],
+   "date": "2026-10-14",
+   "text": "I forgot his name."
   },
   "g:fork:0": {
    "answer": "fork",
@@ -20216,18 +20338,20 @@
    "text": "The general opinion is good."
   },
   "g:get:0": {
-   "answer": "getting",
-   "bad": [],
-   "checked": [
-    "drawing",
-    "sitting",
-    "swimming",
-    "taking",
-    "wanting",
-    "working"
+   "answer": "get",
+   "bad": [
+    "draw"
    ],
-   "date": "2026-10-12",
-   "text": "It is getting cold."
+   "checked": [
+    "are",
+    "draw",
+    "sit",
+    "swim",
+    "want",
+    "work"
+   ],
+   "date": "2026-10-14",
+   "text": "Please get me the book."
   },
   "g:get:1": {
    "answer": "got",
@@ -20829,23 +20953,30 @@
     "chairs",
     "debts",
     "facts",
+    "houses",
     "machines",
+    "prices",
     "teams",
-    "things"
+    "things",
+    "walls"
    ],
    "checked": [
+    "centuries",
     "chairs",
     "days",
     "debts",
     "facts",
+    "houses",
     "machines",
     "months",
     "plants",
+    "prices",
     "sides",
     "teams",
-    "things"
+    "things",
+    "walls"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "The police have guns."
   },
   "g:hair:0": {
@@ -20966,18 +21097,23 @@
    "text": "Wash your hands."
   },
   "g:hang:0": {
-   "answer": "hangs",
-   "bad": [],
-   "checked": [
-    "begins",
-    "drives",
-    "looks",
-    "takes",
-    "uses",
-    "visits"
+   "answer": "hang",
+   "bad": [
+    "add",
+    "draw",
+    "imagine"
    ],
-   "date": "2026-10-12",
-   "text": "The picture hangs on the wall."
+   "checked": [
+    "add",
+    "cut",
+    "draw",
+    "imagine",
+    "look",
+    "reduce",
+    "use"
+   ],
+   "date": "2026-10-14",
+   "text": "Hang the picture on the wall."
   },
   "g:hang:1": {
    "answer": "hang",
@@ -20994,20 +21130,20 @@
    "text": "Hang your coat on the hook."
   },
   "g:happen:0": {
-   "answer": "happened",
+   "answer": "happen",
    "bad": [
-    "came"
+    "come"
    ],
    "checked": [
-    "came",
-    "needed",
-    "said",
-    "sat",
-    "saw",
-    "stood"
+    "come",
+    "may",
+    "need",
+    "see",
+    "sit",
+    "will"
    ],
-   "date": "2026-10-12",
-   "text": "What happened?"
+   "date": "2026-10-14",
+   "text": "What will happen?"
   },
   "g:happen:1": {
    "answer": "happened",
@@ -21374,12 +21510,13 @@
    "checked": [
     "came",
     "chose",
+    "cooked",
     "dropped",
     "helped",
     "ran",
     "swam"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "I heard a noise."
   },
   "g:heart:0": {
@@ -22057,21 +22194,20 @@
    "text": "He is rich. However, he is not happy."
   },
   "g:human:0": {
-   "answer": "humans",
+   "answer": "human",
    "bad": [
-    "animals",
-    "friends"
+    "animal"
    ],
    "checked": [
-    "amounts",
-    "animals",
-    "friends",
-    "papers",
-    "rains",
-    "things"
+    "amount",
+    "animal",
+    "cause",
+    "hat",
+    "paper",
+    "thing"
    ],
-   "date": "2026-10-12",
-   "text": "Humans need food and water."
+   "date": "2026-10-14",
+   "text": "A human needs food and water."
   },
   "g:human:1": {
    "answer": "human",
@@ -22384,18 +22520,18 @@
    "text": "We are in the house."
   },
   "g:include:0": {
-   "answer": "includes",
+   "answer": "include",
    "bad": [],
    "checked": [
-    "drives",
-    "pushes",
-    "rises",
-    "seems",
-    "turns",
-    "visits"
+    "create",
+    "must",
+    "prove",
+    "push",
+    "see",
+    "throw"
    ],
-   "date": "2026-10-12",
-   "text": "The price includes food."
+   "date": "2026-10-14",
+   "text": "Does the price include food?"
   },
   "g:include:1": {
    "answer": "includes",
@@ -22419,36 +22555,37 @@
    "text": "The group includes three children."
   },
   "g:increase:0": {
-   "answer": "increased",
-   "bad": [
-    "held"
-   ],
-   "checked": [
-    "became",
-    "got",
-    "happened",
-    "held",
-    "lived",
-    "talked"
-   ],
-   "date": "2026-10-12",
-   "text": "The price increased."
-  },
-  "g:increase:1": {
    "answer": "increase",
    "bad": [
-    "know"
+    "get",
+    "grow",
+    "hold"
    ],
    "checked": [
-    "begin",
-    "hear",
-    "know",
-    "leave",
-    "meet",
-    "need"
+    "become",
+    "get",
+    "grow",
+    "happen",
+    "hold",
+    "live",
+    "talk"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "We must increase the amount of food."
+  },
+  "g:increase:1": {
+   "answer": "increased",
+   "bad": [],
+   "checked": [
+    "came",
+    "heard",
+    "knew",
+    "left",
+    "met",
+    "needed"
+   ],
+   "date": "2026-10-14",
+   "text": "The price increased."
   },
   "g:industry:0": {
    "answer": "industry",
@@ -22573,20 +22710,18 @@
    "text": "He was ill, so I went instead."
   },
   "g:instrument:0": {
-   "answer": "instruments",
-   "bad": [
-    "activities"
-   ],
+   "answer": "instrument",
+   "bad": [],
    "checked": [
-    "activities",
-    "armies",
-    "coats",
-    "costs",
-    "facts",
-    "shops"
+    "army",
+    "discovery",
+    "expert",
+    "fact",
+    "meat",
+    "window"
    ],
-   "date": "2026-10-12",
-   "text": "She plays two instruments."
+   "date": "2026-10-14",
+   "text": "Can you play an instrument?"
   },
   "g:instrument:1": {
    "answer": "instruments",
@@ -23042,34 +23177,35 @@
    "text": "Do not judge people by their clothes."
   },
   "g:jump:0": {
-   "answer": "jumped",
+   "answer": "jump",
    "bad": [
-    "fell"
+    "fall",
+    "look"
    ],
    "checked": [
-    "entered",
-    "expected",
-    "fell",
-    "gave",
-    "looked",
-    "swam"
+    "contain",
+    "control",
+    "enter",
+    "fall",
+    "look",
+    "might"
    ],
-   "date": "2026-10-12",
-   "text": "The cat jumped onto the table."
+   "date": "2026-10-14",
+   "text": "Can you jump over the wall?"
   },
   "g:jump:1": {
-   "answer": "jump",
+   "answer": "jumped",
    "bad": [],
    "checked": [
-    "choose",
-    "cry",
-    "cut",
-    "hate",
-    "pay",
-    "put"
+    "cried",
+    "felt",
+    "lifted",
+    "loved",
+    "paid",
+    "took"
    ],
-   "date": "2026-10-12",
-   "text": "Can you jump over the wall?"
+   "date": "2026-10-14",
+   "text": "The cat jumped onto the table."
   },
   "g:just:0": {
    "answer": "just",
@@ -23204,18 +23340,18 @@
    "text": "He kicked the door."
   },
   "g:kill:0": {
-   "answer": "killed",
+   "answer": "kill",
    "bad": [],
    "checked": [
-    "ate",
-    "became",
-    "learned",
-    "looked",
-    "told",
-    "went"
+    "become",
+    "believe",
+    "eat",
+    "learn",
+    "look",
+    "tell"
    ],
-   "date": "2026-10-12",
-   "text": "The cold killed the plants."
+   "date": "2026-10-14",
+   "text": "The cold can kill plants."
   },
   "g:kill:1": {
    "answer": "kill",
@@ -23262,39 +23398,59 @@
    "text": "What kind of music do you like?"
   },
   "g:kiss:0": {
-   "answer": "kissed",
+   "answer": "kiss",
    "bad": [
-    "dropped",
-    "heard",
-    "walked",
-    "washed"
+    "play",
+    "wash"
    ],
    "checked": [
-    "dropped",
-    "heard",
-    "played",
-    "reached",
-    "used",
-    "walked",
-    "washed",
-    "worked"
+    "control",
+    "hear",
+    "mean",
+    "play",
+    "use",
+    "wash"
    ],
-   "date": "2026-10-12",
-   "text": "She kissed her baby."
+   "date": "2026-10-14",
+   "text": "He gave her a kiss."
   },
   "g:kiss:1": {
-   "answer": "kiss",
-   "bad": [],
-   "checked": [
-    "develop",
-    "get",
-    "grow",
-    "sleep",
-    "take",
-    "worry"
+   "answer": "kissed",
+   "bad": [
+    "bought",
+    "found",
+    "got",
+    "kicked",
+    "lost",
+    "made",
+    "moved",
+    "paid",
+    "passed",
+    "taught",
+    "took",
+    "visited",
+    "wrote"
    ],
-   "date": "2026-10-12",
-   "text": "He gave her a kiss."
+   "checked": [
+    "bought",
+    "developed",
+    "finished",
+    "found",
+    "got",
+    "kicked",
+    "lost",
+    "made",
+    "moved",
+    "paid",
+    "passed",
+    "spent",
+    "taught",
+    "took",
+    "visited",
+    "wrote"
+   ],
+   "date": "2026-10-14",
+   "text": "She kissed her baby."
   },
   "g:knee:0": {
    "answer": "knee",
@@ -23444,34 +23600,34 @@
    "text": "They bought some land."
   },
   "g:language:0": {
-   "answer": "languages",
+   "answer": "language",
    "bad": [],
    "checked": [
-    "brothers",
-    "children",
-    "coats",
-    "cows",
-    "cups",
-    "shoes"
+    "brother",
+    "cow",
+    "cup",
+    "people",
+    "shoe",
+    "woman"
    ],
-   "date": "2026-10-12",
-   "text": "How many languages do you speak?"
+   "date": "2026-10-14",
+   "text": "Music is a language too."
   },
   "g:language:1": {
-   "answer": "language",
+   "answer": "languages",
    "bad": [
-    "friend"
+    "words"
    ],
    "checked": [
-    "coat",
-    "friend",
-    "house",
-    "person",
-    "rain",
-    "word"
+    "coats",
+    "friends",
+    "houses",
+    "people",
+    "rains",
+    "words"
    ],
-   "date": "2026-10-12",
-   "text": "Music is a language too."
+   "date": "2026-10-14",
+   "text": "How many languages do you speak?"
   },
   "g:large:0": {
    "answer": "large",
@@ -23632,18 +23788,20 @@
    "text": "Two days later, he came back."
   },
   "g:laugh:0": {
-   "answer": "laughed",
-   "bad": [],
-   "checked": [
-    "ate",
-    "came",
-    "cooked",
-    "missed",
-    "talked",
-    "turned"
+   "answer": "laugh",
+   "bad": [
+    "talk"
    ],
-   "date": "2026-10-12",
-   "text": "She laughed at his story."
+   "checked": [
+    "cook",
+    "eat",
+    "let",
+    "miss",
+    "talk",
+    "turn"
+   ],
+   "date": "2026-10-14",
+   "text": "Do not laugh at me."
   },
   "g:laugh:1": {
    "answer": "laughing",
@@ -23690,21 +23848,18 @@
    "text": "The law says you must stop here."
   },
   "g:lead:0": {
-   "answer": "led",
-   "bad": [
-    "flew",
-    "followed"
-   ],
+   "answer": "lead",
+   "bad": [],
    "checked": [
-    "fixed",
-    "flew",
-    "followed",
-    "knew",
-    "saw",
-    "tried"
+    "fix",
+    "follow",
+    "shake",
+    "try",
+    "will",
+    "wish"
    ],
-   "date": "2026-10-12",
-   "text": "She led us to the station."
+   "date": "2026-10-14",
+   "text": "Lead us to the station."
   },
   "g:lead:1": {
    "answer": "leads",
@@ -23759,34 +23914,34 @@
    "text": "The leaves are green."
   },
   "g:learn:0": {
-   "answer": "learning",
+   "answer": "learn",
    "bad": [],
    "checked": [
-    "feeling",
-    "finding",
-    "growing",
-    "holding",
-    "taking",
-    "writing"
+    "could",
+    "feel",
+    "find",
+    "hold",
+    "show",
+    "take"
    ],
-   "date": "2026-10-12",
-   "text": "I am learning to swim."
+   "date": "2026-10-14",
+   "text": "Children learn quickly."
   },
   "g:learn:1": {
-   "answer": "learn",
+   "answer": "learning",
    "bad": [
-    "follow"
+    "coming"
    ],
    "checked": [
-    "add",
-    "come",
-    "cut",
-    "follow",
-    "hear",
-    "might"
+    "adding",
+    "coming",
+    "cutting",
+    "hearing",
+    "needing",
+    "swimming"
    ],
-   "date": "2026-10-12",
-   "text": "Children learn quickly."
+   "date": "2026-10-14",
+   "text": "I am learning to swim."
   },
   "g:leather:0": {
    "answer": "leather",
@@ -23877,34 +24032,34 @@
    "text": "He writes with his left hand."
   },
   "g:leg:0": {
+   "answer": "leg",
+   "bad": [
+    "glass"
+   ],
+   "checked": [
+    "door",
+    "glass",
+    "idea",
+    "left",
+    "step",
+    "way"
+   ],
+   "date": "2026-10-14",
+   "text": "He broke his leg."
+  },
+  "g:leg:1": {
    "answer": "legs",
    "bad": [],
    "checked": [
-    "glasses",
-    "ideas",
-    "plans",
-    "sounds",
-    "steps",
-    "ways"
+    "animals",
+    "countries",
+    "cups",
+    "hands",
+    "lines",
+    "points"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "A dog has four legs."
-  },
-  "g:leg:1": {
-   "answer": "leg",
-   "bad": [
-    "cup"
-   ],
-   "checked": [
-    "cup",
-    "meeting",
-    "people",
-    "point",
-    "subject",
-    "woman"
-   ],
-   "date": "2026-10-12",
-   "text": "He broke his leg."
   },
   "g:let:0": {
    "answer": "let",
@@ -24115,9 +24270,10 @@
     "created",
     "gave",
     "killed",
+    "started",
     "stood"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "He lifted the child up."
   },
   "g:light:0": {
@@ -24277,21 +24433,25 @@
    "text": "We stood in a line."
   },
   "g:lip:0": {
-   "answer": "lips",
+   "answer": "lip",
    "bad": [
-    "boats",
-    "books"
+    "boat",
+    "body",
+    "fruit",
+    "head"
    ],
    "checked": [
-    "boats",
-    "books",
-    "classes",
-    "groups",
-    "ideas",
-    "stems"
+    "boat",
+    "body",
+    "class",
+    "fruit",
+    "group",
+    "head",
+    "idea",
+    "stem"
    ],
-   "date": "2026-10-12",
-   "text": "She has red lips."
+   "date": "2026-10-14",
+   "text": "She has a cut on her lip."
   },
   "g:lip:1": {
    "answer": "lips",
@@ -24622,25 +24782,23 @@
    "text": "These trousers are loose."
   },
   "g:lose:0": {
-   "answer": "lost",
+   "answer": "lose",
    "bad": [
-    "chose",
-    "gave",
-    "made",
-    "sold"
+    "give",
+    "make",
+    "sell"
    ],
    "checked": [
-    "chose",
-    "cooked",
-    "drew",
-    "gave",
-    "happened",
-    "made",
-    "sold",
-    "taught"
+    "cook",
+    "give",
+    "happen",
+    "make",
+    "must",
+    "sell",
+    "teach"
    ],
-   "date": "2026-10-12",
-   "text": "I lost my key."
+   "date": "2026-10-14",
+   "text": "Do not lose your key."
   },
   "g:lose:1": {
    "answer": "lost",
@@ -24905,23 +25063,21 @@
    "text": "The main problem is money."
   },
   "g:make:0": {
-   "answer": "made",
+   "answer": "make",
    "bad": [
-    "gave",
-    "had",
-    "wanted"
+    "give",
+    "have"
    ],
    "checked": [
+    "are",
     "be",
-    "did",
-    "gave",
-    "had",
-    "sat",
-    "wanted",
-    "was"
+    "give",
+    "have",
+    "put",
+    "sit"
    ],
-   "date": "2026-10-12",
-   "text": "I made a cake."
+   "date": "2026-10-14",
+   "text": "I make a cake."
   },
   "g:make:1": {
    "answer": "make",
@@ -25005,21 +25161,20 @@
    "text": "The man is big."
   },
   "g:manage:0": {
-   "answer": "manages",
+   "answer": "manage",
    "bad": [
-    "avoids",
-    "suggests"
+    "avoid"
    ],
    "checked": [
-    "avoids",
-    "gives",
-    "includes",
-    "makes",
-    "pays",
-    "suggests"
+    "avoid",
+    "compare",
+    "give",
+    "pay",
+    "sleep",
+    "stay"
    ],
-   "date": "2026-10-12",
-   "text": "She manages a small hotel."
+   "date": "2026-10-14",
+   "text": "She can manage a small hotel."
   },
   "g:manage:1": {
    "answer": "managed",
@@ -25027,12 +25182,13 @@
    "checked": [
     "added",
     "came",
+    "dropped",
     "killed",
     "thought",
     "washed",
     "watched"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "I managed to finish my work."
   },
   "g:manager:0": {
@@ -25212,25 +25368,31 @@
    "text": "We buy fruit at the market."
   },
   "g:marry:0": {
-   "answer": "married",
+   "answer": "marry",
    "bad": [
-    "forgot",
-    "joined",
-    "killed",
-    "met"
+    "buy",
+    "describe",
+    "forget",
+    "include",
+    "join",
+    "kill",
+    "meet"
    ],
    "checked": [
-    "bought",
-    "forgot",
-    "increased",
-    "joined",
-    "killed",
-    "met",
-    "prepared",
-    "proved"
+    "buy",
+    "describe",
+    "forget",
+    "include",
+    "increase",
+    "join",
+    "kill",
+    "meet",
+    "prove",
+    "speak",
+    "worry"
    ],
-   "date": "2026-10-12",
-   "text": "She married a doctor."
+   "date": "2026-10-14",
+   "text": "Will you marry me?"
   },
   "g:marry:1": {
    "answer": "married",
@@ -25396,59 +25558,59 @@
    "text": "It may rain today."
   },
   "g:meal:0": {
-   "answer": "meals",
-   "bad": [],
-   "checked": [
-    "bones",
-    "computers",
-    "diseases",
-    "months",
-    "teams",
-    "things"
-   ],
-   "date": "2026-10-12",
-   "text": "We have three meals a day."
-  },
-  "g:meal:1": {
    "answer": "meal",
    "bad": [
-    "bag",
-    "case",
-    "cloud",
-    "discussion",
-    "dress",
-    "knowledge",
-    "limit",
-    "matter",
-    "plant",
-    "ring",
-    "rule",
-    "seat",
-    "seed",
-    "side",
-    "thought",
-    "weather"
+    "attempt",
+    "bone",
+    "bridge",
+    "cause",
+    "computer",
+    "game",
+    "hook",
+    "man",
+    "month",
+    "phone",
+    "range",
+    "thing",
+    "wife"
    ],
    "checked": [
-    "bag",
-    "case",
-    "cloud",
-    "discussion",
-    "dress",
-    "knowledge",
-    "limit",
-    "matter",
-    "plant",
-    "ring",
-    "rule",
-    "seat",
-    "seed",
-    "side",
-    "thought",
-    "weather"
+    "attempt",
+    "bone",
+    "bridge",
+    "cause",
+    "computer",
+    "disease",
+    "fear",
+    "game",
+    "half",
+    "hook",
+    "man",
+    "month",
+    "phone",
+    "range",
+    "thing",
+    "wife"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "That was a good meal."
+  },
+  "g:meal:1": {
+   "answer": "meals",
+   "bad": [
+    "limits",
+    "rules"
+   ],
+   "checked": [
+    "bags",
+    "limits",
+    "plants",
+    "rings",
+    "rules",
+    "sides"
+   ],
+   "date": "2026-10-14",
+   "text": "We have three meals a day."
   },
   "g:mean:0": {
    "answer": "mean",
@@ -25640,18 +25802,18 @@
    "text": "The meeting was long."
   },
   "g:member:0": {
-   "answer": "members",
+   "answer": "member",
    "bad": [],
    "checked": [
-    "dogs",
-    "homes",
-    "keys",
-    "mountains",
-    "numbers",
-    "points"
+    "cake",
+    "home",
+    "mountain",
+    "sea",
+    "sky",
+    "water"
    ],
-   "date": "2026-10-12",
-   "text": "All members must come."
+   "date": "2026-10-14",
+   "text": "You are a member of the family."
   },
   "g:member:1": {
    "answer": "member",
@@ -25970,54 +26132,46 @@
     "presents",
     "seeds",
     "shoes",
-    "tables"
+    "tables",
+    "things"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "The train leaves in ten minutes."
   },
   "g:miss:0": {
-   "answer": "missed",
-   "bad": [
-    "entered",
-    "found",
-    "joined",
-    "made",
-    "moved",
-    "needed"
-   ],
-   "checked": [
-    "arrived",
-    "ate",
-    "closed",
-    "entered",
-    "found",
-    "joined",
-    "made",
-    "moved",
-    "needed",
-    "served"
-   ],
-   "date": "2026-10-12",
-   "text": "I missed the train."
-  },
-  "g:miss:1": {
    "answer": "miss",
    "bad": [
-    "carry",
-    "draw",
-    "move"
+    "serve"
    ],
    "checked": [
-    "carry",
-    "close",
-    "continue",
-    "draw",
-    "hang",
-    "move",
-    "offer"
+    "can",
+    "could",
+    "let",
+    "rise",
+    "serve",
+    "will"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "I miss my mother."
+  },
+  "g:miss:1": {
+   "answer": "missed",
+   "bad": [
+    "closed",
+    "drew",
+    "moved"
+   ],
+   "checked": [
+    "carried",
+    "closed",
+    "continued",
+    "drew",
+    "dropped",
+    "moved",
+    "ran"
+   ],
+   "date": "2026-10-14",
+   "text": "I missed the train."
   },
   "g:mix:0": {
    "answer": "mix",
@@ -26135,18 +26289,18 @@
    "text": "She saves money every week."
   },
   "g:month:0": {
-   "answer": "months",
+   "answer": "month",
    "bad": [],
    "checked": [
-    "centuries",
-    "groups",
-    "lights",
-    "papers",
-    "schools",
-    "worlds"
+    "door",
+    "group",
+    "light",
+    "night",
+    "paper",
+    "world"
    ],
-   "date": "2026-10-12",
-   "text": "She is three months old."
+   "date": "2026-10-14",
+   "text": "She is one month old."
   },
   "g:month:1": {
    "answer": "month",
@@ -26406,32 +26560,47 @@
    "text": "Thank you very much."
   },
   "g:muscle:0": {
-   "answer": "muscles",
-   "bad": [],
-   "checked": [
-    "curtains",
-    "eggs",
-    "flowers",
-    "nations",
-    "problems",
-    "shoes"
-   ],
-   "date": "2026-10-12",
-   "text": "He has strong muscles."
-  },
-  "g:muscle:1": {
    "answer": "muscle",
    "bad": [],
    "checked": [
-    "computer",
-    "government",
-    "grass",
-    "hook",
-    "internet",
-    "moment"
+    "guide",
+    "invention",
+    "library",
+    "mark",
+    "pain",
+    "problem"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "I have a pain in a muscle in my leg."
+  },
+  "g:muscle:1": {
+   "answer": "muscles",
+   "bad": [
+    "answers",
+    "boats",
+    "colours",
+    "computers",
+    "countries",
+    "feelings",
+    "liquids",
+    "trees"
+   ],
+   "checked": [
+    "answers",
+    "boats",
+    "colours",
+    "computers",
+    "countries",
+    "edges",
+    "feelings",
+    "homes",
+    "hours",
+    "liquids",
+    "rains",
+    "trees"
+   ],
+   "date": "2026-10-14",
+   "text": "He has strong muscles."
   },
   "g:music:0": {
    "answer": "music",
@@ -27466,20 +27635,20 @@
    "text": "He fell off the chair."
   },
   "g:offer:0": {
-   "answer": "offered",
+   "answer": "offer",
    "bad": [
-    "allowed"
+    "allow"
    ],
    "checked": [
-    "allowed",
-    "lived",
-    "said",
-    "sat",
-    "turned",
-    "was"
+    "allow",
+    "like",
+    "live",
+    "say",
+    "set",
+    "sit"
    ],
-   "date": "2026-10-12",
-   "text": "He offered me a drink."
+   "date": "2026-10-14",
+   "text": "Can I offer you a drink?"
   },
   "g:offer:1": {
    "answer": "offer",
@@ -28472,29 +28641,25 @@
    "text": "Which party do you support?"
   },
   "g:pass:0": {
-   "answer": "passed",
+   "answer": "pass",
    "bad": [
-    "bought",
-    "chose",
-    "drew",
-    "finished",
-    "missed",
-    "sold"
+    "buy",
+    "choose",
+    "draw",
+    "sell"
    ],
    "checked": [
-    "bought",
-    "chose",
-    "drew",
-    "felt",
-    "finished",
-    "increased",
-    "missed",
-    "proved",
-    "sold",
-    "turned"
+    "buy",
+    "choose",
+    "draw",
+    "finish",
+    "include",
+    "increase",
+    "sell",
+    "speak"
    ],
-   "date": "2026-10-12",
-   "text": "We passed the school."
+   "date": "2026-10-14",
+   "text": "Pass me the cup."
   },
   "g:pass:1": {
    "answer": "pass",
@@ -28884,13 +29049,15 @@
    ],
    "checked": [
     "died",
+    "heard",
     "laughed",
     "led",
     "prepared",
     "pulled",
-    "threw"
+    "threw",
+    "was"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "We picked apples from the tree."
   },
   "g:picture:0": {
@@ -29058,20 +29225,20 @@
    "text": "Put the book back in its place."
   },
   "g:plan:0": {
-   "answer": "plans",
+   "answer": "plan",
    "bad": [
-    "trains"
+    "train"
    ],
    "checked": [
-    "facts",
-    "friends",
-    "houses",
-    "members",
-    "rains",
-    "trains"
+    "fact",
+    "head",
+    "man",
+    "member",
+    "rain",
+    "train"
    ],
-   "date": "2026-10-12",
-   "text": "What are your plans for tomorrow?"
+   "date": "2026-10-14",
+   "text": "What is your plan for tomorrow?"
   },
   "g:plan:1": {
    "answer": "plan",
@@ -29118,34 +29285,37 @@
    "text": "We went there by plane."
   },
   "g:plant:0": {
-   "answer": "plants",
+   "answer": "plant",
    "bad": [
-    "dogs"
+    "place",
+    "school"
    ],
    "checked": [
-    "days",
-    "dogs",
-    "fingers",
-    "jobs",
-    "places",
-    "schools"
+    "cause",
+    "finger",
+    "job",
+    "place",
+    "school",
+    "sun"
    ],
-   "date": "2026-10-12",
-   "text": "Water the plants."
+   "date": "2026-10-14",
+   "text": "This plant needs light."
   },
   "g:plant:1": {
-   "answer": "plant",
-   "bad": [],
-   "checked": [
-    "animal",
-    "cake",
-    "country",
-    "face",
-    "girl",
-    "idea"
+   "answer": "plants",
+   "bad": [
+    "animals"
    ],
-   "date": "2026-10-12",
-   "text": "This plant needs light."
+   "checked": [
+    "animals",
+    "countries",
+    "faces",
+    "ideas",
+    "plans",
+    "shirts"
+   ],
+   "date": "2026-10-14",
+   "text": "Water the plants."
   },
   "g:plate:0": {
    "answer": "plate",
@@ -29174,30 +29344,35 @@
     "houses",
     "languages",
     "lights",
+    "lives",
     "prices",
     "units"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "The plates are on the table."
   },
   "g:play:0": {
-   "answer": "plays",
+   "answer": "play",
    "bad": [
-    "has",
-    "needs",
-    "writes"
+    "do",
+    "feel",
+    "have",
+    "need",
+    "write"
    ],
    "checked": [
-    "does",
-    "has",
-    "holds",
-    "moves",
-    "needs",
-    "swims",
-    "writes"
+    "am",
+    "do",
+    "feel",
+    "have",
+    "hold",
+    "move",
+    "need",
+    "swim",
+    "write"
    ],
-   "date": "2026-10-12",
-   "text": "She plays music."
+   "date": "2026-10-14",
+   "text": "I play music."
   },
   "g:play:1": {
    "answer": "playing",
@@ -29307,18 +29482,18 @@
    "text": "My keys are in my pocket."
   },
   "g:point:0": {
-   "answer": "pointed",
+   "answer": "point",
    "bad": [],
    "checked": [
     "back",
     "boy",
     "finger",
+    "girl",
     "home",
-    "river",
-    "trained"
+    "river"
    ],
-   "date": "2026-10-12",
-   "text": "He pointed at the door."
+   "date": "2026-10-14",
+   "text": "Point at the door."
   },
   "g:point:1": {
    "answer": "point",
@@ -29549,28 +29724,30 @@
    "text": "There is a plant in the pot."
   },
   "g:potato:0": {
-   "answer": "potatoes",
+   "answer": "potato",
    "bad": [
-    "countries",
-    "oranges"
+    "insect",
+    "orange"
    ],
    "checked": [
-    "costs",
-    "countries",
-    "insects",
-    "minutes",
-    "oranges",
-    "papers"
+    "country",
+    "experience",
+    "front",
+    "insect",
+    "minute",
+    "orange"
    ],
-   "date": "2026-10-12",
-   "text": "I like potatoes."
+   "date": "2026-10-14",
+   "text": "Cook the potato in water."
   },
   "g:potato:1": {
    "answer": "potatoes",
    "bad": [
+    "bits",
     "eggs"
    ],
    "checked": [
+    "bits",
     "degrees",
     "eggs",
     "ends",
@@ -29578,7 +29755,7 @@
     "hands",
     "songs"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "Cook the potatoes in water."
   },
   "g:powder:0": {
@@ -29670,18 +29847,21 @@
    "text": "Music needs a lot of practice."
   },
   "g:prepare:0": {
-   "answer": "prepared",
-   "bad": [],
-   "checked": [
-    "allowed",
-    "developed",
-    "held",
-    "lifted",
-    "looked",
-    "stood"
+   "answer": "prepare",
+   "bad": [
+    "stand",
+    "travel"
    ],
-   "date": "2026-10-12",
-   "text": "We prepared for the test."
+   "checked": [
+    "allow",
+    "develop",
+    "hang",
+    "shake",
+    "stand",
+    "travel"
+   ],
+   "date": "2026-10-14",
+   "text": "We must prepare for the test."
   },
   "g:prepare:1": {
    "answer": "prepared",
@@ -29789,10 +29969,11 @@
     "kept",
     "knew",
     "led",
+    "served",
     "thought",
     "worked"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "The book was printed last year."
   },
   "g:prison:0": {
@@ -29939,20 +30120,21 @@
    "text": "Making bread is a simple process."
   },
   "g:produce:0": {
-   "answer": "produces",
+   "answer": "produce",
    "bad": [
-    "uses"
+    "cover",
+    "use"
    ],
    "checked": [
-    "closes",
-    "covers",
-    "forgets",
-    "goes",
-    "uses",
-    "walks"
+    "am",
+    "close",
+    "cover",
+    "is",
+    "use",
+    "walk"
    ],
-   "date": "2026-10-12",
-   "text": "The company produces cars."
+   "date": "2026-10-14",
+   "text": "The company can produce cars."
   },
   "g:produce:1": {
    "answer": "produces",
@@ -29960,6 +30142,7 @@
     "saves"
    ],
    "checked": [
+    "drives",
     "happens",
     "knows",
     "lives",
@@ -29967,7 +30150,7 @@
     "speaks",
     "walks"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "This farm produces milk."
   },
   "g:profit:0": {
@@ -30180,13 +30363,14 @@
    "bad": [],
    "checked": [
     "bought",
+    "developed",
     "killed",
     "touched",
     "waited",
     "washed",
     "went"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "The horse pulled the boat along the river."
   },
   "g:pump:0": {
@@ -30531,18 +30715,39 @@
    "text": "We went by rail."
   },
   "g:rain:0": {
-   "answer": "raining",
-   "bad": [],
-   "checked": [
+   "answer": "rain",
+   "bad": [
+    "car",
+    "cat",
+    "cow",
     "cup",
+    "day",
+    "dog",
     "hand",
-    "housing",
+    "house",
+    "mountain",
     "part",
-    "time",
-    "training"
+    "sea"
    ],
-   "date": "2026-10-12",
-   "text": "It is raining."
+   "checked": [
+    "car",
+    "cat",
+    "cow",
+    "cup",
+    "day",
+    "dog",
+    "hand",
+    "house",
+    "left",
+    "life",
+    "mountain",
+    "part",
+    "people",
+    "sea",
+    "time"
+   ],
+   "date": "2026-10-14",
+   "text": "The rain is cold."
   },
   "g:rain:1": {
    "answer": "rain",
@@ -30591,9 +30796,10 @@
     "forgot",
     "measured",
     "saw",
+    "sold",
     "threw"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "They raised the price."
   },
   "g:range:0": {
@@ -30650,11 +30856,13 @@
     "angles",
     "books",
     "degrees",
+    "humans",
     "lives",
     "observations",
+    "prices",
     "units"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "Rats are smaller than cats."
   },
   "g:rate:0": {
@@ -30910,34 +31118,37 @@
    "text": "There is no reason to be angry."
   },
   "g:receive:0": {
-   "answer": "received",
+   "answer": "receive",
    "bad": [
-    "needed",
-    "sent"
+    "cover",
+    "push"
    ],
    "checked": [
-    "covered",
-    "met",
-    "needed",
-    "sent",
-    "swam",
-    "wrote"
+    "cover",
+    "is",
+    "meet",
+    "push",
+    "shake",
+    "write"
    ],
-   "date": "2026-10-12",
-   "text": "She received a lot of presents."
+   "date": "2026-10-14",
+   "text": "Did you receive my present?"
   },
   "g:receive:1": {
    "answer": "received",
-   "bad": [],
+   "bad": [
+    "sold"
+   ],
    "checked": [
     "chose",
     "increased",
     "moved",
     "paid",
     "played",
+    "sold",
     "was"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "I received a letter."
   },
   "g:recent:0": {
@@ -31186,13 +31397,14 @@
    ],
    "checked": [
     "activities",
+    "brothers",
     "months",
     "papers",
     "pipes",
     "snows",
     "spaces"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "There are many religions in the world."
   },
   "g:remember:0": {
@@ -31229,18 +31441,20 @@
    "text": "Remember to lock the door."
   },
   "g:report:0": {
-   "answer": "reported",
-   "bad": [],
-   "checked": [
-    "planned",
-    "pointed",
-    "rang",
-    "stepped",
-    "tested",
-    "trained"
+   "answer": "report",
+   "bad": [
+    "design"
    ],
-   "date": "2026-10-12",
-   "text": "She reported the crime to the police."
+   "checked": [
+    "attention",
+    "design",
+    "finger",
+    "food",
+    "home",
+    "news"
+   ],
+   "date": "2026-10-14",
+   "text": "I wrote a report."
   },
   "g:report:1": {
    "answer": "report",
@@ -31661,31 +31875,32 @@
    "text": "The phone is ringing."
   },
   "g:rise:0": {
-   "answer": "rising",
+   "answer": "rise",
    "bad": [],
    "checked": [
-    "cutting",
-    "happening",
-    "hearing",
-    "selling",
-    "working",
-    "writing"
+    "allow",
+    "can",
+    "cut",
+    "hear",
+    "know",
+    "should"
    ],
-   "date": "2026-10-12",
-   "text": "Prices are rising."
+   "date": "2026-10-14",
+   "text": "The sun will rise soon."
   },
   "g:rise:1": {
    "answer": "rises",
    "bad": [],
    "checked": [
     "drives",
+    "helps",
     "joins",
     "leads",
     "makes",
     "manages",
     "saves"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "The sun rises in the east."
   },
   "g:river:0": {
@@ -31754,41 +31969,37 @@
    "text": "This road goes to the city."
   },
   "g:roll:0": {
-   "answer": "rolled",
-   "bad": [],
-   "checked": [
-    "agreed",
-    "forgot",
-    "gave",
-    "managed",
-    "walked",
-    "watched"
-   ],
-   "date": "2026-10-12",
-   "text": "The ball rolled down the street."
-  },
-  "g:roll:1": {
    "answer": "roll",
    "bad": [
-    "change",
-    "develop",
-    "finish",
-    "pass",
-    "return"
+    "give",
+    "watch"
    ],
    "checked": [
-    "change",
-    "develop",
-    "finish",
-    "lie",
-    "love",
-    "miss",
-    "pass",
-    "return",
-    "think"
+    "agree",
+    "give",
+    "let",
+    "manage",
+    "walk",
+    "watch"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "Roll the paper."
+  },
+  "g:roll:1": {
+   "answer": "rolled",
+   "bad": [
+    "returned"
+   ],
+   "checked": [
+    "changed",
+    "developed",
+    "finished",
+    "missed",
+    "returned",
+    "thought"
+   ],
+   "date": "2026-10-14",
+   "text": "The ball rolled down the street."
   },
   "g:roof:0": {
    "answer": "roof",
@@ -31859,18 +32070,18 @@
    "text": "There is no room for the table."
   },
   "g:root:0": {
-   "answer": "roots",
+   "answer": "root",
    "bad": [],
    "checked": [
-    "degrees",
-    "dogs",
-    "insects",
-    "snows",
-    "sounds",
-    "weeks"
+    "brush",
+    "connection",
+    "discovery",
+    "force",
+    "past",
+    "payment"
    ],
-   "date": "2026-10-12",
-   "text": "The roots of the tree are deep."
+   "date": "2026-10-14",
+   "text": "The root of the tree is deep."
   },
   "g:root:1": {
    "answer": "root",
@@ -31956,50 +32167,65 @@
    "text": "The ball is round."
   },
   "g:rule:0": {
-   "answer": "rules",
-   "bad": [
-    "members"
-   ],
-   "checked": [
-    "brothers",
-    "chairs",
-    "costs",
-    "fingers",
-    "members",
-    "plants"
-   ],
-   "date": "2026-10-12",
-   "text": "Follow the rules."
-  },
-  "g:rule:1": {
    "answer": "rule",
-   "bad": [],
-   "checked": [
-    "account",
-    "age",
-    "brother",
-    "left",
-    "piece",
-    "sun"
+   "bad": [
+    "chair",
+    "hat",
+    "period"
    ],
-   "date": "2026-10-12",
+   "checked": [
+    "chair",
+    "chance",
+    "fish",
+    "hat",
+    "member",
+    "period",
+    "sky"
+   ],
+   "date": "2026-10-14",
    "text": "It is a rule of the school."
   },
-  "g:run:0": {
-   "answer": "running",
+  "g:rule:1": {
+   "answer": "rules",
    "bad": [
-    "sitting"
+    "brothers",
+    "facts",
+    "groups",
+    "humans",
+    "ideas",
+    "lights"
    ],
    "checked": [
-    "getting",
-    "living",
-    "making",
-    "saying",
-    "seeing",
-    "sitting"
+    "arms",
+    "brothers",
+    "chairs",
+    "facts",
+    "groups",
+    "humans",
+    "ideas",
+    "lights",
+    "pieces",
+    "records"
    ],
-   "date": "2026-10-12",
-   "text": "The children are running."
+   "date": "2026-10-14",
+   "text": "Follow the rules."
+  },
+  "g:run:0": {
+   "answer": "run",
+   "bad": [
+    "live",
+    "sit"
+   ],
+   "checked": [
+    "are",
+    "know",
+    "live",
+    "make",
+    "say",
+    "sit"
+   ],
+   "date": "2026-10-14",
+   "text": "I can run."
   },
   "g:run:1": {
    "answer": "ran",
@@ -32208,36 +32434,35 @@
    "text": "There is sand in my shoes."
   },
   "g:save:0": {
-   "answer": "saved",
-   "bad": [
-    "carried"
-   ],
+   "answer": "save",
+   "bad": [],
    "checked": [
-    "blew",
-    "carried",
-    "lived",
-    "sat",
-    "talked",
-    "watched"
+    "blow",
+    "live",
+    "set",
+    "sit",
+    "talk",
+    "watch"
    ],
-   "date": "2026-10-12",
-   "text": "He saved the child from the fire."
+   "date": "2026-10-14",
+   "text": "I save money every month."
   },
   "g:save:1": {
-   "answer": "save",
+   "answer": "saved",
    "bad": [
-    "get"
+    "carried",
+    "got"
    ],
    "checked": [
-    "carry",
-    "feel",
-    "get",
-    "is",
-    "try",
-    "wear"
+    "carried",
+    "felt",
+    "forgot",
+    "got",
+    "tried",
+    "wore"
    ],
-   "date": "2026-10-12",
-   "text": "I save money every month."
+   "date": "2026-10-14",
+   "text": "He saved the child from the fire."
   },
   "g:say:0": {
    "answer": "say",
@@ -32602,18 +32827,20 @@
    "text": "I see what you mean."
   },
   "g:seed:0": {
-   "answer": "seeds",
-   "bad": [],
-   "checked": [
-    "clouds",
-    "events",
-    "languages",
-    "nations",
-    "shirts",
-    "sons"
+   "answer": "seed",
+   "bad": [
+    "shirt"
    ],
-   "date": "2026-10-12",
-   "text": "Apples have seeds inside."
+   "checked": [
+    "cloud",
+    "event",
+    "language",
+    "shirt",
+    "son",
+    "system"
+   ],
+   "date": "2026-10-14",
+   "text": "Put a seed in the ground."
   },
   "g:seed:1": {
    "answer": "seeds",
@@ -32632,18 +32859,18 @@
    "text": "Plant the seeds in the spring."
   },
   "g:seem:0": {
-   "answer": "seems",
+   "answer": "seem",
    "bad": [],
    "checked": [
-    "holds",
-    "knows",
-    "plays",
-    "shows",
-    "starts",
-    "writes"
+    "can",
+    "could",
+    "eat",
+    "hold",
+    "know",
+    "will"
    ],
-   "date": "2026-10-12",
-   "text": "She seems happy."
+   "date": "2026-10-14",
+   "text": "You seem happy."
   },
   "g:seem:1": {
    "answer": "seems",
@@ -32718,21 +32945,21 @@
    "text": "She has a strong sense of self."
   },
   "g:sell:0": {
-   "answer": "sold",
+   "answer": "sell",
    "bad": [
-    "chose",
-    "held"
+    "choose",
+    "hold"
    ],
    "checked": [
-    "caught",
-    "chose",
-    "created",
-    "held",
-    "played",
-    "thought"
+    "choose",
+    "create",
+    "hold",
+    "hope",
+    "play",
+    "think"
    ],
-   "date": "2026-10-12",
-   "text": "I sold my car."
+   "date": "2026-10-14",
+   "text": "I will sell my car."
   },
   "g:sell:1": {
    "answer": "sell",
@@ -32749,18 +32976,18 @@
    "text": "They sell fruit at the market."
   },
   "g:send:0": {
-   "answer": "sent",
+   "answer": "send",
    "bad": [],
    "checked": [
-    "chose",
-    "served",
-    "stood",
-    "thought",
-    "used",
-    "wrote"
+    "choose",
+    "serve",
+    "stand",
+    "think",
+    "use",
+    "write"
    ],
-   "date": "2026-10-12",
-   "text": "She sent her son to school."
+   "date": "2026-10-14",
+   "text": "Send her to school."
   },
   "g:send:1": {
    "answer": "send",
@@ -32875,48 +33102,70 @@
    "text": "It is a serious disease."
   },
   "g:servant:0": {
-   "answer": "servants",
-   "bad": [
-    "cows"
-   ],
-   "checked": [
-    "cows",
-    "months",
-    "pieces",
-    "problems",
-    "teeth",
-    "words"
-   ],
-   "date": "2026-10-12",
-   "text": "The family had two servants."
-  },
-  "g:servant:1": {
    "answer": "servant",
    "bad": [],
    "checked": [
-    "desire",
-    "ice",
-    "land",
-    "lip",
-    "lot",
-    "pocket"
+    "danger",
+    "hat",
+    "metal",
+    "month",
+    "problem",
+    "self"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "The servant opened the door."
   },
-  "g:serve:0": {
-   "answer": "served",
-   "bad": [],
-   "checked": [
-    "added",
-    "began",
-    "carried",
-    "found",
-    "learned",
-    "slept"
+  "g:servant:1": {
+   "answer": "servants",
+   "bad": [
+    "brothers",
+    "buildings",
+    "houses",
+    "humans",
+    "letters",
+    "memories",
+    "parents",
+    "records",
+    "sisters"
    ],
-   "date": "2026-10-12",
-   "text": "They served us rice and fish."
+   "checked": [
+    "brothers",
+    "buildings",
+    "centuries",
+    "countries",
+    "houses",
+    "humans",
+    "letters",
+    "lips",
+    "memories",
+    "parents",
+    "powers",
+    "records",
+    "sisters"
+   ],
+   "date": "2026-10-14",
+   "text": "The family had two servants."
+  },
+  "g:serve:0": {
+   "answer": "serve",
+   "bad": [
+    "add",
+    "carry",
+    "describe",
+    "show"
+   ],
+   "checked": [
+    "add",
+    "are",
+    "carry",
+    "describe",
+    "learn",
+    "show",
+    "sleep",
+    "will"
+   ],
+   "date": "2026-10-14",
+   "text": "They serve rice and fish."
   },
   "g:serve:1": {
    "answer": "served",
@@ -32929,9 +33178,10 @@
     "killed",
     "made",
     "paid",
+    "started",
     "was"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "He served in the army."
   },
   "g:service:0": {
@@ -33134,18 +33384,18 @@
    "text": "I like this shade of blue."
   },
   "g:shake:0": {
-   "answer": "shaking",
+   "answer": "shake",
    "bad": [],
    "checked": [
-    "adding",
-    "building",
-    "coming",
-    "growing",
-    "saying",
-    "working"
+    "add",
+    "allow",
+    "build",
+    "come",
+    "know",
+    "say"
    ],
-   "date": "2026-10-12",
-   "text": "She was shaking with cold."
+   "date": "2026-10-14",
+   "text": "Shake my hand."
   },
   "g:shake:1": {
    "answer": "shake",
@@ -33410,18 +33660,42 @@
    "text": "I got a shock from the machine."
   },
   "g:shoe:0": {
-   "answer": "shoes",
-   "bad": [],
-   "checked": [
-    "countries",
-    "ends",
-    "keys",
-    "parts",
-    "tables",
-    "times"
+   "answer": "shoe",
+   "bad": [
+    "country",
+    "dog",
+    "girl",
+    "hat",
+    "key",
+    "money",
+    "part",
+    "phone",
+    "table",
+    "thing",
+    "train",
+    "way",
+    "word"
    ],
-   "date": "2026-10-12",
-   "text": "Put on your shoes."
+   "checked": [
+    "country",
+    "dog",
+    "end",
+    "girl",
+    "hat",
+    "key",
+    "money",
+    "part",
+    "people",
+    "phone",
+    "table",
+    "thing",
+    "time",
+    "train",
+    "way",
+    "word"
+   ],
+   "date": "2026-10-14",
+   "text": "This shoe is new."
   },
   "g:shoe:1": {
    "answer": "shoes",
@@ -33638,32 +33912,36 @@
    "text": "The shop is shut."
   },
   "g:side:0": {
-   "answer": "sides",
-   "bad": [],
-   "checked": [
-    "eggs",
-    "knees",
-    "lines",
-    "people",
-    "pictures",
-    "seeds"
+   "answer": "side",
+   "bad": [
+    "knee"
    ],
-   "date": "2026-10-12",
-   "text": "A box has six sides."
+   "checked": [
+    "action",
+    "knee",
+    "line",
+    "period",
+    "reaction",
+    "water"
+   ],
+   "date": "2026-10-14",
+   "text": "He sat at my side."
   },
   "g:side:1": {
-   "answer": "side",
-   "bad": [],
-   "checked": [
-    "cake",
-    "dog",
-    "line",
-    "mother",
-    "ship",
-    "system"
+   "answer": "sides",
+   "bad": [
+    "lines"
    ],
-   "date": "2026-10-12",
-   "text": "He sat at my side."
+   "checked": [
+    "dogs",
+    "groups",
+    "houses",
+    "lines",
+    "ships",
+    "shops"
+   ],
+   "date": "2026-10-14",
+   "text": "A box has six sides."
   },
   "g:sign:0": {
    "answer": "sign",
@@ -33902,6 +34180,7 @@
     "parents",
     "pictures",
     "pieces",
+    "plans",
     "presents",
     "stories",
     "teams"
@@ -33917,6 +34196,7 @@
     "parents",
     "pictures",
     "pieces",
+    "plans",
     "presents",
     "prices",
     "stories",
@@ -33924,7 +34204,7 @@
     "times",
     "weeks"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "I have two sisters."
   },
   "g:sit:0": {
@@ -33951,10 +34231,11 @@
     "becoming",
     "getting",
     "holding",
+    "learning",
     "running",
     "using"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "She is sitting on the chair."
   },
   "g:situation:0": {
@@ -34146,21 +34427,20 @@
    "text": "There are no clouds in the sky."
   },
   "g:sleep:0": {
-   "answer": "slept",
+   "answer": "sleep",
    "bad": [
-    "heard",
-    "went"
+    "speak"
    ],
    "checked": [
-    "continued",
-    "created",
-    "heard",
-    "helped",
-    "wanted",
-    "went"
+    "continue",
+    "create",
+    "go",
+    "help",
+    "speak",
+    "want"
    ],
-   "date": "2026-10-12",
-   "text": "I slept well."
+   "date": "2026-10-14",
+   "text": "I sleep well."
   },
   "g:sleep:1": {
    "answer": "sleeping",
@@ -34180,36 +34460,34 @@
    "text": "The baby is sleeping."
   },
   "g:slip:0": {
-   "answer": "slipped",
-   "bad": [
-    "smiled"
-   ],
+   "answer": "slip",
+   "bad": [],
    "checked": [
-    "burnt",
-    "fixed",
-    "flew",
-    "increased",
-    "smiled",
-    "touched"
+    "burn",
+    "enjoy",
+    "increase",
+    "must",
+    "smile",
+    "touch"
    ],
-   "date": "2026-10-12",
-   "text": "She slipped on the ice."
+   "date": "2026-10-14",
+   "text": "Take care not to slip on the wet floor."
   },
   "g:slip:1": {
-   "answer": "slip",
+   "answer": "slipped",
    "bad": [
-    "play"
+    "played"
    ],
    "checked": [
-    "check",
-    "exchange",
-    "play",
-    "return",
-    "show",
-    "shut"
+    "asked",
+    "did",
+    "exchanged",
+    "played",
+    "returned",
+    "told"
    ],
-   "date": "2026-10-12",
-   "text": "Take care not to slip on the wet floor."
+   "date": "2026-10-14",
+   "text": "She slipped on the ice."
   },
   "g:slope:0": {
    "answer": "slope",
@@ -34334,18 +34612,18 @@
    "text": "The flowers smell sweet."
   },
   "g:smile:0": {
-   "answer": "smiled",
+   "answer": "smile",
    "bad": [],
    "checked": [
-    "accepted",
-    "followed",
-    "killed",
-    "kissed",
-    "stayed",
-    "visited"
+    "contain",
+    "hang",
+    "kill",
+    "might",
+    "stay",
+    "visit"
    ],
-   "date": "2026-10-12",
-   "text": "She smiled at me."
+   "date": "2026-10-14",
+   "text": "Smile at me."
   },
   "g:smile:1": {
    "answer": "smile",
@@ -34452,16 +34730,19 @@
   },
   "g:snow:1": {
    "answer": "snowing",
-   "bad": [],
+   "bad": [
+    "raining"
+   ],
    "checked": [
     "country",
     "housing",
+    "raining",
     "shoe",
     "table",
     "training",
     "word"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "It is snowing."
   },
   "g:so:0": {
@@ -34741,37 +35022,58 @@
    "text": "She sometimes forgets."
   },
   "g:son:0": {
-   "answer": "sons",
-   "bad": [
-    "animals",
-    "eggs"
-   ],
-   "checked": [
-    "animals",
-    "eggs",
-    "schools",
-    "snows",
-    "ways",
-    "weeks"
-   ],
-   "date": "2026-10-12",
-   "text": "They have two sons."
-  },
-  "g:son:1": {
    "answer": "son",
    "bad": [
-    "sister"
+    "mother"
    ],
    "checked": [
-    "account",
-    "blood",
-    "company",
-    "expert",
-    "foot",
-    "sister"
+    "birth",
+    "egg",
+    "knowledge",
+    "mother",
+    "period",
+    "week"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "My son is at school."
+  },
+  "g:son:1": {
+   "answer": "sons",
+   "bad": [
+    "answers",
+    "companies",
+    "cows",
+    "cups",
+    "fingers",
+    "friends",
+    "glasses",
+    "homes",
+    "parents",
+    "points",
+    "questions",
+    "sisters",
+    "teams"
+   ],
+   "checked": [
+    "answers",
+    "companies",
+    "cows",
+    "cups",
+    "fingers",
+    "friends",
+    "glasses",
+    "homes",
+    "leaves",
+    "parents",
+    "points",
+    "questions",
+    "sisters",
+    "snows",
+    "teams",
+    "times"
+   ],
+   "date": "2026-10-14",
+   "text": "They have two sons."
   },
   "g:song:0": {
    "answer": "song",
@@ -34890,18 +35192,43 @@
    "text": "Sort the books by colour."
   },
   "g:sound:0": {
-   "answer": "sounds",
-   "bad": [],
-   "checked": [
-    "arms",
-    "faces",
-    "people",
-    "schools",
-    "shoes",
-    "times"
+   "answer": "sound",
+   "bad": [
+    "age",
+    "arm",
+    "face",
+    "father",
+    "hair",
+    "hat",
+    "music",
+    "page",
+    "person",
+    "school",
+    "shoe",
+    "subject",
+    "sun",
+    "value"
    ],
-   "date": "2026-10-12",
-   "text": "That sounds good."
+   "checked": [
+    "age",
+    "arm",
+    "face",
+    "father",
+    "hair",
+    "hat",
+    "music",
+    "page",
+    "person",
+    "school",
+    "shoe",
+    "sky",
+    "subject",
+    "sun",
+    "time",
+    "value"
+   ],
+   "date": "2026-10-14",
+   "text": "What is that sound?"
   },
   "g:sound:1": {
    "answer": "sound",
@@ -34976,18 +35303,20 @@
    "text": "They sent a man into space."
   },
   "g:speak:0": {
-   "answer": "speaks",
-   "bad": [],
-   "checked": [
-    "gives",
-    "grows",
-    "happens",
-    "holds",
-    "swims",
-    "thinks"
+   "answer": "speak",
+   "bad": [
+    "swim"
    ],
-   "date": "2026-10-12",
-   "text": "She speaks two languages."
+   "checked": [
+    "add",
+    "fall",
+    "grow",
+    "should",
+    "swim",
+    "think"
+   ],
+   "date": "2026-10-14",
+   "text": "Please speak to me."
   },
   "g:speak:1": {
    "answer": "speak",
@@ -35036,20 +35365,21 @@
    "text": "This is a special room for children."
   },
   "g:spend:0": {
-   "answer": "spent",
+   "answer": "spend",
    "bad": [
-    "wanted"
+    "carry",
+    "show"
    ],
    "checked": [
-    "ate",
-    "began",
-    "carried",
-    "knew",
-    "walked",
-    "wanted"
+    "begin",
+    "carry",
+    "eat",
+    "know",
+    "show",
+    "walk"
    ],
-   "date": "2026-10-12",
-   "text": "I spent all my money."
+   "date": "2026-10-14",
+   "text": "Do not spend all your money."
   },
   "g:spend:1": {
    "answer": "spent",
@@ -35246,18 +35576,21 @@
    "text": "She is standing by the door."
   },
   "g:star:0": {
-   "answer": "stars",
-   "bad": [],
-   "checked": [
-    "coats",
-    "designs",
-    "people",
-    "rules",
-    "trains",
-    "walls"
+   "answer": "star",
+   "bad": [
+    "design",
+    "road"
    ],
-   "date": "2026-10-12",
-   "text": "There are many stars in the sky."
+   "checked": [
+    "account",
+    "design",
+    "mind",
+    "reaction",
+    "road",
+    "trade"
+   ],
+   "date": "2026-10-14",
+   "text": "I can see a star."
   },
   "g:star:1": {
    "answer": "star",
@@ -35276,18 +35609,18 @@
    "text": "The star is very bright."
   },
   "g:start:0": {
-   "answer": "started",
+   "answer": "start",
    "bad": [],
    "checked": [
-    "gave",
-    "sat",
-    "saw",
-    "thought",
-    "was",
-    "went"
+    "am",
+    "can",
+    "cut",
+    "give",
+    "go",
+    "think"
    ],
-   "date": "2026-10-12",
-   "text": "It started to rain."
+   "date": "2026-10-14",
+   "text": "Start the car."
   },
   "g:start:1": {
    "answer": "starts",
@@ -35467,18 +35800,21 @@
   "g:stem:1": {
    "answer": "stems",
    "bad": [
+    "leaves",
     "pieces",
     "trees"
    ],
    "checked": [
     "angles",
+    "children",
     "crimes",
+    "leaves",
     "limits",
     "members",
     "pieces",
     "trees"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "Cut the stems."
   },
   "g:step:0": {
@@ -35926,10 +36262,11 @@
     "months",
     "rings",
     "schools",
+    "snows",
     "tables",
     "ways"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "The students are in the library."
   },
   "g:study:0": {
@@ -35951,9 +36288,11 @@
   "g:study:1": {
    "answer": "studies",
    "bad": [
+    "avoids",
     "teaches"
    ],
    "checked": [
+    "avoids",
     "begins",
     "does",
     "lives",
@@ -35961,7 +36300,7 @@
     "suggests",
     "teaches"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "She studies science."
   },
   "g:subject:0": {
@@ -36147,32 +36486,81 @@
    "text": "What do you suggest?"
   },
   "g:suggestion:0": {
-   "answer": "suggestions",
-   "bad": [],
-   "checked": [
-    "coats",
-    "curtains",
-    "feathers",
-    "machines",
-    "memories",
-    "times"
+   "answer": "suggestion",
+   "bad": [
+    "coat",
+    "discussion",
+    "distance",
+    "hole",
+    "hotel",
+    "invention",
+    "leather",
+    "machine",
+    "memory",
+    "result",
+    "secret",
+    "summer",
+    "time"
    ],
-   "date": "2026-10-12",
-   "text": "Do you have any suggestions?"
+   "checked": [
+    "birth",
+    "breath",
+    "coat",
+    "discussion",
+    "distance",
+    "hole",
+    "hotel",
+    "invention",
+    "leather",
+    "machine",
+    "memory",
+    "result",
+    "secret",
+    "sort",
+    "summer",
+    "time"
+   ],
+   "date": "2026-10-14",
+   "text": "That is a good suggestion."
   },
   "g:suggestion:1": {
-   "answer": "suggestion",
-   "bad": [],
-   "checked": [
-    "edge",
-    "loss",
-    "pump",
-    "roof",
-    "salt",
-    "tooth"
+   "answer": "suggestions",
+   "bad": [
+    "answers",
+    "bags",
+    "companies",
+    "daughters",
+    "fingers",
+    "friends",
+    "laws",
+    "levels",
+    "points",
+    "religions",
+    "rooms",
+    "students",
+    "teeth",
+    "wires"
    ],
-   "date": "2026-10-12",
-   "text": "That is a good suggestion."
+   "checked": [
+    "answers",
+    "bags",
+    "companies",
+    "daughters",
+    "edges",
+    "fingers",
+    "friends",
+    "laws",
+    "levels",
+    "points",
+    "religions",
+    "rooms",
+    "stars",
+    "students",
+    "teeth",
+    "wires"
+   ],
+   "date": "2026-10-14",
+   "text": "Do you have any suggestions?"
   },
   "g:summer:0": {
    "answer": "summer",
@@ -36234,23 +36622,25 @@
    "text": "The sun comes up in the east."
   },
   "g:support:0": {
-   "answer": "supports",
+   "answer": "support",
    "bad": [
-    "changes",
-    "keeps",
-    "knows"
+    "change",
+    "compare",
+    "keep",
+    "know"
    ],
    "checked": [
-    "changes",
-    "grows",
-    "holds",
-    "keeps",
-    "knows",
-    "rises",
-    "seems"
+    "arrive",
+    "change",
+    "compare",
+    "hold",
+    "keep",
+    "know",
+    "let",
+    "throw"
    ],
-   "date": "2026-10-12",
-   "text": "My family supports my plan."
+   "date": "2026-10-14",
+   "text": "We support your plan."
   },
   "g:support:1": {
    "answer": "support",
@@ -36331,6 +36721,7 @@
    "answer": "surprised",
    "bad": [],
    "checked": [
+    "cared",
     "caused",
     "interested",
     "planned",
@@ -36338,7 +36729,7 @@
     "trained",
     "wounded"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "She was surprised to see me."
   },
   "g:sweet:0": {
@@ -36649,20 +37040,20 @@
    "text": "The tax on wine is high."
   },
   "g:teach:0": {
-   "answer": "teaches",
+   "answer": "teach",
    "bad": [
-    "supports"
+    "sell"
    ],
    "checked": [
-    "changes",
-    "pushes",
-    "seems",
-    "supports",
-    "thinks",
-    "works"
+    "seem",
+    "sell",
+    "spend",
+    "throw",
+    "work",
+    "would"
    ],
-   "date": "2026-10-12",
-   "text": "She teaches music."
+   "date": "2026-10-14",
+   "text": "I teach music."
   },
   "g:teach:1": {
    "answer": "taught",
@@ -36752,6 +37143,7 @@
    "answer": "told",
    "bad": [],
    "checked": [
+    "became",
     "began",
     "carried",
     "changed",
@@ -36759,7 +37151,7 @@
     "sat",
     "saw"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "She told me a story."
   },
   "g:ten:0": {
@@ -36841,18 +37233,29 @@
    "text": "There is a tendency for prices to rise."
   },
   "g:test:0": {
-   "answer": "tested",
-   "bad": [],
-   "checked": [
-    "caused",
-    "detailed",
-    "lit",
-    "planned",
-    "pointed",
-    "trained"
+   "answer": "test",
+   "bad": [
+    "death",
+    "door",
+    "father",
+    "idea",
+    "question",
+    "shelf"
    ],
-   "date": "2026-10-12",
-   "text": "They tested the machine."
+   "checked": [
+    "death",
+    "door",
+    "father",
+    "idea",
+    "left",
+    "moon",
+    "question",
+    "shelf",
+    "town",
+    "voice"
+   ],
+   "date": "2026-10-14",
+   "text": "The test is hard."
   },
   "g:test:1": {
    "answer": "test",
@@ -37524,18 +37927,18 @@
    "text": "The bird flew in through the window."
   },
   "g:throw:0": {
-   "answer": "threw",
+   "answer": "throw",
    "bad": [],
    "checked": [
-    "accepted",
-    "ate",
-    "expected",
-    "had",
-    "stood",
-    "wrote"
+    "accept",
+    "eat",
+    "expect",
+    "have",
+    "like",
+    "stand"
    ],
-   "date": "2026-10-12",
-   "text": "She threw the paper away."
+   "date": "2026-10-14",
+   "text": "Throw the paper away."
   },
   "g:throw:1": {
    "answer": "throw",
@@ -38014,6 +38417,7 @@
     "took"
    ],
    "checked": [
+    "finished",
     "imagined",
     "killed",
     "played",
@@ -38021,7 +38425,7 @@
     "talked",
     "took"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "She touched my arm."
   },
   "g:towards:0": {
@@ -38254,13 +38658,14 @@
    "bad": [],
    "checked": [
     "birds",
+    "faces",
     "orders",
     "pieces",
     "plates",
     "presents",
     "wires"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "The dog can do tricks."
   },
   "g:trouble:0": {
@@ -38611,21 +39016,35 @@
    "text": "Do you understand the question?"
   },
   "g:unit:0": {
-   "answer": "units",
+   "answer": "unit",
    "bad": [
-    "songs",
-    "things"
+    "evening",
+    "expert",
+    "month",
+    "noise",
+    "sea",
+    "side",
+    "tax",
+    "test",
+    "view"
    ],
    "checked": [
-    "doctors",
-    "months",
-    "sides",
-    "songs",
-    "things",
-    "trees"
+    "evening",
+    "expert",
+    "foot",
+    "future",
+    "month",
+    "music",
+    "noise",
+    "north",
+    "sea",
+    "side",
+    "tax",
+    "test",
+    "view"
    ],
-   "date": "2026-10-12",
-   "text": "The book has ten units."
+   "date": "2026-10-14",
+   "text": "This is the last unit."
   },
   "g:unit:1": {
    "answer": "unit",
@@ -38921,27 +39340,27 @@
    "text": "There was a violent wind."
   },
   "g:visit:0": {
-   "answer": "visited",
-   "bad": [
-    "carried"
-   ],
+   "answer": "visit",
+   "bad": [],
    "checked": [
-    "became",
-    "carried",
-    "looked",
-    "said",
-    "sat",
-    "told"
+    "become",
+    "look",
+    "say",
+    "set",
+    "sit",
+    "would"
    ],
-   "date": "2026-10-12",
-   "text": "I visited my mother."
+   "date": "2026-10-14",
+   "text": "I visit my mother."
   },
   "g:visit:1": {
    "answer": "visited",
    "bad": [
+    "got",
     "sold"
    ],
    "checked": [
+    "got",
     "kicked",
     "led",
     "proved",
@@ -38949,7 +39368,7 @@
     "thanked",
     "threw"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "We visited the old church."
   },
   "g:voice:0": {
@@ -39186,9 +39605,10 @@
     "drew",
     "offered",
     "proved",
+    "stayed",
     "stopped"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "I washed the cups."
   },
   "g:waste:0": {
@@ -39222,21 +39642,20 @@
    "text": "It is a waste of time."
   },
   "g:watch:0": {
-   "answer": "watched",
+   "answer": "watch",
    "bad": [
-    "kept",
-    "measured"
+    "like"
    ],
    "checked": [
-    "began",
-    "kept",
-    "looked",
-    "measured",
-    "sat",
-    "was"
+    "are",
+    "be",
+    "is",
+    "like",
+    "look",
+    "should"
    ],
-   "date": "2026-10-12",
-   "text": "We watched the birds."
+   "date": "2026-10-14",
+   "text": "We watch the birds."
   },
   "g:watch:1": {
    "answer": "watch",
@@ -39304,20 +39723,39 @@
    "text": "I drink a lot of water."
   },
   "g:wave:0": {
-   "answer": "waves",
+   "answer": "wave",
    "bad": [
-    "clouds"
+    "bed",
+    "branch",
+    "class",
+    "cloud",
+    "friend",
+    "growth",
+    "man",
+    "office",
+    "person",
+    "potato",
+    "wound"
    ],
    "checked": [
-    "classes",
-    "clouds",
-    "friends",
-    "lights",
-    "people",
-    "potatoes"
+    "bed",
+    "branch",
+    "choice",
+    "class",
+    "cloud",
+    "friend",
+    "grain",
+    "growth",
+    "man",
+    "office",
+    "pain",
+    "person",
+    "pleasure",
+    "potato",
+    "wound"
    ],
-   "date": "2026-10-12",
-   "text": "The waves are big today."
+   "date": "2026-10-14",
+   "text": "Look at that big wave."
   },
   "g:wave:1": {
    "answer": "waved",
@@ -39398,20 +39836,21 @@
    "text": "We have a dog."
   },
   "g:wear:0": {
-   "answer": "wearing",
+   "answer": "wear",
    "bad": [
-    "buying"
+    "buy",
+    "pass"
    ],
    "checked": [
-    "buying",
-    "hearing",
-    "learning",
-    "moving",
-    "working",
-    "writing"
+    "buy",
+    "help",
+    "pass",
+    "seem",
+    "travel",
+    "visit"
    ],
-   "date": "2026-10-12",
-   "text": "She is wearing a red dress."
+   "date": "2026-10-14",
+   "text": "Wear your coat."
   },
   "g:wear:1": {
    "answer": "wear",
@@ -39629,35 +40068,34 @@
    "text": "What is that? It is a cat."
   },
   "g:wheel:0": {
-   "answer": "wheels",
-   "bad": [],
-   "checked": [
-    "computers",
-    "debts",
-    "degrees",
-    "nations",
-    "signs",
-    "tickets"
-   ],
-   "date": "2026-10-12",
-   "text": "A car has four wheels."
-  },
-  "g:wheel:1": {
    "answer": "wheel",
    "bad": [
-    "boat",
-    "bone"
+    "computer"
    ],
    "checked": [
     "afternoon",
-    "art",
-    "bird",
-    "boat",
-    "bone",
-    "fear"
+    "computer",
+    "degree",
+    "garden",
+    "purpose",
+    "size"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "The wheel is broken."
+  },
+  "g:wheel:1": {
+   "answer": "wheels",
+   "bad": [],
+   "checked": [
+    "birds",
+    "boats",
+    "bones",
+    "countries",
+    "oranges",
+    "stems"
+   ],
+   "date": "2026-10-14",
+   "text": "A car has four wheels."
   },
   "g:when:0": {
    "answer": "when",
@@ -40024,18 +40462,21 @@
    "text": "It will rain tonight."
   },
   "g:win:0": {
-   "answer": "won",
-   "bad": [],
-   "checked": [
-    "asked",
-    "happened",
-    "lifted",
-    "made",
-    "stood",
-    "talked"
+   "answer": "win",
+   "bad": [
+    "act",
+    "ask"
    ],
-   "date": "2026-10-12",
-   "text": "Our team won."
+   "checked": [
+    "act",
+    "ask",
+    "happen",
+    "lift",
+    "make",
+    "shut"
+   ],
+   "date": "2026-10-14",
+   "text": "We will win."
   },
   "g:win:1": {
    "answer": "won",
@@ -40151,18 +40592,20 @@
    "text": "This wine is from a small farm."
   },
   "g:wing:0": {
-   "answer": "wings",
-   "bad": [],
-   "checked": [
-    "arms",
-    "classes",
-    "insects",
-    "letters",
-    "ships",
-    "songs"
+   "answer": "wing",
+   "bad": [
+    "net"
    ],
-   "date": "2026-10-12",
-   "text": "The bird opened its wings."
+   "checked": [
+    "chief",
+    "hair",
+    "half",
+    "milk",
+    "net",
+    "structure"
+   ],
+   "date": "2026-10-14",
+   "text": "The bird has a broken wing."
   },
   "g:wing:1": {
    "answer": "wings",
@@ -40207,32 +40650,37 @@
    "text": "Winter is cold here."
   },
   "g:wire:0": {
-   "answer": "wires",
-   "bad": [],
-   "checked": [
-    "amounts",
-    "brothers",
-    "centuries",
-    "diseases",
-    "eyes",
-    "keys"
+   "answer": "wire",
+   "bad": [
+    "hole",
+    "hook"
    ],
-   "date": "2026-10-12",
-   "text": "The wires are under the floor."
+   "checked": [
+    "century",
+    "disease",
+    "fear",
+    "hole",
+    "hook",
+    "theory"
+   ],
+   "date": "2026-10-14",
+   "text": "Do not touch that wire."
   },
   "g:wire:1": {
-   "answer": "wire",
-   "bad": [],
-   "checked": [
-    "bath",
-    "half",
-    "liquid",
-    "religion",
-    "snow",
-    "story"
+   "answer": "wires",
+   "bad": [
+    "liquids"
    ],
-   "date": "2026-10-12",
-   "text": "Do not touch that wire."
+   "checked": [
+    "diseases",
+    "knees",
+    "liquids",
+    "religions",
+    "snows",
+    "stories"
+   ],
+   "date": "2026-10-14",
+   "text": "The wires are under the floor."
   },
   "g:wise:0": {
    "answer": "wise",
@@ -40586,11 +41034,13 @@
     "caused",
     "curved",
     "damaged",
+    "lit",
     "rang",
     "reported",
+    "stepped",
     "tested"
    ],
-   "date": "2026-10-12",
+   "date": "2026-10-14",
    "text": "He was wounded in the war."
   },
   "g:write:0": {
@@ -40652,18 +41102,18 @@
    "text": "It is wrong to take things that are not yours."
   },
   "g:year:0": {
-   "answer": "years",
+   "answer": "year",
    "bad": [],
    "checked": [
-    "countries",
-    "ends",
-    "homes",
-    "members",
-    "parents",
-    "schools"
+    "cause",
+    "effect",
+    "foot",
+    "member",
+    "parent",
+    "value"
    ],
-   "date": "2026-10-12",
-   "text": "She is ten years old."
+   "date": "2026-10-14",
+   "text": "She is one year old."
   },
   "g:year:1": {
    "answer": "year",

@@ -2,7 +2,7 @@ a|article|D||I am a man.|She is a girl.
 able|adjective|F|when you can do something|She is able to swim.|He was not able to sleep.
 about|preposition|D||This book is about animals.|We talked about the weather.
 above|preposition|A||The bird is above the tree.|There is a light above the table.
-accept|verb|F|to take something that someone gives you, or to say yes to it|She accepted the money.|I accept your offer.
+accept|verb|F|to take something that someone gives you, or to say yes to it|I accept your offer.|She accepted the money.
 account|noun|F|a record of the money that you put in or take out over time|I put some money into my account.|He has an account with this company.
 across|preposition|A||We walked across the road.|The bridge goes across the river.
 act|verb|F|to do something; also, to play a part in a story in front of people|You must act now.|She acts in plays at school.
@@ -23,7 +23,7 @@ agree|verb|F|to have the same opinion as someone|I agree with you.|We all agreed
 agreement|noun|F|a plan or decision that two or more people agree on|The two countries made an agreement.|We are all in agreement.
 air|noun|F|what is all around us, which we take in through the nose and mouth to live|Open the window to let in some air.|The air in the mountains is clean.
 all|determiner|D||All the children are here.|She ate all the cake.
-allow|verb|F|to let someone do something|My mother does not allow dogs in the house.|Are we allowed to sit here?
+allow|verb|F|to let someone do something|We do not allow dogs in the house.|My mother does not allow dogs in the house.
 almost|adverb|F|not quite, but very near to it|It is almost six.|I almost fell.
 along|preposition|A||We walked along the river.|There are trees along the road.
 already|adverb|F|before now, or before the time you expected|I have already eaten.|Is it ten already?
@@ -35,11 +35,11 @@ amount|noun|F|how much there is of something|Add a small amount of sugar.|He pai
 and|conjunction|D||The dog and the cat are small.|I have a dog and a cat.
 angle|noun|F|the space between two lines that meet at a point|A square has four angles.|The road turns at a sharp angle.
 angry|adjective|P||He is angry with his brother.|Please do not be angry.
-animal|noun|F|a living thing that can move and feel, like a dog or a bird|A cow is a farm animal.|Do you like animals?
+animal|noun|F|a living thing that can move and feel, like a dog or a bird|A dog is an animal.|A cow is a farm animal.
 another|determiner|F|one more; or a different one|Can I have another apple?|Let us go to another shop.
 answer|noun|F|what you say or write back when someone asks you a question|What is the answer?|Please answer the question.
 any|determiner|D||Do you have any money?|I do not have any brothers.
-appear|verb|F|to come into view; also, to seem|A man appeared at the door.|She appears to be ill.
+appear|verb|F|to come into view; also, to seem|Stars appear at night.|She appears to be ill.
 apple|noun|P||I eat an apple every day.|This apple is red.
 approval|noun|F|the feeling or statement that something is good or right|He wants his father's approval.|The plan needs the approval of the government.
 are|verb|D||You are a woman.|We are in the house.
@@ -53,7 +53,7 @@ art|noun|F|paintings, pictures, music and other beautiful things that people mak
 as|conjunction|D||He is as tall as his brother.|She works as a doctor.
 ask|verb|F|to say a question to someone; also, to say that you want something|Can I ask you a question?|He asked for water.
 at|preposition|D||Look at the dog.|I am at home.
-attack|verb|F|to use force to try to damage something or give someone pain or a wound|The dog attacked the man.|The army attacked the town.
+attack|verb|F|to use force to try to damage something or give someone pain or a wound|The dog may attack you.|The army attacked the town.
 attempt|noun|F|the act of trying to do something, often something hard|It was his first attempt.|She made an attempt to get to the top of the mountain.
 attention|noun|F|the act of watching, listening or thinking hard about something|Please give me your attention.|He was not paying attention.
 attraction|noun|F|something that makes people want to go to it or be near it|The old bridge is the main attraction of the town.|There is a strong attraction between them.
@@ -75,22 +75,22 @@ bath|noun|P||The baby is in the bath.|I take a bath every night.
 be|verb|D||Please be good.|I want to be a doctor.
 beautiful|adjective|F|very pleasing to look at or listen to|What a beautiful flower!|She has a beautiful voice.
 because|conjunction|D||I am happy because I have a dog.|He stayed at home because he was ill.
-become|verb|F|to start to be something|She became a doctor.|It is becoming cold.
+become|verb|F|to start to be something|It will become cold.|She became a doctor.
 bed|noun|P||I go to bed at ten.|The cat is on my bed.
 before|preposition|D||Wash your hands before you eat.|I have seen him before.
-begin|verb|F|to start|The class begins at nine.|It began to rain.
+begin|verb|F|to start|It will begin to rain.|The class begins at nine.
 behaviour|noun|F|the way a person or animal acts|His behaviour at school is good.|We watched the behaviour of the birds.
 behind|preposition|A||The cat is behind the door.|He walked behind me.
 belief|noun|F|a feeling that something is true or real|She has a strong belief in her friends.|It is a common belief.
 believe|verb|F|to feel sure that something is true|I believe you.|Do you believe his story?
 bell|noun|P||The school bell rang.|I heard a bell.
-bend|verb|A||Bend your knees.|The road bends to the left.
+bend|verb|A||Bend your arm.|Bend your knees.
 between|preposition|A||The ball is between the two boxes.|Come between two and three.
 big|adjective|P||It is a big house.|The house is big.
-bird|noun|P||A bird is in the tree.|Birds can fly.
+bird|noun|P||A bird can fly.|A bird is in the tree.
 birth|noun|F|the time when a baby comes out of its mother's body|She gave birth to a son.|What is your date of birth?
 bit|noun|F|a small piece or a small amount|Can I have a bit of cake?|Wait a bit.
-bite|verb|A||This dog bites people.|He took a bite of the apple.
+bite|verb|A||The dog may bite you.|He took a bite of the apple.
 bitter|adjective|F|having a strong, sharp taste that is not sweet|This drink is bitter.|Some leaves taste bitter.
 black|adjective|P||She has black hair.|The sky is black at night.
 blood|noun|P||There is blood on his hand.|Blood is red.

@@ -1,0 +1,7176 @@
+{
+"action": "batch",
+"chunk": 16,
+"items": [
+{
+"text": "I have a dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I am not a child.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The man is big.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The woman has a child.",
+"voice": "man",
+"force": true
+},
+{
+"text": "You have a big dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He has a cat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has a dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The dog is big.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The boy is big.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The girl has a cat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "child",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is a child.",
+"voice": "man",
+"force": true
+},
+{
+"text": "that",
+"voice": "man",
+"force": true
+},
+{
+"text": "That house is big.",
+"voice": "man",
+"force": true
+},
+{
+"text": "dog",
+"voice": "man",
+"force": true
+},
+{
+"text": "That is a big dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "cat",
+"voice": "man",
+"force": true
+},
+{
+"text": "This is a cat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "it",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is a dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is big.",
+"voice": "man",
+"force": true
+},
+{
+"text": "big",
+"voice": "man",
+"force": true
+},
+{
+"text": "The house is big.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We have a dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "They have a cat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "and",
+"voice": "man",
+"force": true
+},
+{
+"text": "I have a dog and a cat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We have a small dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "not",
+"voice": "man",
+"force": true
+},
+{
+"text": "The dog is not big.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Yes, it is a cat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, it is not a dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I have no cat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "what",
+"voice": "man",
+"force": true
+},
+{
+"text": "What is that? It is a cat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Give me the book.",
+"voice": "man",
+"force": true
+},
+{
+"text": "book",
+"voice": "man",
+"force": true
+},
+{
+"text": "I have a book.",
+"voice": "man",
+"force": true
+},
+{
+"text": "red",
+"voice": "man",
+"force": true
+},
+{
+"text": "The apple is red.",
+"voice": "man",
+"force": true
+},
+{
+"text": "This apple is red.",
+"voice": "man",
+"force": true
+},
+{
+"text": "of",
+"voice": "man",
+"force": true
+},
+{
+"text": "The door of the house is red.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I want a cup of milk.",
+"voice": "man",
+"force": true
+},
+{
+"text": "thing",
+"voice": "man",
+"force": true
+},
+{
+"text": "What is that thing?",
+"voice": "man",
+"force": true
+},
+{
+"text": "Open your book.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Is it hot or cold?",
+"voice": "man",
+"force": true
+},
+{
+"text": "I did my work.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The water is cold.",
+"voice": "man",
+"force": true
+},
+{
+"text": "hot",
+"voice": "man",
+"force": true
+},
+{
+"text": "The water is hot.",
+"voice": "man",
+"force": true
+},
+{
+"text": "cold",
+"voice": "man",
+"force": true
+},
+{
+"text": "I also want some milk.",
+"voice": "man",
+"force": true
+},
+{
+"text": "want",
+"voice": "man",
+"force": true
+},
+{
+"text": "milk",
+"voice": "man",
+"force": true
+},
+{
+"text": "Cows give milk.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Would you like some milk?",
+"voice": "man",
+"force": true
+},
+{
+"text": "A cow gives milk.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The cow is in the field.",
+"voice": "man",
+"force": true
+},
+{
+"text": "be",
+"voice": "man",
+"force": true
+},
+{
+"text": "Please be good.",
+"voice": "man",
+"force": true
+},
+{
+"text": "good",
+"voice": "man",
+"force": true
+},
+{
+"text": "She walked down the road.",
+"voice": "man",
+"force": true
+},
+{
+"text": "sit",
+"voice": "man",
+"force": true
+},
+{
+"text": "put",
+"voice": "man",
+"force": true
+},
+{
+"text": "She put on her coat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "coat",
+"voice": "man",
+"force": true
+},
+{
+"text": "Put on your coat. It is cold.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has a long coat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "hat",
+"voice": "man",
+"force": true
+},
+{
+"text": "Put on your hat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He has a black hat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "make",
+"voice": "man",
+"force": true
+},
+{
+"text": "I make a cake.",
+"voice": "man",
+"force": true
+},
+{
+"text": "cake",
+"voice": "man",
+"force": true
+},
+{
+"text": "She made a cake.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Would you like some cake?",
+"voice": "man",
+"force": true
+},
+{
+"text": "at",
+"voice": "man",
+"force": true
+},
+{
+"text": "Look at the dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "There is a cat on the roof.",
+"voice": "man",
+"force": true
+},
+{
+"text": "look",
+"voice": "man",
+"force": true
+},
+{
+"text": "Draw a picture of a cat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The child is drawing.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She drew a picture of her dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Go to bed.",
+"voice": "man",
+"force": true
+},
+{
+"text": "with",
+"voice": "man",
+"force": true
+},
+{
+"text": "Cut it with a knife.",
+"voice": "man",
+"force": true
+},
+{
+"text": "parent",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is a good parent.",
+"voice": "man",
+"force": true
+},
+{
+"text": "bed",
+"voice": "man",
+"force": true
+},
+{
+"text": "The cat is on my bed.",
+"voice": "man",
+"force": true
+},
+{
+"text": "How do you make bread?",
+"voice": "man",
+"force": true
+},
+{
+"text": "What time is it?",
+"voice": "man",
+"force": true
+},
+{
+"text": "work",
+"voice": "man",
+"force": true
+},
+{
+"text": "The machine does not work.",
+"voice": "man",
+"force": true
+},
+{
+"text": "get",
+"voice": "man",
+"force": true
+},
+{
+"text": "Please get me the book.",
+"voice": "man",
+"force": true
+},
+{
+"text": "like",
+"voice": "man",
+"force": true
+},
+{
+"text": "I like milk.",
+"voice": "man",
+"force": true
+},
+{
+"text": "take",
+"voice": "man",
+"force": true
+},
+{
+"text": "Take my hand.",
+"voice": "man",
+"force": true
+},
+{
+"text": "hand",
+"voice": "man",
+"force": true
+},
+{
+"text": "Give me your hand.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is very cold.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Give me the other cup.",
+"voice": "man",
+"force": true
+},
+{
+"text": "cup",
+"voice": "man",
+"force": true
+},
+{
+"text": "much",
+"voice": "man",
+"force": true
+},
+{
+"text": "Thank you very much.",
+"voice": "man",
+"force": true
+},
+{
+"text": "part",
+"voice": "man",
+"force": true
+},
+{
+"text": "A finger is a part of the hand.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She saves money every week.",
+"voice": "man",
+"force": true
+},
+{
+"text": "cut",
+"voice": "man",
+"force": true
+},
+{
+"text": "Cut the bread with a knife.",
+"voice": "man",
+"force": true
+},
+{
+"text": "You have five fingers on each hand.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It will rain tonight.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We use a knife to cut bread.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She said that she was tired.",
+"voice": "man",
+"force": true
+},
+{
+"text": "My phone is ringing.",
+"voice": "man",
+"force": true
+},
+{
+"text": "When do you get up?",
+"voice": "man",
+"force": true
+},
+{
+"text": "up",
+"voice": "man",
+"force": true
+},
+{
+"text": "Stand up.",
+"voice": "man",
+"force": true
+},
+{
+"text": "stand",
+"voice": "man",
+"force": true
+},
+{
+"text": "She ate all the cake.",
+"voice": "man",
+"force": true
+},
+{
+"text": "There are seven days in a week.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She put the money into her bag.",
+"voice": "man",
+"force": true
+},
+{
+"text": "out",
+"voice": "man",
+"force": true
+},
+{
+"text": "Get out!",
+"voice": "man",
+"force": true
+},
+{
+"text": "Where is my bag?",
+"voice": "man",
+"force": true
+},
+{
+"text": "but",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is small but strong.",
+"voice": "man",
+"force": true
+},
+{
+"text": "tired",
+"voice": "man",
+"force": true
+},
+{
+"text": "I am very tired.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She was tired after work.",
+"voice": "man",
+"force": true
+},
+{
+"text": "which",
+"voice": "man",
+"force": true
+},
+{
+"text": "Which book do you want?",
+"voice": "man",
+"force": true
+},
+{
+"text": "need",
+"voice": "man",
+"force": true
+},
+{
+"text": "Plants need light.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is so cold.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I was tired, so I went to bed.",
+"voice": "man",
+"force": true
+},
+{
+"text": "if",
+"voice": "man",
+"force": true
+},
+{
+"text": "If you are cold, put on a coat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "His car is red.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We eat after work.",
+"voice": "man",
+"force": true
+},
+{
+"text": "would",
+"voice": "man",
+"force": true
+},
+{
+"text": "eat",
+"voice": "man",
+"force": true
+},
+{
+"text": "think",
+"voice": "man",
+"force": true
+},
+{
+"text": "What do you think?",
+"voice": "man",
+"force": true
+},
+{
+"text": "I am happy because I have a dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "could",
+"voice": "man",
+"force": true
+},
+{
+"text": "back",
+"voice": "man",
+"force": true
+},
+{
+"text": "Put your hand on your back.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I have five fingers on this hand.",
+"voice": "man",
+"force": true
+},
+{
+"text": "find",
+"voice": "man",
+"force": true
+},
+{
+"text": "She found a ring on the road.",
+"voice": "man",
+"force": true
+},
+{
+"text": "First eat, then sleep.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Wash your hands before you eat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "young",
+"voice": "man",
+"force": true
+},
+{
+"text": "The children are young.",
+"voice": "man",
+"force": true
+},
+{
+"text": "first",
+"voice": "man",
+"force": true
+},
+{
+"text": "This shows that he is right.",
+"voice": "man",
+"force": true
+},
+{
+"text": "must",
+"voice": "man",
+"force": true
+},
+{
+"text": "life",
+"voice": "man",
+"force": true
+},
+{
+"text": "She had a long and happy life.",
+"voice": "man",
+"force": true
+},
+{
+"text": "keep",
+"voice": "man",
+"force": true
+},
+{
+"text": "Keep walking.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The moon is bright tonight.",
+"voice": "man",
+"force": true
+},
+{
+"text": "group",
+"voice": "man",
+"force": true
+},
+{
+"text": "This milk is too hot.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The train is late.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Put a cover over the food.",
+"voice": "man",
+"force": true
+},
+{
+"text": "old",
+"voice": "man",
+"force": true
+},
+{
+"text": "My father is old.",
+"voice": "man",
+"force": true
+},
+{
+"text": "bird",
+"voice": "man",
+"force": true
+},
+{
+"text": "should",
+"voice": "man",
+"force": true
+},
+{
+"text": "You should go to bed.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I feel cold.",
+"voice": "man",
+"force": true
+},
+{
+"text": "each",
+"voice": "man",
+"force": true
+},
+{
+"text": "It happened last night.",
+"voice": "man",
+"force": true
+},
+{
+"text": "different",
+"voice": "man",
+"force": true
+},
+{
+"text": "The two brothers are very different.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Let us go to another shop.",
+"voice": "man",
+"force": true
+},
+{
+"text": "without",
+"voice": "man",
+"force": true
+},
+{
+"text": "point",
+"voice": "man",
+"force": true
+},
+{
+"text": "The point of the knife is sharp.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Turn left.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She turned round.",
+"voice": "man",
+"force": true
+},
+{
+"text": "left",
+"voice": "man",
+"force": true
+},
+{
+"text": "He writes with his left hand.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I leave home at eight.",
+"voice": "man",
+"force": true
+},
+{
+"text": "might",
+"voice": "man",
+"force": true
+},
+{
+"text": "eight",
+"voice": "man",
+"force": true
+},
+{
+"text": "She gets up at eight.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The rain is cold.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The rain stopped.",
+"voice": "man",
+"force": true
+},
+{
+"text": "end",
+"voice": "man",
+"force": true
+},
+{
+"text": "I do not know why he left.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Why are you sad?",
+"voice": "man",
+"force": true
+},
+{
+"text": "There is little water left.",
+"voice": "man",
+"force": true
+},
+{
+"text": "last",
+"voice": "man",
+"force": true
+},
+{
+"text": "This is the last cake.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I saw him last week.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I never eat meat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "start",
+"voice": "man",
+"force": true
+},
+{
+"text": "It will become cold.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I paid for the food.",
+"voice": "man",
+"force": true
+},
+{
+"text": "word",
+"voice": "man",
+"force": true
+},
+{
+"text": "I did not say a word.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The sun always comes up in the east.",
+"voice": "man",
+"force": true
+},
+{
+"text": "about",
+"voice": "man",
+"force": true
+},
+{
+"text": "write",
+"voice": "man",
+"force": true
+},
+{
+"text": "bring",
+"voice": "man",
+"force": true
+},
+{
+"text": "Bring me the book.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Please bring your friend.",
+"voice": "man",
+"force": true
+},
+{
+"text": "My name is on the list.",
+"voice": "man",
+"force": true
+},
+{
+"text": "hold",
+"voice": "man",
+"force": true
+},
+{
+"text": "Hold my hand.",
+"voice": "man",
+"force": true
+},
+{
+"text": "set",
+"voice": "man",
+"force": true
+},
+{
+"text": "night",
+"voice": "man",
+"force": true
+},
+{
+"text": "Good night!",
+"voice": "man",
+"force": true
+},
+{
+"text": "I sleep at night.",
+"voice": "man",
+"force": true
+},
+{
+"text": "off",
+"voice": "man",
+"force": true
+},
+{
+"text": "Take your shoes off.",
+"voice": "man",
+"force": true
+},
+{
+"text": "both",
+"voice": "man",
+"force": true
+},
+{
+"text": "head",
+"voice": "man",
+"force": true
+},
+{
+"text": "She put a hat on her head.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He has a pain in his head.",
+"voice": "man",
+"force": true
+},
+{
+"text": "change",
+"voice": "man",
+"force": true
+},
+{
+"text": "The weather changed.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He was not able to sleep.",
+"voice": "man",
+"force": true
+},
+{
+"text": "around",
+"voice": "man",
+"force": true
+},
+{
+"text": "let",
+"voice": "man",
+"force": true
+},
+{
+"text": "walk",
+"voice": "man",
+"force": true
+},
+{
+"text": "Let us go for a walk.",
+"voice": "man",
+"force": true
+},
+{
+"text": "fact",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is a fact that the earth is round.",
+"voice": "man",
+"force": true
+},
+{
+"text": "round",
+"voice": "man",
+"force": true
+},
+{
+"text": "The ball is round.",
+"voice": "man",
+"force": true
+},
+{
+"text": "earth",
+"voice": "man",
+"force": true
+},
+{
+"text": "Put the seeds in the earth.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The sun comes up in the east.",
+"voice": "man",
+"force": true
+},
+{
+"text": "world",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has been all over the world.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is the biggest city in the world.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Two days later, he came back.",
+"voice": "man",
+"force": true
+},
+{
+"text": "right",
+"voice": "man",
+"force": true
+},
+{
+"text": "Your answer is right.",
+"voice": "man",
+"force": true
+},
+{
+"text": "expect",
+"voice": "man",
+"force": true
+},
+{
+"text": "I expect he will be late.",
+"voice": "man",
+"force": true
+},
+{
+"text": "bad",
+"voice": "man",
+"force": true
+},
+{
+"text": "quick",
+"voice": "man",
+"force": true
+},
+{
+"text": "Take a quick look.",
+"voice": "man",
+"force": true
+},
+{
+"text": "friend",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is my best friend.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Can you carry this bag?",
+"voice": "man",
+"force": true
+},
+{
+"text": "bag",
+"voice": "man",
+"force": true
+},
+{
+"text": "Put the books in your bag.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has a red bag.",
+"voice": "man",
+"force": true
+},
+{
+"text": "add",
+"voice": "man",
+"force": true
+},
+{
+"text": "Add some sugar to your milk.",
+"voice": "man",
+"force": true
+},
+{
+"text": "job",
+"voice": "man",
+"force": true
+},
+{
+"text": "What is your job?",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has a new job.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is rather cold.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Can I offer you a drink?",
+"voice": "man",
+"force": true
+},
+{
+"text": "drink",
+"voice": "man",
+"force": true
+},
+{
+"text": "What would you like to drink?",
+"voice": "man",
+"force": true
+},
+{
+"text": "mind",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has a quick mind.",
+"voice": "man",
+"force": true
+},
+{
+"text": "What is on your mind?",
+"voice": "man",
+"force": true
+},
+{
+"text": "talk",
+"voice": "man",
+"force": true
+},
+{
+"text": "Tell me what you want.",
+"voice": "man",
+"force": true
+},
+{
+"text": "speak",
+"voice": "man",
+"force": true
+},
+{
+"text": "age",
+"voice": "man",
+"force": true
+},
+{
+"text": "What is your age?",
+"voice": "man",
+"force": true
+},
+{
+"text": "break",
+"voice": "man",
+"force": true
+},
+{
+"text": "Do not break the cup.",
+"voice": "man",
+"force": true
+},
+{
+"text": "language",
+"voice": "man",
+"force": true
+},
+{
+"text": "How many languages do you speak?",
+"voice": "man",
+"force": true
+},
+{
+"text": "The army gave the order to attack.",
+"voice": "man",
+"force": true
+},
+{
+"text": "develop",
+"voice": "man",
+"force": true
+},
+{
+"text": "short",
+"voice": "man",
+"force": true
+},
+{
+"text": "He is short.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It was a short meeting.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She bought some bread.",
+"voice": "man",
+"force": true
+},
+{
+"text": "enough",
+"voice": "man",
+"force": true
+},
+{
+"text": "We have enough food.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Is it warm enough?",
+"voice": "man",
+"force": true
+},
+{
+"text": "spend",
+"voice": "man",
+"force": true
+},
+{
+"text": "food",
+"voice": "man",
+"force": true
+},
+{
+"text": "The food here is good.",
+"voice": "man",
+"force": true
+},
+{
+"text": "build",
+"voice": "man",
+"force": true
+},
+{
+"text": "We walked across the road.",
+"voice": "man",
+"force": true
+},
+{
+"text": "hope",
+"voice": "man",
+"force": true
+},
+{
+"text": "road",
+"voice": "man",
+"force": true
+},
+{
+"text": "Do not play on the road.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He looks young, but actually he is very old.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I thought it was easy, but actually it was hard.",
+"voice": "man",
+"force": true
+},
+{
+"text": "behind",
+"voice": "man",
+"force": true
+},
+{
+"text": "Please return my book.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He returned home late.",
+"voice": "man",
+"force": true
+},
+{
+"text": "suggest",
+"voice": "man",
+"force": true
+},
+{
+"text": "What do you suggest?",
+"voice": "man",
+"force": true
+},
+{
+"text": "create",
+"voice": "man",
+"force": true
+},
+{
+"text": "describe",
+"voice": "man",
+"force": true
+},
+{
+"text": "His quick action saved the child.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Cover the food.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Snow covered the ground.",
+"voice": "man",
+"force": true
+},
+{
+"text": "There was a fire in the building.",
+"voice": "man",
+"force": true
+},
+{
+"text": "This is a common bird.",
+"voice": "man",
+"force": true
+},
+{
+"text": "subject",
+"voice": "man",
+"force": true
+},
+{
+"text": "What is the subject of the book?",
+"voice": "man",
+"force": true
+},
+{
+"text": "death",
+"voice": "man",
+"force": true
+},
+{
+"text": "The news of her death made us sad.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is easy to make.",
+"voice": "man",
+"force": true
+},
+{
+"text": "help",
+"voice": "man",
+"force": true
+},
+{
+"text": "white",
+"voice": "man",
+"force": true
+},
+{
+"text": "Snow is white.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Sometimes I walk to work.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The snow is white.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is snowing.",
+"voice": "man",
+"force": true
+},
+{
+"text": "foot",
+"voice": "man",
+"force": true
+},
+{
+"text": "My foot is cold.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He has a pain in his foot.",
+"voice": "man",
+"force": true
+},
+{
+"text": "light",
+"voice": "man",
+"force": true
+},
+{
+"text": "Turn on the light.",
+"voice": "man",
+"force": true
+},
+{
+"text": "This bag is light.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Can I have a piece of cake?",
+"voice": "man",
+"force": true
+},
+{
+"text": "He is likely to be late.",
+"voice": "man",
+"force": true
+},
+{
+"text": "amount",
+"voice": "man",
+"force": true
+},
+{
+"text": "step",
+"voice": "man",
+"force": true
+},
+{
+"text": "Mind the step.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Take a step forward.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Do you take sugar in your milk?",
+"voice": "man",
+"force": true
+},
+{
+"text": "period",
+"voice": "man",
+"force": true
+},
+{
+"text": "He lived here for a short period.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It was a hard period in my life.",
+"voice": "man",
+"force": true
+},
+{
+"text": "cost",
+"voice": "man",
+"force": true
+},
+{
+"text": "What is the cost of this shirt?",
+"voice": "man",
+"force": true
+},
+{
+"text": "What is the price of this shirt?",
+"voice": "man",
+"force": true
+},
+{
+"text": "bit",
+"voice": "man",
+"force": true
+},
+{
+"text": "Can I have a bit of cake?",
+"voice": "man",
+"force": true
+},
+{
+"text": "Wait a bit.",
+"voice": "man",
+"force": true
+},
+{
+"text": "shirt",
+"voice": "man",
+"force": true
+},
+{
+"text": "He has a white shirt.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Wash your shirt.",
+"voice": "man",
+"force": true
+},
+{
+"text": "during",
+"voice": "man",
+"force": true
+},
+{
+"text": "He came during the meeting.",
+"voice": "man",
+"force": true
+},
+{
+"text": "rate",
+"voice": "man",
+"force": true
+},
+{
+"text": "Someone else took my seat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "sleep",
+"voice": "man",
+"force": true
+},
+{
+"text": "The baby is sleeping.",
+"voice": "man",
+"force": true
+},
+{
+"text": "effect",
+"voice": "man",
+"force": true
+},
+{
+"text": "What is the effect of smoking?",
+"voice": "man",
+"force": true
+},
+{
+"text": "along",
+"voice": "man",
+"force": true
+},
+{
+"text": "There are trees along the road.",
+"voice": "man",
+"force": true
+},
+{
+"text": "plant",
+"voice": "man",
+"force": true
+},
+{
+"text": "This plant needs light.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is cold here, especially at night.",
+"voice": "man",
+"force": true
+},
+{
+"text": "meet",
+"voice": "man",
+"force": true
+},
+{
+"text": "Food is necessary for life.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She drives to work.",
+"voice": "man",
+"force": true
+},
+{
+"text": "private",
+"voice": "man",
+"force": true
+},
+{
+"text": "accept",
+"voice": "man",
+"force": true
+},
+{
+"text": "instead",
+"voice": "man",
+"force": true
+},
+{
+"text": "He was ill, so I went instead.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The sun rises in the east.",
+"voice": "man",
+"force": true
+},
+{
+"text": "They sell fruit at the market.",
+"voice": "man",
+"force": true
+},
+{
+"text": "forward",
+"voice": "man",
+"force": true
+},
+{
+"text": "Move forward.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She stepped forward.",
+"voice": "man",
+"force": true
+},
+{
+"text": "catch",
+"voice": "man",
+"force": true
+},
+{
+"text": "The value of the house went up.",
+"voice": "man",
+"force": true
+},
+{
+"text": "record",
+"voice": "man",
+"force": true
+},
+{
+"text": "Keep a record of what you spend.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She broke the world record.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The wall is white.",
+"voice": "man",
+"force": true
+},
+{
+"text": "black",
+"voice": "man",
+"force": true
+},
+{
+"text": "The sky is black at night.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Can you prove it?",
+"voice": "man",
+"force": true
+},
+{
+"text": "The test proved that he was right.",
+"voice": "man",
+"force": true
+},
+{
+"text": "account",
+"voice": "man",
+"force": true
+},
+{
+"text": "I put some money into my account.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He entered the building.",
+"voice": "man",
+"force": true
+},
+{
+"text": "project",
+"voice": "man",
+"force": true
+},
+{
+"text": "We are working on a new project.",
+"voice": "man",
+"force": true
+},
+{
+"text": "meeting",
+"voice": "man",
+"force": true
+},
+{
+"text": "The meeting was long.",
+"voice": "man",
+"force": true
+},
+{
+"text": "past",
+"voice": "man",
+"force": true
+},
+{
+"text": "In the past, people walked to work.",
+"voice": "man",
+"force": true
+},
+{
+"text": "top",
+"voice": "man",
+"force": true
+},
+{
+"text": "Put it on the top shelf.",
+"voice": "man",
+"force": true
+},
+{
+"text": "evening",
+"voice": "man",
+"force": true
+},
+{
+"text": "Good evening!",
+"voice": "man",
+"force": true
+},
+{
+"text": "I read in the evening.",
+"voice": "man",
+"force": true
+},
+{
+"text": "visit",
+"voice": "man",
+"force": true
+},
+{
+"text": "We visited the old church.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is one year old.",
+"voice": "man",
+"force": true
+},
+{
+"text": "ground",
+"voice": "man",
+"force": true
+},
+{
+"text": "He sat on the ground.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The ground is wet.",
+"voice": "man",
+"force": true
+},
+{
+"text": "avoid",
+"voice": "man",
+"force": true
+},
+{
+"text": "Avoid that road at night.",
+"voice": "man",
+"force": true
+},
+{
+"text": "list",
+"voice": "man",
+"force": true
+},
+{
+"text": "Is my name on the list?",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is normal to be tired after work.",
+"voice": "man",
+"force": true
+},
+{
+"text": "forget",
+"voice": "man",
+"force": true
+},
+{
+"text": "Do not forget your bag.",
+"voice": "man",
+"force": true
+},
+{
+"text": "large",
+"voice": "man",
+"force": true
+},
+{
+"text": "That is a large dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "late",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is late. Go to bed.",
+"voice": "man",
+"force": true
+},
+{
+"text": "This farm produces milk.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I usually walk to work.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is usually late.",
+"voice": "man",
+"force": true
+},
+{
+"text": "great",
+"voice": "man",
+"force": true
+},
+{
+"text": "lot",
+"voice": "man",
+"force": true
+},
+{
+"text": "We ate a lot.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We must increase the amount of food.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The price increased.",
+"voice": "man",
+"force": true
+},
+{
+"text": "knowledge",
+"voice": "man",
+"force": true
+},
+{
+"text": "long",
+"voice": "man",
+"force": true
+},
+{
+"text": "important",
+"voice": "man",
+"force": true
+},
+{
+"text": "This is an important meeting.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Your health is important.",
+"voice": "man",
+"force": true
+},
+{
+"text": "page",
+"voice": "man",
+"force": true
+},
+{
+"text": "Read this page.",
+"voice": "man",
+"force": true
+},
+{
+"text": "How far is it?",
+"voice": "man",
+"force": true
+},
+{
+"text": "stop",
+"voice": "man",
+"force": true
+},
+{
+"text": "This is the main road.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Is there a particular book you want?",
+"voice": "man",
+"force": true
+},
+{
+"text": "event",
+"voice": "man",
+"force": true
+},
+{
+"text": "It was a big event.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The party was a big event.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The old dog died.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We finally arrived.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Finally, the rain stopped.",
+"voice": "man",
+"force": true
+},
+{
+"text": "just",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is just a small cut.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The general opinion is good.",
+"voice": "man",
+"force": true
+},
+{
+"text": "present",
+"voice": "man",
+"force": true
+},
+{
+"text": "She gave me a birthday present.",
+"voice": "man",
+"force": true
+},
+{
+"text": "recent",
+"voice": "man",
+"force": true
+},
+{
+"text": "deep",
+"voice": "man",
+"force": true
+},
+{
+"text": "Take a deep breath.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It was cold. However, we went out.",
+"voice": "man",
+"force": true
+},
+{
+"text": "bridge",
+"voice": "man",
+"force": true
+},
+{
+"text": "We walked over the bridge.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Finish your work.",
+"voice": "man",
+"force": true
+},
+{
+"text": "statement",
+"voice": "man",
+"force": true
+},
+{
+"text": "The police made a statement.",
+"voice": "man",
+"force": true
+},
+{
+"text": "hundred",
+"voice": "man",
+"force": true
+},
+{
+"text": "The house is a hundred years old.",
+"voice": "man",
+"force": true
+},
+{
+"text": "week",
+"voice": "man",
+"force": true
+},
+{
+"text": "She works five days a week.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I will see you next week.",
+"voice": "man",
+"force": true
+},
+{
+"text": "This church is ten centuries old.",
+"voice": "man",
+"force": true
+},
+{
+"text": "complete",
+"voice": "man",
+"force": true
+},
+{
+"text": "The list is complete.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Is your work complete?",
+"voice": "man",
+"force": true
+},
+{
+"text": "south",
+"voice": "man",
+"force": true
+},
+{
+"text": "month",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is one month old.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I will see you next month.",
+"voice": "man",
+"force": true
+},
+{
+"text": "quite",
+"voice": "man",
+"force": true
+},
+{
+"text": "I ate the whole cake.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She was ill for the whole week.",
+"voice": "man",
+"force": true
+},
+{
+"text": "sound",
+"voice": "man",
+"force": true
+},
+{
+"text": "What is that sound?",
+"voice": "man",
+"force": true
+},
+{
+"text": "I heard a strange sound.",
+"voice": "man",
+"force": true
+},
+{
+"text": "include",
+"voice": "man",
+"force": true
+},
+{
+"text": "Does the price include food?",
+"voice": "man",
+"force": true
+},
+{
+"text": "fight",
+"voice": "man",
+"force": true
+},
+{
+"text": "Do not fight.",
+"voice": "man",
+"force": true
+},
+{
+"text": "blood",
+"voice": "man",
+"force": true
+},
+{
+"text": "There is blood on his hand.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Blood is red.",
+"voice": "man",
+"force": true
+},
+{
+"text": "west",
+"voice": "man",
+"force": true
+},
+{
+"text": "The sun goes down in the west.",
+"voice": "man",
+"force": true
+},
+{
+"text": "trade",
+"voice": "man",
+"force": true
+},
+{
+"text": "Trade between the two countries is growing.",
+"voice": "man",
+"force": true
+},
+{
+"text": "They trade in fruit.",
+"voice": "man",
+"force": true
+},
+{
+"text": "In my opinion, he is right.",
+"voice": "man",
+"force": true
+},
+{
+"text": "dead",
+"voice": "man",
+"force": true
+},
+{
+"text": "The bird is dead.",
+"voice": "man",
+"force": true
+},
+{
+"text": "thought",
+"voice": "man",
+"force": true
+},
+{
+"text": "That is a good thought.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I had a thought.",
+"voice": "man",
+"force": true
+},
+{
+"text": "drop",
+"voice": "man",
+"force": true
+},
+{
+"text": "leg",
+"voice": "man",
+"force": true
+},
+{
+"text": "He broke his leg.",
+"voice": "man",
+"force": true
+},
+{
+"text": "support",
+"voice": "man",
+"force": true
+},
+{
+"text": "Two strong pieces of wood support the roof.",
+"voice": "man",
+"force": true
+},
+{
+"text": "teach",
+"voice": "man",
+"force": true
+},
+{
+"text": "north",
+"voice": "man",
+"force": true
+},
+{
+"text": "seat",
+"voice": "man",
+"force": true
+},
+{
+"text": "Please take a seat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "dark",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is dark at night.",
+"voice": "man",
+"force": true
+},
+{
+"text": "shape",
+"voice": "man",
+"force": true
+},
+{
+"text": "What shape is it?",
+"voice": "man",
+"force": true
+},
+{
+"text": "A ball has a round shape.",
+"voice": "man",
+"force": true
+},
+{
+"text": "next",
+"voice": "man",
+"force": true
+},
+{
+"text": "almost",
+"voice": "man",
+"force": true
+},
+{
+"text": "thank",
+"voice": "man",
+"force": true
+},
+{
+"text": "I thanked him for his help.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The whole nation was sad.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The leaders of many nations met.",
+"voice": "man",
+"force": true
+},
+{
+"text": "sad",
+"voice": "man",
+"force": true
+},
+{
+"text": "mouth",
+"voice": "man",
+"force": true
+},
+{
+"text": "Open your mouth.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Do not talk with food in your mouth.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The owner of the shop is my friend.",
+"voice": "man",
+"force": true
+},
+{
+"text": "hang",
+"voice": "man",
+"force": true
+},
+{
+"text": "Hang your coat on the hook.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The horse is in the field.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The star is very bright.",
+"voice": "man",
+"force": true
+},
+{
+"text": "song",
+"voice": "man",
+"force": true
+},
+{
+"text": "My mother likes this song best.",
+"voice": "man",
+"force": true
+},
+{
+"text": "expert",
+"voice": "man",
+"force": true
+},
+{
+"text": "Ask an expert.",
+"voice": "man",
+"force": true
+},
+{
+"text": "shake",
+"voice": "man",
+"force": true
+},
+{
+"text": "Shake my hand.",
+"voice": "man",
+"force": true
+},
+{
+"text": "touch",
+"voice": "man",
+"force": true
+},
+{
+"text": "lift",
+"voice": "man",
+"force": true
+},
+{
+"text": "He lifted the child up.",
+"voice": "man",
+"force": true
+},
+{
+"text": "rich",
+"voice": "man",
+"force": true
+},
+{
+"text": "They became rich.",
+"voice": "man",
+"force": true
+},
+{
+"text": "against",
+"voice": "man",
+"force": true
+},
+{
+"text": "reach",
+"voice": "man",
+"force": true
+},
+{
+"text": "I cannot reach the top shelf.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Physical work makes me tired.",
+"voice": "man",
+"force": true
+},
+{
+"text": "shelf",
+"voice": "man",
+"force": true
+},
+{
+"text": "The books are on the shelf.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Put the cups on the top shelf.",
+"voice": "man",
+"force": true
+},
+{
+"text": "bread",
+"voice": "man",
+"force": true
+},
+{
+"text": "This bread is soft.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I eat bread in the morning.",
+"voice": "man",
+"force": true
+},
+{
+"text": "damage",
+"voice": "man",
+"force": true
+},
+{
+"text": "The rain did a lot of damage.",
+"voice": "man",
+"force": true
+},
+{
+"text": "soft",
+"voice": "man",
+"force": true
+},
+{
+"text": "The bed is soft.",
+"voice": "man",
+"force": true
+},
+{
+"text": "hard",
+"voice": "man",
+"force": true
+},
+{
+"text": "The ground is hard.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The test was hard.",
+"voice": "man",
+"force": true
+},
+{
+"text": "ask",
+"voice": "man",
+"force": true
+},
+{
+"text": "test",
+"voice": "man",
+"force": true
+},
+{
+"text": "The test is hard.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I passed the test.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We must prepare for the test.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Pass me the cup.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Pass me the salt.",
+"voice": "man",
+"force": true
+},
+{
+"text": "weight",
+"voice": "man",
+"force": true
+},
+{
+"text": "What is your weight?",
+"voice": "man",
+"force": true
+},
+{
+"text": "cloth",
+"voice": "man",
+"force": true
+},
+{
+"text": "Clean the table with a wet cloth.",
+"voice": "man",
+"force": true
+},
+{
+"text": "knife",
+"voice": "man",
+"force": true
+},
+{
+"text": "The knife is sharp.",
+"voice": "man",
+"force": true
+},
+{
+"text": "gold",
+"voice": "man",
+"force": true
+},
+{
+"text": "Her ring is made of gold.",
+"voice": "man",
+"force": true
+},
+{
+"text": "wet",
+"voice": "man",
+"force": true
+},
+{
+"text": "My shirt is wet.",
+"voice": "man",
+"force": true
+},
+{
+"text": "cook",
+"voice": "man",
+"force": true
+},
+{
+"text": "I cook every night.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Wear your coat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "leaf",
+"voice": "man",
+"force": true
+},
+{
+"text": "liquid",
+"voice": "man",
+"force": true
+},
+{
+"text": "Water is a liquid.",
+"voice": "man",
+"force": true
+},
+{
+"text": "smooth",
+"voice": "man",
+"force": true
+},
+{
+"text": "The road is smooth.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Her skin is smooth.",
+"voice": "man",
+"force": true
+},
+{
+"text": "boat",
+"voice": "man",
+"force": true
+},
+{
+"text": "We went out in a boat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "cloud",
+"voice": "man",
+"force": true
+},
+{
+"text": "bend",
+"voice": "man",
+"force": true
+},
+{
+"text": "egg",
+"voice": "man",
+"force": true
+},
+{
+"text": "A bird comes out of an egg.",
+"voice": "man",
+"force": true
+},
+{
+"text": "There is ice on the road.",
+"voice": "man",
+"force": true
+},
+{
+"text": "send",
+"voice": "man",
+"force": true
+},
+{
+"text": "birth",
+"voice": "man",
+"force": true
+},
+{
+"text": "What is your date of birth?",
+"voice": "man",
+"force": true
+},
+{
+"text": "roof",
+"voice": "man",
+"force": true
+},
+{
+"text": "The roof is red.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Did you receive my present?",
+"voice": "man",
+"force": true
+},
+{
+"text": "building",
+"voice": "man",
+"force": true
+},
+{
+"text": "This is an old building.",
+"voice": "man",
+"force": true
+},
+{
+"text": "internet",
+"voice": "man",
+"force": true
+},
+{
+"text": "I found it on the internet.",
+"voice": "man",
+"force": true
+},
+{
+"text": "ship",
+"voice": "man",
+"force": true
+},
+{
+"text": "We went by ship.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He broke a bone in his leg.",
+"voice": "man",
+"force": true
+},
+{
+"text": "outside",
+"voice": "man",
+"force": true
+},
+{
+"text": "Let us play outside.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The outside of the house is white.",
+"voice": "man",
+"force": true
+},
+{
+"text": "shop",
+"voice": "man",
+"force": true
+},
+{
+"text": "I went to the shop to buy bread.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has a small shop.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The service in this hotel is good.",
+"voice": "man",
+"force": true
+},
+{
+"text": "edge",
+"voice": "man",
+"force": true
+},
+{
+"text": "Do not stand near the edge.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He sat on the edge of the bed.",
+"voice": "man",
+"force": true
+},
+{
+"text": "fat",
+"voice": "man",
+"force": true
+},
+{
+"text": "The cat is fat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He is not fat, he is strong.",
+"voice": "man",
+"force": true
+},
+{
+"text": "side",
+"voice": "man",
+"force": true
+},
+{
+"text": "He sat at my side.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He woke up in the middle of the night.",
+"voice": "man",
+"force": true
+},
+{
+"text": "seed",
+"voice": "man",
+"force": true
+},
+{
+"text": "Put a seed in the ground.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Plant the seeds in the spring.",
+"voice": "man",
+"force": true
+},
+{
+"text": "insect",
+"voice": "man",
+"force": true
+},
+{
+"text": "A fly is an insect.",
+"voice": "man",
+"force": true
+},
+{
+"text": "among",
+"voice": "man",
+"force": true
+},
+{
+"text": "The base of the tree is wide.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Milk contains fat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "wide",
+"voice": "man",
+"force": true
+},
+{
+"text": "The river is very wide.",
+"voice": "man",
+"force": true
+},
+{
+"text": "This road is wide.",
+"voice": "man",
+"force": true
+},
+{
+"text": "street",
+"voice": "man",
+"force": true
+},
+{
+"text": "I live on this street.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The street is quiet at night.",
+"voice": "man",
+"force": true
+},
+{
+"text": "laugh",
+"voice": "man",
+"force": true
+},
+{
+"text": "The children are laughing.",
+"voice": "man",
+"force": true
+},
+{
+"text": "loud",
+"voice": "man",
+"force": true
+},
+{
+"text": "The music is too loud.",
+"voice": "man",
+"force": true
+},
+{
+"text": "neck",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has a long neck.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He has a pain in his neck.",
+"voice": "man",
+"force": true
+},
+{
+"text": "orange",
+"voice": "man",
+"force": true
+},
+{
+"text": "Her dress is orange.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I heard a noise outside.",
+"voice": "man",
+"force": true
+},
+{
+"text": "shut",
+"voice": "man",
+"force": true
+},
+{
+"text": "The shop is shut.",
+"voice": "man",
+"force": true
+},
+{
+"text": "sort",
+"voice": "man",
+"force": true
+},
+{
+"text": "What sort of music do you like?",
+"voice": "man",
+"force": true
+},
+{
+"text": "This area is good for farming.",
+"voice": "man",
+"force": true
+},
+{
+"text": "type",
+"voice": "man",
+"force": true
+},
+{
+"text": "What type of car is it?",
+"voice": "man",
+"force": true
+},
+{
+"text": "kind",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is very kind.",
+"voice": "man",
+"force": true
+},
+{
+"text": "What kind of music do you like?",
+"voice": "man",
+"force": true
+},
+{
+"text": "quiet",
+"voice": "man",
+"force": true
+},
+{
+"text": "Please be quiet.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is a quiet street.",
+"voice": "man",
+"force": true
+},
+{
+"text": "strange",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is strange that he is late.",
+"voice": "man",
+"force": true
+},
+{
+"text": "such",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is such a big dog!",
+"voice": "man",
+"force": true
+},
+{
+"text": "An apple is an example of a fruit.",
+"voice": "man",
+"force": true
+},
+{
+"text": "In my view, he is wrong.",
+"voice": "man",
+"force": true
+},
+{
+"text": "There is a beautiful view from the top.",
+"voice": "man",
+"force": true
+},
+{
+"text": "wrong",
+"voice": "man",
+"force": true
+},
+{
+"text": "Your answer is wrong.",
+"voice": "man",
+"force": true
+},
+{
+"text": "In this case, you are right.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Stars appear at night.",
+"voice": "man",
+"force": true
+},
+{
+"text": "percent",
+"voice": "man",
+"force": true
+},
+{
+"text": "Prices went up by five percent.",
+"voice": "man",
+"force": true
+},
+{
+"text": "There is no space for my bag.",
+"voice": "man",
+"force": true
+},
+{
+"text": "rest",
+"voice": "man",
+"force": true
+},
+{
+"text": "You need some rest.",
+"voice": "man",
+"force": true
+},
+{
+"text": "land",
+"voice": "man",
+"force": true
+},
+{
+"text": "They bought some land.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Keep a balance between work and rest.",
+"voice": "man",
+"force": true
+},
+{
+"text": "front",
+"voice": "man",
+"force": true
+},
+{
+"text": "act",
+"voice": "man",
+"force": true
+},
+{
+"text": "wind",
+"voice": "man",
+"force": true
+},
+{
+"text": "Blow on your food if it is hot.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The wind is blowing.",
+"voice": "man",
+"force": true
+},
+{
+"text": "development",
+"voice": "man",
+"force": true
+},
+{
+"text": "decide",
+"voice": "man",
+"force": true
+},
+{
+"text": "You must decide.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Have you decided?",
+"voice": "man",
+"force": true
+},
+{
+"text": "His behaviour at school is good.",
+"voice": "man",
+"force": true
+},
+{
+"text": "growth",
+"voice": "man",
+"force": true
+},
+{
+"text": "The growth of the city was quick.",
+"voice": "man",
+"force": true
+},
+{
+"text": "agreement",
+"voice": "man",
+"force": true
+},
+{
+"text": "The two countries made an agreement.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We are all in agreement.",
+"voice": "man",
+"force": true
+},
+{
+"text": "sharp",
+"voice": "man",
+"force": true
+},
+{
+"text": "This knife is sharp.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Her best quality is that she is kind.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is natural to feel sad.",
+"voice": "man",
+"force": true
+},
+{
+"text": "island",
+"voice": "man",
+"force": true
+},
+{
+"text": "They live on an island.",
+"voice": "man",
+"force": true
+},
+{
+"text": "heat",
+"voice": "man",
+"force": true
+},
+{
+"text": "Heat the milk.",
+"voice": "man",
+"force": true
+},
+{
+"text": "pipe",
+"voice": "man",
+"force": true
+},
+{
+"text": "The water pipe burst.",
+"voice": "man",
+"force": true
+},
+{
+"text": "thick",
+"voice": "man",
+"force": true
+},
+{
+"text": "This book is thick.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The walls are thick.",
+"voice": "man",
+"force": true
+},
+{
+"text": "ticket",
+"voice": "man",
+"force": true
+},
+{
+"text": "I bought a train ticket.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Do not burn your hand.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The wood is burning.",
+"voice": "man",
+"force": true
+},
+{
+"text": "awake",
+"voice": "man",
+"force": true
+},
+{
+"text": "Are you awake?",
+"voice": "man",
+"force": true
+},
+{
+"text": "The baby was awake all night.",
+"voice": "man",
+"force": true
+},
+{
+"text": "bath",
+"voice": "man",
+"force": true
+},
+{
+"text": "The baby is in the bath.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I take a bath every night.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The school bell rang.",
+"voice": "man",
+"force": true
+},
+{
+"text": "pot",
+"voice": "man",
+"force": true
+},
+{
+"text": "Cook the rice in a pot.",
+"voice": "man",
+"force": true
+},
+{
+"text": "There is a plant in the pot.",
+"voice": "man",
+"force": true
+},
+{
+"text": "ring",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has a gold ring.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The phone is ringing.",
+"voice": "man",
+"force": true
+},
+{
+"text": "breath",
+"voice": "man",
+"force": true
+},
+{
+"text": "burst",
+"voice": "man",
+"force": true
+},
+{
+"text": "The bag burst.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The water pipe burst in the night.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The power went off.",
+"voice": "man",
+"force": true
+},
+{
+"text": "effort",
+"voice": "man",
+"force": true
+},
+{
+"text": "It took a lot of effort.",
+"voice": "man",
+"force": true
+},
+{
+"text": "cheap",
+"voice": "man",
+"force": true
+},
+{
+"text": "This shirt is cheap.",
+"voice": "man",
+"force": true
+},
+{
+"text": "clock",
+"voice": "man",
+"force": true
+},
+{
+"text": "Look at the clock.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She cried when her dog died.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Try to sleep.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I tried, but I failed.",
+"voice": "man",
+"force": true
+},
+{
+"text": "watch",
+"voice": "man",
+"force": true
+},
+{
+"text": "difficult",
+"voice": "man",
+"force": true
+},
+{
+"text": "This question is difficult.",
+"voice": "man",
+"force": true
+},
+{
+"text": "government",
+"voice": "man",
+"force": true
+},
+{
+"text": "He works for the government.",
+"voice": "man",
+"force": true
+},
+{
+"text": "lead",
+"voice": "man",
+"force": true
+},
+{
+"text": "strong",
+"voice": "man",
+"force": true
+},
+{
+"text": "He is very strong.",
+"voice": "man",
+"force": true
+},
+{
+"text": "There is a strong wind.",
+"voice": "man",
+"force": true
+},
+{
+"text": "manage",
+"voice": "man",
+"force": true
+},
+{
+"text": "I managed to finish my work.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Do not fail the test.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The plan failed.",
+"voice": "man",
+"force": true
+},
+{
+"text": "attempt",
+"voice": "man",
+"force": true
+},
+{
+"text": "It was his first attempt.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is the manager of the shop.",
+"voice": "man",
+"force": true
+},
+{
+"text": "report",
+"voice": "man",
+"force": true
+},
+{
+"text": "I wrote a report.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I read the report.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We pay tax on the money we get from work.",
+"voice": "man",
+"force": true
+},
+{
+"text": "There is a single tree in the field.",
+"voice": "man",
+"force": true
+},
+{
+"text": "wife",
+"voice": "man",
+"force": true
+},
+{
+"text": "This is my wife.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The prison is on an island.",
+"voice": "man",
+"force": true
+},
+{
+"text": "debt",
+"voice": "man",
+"force": true
+},
+{
+"text": "He has a lot of debt.",
+"voice": "man",
+"force": true
+},
+{
+"text": "note",
+"voice": "man",
+"force": true
+},
+{
+"text": "She played a high note.",
+"voice": "man",
+"force": true
+},
+{
+"text": "unit",
+"voice": "man",
+"force": true
+},
+{
+"text": "This is the last unit.",
+"voice": "man",
+"force": true
+},
+{
+"text": "There is an error in your work.",
+"voice": "man",
+"force": true
+},
+{
+"text": "second",
+"voice": "man",
+"force": true
+},
+{
+"text": "This is my second visit.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Wait a second.",
+"voice": "man",
+"force": true
+},
+{
+"text": "half",
+"voice": "man",
+"force": true
+},
+{
+"text": "Cut the apple in half.",
+"voice": "man",
+"force": true
+},
+{
+"text": "smoke",
+"voice": "man",
+"force": true
+},
+{
+"text": "He does not smoke.",
+"voice": "man",
+"force": true
+},
+{
+"text": "hook",
+"voice": "man",
+"force": true
+},
+{
+"text": "He caught a fish with a hook.",
+"voice": "man",
+"force": true
+},
+{
+"text": "flat",
+"voice": "man",
+"force": true
+},
+{
+"text": "A table has a flat top.",
+"voice": "man",
+"force": true
+},
+{
+"text": "wound",
+"voice": "man",
+"force": true
+},
+{
+"text": "The wound is not deep.",
+"voice": "man",
+"force": true
+},
+{
+"text": "kick",
+"voice": "man",
+"force": true
+},
+{
+"text": "limit",
+"voice": "man",
+"force": true
+},
+{
+"text": "range",
+"voice": "man",
+"force": true
+},
+{
+"text": "card",
+"voice": "man",
+"force": true
+},
+{
+"text": "She sent me a birthday card.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Pay with your card.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I have a pain in my back.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Iron your shirt before the meeting.",
+"voice": "man",
+"force": true
+},
+{
+"text": "feeling",
+"voice": "man",
+"force": true
+},
+{
+"text": "I have a feeling that something is wrong.",
+"voice": "man",
+"force": true
+},
+{
+"text": "attack",
+"voice": "man",
+"force": true
+},
+{
+"text": "meat",
+"voice": "man",
+"force": true
+},
+{
+"text": "I do not eat meat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "interest",
+"voice": "man",
+"force": true
+},
+{
+"text": "I save money every month.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Which party do you support?",
+"voice": "man",
+"force": true
+},
+{
+"text": "date",
+"voice": "man",
+"force": true
+},
+{
+"text": "They went out on a date.",
+"voice": "man",
+"force": true
+},
+{
+"text": "doubt",
+"voice": "man",
+"force": true
+},
+{
+"text": "There is no doubt that he is right.",
+"voice": "man",
+"force": true
+},
+{
+"text": "safe",
+"voice": "man",
+"force": true
+},
+{
+"text": "The children are safe.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Is this water safe to drink?",
+"voice": "man",
+"force": true
+},
+{
+"text": "I am certain that he is right.",
+"voice": "man",
+"force": true
+},
+{
+"text": "check",
+"voice": "man",
+"force": true
+},
+{
+"text": "Please check the door is locked.",
+"voice": "man",
+"force": true
+},
+{
+"text": "respect",
+"voice": "man",
+"force": true
+},
+{
+"text": "Wait until I come back.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Consider the cost.",
+"voice": "man",
+"force": true
+},
+{
+"text": "moment",
+"voice": "man",
+"force": true
+},
+{
+"text": "At that moment, the phone rang.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Wait a moment.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has a full social life.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I am still at work.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I read while I wait.",
+"voice": "man",
+"force": true
+},
+{
+"text": "yet",
+"voice": "man",
+"force": true
+},
+{
+"text": "Have you eaten yet?",
+"voice": "man",
+"force": true
+},
+{
+"text": "He has not come yet.",
+"voice": "man",
+"force": true
+},
+{
+"text": "wait",
+"voice": "man",
+"force": true
+},
+{
+"text": "The class is two hours long.",
+"voice": "man",
+"force": true
+},
+{
+"text": "state",
+"voice": "man",
+"force": true
+},
+{
+"text": "The house was in a bad state.",
+"voice": "man",
+"force": true
+},
+{
+"text": "morning",
+"voice": "man",
+"force": true
+},
+{
+"text": "I get up early in the morning.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Good morning!",
+"voice": "man",
+"force": true
+},
+{
+"text": "minute",
+"voice": "man",
+"force": true
+},
+{
+"text": "Wait a minute.",
+"voice": "man",
+"force": true
+},
+{
+"text": "health",
+"voice": "man",
+"force": true
+},
+{
+"text": "Smoking is bad for your health.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is in good health.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Raise your hand.",
+"voice": "man",
+"force": true
+},
+{
+"text": "market",
+"voice": "man",
+"force": true
+},
+{
+"text": "The market is open every morning.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We buy fruit at the market.",
+"voice": "man",
+"force": true
+},
+{
+"text": "There is a relation between food and health.",
+"voice": "man",
+"force": true
+},
+{
+"text": "east",
+"voice": "man",
+"force": true
+},
+{
+"text": "Who is responsible for this damage?",
+"voice": "man",
+"force": true
+},
+{
+"text": "Even a child can do it.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The loss of his job was hard.",
+"voice": "man",
+"force": true
+},
+{
+"text": "lock",
+"voice": "man",
+"force": true
+},
+{
+"text": "Turn the key in the lock.",
+"voice": "man",
+"force": true
+},
+{
+"text": "belief",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is a common belief.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Though it was raining, we went out.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She had no desire to eat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Her observations were right.",
+"voice": "man",
+"force": true
+},
+{
+"text": "punishment",
+"voice": "man",
+"force": true
+},
+{
+"text": "rat",
+"voice": "man",
+"force": true
+},
+{
+"text": "There are many religions in the world.",
+"voice": "man",
+"force": true
+},
+{
+"text": "rough",
+"voice": "man",
+"force": true
+},
+{
+"text": "The road is rough.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Give me a rough idea of the cost.",
+"voice": "man",
+"force": true
+},
+{
+"text": "salt",
+"voice": "man",
+"force": true
+},
+{
+"text": "The sea has salt in it.",
+"voice": "man",
+"force": true
+},
+{
+"text": "church",
+"voice": "man",
+"force": true
+},
+{
+"text": "We go to church every week.",
+"voice": "man",
+"force": true
+},
+{
+"text": "sand",
+"voice": "man",
+"force": true
+},
+{
+"text": "The children are playing in the sand.",
+"voice": "man",
+"force": true
+},
+{
+"text": "separate",
+"voice": "man",
+"force": true
+},
+{
+"text": "I can smell bread.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The flowers smell sweet.",
+"voice": "man",
+"force": true
+},
+{
+"text": "solid",
+"voice": "man",
+"force": true
+},
+{
+"text": "The table is made of solid wood.",
+"voice": "man",
+"force": true
+},
+{
+"text": "stomach",
+"voice": "man",
+"force": true
+},
+{
+"text": "I have a pain in my stomach.",
+"voice": "man",
+"force": true
+},
+{
+"text": "tight",
+"voice": "man",
+"force": true
+},
+{
+"text": "These shoes are tight.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Hold on tight.",
+"voice": "man",
+"force": true
+},
+{
+"text": "chest",
+"voice": "man",
+"force": true
+},
+{
+"text": "He has a pain in his chest.",
+"voice": "man",
+"force": true
+},
+{
+"text": "tooth",
+"voice": "man",
+"force": true
+},
+{
+"text": "I have a pain in my tooth.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Clean your teeth.",
+"voice": "man",
+"force": true
+},
+{
+"text": "These trousers are too long.",
+"voice": "man",
+"force": true
+},
+{
+"text": "heart",
+"voice": "man",
+"force": true
+},
+{
+"text": "His heart is strong.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has a kind heart.",
+"voice": "man",
+"force": true
+},
+{
+"text": "taste",
+"voice": "man",
+"force": true
+},
+{
+"text": "This has a sweet taste.",
+"voice": "man",
+"force": true
+},
+{
+"text": "They took coal out of the ground.",
+"voice": "man",
+"force": true
+},
+{
+"text": "twist",
+"voice": "man",
+"force": true
+},
+{
+"text": "band",
+"voice": "man",
+"force": true
+},
+{
+"text": "My brother plays in a band.",
+"voice": "man",
+"force": true
+},
+{
+"text": "wood",
+"voice": "man",
+"force": true
+},
+{
+"text": "The table is made of wood.",
+"voice": "man",
+"force": true
+},
+{
+"text": "sweet",
+"voice": "man",
+"force": true
+},
+{
+"text": "This cake is very sweet.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I did not mean to break it.",
+"voice": "man",
+"force": true
+},
+{
+"text": "board",
+"voice": "man",
+"force": true
+},
+{
+"text": "The teacher wrote on the board.",
+"voice": "man",
+"force": true
+},
+{
+"text": "stick",
+"voice": "man",
+"force": true
+},
+{
+"text": "The old man walks with a stick.",
+"voice": "man",
+"force": true
+},
+{
+"text": "fruit",
+"voice": "man",
+"force": true
+},
+{
+"text": "Apples and oranges are fruit.",
+"voice": "man",
+"force": true
+},
+{
+"text": "understand",
+"voice": "man",
+"force": true
+},
+{
+"text": "I do not understand.",
+"voice": "man",
+"force": true
+},
+{
+"text": "pick",
+"voice": "man",
+"force": true
+},
+{
+"text": "Pick a card.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The sign says \"Stop\".",
+"voice": "man",
+"force": true
+},
+{
+"text": "Take the skin off the orange.",
+"voice": "man",
+"force": true
+},
+{
+"text": "read",
+"voice": "man",
+"force": true
+},
+{
+"text": "I like to read.",
+"voice": "man",
+"force": true
+},
+{
+"text": "bright",
+"voice": "man",
+"force": true
+},
+{
+"text": "The sun is very bright.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is a bright child.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I study every night.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He explained why he was late.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The library is open until eight.",
+"voice": "man",
+"force": true
+},
+{
+"text": "spring",
+"voice": "man",
+"force": true
+},
+{
+"text": "Flowers come out in spring.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The bed has metal springs inside.",
+"voice": "man",
+"force": true
+},
+{
+"text": "research",
+"voice": "man",
+"force": true
+},
+{
+"text": "We need more research.",
+"voice": "man",
+"force": true
+},
+{
+"text": "field",
+"voice": "man",
+"force": true
+},
+{
+"text": "The cows are in the field.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is an expert in her field.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He needs medical help.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is a medical student.",
+"voice": "man",
+"force": true
+},
+{
+"text": "What is the purpose of your visit?",
+"voice": "man",
+"force": true
+},
+{
+"text": "argument",
+"voice": "man",
+"force": true
+},
+{
+"text": "Her argument was strong.",
+"voice": "man",
+"force": true
+},
+{
+"text": "stamp",
+"voice": "man",
+"force": true
+},
+{
+"text": "I need a stamp.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The electric light went out.",
+"voice": "man",
+"force": true
+},
+{
+"text": "adjustment",
+"voice": "man",
+"force": true
+},
+{
+"text": "He made an adjustment to the seat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "After a few adjustments, the machine worked.",
+"voice": "man",
+"force": true
+},
+{
+"text": "advertisement",
+"voice": "man",
+"force": true
+},
+{
+"text": "The plan needs the approval of the government.",
+"voice": "man",
+"force": true
+},
+{
+"text": "current",
+"voice": "man",
+"force": true
+},
+{
+"text": "What is your current job?",
+"voice": "man",
+"force": true
+},
+{
+"text": "The river has a strong current.",
+"voice": "man",
+"force": true
+},
+{
+"text": "bite",
+"voice": "man",
+"force": true
+},
+{
+"text": "mark",
+"voice": "man",
+"force": true
+},
+{
+"text": "There is a mark on your shirt.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She got a good mark in the test.",
+"voice": "man",
+"force": true
+},
+{
+"text": "paint",
+"voice": "man",
+"force": true
+},
+{
+"text": "The paint is still wet.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We painted the room white.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The eggs are boiling.",
+"voice": "man",
+"force": true
+},
+{
+"text": "boot",
+"voice": "man",
+"force": true
+},
+{
+"text": "My boots are wet.",
+"voice": "man",
+"force": true
+},
+{
+"text": "result",
+"voice": "man",
+"force": true
+},
+{
+"text": "The result of the test was good.",
+"voice": "man",
+"force": true
+},
+{
+"text": "As a result of the rain, the road was shut.",
+"voice": "man",
+"force": true
+},
+{
+"text": "art",
+"voice": "man",
+"force": true
+},
+{
+"text": "She studies art.",
+"voice": "man",
+"force": true
+},
+{
+"text": "branch",
+"voice": "man",
+"force": true
+},
+{
+"text": "A bird sat on the branch.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Put some butter on the bread.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Butter is made from milk.",
+"voice": "man",
+"force": true
+},
+{
+"text": "A button fell off my shirt.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has a gold chain round her neck.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Education is important.",
+"voice": "man",
+"force": true
+},
+{
+"text": "stage",
+"voice": "man",
+"force": true
+},
+{
+"text": "The band is on the stage.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The first stage of the work is complete.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Cheese is made from milk.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Some chemicals are not safe to touch.",
+"voice": "man",
+"force": true
+},
+{
+"text": "chief",
+"voice": "man",
+"force": true
+},
+{
+"text": "student",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is a science student.",
+"voice": "man",
+"force": true
+},
+{
+"text": "comfort",
+"voice": "man",
+"force": true
+},
+{
+"text": "This chair gives comfort to my back.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Her words gave me comfort.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The phone connection is bad.",
+"voice": "man",
+"force": true
+},
+{
+"text": "cough",
+"voice": "man",
+"force": true
+},
+{
+"text": "He has a bad cough.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She coughed all night.",
+"voice": "man",
+"force": true
+},
+{
+"text": "crack",
+"voice": "man",
+"force": true
+},
+{
+"text": "There is a crack in the cup.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The glass cracked.",
+"voice": "man",
+"force": true
+},
+{
+"text": "credit",
+"voice": "man",
+"force": true
+},
+{
+"text": "We bought the car on credit.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is a dear friend.",
+"voice": "man",
+"force": true
+},
+{
+"text": "dependent",
+"voice": "man",
+"force": true
+},
+{
+"text": "The destruction of the old town was a sad event.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Do not put dirty shoes on the bed.",
+"voice": "man",
+"force": true
+},
+{
+"text": "dust",
+"voice": "man",
+"force": true
+},
+{
+"text": "The car made a cloud of dust.",
+"voice": "man",
+"force": true
+},
+{
+"text": "exchange",
+"voice": "man",
+"force": true
+},
+{
+"text": "Can I exchange this shirt?",
+"voice": "man",
+"force": true
+},
+{
+"text": "The expansion of the city is quick.",
+"voice": "man",
+"force": true
+},
+{
+"text": "His story was fiction, not fact.",
+"voice": "man",
+"force": true
+},
+{
+"text": "flag",
+"voice": "man",
+"force": true
+},
+{
+"text": "The flag is red and white.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Every country has a flag.",
+"voice": "man",
+"force": true
+},
+{
+"text": "flight",
+"voice": "man",
+"force": true
+},
+{
+"text": "fold",
+"voice": "man",
+"force": true
+},
+{
+"text": "Fold the paper in half.",
+"voice": "man",
+"force": true
+},
+{
+"text": "fork",
+"voice": "man",
+"force": true
+},
+{
+"text": "Eat with a knife and fork.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The window frame is made of wood.",
+"voice": "man",
+"force": true
+},
+{
+"text": "frequent",
+"voice": "man",
+"force": true
+},
+{
+"text": "guide",
+"voice": "man",
+"force": true
+},
+{
+"text": "hate",
+"voice": "man",
+"force": true
+},
+{
+"text": "She hates being late.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He is a healthy child.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Fruit is healthy food.",
+"voice": "man",
+"force": true
+},
+{
+"text": "instrument",
+"voice": "man",
+"force": true
+},
+{
+"text": "Can you play an instrument?",
+"voice": "man",
+"force": true
+},
+{
+"text": "The insurance paid for the damage.",
+"voice": "man",
+"force": true
+},
+{
+"text": "judge",
+"voice": "man",
+"force": true
+},
+{
+"text": "jump",
+"voice": "man",
+"force": true
+},
+{
+"text": "He has a leather bag.",
+"voice": "man",
+"force": true
+},
+{
+"text": "lip",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has a cut on her lip.",
+"voice": "man",
+"force": true
+},
+{
+"text": "map",
+"voice": "man",
+"force": true
+},
+{
+"text": "Look at the map.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Can you show me on the map?",
+"voice": "man",
+"force": true
+},
+{
+"text": "A mass of people came into the street.",
+"voice": "man",
+"force": true
+},
+{
+"text": "match",
+"voice": "man",
+"force": true
+},
+{
+"text": "We won the match.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He lit a match.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He had military training.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I have a pain in a muscle in my leg.",
+"voice": "man",
+"force": true
+},
+{
+"text": "This is a narrow bridge.",
+"voice": "man",
+"force": true
+},
+{
+"text": "A nerve in his back was damaged.",
+"voice": "man",
+"force": true
+},
+{
+"text": "net",
+"voice": "man",
+"force": true
+},
+{
+"text": "They caught fish in a net.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The ball went into the net.",
+"voice": "man",
+"force": true
+},
+{
+"text": "opposite",
+"voice": "man",
+"force": true
+},
+{
+"text": "Hot is the opposite of cold.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She lives in the house opposite.",
+"voice": "man",
+"force": true
+},
+{
+"text": "payment",
+"voice": "man",
+"force": true
+},
+{
+"text": "I want some peace and quiet.",
+"voice": "man",
+"force": true
+},
+{
+"text": "pig",
+"voice": "man",
+"force": true
+},
+{
+"text": "The pig is fat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "plate",
+"voice": "man",
+"force": true
+},
+{
+"text": "Put the food on a plate.",
+"voice": "man",
+"force": true
+},
+{
+"text": "pocket",
+"voice": "man",
+"force": true
+},
+{
+"text": "Put your hand in your pocket.",
+"voice": "man",
+"force": true
+},
+{
+"text": "My keys are in my pocket.",
+"voice": "man",
+"force": true
+},
+{
+"text": "print",
+"voice": "man",
+"force": true
+},
+{
+"text": "profit",
+"voice": "man",
+"force": true
+},
+{
+"text": "The company made a profit.",
+"voice": "man",
+"force": true
+},
+{
+"text": "They sold the house at a profit.",
+"voice": "man",
+"force": true
+},
+{
+"text": "protest",
+"voice": "man",
+"force": true
+},
+{
+"text": "There was a protest in the street.",
+"voice": "man",
+"force": true
+},
+{
+"text": "pump",
+"voice": "man",
+"force": true
+},
+{
+"text": "We need a pump to get the water out.",
+"voice": "man",
+"force": true
+},
+{
+"text": "regret",
+"voice": "man",
+"force": true
+},
+{
+"text": "I regret what I said.",
+"voice": "man",
+"force": true
+},
+{
+"text": "request",
+"voice": "man",
+"force": true
+},
+{
+"text": "I have a request.",
+"voice": "man",
+"force": true
+},
+{
+"text": "They did not listen to my request.",
+"voice": "man",
+"force": true
+},
+{
+"text": "reward",
+"voice": "man",
+"force": true
+},
+{
+"text": "They gave a reward to the person who found the dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The ball rolled down the street.",
+"voice": "man",
+"force": true
+},
+{
+"text": "root",
+"voice": "man",
+"force": true
+},
+{
+"text": "The root of the tree is deep.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We sailed to the island.",
+"voice": "man",
+"force": true
+},
+{
+"text": "secret",
+"voice": "man",
+"force": true
+},
+{
+"text": "Can you keep a secret?",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is a secret.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The selection of the team took a week.",
+"voice": "man",
+"force": true
+},
+{
+"text": "self",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has a strong sense of self.",
+"voice": "man",
+"force": true
+},
+{
+"text": "servant",
+"voice": "man",
+"force": true
+},
+{
+"text": "shade",
+"voice": "man",
+"force": true
+},
+{
+"text": "Let us sit in the shade.",
+"voice": "man",
+"force": true
+},
+{
+"text": "sheep",
+"voice": "man",
+"force": true
+},
+{
+"text": "The sheep are in the field.",
+"voice": "man",
+"force": true
+},
+{
+"text": "shock",
+"voice": "man",
+"force": true
+},
+{
+"text": "The news was a shock.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has a silver ring.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Silver costs less than gold.",
+"voice": "man",
+"force": true
+},
+{
+"text": "skirt",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has a long skirt.",
+"voice": "man",
+"force": true
+},
+{
+"text": "This skirt is too short.",
+"voice": "man",
+"force": true
+},
+{
+"text": "slip",
+"voice": "man",
+"force": true
+},
+{
+"text": "slope",
+"voice": "man",
+"force": true
+},
+{
+"text": "The house is on a slope.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We walked up the slope.",
+"voice": "man",
+"force": true
+},
+{
+"text": "soap",
+"voice": "man",
+"force": true
+},
+{
+"text": "Wash your hands with soap.",
+"voice": "man",
+"force": true
+},
+{
+"text": "straight",
+"voice": "man",
+"force": true
+},
+{
+"text": "stretch",
+"voice": "man",
+"force": true
+},
+{
+"text": "The cat stretched.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He has a tendency to be late.",
+"voice": "man",
+"force": true
+},
+{
+"text": "thousand",
+"voice": "man",
+"force": true
+},
+{
+"text": "The city is a thousand years old.",
+"voice": "man",
+"force": true
+},
+{
+"text": "throat",
+"voice": "man",
+"force": true
+},
+{
+"text": "I have a pain in my throat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Wait till I come back.",
+"voice": "man",
+"force": true
+},
+{
+"text": "transport",
+"voice": "man",
+"force": true
+},
+{
+"text": "They transport food by ship.",
+"voice": "man",
+"force": true
+},
+{
+"text": "trick",
+"voice": "man",
+"force": true
+},
+{
+"text": "violent",
+"voice": "man",
+"force": true
+},
+{
+"text": "There was a violent wind.",
+"voice": "man",
+"force": true
+},
+{
+"text": "waste",
+"voice": "man",
+"force": true
+},
+{
+"text": "wing",
+"voice": "man",
+"force": true
+},
+{
+"text": "The bird has a broken wing.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Yesterday was cold.",
+"voice": "man",
+"force": true
+},
+{
+"text": "In this order, they do not say anything.",
+"voice": "man",
+"force": true
+},
+{
+"text": "And it ends with a full stop.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Is the dog big?",
+"voice": "man",
+"force": true
+},
+{
+"text": "This sentence asks something.",
+"voice": "man",
+"force": true
+},
+{
+"text": "So it ends with a question mark.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Is the cat big?",
+"voice": "man",
+"force": true
+},
+{
+"text": "This is a dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "An apple is a thing.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Man, house, dog and apple are words that name something.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Here is a sentence: the man has a dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Has is not a noun. It does not name anything.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The man has a dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The boy has a dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He has a dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "For an animal, we say it.",
+"voice": "man",
+"force": true
+},
+{
+"text": "For a thing, we also say it.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I is the person who is talking.",
+"voice": "man",
+"force": true
+},
+{
+"text": "You are my friend.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has a cat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "You are a child.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is a cat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We use a before one person or thing.",
+"voice": "man",
+"force": true
+},
+{
+"text": "This is an egg.",
+"voice": "man",
+"force": true
+},
+{
+"text": "A dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "An egg.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has an egg.",
+"voice": "man",
+"force": true
+},
+{
+"text": "a cat",
+"voice": "man",
+"force": true
+},
+{
+"text": "an egg",
+"voice": "man",
+"force": true
+},
+{
+"text": "One cat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "One child.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Now look at this dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "After am, is and are, we put not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Is not becomes isn't.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Are not becomes aren't.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I am not becomes I'm not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I am not a dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The cats are not big.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is not a dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Now it is a question. It ends with a question mark.",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, I am not.",
+"voice": "woman",
+"force": true
+},
+{
+"text": "With are, it is the same: are goes first.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Is it big?",
+"voice": "man",
+"force": true
+},
+{
+"text": "Am I late?",
+"voice": "man",
+"force": true
+},
+{
+"text": "Are you a teacher? No, I am not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, you are not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, I am not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, he is not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, she is not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Is it a dog?",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, it is not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, we are not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, they are not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "This dog is big.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Big and small say what the dog is like.",
+"voice": "man",
+"force": true
+},
+{
+"text": "An adjective can come before a noun: a big dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Or after is: the dog is big.",
+"voice": "man",
+"force": true
+},
+{
+"text": "One big dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The woman is tired.",
+"voice": "man",
+"force": true
+},
+{
+"text": "A word for something we do, or something that happens, is a verb.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Every sentence has a verb.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I walk.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I walked.",
+"voice": "man",
+"force": true
+},
+{
+"text": "This is my book.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The house is far from him, so he says that.",
+"voice": "man",
+"force": true
+},
+{
+"text": "These apples are red.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I like this book.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I saw a dog.",
+"voice": "woman",
+"force": true
+},
+{
+"text": "The dog is new to the man, so she says a dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The dog was very big.",
+"voice": "woman",
+"force": true
+},
+{
+"text": "Now he knows about the dog. So she says the dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The sun is hot.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The dog: the one we both know about.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I saw a dog. The dog was very big.",
+"voice": "woman",
+"force": true
+},
+{
+"text": "She has an apple and a book.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I have a cat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I have a cat. The cat is black.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Kicks is the verb.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The boy does the action. The boy is the subject.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The ball is what he kicks. The ball is the object.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The cat is the subject. The fish is the object.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The boy sees the dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The subject usually comes before the verb.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The object usually comes after it.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Mary reads a book.",
+"voice": "man",
+"force": true
+},
+{
+"text": "My father goes to work at eight.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I have a red bag.",
+"voice": "woman",
+"force": true
+},
+{
+"text": "My sister has a cat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I do not like milk.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He says do not before the verb.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Put do not before the verb.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She likes milk.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She does not like milk.",
+"voice": "man",
+"force": true
+},
+{
+"text": "When we talk, do not becomes don't.",
+"voice": "man",
+"force": true
+},
+{
+"text": "And does not becomes doesn't.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She doesn't like milk.",
+"voice": "man",
+"force": true
+},
+{
+"text": "They do not eat meat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "To ask, put do first.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Do they eat meat?",
+"voice": "woman",
+"force": true
+},
+{
+"text": "No, they do not.",
+"voice": "woman",
+"force": true
+},
+{
+"text": "Does he work on Sunday? No, he does not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It does not change: it sees me, I see it.",
+"voice": "man",
+"force": true
+},
+{
+"text": "This is my bag.",
+"voice": "man",
+"force": true
+},
+{
+"text": "My says who has the bag.",
+"voice": "man",
+"force": true
+},
+{
+"text": "This is his dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The dog wants its food.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Its has no mark in it.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Their dog is big.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Mary has a cat. It is her cat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "This is the girl's book.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We add 's to girl to show who has the book.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The girl's book is red.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The boys' room is big.",
+"voice": "man",
+"force": true
+},
+{
+"text": "This is the girl's bag.",
+"voice": "man",
+"force": true
+},
+{
+"text": "My father's car is red.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The man's dog is black.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We say can not, cannot or can't.",
+"voice": "man",
+"force": true
+},
+{
+"text": "To ask, put can first.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She can read.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Fish can not walk.",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, you can not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "You can read.",
+"voice": "man",
+"force": true
+},
+{
+"text": "You can not read.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Can you read?",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, I can not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, he can not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She can cook.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She can not cook.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Can she cook?",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, she can not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, it can not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We can help.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We can not help.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Can we help?",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, we can not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "They can write.",
+"voice": "man",
+"force": true
+},
+{
+"text": "They can not write.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Can they write?",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, they can not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "To tell someone to do something, begin with the verb.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The verb comes first.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Do not touch it.",
+"voice": "woman",
+"force": true
+},
+{
+"text": "To tell someone not to do something, use do not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Please makes it kind.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Do not touch it.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The book is on the shelf.",
+"voice": "man",
+"force": true
+},
+{
+"text": "At is for a time on the clock.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We say in the morning, in the afternoon and in the evening.",
+"voice": "man",
+"force": true
+},
+{
+"text": "But we say at night.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I always drink milk in the morning.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Every morning, with no change.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He is never late.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She sometimes reads at night.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I always drink milk.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He comes on time every day. He is never late.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Look! It is raining.",
+"voice": "woman",
+"force": true
+},
+{
+"text": "It is happening now, at this moment.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I am walking.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Am, is or are, then the verb with ing.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is sleeping.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is not sleeping.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Is she sleeping?",
+"voice": "man",
+"force": true
+},
+{
+"text": "What are you doing?",
+"voice": "woman",
+"force": true
+},
+{
+"text": "I am reading.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The children are playing.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Are you listening?",
+"voice": "man",
+"force": true
+},
+{
+"text": "Look! It is raining .",
+"voice": "man",
+"force": true
+},
+{
+"text": "He is not working.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I am not walking.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Am I walking?",
+"voice": "man",
+"force": true
+},
+{
+"text": "You are reading.",
+"voice": "man",
+"force": true
+},
+{
+"text": "You are not reading.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Are you reading?",
+"voice": "man",
+"force": true
+},
+{
+"text": "He is eating.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He is not eating.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Is he eating?",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is raining.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is not raining.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Is it raining?",
+"voice": "man",
+"force": true
+},
+{
+"text": "We are playing.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We are not playing.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Are we playing?",
+"voice": "man",
+"force": true
+},
+{
+"text": "They are swimming.",
+"voice": "man",
+"force": true
+},
+{
+"text": "They are not swimming.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Are they swimming?",
+"voice": "man",
+"force": true
+},
+{
+"text": "He works in a shop.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We do not use them with ing.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Be quiet! The baby is sleeping .",
+"voice": "man",
+"force": true
+},
+{
+"text": "What are you doing?",
+"voice": "man",
+"force": true
+},
+{
+"text": "Where is my bag?",
+"voice": "woman",
+"force": true
+},
+{
+"text": "Why is she sad?",
+"voice": "man",
+"force": true
+},
+{
+"text": "We stayed at home because it was raining.",
+"voice": "man",
+"force": true
+},
+{
+"text": "So gives the result.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I am wearing a coat because it is cold.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is cold, so I am wearing a coat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We do not have much milk.",
+"voice": "man",
+"force": true
+},
+{
+"text": "To ask, put is or are first.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Is there a book?",
+"voice": "man",
+"force": true
+},
+{
+"text": "We do not have any bread.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Do you have any milk?",
+"voice": "woman",
+"force": true
+},
+{
+"text": "The shops were closed.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Was it cold?",
+"voice": "woman",
+"force": true
+},
+{
+"text": "We were not late.",
+"voice": "man",
+"force": true
+},
+{
+"text": "They were late.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It was not cold.",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, you were not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "You were late.",
+"voice": "man",
+"force": true
+},
+{
+"text": "You were not late.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Were you late?",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, I was not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He was tired.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He was not tired.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Was he tired?",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, he was not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, she was not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It was cold.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Was it cold?",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, it was not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, we were not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, they were not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Yesterday I played.",
+"voice": "man",
+"force": true
+},
+{
+"text": "For most verbs, we add ed.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I walked. She walked. They walked.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The past simple is the same with every subject.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He walked home last night.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Today I go to the shop.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Yesterday I went to the shop.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Come, came. Eat, ate.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Take, took. Give, gave. Make, made.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I went to the shop.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We saw a big ship.",
+"voice": "man",
+"force": true
+},
+{
+"text": "They ate some bread.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Last week we saw a big ship.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Yes, I did.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Did is the same with every subject.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Did you see the dog?",
+"voice": "woman",
+"force": true
+},
+{
+"text": "No, I did not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Did you sleep well? Yes, I did.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Did they eat the bread?",
+"voice": "man",
+"force": true
+},
+{
+"text": "I did not go out.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Did you see the dog?",
+"voice": "man",
+"force": true
+},
+{
+"text": "Did you eat? Yes, I did.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Am, is or are, then going to, then the verb.",
+"voice": "man",
+"force": true
+},
+{
+"text": "You are going to cook.",
+"voice": "man",
+"force": true
+},
+{
+"text": "You are not going to cook.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Are you going to cook?",
+"voice": "man",
+"force": true
+},
+{
+"text": "He is going to sleep.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He is not going to sleep.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Is he going to sleep?",
+"voice": "man",
+"force": true
+},
+{
+"text": "They are going to help.",
+"voice": "man",
+"force": true
+},
+{
+"text": "They are not going to help.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Are they going to help?",
+"voice": "man",
+"force": true
+},
+{
+"text": "I will help.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She will help.",
+"voice": "man",
+"force": true
+},
+{
+"text": "They will help.",
+"voice": "man",
+"force": true
+},
+{
+"text": "In talk, will not becomes won't.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I will call you tonight.",
+"voice": "woman",
+"force": true
+},
+{
+"text": "I will call you tonight.",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, you will not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "You will be late.",
+"voice": "man",
+"force": true
+},
+{
+"text": "You will not be late.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Will you be late?",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, I will not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, he will not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, she will not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It will be cold.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It will not be cold.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Will it be cold?",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, it will not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We will wait.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We will not wait.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Will we wait?",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, we will not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, they will not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "The big dog is bigger than the small dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "A cow is bigger than a dog.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Use than after it.",
+"voice": "man",
+"force": true
+},
+{
+"text": "This boy is the tallest.",
+"voice": "man",
+"force": true
+},
+{
+"text": "For short adjectives, use the and est.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Tall, taller, the tallest.",
+"voice": "man",
+"force": true
+},
+{
+"text": "For long adjectives, use the most.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Good, better, the best.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Bad, worse, the worst.",
+"voice": "man",
+"force": true
+},
+{
+"text": "This is the best day of my life.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is the tallest.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is a good cook.",
+"voice": "man",
+"force": true
+},
+{
+"text": "There is not much.",
+"voice": "man",
+"force": true
+},
+{
+"text": "How much is this bag?",
+"voice": "woman",
+"force": true
+},
+{
+"text": "How much water do you drink?",
+"voice": "man",
+"force": true
+},
+{
+"text": "How much is this bag?",
+"voice": "man",
+"force": true
+},
+{
+"text": "Must not means it is not allowed.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Must not: not allowed.",
+"voice": "man",
+"force": true
+},
+{
+"text": "You must not smoke here. It is not allowed.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I am so tired.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Yes, you should.",
+"voice": "woman",
+"force": true
+},
+{
+"text": "You are tired. You should go to bed.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is very cold. You should not go out with no coat.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Should we wait?",
+"voice": "man",
+"force": true
+},
+{
+"text": "She should rest.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He should eat more fruit.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I should rest.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I should not rest.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Should I rest?",
+"voice": "man",
+"force": true
+},
+{
+"text": "Yes, you should.",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, you should not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "You should not go to bed.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Should you go to bed?",
+"voice": "man",
+"force": true
+},
+{
+"text": "Yes, I should.",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, I should not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Yes, he should.",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, he should not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She should wait.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She should not wait.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Should she wait?",
+"voice": "man",
+"force": true
+},
+{
+"text": "Yes, she should.",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, she should not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It should stop.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It should not stop.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Should it stop?",
+"voice": "man",
+"force": true
+},
+{
+"text": "Yes, it should.",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, it should not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Yes, we should.",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, we should not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Yes, they should.",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, they should not.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I was walking.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We were having a meal at eight.",
+"voice": "woman",
+"force": true
+},
+{
+"text": "The long action: I was walking.",
+"voice": "man",
+"force": true
+},
+{
+"text": "What were you doing?",
+"voice": "woman",
+"force": true
+},
+{
+"text": "I was reading.",
+"voice": "man",
+"force": true
+},
+{
+"text": "They were not sleeping.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We were having a meal at eight.",
+"voice": "man",
+"force": true
+},
+{
+"text": "What were you doing?",
+"voice": "man",
+"force": true
+},
+{
+"text": "They were sleeping.",
+"voice": "man",
+"force": true
+},
+{
+"text": "I was not walking.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Was I walking?",
+"voice": "man",
+"force": true
+},
+{
+"text": "You were reading.",
+"voice": "man",
+"force": true
+},
+{
+"text": "You were not reading.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Were you reading?",
+"voice": "man",
+"force": true
+},
+{
+"text": "He was sleeping.",
+"voice": "man",
+"force": true
+},
+{
+"text": "He was not sleeping.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Was he sleeping?",
+"voice": "man",
+"force": true
+},
+{
+"text": "She was cooking.",
+"voice": "man",
+"force": true
+},
+{
+"text": "She was not cooking.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Was she cooking?",
+"voice": "man",
+"force": true
+},
+{
+"text": "It was raining.",
+"voice": "man",
+"force": true
+},
+{
+"text": "It was not raining.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Was it raining?",
+"voice": "man",
+"force": true
+},
+{
+"text": "We were eating.",
+"voice": "man",
+"force": true
+},
+{
+"text": "We were not eating.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Were we eating?",
+"voice": "man",
+"force": true
+},
+{
+"text": "They were playing.",
+"voice": "man",
+"force": true
+},
+{
+"text": "They were not playing.",
+"voice": "man",
+"force": true
+},
+{
+"text": "Were they playing?",
+"voice": "man",
+"force": true
+},
+{
+"text": "Each one has a subject and a verb.",
+"voice": "man",
+"force": true
+}
+]
+}

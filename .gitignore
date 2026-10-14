@@ -4,3 +4,4 @@ __pycache__/
 tools/pipeline/out/course.json
 tools/pipeline/out/vocab.py
 content/quiz_pending.json
+tools/pipeline/out/course_words.csv

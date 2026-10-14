@@ -1,0 +1,6902 @@
+{
+"action": "slow",
+"items": [
+{
+"text": "I have a dog.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I am not a child.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The man is big.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The woman has a child.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "You have a big dog.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "He has a cat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has a dog.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The dog is big.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The boy is big.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The girl has a cat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "child",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0283a\u026ald",
+"force": true
+},
+{
+"text": "She is a child.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "that",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00f0\u00e6t",
+"force": true
+},
+{
+"text": "That house is big.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "dog",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u0251\u0261",
+"force": true
+},
+{
+"text": "That is a big dog.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "cat",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u00e6t",
+"force": true
+},
+{
+"text": "This is a cat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "it",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026at",
+"force": true
+},
+{
+"text": "It is a dog.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is big.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "big",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u026a\u0261",
+"force": true
+},
+{
+"text": "The house is big.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "We have a dog.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "They have a cat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "and",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00e6nd",
+"force": true
+},
+{
+"text": "I have a dog and a cat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "We have a small dog.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "not",
+"kind": "word",
+"voice": "man",
+"ipa": "n\u0251t",
+"force": true
+},
+{
+"text": "The dog is not big.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Yes, it is a cat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "No, it is not a dog.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I have no cat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "what",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u028ct",
+"force": true
+},
+{
+"text": "What is that? It is a cat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Give me the book.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "book",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u028ak",
+"force": true
+},
+{
+"text": "I have a book.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "red",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u025bd",
+"force": true
+},
+{
+"text": "The apple is red.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "This apple is red.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "of",
+"kind": "word",
+"voice": "man",
+"ipa": "\u028cv",
+"force": true
+},
+{
+"text": "The door of the house is red.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I want a cup of milk.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "thing",
+"kind": "word",
+"voice": "man",
+"ipa": "\u03b8\u026a\u014b",
+"force": true
+},
+{
+"text": "What is that thing?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Open your book.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Is it hot or cold?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I did my work.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The water is cold.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "hot",
+"kind": "word",
+"voice": "man",
+"ipa": "h\u0251t",
+"force": true
+},
+{
+"text": "The water is hot.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "cold",
+"kind": "word",
+"voice": "man",
+"ipa": "ko\u028ald",
+"force": true
+},
+{
+"text": "I also want some milk.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "want",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u0251nt",
+"force": true
+},
+{
+"text": "milk",
+"kind": "word",
+"voice": "man",
+"ipa": "m\u026alk",
+"force": true
+},
+{
+"text": "Cows give milk.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Would you like some milk?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "A cow gives milk.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The cow is in the field.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "be",
+"kind": "word",
+"voice": "man",
+"ipa": "bi",
+"force": true
+},
+{
+"text": "Please be good.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "good",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261\u028ad",
+"force": true
+},
+{
+"text": "She walked down the road.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "sit",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u026at",
+"force": true
+},
+{
+"text": "put",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u028at",
+"force": true
+},
+{
+"text": "She put on her coat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "coat",
+"kind": "word",
+"voice": "man",
+"ipa": "ko\u028at",
+"force": true
+},
+{
+"text": "Put on your coat. It is cold.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has a long coat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "hat",
+"kind": "word",
+"voice": "man",
+"ipa": "h\u00e6t",
+"force": true
+},
+{
+"text": "Put on your hat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "He has a black hat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "make",
+"kind": "word",
+"voice": "man",
+"ipa": "me\u026ak",
+"force": true
+},
+{
+"text": "I make a cake.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "cake",
+"kind": "word",
+"voice": "man",
+"ipa": "ke\u026ak",
+"force": true
+},
+{
+"text": "She made a cake.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Would you like some cake?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "at",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00e6t",
+"force": true
+},
+{
+"text": "Look at the dog.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "There is a cat on the roof.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "look",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u028ak",
+"force": true
+},
+{
+"text": "Draw a picture of a cat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The child is drawing.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She drew a picture of her dog.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Go to bed.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "with",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u026a\u00f0",
+"force": true
+},
+{
+"text": "Cut it with a knife.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "parent",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8p\u025br\u0259nt",
+"force": true
+},
+{
+"text": "She is a good parent.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "bed",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u025bd",
+"force": true
+},
+{
+"text": "The cat is on my bed.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "How do you make bread?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "What time is it?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "work",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u025dk",
+"force": true
+},
+{
+"text": "The machine does not work.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "get",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261\u025bt",
+"force": true
+},
+{
+"text": "Please get me the book.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "like",
+"kind": "word",
+"voice": "man",
+"ipa": "la\u026ak",
+"force": true
+},
+{
+"text": "I like milk.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "take",
+"kind": "word",
+"voice": "man",
+"ipa": "te\u026ak",
+"force": true
+},
+{
+"text": "Take my hand.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "hand",
+"kind": "word",
+"voice": "man",
+"ipa": "h\u00e6nd",
+"force": true
+},
+{
+"text": "Give me your hand.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is very cold.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Give me the other cup.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "cup",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u028cp",
+"force": true
+},
+{
+"text": "much",
+"kind": "word",
+"voice": "man",
+"ipa": "m\u028ct\u0283",
+"force": true
+},
+{
+"text": "Thank you very much.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "part",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u0251rt",
+"force": true
+},
+{
+"text": "A finger is a part of the hand.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She saves money every week.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "cut",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u028ct",
+"force": true
+},
+{
+"text": "Cut the bread with a knife.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "You have five fingers on each hand.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "It will rain tonight.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "We use a knife to cut bread.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She said that she was tired.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "My phone is ringing.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "When do you get up?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "up",
+"kind": "word",
+"voice": "man",
+"ipa": "\u028cp",
+"force": true
+},
+{
+"text": "Stand up.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "stand",
+"kind": "word",
+"voice": "man",
+"ipa": "st\u00e6nd",
+"force": true
+},
+{
+"text": "She ate all the cake.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "There are seven days in a week.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She put the money into her bag.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "out",
+"kind": "word",
+"voice": "man",
+"ipa": "a\u028at",
+"force": true
+},
+{
+"text": "Get out!",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Where is my bag?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "but",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u028ct",
+"force": true
+},
+{
+"text": "She is small but strong.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "tired",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8ta\u026a\u025ad",
+"force": true
+},
+{
+"text": "I am very tired.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She was tired after work.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "which",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u026at\u0283",
+"force": true
+},
+{
+"text": "Which book do you want?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "need",
+"kind": "word",
+"voice": "man",
+"ipa": "nid",
+"force": true
+},
+{
+"text": "Plants need light.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is so cold.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I was tired, so I went to bed.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "if",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026af",
+"force": true
+},
+{
+"text": "If you are cold, put on a coat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "His car is red.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "We eat after work.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "would",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u028ad",
+"force": true
+},
+{
+"text": "eat",
+"kind": "word",
+"voice": "man",
+"ipa": "it",
+"force": true
+},
+{
+"text": "think",
+"kind": "word",
+"voice": "man",
+"ipa": "\u03b8\u026a\u014bk",
+"force": true
+},
+{
+"text": "What do you think?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I am happy because I have a dog.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "could",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u028ad",
+"force": true
+},
+{
+"text": "back",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u00e6k",
+"force": true
+},
+{
+"text": "Put your hand on your back.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I have five fingers on this hand.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "find",
+"kind": "word",
+"voice": "man",
+"ipa": "fa\u026and",
+"force": true
+},
+{
+"text": "She found a ring on the road.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "First eat, then sleep.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Wash your hands before you eat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "young",
+"kind": "word",
+"voice": "man",
+"ipa": "j\u028c\u014b",
+"force": true
+},
+{
+"text": "The children are young.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "first",
+"kind": "word",
+"voice": "man",
+"ipa": "f\u025dst",
+"force": true
+},
+{
+"text": "This shows that he is right.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "must",
+"kind": "word",
+"voice": "man",
+"ipa": "m\u028cst",
+"force": true
+},
+{
+"text": "life",
+"kind": "word",
+"voice": "man",
+"ipa": "la\u026af",
+"force": true
+},
+{
+"text": "She had a long and happy life.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "keep",
+"kind": "word",
+"voice": "man",
+"ipa": "kip",
+"force": true
+},
+{
+"text": "Keep walking.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The moon is bright tonight.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "group",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261rup",
+"force": true
+},
+{
+"text": "This milk is too hot.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The train is late.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Put a cover over the food.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "old",
+"kind": "word",
+"voice": "man",
+"ipa": "o\u028ald",
+"force": true
+},
+{
+"text": "My father is old.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "bird",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u025dd",
+"force": true
+},
+{
+"text": "should",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283\u028ad",
+"force": true
+},
+{
+"text": "You should go to bed.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I feel cold.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "each",
+"kind": "word",
+"voice": "man",
+"ipa": "it\u0283",
+"force": true
+},
+{
+"text": "It happened last night.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "different",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8d\u026af\u025a\u0259nt",
+"force": true
+},
+{
+"text": "The two brothers are very different.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Let us go to another shop.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "without",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u026a\u02c8\u03b8a\u028at",
+"force": true
+},
+{
+"text": "point",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u0254\u026ant",
+"force": true
+},
+{
+"text": "The point of the knife is sharp.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Turn left.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She turned round.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "left",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u025bft",
+"force": true
+},
+{
+"text": "He writes with his left hand.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I leave home at eight.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "might",
+"kind": "word",
+"voice": "man",
+"ipa": "ma\u026at",
+"force": true
+},
+{
+"text": "eight",
+"kind": "word",
+"voice": "man",
+"ipa": "e\u026at",
+"force": true
+},
+{
+"text": "She gets up at eight.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The rain is cold.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The rain stopped.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "end",
+"kind": "word",
+"voice": "man",
+"ipa": "\u025bnd",
+"force": true
+},
+{
+"text": "I do not know why he left.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Why are you sad?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "There is little water left.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "last",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u00e6st",
+"force": true
+},
+{
+"text": "This is the last cake.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I saw him last week.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I never eat meat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "start",
+"kind": "word",
+"voice": "man",
+"ipa": "st\u0251rt",
+"force": true
+},
+{
+"text": "It will become cold.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I paid for the food.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "word",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u025dd",
+"force": true
+},
+{
+"text": "I did not say a word.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The sun always comes up in the east.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "about",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8ba\u028at",
+"force": true
+},
+{
+"text": "write",
+"kind": "word",
+"voice": "man",
+"ipa": "ra\u026at",
+"force": true
+},
+{
+"text": "bring",
+"kind": "word",
+"voice": "man",
+"ipa": "br\u026a\u014b",
+"force": true
+},
+{
+"text": "Bring me the book.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Please bring your friend.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "My name is on the list.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "hold",
+"kind": "word",
+"voice": "man",
+"ipa": "ho\u028ald",
+"force": true
+},
+{
+"text": "Hold my hand.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "set",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u025bt",
+"force": true
+},
+{
+"text": "night",
+"kind": "word",
+"voice": "man",
+"ipa": "na\u026at",
+"force": true
+},
+{
+"text": "Good night!",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I sleep at night.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "off",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0254f",
+"force": true
+},
+{
+"text": "Take your shoes off.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "both",
+"kind": "word",
+"voice": "man",
+"ipa": "bo\u028a\u03b8",
+"force": true
+},
+{
+"text": "head",
+"kind": "word",
+"voice": "man",
+"ipa": "h\u025bd",
+"force": true
+},
+{
+"text": "She put a hat on her head.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "He has a pain in his head.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "change",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0283e\u026and\u0292",
+"force": true
+},
+{
+"text": "The weather changed.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "He was not able to sleep.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "around",
+"kind": "word",
+"voice": "man",
+"ipa": "\u025a\u02c8a\u028and",
+"force": true
+},
+{
+"text": "let",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u025bt",
+"force": true
+},
+{
+"text": "walk",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u0254k",
+"force": true
+},
+{
+"text": "Let us go for a walk.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "fact",
+"kind": "word",
+"voice": "man",
+"ipa": "f\u00e6kt",
+"force": true
+},
+{
+"text": "It is a fact that the earth is round.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "round",
+"kind": "word",
+"voice": "man",
+"ipa": "ra\u028and",
+"force": true
+},
+{
+"text": "The ball is round.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "earth",
+"kind": "word",
+"voice": "man",
+"ipa": "\u025d\u03b8",
+"force": true
+},
+{
+"text": "Put the seeds in the earth.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The sun comes up in the east.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "world",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u025dld",
+"force": true
+},
+{
+"text": "She has been all over the world.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is the biggest city in the world.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Two days later, he came back.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "right",
+"kind": "word",
+"voice": "man",
+"ipa": "ra\u026at",
+"force": true
+},
+{
+"text": "Your answer is right.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "expect",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026ak\u02c8sp\u025bkt",
+"force": true
+},
+{
+"text": "I expect he will be late.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "bad",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u00e6d",
+"force": true
+},
+{
+"text": "quick",
+"kind": "word",
+"voice": "man",
+"ipa": "kw\u026ak",
+"force": true
+},
+{
+"text": "Take a quick look.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "friend",
+"kind": "word",
+"voice": "man",
+"ipa": "fr\u025bnd",
+"force": true
+},
+{
+"text": "She is my best friend.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Can you carry this bag?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "bag",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u00e6\u0261",
+"force": true
+},
+{
+"text": "Put the books in your bag.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has a red bag.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "add",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00e6d",
+"force": true
+},
+{
+"text": "Add some sugar to your milk.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "job",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u0292\u0251b",
+"force": true
+},
+{
+"text": "What is your job?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has a new job.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is rather cold.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Can I offer you a drink?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "drink",
+"kind": "word",
+"voice": "man",
+"ipa": "dr\u026a\u014bk",
+"force": true
+},
+{
+"text": "What would you like to drink?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "mind",
+"kind": "word",
+"voice": "man",
+"ipa": "ma\u026and",
+"force": true
+},
+{
+"text": "She has a quick mind.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "What is on your mind?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "talk",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0254k",
+"force": true
+},
+{
+"text": "Tell me what you want.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "speak",
+"kind": "word",
+"voice": "man",
+"ipa": "spik",
+"force": true
+},
+{
+"text": "age",
+"kind": "word",
+"voice": "man",
+"ipa": "e\u026ad\u0292",
+"force": true
+},
+{
+"text": "What is your age?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "break",
+"kind": "word",
+"voice": "man",
+"ipa": "bre\u026ak",
+"force": true
+},
+{
+"text": "Do not break the cup.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "language",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8l\u00e6\u014b\u0261w\u0259d\u0292",
+"force": true
+},
+{
+"text": "How many languages do you speak?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The army gave the order to attack.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "develop",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u026a\u02c8v\u025bl\u0259p",
+"force": true
+},
+{
+"text": "short",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283\u0254rt",
+"force": true
+},
+{
+"text": "He is short.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "It was a short meeting.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She bought some bread.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "enough",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026a\u02c8n\u028cf",
+"force": true
+},
+{
+"text": "We have enough food.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Is it warm enough?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "spend",
+"kind": "word",
+"voice": "man",
+"ipa": "sp\u025bnd",
+"force": true
+},
+{
+"text": "food",
+"kind": "word",
+"voice": "man",
+"ipa": "fud",
+"force": true
+},
+{
+"text": "The food here is good.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "build",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u026ald",
+"force": true
+},
+{
+"text": "We walked across the road.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "hope",
+"kind": "word",
+"voice": "man",
+"ipa": "ho\u028ap",
+"force": true
+},
+{
+"text": "road",
+"kind": "word",
+"voice": "man",
+"ipa": "ro\u028ad",
+"force": true
+},
+{
+"text": "Do not play on the road.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "He looks young, but actually he is very old.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I thought it was easy, but actually it was hard.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "behind",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u026a\u02c8ha\u026and",
+"force": true
+},
+{
+"text": "Please return my book.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "He returned home late.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "suggest",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u0259\u02c8d\u0292\u025bst",
+"force": true
+},
+{
+"text": "What do you suggest?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "create",
+"kind": "word",
+"voice": "man",
+"ipa": "kri\u02c8e\u026at",
+"force": true
+},
+{
+"text": "describe",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u026a\u02c8skra\u026ab",
+"force": true
+},
+{
+"text": "His quick action saved the child.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Cover the food.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Snow covered the ground.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "There was a fire in the building.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "This is a common bird.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "subject",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u028cbd\u0292\u026akt",
+"force": true
+},
+{
+"text": "What is the subject of the book?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "death",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u025b\u03b8",
+"force": true
+},
+{
+"text": "The news of her death made us sad.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is easy to make.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "help",
+"kind": "word",
+"voice": "man",
+"ipa": "h\u025blp",
+"force": true
+},
+{
+"text": "white",
+"kind": "word",
+"voice": "man",
+"ipa": "wa\u026at",
+"force": true
+},
+{
+"text": "Snow is white.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Sometimes I walk to work.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The snow is white.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is snowing.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "foot",
+"kind": "word",
+"voice": "man",
+"ipa": "f\u028at",
+"force": true
+},
+{
+"text": "My foot is cold.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "He has a pain in his foot.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "light",
+"kind": "word",
+"voice": "man",
+"ipa": "la\u026at",
+"force": true
+},
+{
+"text": "Turn on the light.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "This bag is light.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Can I have a piece of cake?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "He is likely to be late.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "amount",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8ma\u028ant",
+"force": true
+},
+{
+"text": "step",
+"kind": "word",
+"voice": "man",
+"ipa": "st\u025bp",
+"force": true
+},
+{
+"text": "Mind the step.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Take a step forward.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Do you take sugar in your milk?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "period",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8p\u026ari\u0259d",
+"force": true
+},
+{
+"text": "He lived here for a short period.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "It was a hard period in my life.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "cost",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u0251st",
+"force": true
+},
+{
+"text": "What is the cost of this shirt?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "What is the price of this shirt?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "bit",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u026at",
+"force": true
+},
+{
+"text": "Can I have a bit of cake?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Wait a bit.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "shirt",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283\u025dt",
+"force": true
+},
+{
+"text": "He has a white shirt.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Wash your shirt.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "during",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8d\u028ar\u026a\u014b",
+"force": true
+},
+{
+"text": "He came during the meeting.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "rate",
+"kind": "word",
+"voice": "man",
+"ipa": "re\u026at",
+"force": true
+},
+{
+"text": "Someone else took my seat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "sleep",
+"kind": "word",
+"voice": "man",
+"ipa": "slip",
+"force": true
+},
+{
+"text": "The baby is sleeping.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "effect",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026a\u02c8f\u025bkt",
+"force": true
+},
+{
+"text": "What is the effect of smoking?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "along",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8l\u0254\u014b",
+"force": true
+},
+{
+"text": "There are trees along the road.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "plant",
+"kind": "word",
+"voice": "man",
+"ipa": "pl\u00e6nt",
+"force": true
+},
+{
+"text": "This plant needs light.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is cold here, especially at night.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "meet",
+"kind": "word",
+"voice": "man",
+"ipa": "mit",
+"force": true
+},
+{
+"text": "Food is necessary for life.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She drives to work.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "private",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8pra\u026av\u0259t",
+"force": true
+},
+{
+"text": "accept",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00e6k\u02c8s\u025bpt",
+"force": true
+},
+{
+"text": "instead",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026an\u02c8st\u025bd",
+"force": true
+},
+{
+"text": "He was ill, so I went instead.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The sun rises in the east.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "They sell fruit at the market.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "forward",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8f\u0254rw\u025ad",
+"force": true
+},
+{
+"text": "Move forward.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She stepped forward.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "catch",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u00e6t\u0283",
+"force": true
+},
+{
+"text": "The value of the house went up.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "record",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8r\u025bk\u025ad",
+"force": true
+},
+{
+"text": "Keep a record of what you spend.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She broke the world record.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The wall is white.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "black",
+"kind": "word",
+"voice": "man",
+"ipa": "bl\u00e6k",
+"force": true
+},
+{
+"text": "The sky is black at night.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Can you prove it?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The test proved that he was right.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "account",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8ka\u028ant",
+"force": true
+},
+{
+"text": "I put some money into my account.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "He entered the building.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "project",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8pr\u0251d\u0292\u025bkt",
+"force": true
+},
+{
+"text": "We are working on a new project.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "meeting",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8mit\u026a\u014b",
+"force": true
+},
+{
+"text": "The meeting was long.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "past",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u00e6st",
+"force": true
+},
+{
+"text": "In the past, people walked to work.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "top",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0251p",
+"force": true
+},
+{
+"text": "Put it on the top shelf.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "evening",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8ivn\u026a\u014b",
+"force": true
+},
+{
+"text": "Good evening!",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I read in the evening.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "visit",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8v\u026az\u026at",
+"force": true
+},
+{
+"text": "We visited the old church.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is one year old.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "ground",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261ra\u028and",
+"force": true
+},
+{
+"text": "He sat on the ground.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The ground is wet.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "avoid",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8v\u0254\u026ad",
+"force": true
+},
+{
+"text": "Avoid that road at night.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "list",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u026ast",
+"force": true
+},
+{
+"text": "Is my name on the list?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is normal to be tired after work.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "forget",
+"kind": "word",
+"voice": "man",
+"ipa": "f\u025a\u02c8\u0261\u025bt",
+"force": true
+},
+{
+"text": "Do not forget your bag.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "large",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u0251rd\u0292",
+"force": true
+},
+{
+"text": "That is a large dog.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "late",
+"kind": "word",
+"voice": "man",
+"ipa": "le\u026at",
+"force": true
+},
+{
+"text": "It is late. Go to bed.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "This farm produces milk.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I usually walk to work.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is usually late.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "great",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261re\u026at",
+"force": true
+},
+{
+"text": "lot",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u0251t",
+"force": true
+},
+{
+"text": "We ate a lot.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "We must increase the amount of food.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The price increased.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "knowledge",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8n\u0251l\u0259d\u0292",
+"force": true
+},
+{
+"text": "long",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u0254\u014b",
+"force": true
+},
+{
+"text": "important",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026am\u02c8p\u0254rt\u0259nt",
+"force": true
+},
+{
+"text": "This is an important meeting.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Your health is important.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "page",
+"kind": "word",
+"voice": "man",
+"ipa": "pe\u026ad\u0292",
+"force": true
+},
+{
+"text": "Read this page.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "How far is it?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "stop",
+"kind": "word",
+"voice": "man",
+"ipa": "st\u0251p",
+"force": true
+},
+{
+"text": "This is the main road.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Is there a particular book you want?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "event",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026a\u02c8v\u025bnt",
+"force": true
+},
+{
+"text": "It was a big event.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The party was a big event.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The old dog died.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "We finally arrived.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Finally, the rain stopped.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "just",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u0292\u028cst",
+"force": true
+},
+{
+"text": "It is just a small cut.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The general opinion is good.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "present",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8pr\u025bz\u0259nt",
+"force": true
+},
+{
+"text": "She gave me a birthday present.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "recent",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8ris\u0259nt",
+"force": true
+},
+{
+"text": "deep",
+"kind": "word",
+"voice": "man",
+"ipa": "dip",
+"force": true
+},
+{
+"text": "Take a deep breath.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "It was cold. However, we went out.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "bridge",
+"kind": "word",
+"voice": "man",
+"ipa": "br\u026ad\u0292",
+"force": true
+},
+{
+"text": "We walked over the bridge.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Finish your work.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "statement",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8ste\u026atm\u0259nt",
+"force": true
+},
+{
+"text": "The police made a statement.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "hundred",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8h\u028cndr\u0259d",
+"force": true
+},
+{
+"text": "The house is a hundred years old.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "week",
+"kind": "word",
+"voice": "man",
+"ipa": "wik",
+"force": true
+},
+{
+"text": "She works five days a week.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I will see you next week.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "This church is ten centuries old.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "complete",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u0259m\u02c8plit",
+"force": true
+},
+{
+"text": "The list is complete.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Is your work complete?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "south",
+"kind": "word",
+"voice": "man",
+"ipa": "sa\u028a\u03b8",
+"force": true
+},
+{
+"text": "month",
+"kind": "word",
+"voice": "man",
+"ipa": "m\u028cn\u03b8",
+"force": true
+},
+{
+"text": "She is one month old.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I will see you next month.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "quite",
+"kind": "word",
+"voice": "man",
+"ipa": "kwa\u026at",
+"force": true
+},
+{
+"text": "I ate the whole cake.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She was ill for the whole week.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "sound",
+"kind": "word",
+"voice": "man",
+"ipa": "sa\u028and",
+"force": true
+},
+{
+"text": "What is that sound?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I heard a strange sound.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "include",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026an\u02c8klud",
+"force": true
+},
+{
+"text": "Does the price include food?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "fight",
+"kind": "word",
+"voice": "man",
+"ipa": "fa\u026at",
+"force": true
+},
+{
+"text": "Do not fight.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "blood",
+"kind": "word",
+"voice": "man",
+"ipa": "bl\u028cd",
+"force": true
+},
+{
+"text": "There is blood on his hand.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Blood is red.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "west",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u025bst",
+"force": true
+},
+{
+"text": "The sun goes down in the west.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "trade",
+"kind": "word",
+"voice": "man",
+"ipa": "tre\u026ad",
+"force": true
+},
+{
+"text": "Trade between the two countries is growing.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "They trade in fruit.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "In my opinion, he is right.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "dead",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u025bd",
+"force": true
+},
+{
+"text": "The bird is dead.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "thought",
+"kind": "word",
+"voice": "man",
+"ipa": "\u03b8\u0254t",
+"force": true
+},
+{
+"text": "That is a good thought.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I had a thought.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "drop",
+"kind": "word",
+"voice": "man",
+"ipa": "dr\u0251p",
+"force": true
+},
+{
+"text": "leg",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u025b\u0261",
+"force": true
+},
+{
+"text": "He broke his leg.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "support",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u0259\u02c8p\u0254rt",
+"force": true
+},
+{
+"text": "Two strong pieces of wood support the roof.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "teach",
+"kind": "word",
+"voice": "man",
+"ipa": "tit\u0283",
+"force": true
+},
+{
+"text": "north",
+"kind": "word",
+"voice": "man",
+"ipa": "n\u0254r\u03b8",
+"force": true
+},
+{
+"text": "seat",
+"kind": "word",
+"voice": "man",
+"ipa": "sit",
+"force": true
+},
+{
+"text": "Please take a seat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "dark",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u0251rk",
+"force": true
+},
+{
+"text": "It is dark at night.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "shape",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283e\u026ap",
+"force": true
+},
+{
+"text": "What shape is it?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "A ball has a round shape.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "next",
+"kind": "word",
+"voice": "man",
+"ipa": "n\u025bkst",
+"force": true
+},
+{
+"text": "almost",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u0254lmo\u028ast",
+"force": true
+},
+{
+"text": "thank",
+"kind": "word",
+"voice": "man",
+"ipa": "\u03b8\u00e6\u014bk",
+"force": true
+},
+{
+"text": "I thanked him for his help.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The whole nation was sad.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The leaders of many nations met.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "sad",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u00e6d",
+"force": true
+},
+{
+"text": "mouth",
+"kind": "word",
+"voice": "man",
+"ipa": "ma\u028a\u03b8",
+"force": true
+},
+{
+"text": "Open your mouth.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Do not talk with food in your mouth.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The owner of the shop is my friend.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "hang",
+"kind": "word",
+"voice": "man",
+"ipa": "h\u00e6\u014b",
+"force": true
+},
+{
+"text": "Hang your coat on the hook.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The horse is in the field.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The star is very bright.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "song",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u0254\u014b",
+"force": true
+},
+{
+"text": "My mother likes this song best.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "expert",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u025bksp\u025at",
+"force": true
+},
+{
+"text": "Ask an expert.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "shake",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283e\u026ak",
+"force": true
+},
+{
+"text": "Shake my hand.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "touch",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u028ct\u0283",
+"force": true
+},
+{
+"text": "lift",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u026aft",
+"force": true
+},
+{
+"text": "He lifted the child up.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "rich",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u026at\u0283",
+"force": true
+},
+{
+"text": "They became rich.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "against",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8\u0261\u025bnst",
+"force": true
+},
+{
+"text": "reach",
+"kind": "word",
+"voice": "man",
+"ipa": "rit\u0283",
+"force": true
+},
+{
+"text": "I cannot reach the top shelf.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Physical work makes me tired.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "shelf",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283\u025blf",
+"force": true
+},
+{
+"text": "The books are on the shelf.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Put the cups on the top shelf.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "bread",
+"kind": "word",
+"voice": "man",
+"ipa": "br\u025bd",
+"force": true
+},
+{
+"text": "This bread is soft.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I eat bread in the morning.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "damage",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8d\u00e6m\u0259d\u0292",
+"force": true
+},
+{
+"text": "The rain did a lot of damage.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "soft",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u0251ft",
+"force": true
+},
+{
+"text": "The bed is soft.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "hard",
+"kind": "word",
+"voice": "man",
+"ipa": "h\u0251rd",
+"force": true
+},
+{
+"text": "The ground is hard.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The test was hard.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "ask",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00e6sk",
+"force": true
+},
+{
+"text": "test",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u025bst",
+"force": true
+},
+{
+"text": "The test is hard.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I passed the test.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "We must prepare for the test.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Pass me the cup.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Pass me the salt.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "weight",
+"kind": "word",
+"voice": "man",
+"ipa": "we\u026at",
+"force": true
+},
+{
+"text": "What is your weight?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "cloth",
+"kind": "word",
+"voice": "man",
+"ipa": "kl\u0254\u03b8",
+"force": true
+},
+{
+"text": "Clean the table with a wet cloth.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "knife",
+"kind": "word",
+"voice": "man",
+"ipa": "na\u026af",
+"force": true
+},
+{
+"text": "The knife is sharp.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "gold",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261o\u028ald",
+"force": true
+},
+{
+"text": "Her ring is made of gold.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "wet",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u025bt",
+"force": true
+},
+{
+"text": "My shirt is wet.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "cook",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u028ak",
+"force": true
+},
+{
+"text": "I cook every night.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Wear your coat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "leaf",
+"kind": "word",
+"voice": "man",
+"ipa": "lif",
+"force": true
+},
+{
+"text": "liquid",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8l\u026akw\u0259d",
+"force": true
+},
+{
+"text": "Water is a liquid.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "smooth",
+"kind": "word",
+"voice": "man",
+"ipa": "smu\u00f0",
+"force": true
+},
+{
+"text": "The road is smooth.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Her skin is smooth.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "boat",
+"kind": "word",
+"voice": "man",
+"ipa": "bo\u028at",
+"force": true
+},
+{
+"text": "We went out in a boat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "cloud",
+"kind": "word",
+"voice": "man",
+"ipa": "kla\u028ad",
+"force": true
+},
+{
+"text": "bend",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u025bnd",
+"force": true
+},
+{
+"text": "egg",
+"kind": "word",
+"voice": "man",
+"ipa": "\u025b\u0261",
+"force": true
+},
+{
+"text": "A bird comes out of an egg.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "There is ice on the road.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "send",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u025bnd",
+"force": true
+},
+{
+"text": "birth",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u025d\u03b8",
+"force": true
+},
+{
+"text": "What is your date of birth?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "roof",
+"kind": "word",
+"voice": "man",
+"ipa": "ruf",
+"force": true
+},
+{
+"text": "The roof is red.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Did you receive my present?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "building",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8b\u026ald\u026a\u014b",
+"force": true
+},
+{
+"text": "This is an old building.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "internet",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u026ant\u025an\u025bt",
+"force": true
+},
+{
+"text": "I found it on the internet.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "ship",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283\u026ap",
+"force": true
+},
+{
+"text": "We went by ship.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "He broke a bone in his leg.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "outside",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8a\u028atsa\u026ad",
+"force": true
+},
+{
+"text": "Let us play outside.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The outside of the house is white.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "shop",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283\u0251p",
+"force": true
+},
+{
+"text": "I went to the shop to buy bread.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has a small shop.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The service in this hotel is good.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "edge",
+"kind": "word",
+"voice": "man",
+"ipa": "\u025bd\u0292",
+"force": true
+},
+{
+"text": "Do not stand near the edge.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "He sat on the edge of the bed.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "fat",
+"kind": "word",
+"voice": "man",
+"ipa": "f\u00e6t",
+"force": true
+},
+{
+"text": "The cat is fat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "He is not fat, he is strong.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "side",
+"kind": "word",
+"voice": "man",
+"ipa": "sa\u026ad",
+"force": true
+},
+{
+"text": "He sat at my side.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "He woke up in the middle of the night.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "seed",
+"kind": "word",
+"voice": "man",
+"ipa": "sid",
+"force": true
+},
+{
+"text": "Put a seed in the ground.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Plant the seeds in the spring.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "insect",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u026ans\u025bkt",
+"force": true
+},
+{
+"text": "A fly is an insect.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "among",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8m\u028c\u014b",
+"force": true
+},
+{
+"text": "The base of the tree is wide.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Milk contains fat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "wide",
+"kind": "word",
+"voice": "man",
+"ipa": "wa\u026ad",
+"force": true
+},
+{
+"text": "The river is very wide.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "This road is wide.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "street",
+"kind": "word",
+"voice": "man",
+"ipa": "strit",
+"force": true
+},
+{
+"text": "I live on this street.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The street is quiet at night.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "laugh",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u00e6f",
+"force": true
+},
+{
+"text": "The children are laughing.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "loud",
+"kind": "word",
+"voice": "man",
+"ipa": "la\u028ad",
+"force": true
+},
+{
+"text": "The music is too loud.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "neck",
+"kind": "word",
+"voice": "man",
+"ipa": "n\u025bk",
+"force": true
+},
+{
+"text": "She has a long neck.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "He has a pain in his neck.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "orange",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u0254r\u0259nd\u0292",
+"force": true
+},
+{
+"text": "Her dress is orange.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I heard a noise outside.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "shut",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283\u028ct",
+"force": true
+},
+{
+"text": "The shop is shut.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "sort",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u0254rt",
+"force": true
+},
+{
+"text": "What sort of music do you like?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "This area is good for farming.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "type",
+"kind": "word",
+"voice": "man",
+"ipa": "ta\u026ap",
+"force": true
+},
+{
+"text": "What type of car is it?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "kind",
+"kind": "word",
+"voice": "man",
+"ipa": "ka\u026and",
+"force": true
+},
+{
+"text": "She is very kind.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "What kind of music do you like?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "quiet",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8kwa\u026a\u0259t",
+"force": true
+},
+{
+"text": "Please be quiet.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is a quiet street.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "strange",
+"kind": "word",
+"voice": "man",
+"ipa": "stre\u026and\u0292",
+"force": true
+},
+{
+"text": "It is strange that he is late.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "such",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u028ct\u0283",
+"force": true
+},
+{
+"text": "It is such a big dog!",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "An apple is an example of a fruit.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "In my view, he is wrong.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "There is a beautiful view from the top.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "wrong",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u0254\u014b",
+"force": true
+},
+{
+"text": "Your answer is wrong.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "In this case, you are right.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Stars appear at night.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "percent",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u025a\u02c8s\u025bnt",
+"force": true
+},
+{
+"text": "Prices went up by five percent.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "There is no space for my bag.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "rest",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u025bst",
+"force": true
+},
+{
+"text": "You need some rest.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "land",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u00e6nd",
+"force": true
+},
+{
+"text": "They bought some land.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Keep a balance between work and rest.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "front",
+"kind": "word",
+"voice": "man",
+"ipa": "fr\u028cnt",
+"force": true
+},
+{
+"text": "act",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00e6kt",
+"force": true
+},
+{
+"text": "wind",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u026and",
+"force": true
+},
+{
+"text": "Blow on your food if it is hot.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The wind is blowing.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "development",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u026a\u02c8v\u025bl\u0259pm\u0259nt",
+"force": true
+},
+{
+"text": "decide",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u026a\u02c8sa\u026ad",
+"force": true
+},
+{
+"text": "You must decide.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Have you decided?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "His behaviour at school is good.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "growth",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261ro\u028a\u03b8",
+"force": true
+},
+{
+"text": "The growth of the city was quick.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "agreement",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8\u0261rim\u0259nt",
+"force": true
+},
+{
+"text": "The two countries made an agreement.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "We are all in agreement.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "sharp",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283\u0251rp",
+"force": true
+},
+{
+"text": "This knife is sharp.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Her best quality is that she is kind.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is natural to feel sad.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "island",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8a\u026al\u0259nd",
+"force": true
+},
+{
+"text": "They live on an island.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "heat",
+"kind": "word",
+"voice": "man",
+"ipa": "hit",
+"force": true
+},
+{
+"text": "Heat the milk.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "pipe",
+"kind": "word",
+"voice": "man",
+"ipa": "pa\u026ap",
+"force": true
+},
+{
+"text": "The water pipe burst.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "thick",
+"kind": "word",
+"voice": "man",
+"ipa": "\u03b8\u026ak",
+"force": true
+},
+{
+"text": "This book is thick.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The walls are thick.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "ticket",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8t\u026ak\u0259t",
+"force": true
+},
+{
+"text": "I bought a train ticket.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Do not burn your hand.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The wood is burning.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "awake",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8we\u026ak",
+"force": true
+},
+{
+"text": "Are you awake?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The baby was awake all night.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "bath",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u00e6\u03b8",
+"force": true
+},
+{
+"text": "The baby is in the bath.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I take a bath every night.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The school bell rang.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "pot",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u0251t",
+"force": true
+},
+{
+"text": "Cook the rice in a pot.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "There is a plant in the pot.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "ring",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u026a\u014b",
+"force": true
+},
+{
+"text": "She has a gold ring.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The phone is ringing.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "breath",
+"kind": "word",
+"voice": "man",
+"ipa": "br\u025b\u03b8",
+"force": true
+},
+{
+"text": "burst",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u025dst",
+"force": true
+},
+{
+"text": "The bag burst.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The water pipe burst in the night.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The power went off.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "effort",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u025bf\u025at",
+"force": true
+},
+{
+"text": "It took a lot of effort.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "cheap",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0283ip",
+"force": true
+},
+{
+"text": "This shirt is cheap.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "clock",
+"kind": "word",
+"voice": "man",
+"ipa": "kl\u0251k",
+"force": true
+},
+{
+"text": "Look at the clock.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She cried when her dog died.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Try to sleep.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I tried, but I failed.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "watch",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u0251t\u0283",
+"force": true
+},
+{
+"text": "difficult",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8d\u026af\u0259k\u0259lt",
+"force": true
+},
+{
+"text": "This question is difficult.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "government",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u0261\u028cv\u025am\u0259nt",
+"force": true
+},
+{
+"text": "He works for the government.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "lead",
+"kind": "word",
+"voice": "man",
+"ipa": "lid",
+"force": true
+},
+{
+"text": "strong",
+"kind": "word",
+"voice": "man",
+"ipa": "str\u0254\u014b",
+"force": true
+},
+{
+"text": "He is very strong.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "There is a strong wind.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "manage",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8m\u00e6n\u0259d\u0292",
+"force": true
+},
+{
+"text": "I managed to finish my work.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Do not fail the test.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The plan failed.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "attempt",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8t\u025bmpt",
+"force": true
+},
+{
+"text": "It was his first attempt.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is the manager of the shop.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "report",
+"kind": "word",
+"voice": "man",
+"ipa": "ri\u02c8p\u0254rt",
+"force": true
+},
+{
+"text": "I wrote a report.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I read the report.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "We pay tax on the money we get from work.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "There is a single tree in the field.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "wife",
+"kind": "word",
+"voice": "man",
+"ipa": "wa\u026af",
+"force": true
+},
+{
+"text": "This is my wife.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The prison is on an island.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "debt",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u025bt",
+"force": true
+},
+{
+"text": "He has a lot of debt.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "note",
+"kind": "word",
+"voice": "man",
+"ipa": "no\u028at",
+"force": true
+},
+{
+"text": "She played a high note.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "unit",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8jun\u0259t",
+"force": true
+},
+{
+"text": "This is the last unit.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "There is an error in your work.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "second",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u025bk\u0259nd",
+"force": true
+},
+{
+"text": "This is my second visit.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Wait a second.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "half",
+"kind": "word",
+"voice": "man",
+"ipa": "h\u00e6f",
+"force": true
+},
+{
+"text": "Cut the apple in half.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "smoke",
+"kind": "word",
+"voice": "man",
+"ipa": "smo\u028ak",
+"force": true
+},
+{
+"text": "He does not smoke.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "hook",
+"kind": "word",
+"voice": "man",
+"ipa": "h\u028ak",
+"force": true
+},
+{
+"text": "He caught a fish with a hook.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "flat",
+"kind": "word",
+"voice": "man",
+"ipa": "fl\u00e6t",
+"force": true
+},
+{
+"text": "A table has a flat top.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "wound",
+"kind": "word",
+"voice": "man",
+"ipa": "wund",
+"force": true
+},
+{
+"text": "The wound is not deep.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "kick",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u026ak",
+"force": true
+},
+{
+"text": "limit",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8l\u026am\u0259t",
+"force": true
+},
+{
+"text": "range",
+"kind": "word",
+"voice": "man",
+"ipa": "re\u026and\u0292",
+"force": true
+},
+{
+"text": "card",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u0251rd",
+"force": true
+},
+{
+"text": "She sent me a birthday card.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Pay with your card.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I have a pain in my back.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Iron your shirt before the meeting.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "feeling",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8fil\u026a\u014b",
+"force": true
+},
+{
+"text": "I have a feeling that something is wrong.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "attack",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8t\u00e6k",
+"force": true
+},
+{
+"text": "meat",
+"kind": "word",
+"voice": "man",
+"ipa": "mit",
+"force": true
+},
+{
+"text": "I do not eat meat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "interest",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u026antr\u0259st",
+"force": true
+},
+{
+"text": "I save money every month.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Which party do you support?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "date",
+"kind": "word",
+"voice": "man",
+"ipa": "de\u026at",
+"force": true
+},
+{
+"text": "They went out on a date.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "doubt",
+"kind": "word",
+"voice": "man",
+"ipa": "da\u028at",
+"force": true
+},
+{
+"text": "There is no doubt that he is right.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "safe",
+"kind": "word",
+"voice": "man",
+"ipa": "se\u026af",
+"force": true
+},
+{
+"text": "The children are safe.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Is this water safe to drink?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I am certain that he is right.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "check",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0283\u025bk",
+"force": true
+},
+{
+"text": "Please check the door is locked.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "respect",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u026a\u02c8sp\u025bkt",
+"force": true
+},
+{
+"text": "Wait until I come back.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Consider the cost.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "moment",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8mo\u028am\u0259nt",
+"force": true
+},
+{
+"text": "At that moment, the phone rang.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Wait a moment.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has a full social life.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I am still at work.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I read while I wait.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "yet",
+"kind": "word",
+"voice": "man",
+"ipa": "j\u025bt",
+"force": true
+},
+{
+"text": "Have you eaten yet?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "He has not come yet.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "wait",
+"kind": "word",
+"voice": "man",
+"ipa": "we\u026at",
+"force": true
+},
+{
+"text": "The class is two hours long.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "state",
+"kind": "word",
+"voice": "man",
+"ipa": "ste\u026at",
+"force": true
+},
+{
+"text": "The house was in a bad state.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "morning",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8m\u0254rn\u026a\u014b",
+"force": true
+},
+{
+"text": "I get up early in the morning.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Good morning!",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "minute",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8m\u026an\u0259t",
+"force": true
+},
+{
+"text": "Wait a minute.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "health",
+"kind": "word",
+"voice": "man",
+"ipa": "h\u025bl\u03b8",
+"force": true
+},
+{
+"text": "Smoking is bad for your health.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is in good health.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Raise your hand.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "market",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8m\u0251rk\u0259t",
+"force": true
+},
+{
+"text": "The market is open every morning.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "We buy fruit at the market.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "There is a relation between food and health.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "east",
+"kind": "word",
+"voice": "man",
+"ipa": "ist",
+"force": true
+},
+{
+"text": "Who is responsible for this damage?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Even a child can do it.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The loss of his job was hard.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "lock",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u0251k",
+"force": true
+},
+{
+"text": "Turn the key in the lock.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "belief",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u026a\u02c8lif",
+"force": true
+},
+{
+"text": "It is a common belief.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Though it was raining, we went out.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She had no desire to eat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Her observations were right.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "punishment",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8p\u028cn\u026a\u0283m\u0259nt",
+"force": true
+},
+{
+"text": "rat",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u00e6t",
+"force": true
+},
+{
+"text": "There are many religions in the world.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "rough",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u028cf",
+"force": true
+},
+{
+"text": "The road is rough.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Give me a rough idea of the cost.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "salt",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u0254lt",
+"force": true
+},
+{
+"text": "The sea has salt in it.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "church",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0283\u025dt\u0283",
+"force": true
+},
+{
+"text": "We go to church every week.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "sand",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u00e6nd",
+"force": true
+},
+{
+"text": "The children are playing in the sand.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "separate",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u025bp\u0259r\u0259t",
+"force": true
+},
+{
+"text": "I can smell bread.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The flowers smell sweet.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "solid",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u0251l\u0259d",
+"force": true
+},
+{
+"text": "The table is made of solid wood.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "stomach",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8st\u028cm\u0259k",
+"force": true
+},
+{
+"text": "I have a pain in my stomach.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "tight",
+"kind": "word",
+"voice": "man",
+"ipa": "ta\u026at",
+"force": true
+},
+{
+"text": "These shoes are tight.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Hold on tight.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "chest",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0283\u025bst",
+"force": true
+},
+{
+"text": "He has a pain in his chest.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "tooth",
+"kind": "word",
+"voice": "man",
+"ipa": "tu\u03b8",
+"force": true
+},
+{
+"text": "I have a pain in my tooth.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Clean your teeth.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "These trousers are too long.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "heart",
+"kind": "word",
+"voice": "man",
+"ipa": "h\u0251rt",
+"force": true
+},
+{
+"text": "His heart is strong.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has a kind heart.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "taste",
+"kind": "word",
+"voice": "man",
+"ipa": "te\u026ast",
+"force": true
+},
+{
+"text": "This has a sweet taste.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "They took coal out of the ground.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "twist",
+"kind": "word",
+"voice": "man",
+"ipa": "tw\u026ast",
+"force": true
+},
+{
+"text": "band",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u00e6nd",
+"force": true
+},
+{
+"text": "My brother plays in a band.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "wood",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u028ad",
+"force": true
+},
+{
+"text": "The table is made of wood.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "sweet",
+"kind": "word",
+"voice": "man",
+"ipa": "swit",
+"force": true
+},
+{
+"text": "This cake is very sweet.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I did not mean to break it.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "board",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u0254rd",
+"force": true
+},
+{
+"text": "The teacher wrote on the board.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "stick",
+"kind": "word",
+"voice": "man",
+"ipa": "st\u026ak",
+"force": true
+},
+{
+"text": "The old man walks with a stick.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "fruit",
+"kind": "word",
+"voice": "man",
+"ipa": "frut",
+"force": true
+},
+{
+"text": "Apples and oranges are fruit.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "understand",
+"kind": "word",
+"voice": "man",
+"ipa": "\u028cnd\u025a\u02c8st\u00e6nd",
+"force": true
+},
+{
+"text": "I do not understand.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "pick",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u026ak",
+"force": true
+},
+{
+"text": "Pick a card.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The sign says \"Stop\".",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Take the skin off the orange.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "read",
+"kind": "word",
+"voice": "man",
+"ipa": "rid",
+"force": true
+},
+{
+"text": "I like to read.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "bright",
+"kind": "word",
+"voice": "man",
+"ipa": "bra\u026at",
+"force": true
+},
+{
+"text": "The sun is very bright.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is a bright child.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I study every night.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "He explained why he was late.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The library is open until eight.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "spring",
+"kind": "word",
+"voice": "man",
+"ipa": "spr\u026a\u014b",
+"force": true
+},
+{
+"text": "Flowers come out in spring.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The bed has metal springs inside.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "research",
+"kind": "word",
+"voice": "man",
+"ipa": "ri\u02c8s\u025dt\u0283",
+"force": true
+},
+{
+"text": "We need more research.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "field",
+"kind": "word",
+"voice": "man",
+"ipa": "fild",
+"force": true
+},
+{
+"text": "The cows are in the field.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is an expert in her field.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "He needs medical help.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is a medical student.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "What is the purpose of your visit?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "argument",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u0251r\u0261j\u0259m\u0259nt",
+"force": true
+},
+{
+"text": "Her argument was strong.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "stamp",
+"kind": "word",
+"voice": "man",
+"ipa": "st\u00e6mp",
+"force": true
+},
+{
+"text": "I need a stamp.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The electric light went out.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "adjustment",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8d\u0292\u028cstm\u0259nt",
+"force": true
+},
+{
+"text": "He made an adjustment to the seat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "After a few adjustments, the machine worked.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "advertisement",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00e6d\u02c8v\u025dt\u0259zm\u0259nt",
+"force": true
+},
+{
+"text": "The plan needs the approval of the government.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "current",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8k\u025d\u0259nt",
+"force": true
+},
+{
+"text": "What is your current job?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The river has a strong current.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "bite",
+"kind": "word",
+"voice": "man",
+"ipa": "ba\u026at",
+"force": true
+},
+{
+"text": "mark",
+"kind": "word",
+"voice": "man",
+"ipa": "m\u0251rk",
+"force": true
+},
+{
+"text": "There is a mark on your shirt.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She got a good mark in the test.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "paint",
+"kind": "word",
+"voice": "man",
+"ipa": "pe\u026ant",
+"force": true
+},
+{
+"text": "The paint is still wet.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "We painted the room white.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The eggs are boiling.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "boot",
+"kind": "word",
+"voice": "man",
+"ipa": "but",
+"force": true
+},
+{
+"text": "My boots are wet.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "result",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u026a\u02c8z\u028clt",
+"force": true
+},
+{
+"text": "The result of the test was good.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "As a result of the rain, the road was shut.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "art",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0251rt",
+"force": true
+},
+{
+"text": "She studies art.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "branch",
+"kind": "word",
+"voice": "man",
+"ipa": "br\u00e6nt\u0283",
+"force": true
+},
+{
+"text": "A bird sat on the branch.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Put some butter on the bread.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Butter is made from milk.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "A button fell off my shirt.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has a gold chain round her neck.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Education is important.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "stage",
+"kind": "word",
+"voice": "man",
+"ipa": "ste\u026ad\u0292",
+"force": true
+},
+{
+"text": "The band is on the stage.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The first stage of the work is complete.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Cheese is made from milk.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Some chemicals are not safe to touch.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "chief",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0283if",
+"force": true
+},
+{
+"text": "student",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8stud\u0259nt",
+"force": true
+},
+{
+"text": "She is a science student.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "comfort",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8k\u028cmf\u025at",
+"force": true
+},
+{
+"text": "This chair gives comfort to my back.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Her words gave me comfort.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The phone connection is bad.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "cough",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u0251f",
+"force": true
+},
+{
+"text": "He has a bad cough.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She coughed all night.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "crack",
+"kind": "word",
+"voice": "man",
+"ipa": "kr\u00e6k",
+"force": true
+},
+{
+"text": "There is a crack in the cup.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The glass cracked.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "credit",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8kr\u025bd\u0259t",
+"force": true
+},
+{
+"text": "We bought the car on credit.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She is a dear friend.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "dependent",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u026a\u02c8p\u025bnd\u0259nt",
+"force": true
+},
+{
+"text": "The destruction of the old town was a sad event.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Do not put dirty shoes on the bed.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "dust",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u028cst",
+"force": true
+},
+{
+"text": "The car made a cloud of dust.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "exchange",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026aks\u02c8t\u0283e\u026and\u0292",
+"force": true
+},
+{
+"text": "Can I exchange this shirt?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The expansion of the city is quick.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "His story was fiction, not fact.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "flag",
+"kind": "word",
+"voice": "man",
+"ipa": "fl\u00e6\u0261",
+"force": true
+},
+{
+"text": "The flag is red and white.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Every country has a flag.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "flight",
+"kind": "word",
+"voice": "man",
+"ipa": "fla\u026at",
+"force": true
+},
+{
+"text": "fold",
+"kind": "word",
+"voice": "man",
+"ipa": "fo\u028ald",
+"force": true
+},
+{
+"text": "Fold the paper in half.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "fork",
+"kind": "word",
+"voice": "man",
+"ipa": "f\u0254rk",
+"force": true
+},
+{
+"text": "Eat with a knife and fork.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The window frame is made of wood.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "frequent",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8frikw\u0259nt",
+"force": true
+},
+{
+"text": "guide",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261a\u026ad",
+"force": true
+},
+{
+"text": "hate",
+"kind": "word",
+"voice": "man",
+"ipa": "he\u026at",
+"force": true
+},
+{
+"text": "She hates being late.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "He is a healthy child.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Fruit is healthy food.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "instrument",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u026anstr\u0259m\u0259nt",
+"force": true
+},
+{
+"text": "Can you play an instrument?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The insurance paid for the damage.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "judge",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u0292\u028cd\u0292",
+"force": true
+},
+{
+"text": "jump",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u0292\u028cmp",
+"force": true
+},
+{
+"text": "He has a leather bag.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "lip",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u026ap",
+"force": true
+},
+{
+"text": "She has a cut on her lip.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "map",
+"kind": "word",
+"voice": "man",
+"ipa": "m\u00e6p",
+"force": true
+},
+{
+"text": "Look at the map.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Can you show me on the map?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "A mass of people came into the street.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "match",
+"kind": "word",
+"voice": "man",
+"ipa": "m\u00e6t\u0283",
+"force": true
+},
+{
+"text": "We won the match.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "He lit a match.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "He had military training.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "I have a pain in a muscle in my leg.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "This is a narrow bridge.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "A nerve in his back was damaged.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "net",
+"kind": "word",
+"voice": "man",
+"ipa": "n\u025bt",
+"force": true
+},
+{
+"text": "They caught fish in a net.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The ball went into the net.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "opposite",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u0251p\u0259z\u0259t",
+"force": true
+},
+{
+"text": "Hot is the opposite of cold.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She lives in the house opposite.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "payment",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8pe\u026am\u0259nt",
+"force": true
+},
+{
+"text": "I want some peace and quiet.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "pig",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u026a\u0261",
+"force": true
+},
+{
+"text": "The pig is fat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "plate",
+"kind": "word",
+"voice": "man",
+"ipa": "ple\u026at",
+"force": true
+},
+{
+"text": "Put the food on a plate.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "pocket",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8p\u0251k\u0259t",
+"force": true
+},
+{
+"text": "Put your hand in your pocket.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "My keys are in my pocket.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "print",
+"kind": "word",
+"voice": "man",
+"ipa": "pr\u026ant",
+"force": true
+},
+{
+"text": "profit",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8pr\u0251f\u0259t",
+"force": true
+},
+{
+"text": "The company made a profit.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "They sold the house at a profit.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "protest",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8pro\u028at\u025bst",
+"force": true
+},
+{
+"text": "There was a protest in the street.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "pump",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u028cmp",
+"force": true
+},
+{
+"text": "We need a pump to get the water out.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "regret",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u0259\u02c8\u0261r\u025bt",
+"force": true
+},
+{
+"text": "I regret what I said.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "request",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u026a\u02c8kw\u025bst",
+"force": true
+},
+{
+"text": "I have a request.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "They did not listen to my request.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "reward",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u026a\u02c8w\u0254rd",
+"force": true
+},
+{
+"text": "They gave a reward to the person who found the dog.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The ball rolled down the street.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "root",
+"kind": "word",
+"voice": "man",
+"ipa": "rut",
+"force": true
+},
+{
+"text": "The root of the tree is deep.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "We sailed to the island.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "secret",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8sikr\u0259t",
+"force": true
+},
+{
+"text": "Can you keep a secret?",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "It is a secret.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "The selection of the team took a week.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "self",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u025blf",
+"force": true
+},
+{
+"text": "She has a strong sense of self.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "servant",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u025dv\u0259nt",
+"force": true
+},
+{
+"text": "shade",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283e\u026ad",
+"force": true
+},
+{
+"text": "Let us sit in the shade.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "sheep",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283ip",
+"force": true
+},
+{
+"text": "The sheep are in the field.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "shock",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283\u0251k",
+"force": true
+},
+{
+"text": "The news was a shock.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "She has a silver ring.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Silver costs less than gold.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "skirt",
+"kind": "word",
+"voice": "man",
+"ipa": "sk\u025dt",
+"force": true
+},
+{
+"text": "She has a long skirt.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "This skirt is too short.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "slip",
+"kind": "word",
+"voice": "man",
+"ipa": "sl\u026ap",
+"force": true
+},
+{
+"text": "slope",
+"kind": "word",
+"voice": "man",
+"ipa": "slo\u028ap",
+"force": true
+},
+{
+"text": "The house is on a slope.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "We walked up the slope.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "soap",
+"kind": "word",
+"voice": "man",
+"ipa": "so\u028ap",
+"force": true
+},
+{
+"text": "Wash your hands with soap.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "straight",
+"kind": "word",
+"voice": "man",
+"ipa": "stre\u026at",
+"force": true
+},
+{
+"text": "stretch",
+"kind": "word",
+"voice": "man",
+"ipa": "str\u025bt\u0283",
+"force": true
+},
+{
+"text": "The cat stretched.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "He has a tendency to be late.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "thousand",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u03b8a\u028az\u0259nd",
+"force": true
+},
+{
+"text": "The city is a thousand years old.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "throat",
+"kind": "word",
+"voice": "man",
+"ipa": "\u03b8ro\u028at",
+"force": true
+},
+{
+"text": "I have a pain in my throat.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Wait till I come back.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "transport",
+"kind": "word",
+"voice": "man",
+"ipa": "tr\u00e6n\u02c8sp\u0254rt",
+"force": true
+},
+{
+"text": "They transport food by ship.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "trick",
+"kind": "word",
+"voice": "man",
+"ipa": "tr\u026ak",
+"force": true
+},
+{
+"text": "violent",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8va\u026a\u0259l\u0259nt",
+"force": true
+},
+{
+"text": "There was a violent wind.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "waste",
+"kind": "word",
+"voice": "man",
+"ipa": "we\u026ast",
+"force": true
+},
+{
+"text": "wing",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u026a\u014b",
+"force": true
+},
+{
+"text": "The bird has a broken wing.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+},
+{
+"text": "Yesterday was cold.",
+"kind": "sentence",
+"voice": "man",
+"force": true
+}
+]
+}

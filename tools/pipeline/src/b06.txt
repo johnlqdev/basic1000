@@ -1,23 +1,23 @@
-manage|verb|F|to control a business or a group of people; also, to be able to do something hard|She manages a small hotel.|I managed to finish my work.
+manage|verb|F|to control a business or a group of people; also, to be able to do something hard|She can manage a small hotel.|I managed to finish my work.
 manager|noun|F|a person whose job is to manage a business or a group of workers|I want to talk to the manager.|She is the manager of the shop.
 many|determiner|D||Many people came to the party.|How many brothers do you have?
 map|noun|P||Look at the map.|Can you show me on the map?
 mark|noun|F|a small area of a different colour on something; also, a sign or number that shows how good a piece of work is|There is a mark on your shirt.|She got a good mark in the test.
 market|noun|F|a place where people buy and sell things, often outside|We buy fruit at the market.|The market is open every morning.
-marry|verb|F|to join with another person in a way that the law accepts, and live together as a family|She married a doctor.|They married last year.
+marry|verb|F|to join with another person in a way that the law accepts, and live together as a family|Will you marry me?|They married last year.
 mass|noun|F|a large amount of something without a clear shape; also, a large number of people or things|There was a mass of clouds in the sky.|A mass of people came into the street.
 match|noun|F|a game between two people or teams; also, a small stick that makes fire when you push it quickly against something rough|We won the match.|He lit a match.
 material|noun|F|a substance that things are made from; also, cloth|Wood is a strong material.|This dress is made of soft material.
 matter|noun|F|a subject or situation that you must think about|It is a private matter.|It does not matter.
 may|verb|D||May I come in?|It may rain today.
-meal|noun|F|the food that you eat at one time, like the food in the morning or at night|We have three meals a day.|That was a good meal.
+meal|noun|F|the food that you eat at one time, like the food in the morning or at night|That was a good meal.|We have three meals a day.
 mean|verb|F|to have as a sense or as an idea; also, to have a plan to do something|What does this word mean?|I did not mean to break it.
 measure|verb|F|to find out how big, long, heavy or hot something is|Measure the table.|We measured the distance.
 meat|noun|P||I do not eat meat.|This meat is cooked well.
 medical|adjective|F|having to do with the care of ill people and the study of disease|She is a medical student.|He needs medical help.
 meet|verb|F|to come together with someone, by plan or by chance; also, to see someone for the first time|Let us meet at six.|I met her at a party.
 meeting|noun|F|a time when people come together to talk about something|We have a meeting at nine.|The meeting was long.
-member|noun|F|a person who is part of a group|She is a member of the team.|All members must come.
+member|noun|F|a person who is part of a group|You are a member of the family.|She is a member of the team.
 memory|noun|F|the power to keep things in your mind; also, something that you remember|He has a good memory.|I have happy memories of that summer.
 metal|noun|P||This chair is made of metal.|Gold is a metal.
 middle|noun|F|the part or point that is the same distance from all the edges or ends|There is a table in the middle of the room.|He woke up in the middle of the night.
@@ -28,11 +28,11 @@ million|number|D||A million people live in this city.|The house cost a million.
 mind|noun|D||She has a quick mind.|What is on your mind?
 mine|noun|F|a deep hole in the ground from which people take coal, gold or other things|He works in a coal mine.|The gold mine is closed now.
 minute|noun|F|a short unit of time; many of them together make one hour|Wait a minute.|The train leaves in ten minutes.
-miss|verb|F|to not catch or meet something; also, to feel sad because someone is not with you|I missed the train.|I miss my mother.
+miss|verb|F|to not catch or meet something; also, to feel sad because someone is not with you|I miss my mother.|I missed the train.
 mix|verb|F|to put different things together so that they become one thing|Mix the milk and the eggs.|Oil and water do not mix.
 moment|noun|F|a very short period of time; also, a certain point in time|Wait a moment.|At that moment, the phone rang.
 money|noun|P||I have no money.|She saves money every week.
-month|noun|F|one of the parts of a year; each one is about four weeks long|I will see you next month.|She is three months old.
+month|noun|F|one of the parts of a year; each one is about four weeks long|She is one month old.|I will see you next month.
 moon|noun|P||The moon is bright tonight.|There is no moon in the sky.
 morning|noun|F|the early part of the day, from when the sun comes up until the middle of the day|I get up early in the morning.|Good morning!
 mother|noun|P||My mother is a teacher.|She is a mother of three.
@@ -41,7 +41,7 @@ mountain|noun|P||The mountain is very high.|We went up the mountain.
 mouth|noun|P||Open your mouth.|Do not talk with food in your mouth.
 move|verb|A||Do not move!|We moved to a new house.
 much|determiner|D||I do not have much money.|Thank you very much.
-muscle|noun|F|one of the parts of the body that pull on the bones to make the body move|He has strong muscles.|I have a pain in a muscle in my leg.
+muscle|noun|F|one of the parts of the body that pull on the bones to make the body move|I have a pain in a muscle in my leg.|He has strong muscles.
 music|noun|D||I love music.|She plays music every day.
 must|verb|D||You must wash your hands.|I must go now.
 name|noun|F|the word or words that someone or something is known by|What is your name?|My name is on the list.
@@ -74,7 +74,7 @@ number|noun|D||What is your phone number?|Pick a number from one to ten.
 observation|noun|F|the act of watching something with care to learn about it|The doctor kept him under observation.|Her observations were right.
 of|preposition|D||I want a cup of milk.|The door of the house is red.
 off|preposition|A||Take your shoes off.|He fell off the chair.
-offer|verb|F|to say that you will give or do something if someone wants it|He offered me a drink.|I accept your offer.
+offer|verb|F|to say that you will give or do something if someone wants it|Can I offer you a drink?|I accept your offer.
 office|noun|F|a room where people do work at tables, often with papers and computers|I work in an office.|Her office is on the second floor.
 often|adverb|F|many times|I often go there.|How often do you see her?
 oil|noun|F|a thick liquid that does not mix with water, used for cooking, for burning or to make machines work smoothly|Cook it in a little oil.|The car needs oil.

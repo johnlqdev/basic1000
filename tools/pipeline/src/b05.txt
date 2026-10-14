@@ -7,7 +7,7 @@ hour|noun|D||I waited for an hour.|The class is two hours long.
 house|noun|P||This is a house.|The house is small.
 how|adverb|D||How are you?|How do you make bread?
 however|adverb|F|but; used to add something that is different from what was just said|It was cold. However, we went out.|He is rich. However, he is not happy.
-human|noun|F|a person; a man, woman or child, not an animal|Humans need food and water.|It is a human problem.
+human|noun|F|a person; a man, woman or child, not an animal|A human needs food and water.|It is a human problem.
 humour|noun|F|the quality that makes people laugh|He has a good sense of humour.|There is a lot of humour in her stories.
 hundred|number|D||There are a hundred people here.|The house is a hundred years old.
 I|pronoun|D||I am a man.|I have a dog.
@@ -18,13 +18,13 @@ ill|adjective|F|not well in body or mind|She is ill today.|He looks ill.
 imagine|verb|F|to make a picture of something in your mind|Imagine a big red house.|I cannot imagine life without music.
 important|adjective|F|having a great effect, or being of great value|This is an important meeting.|Your health is important.
 in|preposition|A||The cat is in the house.|We are in the house.
-include|verb|F|to have something as one of the parts of a whole|The price includes food.|The group includes three children.
-increase|verb|F|to become larger in number or amount, or to make something larger|The price increased.|We must increase the amount of food.
+include|verb|F|to have something as one of the parts of a whole|Does the price include food?|The group includes three children.
+increase|verb|F|to become larger in number or amount, or to make something larger|We must increase the amount of food.|The price increased.
 industry|noun|F|the work of making things in large amounts, using machines; also, all the companies that do one kind of work|The town has a lot of industry.|She works in the music industry.
 information|noun|F|facts about something or someone|I need some information about trains.|Where can I get more information?
 insect|noun|F|a very small animal with six legs and a body in three parts|A fly is an insect.|There are insects on the leaves.
 instead|adverb|F|in the place of someone or something else|I had milk instead of water.|He was ill, so I went instead.
-instrument|noun|F|a thing used for making music; also, a thing used for doing special work|She plays two instruments.|A doctor's instruments must be clean.
+instrument|noun|F|a thing used for making music; also, a thing used for doing special work|Can you play an instrument?|A doctor's instruments must be clean.
 insurance|noun|F|an agreement in which you pay a company money, and it pays you if something bad happens|Do you have car insurance?|The insurance paid for the damage.
 interest|noun|F|a feeling of wanting to know more about something; also, the money you pay or get for the use of money|She has an interest in history.|The interest on my debt is high.
 internet|noun|F|the system that joins computers around the world, so that people can send and get information|I found it on the internet.|Do you have the internet at home?
@@ -38,33 +38,33 @@ job|noun|F|the work that you do to get money|What is your job?|She has a new job
 join|verb|F|to put or come together; also, to become a member of a group|Join the two pieces.|He joined the army.
 journey|noun|F|the act of going from one place to another, often a long way|The journey took two days.|Have a good journey.
 judge|noun|F|a person whose job is to make decisions about crimes and the law; also, to form an opinion about something|The judge sent him to prison.|Do not judge people by their clothes.
-jump|verb|A||The cat jumped onto the table.|Can you jump over the wall?
+jump|verb|A||Can you jump over the wall?|The cat jumped onto the table.
 just|adverb|F|a very short time ago; also, only|I have just eaten.|It is just a small cut.
 keep|verb|D||You can keep the money.|Keep walking.
 key|noun|P||I lost my key.|This key opens the door.
 kick|verb|A||Kick the ball.|He kicked the door.
-kill|verb|F|to make someone or something die|The cold killed the plants.|Smoking can kill you.
+kill|verb|F|to make someone or something die|The cold can kill plants.|Smoking can kill you.
 kind|adjective|F|good to other people and wanting to help them; also, a sort|She is very kind.|What kind of music do you like?
-kiss|verb|A||She kissed her baby.|He gave her a kiss.
+kiss|verb|A||He gave her a kiss.|She kissed her baby.
 knee|noun|P||He fell and cut his knee.|Bend your knees.
 knife|noun|P||Cut the bread with a knife.|The knife is sharp.
 know|verb|D||I know the answer.|Do you know my brother?
 knowledge|noun|F|the facts and information that you have in your mind|He has a lot of knowledge about birds.|Knowledge is power.
 land|noun|F|the part of the earth that is not water; also, an area of ground|The plane will land soon.|They bought some land.
-language|noun|F|the system of words that people use to talk and write to each other|How many languages do you speak?|Music is a language too.
+language|noun|F|the system of words that people use to talk and write to each other|Music is a language too.|How many languages do you speak?
 large|adjective|F|big; more than normal in size or amount|That is a large dog.|A large number of people came.
 last|adjective|F|coming at the end, after all others; also, the one before now|This is the last cake.|I saw him last week.
 late|adjective|F|after the normal or expected time|I was late for school.|It is late. Go to bed.
 later|adverb|F|at a time after now or after then|See you later.|Two days later, he came back.
-laugh|verb|A||She laughed at his story.|The children are laughing.
+laugh|verb|A||Do not laugh at me.|The children are laughing.
 law|noun|F|a rule made by a government that everyone must follow|It is against the law.|The law says you must stop here.
-lead|verb|F|to go in front and show the way; also, to be in control of a group|She led us to the station.|He leads the team.
+lead|verb|F|to go in front and show the way; also, to be in control of a group|Lead us to the station.|He leads the team.
 leaf|noun|P||A leaf fell from the tree.|The leaves are green.
-learn|verb|D||I am learning to swim.|Children learn quickly.
+learn|verb|D||Children learn quickly.|I am learning to swim.
 leather|noun|F|the skin of an animal made into a material for shoes, bags and coats|My shoes are made of leather.|He has a leather bag.
 leave|verb|A||I leave home at eight.|Leave your bag here.
 left|noun|A||Turn left.|He writes with his left hand.
-leg|noun|P||A dog has four legs.|He broke his leg.
+leg|noun|P||He broke his leg.|A dog has four legs.
 let|verb|D||Let me help you.|Let us go.
 letter|noun|F|a piece of writing that you send to someone; also, one of the signs that we put together to make words|I got a letter from my mother.|The word "cat" has three letters.
 level|noun|F|how high something is; also, an amount or degree of something|The water level is high.|The level of noise in the room was high.
@@ -77,7 +77,7 @@ like|verb|D||I like milk.|She looks like her mother.
 likely|adjective|F|expected to happen|It is likely to rain.|He is likely to be late.
 limit|noun|F|the point or amount that something cannot go past|There is a limit to what I can do.|There is no limit to his desire for money.
 line|noun|P||Draw a line.|We stood in a line.
-lip|noun|P||She has red lips.|He put his finger to his lips.
+lip|noun|P||She has a cut on her lip.|He put his finger to his lips.
 liquid|noun|P||Water is a liquid.|Drink a lot of liquid when you are ill.
 list|noun|F|a number of things written one under the other|Make a list of things to buy.|Is my name on the list?
 listen|verb|F|to try to hear sounds or what someone is saying|Listen to me.|I like listening to music.
@@ -88,7 +88,7 @@ lock|noun|F|a thing on a door or box that keeps it shut until you open it with a
 long|adjective|F|going a great way from one end to the other, or going on for a great time|She has long hair.|It was a long day.
 look|verb|A||Look at this picture.|She looks happy.
 loose|adjective|F|not tight; not fixed in place|My shoe is loose.|These trousers are loose.
-lose|verb|F|to not have something any more because you cannot find it; also, to not win|I lost my key.|We lost the game.
+lose|verb|F|to not have something any more because you cannot find it; also, to not win|Do not lose your key.|We lost the game.
 loss|noun|F|the act of losing something; also, money that a business loses|The loss of his job was hard.|The company made a loss.
 lot|noun|F|a large number or amount|I have a lot of friends.|We ate a lot.
 loud|adjective|F|making a lot of sound|The music is too loud.|He has a loud voice.
@@ -96,6 +96,6 @@ love|verb|F|to have a very strong, warm feeling for someone or something|I love 
 low|adjective|F|not high; near the ground; also, small in amount|The wall is low.|Prices are low.
 machine|noun|F|a thing with moving parts that does work|This machine washes clothes.|The machine is broken.
 main|adjective|F|most important; biggest|This is the main road.|The main problem is money.
-make|verb|A||I made a cake.|You make me happy.
+make|verb|A||I make a cake.|You make me happy.
 male|adjective|P||Is your dog male or female?|Most of the people in the room were male.
 man|noun|P||I am a man.|The man is big.

@@ -8,7 +8,7 @@ Rules
   * the first six steps are a fixed starter block whose examples use only starter words
 Priority: frequent words and words that unlock many others go first.
 """
-import glob, json, itertools
+import glob, json, itertools, os
 from lint import load
 from vocab import analyse
 
@@ -66,7 +66,29 @@ def closure(c, prior, chosen, left, room):
     return best
 
 
-def plan():
+PINNED = 'order_pinned.json'  # the published order; see README ("Pinned order")
+
+
+def pinned():
+    """The published step order, checked against the rules. Audio, pictures and films are made per
+    step, so once a course is live its order must not move when an example sentence is edited."""
+    steps = json.load(open(PINNED))
+    flat = [w for s in steps for w in s]
+    assert sorted(flat) == sorted(rows) and len(flat) == len(set(flat)), 'pinned order must list every word once'
+    known = set()
+    for s in steps:
+        assert len(s) == STEP_SIZE, s
+        here = known | set(s)
+        for w in s:
+            assert D[w] <= known, (w, 'definition uses', sorted(D[w] - known))
+            assert any(e <= here for e in EX[w]), (w, 'has no teaching example at its step')
+        known = here
+    return steps, set(), known, set()
+
+
+def plan(fresh=False):
+    if not fresh and os.path.exists(PINNED):
+        return pinned()
     seen = set()
     for step in STARTER:
         seen |= set(step)

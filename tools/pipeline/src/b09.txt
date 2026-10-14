@@ -4,24 +4,24 @@ soft|adjective|P||The bed is soft.|She has a soft voice.
 solid|adjective|F|hard, and not a liquid; also, with no space inside|Ice is solid water.|The table is made of solid wood.
 some|determiner|D||I want some water.|Some people like music.
 sometimes|adverb|F|at some times but not all the time|Sometimes I walk to work.|She sometimes forgets.
-son|noun|F|a male child of a mother or father|They have two sons.|My son is at school.
+son|noun|F|a male child of a mother or father|My son is at school.|They have two sons.
 song|noun|F|a short piece of music with words that you make with your voice|Her songs are beautiful.|My mother likes this song best.
 soon|adverb|F|in a short time from now|I will be home soon.|Come back soon.
 sort|noun|D||What sort of music do you like?|Sort the books by colour.
-sound|noun|F|something that you hear|I heard a strange sound.|That sounds good.
+sound|noun|F|something that you hear|What is that sound?|I heard a strange sound.
 south|noun|F|the direction on your right when you look at the place where the sun comes up|Birds go south in winter.|They live in the south of the country.
 space|noun|F|an area with nothing in it; also, the area outside the earth where the stars are|There is no space for my bag.|They sent a man into space.
-speak|verb|F|to say words; to talk|Can you speak more slowly?|She speaks two languages.
+speak|verb|F|to say words; to talk|Please speak to me.|Can you speak more slowly?
 special|adjective|F|different from what is normal, and often better or more important|Today is a special day.|This is a special room for children.
-spend|verb|F|to use money to buy things; also, to use time doing something|I spent all my money.|We spent the day at the sea.
+spend|verb|F|to use money to buy things; also, to use time doing something|Do not spend all your money.|We spent the day at the sea.
 spoon|noun|P||Eat your rice with a spoon.|I eat with a spoon.
 spring|noun|F|the season after winter, when plants start to grow; also, a twisted piece of metal that goes back to its shape after you push it|Flowers come out in spring.|The bed has metal springs inside.
 square|noun|P||Draw a square.|There is a market in the town square.
 stage|noun|F|the high part of a room where people act or play music; also, one step in a process|The band is on the stage.|The first stage of the work is complete.
 stamp|noun|F|a small piece of paper you put on a letter to show you paid to send it|Put a stamp on the letter.|I need a stamp.
 stand|verb|A||Stand up, please.|She is standing by the door.
-star|noun|P||There are many stars in the sky.|The star is very bright.
-start|verb|D||The class starts at nine.|It started to rain.
+star|noun|P||I can see a star.|The star is very bright.
+start|verb|D||Start the car.|The class starts at nine.
 state|noun|F|the condition that someone or something is in; also, a country or a part of a country with its own government|The house was in a bad state.|The state pays for the school.
 statement|noun|F|something that someone says or writes, often in a public way|The police made a statement.|Is this statement true?
 station|noun|F|a building where trains stop so that people can get on and off|I will meet you at the station.|The station is near the river.
@@ -50,10 +50,10 @@ such|determiner|F|of this kind; also, so very|It is such a big dog!|It was such 
 sudden|adjective|F|happening quickly and when you do not expect it|There was a sudden noise.|His death was sudden.
 sugar|noun|P||Do you take sugar in your milk?|This cake has a lot of sugar.
 suggest|verb|F|to say an idea or plan for other people to think about|I suggest we go home.|What do you suggest?
-suggestion|noun|F|an idea or plan that someone suggests|Do you have any suggestions?|That is a good suggestion.
+suggestion|noun|F|an idea or plan that someone suggests|That is a good suggestion.|Do you have any suggestions?
 summer|noun|F|the hottest season of the year|We go to the sea in summer.|It is very hot this summer.
 sun|noun|P||The sun is hot today.|The sun comes up in the east.
-support|verb|F|to hold something up so that it does not fall; also, to help someone or agree with them|Two strong pieces of wood support the roof.|My family supports my plan.
+support|verb|F|to hold something up so that it does not fall; also, to help someone or agree with them|We support your plan.|Two strong pieces of wood support the roof.
 sure|adjective|D||Are you sure?|I am sure he will come.
 surprise|noun|F|something that you did not expect; the feeling it gives you|The party was a surprise.|She was surprised to see me.
 sweet|adjective|F|tasting of sugar; also, pleasing|This cake is very sweet.|What a sweet baby!
@@ -66,13 +66,13 @@ talk|verb|A||We talked for hours.|Can I talk to you?
 tall|adjective|P||My brother is tall.|There is a tall tree in the garden.
 taste|noun|F|the quality of food or drink that you know with your tongue|This has a sweet taste.|Taste the cake before you add more sugar.
 tax|noun|F|money that people must pay to the government|We pay tax on the money we get from work.|The tax on wine is high.
-teach|verb|F|to help someone learn something by giving them knowledge|She teaches music.|My father taught me to swim.
+teach|verb|F|to help someone learn something by giving them knowledge|I teach music.|My father taught me to swim.
 team|noun|F|a group of people who work or play together|Our team won.|She works in a small team.
 technology|noun|F|the use of science to make machines and other things that help people|Technology has changed our lives.|The company uses new technology.
 tell|verb|F|to give information to someone by talking|Tell me what you want.|She told me a story.
 ten|number|D||I have ten fingers.|Come at ten.
 tendency|noun|F|a way of acting or happening that is common for someone or something|He has a tendency to be late.|There is a tendency for prices to rise.
-test|noun|F|a set of questions to see what someone knows; also, something done to see if a thing works|I passed the test.|They tested the machine.
+test|noun|F|a set of questions to see what someone knows; also, something done to see if a thing works|The test is hard.|I passed the test.
 than|conjunction|D||She is taller than me.|I have more books than you.
 thank|verb|F|to say that you are pleased because someone did something for you|Thank you very much.|I thanked him for his help.
 that|determiner|D||That is a girl.|That house is big.
@@ -92,7 +92,7 @@ thousand|number|D||A thousand people came.|The city is a thousand years old.
 three|number|D||I have three cats.|Come at three.
 throat|noun|F|the part at the back of your mouth where food and air go down into your body|I have a pain in my throat.|My throat is dry.
 through|preposition|A||The bird flew in through the window.|The train goes through the mountain.
-throw|verb|A||Throw the ball to me.|She threw the paper away.
+throw|verb|A||Throw the paper away.|Throw the ball to me.
 ticket|noun|F|a small piece of paper that shows you have paid to travel or to go into a place|I bought a train ticket.|Show your ticket at the door.
 tight|adjective|F|very close to the body, with no space; also, held strongly in place|These shoes are tight.|Hold on tight.
 till|preposition|F|until|Wait till I come back.|The shop is open till nine.
