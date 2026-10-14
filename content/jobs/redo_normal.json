@@ -3,6 +3,5006 @@
 "chunk": 16,
 "items": [
 {
+"text": "I",
+"voice": "man",
+"force": true
+},
+{
+"text": "am",
+"voice": "man",
+"force": true
+},
+{
+"text": "a",
+"voice": "man",
+"force": true
+},
+{
+"text": "man",
+"voice": "man",
+"force": true
+},
+{
+"text": "woman",
+"voice": "man",
+"force": true
+},
+{
+"text": "you",
+"voice": "man",
+"force": true
+},
+{
+"text": "are",
+"voice": "man",
+"force": true
+},
+{
+"text": "he",
+"voice": "man",
+"force": true
+},
+{
+"text": "she",
+"voice": "man",
+"force": true
+},
+{
+"text": "is",
+"voice": "man",
+"force": true
+},
+{
+"text": "boy",
+"voice": "man",
+"force": true
+},
+{
+"text": "girl",
+"voice": "man",
+"force": true
+},
+{
+"text": "child",
+"voice": "man",
+"force": true
+},
+{
+"text": "this",
+"voice": "man",
+"force": true
+},
+{
+"text": "that",
+"voice": "man",
+"force": true
+},
+{
+"text": "house",
+"voice": "man",
+"force": true
+},
+{
+"text": "dog",
+"voice": "man",
+"force": true
+},
+{
+"text": "cat",
+"voice": "man",
+"force": true
+},
+{
+"text": "it",
+"voice": "man",
+"force": true
+},
+{
+"text": "big",
+"voice": "man",
+"force": true
+},
+{
+"text": "the",
+"voice": "man",
+"force": true
+},
+{
+"text": "small",
+"voice": "man",
+"force": true
+},
+{
+"text": "we",
+"voice": "man",
+"force": true
+},
+{
+"text": "they",
+"voice": "man",
+"force": true
+},
+{
+"text": "and",
+"voice": "man",
+"force": true
+},
+{
+"text": "have",
+"voice": "man",
+"force": true
+},
+{
+"text": "not",
+"voice": "man",
+"force": true
+},
+{
+"text": "yes",
+"voice": "man",
+"force": true
+},
+{
+"text": "no",
+"voice": "man",
+"force": true
+},
+{
+"text": "what",
+"voice": "man",
+"force": true
+},
+{
+"text": "to",
+"voice": "man",
+"force": true
+},
+{
+"text": "give",
+"voice": "man",
+"force": true
+},
+{
+"text": "book",
+"voice": "man",
+"force": true
+},
+{
+"text": "red",
+"voice": "man",
+"force": true
+},
+{
+"text": "apple",
+"voice": "man",
+"force": true
+},
+{
+"text": "of",
+"voice": "man",
+"force": true
+},
+{
+"text": "in",
+"voice": "man",
+"force": true
+},
+{
+"text": "thing",
+"voice": "man",
+"force": true
+},
+{
+"text": "open",
+"voice": "man",
+"force": true
+},
+{
+"text": "door",
+"voice": "man",
+"force": true
+},
+{
+"text": "or",
+"voice": "man",
+"force": true
+},
+{
+"text": "do",
+"voice": "man",
+"force": true
+},
+{
+"text": "water",
+"voice": "man",
+"force": true
+},
+{
+"text": "hot",
+"voice": "man",
+"force": true
+},
+{
+"text": "cold",
+"voice": "man",
+"force": true
+},
+{
+"text": "some",
+"voice": "man",
+"force": true
+},
+{
+"text": "also",
+"voice": "man",
+"force": true
+},
+{
+"text": "want",
+"voice": "man",
+"force": true
+},
+{
+"text": "milk",
+"voice": "man",
+"force": true
+},
+{
+"text": "cow",
+"voice": "man",
+"force": true
+},
+{
+"text": "be",
+"voice": "man",
+"force": true
+},
+{
+"text": "good",
+"voice": "man",
+"force": true
+},
+{
+"text": "down",
+"voice": "man",
+"force": true
+},
+{
+"text": "sit",
+"voice": "man",
+"force": true
+},
+{
+"text": "please",
+"voice": "man",
+"force": true
+},
+{
+"text": "on",
+"voice": "man",
+"force": true
+},
+{
+"text": "for",
+"voice": "man",
+"force": true
+},
+{
+"text": "put",
+"voice": "man",
+"force": true
+},
+{
+"text": "coat",
+"voice": "man",
+"force": true
+},
+{
+"text": "hat",
+"voice": "man",
+"force": true
+},
+{
+"text": "one",
+"voice": "man",
+"force": true
+},
+{
+"text": "make",
+"voice": "man",
+"force": true
+},
+{
+"text": "brother",
+"voice": "man",
+"force": true
+},
+{
+"text": "cake",
+"voice": "man",
+"force": true
+},
+{
+"text": "tall",
+"voice": "man",
+"force": true
+},
+{
+"text": "at",
+"voice": "man",
+"force": true
+},
+{
+"text": "there",
+"voice": "man",
+"force": true
+},
+{
+"text": "look",
+"voice": "man",
+"force": true
+},
+{
+"text": "draw",
+"voice": "man",
+"force": true
+},
+{
+"text": "picture",
+"voice": "man",
+"force": true
+},
+{
+"text": "go",
+"voice": "man",
+"force": true
+},
+{
+"text": "with",
+"voice": "man",
+"force": true
+},
+{
+"text": "live",
+"voice": "man",
+"force": true
+},
+{
+"text": "parent",
+"voice": "man",
+"force": true
+},
+{
+"text": "bed",
+"voice": "man",
+"force": true
+},
+{
+"text": "people",
+"voice": "man",
+"force": true
+},
+{
+"text": "from",
+"voice": "man",
+"force": true
+},
+{
+"text": "how",
+"voice": "man",
+"force": true
+},
+{
+"text": "here",
+"voice": "man",
+"force": true
+},
+{
+"text": "many",
+"voice": "man",
+"force": true
+},
+{
+"text": "can",
+"voice": "man",
+"force": true
+},
+{
+"text": "time",
+"voice": "man",
+"force": true
+},
+{
+"text": "come",
+"voice": "man",
+"force": true
+},
+{
+"text": "two",
+"voice": "man",
+"force": true
+},
+{
+"text": "swim",
+"voice": "man",
+"force": true
+},
+{
+"text": "work",
+"voice": "man",
+"force": true
+},
+{
+"text": "get",
+"voice": "man",
+"force": true
+},
+{
+"text": "like",
+"voice": "man",
+"force": true
+},
+{
+"text": "take",
+"voice": "man",
+"force": true
+},
+{
+"text": "hand",
+"voice": "man",
+"force": true
+},
+{
+"text": "by",
+"voice": "man",
+"force": true
+},
+{
+"text": "very",
+"voice": "man",
+"force": true
+},
+{
+"text": "other",
+"voice": "man",
+"force": true
+},
+{
+"text": "river",
+"voice": "man",
+"force": true
+},
+{
+"text": "cup",
+"voice": "man",
+"force": true
+},
+{
+"text": "much",
+"voice": "man",
+"force": true
+},
+{
+"text": "part",
+"voice": "man",
+"force": true
+},
+{
+"text": "money",
+"voice": "man",
+"force": true
+},
+{
+"text": "cut",
+"voice": "man",
+"force": true
+},
+{
+"text": "finger",
+"voice": "man",
+"force": true
+},
+{
+"text": "will",
+"voice": "man",
+"force": true
+},
+{
+"text": "use",
+"voice": "man",
+"force": true
+},
+{
+"text": "say",
+"voice": "man",
+"force": true
+},
+{
+"text": "who",
+"voice": "man",
+"force": true
+},
+{
+"text": "phone",
+"voice": "man",
+"force": true
+},
+{
+"text": "when",
+"voice": "man",
+"force": true
+},
+{
+"text": "see",
+"voice": "man",
+"force": true
+},
+{
+"text": "up",
+"voice": "man",
+"force": true
+},
+{
+"text": "stand",
+"voice": "man",
+"force": true
+},
+{
+"text": "sea",
+"voice": "man",
+"force": true
+},
+{
+"text": "all",
+"voice": "man",
+"force": true
+},
+{
+"text": "day",
+"voice": "man",
+"force": true
+},
+{
+"text": "into",
+"voice": "man",
+"force": true
+},
+{
+"text": "out",
+"voice": "man",
+"force": true
+},
+{
+"text": "way",
+"voice": "man",
+"force": true
+},
+{
+"text": "as",
+"voice": "man",
+"force": true
+},
+{
+"text": "where",
+"voice": "man",
+"force": true
+},
+{
+"text": "but",
+"voice": "man",
+"force": true
+},
+{
+"text": "happy",
+"voice": "man",
+"force": true
+},
+{
+"text": "tired",
+"voice": "man",
+"force": true
+},
+{
+"text": "which",
+"voice": "man",
+"force": true
+},
+{
+"text": "need",
+"voice": "man",
+"force": true
+},
+{
+"text": "so",
+"voice": "man",
+"force": true
+},
+{
+"text": "now",
+"voice": "man",
+"force": true
+},
+{
+"text": "if",
+"voice": "man",
+"force": true
+},
+{
+"text": "than",
+"voice": "man",
+"force": true
+},
+{
+"text": "new",
+"voice": "man",
+"force": true
+},
+{
+"text": "place",
+"voice": "man",
+"force": true
+},
+{
+"text": "any",
+"voice": "man",
+"force": true
+},
+{
+"text": "car",
+"voice": "man",
+"force": true
+},
+{
+"text": "after",
+"voice": "man",
+"force": true
+},
+{
+"text": "know",
+"voice": "man",
+"force": true
+},
+{
+"text": "would",
+"voice": "man",
+"force": true
+},
+{
+"text": "home",
+"voice": "man",
+"force": true
+},
+{
+"text": "eat",
+"voice": "man",
+"force": true
+},
+{
+"text": "think",
+"voice": "man",
+"force": true
+},
+{
+"text": "between",
+"voice": "man",
+"force": true
+},
+{
+"text": "well",
+"voice": "man",
+"force": true
+},
+{
+"text": "because",
+"voice": "man",
+"force": true
+},
+{
+"text": "three",
+"voice": "man",
+"force": true
+},
+{
+"text": "could",
+"voice": "man",
+"force": true
+},
+{
+"text": "every",
+"voice": "man",
+"force": true
+},
+{
+"text": "back",
+"voice": "man",
+"force": true
+},
+{
+"text": "may",
+"voice": "man",
+"force": true
+},
+{
+"text": "five",
+"voice": "man",
+"force": true
+},
+{
+"text": "find",
+"voice": "man",
+"force": true
+},
+{
+"text": "then",
+"voice": "man",
+"force": true
+},
+{
+"text": "before",
+"voice": "man",
+"force": true
+},
+{
+"text": "young",
+"voice": "man",
+"force": true
+},
+{
+"text": "key",
+"voice": "man",
+"force": true
+},
+{
+"text": "first",
+"voice": "man",
+"force": true
+},
+{
+"text": "same",
+"voice": "man",
+"force": true
+},
+{
+"text": "show",
+"voice": "man",
+"force": true
+},
+{
+"text": "must",
+"voice": "man",
+"force": true
+},
+{
+"text": "again",
+"voice": "man",
+"force": true
+},
+{
+"text": "life",
+"voice": "man",
+"force": true
+},
+{
+"text": "keep",
+"voice": "man",
+"force": true
+},
+{
+"text": "blue",
+"voice": "man",
+"force": true
+},
+{
+"text": "sky",
+"voice": "man",
+"force": true
+},
+{
+"text": "moon",
+"voice": "man",
+"force": true
+},
+{
+"text": "through",
+"voice": "man",
+"force": true
+},
+{
+"text": "group",
+"voice": "man",
+"force": true
+},
+{
+"text": "too",
+"voice": "man",
+"force": true
+},
+{
+"text": "train",
+"voice": "man",
+"force": true
+},
+{
+"text": "mountain",
+"voice": "man",
+"force": true
+},
+{
+"text": "over",
+"voice": "man",
+"force": true
+},
+{
+"text": "old",
+"voice": "man",
+"force": true
+},
+{
+"text": "number",
+"voice": "man",
+"force": true
+},
+{
+"text": "fly",
+"voice": "man",
+"force": true
+},
+{
+"text": "bird",
+"voice": "man",
+"force": true
+},
+{
+"text": "high",
+"voice": "man",
+"force": true
+},
+{
+"text": "should",
+"voice": "man",
+"force": true
+},
+{
+"text": "feel",
+"voice": "man",
+"force": true
+},
+{
+"text": "each",
+"voice": "man",
+"force": true
+},
+{
+"text": "happen",
+"voice": "man",
+"force": true
+},
+{
+"text": "country",
+"voice": "man",
+"force": true
+},
+{
+"text": "different",
+"voice": "man",
+"force": true
+},
+{
+"text": "under",
+"voice": "man",
+"force": true
+},
+{
+"text": "together",
+"voice": "man",
+"force": true
+},
+{
+"text": "table",
+"voice": "man",
+"force": true
+},
+{
+"text": "another",
+"voice": "man",
+"force": true
+},
+{
+"text": "without",
+"voice": "man",
+"force": true
+},
+{
+"text": "point",
+"voice": "man",
+"force": true
+},
+{
+"text": "turn",
+"voice": "man",
+"force": true
+},
+{
+"text": "left",
+"voice": "man",
+"force": true
+},
+{
+"text": "leave",
+"voice": "man",
+"force": true
+},
+{
+"text": "might",
+"voice": "man",
+"force": true
+},
+{
+"text": "few",
+"voice": "man",
+"force": true
+},
+{
+"text": "eight",
+"voice": "man",
+"force": true
+},
+{
+"text": "rain",
+"voice": "man",
+"force": true
+},
+{
+"text": "end",
+"voice": "man",
+"force": true
+},
+{
+"text": "why",
+"voice": "man",
+"force": true
+},
+{
+"text": "little",
+"voice": "man",
+"force": true
+},
+{
+"text": "true",
+"voice": "man",
+"force": true
+},
+{
+"text": "story",
+"voice": "man",
+"force": true
+},
+{
+"text": "last",
+"voice": "man",
+"force": true
+},
+{
+"text": "often",
+"voice": "man",
+"force": true
+},
+{
+"text": "never",
+"voice": "man",
+"force": true
+},
+{
+"text": "start",
+"voice": "man",
+"force": true
+},
+{
+"text": "follow",
+"voice": "man",
+"force": true
+},
+{
+"text": "become",
+"voice": "man",
+"force": true
+},
+{
+"text": "pay",
+"voice": "man",
+"force": true
+},
+{
+"text": "word",
+"voice": "man",
+"force": true
+},
+{
+"text": "move",
+"voice": "man",
+"force": true
+},
+{
+"text": "always",
+"voice": "man",
+"force": true
+},
+{
+"text": "about",
+"voice": "man",
+"force": true
+},
+{
+"text": "write",
+"voice": "man",
+"force": true
+},
+{
+"text": "bring",
+"voice": "man",
+"force": true
+},
+{
+"text": "name",
+"voice": "man",
+"force": true
+},
+{
+"text": "animal",
+"voice": "man",
+"force": true
+},
+{
+"text": "hold",
+"voice": "man",
+"force": true
+},
+{
+"text": "play",
+"voice": "man",
+"force": true
+},
+{
+"text": "room",
+"voice": "man",
+"force": true
+},
+{
+"text": "body",
+"voice": "man",
+"force": true
+},
+{
+"text": "music",
+"voice": "man",
+"force": true
+},
+{
+"text": "set",
+"voice": "man",
+"force": true
+},
+{
+"text": "idea",
+"voice": "man",
+"force": true
+},
+{
+"text": "today",
+"voice": "man",
+"force": true
+},
+{
+"text": "night",
+"voice": "man",
+"force": true
+},
+{
+"text": "away",
+"voice": "man",
+"force": true
+},
+{
+"text": "seem",
+"voice": "man",
+"force": true
+},
+{
+"text": "off",
+"voice": "man",
+"force": true
+},
+{
+"text": "system",
+"voice": "man",
+"force": true
+},
+{
+"text": "family",
+"voice": "man",
+"force": true
+},
+{
+"text": "shoe",
+"voice": "man",
+"force": true
+},
+{
+"text": "run",
+"voice": "man",
+"force": true
+},
+{
+"text": "both",
+"voice": "man",
+"force": true
+},
+{
+"text": "begin",
+"voice": "man",
+"force": true
+},
+{
+"text": "head",
+"voice": "man",
+"force": true
+},
+{
+"text": "change",
+"voice": "man",
+"force": true
+},
+{
+"text": "hear",
+"voice": "man",
+"force": true
+},
+{
+"text": "able",
+"voice": "man",
+"force": true
+},
+{
+"text": "person",
+"voice": "man",
+"force": true
+},
+{
+"text": "four",
+"voice": "man",
+"force": true
+},
+{
+"text": "line",
+"voice": "man",
+"force": true
+},
+{
+"text": "possible",
+"voice": "man",
+"force": true
+},
+{
+"text": "around",
+"voice": "man",
+"force": true
+},
+{
+"text": "eye",
+"voice": "man",
+"force": true
+},
+{
+"text": "let",
+"voice": "man",
+"force": true
+},
+{
+"text": "walk",
+"voice": "man",
+"force": true
+},
+{
+"text": "fact",
+"voice": "man",
+"force": true
+},
+{
+"text": "allow",
+"voice": "man",
+"force": true
+},
+{
+"text": "round",
+"voice": "man",
+"force": true
+},
+{
+"text": "earth",
+"voice": "man",
+"force": true
+},
+{
+"text": "sun",
+"voice": "man",
+"force": true
+},
+{
+"text": "world",
+"voice": "man",
+"force": true
+},
+{
+"text": "information",
+"voice": "man",
+"force": true
+},
+{
+"text": "member",
+"voice": "man",
+"force": true
+},
+{
+"text": "later",
+"voice": "man",
+"force": true
+},
+{
+"text": "right",
+"voice": "man",
+"force": true
+},
+{
+"text": "expect",
+"voice": "man",
+"force": true
+},
+{
+"text": "bad",
+"voice": "man",
+"force": true
+},
+{
+"text": "grow",
+"voice": "man",
+"force": true
+},
+{
+"text": "quick",
+"voice": "man",
+"force": true
+},
+{
+"text": "tomorrow",
+"voice": "man",
+"force": true
+},
+{
+"text": "already",
+"voice": "man",
+"force": true
+},
+{
+"text": "friend",
+"voice": "man",
+"force": true
+},
+{
+"text": "carry",
+"voice": "man",
+"force": true
+},
+{
+"text": "fall",
+"voice": "man",
+"force": true
+},
+{
+"text": "bag",
+"voice": "man",
+"force": true
+},
+{
+"text": "add",
+"voice": "man",
+"force": true
+},
+{
+"text": "job",
+"voice": "man",
+"force": true
+},
+{
+"text": "ever",
+"voice": "man",
+"force": true
+},
+{
+"text": "rather",
+"voice": "man",
+"force": true
+},
+{
+"text": "learn",
+"voice": "man",
+"force": true
+},
+{
+"text": "school",
+"voice": "man",
+"force": true
+},
+{
+"text": "offer",
+"voice": "man",
+"force": true
+},
+{
+"text": "towards",
+"voice": "man",
+"force": true
+},
+{
+"text": "perhaps",
+"voice": "man",
+"force": true
+},
+{
+"text": "drink",
+"voice": "man",
+"force": true
+},
+{
+"text": "continue",
+"voice": "man",
+"force": true
+},
+{
+"text": "mind",
+"voice": "man",
+"force": true
+},
+{
+"text": "mother",
+"voice": "man",
+"force": true
+},
+{
+"text": "face",
+"voice": "man",
+"force": true
+},
+{
+"text": "talk",
+"voice": "man",
+"force": true
+},
+{
+"text": "tell",
+"voice": "man",
+"force": true
+},
+{
+"text": "speak",
+"voice": "man",
+"force": true
+},
+{
+"text": "age",
+"voice": "man",
+"force": true
+},
+{
+"text": "break",
+"voice": "man",
+"force": true
+},
+{
+"text": "language",
+"voice": "man",
+"force": true
+},
+{
+"text": "order",
+"voice": "man",
+"force": true
+},
+{
+"text": "six",
+"voice": "man",
+"force": true
+},
+{
+"text": "develop",
+"voice": "man",
+"force": true
+},
+{
+"text": "short",
+"voice": "man",
+"force": true
+},
+{
+"text": "buy",
+"voice": "man",
+"force": true
+},
+{
+"text": "enough",
+"voice": "man",
+"force": true
+},
+{
+"text": "spend",
+"voice": "man",
+"force": true
+},
+{
+"text": "food",
+"voice": "man",
+"force": true
+},
+{
+"text": "remember",
+"voice": "man",
+"force": true
+},
+{
+"text": "build",
+"voice": "man",
+"force": true
+},
+{
+"text": "position",
+"voice": "man",
+"force": true
+},
+{
+"text": "across",
+"voice": "man",
+"force": true
+},
+{
+"text": "several",
+"voice": "man",
+"force": true
+},
+{
+"text": "hope",
+"voice": "man",
+"force": true
+},
+{
+"text": "road",
+"voice": "man",
+"force": true
+},
+{
+"text": "plan",
+"voice": "man",
+"force": true
+},
+{
+"text": "actually",
+"voice": "man",
+"force": true
+},
+{
+"text": "behind",
+"voice": "man",
+"force": true
+},
+{
+"text": "stay",
+"voice": "man",
+"force": true
+},
+{
+"text": "return",
+"voice": "man",
+"force": true
+},
+{
+"text": "suggest",
+"voice": "man",
+"force": true
+},
+{
+"text": "create",
+"voice": "man",
+"force": true
+},
+{
+"text": "describe",
+"voice": "man",
+"force": true
+},
+{
+"text": "design",
+"voice": "man",
+"force": true
+},
+{
+"text": "chair",
+"voice": "man",
+"force": true
+},
+{
+"text": "action",
+"voice": "man",
+"force": true
+},
+{
+"text": "cause",
+"voice": "man",
+"force": true
+},
+{
+"text": "cover",
+"voice": "man",
+"force": true
+},
+{
+"text": "fire",
+"voice": "man",
+"force": true
+},
+{
+"text": "warm",
+"voice": "man",
+"force": true
+},
+{
+"text": "common",
+"voice": "man",
+"force": true
+},
+{
+"text": "subject",
+"voice": "man",
+"force": true
+},
+{
+"text": "death",
+"voice": "man",
+"force": true
+},
+{
+"text": "easy",
+"voice": "man",
+"force": true
+},
+{
+"text": "sudden",
+"voice": "man",
+"force": true
+},
+{
+"text": "help",
+"voice": "man",
+"force": true
+},
+{
+"text": "white",
+"voice": "man",
+"force": true
+},
+{
+"text": "paper",
+"voice": "man",
+"force": true
+},
+{
+"text": "sometimes",
+"voice": "man",
+"force": true
+},
+{
+"text": "snow",
+"voice": "man",
+"force": true
+},
+{
+"text": "choose",
+"voice": "man",
+"force": true
+},
+{
+"text": "soon",
+"voice": "man",
+"force": true
+},
+{
+"text": "foot",
+"voice": "man",
+"force": true
+},
+{
+"text": "light",
+"voice": "man",
+"force": true
+},
+{
+"text": "dress",
+"voice": "man",
+"force": true
+},
+{
+"text": "sure",
+"voice": "man",
+"force": true
+},
+{
+"text": "father",
+"voice": "man",
+"force": true
+},
+{
+"text": "piece",
+"voice": "man",
+"force": true
+},
+{
+"text": "likely",
+"voice": "man",
+"force": true
+},
+{
+"text": "team",
+"voice": "man",
+"force": true
+},
+{
+"text": "believe",
+"voice": "man",
+"force": true
+},
+{
+"text": "amount",
+"voice": "man",
+"force": true
+},
+{
+"text": "town",
+"voice": "man",
+"force": true
+},
+{
+"text": "step",
+"voice": "man",
+"force": true
+},
+{
+"text": "sugar",
+"voice": "man",
+"force": true
+},
+{
+"text": "period",
+"voice": "man",
+"force": true
+},
+{
+"text": "cost",
+"voice": "man",
+"force": true
+},
+{
+"text": "price",
+"voice": "man",
+"force": true
+},
+{
+"text": "bit",
+"voice": "man",
+"force": true
+},
+{
+"text": "shirt",
+"voice": "man",
+"force": true
+},
+{
+"text": "during",
+"voice": "man",
+"force": true
+},
+{
+"text": "free",
+"voice": "man",
+"force": true
+},
+{
+"text": "rate",
+"voice": "man",
+"force": true
+},
+{
+"text": "else",
+"voice": "man",
+"force": true
+},
+{
+"text": "sleep",
+"voice": "man",
+"force": true
+},
+{
+"text": "only",
+"voice": "man",
+"force": true
+},
+{
+"text": "own",
+"voice": "man",
+"force": true
+},
+{
+"text": "effect",
+"voice": "man",
+"force": true
+},
+{
+"text": "along",
+"voice": "man",
+"force": true
+},
+{
+"text": "plant",
+"voice": "man",
+"force": true
+},
+{
+"text": "public",
+"voice": "man",
+"force": true
+},
+{
+"text": "join",
+"voice": "man",
+"force": true
+},
+{
+"text": "especially",
+"voice": "man",
+"force": true
+},
+{
+"text": "chance",
+"voice": "man",
+"force": true
+},
+{
+"text": "ten",
+"voice": "man",
+"force": true
+},
+{
+"text": "meet",
+"voice": "man",
+"force": true
+},
+{
+"text": "detail",
+"voice": "man",
+"force": true
+},
+{
+"text": "human",
+"voice": "man",
+"force": true
+},
+{
+"text": "necessary",
+"voice": "man",
+"force": true
+},
+{
+"text": "drive",
+"voice": "man",
+"force": true
+},
+{
+"text": "above",
+"voice": "man",
+"force": true
+},
+{
+"text": "practice",
+"voice": "man",
+"force": true
+},
+{
+"text": "serve",
+"voice": "man",
+"force": true
+},
+{
+"text": "rice",
+"voice": "man",
+"force": true
+},
+{
+"text": "fish",
+"voice": "man",
+"force": true
+},
+{
+"text": "arm",
+"voice": "man",
+"force": true
+},
+{
+"text": "private",
+"voice": "man",
+"force": true
+},
+{
+"text": "accept",
+"voice": "man",
+"force": true
+},
+{
+"text": "wish",
+"voice": "man",
+"force": true
+},
+{
+"text": "instead",
+"voice": "man",
+"force": true
+},
+{
+"text": "rise",
+"voice": "man",
+"force": true
+},
+{
+"text": "sell",
+"voice": "man",
+"force": true
+},
+{
+"text": "million",
+"voice": "man",
+"force": true
+},
+{
+"text": "forward",
+"voice": "man",
+"force": true
+},
+{
+"text": "catch",
+"voice": "man",
+"force": true
+},
+{
+"text": "value",
+"voice": "man",
+"force": true
+},
+{
+"text": "record",
+"voice": "man",
+"force": true
+},
+{
+"text": "wall",
+"voice": "man",
+"force": true
+},
+{
+"text": "black",
+"voice": "man",
+"force": true
+},
+{
+"text": "prove",
+"voice": "man",
+"force": true
+},
+{
+"text": "account",
+"voice": "man",
+"force": true
+},
+{
+"text": "size",
+"voice": "man",
+"force": true
+},
+{
+"text": "enter",
+"voice": "man",
+"force": true
+},
+{
+"text": "rule",
+"voice": "man",
+"force": true
+},
+{
+"text": "project",
+"voice": "man",
+"force": true
+},
+{
+"text": "reduce",
+"voice": "man",
+"force": true
+},
+{
+"text": "meeting",
+"voice": "man",
+"force": true
+},
+{
+"text": "compare",
+"voice": "man",
+"force": true
+},
+{
+"text": "poor",
+"voice": "man",
+"force": true
+},
+{
+"text": "nine",
+"voice": "man",
+"force": true
+},
+{
+"text": "window",
+"voice": "man",
+"force": true
+},
+{
+"text": "arrive",
+"voice": "man",
+"force": true
+},
+{
+"text": "past",
+"voice": "man",
+"force": true
+},
+{
+"text": "close",
+"voice": "man",
+"force": true
+},
+{
+"text": "future",
+"voice": "man",
+"force": true
+},
+{
+"text": "once",
+"voice": "man",
+"force": true
+},
+{
+"text": "top",
+"voice": "man",
+"force": true
+},
+{
+"text": "evening",
+"voice": "man",
+"force": true
+},
+{
+"text": "visit",
+"voice": "man",
+"force": true
+},
+{
+"text": "ready",
+"voice": "man",
+"force": true
+},
+{
+"text": "year",
+"voice": "man",
+"force": true
+},
+{
+"text": "available",
+"voice": "man",
+"force": true
+},
+{
+"text": "ground",
+"voice": "man",
+"force": true
+},
+{
+"text": "tree",
+"voice": "man",
+"force": true
+},
+{
+"text": "throw",
+"voice": "man",
+"force": true
+},
+{
+"text": "avoid",
+"voice": "man",
+"force": true
+},
+{
+"text": "list",
+"voice": "man",
+"force": true
+},
+{
+"text": "normal",
+"voice": "man",
+"force": true
+},
+{
+"text": "forget",
+"voice": "man",
+"force": true
+},
+{
+"text": "floor",
+"voice": "man",
+"force": true
+},
+{
+"text": "large",
+"voice": "man",
+"force": true
+},
+{
+"text": "company",
+"voice": "man",
+"force": true
+},
+{
+"text": "late",
+"voice": "man",
+"force": true
+},
+{
+"text": "produce",
+"voice": "man",
+"force": true
+},
+{
+"text": "usually",
+"voice": "man",
+"force": true
+},
+{
+"text": "great",
+"voice": "man",
+"force": true
+},
+{
+"text": "business",
+"voice": "man",
+"force": true
+},
+{
+"text": "lot",
+"voice": "man",
+"force": true
+},
+{
+"text": "increase",
+"voice": "man",
+"force": true
+},
+{
+"text": "knowledge",
+"voice": "man",
+"force": true
+},
+{
+"text": "long",
+"voice": "man",
+"force": true
+},
+{
+"text": "important",
+"voice": "man",
+"force": true
+},
+{
+"text": "experience",
+"voice": "man",
+"force": true
+},
+{
+"text": "page",
+"voice": "man",
+"force": true
+},
+{
+"text": "direction",
+"voice": "man",
+"force": true
+},
+{
+"text": "far",
+"voice": "man",
+"force": true
+},
+{
+"text": "stop",
+"voice": "man",
+"force": true
+},
+{
+"text": "city",
+"voice": "man",
+"force": true
+},
+{
+"text": "special",
+"voice": "man",
+"force": true
+},
+{
+"text": "main",
+"voice": "man",
+"force": true
+},
+{
+"text": "particular",
+"voice": "man",
+"force": true
+},
+{
+"text": "event",
+"voice": "man",
+"force": true
+},
+{
+"text": "ago",
+"voice": "man",
+"force": true
+},
+{
+"text": "die",
+"voice": "man",
+"force": true
+},
+{
+"text": "finally",
+"voice": "man",
+"force": true
+},
+{
+"text": "just",
+"voice": "man",
+"force": true
+},
+{
+"text": "general",
+"voice": "man",
+"force": true
+},
+{
+"text": "present",
+"voice": "man",
+"force": true
+},
+{
+"text": "recent",
+"voice": "man",
+"force": true
+},
+{
+"text": "deep",
+"voice": "man",
+"force": true
+},
+{
+"text": "however",
+"voice": "man",
+"force": true
+},
+{
+"text": "news",
+"voice": "man",
+"force": true
+},
+{
+"text": "structure",
+"voice": "man",
+"force": true
+},
+{
+"text": "kill",
+"voice": "man",
+"force": true
+},
+{
+"text": "bridge",
+"voice": "man",
+"force": true
+},
+{
+"text": "finish",
+"voice": "man",
+"force": true
+},
+{
+"text": "seven",
+"voice": "man",
+"force": true
+},
+{
+"text": "statement",
+"voice": "man",
+"force": true
+},
+{
+"text": "push",
+"voice": "man",
+"force": true
+},
+{
+"text": "hundred",
+"voice": "man",
+"force": true
+},
+{
+"text": "week",
+"voice": "man",
+"force": true
+},
+{
+"text": "century",
+"voice": "man",
+"force": true
+},
+{
+"text": "complete",
+"voice": "man",
+"force": true
+},
+{
+"text": "south",
+"voice": "man",
+"force": true
+},
+{
+"text": "hair",
+"voice": "man",
+"force": true
+},
+{
+"text": "month",
+"voice": "man",
+"force": true
+},
+{
+"text": "quite",
+"voice": "man",
+"force": true
+},
+{
+"text": "whole",
+"voice": "man",
+"force": true
+},
+{
+"text": "sound",
+"voice": "man",
+"force": true
+},
+{
+"text": "computer",
+"voice": "man",
+"force": true
+},
+{
+"text": "include",
+"voice": "man",
+"force": true
+},
+{
+"text": "office",
+"voice": "man",
+"force": true
+},
+{
+"text": "voice",
+"voice": "man",
+"force": true
+},
+{
+"text": "discussion",
+"voice": "man",
+"force": true
+},
+{
+"text": "glass",
+"voice": "man",
+"force": true
+},
+{
+"text": "fight",
+"voice": "man",
+"force": true
+},
+{
+"text": "box",
+"voice": "man",
+"force": true
+},
+{
+"text": "blood",
+"voice": "man",
+"force": true
+},
+{
+"text": "west",
+"voice": "man",
+"force": true
+},
+{
+"text": "baby",
+"voice": "man",
+"force": true
+},
+{
+"text": "trade",
+"voice": "man",
+"force": true
+},
+{
+"text": "imagine",
+"voice": "man",
+"force": true
+},
+{
+"text": "travel",
+"voice": "man",
+"force": true
+},
+{
+"text": "opinion",
+"voice": "man",
+"force": true
+},
+{
+"text": "dead",
+"voice": "man",
+"force": true
+},
+{
+"text": "agree",
+"voice": "man",
+"force": true
+},
+{
+"text": "thought",
+"voice": "man",
+"force": true
+},
+{
+"text": "drop",
+"voice": "man",
+"force": true
+},
+{
+"text": "machine",
+"voice": "man",
+"force": true
+},
+{
+"text": "leg",
+"voice": "man",
+"force": true
+},
+{
+"text": "support",
+"voice": "man",
+"force": true
+},
+{
+"text": "teach",
+"voice": "man",
+"force": true
+},
+{
+"text": "north",
+"voice": "man",
+"force": true
+},
+{
+"text": "distance",
+"voice": "man",
+"force": true
+},
+{
+"text": "seat",
+"voice": "man",
+"force": true
+},
+{
+"text": "further",
+"voice": "man",
+"force": true
+},
+{
+"text": "near",
+"voice": "man",
+"force": true
+},
+{
+"text": "dark",
+"voice": "man",
+"force": true
+},
+{
+"text": "green",
+"voice": "man",
+"force": true
+},
+{
+"text": "shape",
+"voice": "man",
+"force": true
+},
+{
+"text": "next",
+"voice": "man",
+"force": true
+},
+{
+"text": "almost",
+"voice": "man",
+"force": true
+},
+{
+"text": "early",
+"voice": "man",
+"force": true
+},
+{
+"text": "low",
+"voice": "man",
+"force": true
+},
+{
+"text": "similar",
+"voice": "man",
+"force": true
+},
+{
+"text": "thank",
+"voice": "man",
+"force": true
+},
+{
+"text": "fix",
+"voice": "man",
+"force": true
+},
+{
+"text": "nation",
+"voice": "man",
+"force": true
+},
+{
+"text": "holiday",
+"voice": "man",
+"force": true
+},
+{
+"text": "sad",
+"voice": "man",
+"force": true
+},
+{
+"text": "miss",
+"voice": "man",
+"force": true
+},
+{
+"text": "mouth",
+"voice": "man",
+"force": true
+},
+{
+"text": "owner",
+"voice": "man",
+"force": true
+},
+{
+"text": "hang",
+"voice": "man",
+"force": true
+},
+{
+"text": "horse",
+"voice": "man",
+"force": true
+},
+{
+"text": "star",
+"voice": "man",
+"force": true
+},
+{
+"text": "song",
+"voice": "man",
+"force": true
+},
+{
+"text": "expert",
+"voice": "man",
+"force": true
+},
+{
+"text": "reaction",
+"voice": "man",
+"force": true
+},
+{
+"text": "shoulder",
+"voice": "man",
+"force": true
+},
+{
+"text": "worry",
+"voice": "man",
+"force": true
+},
+{
+"text": "shake",
+"voice": "man",
+"force": true
+},
+{
+"text": "touch",
+"voice": "man",
+"force": true
+},
+{
+"text": "lift",
+"voice": "man",
+"force": true
+},
+{
+"text": "rich",
+"voice": "man",
+"force": true
+},
+{
+"text": "against",
+"voice": "man",
+"force": true
+},
+{
+"text": "reach",
+"voice": "man",
+"force": true
+},
+{
+"text": "physical",
+"voice": "man",
+"force": true
+},
+{
+"text": "sister",
+"voice": "man",
+"force": true
+},
+{
+"text": "shelf",
+"voice": "man",
+"force": true
+},
+{
+"text": "ill",
+"voice": "man",
+"force": true
+},
+{
+"text": "bread",
+"voice": "man",
+"force": true
+},
+{
+"text": "ball",
+"voice": "man",
+"force": true
+},
+{
+"text": "damage",
+"voice": "man",
+"force": true
+},
+{
+"text": "soft",
+"voice": "man",
+"force": true
+},
+{
+"text": "question",
+"voice": "man",
+"force": true
+},
+{
+"text": "hard",
+"voice": "man",
+"force": true
+},
+{
+"text": "doctor",
+"voice": "man",
+"force": true
+},
+{
+"text": "regular",
+"voice": "man",
+"force": true
+},
+{
+"text": "metal",
+"voice": "man",
+"force": true
+},
+{
+"text": "ask",
+"voice": "man",
+"force": true
+},
+{
+"text": "test",
+"voice": "man",
+"force": true
+},
+{
+"text": "prepare",
+"voice": "man",
+"force": true
+},
+{
+"text": "heavy",
+"voice": "man",
+"force": true
+},
+{
+"text": "thin",
+"voice": "man",
+"force": true
+},
+{
+"text": "pass",
+"voice": "man",
+"force": true
+},
+{
+"text": "answer",
+"voice": "man",
+"force": true
+},
+{
+"text": "weight",
+"voice": "man",
+"force": true
+},
+{
+"text": "measure",
+"voice": "man",
+"force": true
+},
+{
+"text": "wash",
+"voice": "man",
+"force": true
+},
+{
+"text": "cloth",
+"voice": "man",
+"force": true
+},
+{
+"text": "knife",
+"voice": "man",
+"force": true
+},
+{
+"text": "gold",
+"voice": "man",
+"force": true
+},
+{
+"text": "wet",
+"voice": "man",
+"force": true
+},
+{
+"text": "cook",
+"voice": "man",
+"force": true
+},
+{
+"text": "wear",
+"voice": "man",
+"force": true
+},
+{
+"text": "flower",
+"voice": "man",
+"force": true
+},
+{
+"text": "leaf",
+"voice": "man",
+"force": true
+},
+{
+"text": "liquid",
+"voice": "man",
+"force": true
+},
+{
+"text": "smooth",
+"voice": "man",
+"force": true
+},
+{
+"text": "boat",
+"voice": "man",
+"force": true
+},
+{
+"text": "cloud",
+"voice": "man",
+"force": true
+},
+{
+"text": "bend",
+"voice": "man",
+"force": true
+},
+{
+"text": "clean",
+"voice": "man",
+"force": true
+},
+{
+"text": "dry",
+"voice": "man",
+"force": true
+},
+{
+"text": "egg",
+"voice": "man",
+"force": true
+},
+{
+"text": "plane",
+"voice": "man",
+"force": true
+},
+{
+"text": "angry",
+"voice": "man",
+"force": true
+},
+{
+"text": "bottle",
+"voice": "man",
+"force": true
+},
+{
+"text": "female",
+"voice": "man",
+"force": true
+},
+{
+"text": "daughter",
+"voice": "man",
+"force": true
+},
+{
+"text": "ice",
+"voice": "man",
+"force": true
+},
+{
+"text": "knee",
+"voice": "man",
+"force": true
+},
+{
+"text": "male",
+"voice": "man",
+"force": true
+},
+{
+"text": "nose",
+"voice": "man",
+"force": true
+},
+{
+"text": "send",
+"voice": "man",
+"force": true
+},
+{
+"text": "air",
+"voice": "man",
+"force": true
+},
+{
+"text": "son",
+"voice": "man",
+"force": true
+},
+{
+"text": "birth",
+"voice": "man",
+"force": true
+},
+{
+"text": "roof",
+"voice": "man",
+"force": true
+},
+{
+"text": "receive",
+"voice": "man",
+"force": true
+},
+{
+"text": "building",
+"voice": "man",
+"force": true
+},
+{
+"text": "internet",
+"voice": "man",
+"force": true
+},
+{
+"text": "ship",
+"voice": "man",
+"force": true
+},
+{
+"text": "bone",
+"voice": "man",
+"force": true
+},
+{
+"text": "outside",
+"voice": "man",
+"force": true
+},
+{
+"text": "shop",
+"voice": "man",
+"force": true
+},
+{
+"text": "station",
+"voice": "man",
+"force": true
+},
+{
+"text": "hotel",
+"voice": "man",
+"force": true
+},
+{
+"text": "circle",
+"voice": "man",
+"force": true
+},
+{
+"text": "service",
+"voice": "man",
+"force": true
+},
+{
+"text": "edge",
+"voice": "man",
+"force": true
+},
+{
+"text": "store",
+"voice": "man",
+"force": true
+},
+{
+"text": "curve",
+"voice": "man",
+"force": true
+},
+{
+"text": "fat",
+"voice": "man",
+"force": true
+},
+{
+"text": "side",
+"voice": "man",
+"force": true
+},
+{
+"text": "middle",
+"voice": "man",
+"force": true
+},
+{
+"text": "seed",
+"voice": "man",
+"force": true
+},
+{
+"text": "grass",
+"voice": "man",
+"force": true
+},
+{
+"text": "insect",
+"voice": "man",
+"force": true
+},
+{
+"text": "among",
+"voice": "man",
+"force": true
+},
+{
+"text": "base",
+"voice": "man",
+"force": true
+},
+{
+"text": "contain",
+"voice": "man",
+"force": true
+},
+{
+"text": "wide",
+"voice": "man",
+"force": true
+},
+{
+"text": "street",
+"voice": "man",
+"force": true
+},
+{
+"text": "afternoon",
+"voice": "man",
+"force": true
+},
+{
+"text": "laugh",
+"voice": "man",
+"force": true
+},
+{
+"text": "loud",
+"voice": "man",
+"force": true
+},
+{
+"text": "neck",
+"voice": "man",
+"force": true
+},
+{
+"text": "orange",
+"voice": "man",
+"force": true
+},
+{
+"text": "call",
+"voice": "man",
+"force": true
+},
+{
+"text": "noise",
+"voice": "man",
+"force": true
+},
+{
+"text": "shut",
+"voice": "man",
+"force": true
+},
+{
+"text": "slow",
+"voice": "man",
+"force": true
+},
+{
+"text": "sort",
+"voice": "man",
+"force": true
+},
+{
+"text": "area",
+"voice": "man",
+"force": true
+},
+{
+"text": "type",
+"voice": "man",
+"force": true
+},
+{
+"text": "kind",
+"voice": "man",
+"force": true
+},
+{
+"text": "quiet",
+"voice": "man",
+"force": true
+},
+{
+"text": "strange",
+"voice": "man",
+"force": true
+},
+{
+"text": "such",
+"voice": "man",
+"force": true
+},
+{
+"text": "local",
+"voice": "man",
+"force": true
+},
+{
+"text": "example",
+"voice": "man",
+"force": true
+},
+{
+"text": "view",
+"voice": "man",
+"force": true
+},
+{
+"text": "wrong",
+"voice": "man",
+"force": true
+},
+{
+"text": "case",
+"voice": "man",
+"force": true
+},
+{
+"text": "appear",
+"voice": "man",
+"force": true
+},
+{
+"text": "percent",
+"voice": "man",
+"force": true
+},
+{
+"text": "community",
+"voice": "man",
+"force": true
+},
+{
+"text": "industry",
+"voice": "man",
+"force": true
+},
+{
+"text": "space",
+"voice": "man",
+"force": true
+},
+{
+"text": "rest",
+"voice": "man",
+"force": true
+},
+{
+"text": "land",
+"voice": "man",
+"force": true
+},
+{
+"text": "nice",
+"voice": "man",
+"force": true
+},
+{
+"text": "balance",
+"voice": "man",
+"force": true
+},
+{
+"text": "full",
+"voice": "man",
+"force": true
+},
+{
+"text": "form",
+"voice": "man",
+"force": true
+},
+{
+"text": "property",
+"voice": "man",
+"force": true
+},
+{
+"text": "garden",
+"voice": "man",
+"force": true
+},
+{
+"text": "front",
+"voice": "man",
+"force": true
+},
+{
+"text": "act",
+"voice": "man",
+"force": true
+},
+{
+"text": "army",
+"voice": "man",
+"force": true
+},
+{
+"text": "wind",
+"voice": "man",
+"force": true
+},
+{
+"text": "hole",
+"voice": "man",
+"force": true
+},
+{
+"text": "blow",
+"voice": "man",
+"force": true
+},
+{
+"text": "development",
+"voice": "man",
+"force": true
+},
+{
+"text": "war",
+"voice": "man",
+"force": true
+},
+{
+"text": "choice",
+"voice": "man",
+"force": true
+},
+{
+"text": "operation",
+"voice": "man",
+"force": true
+},
+{
+"text": "addition",
+"voice": "man",
+"force": true
+},
+{
+"text": "decide",
+"voice": "man",
+"force": true
+},
+{
+"text": "decision",
+"voice": "man",
+"force": true
+},
+{
+"text": "behaviour",
+"voice": "man",
+"force": true
+},
+{
+"text": "growth",
+"voice": "man",
+"force": true
+},
+{
+"text": "weather",
+"voice": "man",
+"force": true
+},
+{
+"text": "nature",
+"voice": "man",
+"force": true
+},
+{
+"text": "committee",
+"voice": "man",
+"force": true
+},
+{
+"text": "agreement",
+"voice": "man",
+"force": true
+},
+{
+"text": "season",
+"voice": "man",
+"force": true
+},
+{
+"text": "sharp",
+"voice": "man",
+"force": true
+},
+{
+"text": "quality",
+"voice": "man",
+"force": true
+},
+{
+"text": "natural",
+"voice": "man",
+"force": true
+},
+{
+"text": "summer",
+"voice": "man",
+"force": true
+},
+{
+"text": "winter",
+"voice": "man",
+"force": true
+},
+{
+"text": "island",
+"voice": "man",
+"force": true
+},
+{
+"text": "heat",
+"voice": "man",
+"force": true
+},
+{
+"text": "pipe",
+"voice": "man",
+"force": true
+},
+{
+"text": "thick",
+"voice": "man",
+"force": true
+},
+{
+"text": "ticket",
+"voice": "man",
+"force": true
+},
+{
+"text": "angle",
+"voice": "man",
+"force": true
+},
+{
+"text": "burn",
+"voice": "man",
+"force": true
+},
+{
+"text": "awake",
+"voice": "man",
+"force": true
+},
+{
+"text": "bath",
+"voice": "man",
+"force": true
+},
+{
+"text": "bell",
+"voice": "man",
+"force": true
+},
+{
+"text": "pot",
+"voice": "man",
+"force": true
+},
+{
+"text": "energy",
+"voice": "man",
+"force": true
+},
+{
+"text": "ring",
+"voice": "man",
+"force": true
+},
+{
+"text": "brain",
+"voice": "man",
+"force": true
+},
+{
+"text": "breath",
+"voice": "man",
+"force": true
+},
+{
+"text": "burst",
+"voice": "man",
+"force": true
+},
+{
+"text": "power",
+"voice": "man",
+"force": true
+},
+{
+"text": "effort",
+"voice": "man",
+"force": true
+},
+{
+"text": "cheap",
+"voice": "man",
+"force": true
+},
+{
+"text": "clock",
+"voice": "man",
+"force": true
+},
+{
+"text": "cry",
+"voice": "man",
+"force": true
+},
+{
+"text": "try",
+"voice": "man",
+"force": true
+},
+{
+"text": "control",
+"voice": "man",
+"force": true
+},
+{
+"text": "force",
+"voice": "man",
+"force": true
+},
+{
+"text": "watch",
+"voice": "man",
+"force": true
+},
+{
+"text": "difficult",
+"voice": "man",
+"force": true
+},
+{
+"text": "government",
+"voice": "man",
+"force": true
+},
+{
+"text": "lead",
+"voice": "man",
+"force": true
+},
+{
+"text": "strong",
+"voice": "man",
+"force": true
+},
+{
+"text": "authority",
+"voice": "man",
+"force": true
+},
+{
+"text": "manage",
+"voice": "man",
+"force": true
+},
+{
+"text": "law",
+"voice": "man",
+"force": true
+},
+{
+"text": "fail",
+"voice": "man",
+"force": true
+},
+{
+"text": "attempt",
+"voice": "man",
+"force": true
+},
+{
+"text": "listen",
+"voice": "man",
+"force": true
+},
+{
+"text": "manager",
+"voice": "man",
+"force": true
+},
+{
+"text": "report",
+"voice": "man",
+"force": true
+},
+{
+"text": "society",
+"voice": "man",
+"force": true
+},
+{
+"text": "attention",
+"voice": "man",
+"force": true
+},
+{
+"text": "police",
+"voice": "man",
+"force": true
+},
+{
+"text": "crime",
+"voice": "man",
+"force": true
+},
+{
+"text": "tax",
+"voice": "man",
+"force": true
+},
+{
+"text": "memory",
+"voice": "man",
+"force": true
+},
+{
+"text": "beautiful",
+"voice": "man",
+"force": true
+},
+{
+"text": "competition",
+"voice": "man",
+"force": true
+},
+{
+"text": "marry",
+"voice": "man",
+"force": true
+},
+{
+"text": "single",
+"voice": "man",
+"force": true
+},
+{
+"text": "couple",
+"voice": "man",
+"force": true
+},
+{
+"text": "wife",
+"voice": "man",
+"force": true
+},
+{
+"text": "prison",
+"voice": "man",
+"force": true
+},
+{
+"text": "debt",
+"voice": "man",
+"force": true
+},
+{
+"text": "note",
+"voice": "man",
+"force": true
+},
+{
+"text": "unit",
+"voice": "man",
+"force": true
+},
+{
+"text": "equal",
+"voice": "man",
+"force": true
+},
+{
+"text": "error",
+"voice": "man",
+"force": true
+},
+{
+"text": "false",
+"voice": "man",
+"force": true
+},
+{
+"text": "second",
+"voice": "man",
+"force": true
+},
+{
+"text": "real",
+"voice": "man",
+"force": true
+},
+{
+"text": "degree",
+"voice": "man",
+"force": true
+},
+{
+"text": "half",
+"voice": "man",
+"force": true
+},
+{
+"text": "grey",
+"voice": "man",
+"force": true
+},
+{
+"text": "level",
+"voice": "man",
+"force": true
+},
+{
+"text": "smoke",
+"voice": "man",
+"force": true
+},
+{
+"text": "gun",
+"voice": "man",
+"force": true
+},
+{
+"text": "hook",
+"voice": "man",
+"force": true
+},
+{
+"text": "journey",
+"voice": "man",
+"force": true
+},
+{
+"text": "scale",
+"voice": "man",
+"force": true
+},
+{
+"text": "flat",
+"voice": "man",
+"force": true
+},
+{
+"text": "wound",
+"voice": "man",
+"force": true
+},
+{
+"text": "kick",
+"voice": "man",
+"force": true
+},
+{
+"text": "limit",
+"voice": "man",
+"force": true
+},
+{
+"text": "lie",
+"voice": "man",
+"force": true
+},
+{
+"text": "range",
+"voice": "man",
+"force": true
+},
+{
+"text": "card",
+"voice": "man",
+"force": true
+},
+{
+"text": "pain",
+"voice": "man",
+"force": true
+},
+{
+"text": "iron",
+"voice": "man",
+"force": true
+},
+{
+"text": "feeling",
+"voice": "man",
+"force": true
+},
+{
+"text": "attack",
+"voice": "man",
+"force": true
+},
+{
+"text": "danger",
+"voice": "man",
+"force": true
+},
+{
+"text": "meat",
+"voice": "man",
+"force": true
+},
+{
+"text": "mix",
+"voice": "man",
+"force": true
+},
+{
+"text": "interest",
+"voice": "man",
+"force": true
+},
+{
+"text": "political",
+"voice": "man",
+"force": true
+},
+{
+"text": "love",
+"voice": "man",
+"force": true
+},
+{
+"text": "save",
+"voice": "man",
+"force": true
+},
+{
+"text": "serious",
+"voice": "man",
+"force": true
+},
+{
+"text": "party",
+"voice": "man",
+"force": true
+},
+{
+"text": "date",
+"voice": "man",
+"force": true
+},
+{
+"text": "fear",
+"voice": "man",
+"force": true
+},
+{
+"text": "doubt",
+"voice": "man",
+"force": true
+},
+{
+"text": "safe",
+"voice": "man",
+"force": true
+},
+{
+"text": "certain",
+"voice": "man",
+"force": true
+},
+{
+"text": "care",
+"voice": "man",
+"force": true
+},
+{
+"text": "check",
+"voice": "man",
+"force": true
+},
+{
+"text": "respect",
+"voice": "man",
+"force": true
+},
+{
+"text": "pleasure",
+"voice": "man",
+"force": true
+},
+{
+"text": "until",
+"voice": "man",
+"force": true
+},
+{
+"text": "consider",
+"voice": "man",
+"force": true
+},
+{
+"text": "moment",
+"voice": "man",
+"force": true
+},
+{
+"text": "condition",
+"voice": "man",
+"force": true
+},
+{
+"text": "social",
+"voice": "man",
+"force": true
+},
+{
+"text": "still",
+"voice": "man",
+"force": true
+},
+{
+"text": "while",
+"voice": "man",
+"force": true
+},
+{
+"text": "since",
+"voice": "man",
+"force": true
+},
+{
+"text": "yet",
+"voice": "man",
+"force": true
+},
+{
+"text": "wait",
+"voice": "man",
+"force": true
+},
+{
+"text": "hour",
+"voice": "man",
+"force": true
+},
+{
+"text": "state",
+"voice": "man",
+"force": true
+},
+{
+"text": "situation",
+"voice": "man",
+"force": true
+},
+{
+"text": "activity",
+"voice": "man",
+"force": true
+},
+{
+"text": "morning",
+"voice": "man",
+"force": true
+},
+{
+"text": "problem",
+"voice": "man",
+"force": true
+},
+{
+"text": "matter",
+"voice": "man",
+"force": true
+},
+{
+"text": "minute",
+"voice": "man",
+"force": true
+},
+{
+"text": "health",
+"voice": "man",
+"force": true
+},
+{
+"text": "raise",
+"voice": "man",
+"force": true
+},
+{
+"text": "market",
+"voice": "man",
+"force": true
+},
+{
+"text": "centre",
+"voice": "man",
+"force": true
+},
+{
+"text": "due",
+"voice": "man",
+"force": true
+},
+{
+"text": "game",
+"voice": "man",
+"force": true
+},
+{
+"text": "enjoy",
+"voice": "man",
+"force": true
+},
+{
+"text": "win",
+"voice": "man",
+"force": true
+},
+{
+"text": "hospital",
+"voice": "man",
+"force": true
+},
+{
+"text": "relation",
+"voice": "man",
+"force": true
+},
+{
+"text": "east",
+"voice": "man",
+"force": true
+},
+{
+"text": "responsible",
+"voice": "man",
+"force": true
+},
+{
+"text": "lose",
+"voice": "man",
+"force": true
+},
+{
+"text": "meal",
+"voice": "man",
+"force": true
+},
+{
+"text": "disease",
+"voice": "man",
+"force": true
+},
+{
+"text": "surprise",
+"voice": "man",
+"force": true
+},
+{
+"text": "harbour",
+"voice": "man",
+"force": true
+},
+{
+"text": "even",
+"voice": "man",
+"force": true
+},
+{
+"text": "loss",
+"voice": "man",
+"force": true
+},
+{
+"text": "lock",
+"voice": "man",
+"force": true
+},
+{
+"text": "oil",
+"voice": "man",
+"force": true
+},
+{
+"text": "belief",
+"voice": "man",
+"force": true
+},
+{
+"text": "though",
+"voice": "man",
+"force": true
+},
+{
+"text": "desire",
+"voice": "man",
+"force": true
+},
+{
+"text": "observation",
+"voice": "man",
+"force": true
+},
+{
+"text": "potato",
+"voice": "man",
+"force": true
+},
+{
+"text": "pull",
+"voice": "man",
+"force": true
+},
+{
+"text": "punishment",
+"voice": "man",
+"force": true
+},
+{
+"text": "rat",
+"voice": "man",
+"force": true
+},
+{
+"text": "religion",
+"voice": "man",
+"force": true
+},
+{
+"text": "rough",
+"voice": "man",
+"force": true
+},
+{
+"text": "salt",
+"voice": "man",
+"force": true
+},
+{
+"text": "church",
+"voice": "man",
+"force": true
+},
+{
+"text": "trouble",
+"voice": "man",
+"force": true
+},
+{
+"text": "sand",
+"voice": "man",
+"force": true
+},
+{
+"text": "separate",
+"voice": "man",
+"force": true
+},
+{
+"text": "smell",
+"voice": "man",
+"force": true
+},
+{
+"text": "solid",
+"voice": "man",
+"force": true
+},
+{
+"text": "square",
+"voice": "man",
+"force": true
+},
+{
+"text": "stem",
+"voice": "man",
+"force": true
+},
+{
+"text": "stomach",
+"voice": "man",
+"force": true
+},
+{
+"text": "tight",
+"voice": "man",
+"force": true
+},
+{
+"text": "substance",
+"voice": "man",
+"force": true
+},
+{
+"text": "chest",
+"voice": "man",
+"force": true
+},
+{
+"text": "tongue",
+"voice": "man",
+"force": true
+},
+{
+"text": "tooth",
+"voice": "man",
+"force": true
+},
+{
+"text": "trousers",
+"voice": "man",
+"force": true
+},
+{
+"text": "material",
+"voice": "man",
+"force": true
+},
+{
+"text": "heart",
+"voice": "man",
+"force": true
+},
+{
+"text": "taste",
+"voice": "man",
+"force": true
+},
+{
+"text": "coal",
+"voice": "man",
+"force": true
+},
+{
+"text": "twist",
+"voice": "man",
+"force": true
+},
+{
+"text": "sense",
+"voice": "man",
+"force": true
+},
+{
+"text": "stone",
+"voice": "man",
+"force": true
+},
+{
+"text": "band",
+"voice": "man",
+"force": true
+},
+{
+"text": "wood",
+"voice": "man",
+"force": true
+},
+{
+"text": "sweet",
+"voice": "man",
+"force": true
+},
+{
+"text": "mean",
+"voice": "man",
+"force": true
+},
+{
+"text": "board",
+"voice": "man",
+"force": true
+},
+{
+"text": "stick",
+"voice": "man",
+"force": true
+},
+{
+"text": "fruit",
+"voice": "man",
+"force": true
+},
+{
+"text": "mine",
+"voice": "man",
+"force": true
+},
+{
+"text": "understand",
+"voice": "man",
+"force": true
+},
+{
+"text": "pick",
+"voice": "man",
+"force": true
+},
+{
+"text": "sign",
+"voice": "man",
+"force": true
+},
+{
+"text": "skin",
+"voice": "man",
+"force": true
+},
+{
+"text": "rail",
+"voice": "man",
+"force": true
+},
+{
+"text": "read",
+"voice": "man",
+"force": true
+},
+{
+"text": "clear",
+"voice": "man",
+"force": true
+},
+{
+"text": "letter",
+"voice": "man",
+"force": true
+},
+{
+"text": "simple",
+"voice": "man",
+"force": true
+},
+{
+"text": "bright",
+"voice": "man",
+"force": true
+},
+{
+"text": "study",
+"voice": "man",
+"force": true
+},
+{
+"text": "explain",
+"voice": "man",
+"force": true
+},
+{
+"text": "complex",
+"voice": "man",
+"force": true
+},
+{
+"text": "library",
+"voice": "man",
+"force": true
+},
+{
+"text": "spring",
+"voice": "man",
+"force": true
+},
+{
+"text": "reason",
+"voice": "man",
+"force": true
+},
+{
+"text": "history",
+"voice": "man",
+"force": true
+},
+{
+"text": "research",
+"voice": "man",
+"force": true
+},
+{
+"text": "field",
+"voice": "man",
+"force": true
+},
+{
+"text": "medical",
+"voice": "man",
+"force": true
+},
+{
+"text": "purpose",
+"voice": "man",
+"force": true
+},
+{
+"text": "argument",
+"voice": "man",
+"force": true
+},
+{
+"text": "science",
+"voice": "man",
+"force": true
+},
+{
+"text": "theory",
+"voice": "man",
+"force": true
+},
+{
+"text": "farm",
+"voice": "man",
+"force": true
+},
+{
+"text": "technology",
+"voice": "man",
+"force": true
+},
+{
+"text": "organisation",
+"voice": "man",
+"force": true
+},
+{
+"text": "stamp",
+"voice": "man",
+"force": true
+},
+{
+"text": "wine",
+"voice": "man",
+"force": true
+},
+{
+"text": "wire",
+"voice": "man",
+"force": true
+},
+{
+"text": "electric",
+"voice": "man",
+"force": true
+},
+{
+"text": "yellow",
+"voice": "man",
+"force": true
+},
+{
+"text": "adjustment",
+"voice": "man",
+"force": true
+},
+{
+"text": "advertisement",
+"voice": "man",
+"force": true
+},
+{
+"text": "approval",
+"voice": "man",
+"force": true
+},
+{
+"text": "current",
+"voice": "man",
+"force": true
+},
+{
+"text": "colour",
+"voice": "man",
+"force": true
+},
+{
+"text": "attraction",
+"voice": "man",
+"force": true
+},
+{
+"text": "automatic",
+"voice": "man",
+"force": true
+},
+{
+"text": "bite",
+"voice": "man",
+"force": true
+},
+{
+"text": "mark",
+"voice": "man",
+"force": true
+},
+{
+"text": "paint",
+"voice": "man",
+"force": true
+},
+{
+"text": "bitter",
+"voice": "man",
+"force": true
+},
+{
+"text": "boil",
+"voice": "man",
+"force": true
+},
+{
+"text": "boot",
+"voice": "man",
+"force": true
+},
+{
+"text": "result",
+"voice": "man",
+"force": true
+},
+{
+"text": "art",
+"voice": "man",
+"force": true
+},
+{
+"text": "branch",
+"voice": "man",
+"force": true
+},
+{
+"text": "brown",
+"voice": "man",
+"force": true
+},
+{
+"text": "brush",
+"voice": "man",
+"force": true
+},
+{
+"text": "process",
+"voice": "man",
+"force": true
+},
+{
+"text": "butter",
+"voice": "man",
+"force": true
+},
+{
+"text": "button",
+"voice": "man",
+"force": true
+},
+{
+"text": "camera",
+"voice": "man",
+"force": true
+},
+{
+"text": "chain",
+"voice": "man",
+"force": true
+},
+{
+"text": "education",
+"voice": "man",
+"force": true
+},
+{
+"text": "stage",
+"voice": "man",
+"force": true
+},
+{
+"text": "cheese",
+"voice": "man",
+"force": true
+},
+{
+"text": "chemical",
+"voice": "man",
+"force": true
+},
+{
+"text": "chief",
+"voice": "man",
+"force": true
+},
+{
+"text": "student",
+"voice": "man",
+"force": true
+},
+{
+"text": "comfort",
+"voice": "man",
+"force": true
+},
+{
+"text": "comparison",
+"voice": "man",
+"force": true
+},
+{
+"text": "connection",
+"voice": "man",
+"force": true
+},
+{
+"text": "copy",
+"voice": "man",
+"force": true
+},
+{
+"text": "class",
+"voice": "man",
+"force": true
+},
+{
+"text": "cough",
+"voice": "man",
+"force": true
+},
+{
+"text": "crack",
+"voice": "man",
+"force": true
+},
+{
+"text": "credit",
+"voice": "man",
+"force": true
+},
+{
+"text": "curtain",
+"voice": "man",
+"force": true
+},
+{
+"text": "course",
+"voice": "man",
+"force": true
+},
+{
+"text": "dear",
+"voice": "man",
+"force": true
+},
+{
+"text": "dependent",
+"voice": "man",
+"force": true
+},
+{
+"text": "destruction",
+"voice": "man",
+"force": true
+},
+{
+"text": "dirty",
+"voice": "man",
+"force": true
+},
+{
+"text": "discovery",
+"voice": "man",
+"force": true
+},
+{
+"text": "division",
+"voice": "man",
+"force": true
+},
+{
+"text": "dust",
+"voice": "man",
+"force": true
+},
+{
+"text": "ear",
+"voice": "man",
+"force": true
+},
+{
+"text": "engine",
+"voice": "man",
+"force": true
+},
+{
+"text": "exchange",
+"voice": "man",
+"force": true
+},
+{
+"text": "existence",
+"voice": "man",
+"force": true
+},
+{
+"text": "expansion",
+"voice": "man",
+"force": true
+},
+{
+"text": "feather",
+"voice": "man",
+"force": true
+},
+{
+"text": "fiction",
+"voice": "man",
+"force": true
+},
+{
+"text": "flag",
+"voice": "man",
+"force": true
+},
+{
+"text": "flight",
+"voice": "man",
+"force": true
+},
+{
+"text": "fold",
+"voice": "man",
+"force": true
+},
+{
+"text": "fork",
+"voice": "man",
+"force": true
+},
+{
+"text": "frame",
+"voice": "man",
+"force": true
+},
+{
+"text": "frequent",
+"voice": "man",
+"force": true
+},
+{
+"text": "grain",
+"voice": "man",
+"force": true
+},
+{
+"text": "guide",
+"voice": "man",
+"force": true
+},
+{
+"text": "hate",
+"voice": "man",
+"force": true
+},
+{
+"text": "healthy",
+"voice": "man",
+"force": true
+},
+{
+"text": "humour",
+"voice": "man",
+"force": true
+},
+{
+"text": "instrument",
+"voice": "man",
+"force": true
+},
+{
+"text": "insurance",
+"voice": "man",
+"force": true
+},
+{
+"text": "invention",
+"voice": "man",
+"force": true
+},
+{
+"text": "judge",
+"voice": "man",
+"force": true
+},
+{
+"text": "jump",
+"voice": "man",
+"force": true
+},
+{
+"text": "kiss",
+"voice": "man",
+"force": true
+},
+{
+"text": "leather",
+"voice": "man",
+"force": true
+},
+{
+"text": "lip",
+"voice": "man",
+"force": true
+},
+{
+"text": "loose",
+"voice": "man",
+"force": true
+},
+{
+"text": "map",
+"voice": "man",
+"force": true
+},
+{
+"text": "mass",
+"voice": "man",
+"force": true
+},
+{
+"text": "match",
+"voice": "man",
+"force": true
+},
+{
+"text": "military",
+"voice": "man",
+"force": true
+},
+{
+"text": "motion",
+"voice": "man",
+"force": true
+},
+{
+"text": "muscle",
+"voice": "man",
+"force": true
+},
+{
+"text": "narrow",
+"voice": "man",
+"force": true
+},
+{
+"text": "nerve",
+"voice": "man",
+"force": true
+},
+{
+"text": "net",
+"voice": "man",
+"force": true
+},
+{
+"text": "opposite",
+"voice": "man",
+"force": true
+},
+{
+"text": "parallel",
+"voice": "man",
+"force": true
+},
+{
+"text": "payment",
+"voice": "man",
+"force": true
+},
+{
+"text": "peace",
+"voice": "man",
+"force": true
+},
+{
+"text": "pen",
+"voice": "man",
+"force": true
+},
+{
+"text": "pig",
+"voice": "man",
+"force": true
+},
+{
+"text": "plate",
+"voice": "man",
+"force": true
+},
+{
+"text": "pocket",
+"voice": "man",
+"force": true
+},
+{
+"text": "poison",
+"voice": "man",
+"force": true
+},
+{
+"text": "powder",
+"voice": "man",
+"force": true
+},
+{
+"text": "print",
+"voice": "man",
+"force": true
+},
+{
+"text": "profit",
+"voice": "man",
+"force": true
+},
+{
+"text": "protest",
+"voice": "man",
+"force": true
+},
+{
+"text": "pump",
+"voice": "man",
+"force": true
+},
+{
+"text": "regret",
+"voice": "man",
+"force": true
+},
+{
+"text": "representative",
+"voice": "man",
+"force": true
+},
+{
+"text": "request",
+"voice": "man",
+"force": true
+},
+{
+"text": "reward",
+"voice": "man",
+"force": true
+},
+{
+"text": "roll",
+"voice": "man",
+"force": true
+},
+{
+"text": "root",
+"voice": "man",
+"force": true
+},
+{
+"text": "sail",
+"voice": "man",
+"force": true
+},
+{
+"text": "secret",
+"voice": "man",
+"force": true
+},
+{
+"text": "secretary",
+"voice": "man",
+"force": true
+},
+{
+"text": "selection",
+"voice": "man",
+"force": true
+},
+{
+"text": "self",
+"voice": "man",
+"force": true
+},
+{
+"text": "servant",
+"voice": "man",
+"force": true
+},
+{
+"text": "sex",
+"voice": "man",
+"force": true
+},
+{
+"text": "shade",
+"voice": "man",
+"force": true
+},
+{
+"text": "sheep",
+"voice": "man",
+"force": true
+},
+{
+"text": "shock",
+"voice": "man",
+"force": true
+},
+{
+"text": "silver",
+"voice": "man",
+"force": true
+},
+{
+"text": "skirt",
+"voice": "man",
+"force": true
+},
+{
+"text": "slip",
+"voice": "man",
+"force": true
+},
+{
+"text": "slope",
+"voice": "man",
+"force": true
+},
+{
+"text": "smile",
+"voice": "man",
+"force": true
+},
+{
+"text": "soap",
+"voice": "man",
+"force": true
+},
+{
+"text": "spoon",
+"voice": "man",
+"force": true
+},
+{
+"text": "steel",
+"voice": "man",
+"force": true
+},
+{
+"text": "straight",
+"voice": "man",
+"force": true
+},
+{
+"text": "stretch",
+"voice": "man",
+"force": true
+},
+{
+"text": "suggestion",
+"voice": "man",
+"force": true
+},
+{
+"text": "tail",
+"voice": "man",
+"force": true
+},
+{
+"text": "tendency",
+"voice": "man",
+"force": true
+},
+{
+"text": "thousand",
+"voice": "man",
+"force": true
+},
+{
+"text": "throat",
+"voice": "man",
+"force": true
+},
+{
+"text": "till",
+"voice": "man",
+"force": true
+},
+{
+"text": "transport",
+"voice": "man",
+"force": true
+},
+{
+"text": "trick",
+"voice": "man",
+"force": true
+},
+{
+"text": "vessel",
+"voice": "man",
+"force": true
+},
+{
+"text": "violent",
+"voice": "man",
+"force": true
+},
+{
+"text": "waste",
+"voice": "man",
+"force": true
+},
+{
+"text": "wave",
+"voice": "man",
+"force": true
+},
+{
+"text": "wheel",
+"voice": "man",
+"force": true
+},
+{
+"text": "wing",
+"voice": "man",
+"force": true
+},
+{
+"text": "wise",
+"voice": "man",
+"force": true
+},
+{
+"text": "yesterday",
+"voice": "man",
+"force": true
+},
+{
 "text": "I have a dog.",
 "voice": "man",
 "force": true
@@ -53,17 +5053,7 @@
 "force": true
 },
 {
-"text": "child",
-"voice": "man",
-"force": true
-},
-{
 "text": "She is a child.",
-"voice": "man",
-"force": true
-},
-{
-"text": "that",
 "voice": "man",
 "force": true
 },
@@ -73,27 +5063,12 @@
 "force": true
 },
 {
-"text": "dog",
-"voice": "man",
-"force": true
-},
-{
 "text": "That is a big dog.",
 "voice": "man",
 "force": true
 },
 {
-"text": "cat",
-"voice": "man",
-"force": true
-},
-{
 "text": "This is a cat.",
-"voice": "man",
-"force": true
-},
-{
-"text": "it",
 "voice": "man",
 "force": true
 },
@@ -104,11 +5079,6 @@
 },
 {
 "text": "It is big.",
-"voice": "man",
-"force": true
-},
-{
-"text": "big",
 "voice": "man",
 "force": true
 },
@@ -128,22 +5098,12 @@
 "force": true
 },
 {
-"text": "and",
-"voice": "man",
-"force": true
-},
-{
 "text": "I have a dog and a cat.",
 "voice": "man",
 "force": true
 },
 {
 "text": "We have a small dog.",
-"voice": "man",
-"force": true
-},
-{
-"text": "not",
 "voice": "man",
 "force": true
 },
@@ -168,11 +5128,6 @@
 "force": true
 },
 {
-"text": "what",
-"voice": "man",
-"force": true
-},
-{
 "text": "What is that? It is a cat.",
 "voice": "man",
 "force": true
@@ -183,17 +5138,7 @@
 "force": true
 },
 {
-"text": "book",
-"voice": "man",
-"force": true
-},
-{
 "text": "I have a book.",
-"voice": "man",
-"force": true
-},
-{
-"text": "red",
 "voice": "man",
 "force": true
 },
@@ -208,22 +5153,12 @@
 "force": true
 },
 {
-"text": "of",
-"voice": "man",
-"force": true
-},
-{
 "text": "The door of the house is red.",
 "voice": "man",
 "force": true
 },
 {
 "text": "I want a cup of milk.",
-"voice": "man",
-"force": true
-},
-{
-"text": "thing",
 "voice": "man",
 "force": true
 },
@@ -253,32 +5188,12 @@
 "force": true
 },
 {
-"text": "hot",
-"voice": "man",
-"force": true
-},
-{
 "text": "The water is hot.",
 "voice": "man",
 "force": true
 },
 {
-"text": "cold",
-"voice": "man",
-"force": true
-},
-{
 "text": "I also want some milk.",
-"voice": "man",
-"force": true
-},
-{
-"text": "want",
-"voice": "man",
-"force": true
-},
-{
-"text": "milk",
 "voice": "man",
 "force": true
 },
@@ -303,17 +5218,7 @@
 "force": true
 },
 {
-"text": "be",
-"voice": "man",
-"force": true
-},
-{
 "text": "Please be good.",
-"voice": "man",
-"force": true
-},
-{
-"text": "good",
 "voice": "man",
 "force": true
 },
@@ -323,22 +5228,7 @@
 "force": true
 },
 {
-"text": "sit",
-"voice": "man",
-"force": true
-},
-{
-"text": "put",
-"voice": "man",
-"force": true
-},
-{
 "text": "She put on her coat.",
-"voice": "man",
-"force": true
-},
-{
-"text": "coat",
 "voice": "man",
 "force": true
 },
@@ -353,11 +5243,6 @@
 "force": true
 },
 {
-"text": "hat",
-"voice": "man",
-"force": true
-},
-{
 "text": "Put on your hat.",
 "voice": "man",
 "force": true
@@ -368,17 +5253,7 @@
 "force": true
 },
 {
-"text": "make",
-"voice": "man",
-"force": true
-},
-{
 "text": "I make a cake.",
-"voice": "man",
-"force": true
-},
-{
-"text": "cake",
 "voice": "man",
 "force": true
 },
@@ -393,22 +5268,12 @@
 "force": true
 },
 {
-"text": "at",
-"voice": "man",
-"force": true
-},
-{
 "text": "Look at the dog.",
 "voice": "man",
 "force": true
 },
 {
 "text": "There is a cat on the roof.",
-"voice": "man",
-"force": true
-},
-{
-"text": "look",
 "voice": "man",
 "force": true
 },
@@ -433,27 +5298,12 @@
 "force": true
 },
 {
-"text": "with",
-"voice": "man",
-"force": true
-},
-{
 "text": "Cut it with a knife.",
 "voice": "man",
 "force": true
 },
 {
-"text": "parent",
-"voice": "man",
-"force": true
-},
-{
 "text": "She is a good parent.",
-"voice": "man",
-"force": true
-},
-{
-"text": "bed",
 "voice": "man",
 "force": true
 },
@@ -473,17 +5323,7 @@
 "force": true
 },
 {
-"text": "work",
-"voice": "man",
-"force": true
-},
-{
 "text": "The machine does not work.",
-"voice": "man",
-"force": true
-},
-{
-"text": "get",
 "voice": "man",
 "force": true
 },
@@ -493,27 +5333,12 @@
 "force": true
 },
 {
-"text": "like",
-"voice": "man",
-"force": true
-},
-{
 "text": "I like milk.",
 "voice": "man",
 "force": true
 },
 {
-"text": "take",
-"voice": "man",
-"force": true
-},
-{
 "text": "Take my hand.",
-"voice": "man",
-"force": true
-},
-{
-"text": "hand",
 "voice": "man",
 "force": true
 },
@@ -533,22 +5358,7 @@
 "force": true
 },
 {
-"text": "cup",
-"voice": "man",
-"force": true
-},
-{
-"text": "much",
-"voice": "man",
-"force": true
-},
-{
 "text": "Thank you very much.",
-"voice": "man",
-"force": true
-},
-{
-"text": "part",
 "voice": "man",
 "force": true
 },
@@ -559,11 +5369,6 @@
 },
 {
 "text": "She saves money every week.",
-"voice": "man",
-"force": true
-},
-{
-"text": "cut",
 "voice": "man",
 "force": true
 },
@@ -603,17 +5408,7 @@
 "force": true
 },
 {
-"text": "up",
-"voice": "man",
-"force": true
-},
-{
 "text": "Stand up.",
-"voice": "man",
-"force": true
-},
-{
-"text": "stand",
 "voice": "man",
 "force": true
 },
@@ -633,11 +5428,6 @@
 "force": true
 },
 {
-"text": "out",
-"voice": "man",
-"force": true
-},
-{
 "text": "Get out!",
 "voice": "man",
 "force": true
@@ -648,17 +5438,7 @@
 "force": true
 },
 {
-"text": "but",
-"voice": "man",
-"force": true
-},
-{
 "text": "She is small but strong.",
-"voice": "man",
-"force": true
-},
-{
-"text": "tired",
 "voice": "man",
 "force": true
 },
@@ -673,17 +5453,7 @@
 "force": true
 },
 {
-"text": "which",
-"voice": "man",
-"force": true
-},
-{
 "text": "Which book do you want?",
-"voice": "man",
-"force": true
-},
-{
-"text": "need",
 "voice": "man",
 "force": true
 },
@@ -703,11 +5473,6 @@
 "force": true
 },
 {
-"text": "if",
-"voice": "man",
-"force": true
-},
-{
 "text": "If you are cold, put on a coat.",
 "voice": "man",
 "force": true
@@ -723,21 +5488,6 @@
 "force": true
 },
 {
-"text": "would",
-"voice": "man",
-"force": true
-},
-{
-"text": "eat",
-"voice": "man",
-"force": true
-},
-{
-"text": "think",
-"voice": "man",
-"force": true
-},
-{
 "text": "What do you think?",
 "voice": "man",
 "force": true
@@ -748,27 +5498,12 @@
 "force": true
 },
 {
-"text": "could",
-"voice": "man",
-"force": true
-},
-{
-"text": "back",
-"voice": "man",
-"force": true
-},
-{
 "text": "Put your hand on your back.",
 "voice": "man",
 "force": true
 },
 {
 "text": "I have five fingers on this hand.",
-"voice": "man",
-"force": true
-},
-{
-"text": "find",
 "voice": "man",
 "force": true
 },
@@ -788,17 +5523,7 @@
 "force": true
 },
 {
-"text": "young",
-"voice": "man",
-"force": true
-},
-{
 "text": "The children are young.",
-"voice": "man",
-"force": true
-},
-{
-"text": "first",
 "voice": "man",
 "force": true
 },
@@ -808,22 +5533,7 @@
 "force": true
 },
 {
-"text": "must",
-"voice": "man",
-"force": true
-},
-{
-"text": "life",
-"voice": "man",
-"force": true
-},
-{
 "text": "She had a long and happy life.",
-"voice": "man",
-"force": true
-},
-{
-"text": "keep",
 "voice": "man",
 "force": true
 },
@@ -834,11 +5544,6 @@
 },
 {
 "text": "The moon is bright tonight.",
-"voice": "man",
-"force": true
-},
-{
-"text": "group",
 "voice": "man",
 "force": true
 },
@@ -858,22 +5563,7 @@
 "force": true
 },
 {
-"text": "old",
-"voice": "man",
-"force": true
-},
-{
 "text": "My father is old.",
-"voice": "man",
-"force": true
-},
-{
-"text": "bird",
-"voice": "man",
-"force": true
-},
-{
-"text": "should",
 "voice": "man",
 "force": true
 },
@@ -888,17 +5578,7 @@
 "force": true
 },
 {
-"text": "each",
-"voice": "man",
-"force": true
-},
-{
 "text": "It happened last night.",
-"voice": "man",
-"force": true
-},
-{
-"text": "different",
 "voice": "man",
 "force": true
 },
@@ -909,16 +5589,6 @@
 },
 {
 "text": "Let us go to another shop.",
-"voice": "man",
-"force": true
-},
-{
-"text": "without",
-"voice": "man",
-"force": true
-},
-{
-"text": "point",
 "voice": "man",
 "force": true
 },
@@ -938,27 +5608,12 @@
 "force": true
 },
 {
-"text": "left",
-"voice": "man",
-"force": true
-},
-{
 "text": "He writes with his left hand.",
 "voice": "man",
 "force": true
 },
 {
 "text": "I leave home at eight.",
-"voice": "man",
-"force": true
-},
-{
-"text": "might",
-"voice": "man",
-"force": true
-},
-{
-"text": "eight",
 "voice": "man",
 "force": true
 },
@@ -978,11 +5633,6 @@
 "force": true
 },
 {
-"text": "end",
-"voice": "man",
-"force": true
-},
-{
 "text": "I do not know why he left.",
 "voice": "man",
 "force": true
@@ -994,11 +5644,6 @@
 },
 {
 "text": "There is little water left.",
-"voice": "man",
-"force": true
-},
-{
-"text": "last",
 "voice": "man",
 "force": true
 },
@@ -1018,11 +5663,6 @@
 "force": true
 },
 {
-"text": "start",
-"voice": "man",
-"force": true
-},
-{
 "text": "It will become cold.",
 "voice": "man",
 "force": true
@@ -1033,32 +5673,12 @@
 "force": true
 },
 {
-"text": "word",
-"voice": "man",
-"force": true
-},
-{
 "text": "I did not say a word.",
 "voice": "man",
 "force": true
 },
 {
 "text": "The sun always comes up in the east.",
-"voice": "man",
-"force": true
-},
-{
-"text": "about",
-"voice": "man",
-"force": true
-},
-{
-"text": "write",
-"voice": "man",
-"force": true
-},
-{
-"text": "bring",
 "voice": "man",
 "force": true
 },
@@ -1078,22 +5698,7 @@
 "force": true
 },
 {
-"text": "hold",
-"voice": "man",
-"force": true
-},
-{
 "text": "Hold my hand.",
-"voice": "man",
-"force": true
-},
-{
-"text": "set",
-"voice": "man",
-"force": true
-},
-{
-"text": "night",
 "voice": "man",
 "force": true
 },
@@ -1108,22 +5713,7 @@
 "force": true
 },
 {
-"text": "off",
-"voice": "man",
-"force": true
-},
-{
 "text": "Take your shoes off.",
-"voice": "man",
-"force": true
-},
-{
-"text": "both",
-"voice": "man",
-"force": true
-},
-{
-"text": "head",
 "voice": "man",
 "force": true
 },
@@ -1138,11 +5728,6 @@
 "force": true
 },
 {
-"text": "change",
-"voice": "man",
-"force": true
-},
-{
 "text": "The weather changed.",
 "voice": "man",
 "force": true
@@ -1153,27 +5738,7 @@
 "force": true
 },
 {
-"text": "around",
-"voice": "man",
-"force": true
-},
-{
-"text": "let",
-"voice": "man",
-"force": true
-},
-{
-"text": "walk",
-"voice": "man",
-"force": true
-},
-{
 "text": "Let us go for a walk.",
-"voice": "man",
-"force": true
-},
-{
-"text": "fact",
 "voice": "man",
 "force": true
 },
@@ -1183,17 +5748,7 @@
 "force": true
 },
 {
-"text": "round",
-"voice": "man",
-"force": true
-},
-{
 "text": "The ball is round.",
-"voice": "man",
-"force": true
-},
-{
-"text": "earth",
 "voice": "man",
 "force": true
 },
@@ -1204,11 +5759,6 @@
 },
 {
 "text": "The sun comes up in the east.",
-"voice": "man",
-"force": true
-},
-{
-"text": "world",
 "voice": "man",
 "force": true
 },
@@ -1228,17 +5778,7 @@
 "force": true
 },
 {
-"text": "right",
-"voice": "man",
-"force": true
-},
-{
 "text": "Your answer is right.",
-"voice": "man",
-"force": true
-},
-{
-"text": "expect",
 "voice": "man",
 "force": true
 },
@@ -1248,22 +5788,7 @@
 "force": true
 },
 {
-"text": "bad",
-"voice": "man",
-"force": true
-},
-{
-"text": "quick",
-"voice": "man",
-"force": true
-},
-{
 "text": "Take a quick look.",
-"voice": "man",
-"force": true
-},
-{
-"text": "friend",
 "voice": "man",
 "force": true
 },
@@ -1278,11 +5803,6 @@
 "force": true
 },
 {
-"text": "bag",
-"voice": "man",
-"force": true
-},
-{
 "text": "Put the books in your bag.",
 "voice": "man",
 "force": true
@@ -1293,17 +5813,7 @@
 "force": true
 },
 {
-"text": "add",
-"voice": "man",
-"force": true
-},
-{
 "text": "Add some sugar to your milk.",
-"voice": "man",
-"force": true
-},
-{
-"text": "job",
 "voice": "man",
 "force": true
 },
@@ -1328,17 +5838,7 @@
 "force": true
 },
 {
-"text": "drink",
-"voice": "man",
-"force": true
-},
-{
 "text": "What would you like to drink?",
-"voice": "man",
-"force": true
-},
-{
-"text": "mind",
 "voice": "man",
 "force": true
 },
@@ -1353,22 +5853,7 @@
 "force": true
 },
 {
-"text": "talk",
-"voice": "man",
-"force": true
-},
-{
 "text": "Tell me what you want.",
-"voice": "man",
-"force": true
-},
-{
-"text": "speak",
-"voice": "man",
-"force": true
-},
-{
-"text": "age",
 "voice": "man",
 "force": true
 },
@@ -1378,17 +5863,7 @@
 "force": true
 },
 {
-"text": "break",
-"voice": "man",
-"force": true
-},
-{
 "text": "Do not break the cup.",
-"voice": "man",
-"force": true
-},
-{
-"text": "language",
 "voice": "man",
 "force": true
 },
@@ -1399,16 +5874,6 @@
 },
 {
 "text": "The army gave the order to attack.",
-"voice": "man",
-"force": true
-},
-{
-"text": "develop",
-"voice": "man",
-"force": true
-},
-{
-"text": "short",
 "voice": "man",
 "force": true
 },
@@ -1428,11 +5893,6 @@
 "force": true
 },
 {
-"text": "enough",
-"voice": "man",
-"force": true
-},
-{
 "text": "We have enough food.",
 "voice": "man",
 "force": true
@@ -1443,37 +5903,12 @@
 "force": true
 },
 {
-"text": "spend",
-"voice": "man",
-"force": true
-},
-{
-"text": "food",
-"voice": "man",
-"force": true
-},
-{
 "text": "The food here is good.",
 "voice": "man",
 "force": true
 },
 {
-"text": "build",
-"voice": "man",
-"force": true
-},
-{
 "text": "We walked across the road.",
-"voice": "man",
-"force": true
-},
-{
-"text": "hope",
-"voice": "man",
-"force": true
-},
-{
-"text": "road",
 "voice": "man",
 "force": true
 },
@@ -1493,11 +5928,6 @@
 "force": true
 },
 {
-"text": "behind",
-"voice": "man",
-"force": true
-},
-{
 "text": "Please return my book.",
 "voice": "man",
 "force": true
@@ -1508,22 +5938,7 @@
 "force": true
 },
 {
-"text": "suggest",
-"voice": "man",
-"force": true
-},
-{
 "text": "What do you suggest?",
-"voice": "man",
-"force": true
-},
-{
-"text": "create",
-"voice": "man",
-"force": true
-},
-{
-"text": "describe",
 "voice": "man",
 "force": true
 },
@@ -1553,17 +5968,7 @@
 "force": true
 },
 {
-"text": "subject",
-"voice": "man",
-"force": true
-},
-{
 "text": "What is the subject of the book?",
-"voice": "man",
-"force": true
-},
-{
-"text": "death",
 "voice": "man",
 "force": true
 },
@@ -1574,16 +5979,6 @@
 },
 {
 "text": "It is easy to make.",
-"voice": "man",
-"force": true
-},
-{
-"text": "help",
-"voice": "man",
-"force": true
-},
-{
-"text": "white",
 "voice": "man",
 "force": true
 },
@@ -1608,22 +6003,12 @@
 "force": true
 },
 {
-"text": "foot",
-"voice": "man",
-"force": true
-},
-{
 "text": "My foot is cold.",
 "voice": "man",
 "force": true
 },
 {
 "text": "He has a pain in his foot.",
-"voice": "man",
-"force": true
-},
-{
-"text": "light",
 "voice": "man",
 "force": true
 },
@@ -1648,16 +6033,6 @@
 "force": true
 },
 {
-"text": "amount",
-"voice": "man",
-"force": true
-},
-{
-"text": "step",
-"voice": "man",
-"force": true
-},
-{
 "text": "Mind the step.",
 "voice": "man",
 "force": true
@@ -1673,22 +6048,12 @@
 "force": true
 },
 {
-"text": "period",
-"voice": "man",
-"force": true
-},
-{
 "text": "He lived here for a short period.",
 "voice": "man",
 "force": true
 },
 {
 "text": "It was a hard period in my life.",
-"voice": "man",
-"force": true
-},
-{
-"text": "cost",
 "voice": "man",
 "force": true
 },
@@ -1703,22 +6068,12 @@
 "force": true
 },
 {
-"text": "bit",
-"voice": "man",
-"force": true
-},
-{
 "text": "Can I have a bit of cake?",
 "voice": "man",
 "force": true
 },
 {
 "text": "Wait a bit.",
-"voice": "man",
-"force": true
-},
-{
-"text": "shirt",
 "voice": "man",
 "force": true
 },
@@ -1733,17 +6088,7 @@
 "force": true
 },
 {
-"text": "during",
-"voice": "man",
-"force": true
-},
-{
 "text": "He came during the meeting.",
-"voice": "man",
-"force": true
-},
-{
-"text": "rate",
 "voice": "man",
 "force": true
 },
@@ -1753,17 +6098,7 @@
 "force": true
 },
 {
-"text": "sleep",
-"voice": "man",
-"force": true
-},
-{
 "text": "The baby is sleeping.",
-"voice": "man",
-"force": true
-},
-{
-"text": "effect",
 "voice": "man",
 "force": true
 },
@@ -1773,17 +6108,7 @@
 "force": true
 },
 {
-"text": "along",
-"voice": "man",
-"force": true
-},
-{
 "text": "There are trees along the road.",
-"voice": "man",
-"force": true
-},
-{
-"text": "plant",
 "voice": "man",
 "force": true
 },
@@ -1798,32 +6123,12 @@
 "force": true
 },
 {
-"text": "meet",
-"voice": "man",
-"force": true
-},
-{
 "text": "Food is necessary for life.",
 "voice": "man",
 "force": true
 },
 {
 "text": "She drives to work.",
-"voice": "man",
-"force": true
-},
-{
-"text": "private",
-"voice": "man",
-"force": true
-},
-{
-"text": "accept",
-"voice": "man",
-"force": true
-},
-{
-"text": "instead",
 "voice": "man",
 "force": true
 },
@@ -1843,11 +6148,6 @@
 "force": true
 },
 {
-"text": "forward",
-"voice": "man",
-"force": true
-},
-{
 "text": "Move forward.",
 "voice": "man",
 "force": true
@@ -1858,17 +6158,7 @@
 "force": true
 },
 {
-"text": "catch",
-"voice": "man",
-"force": true
-},
-{
 "text": "The value of the house went up.",
-"voice": "man",
-"force": true
-},
-{
-"text": "record",
 "voice": "man",
 "force": true
 },
@@ -1888,11 +6178,6 @@
 "force": true
 },
 {
-"text": "black",
-"voice": "man",
-"force": true
-},
-{
 "text": "The sky is black at night.",
 "voice": "man",
 "force": true
@@ -1908,11 +6193,6 @@
 "force": true
 },
 {
-"text": "account",
-"voice": "man",
-"force": true
-},
-{
 "text": "I put some money into my account.",
 "voice": "man",
 "force": true
@@ -1923,17 +6203,7 @@
 "force": true
 },
 {
-"text": "project",
-"voice": "man",
-"force": true
-},
-{
 "text": "We are working on a new project.",
-"voice": "man",
-"force": true
-},
-{
-"text": "meeting",
 "voice": "man",
 "force": true
 },
@@ -1943,27 +6213,12 @@
 "force": true
 },
 {
-"text": "past",
-"voice": "man",
-"force": true
-},
-{
 "text": "In the past, people walked to work.",
 "voice": "man",
 "force": true
 },
 {
-"text": "top",
-"voice": "man",
-"force": true
-},
-{
 "text": "Put it on the top shelf.",
-"voice": "man",
-"force": true
-},
-{
-"text": "evening",
 "voice": "man",
 "force": true
 },
@@ -1978,22 +6233,12 @@
 "force": true
 },
 {
-"text": "visit",
-"voice": "man",
-"force": true
-},
-{
 "text": "We visited the old church.",
 "voice": "man",
 "force": true
 },
 {
 "text": "She is one year old.",
-"voice": "man",
-"force": true
-},
-{
-"text": "ground",
 "voice": "man",
 "force": true
 },
@@ -2008,17 +6253,7 @@
 "force": true
 },
 {
-"text": "avoid",
-"voice": "man",
-"force": true
-},
-{
 "text": "Avoid that road at night.",
-"voice": "man",
-"force": true
-},
-{
-"text": "list",
 "voice": "man",
 "force": true
 },
@@ -2033,27 +6268,12 @@
 "force": true
 },
 {
-"text": "forget",
-"voice": "man",
-"force": true
-},
-{
 "text": "Do not forget your bag.",
 "voice": "man",
 "force": true
 },
 {
-"text": "large",
-"voice": "man",
-"force": true
-},
-{
 "text": "That is a large dog.",
-"voice": "man",
-"force": true
-},
-{
-"text": "late",
 "voice": "man",
 "force": true
 },
@@ -2078,16 +6298,6 @@
 "force": true
 },
 {
-"text": "great",
-"voice": "man",
-"force": true
-},
-{
-"text": "lot",
-"voice": "man",
-"force": true
-},
-{
 "text": "We ate a lot.",
 "voice": "man",
 "force": true
@@ -2103,32 +6313,12 @@
 "force": true
 },
 {
-"text": "knowledge",
-"voice": "man",
-"force": true
-},
-{
-"text": "long",
-"voice": "man",
-"force": true
-},
-{
-"text": "important",
-"voice": "man",
-"force": true
-},
-{
 "text": "This is an important meeting.",
 "voice": "man",
 "force": true
 },
 {
 "text": "Your health is important.",
-"voice": "man",
-"force": true
-},
-{
-"text": "page",
 "voice": "man",
 "force": true
 },
@@ -2143,22 +6333,12 @@
 "force": true
 },
 {
-"text": "stop",
-"voice": "man",
-"force": true
-},
-{
 "text": "This is the main road.",
 "voice": "man",
 "force": true
 },
 {
 "text": "Is there a particular book you want?",
-"voice": "man",
-"force": true
-},
-{
-"text": "event",
 "voice": "man",
 "force": true
 },
@@ -2188,11 +6368,6 @@
 "force": true
 },
 {
-"text": "just",
-"voice": "man",
-"force": true
-},
-{
 "text": "It is just a small cut.",
 "voice": "man",
 "force": true
@@ -2203,22 +6378,7 @@
 "force": true
 },
 {
-"text": "present",
-"voice": "man",
-"force": true
-},
-{
 "text": "She gave me a birthday present.",
-"voice": "man",
-"force": true
-},
-{
-"text": "recent",
-"voice": "man",
-"force": true
-},
-{
-"text": "deep",
 "voice": "man",
 "force": true
 },
@@ -2233,11 +6393,6 @@
 "force": true
 },
 {
-"text": "bridge",
-"voice": "man",
-"force": true
-},
-{
 "text": "We walked over the bridge.",
 "voice": "man",
 "force": true
@@ -2248,27 +6403,12 @@
 "force": true
 },
 {
-"text": "statement",
-"voice": "man",
-"force": true
-},
-{
 "text": "The police made a statement.",
 "voice": "man",
 "force": true
 },
 {
-"text": "hundred",
-"voice": "man",
-"force": true
-},
-{
 "text": "The house is a hundred years old.",
-"voice": "man",
-"force": true
-},
-{
-"text": "week",
 "voice": "man",
 "force": true
 },
@@ -2288,27 +6428,12 @@
 "force": true
 },
 {
-"text": "complete",
-"voice": "man",
-"force": true
-},
-{
 "text": "The list is complete.",
 "voice": "man",
 "force": true
 },
 {
 "text": "Is your work complete?",
-"voice": "man",
-"force": true
-},
-{
-"text": "south",
-"voice": "man",
-"force": true
-},
-{
-"text": "month",
 "voice": "man",
 "force": true
 },
@@ -2323,22 +6448,12 @@
 "force": true
 },
 {
-"text": "quite",
-"voice": "man",
-"force": true
-},
-{
 "text": "I ate the whole cake.",
 "voice": "man",
 "force": true
 },
 {
 "text": "She was ill for the whole week.",
-"voice": "man",
-"force": true
-},
-{
-"text": "sound",
 "voice": "man",
 "force": true
 },
@@ -2353,27 +6468,12 @@
 "force": true
 },
 {
-"text": "include",
-"voice": "man",
-"force": true
-},
-{
 "text": "Does the price include food?",
 "voice": "man",
 "force": true
 },
 {
-"text": "fight",
-"voice": "man",
-"force": true
-},
-{
 "text": "Do not fight.",
-"voice": "man",
-"force": true
-},
-{
-"text": "blood",
 "voice": "man",
 "force": true
 },
@@ -2388,17 +6488,7 @@
 "force": true
 },
 {
-"text": "west",
-"voice": "man",
-"force": true
-},
-{
 "text": "The sun goes down in the west.",
-"voice": "man",
-"force": true
-},
-{
-"text": "trade",
 "voice": "man",
 "force": true
 },
@@ -2418,17 +6508,7 @@
 "force": true
 },
 {
-"text": "dead",
-"voice": "man",
-"force": true
-},
-{
 "text": "The bird is dead.",
-"voice": "man",
-"force": true
-},
-{
-"text": "thought",
 "voice": "man",
 "force": true
 },
@@ -2443,22 +6523,7 @@
 "force": true
 },
 {
-"text": "drop",
-"voice": "man",
-"force": true
-},
-{
-"text": "leg",
-"voice": "man",
-"force": true
-},
-{
 "text": "He broke his leg.",
-"voice": "man",
-"force": true
-},
-{
-"text": "support",
 "voice": "man",
 "force": true
 },
@@ -2468,37 +6533,12 @@
 "force": true
 },
 {
-"text": "teach",
-"voice": "man",
-"force": true
-},
-{
-"text": "north",
-"voice": "man",
-"force": true
-},
-{
-"text": "seat",
-"voice": "man",
-"force": true
-},
-{
 "text": "Please take a seat.",
 "voice": "man",
 "force": true
 },
 {
-"text": "dark",
-"voice": "man",
-"force": true
-},
-{
 "text": "It is dark at night.",
-"voice": "man",
-"force": true
-},
-{
-"text": "shape",
 "voice": "man",
 "force": true
 },
@@ -2509,21 +6549,6 @@
 },
 {
 "text": "A ball has a round shape.",
-"voice": "man",
-"force": true
-},
-{
-"text": "next",
-"voice": "man",
-"force": true
-},
-{
-"text": "almost",
-"voice": "man",
-"force": true
-},
-{
-"text": "thank",
 "voice": "man",
 "force": true
 },
@@ -2543,16 +6568,6 @@
 "force": true
 },
 {
-"text": "sad",
-"voice": "man",
-"force": true
-},
-{
-"text": "mouth",
-"voice": "man",
-"force": true
-},
-{
 "text": "Open your mouth.",
 "voice": "man",
 "force": true
@@ -2564,11 +6579,6 @@
 },
 {
 "text": "The owner of the shop is my friend.",
-"voice": "man",
-"force": true
-},
-{
-"text": "hang",
 "voice": "man",
 "force": true
 },
@@ -2588,17 +6598,7 @@
 "force": true
 },
 {
-"text": "song",
-"voice": "man",
-"force": true
-},
-{
 "text": "My mother likes this song best.",
-"voice": "man",
-"force": true
-},
-{
-"text": "expert",
 "voice": "man",
 "force": true
 },
@@ -2608,22 +6608,7 @@
 "force": true
 },
 {
-"text": "shake",
-"voice": "man",
-"force": true
-},
-{
 "text": "Shake my hand.",
-"voice": "man",
-"force": true
-},
-{
-"text": "touch",
-"voice": "man",
-"force": true
-},
-{
-"text": "lift",
 "voice": "man",
 "force": true
 },
@@ -2633,22 +6618,7 @@
 "force": true
 },
 {
-"text": "rich",
-"voice": "man",
-"force": true
-},
-{
 "text": "They became rich.",
-"voice": "man",
-"force": true
-},
-{
-"text": "against",
-"voice": "man",
-"force": true
-},
-{
-"text": "reach",
 "voice": "man",
 "force": true
 },
@@ -2663,22 +6633,12 @@
 "force": true
 },
 {
-"text": "shelf",
-"voice": "man",
-"force": true
-},
-{
 "text": "The books are on the shelf.",
 "voice": "man",
 "force": true
 },
 {
 "text": "Put the cups on the top shelf.",
-"voice": "man",
-"force": true
-},
-{
-"text": "bread",
 "voice": "man",
 "force": true
 },
@@ -2693,27 +6653,12 @@
 "force": true
 },
 {
-"text": "damage",
-"voice": "man",
-"force": true
-},
-{
 "text": "The rain did a lot of damage.",
 "voice": "man",
 "force": true
 },
 {
-"text": "soft",
-"voice": "man",
-"force": true
-},
-{
 "text": "The bed is soft.",
-"voice": "man",
-"force": true
-},
-{
-"text": "hard",
 "voice": "man",
 "force": true
 },
@@ -2724,16 +6669,6 @@
 },
 {
 "text": "The test was hard.",
-"voice": "man",
-"force": true
-},
-{
-"text": "ask",
-"voice": "man",
-"force": true
-},
-{
-"text": "test",
 "voice": "man",
 "force": true
 },
@@ -2763,17 +6698,7 @@
 "force": true
 },
 {
-"text": "weight",
-"voice": "man",
-"force": true
-},
-{
 "text": "What is your weight?",
-"voice": "man",
-"force": true
-},
-{
-"text": "cloth",
 "voice": "man",
 "force": true
 },
@@ -2783,17 +6708,7 @@
 "force": true
 },
 {
-"text": "knife",
-"voice": "man",
-"force": true
-},
-{
 "text": "The knife is sharp.",
-"voice": "man",
-"force": true
-},
-{
-"text": "gold",
 "voice": "man",
 "force": true
 },
@@ -2803,17 +6718,7 @@
 "force": true
 },
 {
-"text": "wet",
-"voice": "man",
-"force": true
-},
-{
 "text": "My shirt is wet.",
-"voice": "man",
-"force": true
-},
-{
-"text": "cook",
 "voice": "man",
 "force": true
 },
@@ -2828,22 +6733,7 @@
 "force": true
 },
 {
-"text": "leaf",
-"voice": "man",
-"force": true
-},
-{
-"text": "liquid",
-"voice": "man",
-"force": true
-},
-{
 "text": "Water is a liquid.",
-"voice": "man",
-"force": true
-},
-{
-"text": "smooth",
 "voice": "man",
 "force": true
 },
@@ -2858,27 +6748,7 @@
 "force": true
 },
 {
-"text": "boat",
-"voice": "man",
-"force": true
-},
-{
 "text": "We went out in a boat.",
-"voice": "man",
-"force": true
-},
-{
-"text": "cloud",
-"voice": "man",
-"force": true
-},
-{
-"text": "bend",
-"voice": "man",
-"force": true
-},
-{
-"text": "egg",
 "voice": "man",
 "force": true
 },
@@ -2893,22 +6763,7 @@
 "force": true
 },
 {
-"text": "send",
-"voice": "man",
-"force": true
-},
-{
-"text": "birth",
-"voice": "man",
-"force": true
-},
-{
 "text": "What is your date of birth?",
-"voice": "man",
-"force": true
-},
-{
-"text": "roof",
 "voice": "man",
 "force": true
 },
@@ -2923,27 +6778,12 @@
 "force": true
 },
 {
-"text": "building",
-"voice": "man",
-"force": true
-},
-{
 "text": "This is an old building.",
 "voice": "man",
 "force": true
 },
 {
-"text": "internet",
-"voice": "man",
-"force": true
-},
-{
 "text": "I found it on the internet.",
-"voice": "man",
-"force": true
-},
-{
-"text": "ship",
 "voice": "man",
 "force": true
 },
@@ -2958,22 +6798,12 @@
 "force": true
 },
 {
-"text": "outside",
-"voice": "man",
-"force": true
-},
-{
 "text": "Let us play outside.",
 "voice": "man",
 "force": true
 },
 {
 "text": "The outside of the house is white.",
-"voice": "man",
-"force": true
-},
-{
-"text": "shop",
 "voice": "man",
 "force": true
 },
@@ -2993,22 +6823,12 @@
 "force": true
 },
 {
-"text": "edge",
-"voice": "man",
-"force": true
-},
-{
 "text": "Do not stand near the edge.",
 "voice": "man",
 "force": true
 },
 {
 "text": "He sat on the edge of the bed.",
-"voice": "man",
-"force": true
-},
-{
-"text": "fat",
 "voice": "man",
 "force": true
 },
@@ -3023,22 +6843,12 @@
 "force": true
 },
 {
-"text": "side",
-"voice": "man",
-"force": true
-},
-{
 "text": "He sat at my side.",
 "voice": "man",
 "force": true
 },
 {
 "text": "He woke up in the middle of the night.",
-"voice": "man",
-"force": true
-},
-{
-"text": "seed",
 "voice": "man",
 "force": true
 },
@@ -3053,17 +6863,7 @@
 "force": true
 },
 {
-"text": "insect",
-"voice": "man",
-"force": true
-},
-{
 "text": "A fly is an insect.",
-"voice": "man",
-"force": true
-},
-{
-"text": "among",
 "voice": "man",
 "force": true
 },
@@ -3078,22 +6878,12 @@
 "force": true
 },
 {
-"text": "wide",
-"voice": "man",
-"force": true
-},
-{
 "text": "The river is very wide.",
 "voice": "man",
 "force": true
 },
 {
 "text": "This road is wide.",
-"voice": "man",
-"force": true
-},
-{
-"text": "street",
 "voice": "man",
 "force": true
 },
@@ -3108,27 +6898,12 @@
 "force": true
 },
 {
-"text": "laugh",
-"voice": "man",
-"force": true
-},
-{
 "text": "The children are laughing.",
 "voice": "man",
 "force": true
 },
 {
-"text": "loud",
-"voice": "man",
-"force": true
-},
-{
 "text": "The music is too loud.",
-"voice": "man",
-"force": true
-},
-{
-"text": "neck",
 "voice": "man",
 "force": true
 },
@@ -3143,11 +6918,6 @@
 "force": true
 },
 {
-"text": "orange",
-"voice": "man",
-"force": true
-},
-{
 "text": "Her dress is orange.",
 "voice": "man",
 "force": true
@@ -3158,17 +6928,7 @@
 "force": true
 },
 {
-"text": "shut",
-"voice": "man",
-"force": true
-},
-{
 "text": "The shop is shut.",
-"voice": "man",
-"force": true
-},
-{
-"text": "sort",
 "voice": "man",
 "force": true
 },
@@ -3183,17 +6943,7 @@
 "force": true
 },
 {
-"text": "type",
-"voice": "man",
-"force": true
-},
-{
 "text": "What type of car is it?",
-"voice": "man",
-"force": true
-},
-{
-"text": "kind",
 "voice": "man",
 "force": true
 },
@@ -3208,11 +6958,6 @@
 "force": true
 },
 {
-"text": "quiet",
-"voice": "man",
-"force": true
-},
-{
 "text": "Please be quiet.",
 "voice": "man",
 "force": true
@@ -3223,17 +6968,7 @@
 "force": true
 },
 {
-"text": "strange",
-"voice": "man",
-"force": true
-},
-{
 "text": "It is strange that he is late.",
-"voice": "man",
-"force": true
-},
-{
-"text": "such",
 "voice": "man",
 "force": true
 },
@@ -3258,11 +6993,6 @@
 "force": true
 },
 {
-"text": "wrong",
-"voice": "man",
-"force": true
-},
-{
 "text": "Your answer is wrong.",
 "voice": "man",
 "force": true
@@ -3278,11 +7008,6 @@
 "force": true
 },
 {
-"text": "percent",
-"voice": "man",
-"force": true
-},
-{
 "text": "Prices went up by five percent.",
 "voice": "man",
 "force": true
@@ -3293,17 +7018,7 @@
 "force": true
 },
 {
-"text": "rest",
-"voice": "man",
-"force": true
-},
-{
 "text": "You need some rest.",
-"voice": "man",
-"force": true
-},
-{
-"text": "land",
 "voice": "man",
 "force": true
 },
@@ -3318,37 +7033,12 @@
 "force": true
 },
 {
-"text": "front",
-"voice": "man",
-"force": true
-},
-{
-"text": "act",
-"voice": "man",
-"force": true
-},
-{
-"text": "wind",
-"voice": "man",
-"force": true
-},
-{
 "text": "Blow on your food if it is hot.",
 "voice": "man",
 "force": true
 },
 {
 "text": "The wind is blowing.",
-"voice": "man",
-"force": true
-},
-{
-"text": "development",
-"voice": "man",
-"force": true
-},
-{
-"text": "decide",
 "voice": "man",
 "force": true
 },
@@ -3368,17 +7058,7 @@
 "force": true
 },
 {
-"text": "growth",
-"voice": "man",
-"force": true
-},
-{
 "text": "The growth of the city was quick.",
-"voice": "man",
-"force": true
-},
-{
-"text": "agreement",
 "voice": "man",
 "force": true
 },
@@ -3389,11 +7069,6 @@
 },
 {
 "text": "We are all in agreement.",
-"voice": "man",
-"force": true
-},
-{
-"text": "sharp",
 "voice": "man",
 "force": true
 },
@@ -3413,17 +7088,7 @@
 "force": true
 },
 {
-"text": "island",
-"voice": "man",
-"force": true
-},
-{
 "text": "They live on an island.",
-"voice": "man",
-"force": true
-},
-{
-"text": "heat",
 "voice": "man",
 "force": true
 },
@@ -3433,17 +7098,7 @@
 "force": true
 },
 {
-"text": "pipe",
-"voice": "man",
-"force": true
-},
-{
 "text": "The water pipe burst.",
-"voice": "man",
-"force": true
-},
-{
-"text": "thick",
 "voice": "man",
 "force": true
 },
@@ -3454,11 +7109,6 @@
 },
 {
 "text": "The walls are thick.",
-"voice": "man",
-"force": true
-},
-{
-"text": "ticket",
 "voice": "man",
 "force": true
 },
@@ -3478,22 +7128,12 @@
 "force": true
 },
 {
-"text": "awake",
-"voice": "man",
-"force": true
-},
-{
 "text": "Are you awake?",
 "voice": "man",
 "force": true
 },
 {
 "text": "The baby was awake all night.",
-"voice": "man",
-"force": true
-},
-{
-"text": "bath",
 "voice": "man",
 "force": true
 },
@@ -3513,11 +7153,6 @@
 "force": true
 },
 {
-"text": "pot",
-"voice": "man",
-"force": true
-},
-{
 "text": "Cook the rice in a pot.",
 "voice": "man",
 "force": true
@@ -3528,27 +7163,12 @@
 "force": true
 },
 {
-"text": "ring",
-"voice": "man",
-"force": true
-},
-{
 "text": "She has a gold ring.",
 "voice": "man",
 "force": true
 },
 {
 "text": "The phone is ringing.",
-"voice": "man",
-"force": true
-},
-{
-"text": "breath",
-"voice": "man",
-"force": true
-},
-{
-"text": "burst",
 "voice": "man",
 "force": true
 },
@@ -3568,27 +7188,12 @@
 "force": true
 },
 {
-"text": "effort",
-"voice": "man",
-"force": true
-},
-{
 "text": "It took a lot of effort.",
 "voice": "man",
 "force": true
 },
 {
-"text": "cheap",
-"voice": "man",
-"force": true
-},
-{
 "text": "This shirt is cheap.",
-"voice": "man",
-"force": true
-},
-{
-"text": "clock",
 "voice": "man",
 "force": true
 },
@@ -3613,37 +7218,12 @@
 "force": true
 },
 {
-"text": "watch",
-"voice": "man",
-"force": true
-},
-{
-"text": "difficult",
-"voice": "man",
-"force": true
-},
-{
 "text": "This question is difficult.",
 "voice": "man",
 "force": true
 },
 {
-"text": "government",
-"voice": "man",
-"force": true
-},
-{
 "text": "He works for the government.",
-"voice": "man",
-"force": true
-},
-{
-"text": "lead",
-"voice": "man",
-"force": true
-},
-{
-"text": "strong",
 "voice": "man",
 "force": true
 },
@@ -3654,11 +7234,6 @@
 },
 {
 "text": "There is a strong wind.",
-"voice": "man",
-"force": true
-},
-{
-"text": "manage",
 "voice": "man",
 "force": true
 },
@@ -3678,22 +7253,12 @@
 "force": true
 },
 {
-"text": "attempt",
-"voice": "man",
-"force": true
-},
-{
 "text": "It was his first attempt.",
 "voice": "man",
 "force": true
 },
 {
 "text": "She is the manager of the shop.",
-"voice": "man",
-"force": true
-},
-{
-"text": "report",
 "voice": "man",
 "force": true
 },
@@ -3718,11 +7283,6 @@
 "force": true
 },
 {
-"text": "wife",
-"voice": "man",
-"force": true
-},
-{
 "text": "This is my wife.",
 "voice": "man",
 "force": true
@@ -3733,27 +7293,12 @@
 "force": true
 },
 {
-"text": "debt",
-"voice": "man",
-"force": true
-},
-{
 "text": "He has a lot of debt.",
 "voice": "man",
 "force": true
 },
 {
-"text": "note",
-"voice": "man",
-"force": true
-},
-{
 "text": "She played a high note.",
-"voice": "man",
-"force": true
-},
-{
-"text": "unit",
 "voice": "man",
 "force": true
 },
@@ -3768,11 +7313,6 @@
 "force": true
 },
 {
-"text": "second",
-"voice": "man",
-"force": true
-},
-{
 "text": "This is my second visit.",
 "voice": "man",
 "force": true
@@ -3783,17 +7323,7 @@
 "force": true
 },
 {
-"text": "half",
-"voice": "man",
-"force": true
-},
-{
 "text": "Cut the apple in half.",
-"voice": "man",
-"force": true
-},
-{
-"text": "smoke",
 "voice": "man",
 "force": true
 },
@@ -3803,17 +7333,7 @@
 "force": true
 },
 {
-"text": "hook",
-"voice": "man",
-"force": true
-},
-{
 "text": "He caught a fish with a hook.",
-"voice": "man",
-"force": true
-},
-{
-"text": "flat",
 "voice": "man",
 "force": true
 },
@@ -3823,32 +7343,7 @@
 "force": true
 },
 {
-"text": "wound",
-"voice": "man",
-"force": true
-},
-{
 "text": "The wound is not deep.",
-"voice": "man",
-"force": true
-},
-{
-"text": "kick",
-"voice": "man",
-"force": true
-},
-{
-"text": "limit",
-"voice": "man",
-"force": true
-},
-{
-"text": "range",
-"voice": "man",
-"force": true
-},
-{
-"text": "card",
 "voice": "man",
 "force": true
 },
@@ -3873,32 +7368,12 @@
 "force": true
 },
 {
-"text": "feeling",
-"voice": "man",
-"force": true
-},
-{
 "text": "I have a feeling that something is wrong.",
 "voice": "man",
 "force": true
 },
 {
-"text": "attack",
-"voice": "man",
-"force": true
-},
-{
-"text": "meat",
-"voice": "man",
-"force": true
-},
-{
 "text": "I do not eat meat.",
-"voice": "man",
-"force": true
-},
-{
-"text": "interest",
 "voice": "man",
 "force": true
 },
@@ -3913,27 +7388,12 @@
 "force": true
 },
 {
-"text": "date",
-"voice": "man",
-"force": true
-},
-{
 "text": "They went out on a date.",
 "voice": "man",
 "force": true
 },
 {
-"text": "doubt",
-"voice": "man",
-"force": true
-},
-{
 "text": "There is no doubt that he is right.",
-"voice": "man",
-"force": true
-},
-{
-"text": "safe",
 "voice": "man",
 "force": true
 },
@@ -3953,17 +7413,7 @@
 "force": true
 },
 {
-"text": "check",
-"voice": "man",
-"force": true
-},
-{
 "text": "Please check the door is locked.",
-"voice": "man",
-"force": true
-},
-{
-"text": "respect",
 "voice": "man",
 "force": true
 },
@@ -3974,11 +7424,6 @@
 },
 {
 "text": "Consider the cost.",
-"voice": "man",
-"force": true
-},
-{
-"text": "moment",
 "voice": "man",
 "force": true
 },
@@ -4008,11 +7453,6 @@
 "force": true
 },
 {
-"text": "yet",
-"voice": "man",
-"force": true
-},
-{
 "text": "Have you eaten yet?",
 "voice": "man",
 "force": true
@@ -4023,27 +7463,12 @@
 "force": true
 },
 {
-"text": "wait",
-"voice": "man",
-"force": true
-},
-{
 "text": "The class is two hours long.",
 "voice": "man",
 "force": true
 },
 {
-"text": "state",
-"voice": "man",
-"force": true
-},
-{
 "text": "The house was in a bad state.",
-"voice": "man",
-"force": true
-},
-{
-"text": "morning",
 "voice": "man",
 "force": true
 },
@@ -4058,17 +7483,7 @@
 "force": true
 },
 {
-"text": "minute",
-"voice": "man",
-"force": true
-},
-{
 "text": "Wait a minute.",
-"voice": "man",
-"force": true
-},
-{
-"text": "health",
 "voice": "man",
 "force": true
 },
@@ -4088,11 +7503,6 @@
 "force": true
 },
 {
-"text": "market",
-"voice": "man",
-"force": true
-},
-{
 "text": "The market is open every morning.",
 "voice": "man",
 "force": true
@@ -4104,11 +7514,6 @@
 },
 {
 "text": "There is a relation between food and health.",
-"voice": "man",
-"force": true
-},
-{
-"text": "east",
 "voice": "man",
 "force": true
 },
@@ -4128,17 +7533,7 @@
 "force": true
 },
 {
-"text": "lock",
-"voice": "man",
-"force": true
-},
-{
 "text": "Turn the key in the lock.",
-"voice": "man",
-"force": true
-},
-{
-"text": "belief",
 "voice": "man",
 "force": true
 },
@@ -4163,22 +7558,7 @@
 "force": true
 },
 {
-"text": "punishment",
-"voice": "man",
-"force": true
-},
-{
-"text": "rat",
-"voice": "man",
-"force": true
-},
-{
 "text": "There are many religions in the world.",
-"voice": "man",
-"force": true
-},
-{
-"text": "rough",
 "voice": "man",
 "force": true
 },
@@ -4193,17 +7573,7 @@
 "force": true
 },
 {
-"text": "salt",
-"voice": "man",
-"force": true
-},
-{
 "text": "The sea has salt in it.",
-"voice": "man",
-"force": true
-},
-{
-"text": "church",
 "voice": "man",
 "force": true
 },
@@ -4213,17 +7583,7 @@
 "force": true
 },
 {
-"text": "sand",
-"voice": "man",
-"force": true
-},
-{
 "text": "The children are playing in the sand.",
-"voice": "man",
-"force": true
-},
-{
-"text": "separate",
 "voice": "man",
 "force": true
 },
@@ -4238,27 +7598,12 @@
 "force": true
 },
 {
-"text": "solid",
-"voice": "man",
-"force": true
-},
-{
 "text": "The table is made of solid wood.",
 "voice": "man",
 "force": true
 },
 {
-"text": "stomach",
-"voice": "man",
-"force": true
-},
-{
 "text": "I have a pain in my stomach.",
-"voice": "man",
-"force": true
-},
-{
-"text": "tight",
 "voice": "man",
 "force": true
 },
@@ -4273,17 +7618,7 @@
 "force": true
 },
 {
-"text": "chest",
-"voice": "man",
-"force": true
-},
-{
 "text": "He has a pain in his chest.",
-"voice": "man",
-"force": true
-},
-{
-"text": "tooth",
 "voice": "man",
 "force": true
 },
@@ -4303,22 +7638,12 @@
 "force": true
 },
 {
-"text": "heart",
-"voice": "man",
-"force": true
-},
-{
 "text": "His heart is strong.",
 "voice": "man",
 "force": true
 },
 {
 "text": "She has a kind heart.",
-"voice": "man",
-"force": true
-},
-{
-"text": "taste",
 "voice": "man",
 "force": true
 },
@@ -4333,32 +7658,12 @@
 "force": true
 },
 {
-"text": "twist",
-"voice": "man",
-"force": true
-},
-{
-"text": "band",
-"voice": "man",
-"force": true
-},
-{
 "text": "My brother plays in a band.",
 "voice": "man",
 "force": true
 },
 {
-"text": "wood",
-"voice": "man",
-"force": true
-},
-{
 "text": "The table is made of wood.",
-"voice": "man",
-"force": true
-},
-{
-"text": "sweet",
 "voice": "man",
 "force": true
 },
@@ -4373,17 +7678,7 @@
 "force": true
 },
 {
-"text": "board",
-"voice": "man",
-"force": true
-},
-{
 "text": "The teacher wrote on the board.",
-"voice": "man",
-"force": true
-},
-{
-"text": "stick",
 "voice": "man",
 "force": true
 },
@@ -4393,27 +7688,12 @@
 "force": true
 },
 {
-"text": "fruit",
-"voice": "man",
-"force": true
-},
-{
 "text": "Apples and oranges are fruit.",
 "voice": "man",
 "force": true
 },
 {
-"text": "understand",
-"voice": "man",
-"force": true
-},
-{
 "text": "I do not understand.",
-"voice": "man",
-"force": true
-},
-{
-"text": "pick",
 "voice": "man",
 "force": true
 },
@@ -4433,17 +7713,7 @@
 "force": true
 },
 {
-"text": "read",
-"voice": "man",
-"force": true
-},
-{
 "text": "I like to read.",
-"voice": "man",
-"force": true
-},
-{
-"text": "bright",
 "voice": "man",
 "force": true
 },
@@ -4473,11 +7743,6 @@
 "force": true
 },
 {
-"text": "spring",
-"voice": "man",
-"force": true
-},
-{
 "text": "Flowers come out in spring.",
 "voice": "man",
 "force": true
@@ -4488,17 +7753,7 @@
 "force": true
 },
 {
-"text": "research",
-"voice": "man",
-"force": true
-},
-{
 "text": "We need more research.",
-"voice": "man",
-"force": true
-},
-{
-"text": "field",
 "voice": "man",
 "force": true
 },
@@ -4528,17 +7783,7 @@
 "force": true
 },
 {
-"text": "argument",
-"voice": "man",
-"force": true
-},
-{
 "text": "Her argument was strong.",
-"voice": "man",
-"force": true
-},
-{
-"text": "stamp",
 "voice": "man",
 "force": true
 },
@@ -4553,11 +7798,6 @@
 "force": true
 },
 {
-"text": "adjustment",
-"voice": "man",
-"force": true
-},
-{
 "text": "He made an adjustment to the seat.",
 "voice": "man",
 "force": true
@@ -4568,17 +7808,7 @@
 "force": true
 },
 {
-"text": "advertisement",
-"voice": "man",
-"force": true
-},
-{
 "text": "The plan needs the approval of the government.",
-"voice": "man",
-"force": true
-},
-{
-"text": "current",
 "voice": "man",
 "force": true
 },
@@ -4593,27 +7823,12 @@
 "force": true
 },
 {
-"text": "bite",
-"voice": "man",
-"force": true
-},
-{
-"text": "mark",
-"voice": "man",
-"force": true
-},
-{
 "text": "There is a mark on your shirt.",
 "voice": "man",
 "force": true
 },
 {
 "text": "She got a good mark in the test.",
-"voice": "man",
-"force": true
-},
-{
-"text": "paint",
 "voice": "man",
 "force": true
 },
@@ -4633,17 +7848,7 @@
 "force": true
 },
 {
-"text": "boot",
-"voice": "man",
-"force": true
-},
-{
 "text": "My boots are wet.",
-"voice": "man",
-"force": true
-},
-{
-"text": "result",
 "voice": "man",
 "force": true
 },
@@ -4658,17 +7863,7 @@
 "force": true
 },
 {
-"text": "art",
-"voice": "man",
-"force": true
-},
-{
 "text": "She studies art.",
-"voice": "man",
-"force": true
-},
-{
-"text": "branch",
 "voice": "man",
 "force": true
 },
@@ -4703,11 +7898,6 @@
 "force": true
 },
 {
-"text": "stage",
-"voice": "man",
-"force": true
-},
-{
 "text": "The band is on the stage.",
 "voice": "man",
 "force": true
@@ -4728,22 +7918,7 @@
 "force": true
 },
 {
-"text": "chief",
-"voice": "man",
-"force": true
-},
-{
-"text": "student",
-"voice": "man",
-"force": true
-},
-{
 "text": "She is a science student.",
-"voice": "man",
-"force": true
-},
-{
-"text": "comfort",
 "voice": "man",
 "force": true
 },
@@ -4763,22 +7938,12 @@
 "force": true
 },
 {
-"text": "cough",
-"voice": "man",
-"force": true
-},
-{
 "text": "He has a bad cough.",
 "voice": "man",
 "force": true
 },
 {
 "text": "She coughed all night.",
-"voice": "man",
-"force": true
-},
-{
-"text": "crack",
 "voice": "man",
 "force": true
 },
@@ -4793,22 +7958,12 @@
 "force": true
 },
 {
-"text": "credit",
-"voice": "man",
-"force": true
-},
-{
 "text": "We bought the car on credit.",
 "voice": "man",
 "force": true
 },
 {
 "text": "She is a dear friend.",
-"voice": "man",
-"force": true
-},
-{
-"text": "dependent",
 "voice": "man",
 "force": true
 },
@@ -4823,17 +7978,7 @@
 "force": true
 },
 {
-"text": "dust",
-"voice": "man",
-"force": true
-},
-{
 "text": "The car made a cloud of dust.",
-"voice": "man",
-"force": true
-},
-{
-"text": "exchange",
 "voice": "man",
 "force": true
 },
@@ -4853,11 +7998,6 @@
 "force": true
 },
 {
-"text": "flag",
-"voice": "man",
-"force": true
-},
-{
 "text": "The flag is red and white.",
 "voice": "man",
 "force": true
@@ -4868,22 +8008,7 @@
 "force": true
 },
 {
-"text": "flight",
-"voice": "man",
-"force": true
-},
-{
-"text": "fold",
-"voice": "man",
-"force": true
-},
-{
 "text": "Fold the paper in half.",
-"voice": "man",
-"force": true
-},
-{
-"text": "fork",
 "voice": "man",
 "force": true
 },
@@ -4894,21 +8019,6 @@
 },
 {
 "text": "The window frame is made of wood.",
-"voice": "man",
-"force": true
-},
-{
-"text": "frequent",
-"voice": "man",
-"force": true
-},
-{
-"text": "guide",
-"voice": "man",
-"force": true
-},
-{
-"text": "hate",
 "voice": "man",
 "force": true
 },
@@ -4928,11 +8038,6 @@
 "force": true
 },
 {
-"text": "instrument",
-"voice": "man",
-"force": true
-},
-{
 "text": "Can you play an instrument?",
 "voice": "man",
 "force": true
@@ -4943,32 +8048,12 @@
 "force": true
 },
 {
-"text": "judge",
-"voice": "man",
-"force": true
-},
-{
-"text": "jump",
-"voice": "man",
-"force": true
-},
-{
 "text": "He has a leather bag.",
 "voice": "man",
 "force": true
 },
 {
-"text": "lip",
-"voice": "man",
-"force": true
-},
-{
 "text": "She has a cut on her lip.",
-"voice": "man",
-"force": true
-},
-{
-"text": "map",
 "voice": "man",
 "force": true
 },
@@ -4984,11 +8069,6 @@
 },
 {
 "text": "A mass of people came into the street.",
-"voice": "man",
-"force": true
-},
-{
-"text": "match",
 "voice": "man",
 "force": true
 },
@@ -5023,22 +8103,12 @@
 "force": true
 },
 {
-"text": "net",
-"voice": "man",
-"force": true
-},
-{
 "text": "They caught fish in a net.",
 "voice": "man",
 "force": true
 },
 {
 "text": "The ball went into the net.",
-"voice": "man",
-"force": true
-},
-{
-"text": "opposite",
 "voice": "man",
 "force": true
 },
@@ -5053,17 +8123,7 @@
 "force": true
 },
 {
-"text": "payment",
-"voice": "man",
-"force": true
-},
-{
 "text": "I want some peace and quiet.",
-"voice": "man",
-"force": true
-},
-{
-"text": "pig",
 "voice": "man",
 "force": true
 },
@@ -5073,17 +8133,7 @@
 "force": true
 },
 {
-"text": "plate",
-"voice": "man",
-"force": true
-},
-{
 "text": "Put the food on a plate.",
-"voice": "man",
-"force": true
-},
-{
-"text": "pocket",
 "voice": "man",
 "force": true
 },
@@ -5098,16 +8148,6 @@
 "force": true
 },
 {
-"text": "print",
-"voice": "man",
-"force": true
-},
-{
-"text": "profit",
-"voice": "man",
-"force": true
-},
-{
 "text": "The company made a profit.",
 "voice": "man",
 "force": true
@@ -5118,17 +8158,7 @@
 "force": true
 },
 {
-"text": "protest",
-"voice": "man",
-"force": true
-},
-{
 "text": "There was a protest in the street.",
-"voice": "man",
-"force": true
-},
-{
-"text": "pump",
 "voice": "man",
 "force": true
 },
@@ -5138,17 +8168,7 @@
 "force": true
 },
 {
-"text": "regret",
-"voice": "man",
-"force": true
-},
-{
 "text": "I regret what I said.",
-"voice": "man",
-"force": true
-},
-{
-"text": "request",
 "voice": "man",
 "force": true
 },
@@ -5163,11 +8183,6 @@
 "force": true
 },
 {
-"text": "reward",
-"voice": "man",
-"force": true
-},
-{
 "text": "They gave a reward to the person who found the dog.",
 "voice": "man",
 "force": true
@@ -5178,22 +8193,12 @@
 "force": true
 },
 {
-"text": "root",
-"voice": "man",
-"force": true
-},
-{
 "text": "The root of the tree is deep.",
 "voice": "man",
 "force": true
 },
 {
 "text": "We sailed to the island.",
-"voice": "man",
-"force": true
-},
-{
-"text": "secret",
 "voice": "man",
 "force": true
 },
@@ -5213,22 +8218,7 @@
 "force": true
 },
 {
-"text": "self",
-"voice": "man",
-"force": true
-},
-{
 "text": "She has a strong sense of self.",
-"voice": "man",
-"force": true
-},
-{
-"text": "servant",
-"voice": "man",
-"force": true
-},
-{
-"text": "shade",
 "voice": "man",
 "force": true
 },
@@ -5238,17 +8228,7 @@
 "force": true
 },
 {
-"text": "sheep",
-"voice": "man",
-"force": true
-},
-{
 "text": "The sheep are in the field.",
-"voice": "man",
-"force": true
-},
-{
-"text": "shock",
 "voice": "man",
 "force": true
 },
@@ -5268,27 +8248,12 @@
 "force": true
 },
 {
-"text": "skirt",
-"voice": "man",
-"force": true
-},
-{
 "text": "She has a long skirt.",
 "voice": "man",
 "force": true
 },
 {
 "text": "This skirt is too short.",
-"voice": "man",
-"force": true
-},
-{
-"text": "slip",
-"voice": "man",
-"force": true
-},
-{
-"text": "slope",
 "voice": "man",
 "force": true
 },
@@ -5303,22 +8268,7 @@
 "force": true
 },
 {
-"text": "soap",
-"voice": "man",
-"force": true
-},
-{
 "text": "Wash your hands with soap.",
-"voice": "man",
-"force": true
-},
-{
-"text": "straight",
-"voice": "man",
-"force": true
-},
-{
-"text": "stretch",
 "voice": "man",
 "force": true
 },
@@ -5333,17 +8283,7 @@
 "force": true
 },
 {
-"text": "thousand",
-"voice": "man",
-"force": true
-},
-{
 "text": "The city is a thousand years old.",
-"voice": "man",
-"force": true
-},
-{
-"text": "throat",
 "voice": "man",
 "force": true
 },
@@ -5358,37 +8298,12 @@
 "force": true
 },
 {
-"text": "transport",
-"voice": "man",
-"force": true
-},
-{
 "text": "They transport food by ship.",
 "voice": "man",
 "force": true
 },
 {
-"text": "trick",
-"voice": "man",
-"force": true
-},
-{
-"text": "violent",
-"voice": "man",
-"force": true
-},
-{
 "text": "There was a violent wind.",
-"voice": "man",
-"force": true
-},
-{
-"text": "waste",
-"voice": "man",
-"force": true
-},
-{
-"text": "wing",
 "voice": "man",
 "force": true
 },

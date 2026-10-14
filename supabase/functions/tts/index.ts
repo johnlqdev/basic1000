@@ -181,11 +181,18 @@ async function upload(path: string, bytes: Uint8Array, ctype = "audio/mpeg") {
   if (!r.ok) throw new Error(`upload ${r.status}: ${await r.text()}`);
 }
 
+// What the voice reads for a clip. A single word is read as "Make." (capital, full stop): read bare and
+// lower-case, Qwen often swallows a final consonant ("make" came out as "may"). The clip keeps the
+// name of the plain text, so the site finds it as before.
+function spoken(text: string) {
+  return /^[A-Za-z][A-Za-z'-]*$/.test(text) ? text[0].toUpperCase() + text.slice(1) + "." : text;
+}
+
 async function speak(text: string, voiceId: string, podId: string | null, speed = SPEED, force = false) {
   const path = await clipPath(voiceId, text);
   if (!force && await cached(path)) return { url: publicUrl(path), cached: true };
   if (!podId) return { error: "voice server is off", status: 503 };
-  const bytes = await synth(podId, voiceId, text, speed);
+  const bytes = await synth(podId, voiceId, spoken(text), speed);
   await upload(path, bytes);
   if (VOICE_SPECS[voiceId]?.pod === "lab") await saveRef(podId, VOICE_SPECS[voiceId]).catch(() => {});
   return { url: publicUrl(path), cached: false, bytes: bytes.length };
@@ -287,7 +294,7 @@ Deno.serve(async (req) => {
           try {
             const r = await fetch(podUrl(podId, "lab") + "/tts_batch", {
               method: "POST", headers: { "content-type": "application/json" },
-              body: JSON.stringify({ ...labBody(spec), texts: chunk.map((c) => c.text) }),
+              body: JSON.stringify({ ...labBody(spec), texts: chunk.map((c) => spoken(c.text)) }),
               signal: AbortSignal.timeout(140000),
             });
             if (!r.ok) throw new Error(`lab ${r.status}: ${(await r.text()).slice(0, 200)}`);

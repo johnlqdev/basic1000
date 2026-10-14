@@ -2,6 +2,7006 @@
 "action": "slow",
 "items": [
 {
+"text": "I",
+"kind": "word",
+"voice": "man",
+"ipa": "a\u026a",
+"force": true
+},
+{
+"text": "am",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00e6m",
+"force": true
+},
+{
+"text": "a",
+"kind": "word",
+"voice": "man",
+"ipa": "e\u026a",
+"force": true
+},
+{
+"text": "man",
+"kind": "word",
+"voice": "man",
+"ipa": "m\u00e6n",
+"force": true
+},
+{
+"text": "woman",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8w\u028am\u0259n",
+"force": true
+},
+{
+"text": "you",
+"kind": "word",
+"voice": "man",
+"ipa": "ju",
+"force": true
+},
+{
+"text": "are",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0251r",
+"force": true
+},
+{
+"text": "he",
+"kind": "word",
+"voice": "man",
+"ipa": "hi",
+"force": true
+},
+{
+"text": "she",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283i",
+"force": true
+},
+{
+"text": "is",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026az",
+"force": true
+},
+{
+"text": "boy",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u0254\u026a",
+"force": true
+},
+{
+"text": "girl",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261\u025dl",
+"force": true
+},
+{
+"text": "child",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0283a\u026ald",
+"force": true
+},
+{
+"text": "this",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00f0\u026as",
+"force": true
+},
+{
+"text": "that",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00f0\u00e6t",
+"force": true
+},
+{
+"text": "house",
+"kind": "word",
+"voice": "man",
+"ipa": "ha\u028as",
+"force": true
+},
+{
+"text": "dog",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u0251\u0261",
+"force": true
+},
+{
+"text": "cat",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u00e6t",
+"force": true
+},
+{
+"text": "it",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026at",
+"force": true
+},
+{
+"text": "big",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u026a\u0261",
+"force": true
+},
+{
+"text": "the",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00f0i",
+"force": true
+},
+{
+"text": "small",
+"kind": "word",
+"voice": "man",
+"ipa": "sm\u0254l",
+"force": true
+},
+{
+"text": "we",
+"kind": "word",
+"voice": "man",
+"ipa": "wi",
+"force": true
+},
+{
+"text": "they",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00f0e\u026a",
+"force": true
+},
+{
+"text": "and",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00e6nd",
+"force": true
+},
+{
+"text": "have",
+"kind": "word",
+"voice": "man",
+"ipa": "h\u00e6v",
+"force": true
+},
+{
+"text": "not",
+"kind": "word",
+"voice": "man",
+"ipa": "n\u0251t",
+"force": true
+},
+{
+"text": "yes",
+"kind": "word",
+"voice": "man",
+"ipa": "j\u025bs",
+"force": true
+},
+{
+"text": "no",
+"kind": "word",
+"voice": "man",
+"ipa": "no\u028a",
+"force": true
+},
+{
+"text": "what",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u028ct",
+"force": true
+},
+{
+"text": "to",
+"kind": "word",
+"voice": "man",
+"ipa": "tu",
+"force": true
+},
+{
+"text": "give",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261\u026av",
+"force": true
+},
+{
+"text": "book",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u028ak",
+"force": true
+},
+{
+"text": "red",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u025bd",
+"force": true
+},
+{
+"text": "apple",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u00e6p\u0259l",
+"force": true
+},
+{
+"text": "of",
+"kind": "word",
+"voice": "man",
+"ipa": "\u028cv",
+"force": true
+},
+{
+"text": "in",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026an",
+"force": true
+},
+{
+"text": "thing",
+"kind": "word",
+"voice": "man",
+"ipa": "\u03b8\u026a\u014b",
+"force": true
+},
+{
+"text": "open",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8o\u028ap\u0259n",
+"force": true
+},
+{
+"text": "door",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u0254r",
+"force": true
+},
+{
+"text": "or",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0254r",
+"force": true
+},
+{
+"text": "do",
+"kind": "word",
+"voice": "man",
+"ipa": "du",
+"force": true
+},
+{
+"text": "water",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8w\u0254t\u025a",
+"force": true
+},
+{
+"text": "hot",
+"kind": "word",
+"voice": "man",
+"ipa": "h\u0251t",
+"force": true
+},
+{
+"text": "cold",
+"kind": "word",
+"voice": "man",
+"ipa": "ko\u028ald",
+"force": true
+},
+{
+"text": "some",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u028cm",
+"force": true
+},
+{
+"text": "also",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u0254lso\u028a",
+"force": true
+},
+{
+"text": "want",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u0251nt",
+"force": true
+},
+{
+"text": "milk",
+"kind": "word",
+"voice": "man",
+"ipa": "m\u026alk",
+"force": true
+},
+{
+"text": "cow",
+"kind": "word",
+"voice": "man",
+"ipa": "ka\u028a",
+"force": true
+},
+{
+"text": "be",
+"kind": "word",
+"voice": "man",
+"ipa": "bi",
+"force": true
+},
+{
+"text": "good",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261\u028ad",
+"force": true
+},
+{
+"text": "down",
+"kind": "word",
+"voice": "man",
+"ipa": "da\u028an",
+"force": true
+},
+{
+"text": "sit",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u026at",
+"force": true
+},
+{
+"text": "please",
+"kind": "word",
+"voice": "man",
+"ipa": "pliz",
+"force": true
+},
+{
+"text": "on",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0251n",
+"force": true
+},
+{
+"text": "for",
+"kind": "word",
+"voice": "man",
+"ipa": "f\u0254r",
+"force": true
+},
+{
+"text": "put",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u028at",
+"force": true
+},
+{
+"text": "coat",
+"kind": "word",
+"voice": "man",
+"ipa": "ko\u028at",
+"force": true
+},
+{
+"text": "hat",
+"kind": "word",
+"voice": "man",
+"ipa": "h\u00e6t",
+"force": true
+},
+{
+"text": "one",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u028cn",
+"force": true
+},
+{
+"text": "make",
+"kind": "word",
+"voice": "man",
+"ipa": "me\u026ak",
+"force": true
+},
+{
+"text": "brother",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8br\u028c\u00f0\u025a",
+"force": true
+},
+{
+"text": "cake",
+"kind": "word",
+"voice": "man",
+"ipa": "ke\u026ak",
+"force": true
+},
+{
+"text": "tall",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0254l",
+"force": true
+},
+{
+"text": "at",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00e6t",
+"force": true
+},
+{
+"text": "there",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00f0\u025br",
+"force": true
+},
+{
+"text": "look",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u028ak",
+"force": true
+},
+{
+"text": "draw",
+"kind": "word",
+"voice": "man",
+"ipa": "dr\u0254",
+"force": true
+},
+{
+"text": "picture",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8p\u026akt\u0283\u025a",
+"force": true
+},
+{
+"text": "go",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261o\u028a",
+"force": true
+},
+{
+"text": "with",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u026a\u00f0",
+"force": true
+},
+{
+"text": "live",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u026av",
+"force": true
+},
+{
+"text": "parent",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8p\u025br\u0259nt",
+"force": true
+},
+{
+"text": "bed",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u025bd",
+"force": true
+},
+{
+"text": "people",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8pip\u0259l",
+"force": true
+},
+{
+"text": "from",
+"kind": "word",
+"voice": "man",
+"ipa": "fr\u028cm",
+"force": true
+},
+{
+"text": "how",
+"kind": "word",
+"voice": "man",
+"ipa": "ha\u028a",
+"force": true
+},
+{
+"text": "here",
+"kind": "word",
+"voice": "man",
+"ipa": "hir",
+"force": true
+},
+{
+"text": "many",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8m\u025bni",
+"force": true
+},
+{
+"text": "can",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u00e6n",
+"force": true
+},
+{
+"text": "time",
+"kind": "word",
+"voice": "man",
+"ipa": "ta\u026am",
+"force": true
+},
+{
+"text": "come",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u028cm",
+"force": true
+},
+{
+"text": "two",
+"kind": "word",
+"voice": "man",
+"ipa": "tu",
+"force": true
+},
+{
+"text": "swim",
+"kind": "word",
+"voice": "man",
+"ipa": "sw\u026am",
+"force": true
+},
+{
+"text": "work",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u025dk",
+"force": true
+},
+{
+"text": "get",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261\u025bt",
+"force": true
+},
+{
+"text": "like",
+"kind": "word",
+"voice": "man",
+"ipa": "la\u026ak",
+"force": true
+},
+{
+"text": "take",
+"kind": "word",
+"voice": "man",
+"ipa": "te\u026ak",
+"force": true
+},
+{
+"text": "hand",
+"kind": "word",
+"voice": "man",
+"ipa": "h\u00e6nd",
+"force": true
+},
+{
+"text": "by",
+"kind": "word",
+"voice": "man",
+"ipa": "ba\u026a",
+"force": true
+},
+{
+"text": "very",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8v\u025bri",
+"force": true
+},
+{
+"text": "other",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u028c\u00f0\u025a",
+"force": true
+},
+{
+"text": "river",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8r\u026av\u025a",
+"force": true
+},
+{
+"text": "cup",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u028cp",
+"force": true
+},
+{
+"text": "much",
+"kind": "word",
+"voice": "man",
+"ipa": "m\u028ct\u0283",
+"force": true
+},
+{
+"text": "part",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u0251rt",
+"force": true
+},
+{
+"text": "money",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8m\u028cni",
+"force": true
+},
+{
+"text": "cut",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u028ct",
+"force": true
+},
+{
+"text": "finger",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8f\u026a\u014b\u0261\u025a",
+"force": true
+},
+{
+"text": "will",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u026al",
+"force": true
+},
+{
+"text": "use",
+"kind": "word",
+"voice": "man",
+"ipa": "juz",
+"force": true
+},
+{
+"text": "say",
+"kind": "word",
+"voice": "man",
+"ipa": "se\u026a",
+"force": true
+},
+{
+"text": "who",
+"kind": "word",
+"voice": "man",
+"ipa": "hu",
+"force": true
+},
+{
+"text": "phone",
+"kind": "word",
+"voice": "man",
+"ipa": "fo\u028an",
+"force": true
+},
+{
+"text": "when",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u025bn",
+"force": true
+},
+{
+"text": "see",
+"kind": "word",
+"voice": "man",
+"ipa": "si",
+"force": true
+},
+{
+"text": "up",
+"kind": "word",
+"voice": "man",
+"ipa": "\u028cp",
+"force": true
+},
+{
+"text": "stand",
+"kind": "word",
+"voice": "man",
+"ipa": "st\u00e6nd",
+"force": true
+},
+{
+"text": "sea",
+"kind": "word",
+"voice": "man",
+"ipa": "si",
+"force": true
+},
+{
+"text": "all",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0254l",
+"force": true
+},
+{
+"text": "day",
+"kind": "word",
+"voice": "man",
+"ipa": "de\u026a",
+"force": true
+},
+{
+"text": "into",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u026antu",
+"force": true
+},
+{
+"text": "out",
+"kind": "word",
+"voice": "man",
+"ipa": "a\u028at",
+"force": true
+},
+{
+"text": "way",
+"kind": "word",
+"voice": "man",
+"ipa": "we\u026a",
+"force": true
+},
+{
+"text": "as",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00e6z",
+"force": true
+},
+{
+"text": "where",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u025br",
+"force": true
+},
+{
+"text": "but",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u028ct",
+"force": true
+},
+{
+"text": "happy",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8h\u00e6pi",
+"force": true
+},
+{
+"text": "tired",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8ta\u026a\u025ad",
+"force": true
+},
+{
+"text": "which",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u026at\u0283",
+"force": true
+},
+{
+"text": "need",
+"kind": "word",
+"voice": "man",
+"ipa": "nid",
+"force": true
+},
+{
+"text": "so",
+"kind": "word",
+"voice": "man",
+"ipa": "so\u028a",
+"force": true
+},
+{
+"text": "now",
+"kind": "word",
+"voice": "man",
+"ipa": "na\u028a",
+"force": true
+},
+{
+"text": "if",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026af",
+"force": true
+},
+{
+"text": "than",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00f0\u00e6n",
+"force": true
+},
+{
+"text": "new",
+"kind": "word",
+"voice": "man",
+"ipa": "nu",
+"force": true
+},
+{
+"text": "place",
+"kind": "word",
+"voice": "man",
+"ipa": "ple\u026as",
+"force": true
+},
+{
+"text": "any",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u025bni",
+"force": true
+},
+{
+"text": "car",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u0251r",
+"force": true
+},
+{
+"text": "after",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u00e6ft\u025a",
+"force": true
+},
+{
+"text": "know",
+"kind": "word",
+"voice": "man",
+"ipa": "no\u028a",
+"force": true
+},
+{
+"text": "would",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u028ad",
+"force": true
+},
+{
+"text": "home",
+"kind": "word",
+"voice": "man",
+"ipa": "ho\u028am",
+"force": true
+},
+{
+"text": "eat",
+"kind": "word",
+"voice": "man",
+"ipa": "it",
+"force": true
+},
+{
+"text": "think",
+"kind": "word",
+"voice": "man",
+"ipa": "\u03b8\u026a\u014bk",
+"force": true
+},
+{
+"text": "between",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u026a\u02c8twin",
+"force": true
+},
+{
+"text": "well",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u025bl",
+"force": true
+},
+{
+"text": "because",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u026a\u02c8k\u0254z",
+"force": true
+},
+{
+"text": "three",
+"kind": "word",
+"voice": "man",
+"ipa": "\u03b8ri",
+"force": true
+},
+{
+"text": "could",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u028ad",
+"force": true
+},
+{
+"text": "every",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u025bv\u025ai",
+"force": true
+},
+{
+"text": "back",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u00e6k",
+"force": true
+},
+{
+"text": "may",
+"kind": "word",
+"voice": "man",
+"ipa": "me\u026a",
+"force": true
+},
+{
+"text": "five",
+"kind": "word",
+"voice": "man",
+"ipa": "fa\u026av",
+"force": true
+},
+{
+"text": "find",
+"kind": "word",
+"voice": "man",
+"ipa": "fa\u026and",
+"force": true
+},
+{
+"text": "then",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00f0\u025bn",
+"force": true
+},
+{
+"text": "before",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u026a\u02c8f\u0254r",
+"force": true
+},
+{
+"text": "young",
+"kind": "word",
+"voice": "man",
+"ipa": "j\u028c\u014b",
+"force": true
+},
+{
+"text": "key",
+"kind": "word",
+"voice": "man",
+"ipa": "ki",
+"force": true
+},
+{
+"text": "first",
+"kind": "word",
+"voice": "man",
+"ipa": "f\u025dst",
+"force": true
+},
+{
+"text": "same",
+"kind": "word",
+"voice": "man",
+"ipa": "se\u026am",
+"force": true
+},
+{
+"text": "show",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283o\u028a",
+"force": true
+},
+{
+"text": "must",
+"kind": "word",
+"voice": "man",
+"ipa": "m\u028cst",
+"force": true
+},
+{
+"text": "again",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8\u0261\u025bn",
+"force": true
+},
+{
+"text": "life",
+"kind": "word",
+"voice": "man",
+"ipa": "la\u026af",
+"force": true
+},
+{
+"text": "keep",
+"kind": "word",
+"voice": "man",
+"ipa": "kip",
+"force": true
+},
+{
+"text": "blue",
+"kind": "word",
+"voice": "man",
+"ipa": "blu",
+"force": true
+},
+{
+"text": "sky",
+"kind": "word",
+"voice": "man",
+"ipa": "ska\u026a",
+"force": true
+},
+{
+"text": "moon",
+"kind": "word",
+"voice": "man",
+"ipa": "mun",
+"force": true
+},
+{
+"text": "through",
+"kind": "word",
+"voice": "man",
+"ipa": "\u03b8ru",
+"force": true
+},
+{
+"text": "group",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261rup",
+"force": true
+},
+{
+"text": "too",
+"kind": "word",
+"voice": "man",
+"ipa": "tu",
+"force": true
+},
+{
+"text": "train",
+"kind": "word",
+"voice": "man",
+"ipa": "tre\u026an",
+"force": true
+},
+{
+"text": "mountain",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8ma\u028ant\u0259n",
+"force": true
+},
+{
+"text": "over",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8o\u028av\u025a",
+"force": true
+},
+{
+"text": "old",
+"kind": "word",
+"voice": "man",
+"ipa": "o\u028ald",
+"force": true
+},
+{
+"text": "number",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8n\u028cmb\u025a",
+"force": true
+},
+{
+"text": "fly",
+"kind": "word",
+"voice": "man",
+"ipa": "fla\u026a",
+"force": true
+},
+{
+"text": "bird",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u025dd",
+"force": true
+},
+{
+"text": "high",
+"kind": "word",
+"voice": "man",
+"ipa": "ha\u026a",
+"force": true
+},
+{
+"text": "should",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283\u028ad",
+"force": true
+},
+{
+"text": "feel",
+"kind": "word",
+"voice": "man",
+"ipa": "fil",
+"force": true
+},
+{
+"text": "each",
+"kind": "word",
+"voice": "man",
+"ipa": "it\u0283",
+"force": true
+},
+{
+"text": "happen",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8h\u00e6p\u0259n",
+"force": true
+},
+{
+"text": "country",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8k\u028cntri",
+"force": true
+},
+{
+"text": "different",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8d\u026af\u025a\u0259nt",
+"force": true
+},
+{
+"text": "under",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u028cnd\u025a",
+"force": true
+},
+{
+"text": "together",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0259\u02c8\u0261\u025b\u00f0\u025a",
+"force": true
+},
+{
+"text": "table",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8te\u026ab\u0259l",
+"force": true
+},
+{
+"text": "another",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8n\u028c\u00f0\u025a",
+"force": true
+},
+{
+"text": "without",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u026a\u02c8\u03b8a\u028at",
+"force": true
+},
+{
+"text": "point",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u0254\u026ant",
+"force": true
+},
+{
+"text": "turn",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u025dn",
+"force": true
+},
+{
+"text": "left",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u025bft",
+"force": true
+},
+{
+"text": "leave",
+"kind": "word",
+"voice": "man",
+"ipa": "liv",
+"force": true
+},
+{
+"text": "might",
+"kind": "word",
+"voice": "man",
+"ipa": "ma\u026at",
+"force": true
+},
+{
+"text": "few",
+"kind": "word",
+"voice": "man",
+"ipa": "fju",
+"force": true
+},
+{
+"text": "eight",
+"kind": "word",
+"voice": "man",
+"ipa": "e\u026at",
+"force": true
+},
+{
+"text": "rain",
+"kind": "word",
+"voice": "man",
+"ipa": "re\u026an",
+"force": true
+},
+{
+"text": "end",
+"kind": "word",
+"voice": "man",
+"ipa": "\u025bnd",
+"force": true
+},
+{
+"text": "why",
+"kind": "word",
+"voice": "man",
+"ipa": "wa\u026a",
+"force": true
+},
+{
+"text": "little",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8l\u026at\u0259l",
+"force": true
+},
+{
+"text": "true",
+"kind": "word",
+"voice": "man",
+"ipa": "tru",
+"force": true
+},
+{
+"text": "story",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8st\u0254ri",
+"force": true
+},
+{
+"text": "last",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u00e6st",
+"force": true
+},
+{
+"text": "often",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u0254f\u0259n",
+"force": true
+},
+{
+"text": "never",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8n\u025bv\u025a",
+"force": true
+},
+{
+"text": "start",
+"kind": "word",
+"voice": "man",
+"ipa": "st\u0251rt",
+"force": true
+},
+{
+"text": "follow",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8f\u0251lo\u028a",
+"force": true
+},
+{
+"text": "become",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u026a\u02c8k\u028cm",
+"force": true
+},
+{
+"text": "pay",
+"kind": "word",
+"voice": "man",
+"ipa": "pe\u026a",
+"force": true
+},
+{
+"text": "word",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u025dd",
+"force": true
+},
+{
+"text": "move",
+"kind": "word",
+"voice": "man",
+"ipa": "muv",
+"force": true
+},
+{
+"text": "always",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u0254lwe\u026az",
+"force": true
+},
+{
+"text": "about",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8ba\u028at",
+"force": true
+},
+{
+"text": "write",
+"kind": "word",
+"voice": "man",
+"ipa": "ra\u026at",
+"force": true
+},
+{
+"text": "bring",
+"kind": "word",
+"voice": "man",
+"ipa": "br\u026a\u014b",
+"force": true
+},
+{
+"text": "name",
+"kind": "word",
+"voice": "man",
+"ipa": "ne\u026am",
+"force": true
+},
+{
+"text": "animal",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u00e6n\u0259m\u0259l",
+"force": true
+},
+{
+"text": "hold",
+"kind": "word",
+"voice": "man",
+"ipa": "ho\u028ald",
+"force": true
+},
+{
+"text": "play",
+"kind": "word",
+"voice": "man",
+"ipa": "ple\u026a",
+"force": true
+},
+{
+"text": "room",
+"kind": "word",
+"voice": "man",
+"ipa": "rum",
+"force": true
+},
+{
+"text": "body",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8b\u0251di",
+"force": true
+},
+{
+"text": "music",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8mjuz\u026ak",
+"force": true
+},
+{
+"text": "set",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u025bt",
+"force": true
+},
+{
+"text": "idea",
+"kind": "word",
+"voice": "man",
+"ipa": "a\u026a\u02c8di\u0259",
+"force": true
+},
+{
+"text": "today",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0259\u02c8de\u026a",
+"force": true
+},
+{
+"text": "night",
+"kind": "word",
+"voice": "man",
+"ipa": "na\u026at",
+"force": true
+},
+{
+"text": "away",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8we\u026a",
+"force": true
+},
+{
+"text": "seem",
+"kind": "word",
+"voice": "man",
+"ipa": "sim",
+"force": true
+},
+{
+"text": "off",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0254f",
+"force": true
+},
+{
+"text": "system",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u026ast\u0259m",
+"force": true
+},
+{
+"text": "family",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8f\u00e6m\u0259li",
+"force": true
+},
+{
+"text": "shoe",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283u",
+"force": true
+},
+{
+"text": "run",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u028cn",
+"force": true
+},
+{
+"text": "both",
+"kind": "word",
+"voice": "man",
+"ipa": "bo\u028a\u03b8",
+"force": true
+},
+{
+"text": "begin",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u026a\u02c8\u0261\u026an",
+"force": true
+},
+{
+"text": "head",
+"kind": "word",
+"voice": "man",
+"ipa": "h\u025bd",
+"force": true
+},
+{
+"text": "change",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0283e\u026and\u0292",
+"force": true
+},
+{
+"text": "hear",
+"kind": "word",
+"voice": "man",
+"ipa": "hir",
+"force": true
+},
+{
+"text": "able",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8e\u026ab\u0259l",
+"force": true
+},
+{
+"text": "person",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8p\u025ds\u0259n",
+"force": true
+},
+{
+"text": "four",
+"kind": "word",
+"voice": "man",
+"ipa": "f\u0254r",
+"force": true
+},
+{
+"text": "line",
+"kind": "word",
+"voice": "man",
+"ipa": "la\u026an",
+"force": true
+},
+{
+"text": "possible",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8p\u0251s\u0259b\u0259l",
+"force": true
+},
+{
+"text": "around",
+"kind": "word",
+"voice": "man",
+"ipa": "\u025a\u02c8a\u028and",
+"force": true
+},
+{
+"text": "eye",
+"kind": "word",
+"voice": "man",
+"ipa": "a\u026a",
+"force": true
+},
+{
+"text": "let",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u025bt",
+"force": true
+},
+{
+"text": "walk",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u0254k",
+"force": true
+},
+{
+"text": "fact",
+"kind": "word",
+"voice": "man",
+"ipa": "f\u00e6kt",
+"force": true
+},
+{
+"text": "allow",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8la\u028a",
+"force": true
+},
+{
+"text": "round",
+"kind": "word",
+"voice": "man",
+"ipa": "ra\u028and",
+"force": true
+},
+{
+"text": "earth",
+"kind": "word",
+"voice": "man",
+"ipa": "\u025d\u03b8",
+"force": true
+},
+{
+"text": "sun",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u028cn",
+"force": true
+},
+{
+"text": "world",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u025dld",
+"force": true
+},
+{
+"text": "information",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026anf\u025a\u02c8me\u026a\u0283\u0259n",
+"force": true
+},
+{
+"text": "member",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8m\u025bmb\u025a",
+"force": true
+},
+{
+"text": "later",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8le\u026at\u025a",
+"force": true
+},
+{
+"text": "right",
+"kind": "word",
+"voice": "man",
+"ipa": "ra\u026at",
+"force": true
+},
+{
+"text": "expect",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026ak\u02c8sp\u025bkt",
+"force": true
+},
+{
+"text": "bad",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u00e6d",
+"force": true
+},
+{
+"text": "grow",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261ro\u028a",
+"force": true
+},
+{
+"text": "quick",
+"kind": "word",
+"voice": "man",
+"ipa": "kw\u026ak",
+"force": true
+},
+{
+"text": "tomorrow",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0259\u02c8m\u0251ro\u028a",
+"force": true
+},
+{
+"text": "already",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0254l\u02c8r\u025bdi",
+"force": true
+},
+{
+"text": "friend",
+"kind": "word",
+"voice": "man",
+"ipa": "fr\u025bnd",
+"force": true
+},
+{
+"text": "carry",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8k\u00e6ri",
+"force": true
+},
+{
+"text": "fall",
+"kind": "word",
+"voice": "man",
+"ipa": "f\u0254l",
+"force": true
+},
+{
+"text": "bag",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u00e6\u0261",
+"force": true
+},
+{
+"text": "add",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00e6d",
+"force": true
+},
+{
+"text": "job",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u0292\u0251b",
+"force": true
+},
+{
+"text": "ever",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u025bv\u025a",
+"force": true
+},
+{
+"text": "rather",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8r\u00e6\u00f0\u025a",
+"force": true
+},
+{
+"text": "learn",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u025dn",
+"force": true
+},
+{
+"text": "school",
+"kind": "word",
+"voice": "man",
+"ipa": "skul",
+"force": true
+},
+{
+"text": "offer",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u0254f\u025a",
+"force": true
+},
+{
+"text": "towards",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0259\u02c8w\u0254rdz",
+"force": true
+},
+{
+"text": "perhaps",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u025a\u02c8h\u00e6ps",
+"force": true
+},
+{
+"text": "drink",
+"kind": "word",
+"voice": "man",
+"ipa": "dr\u026a\u014bk",
+"force": true
+},
+{
+"text": "continue",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u0259n\u02c8t\u026anju",
+"force": true
+},
+{
+"text": "mind",
+"kind": "word",
+"voice": "man",
+"ipa": "ma\u026and",
+"force": true
+},
+{
+"text": "mother",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8m\u028c\u00f0\u025a",
+"force": true
+},
+{
+"text": "face",
+"kind": "word",
+"voice": "man",
+"ipa": "fe\u026as",
+"force": true
+},
+{
+"text": "talk",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0254k",
+"force": true
+},
+{
+"text": "tell",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u025bl",
+"force": true
+},
+{
+"text": "speak",
+"kind": "word",
+"voice": "man",
+"ipa": "spik",
+"force": true
+},
+{
+"text": "age",
+"kind": "word",
+"voice": "man",
+"ipa": "e\u026ad\u0292",
+"force": true
+},
+{
+"text": "break",
+"kind": "word",
+"voice": "man",
+"ipa": "bre\u026ak",
+"force": true
+},
+{
+"text": "language",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8l\u00e6\u014b\u0261w\u0259d\u0292",
+"force": true
+},
+{
+"text": "order",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u0254rd\u025a",
+"force": true
+},
+{
+"text": "six",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u026aks",
+"force": true
+},
+{
+"text": "develop",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u026a\u02c8v\u025bl\u0259p",
+"force": true
+},
+{
+"text": "short",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283\u0254rt",
+"force": true
+},
+{
+"text": "buy",
+"kind": "word",
+"voice": "man",
+"ipa": "ba\u026a",
+"force": true
+},
+{
+"text": "enough",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026a\u02c8n\u028cf",
+"force": true
+},
+{
+"text": "spend",
+"kind": "word",
+"voice": "man",
+"ipa": "sp\u025bnd",
+"force": true
+},
+{
+"text": "food",
+"kind": "word",
+"voice": "man",
+"ipa": "fud",
+"force": true
+},
+{
+"text": "remember",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u026a\u02c8m\u025bmb\u025a",
+"force": true
+},
+{
+"text": "build",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u026ald",
+"force": true
+},
+{
+"text": "position",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u0259\u02c8z\u026a\u0283\u0259n",
+"force": true
+},
+{
+"text": "across",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8kr\u0254s",
+"force": true
+},
+{
+"text": "several",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u025bvr\u0259l",
+"force": true
+},
+{
+"text": "hope",
+"kind": "word",
+"voice": "man",
+"ipa": "ho\u028ap",
+"force": true
+},
+{
+"text": "road",
+"kind": "word",
+"voice": "man",
+"ipa": "ro\u028ad",
+"force": true
+},
+{
+"text": "plan",
+"kind": "word",
+"voice": "man",
+"ipa": "pl\u00e6n",
+"force": true
+},
+{
+"text": "actually",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u00e6kt\u0283u\u0259li",
+"force": true
+},
+{
+"text": "behind",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u026a\u02c8ha\u026and",
+"force": true
+},
+{
+"text": "stay",
+"kind": "word",
+"voice": "man",
+"ipa": "ste\u026a",
+"force": true
+},
+{
+"text": "return",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u026a\u02c8t\u025dn",
+"force": true
+},
+{
+"text": "suggest",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u0259\u02c8d\u0292\u025bst",
+"force": true
+},
+{
+"text": "create",
+"kind": "word",
+"voice": "man",
+"ipa": "kri\u02c8e\u026at",
+"force": true
+},
+{
+"text": "describe",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u026a\u02c8skra\u026ab",
+"force": true
+},
+{
+"text": "design",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u026a\u02c8za\u026an",
+"force": true
+},
+{
+"text": "chair",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0283\u025br",
+"force": true
+},
+{
+"text": "action",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u00e6k\u0283\u0259n",
+"force": true
+},
+{
+"text": "cause",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u0251z",
+"force": true
+},
+{
+"text": "cover",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8k\u028cv\u025a",
+"force": true
+},
+{
+"text": "fire",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8fa\u026a\u025a",
+"force": true
+},
+{
+"text": "warm",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u0254rm",
+"force": true
+},
+{
+"text": "common",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8k\u0251m\u0259n",
+"force": true
+},
+{
+"text": "subject",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u028cbd\u0292\u026akt",
+"force": true
+},
+{
+"text": "death",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u025b\u03b8",
+"force": true
+},
+{
+"text": "easy",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8izi",
+"force": true
+},
+{
+"text": "sudden",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u028cd\u0259n",
+"force": true
+},
+{
+"text": "help",
+"kind": "word",
+"voice": "man",
+"ipa": "h\u025blp",
+"force": true
+},
+{
+"text": "white",
+"kind": "word",
+"voice": "man",
+"ipa": "wa\u026at",
+"force": true
+},
+{
+"text": "paper",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8pe\u026ap\u025a",
+"force": true
+},
+{
+"text": "sometimes",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u028cmta\u026amz",
+"force": true
+},
+{
+"text": "snow",
+"kind": "word",
+"voice": "man",
+"ipa": "sno\u028a",
+"force": true
+},
+{
+"text": "choose",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0283uz",
+"force": true
+},
+{
+"text": "soon",
+"kind": "word",
+"voice": "man",
+"ipa": "sun",
+"force": true
+},
+{
+"text": "foot",
+"kind": "word",
+"voice": "man",
+"ipa": "f\u028at",
+"force": true
+},
+{
+"text": "light",
+"kind": "word",
+"voice": "man",
+"ipa": "la\u026at",
+"force": true
+},
+{
+"text": "dress",
+"kind": "word",
+"voice": "man",
+"ipa": "dr\u025bs",
+"force": true
+},
+{
+"text": "sure",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283\u028ar",
+"force": true
+},
+{
+"text": "father",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8f\u0251\u00f0\u025a",
+"force": true
+},
+{
+"text": "piece",
+"kind": "word",
+"voice": "man",
+"ipa": "pis",
+"force": true
+},
+{
+"text": "likely",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8la\u026akli",
+"force": true
+},
+{
+"text": "team",
+"kind": "word",
+"voice": "man",
+"ipa": "tim",
+"force": true
+},
+{
+"text": "believe",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u026a\u02c8liv",
+"force": true
+},
+{
+"text": "amount",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8ma\u028ant",
+"force": true
+},
+{
+"text": "town",
+"kind": "word",
+"voice": "man",
+"ipa": "ta\u028an",
+"force": true
+},
+{
+"text": "step",
+"kind": "word",
+"voice": "man",
+"ipa": "st\u025bp",
+"force": true
+},
+{
+"text": "sugar",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u0283\u028a\u0261\u025a",
+"force": true
+},
+{
+"text": "period",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8p\u026ari\u0259d",
+"force": true
+},
+{
+"text": "cost",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u0251st",
+"force": true
+},
+{
+"text": "price",
+"kind": "word",
+"voice": "man",
+"ipa": "pra\u026as",
+"force": true
+},
+{
+"text": "bit",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u026at",
+"force": true
+},
+{
+"text": "shirt",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283\u025dt",
+"force": true
+},
+{
+"text": "during",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8d\u028ar\u026a\u014b",
+"force": true
+},
+{
+"text": "free",
+"kind": "word",
+"voice": "man",
+"ipa": "fri",
+"force": true
+},
+{
+"text": "rate",
+"kind": "word",
+"voice": "man",
+"ipa": "re\u026at",
+"force": true
+},
+{
+"text": "else",
+"kind": "word",
+"voice": "man",
+"ipa": "\u025bls",
+"force": true
+},
+{
+"text": "sleep",
+"kind": "word",
+"voice": "man",
+"ipa": "slip",
+"force": true
+},
+{
+"text": "only",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8o\u028anli",
+"force": true
+},
+{
+"text": "own",
+"kind": "word",
+"voice": "man",
+"ipa": "o\u028an",
+"force": true
+},
+{
+"text": "effect",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026a\u02c8f\u025bkt",
+"force": true
+},
+{
+"text": "along",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8l\u0254\u014b",
+"force": true
+},
+{
+"text": "plant",
+"kind": "word",
+"voice": "man",
+"ipa": "pl\u00e6nt",
+"force": true
+},
+{
+"text": "public",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8p\u028cbl\u026ak",
+"force": true
+},
+{
+"text": "join",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u0292\u0254\u026an",
+"force": true
+},
+{
+"text": "especially",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8sp\u025b\u0283li",
+"force": true
+},
+{
+"text": "chance",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0283\u00e6ns",
+"force": true
+},
+{
+"text": "ten",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u025bn",
+"force": true
+},
+{
+"text": "meet",
+"kind": "word",
+"voice": "man",
+"ipa": "mit",
+"force": true
+},
+{
+"text": "detail",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u026a\u02c8te\u026al",
+"force": true
+},
+{
+"text": "human",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8hjum\u0259n",
+"force": true
+},
+{
+"text": "necessary",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8n\u025bs\u0259s\u025bri",
+"force": true
+},
+{
+"text": "drive",
+"kind": "word",
+"voice": "man",
+"ipa": "dra\u026av",
+"force": true
+},
+{
+"text": "above",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8b\u028cv",
+"force": true
+},
+{
+"text": "practice",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8pr\u00e6kt\u0259s",
+"force": true
+},
+{
+"text": "serve",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u025dv",
+"force": true
+},
+{
+"text": "rice",
+"kind": "word",
+"voice": "man",
+"ipa": "ra\u026as",
+"force": true
+},
+{
+"text": "fish",
+"kind": "word",
+"voice": "man",
+"ipa": "f\u026a\u0283",
+"force": true
+},
+{
+"text": "arm",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0251rm",
+"force": true
+},
+{
+"text": "private",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8pra\u026av\u0259t",
+"force": true
+},
+{
+"text": "accept",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00e6k\u02c8s\u025bpt",
+"force": true
+},
+{
+"text": "wish",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u026a\u0283",
+"force": true
+},
+{
+"text": "instead",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026an\u02c8st\u025bd",
+"force": true
+},
+{
+"text": "rise",
+"kind": "word",
+"voice": "man",
+"ipa": "ra\u026az",
+"force": true
+},
+{
+"text": "sell",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u025bl",
+"force": true
+},
+{
+"text": "million",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8m\u026alj\u0259n",
+"force": true
+},
+{
+"text": "forward",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8f\u0254rw\u025ad",
+"force": true
+},
+{
+"text": "catch",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u00e6t\u0283",
+"force": true
+},
+{
+"text": "value",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8v\u00e6lju",
+"force": true
+},
+{
+"text": "record",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8r\u025bk\u025ad",
+"force": true
+},
+{
+"text": "wall",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u0254l",
+"force": true
+},
+{
+"text": "black",
+"kind": "word",
+"voice": "man",
+"ipa": "bl\u00e6k",
+"force": true
+},
+{
+"text": "prove",
+"kind": "word",
+"voice": "man",
+"ipa": "pruv",
+"force": true
+},
+{
+"text": "account",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8ka\u028ant",
+"force": true
+},
+{
+"text": "size",
+"kind": "word",
+"voice": "man",
+"ipa": "sa\u026az",
+"force": true
+},
+{
+"text": "enter",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u025bnt\u025a",
+"force": true
+},
+{
+"text": "rule",
+"kind": "word",
+"voice": "man",
+"ipa": "rul",
+"force": true
+},
+{
+"text": "project",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8pr\u0251d\u0292\u025bkt",
+"force": true
+},
+{
+"text": "reduce",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u0259\u02c8dus",
+"force": true
+},
+{
+"text": "meeting",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8mit\u026a\u014b",
+"force": true
+},
+{
+"text": "compare",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u0259m\u02c8p\u025br",
+"force": true
+},
+{
+"text": "poor",
+"kind": "word",
+"voice": "man",
+"ipa": "pur",
+"force": true
+},
+{
+"text": "nine",
+"kind": "word",
+"voice": "man",
+"ipa": "na\u026an",
+"force": true
+},
+{
+"text": "window",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8w\u026ando\u028a",
+"force": true
+},
+{
+"text": "arrive",
+"kind": "word",
+"voice": "man",
+"ipa": "\u025a\u02c8a\u026av",
+"force": true
+},
+{
+"text": "past",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u00e6st",
+"force": true
+},
+{
+"text": "close",
+"kind": "word",
+"voice": "man",
+"ipa": "klo\u028az",
+"force": true
+},
+{
+"text": "future",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8fjut\u0283\u025a",
+"force": true
+},
+{
+"text": "once",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u028cns",
+"force": true
+},
+{
+"text": "top",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0251p",
+"force": true
+},
+{
+"text": "evening",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8ivn\u026a\u014b",
+"force": true
+},
+{
+"text": "visit",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8v\u026az\u026at",
+"force": true
+},
+{
+"text": "ready",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8r\u025bdi",
+"force": true
+},
+{
+"text": "year",
+"kind": "word",
+"voice": "man",
+"ipa": "j\u026ar",
+"force": true
+},
+{
+"text": "available",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8ve\u026al\u0259b\u0259l",
+"force": true
+},
+{
+"text": "ground",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261ra\u028and",
+"force": true
+},
+{
+"text": "tree",
+"kind": "word",
+"voice": "man",
+"ipa": "tri",
+"force": true
+},
+{
+"text": "throw",
+"kind": "word",
+"voice": "man",
+"ipa": "\u03b8ro\u028a",
+"force": true
+},
+{
+"text": "avoid",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8v\u0254\u026ad",
+"force": true
+},
+{
+"text": "list",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u026ast",
+"force": true
+},
+{
+"text": "normal",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8n\u0254rm\u0259l",
+"force": true
+},
+{
+"text": "forget",
+"kind": "word",
+"voice": "man",
+"ipa": "f\u025a\u02c8\u0261\u025bt",
+"force": true
+},
+{
+"text": "floor",
+"kind": "word",
+"voice": "man",
+"ipa": "fl\u0254r",
+"force": true
+},
+{
+"text": "large",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u0251rd\u0292",
+"force": true
+},
+{
+"text": "company",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8k\u028cmp\u0259ni",
+"force": true
+},
+{
+"text": "late",
+"kind": "word",
+"voice": "man",
+"ipa": "le\u026at",
+"force": true
+},
+{
+"text": "produce",
+"kind": "word",
+"voice": "man",
+"ipa": "pr\u0259\u02c8dus",
+"force": true
+},
+{
+"text": "usually",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8ju\u0292\u0259li",
+"force": true
+},
+{
+"text": "great",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261re\u026at",
+"force": true
+},
+{
+"text": "business",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8b\u026azn\u0259s",
+"force": true
+},
+{
+"text": "lot",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u0251t",
+"force": true
+},
+{
+"text": "increase",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026an\u02c8kris",
+"force": true
+},
+{
+"text": "knowledge",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8n\u0251l\u0259d\u0292",
+"force": true
+},
+{
+"text": "long",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u0254\u014b",
+"force": true
+},
+{
+"text": "important",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026am\u02c8p\u0254rt\u0259nt",
+"force": true
+},
+{
+"text": "experience",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026ak\u02c8sp\u026ari\u0259ns",
+"force": true
+},
+{
+"text": "page",
+"kind": "word",
+"voice": "man",
+"ipa": "pe\u026ad\u0292",
+"force": true
+},
+{
+"text": "direction",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u025a\u02c8\u025bk\u0283\u0259n",
+"force": true
+},
+{
+"text": "far",
+"kind": "word",
+"voice": "man",
+"ipa": "f\u0251r",
+"force": true
+},
+{
+"text": "stop",
+"kind": "word",
+"voice": "man",
+"ipa": "st\u0251p",
+"force": true
+},
+{
+"text": "city",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u026ati",
+"force": true
+},
+{
+"text": "special",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8sp\u025b\u0283\u0259l",
+"force": true
+},
+{
+"text": "main",
+"kind": "word",
+"voice": "man",
+"ipa": "me\u026an",
+"force": true
+},
+{
+"text": "particular",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u025a\u02c8t\u026akj\u0259l\u025a",
+"force": true
+},
+{
+"text": "event",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026a\u02c8v\u025bnt",
+"force": true
+},
+{
+"text": "ago",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8\u0261o\u028a",
+"force": true
+},
+{
+"text": "die",
+"kind": "word",
+"voice": "man",
+"ipa": "da\u026a",
+"force": true
+},
+{
+"text": "finally",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8fa\u026an\u0259li",
+"force": true
+},
+{
+"text": "just",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u0292\u028cst",
+"force": true
+},
+{
+"text": "general",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8d\u0292\u025bn\u025a\u0259l",
+"force": true
+},
+{
+"text": "present",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8pr\u025bz\u0259nt",
+"force": true
+},
+{
+"text": "recent",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8ris\u0259nt",
+"force": true
+},
+{
+"text": "deep",
+"kind": "word",
+"voice": "man",
+"ipa": "dip",
+"force": true
+},
+{
+"text": "however",
+"kind": "word",
+"voice": "man",
+"ipa": "ha\u028a\u02c8\u025bv\u025a",
+"force": true
+},
+{
+"text": "news",
+"kind": "word",
+"voice": "man",
+"ipa": "nuz",
+"force": true
+},
+{
+"text": "structure",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8str\u028ckt\u0283\u025a",
+"force": true
+},
+{
+"text": "kill",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u026al",
+"force": true
+},
+{
+"text": "bridge",
+"kind": "word",
+"voice": "man",
+"ipa": "br\u026ad\u0292",
+"force": true
+},
+{
+"text": "finish",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8f\u026an\u026a\u0283",
+"force": true
+},
+{
+"text": "seven",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u025bv\u0259n",
+"force": true
+},
+{
+"text": "statement",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8ste\u026atm\u0259nt",
+"force": true
+},
+{
+"text": "push",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u028a\u0283",
+"force": true
+},
+{
+"text": "hundred",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8h\u028cndr\u0259d",
+"force": true
+},
+{
+"text": "week",
+"kind": "word",
+"voice": "man",
+"ipa": "wik",
+"force": true
+},
+{
+"text": "century",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u025bnt\u0283\u025ai",
+"force": true
+},
+{
+"text": "complete",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u0259m\u02c8plit",
+"force": true
+},
+{
+"text": "south",
+"kind": "word",
+"voice": "man",
+"ipa": "sa\u028a\u03b8",
+"force": true
+},
+{
+"text": "hair",
+"kind": "word",
+"voice": "man",
+"ipa": "h\u025br",
+"force": true
+},
+{
+"text": "month",
+"kind": "word",
+"voice": "man",
+"ipa": "m\u028cn\u03b8",
+"force": true
+},
+{
+"text": "quite",
+"kind": "word",
+"voice": "man",
+"ipa": "kwa\u026at",
+"force": true
+},
+{
+"text": "whole",
+"kind": "word",
+"voice": "man",
+"ipa": "ho\u028al",
+"force": true
+},
+{
+"text": "sound",
+"kind": "word",
+"voice": "man",
+"ipa": "sa\u028and",
+"force": true
+},
+{
+"text": "computer",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u0259m\u02c8pjut\u025a",
+"force": true
+},
+{
+"text": "include",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026an\u02c8klud",
+"force": true
+},
+{
+"text": "office",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u0254f\u026as",
+"force": true
+},
+{
+"text": "voice",
+"kind": "word",
+"voice": "man",
+"ipa": "v\u0254\u026as",
+"force": true
+},
+{
+"text": "discussion",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u026a\u02c8sk\u028c\u0283\u0259n",
+"force": true
+},
+{
+"text": "glass",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261l\u00e6s",
+"force": true
+},
+{
+"text": "fight",
+"kind": "word",
+"voice": "man",
+"ipa": "fa\u026at",
+"force": true
+},
+{
+"text": "box",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u0251ks",
+"force": true
+},
+{
+"text": "blood",
+"kind": "word",
+"voice": "man",
+"ipa": "bl\u028cd",
+"force": true
+},
+{
+"text": "west",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u025bst",
+"force": true
+},
+{
+"text": "baby",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8be\u026abi",
+"force": true
+},
+{
+"text": "trade",
+"kind": "word",
+"voice": "man",
+"ipa": "tre\u026ad",
+"force": true
+},
+{
+"text": "imagine",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026a\u02c8m\u00e6d\u0292\u0259n",
+"force": true
+},
+{
+"text": "travel",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8tr\u00e6v\u0259l",
+"force": true
+},
+{
+"text": "opinion",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8p\u026anj\u0259n",
+"force": true
+},
+{
+"text": "dead",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u025bd",
+"force": true
+},
+{
+"text": "agree",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8\u0261ri",
+"force": true
+},
+{
+"text": "thought",
+"kind": "word",
+"voice": "man",
+"ipa": "\u03b8\u0254t",
+"force": true
+},
+{
+"text": "drop",
+"kind": "word",
+"voice": "man",
+"ipa": "dr\u0251p",
+"force": true
+},
+{
+"text": "machine",
+"kind": "word",
+"voice": "man",
+"ipa": "m\u0259\u02c8\u0283in",
+"force": true
+},
+{
+"text": "leg",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u025b\u0261",
+"force": true
+},
+{
+"text": "support",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u0259\u02c8p\u0254rt",
+"force": true
+},
+{
+"text": "teach",
+"kind": "word",
+"voice": "man",
+"ipa": "tit\u0283",
+"force": true
+},
+{
+"text": "north",
+"kind": "word",
+"voice": "man",
+"ipa": "n\u0254r\u03b8",
+"force": true
+},
+{
+"text": "distance",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8d\u026ast\u0259ns",
+"force": true
+},
+{
+"text": "seat",
+"kind": "word",
+"voice": "man",
+"ipa": "sit",
+"force": true
+},
+{
+"text": "further",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8f\u025d\u00f0\u025a",
+"force": true
+},
+{
+"text": "near",
+"kind": "word",
+"voice": "man",
+"ipa": "n\u026ar",
+"force": true
+},
+{
+"text": "dark",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u0251rk",
+"force": true
+},
+{
+"text": "green",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261rin",
+"force": true
+},
+{
+"text": "shape",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283e\u026ap",
+"force": true
+},
+{
+"text": "next",
+"kind": "word",
+"voice": "man",
+"ipa": "n\u025bkst",
+"force": true
+},
+{
+"text": "almost",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u0254lmo\u028ast",
+"force": true
+},
+{
+"text": "early",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u025dli",
+"force": true
+},
+{
+"text": "low",
+"kind": "word",
+"voice": "man",
+"ipa": "lo\u028a",
+"force": true
+},
+{
+"text": "similar",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u026am\u0259l\u025a",
+"force": true
+},
+{
+"text": "thank",
+"kind": "word",
+"voice": "man",
+"ipa": "\u03b8\u00e6\u014bk",
+"force": true
+},
+{
+"text": "fix",
+"kind": "word",
+"voice": "man",
+"ipa": "f\u026aks",
+"force": true
+},
+{
+"text": "nation",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8ne\u026a\u0283\u0259n",
+"force": true
+},
+{
+"text": "holiday",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8h\u0251l\u0259de\u026a",
+"force": true
+},
+{
+"text": "sad",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u00e6d",
+"force": true
+},
+{
+"text": "miss",
+"kind": "word",
+"voice": "man",
+"ipa": "m\u026as",
+"force": true
+},
+{
+"text": "mouth",
+"kind": "word",
+"voice": "man",
+"ipa": "ma\u028a\u03b8",
+"force": true
+},
+{
+"text": "owner",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8o\u028an\u025a",
+"force": true
+},
+{
+"text": "hang",
+"kind": "word",
+"voice": "man",
+"ipa": "h\u00e6\u014b",
+"force": true
+},
+{
+"text": "horse",
+"kind": "word",
+"voice": "man",
+"ipa": "h\u0254rs",
+"force": true
+},
+{
+"text": "star",
+"kind": "word",
+"voice": "man",
+"ipa": "st\u0251r",
+"force": true
+},
+{
+"text": "song",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u0254\u014b",
+"force": true
+},
+{
+"text": "expert",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u025bksp\u025at",
+"force": true
+},
+{
+"text": "reaction",
+"kind": "word",
+"voice": "man",
+"ipa": "ri\u02c8\u00e6k\u0283\u0259n",
+"force": true
+},
+{
+"text": "shoulder",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u0283o\u028ald\u025a",
+"force": true
+},
+{
+"text": "worry",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8w\u025di",
+"force": true
+},
+{
+"text": "shake",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283e\u026ak",
+"force": true
+},
+{
+"text": "touch",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u028ct\u0283",
+"force": true
+},
+{
+"text": "lift",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u026aft",
+"force": true
+},
+{
+"text": "rich",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u026at\u0283",
+"force": true
+},
+{
+"text": "against",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8\u0261\u025bnst",
+"force": true
+},
+{
+"text": "reach",
+"kind": "word",
+"voice": "man",
+"ipa": "rit\u0283",
+"force": true
+},
+{
+"text": "physical",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8f\u026az\u026ak\u0259l",
+"force": true
+},
+{
+"text": "sister",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u026ast\u025a",
+"force": true
+},
+{
+"text": "shelf",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283\u025blf",
+"force": true
+},
+{
+"text": "ill",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026al",
+"force": true
+},
+{
+"text": "bread",
+"kind": "word",
+"voice": "man",
+"ipa": "br\u025bd",
+"force": true
+},
+{
+"text": "ball",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u0254l",
+"force": true
+},
+{
+"text": "damage",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8d\u00e6m\u0259d\u0292",
+"force": true
+},
+{
+"text": "soft",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u0251ft",
+"force": true
+},
+{
+"text": "question",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8kw\u025bst\u0283\u0259n",
+"force": true
+},
+{
+"text": "hard",
+"kind": "word",
+"voice": "man",
+"ipa": "h\u0251rd",
+"force": true
+},
+{
+"text": "doctor",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8d\u0251kt\u025a",
+"force": true
+},
+{
+"text": "regular",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8r\u025b\u0261j\u0259l\u025a",
+"force": true
+},
+{
+"text": "metal",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8m\u025bt\u0259l",
+"force": true
+},
+{
+"text": "ask",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00e6sk",
+"force": true
+},
+{
+"text": "test",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u025bst",
+"force": true
+},
+{
+"text": "prepare",
+"kind": "word",
+"voice": "man",
+"ipa": "pri\u02c8p\u025br",
+"force": true
+},
+{
+"text": "heavy",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8h\u025bvi",
+"force": true
+},
+{
+"text": "thin",
+"kind": "word",
+"voice": "man",
+"ipa": "\u03b8\u026an",
+"force": true
+},
+{
+"text": "pass",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u00e6s",
+"force": true
+},
+{
+"text": "answer",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u00e6ns\u025a",
+"force": true
+},
+{
+"text": "weight",
+"kind": "word",
+"voice": "man",
+"ipa": "we\u026at",
+"force": true
+},
+{
+"text": "measure",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8m\u025b\u0292\u025a",
+"force": true
+},
+{
+"text": "wash",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u0251\u0283",
+"force": true
+},
+{
+"text": "cloth",
+"kind": "word",
+"voice": "man",
+"ipa": "kl\u0254\u03b8",
+"force": true
+},
+{
+"text": "knife",
+"kind": "word",
+"voice": "man",
+"ipa": "na\u026af",
+"force": true
+},
+{
+"text": "gold",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261o\u028ald",
+"force": true
+},
+{
+"text": "wet",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u025bt",
+"force": true
+},
+{
+"text": "cook",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u028ak",
+"force": true
+},
+{
+"text": "wear",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u025br",
+"force": true
+},
+{
+"text": "flower",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8fla\u028a\u025a",
+"force": true
+},
+{
+"text": "leaf",
+"kind": "word",
+"voice": "man",
+"ipa": "lif",
+"force": true
+},
+{
+"text": "liquid",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8l\u026akw\u0259d",
+"force": true
+},
+{
+"text": "smooth",
+"kind": "word",
+"voice": "man",
+"ipa": "smu\u00f0",
+"force": true
+},
+{
+"text": "boat",
+"kind": "word",
+"voice": "man",
+"ipa": "bo\u028at",
+"force": true
+},
+{
+"text": "cloud",
+"kind": "word",
+"voice": "man",
+"ipa": "kla\u028ad",
+"force": true
+},
+{
+"text": "bend",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u025bnd",
+"force": true
+},
+{
+"text": "clean",
+"kind": "word",
+"voice": "man",
+"ipa": "klin",
+"force": true
+},
+{
+"text": "dry",
+"kind": "word",
+"voice": "man",
+"ipa": "dra\u026a",
+"force": true
+},
+{
+"text": "egg",
+"kind": "word",
+"voice": "man",
+"ipa": "\u025b\u0261",
+"force": true
+},
+{
+"text": "plane",
+"kind": "word",
+"voice": "man",
+"ipa": "ple\u026an",
+"force": true
+},
+{
+"text": "angry",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u00e6\u014b\u0261ri",
+"force": true
+},
+{
+"text": "bottle",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8b\u0251t\u0259l",
+"force": true
+},
+{
+"text": "female",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8fime\u026al",
+"force": true
+},
+{
+"text": "daughter",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8d\u0254t\u025a",
+"force": true
+},
+{
+"text": "ice",
+"kind": "word",
+"voice": "man",
+"ipa": "a\u026as",
+"force": true
+},
+{
+"text": "knee",
+"kind": "word",
+"voice": "man",
+"ipa": "ni",
+"force": true
+},
+{
+"text": "male",
+"kind": "word",
+"voice": "man",
+"ipa": "me\u026al",
+"force": true
+},
+{
+"text": "nose",
+"kind": "word",
+"voice": "man",
+"ipa": "no\u028az",
+"force": true
+},
+{
+"text": "send",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u025bnd",
+"force": true
+},
+{
+"text": "air",
+"kind": "word",
+"voice": "man",
+"ipa": "\u025br",
+"force": true
+},
+{
+"text": "son",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u028cn",
+"force": true
+},
+{
+"text": "birth",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u025d\u03b8",
+"force": true
+},
+{
+"text": "roof",
+"kind": "word",
+"voice": "man",
+"ipa": "ruf",
+"force": true
+},
+{
+"text": "receive",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u0259\u02c8siv",
+"force": true
+},
+{
+"text": "building",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8b\u026ald\u026a\u014b",
+"force": true
+},
+{
+"text": "internet",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u026ant\u025an\u025bt",
+"force": true
+},
+{
+"text": "ship",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283\u026ap",
+"force": true
+},
+{
+"text": "bone",
+"kind": "word",
+"voice": "man",
+"ipa": "bo\u028an",
+"force": true
+},
+{
+"text": "outside",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8a\u028atsa\u026ad",
+"force": true
+},
+{
+"text": "shop",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283\u0251p",
+"force": true
+},
+{
+"text": "station",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8ste\u026a\u0283\u0259n",
+"force": true
+},
+{
+"text": "hotel",
+"kind": "word",
+"voice": "man",
+"ipa": "ho\u028a\u02c8t\u025bl",
+"force": true
+},
+{
+"text": "circle",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u025dk\u0259l",
+"force": true
+},
+{
+"text": "service",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u025dv\u0259s",
+"force": true
+},
+{
+"text": "edge",
+"kind": "word",
+"voice": "man",
+"ipa": "\u025bd\u0292",
+"force": true
+},
+{
+"text": "store",
+"kind": "word",
+"voice": "man",
+"ipa": "st\u0254r",
+"force": true
+},
+{
+"text": "curve",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u025dv",
+"force": true
+},
+{
+"text": "fat",
+"kind": "word",
+"voice": "man",
+"ipa": "f\u00e6t",
+"force": true
+},
+{
+"text": "side",
+"kind": "word",
+"voice": "man",
+"ipa": "sa\u026ad",
+"force": true
+},
+{
+"text": "middle",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8m\u026ad\u0259l",
+"force": true
+},
+{
+"text": "seed",
+"kind": "word",
+"voice": "man",
+"ipa": "sid",
+"force": true
+},
+{
+"text": "grass",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261r\u00e6s",
+"force": true
+},
+{
+"text": "insect",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u026ans\u025bkt",
+"force": true
+},
+{
+"text": "among",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8m\u028c\u014b",
+"force": true
+},
+{
+"text": "base",
+"kind": "word",
+"voice": "man",
+"ipa": "be\u026as",
+"force": true
+},
+{
+"text": "contain",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u0259n\u02c8te\u026an",
+"force": true
+},
+{
+"text": "wide",
+"kind": "word",
+"voice": "man",
+"ipa": "wa\u026ad",
+"force": true
+},
+{
+"text": "street",
+"kind": "word",
+"voice": "man",
+"ipa": "strit",
+"force": true
+},
+{
+"text": "afternoon",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00e6ft\u025a\u02c8nun",
+"force": true
+},
+{
+"text": "laugh",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u00e6f",
+"force": true
+},
+{
+"text": "loud",
+"kind": "word",
+"voice": "man",
+"ipa": "la\u028ad",
+"force": true
+},
+{
+"text": "neck",
+"kind": "word",
+"voice": "man",
+"ipa": "n\u025bk",
+"force": true
+},
+{
+"text": "orange",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u0254r\u0259nd\u0292",
+"force": true
+},
+{
+"text": "call",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u0254l",
+"force": true
+},
+{
+"text": "noise",
+"kind": "word",
+"voice": "man",
+"ipa": "n\u0254\u026az",
+"force": true
+},
+{
+"text": "shut",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283\u028ct",
+"force": true
+},
+{
+"text": "slow",
+"kind": "word",
+"voice": "man",
+"ipa": "slo\u028a",
+"force": true
+},
+{
+"text": "sort",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u0254rt",
+"force": true
+},
+{
+"text": "area",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u025bri\u0259",
+"force": true
+},
+{
+"text": "type",
+"kind": "word",
+"voice": "man",
+"ipa": "ta\u026ap",
+"force": true
+},
+{
+"text": "kind",
+"kind": "word",
+"voice": "man",
+"ipa": "ka\u026and",
+"force": true
+},
+{
+"text": "quiet",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8kwa\u026a\u0259t",
+"force": true
+},
+{
+"text": "strange",
+"kind": "word",
+"voice": "man",
+"ipa": "stre\u026and\u0292",
+"force": true
+},
+{
+"text": "such",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u028ct\u0283",
+"force": true
+},
+{
+"text": "local",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8lo\u028ak\u0259l",
+"force": true
+},
+{
+"text": "example",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026a\u0261\u02c8z\u00e6mp\u0259l",
+"force": true
+},
+{
+"text": "view",
+"kind": "word",
+"voice": "man",
+"ipa": "vju",
+"force": true
+},
+{
+"text": "wrong",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u0254\u014b",
+"force": true
+},
+{
+"text": "case",
+"kind": "word",
+"voice": "man",
+"ipa": "ke\u026as",
+"force": true
+},
+{
+"text": "appear",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8p\u026ar",
+"force": true
+},
+{
+"text": "percent",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u025a\u02c8s\u025bnt",
+"force": true
+},
+{
+"text": "community",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u0259\u02c8mjun\u0259ti",
+"force": true
+},
+{
+"text": "industry",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u026and\u0259stri",
+"force": true
+},
+{
+"text": "space",
+"kind": "word",
+"voice": "man",
+"ipa": "spe\u026as",
+"force": true
+},
+{
+"text": "rest",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u025bst",
+"force": true
+},
+{
+"text": "land",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u00e6nd",
+"force": true
+},
+{
+"text": "nice",
+"kind": "word",
+"voice": "man",
+"ipa": "na\u026as",
+"force": true
+},
+{
+"text": "balance",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8b\u00e6l\u0259ns",
+"force": true
+},
+{
+"text": "full",
+"kind": "word",
+"voice": "man",
+"ipa": "f\u028al",
+"force": true
+},
+{
+"text": "form",
+"kind": "word",
+"voice": "man",
+"ipa": "f\u0254rm",
+"force": true
+},
+{
+"text": "property",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8pr\u0251p\u025ati",
+"force": true
+},
+{
+"text": "garden",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u0261\u0251rd\u0259n",
+"force": true
+},
+{
+"text": "front",
+"kind": "word",
+"voice": "man",
+"ipa": "fr\u028cnt",
+"force": true
+},
+{
+"text": "act",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00e6kt",
+"force": true
+},
+{
+"text": "army",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u0251rmi",
+"force": true
+},
+{
+"text": "wind",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u026and",
+"force": true
+},
+{
+"text": "hole",
+"kind": "word",
+"voice": "man",
+"ipa": "ho\u028al",
+"force": true
+},
+{
+"text": "blow",
+"kind": "word",
+"voice": "man",
+"ipa": "blo\u028a",
+"force": true
+},
+{
+"text": "development",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u026a\u02c8v\u025bl\u0259pm\u0259nt",
+"force": true
+},
+{
+"text": "war",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u0254r",
+"force": true
+},
+{
+"text": "choice",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0283\u0254\u026as",
+"force": true
+},
+{
+"text": "operation",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0251p\u025a\u02c8e\u026a\u0283\u0259n",
+"force": true
+},
+{
+"text": "addition",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8d\u026a\u0283\u0259n",
+"force": true
+},
+{
+"text": "decide",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u026a\u02c8sa\u026ad",
+"force": true
+},
+{
+"text": "decision",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u026a\u02c8s\u026a\u0292\u0259n",
+"force": true
+},
+{
+"text": "behaviour",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u026a\u02c8he\u026avj\u025a",
+"force": true
+},
+{
+"text": "growth",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261ro\u028a\u03b8",
+"force": true
+},
+{
+"text": "weather",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8w\u025b\u00f0\u025a",
+"force": true
+},
+{
+"text": "nature",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8ne\u026at\u0283\u025a",
+"force": true
+},
+{
+"text": "committee",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u0259\u02c8m\u026ati",
+"force": true
+},
+{
+"text": "agreement",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8\u0261rim\u0259nt",
+"force": true
+},
+{
+"text": "season",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8siz\u0259n",
+"force": true
+},
+{
+"text": "sharp",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283\u0251rp",
+"force": true
+},
+{
+"text": "quality",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8kw\u0251l\u0259ti",
+"force": true
+},
+{
+"text": "natural",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8n\u00e6t\u0283\u025a\u0259l",
+"force": true
+},
+{
+"text": "summer",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u028cm\u025a",
+"force": true
+},
+{
+"text": "winter",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8w\u026ant\u025a",
+"force": true
+},
+{
+"text": "island",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8a\u026al\u0259nd",
+"force": true
+},
+{
+"text": "heat",
+"kind": "word",
+"voice": "man",
+"ipa": "hit",
+"force": true
+},
+{
+"text": "pipe",
+"kind": "word",
+"voice": "man",
+"ipa": "pa\u026ap",
+"force": true
+},
+{
+"text": "thick",
+"kind": "word",
+"voice": "man",
+"ipa": "\u03b8\u026ak",
+"force": true
+},
+{
+"text": "ticket",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8t\u026ak\u0259t",
+"force": true
+},
+{
+"text": "angle",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u00e6\u014b\u0261\u0259l",
+"force": true
+},
+{
+"text": "burn",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u025dn",
+"force": true
+},
+{
+"text": "awake",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8we\u026ak",
+"force": true
+},
+{
+"text": "bath",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u00e6\u03b8",
+"force": true
+},
+{
+"text": "bell",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u025bl",
+"force": true
+},
+{
+"text": "pot",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u0251t",
+"force": true
+},
+{
+"text": "energy",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u025bn\u025ad\u0292i",
+"force": true
+},
+{
+"text": "ring",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u026a\u014b",
+"force": true
+},
+{
+"text": "brain",
+"kind": "word",
+"voice": "man",
+"ipa": "bre\u026an",
+"force": true
+},
+{
+"text": "breath",
+"kind": "word",
+"voice": "man",
+"ipa": "br\u025b\u03b8",
+"force": true
+},
+{
+"text": "burst",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u025dst",
+"force": true
+},
+{
+"text": "power",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8pa\u028a\u025a",
+"force": true
+},
+{
+"text": "effort",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u025bf\u025at",
+"force": true
+},
+{
+"text": "cheap",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0283ip",
+"force": true
+},
+{
+"text": "clock",
+"kind": "word",
+"voice": "man",
+"ipa": "kl\u0251k",
+"force": true
+},
+{
+"text": "cry",
+"kind": "word",
+"voice": "man",
+"ipa": "kra\u026a",
+"force": true
+},
+{
+"text": "try",
+"kind": "word",
+"voice": "man",
+"ipa": "tra\u026a",
+"force": true
+},
+{
+"text": "control",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u0259n\u02c8tro\u028al",
+"force": true
+},
+{
+"text": "force",
+"kind": "word",
+"voice": "man",
+"ipa": "f\u0254rs",
+"force": true
+},
+{
+"text": "watch",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u0251t\u0283",
+"force": true
+},
+{
+"text": "difficult",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8d\u026af\u0259k\u0259lt",
+"force": true
+},
+{
+"text": "government",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u0261\u028cv\u025am\u0259nt",
+"force": true
+},
+{
+"text": "lead",
+"kind": "word",
+"voice": "man",
+"ipa": "lid",
+"force": true
+},
+{
+"text": "strong",
+"kind": "word",
+"voice": "man",
+"ipa": "str\u0254\u014b",
+"force": true
+},
+{
+"text": "authority",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8\u03b8\u0254r\u0259ti",
+"force": true
+},
+{
+"text": "manage",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8m\u00e6n\u0259d\u0292",
+"force": true
+},
+{
+"text": "law",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u0254",
+"force": true
+},
+{
+"text": "fail",
+"kind": "word",
+"voice": "man",
+"ipa": "fe\u026al",
+"force": true
+},
+{
+"text": "attempt",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8t\u025bmpt",
+"force": true
+},
+{
+"text": "listen",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8l\u026as\u0259n",
+"force": true
+},
+{
+"text": "manager",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8m\u00e6n\u0259d\u0292\u025a",
+"force": true
+},
+{
+"text": "report",
+"kind": "word",
+"voice": "man",
+"ipa": "ri\u02c8p\u0254rt",
+"force": true
+},
+{
+"text": "society",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u0259\u02c8sa\u026a\u0259ti",
+"force": true
+},
+{
+"text": "attention",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8t\u025bn\u0283\u0259n",
+"force": true
+},
+{
+"text": "police",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u0259\u02c8lis",
+"force": true
+},
+{
+"text": "crime",
+"kind": "word",
+"voice": "man",
+"ipa": "kra\u026am",
+"force": true
+},
+{
+"text": "tax",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u00e6ks",
+"force": true
+},
+{
+"text": "memory",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8m\u025bm\u025ai",
+"force": true
+},
+{
+"text": "beautiful",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8bjut\u0259f\u0259l",
+"force": true
+},
+{
+"text": "competition",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u0251mp\u0259\u02c8t\u026a\u0283\u0259n",
+"force": true
+},
+{
+"text": "marry",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8m\u025bri",
+"force": true
+},
+{
+"text": "single",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u026a\u014b\u0261\u0259l",
+"force": true
+},
+{
+"text": "couple",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8k\u028cp\u0259l",
+"force": true
+},
+{
+"text": "wife",
+"kind": "word",
+"voice": "man",
+"ipa": "wa\u026af",
+"force": true
+},
+{
+"text": "prison",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8pr\u026az\u0259n",
+"force": true
+},
+{
+"text": "debt",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u025bt",
+"force": true
+},
+{
+"text": "note",
+"kind": "word",
+"voice": "man",
+"ipa": "no\u028at",
+"force": true
+},
+{
+"text": "unit",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8jun\u0259t",
+"force": true
+},
+{
+"text": "equal",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8ikw\u0259l",
+"force": true
+},
+{
+"text": "error",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u025br\u025a",
+"force": true
+},
+{
+"text": "false",
+"kind": "word",
+"voice": "man",
+"ipa": "f\u0254ls",
+"force": true
+},
+{
+"text": "second",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u025bk\u0259nd",
+"force": true
+},
+{
+"text": "real",
+"kind": "word",
+"voice": "man",
+"ipa": "ril",
+"force": true
+},
+{
+"text": "degree",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u026a\u02c8\u0261ri",
+"force": true
+},
+{
+"text": "half",
+"kind": "word",
+"voice": "man",
+"ipa": "h\u00e6f",
+"force": true
+},
+{
+"text": "grey",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261re\u026a",
+"force": true
+},
+{
+"text": "level",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8l\u025bv\u0259l",
+"force": true
+},
+{
+"text": "smoke",
+"kind": "word",
+"voice": "man",
+"ipa": "smo\u028ak",
+"force": true
+},
+{
+"text": "gun",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261\u028cn",
+"force": true
+},
+{
+"text": "hook",
+"kind": "word",
+"voice": "man",
+"ipa": "h\u028ak",
+"force": true
+},
+{
+"text": "journey",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8d\u0292\u025dni",
+"force": true
+},
+{
+"text": "scale",
+"kind": "word",
+"voice": "man",
+"ipa": "ske\u026al",
+"force": true
+},
+{
+"text": "flat",
+"kind": "word",
+"voice": "man",
+"ipa": "fl\u00e6t",
+"force": true
+},
+{
+"text": "wound",
+"kind": "word",
+"voice": "man",
+"ipa": "wund",
+"force": true
+},
+{
+"text": "kick",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u026ak",
+"force": true
+},
+{
+"text": "limit",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8l\u026am\u0259t",
+"force": true
+},
+{
+"text": "lie",
+"kind": "word",
+"voice": "man",
+"ipa": "la\u026a",
+"force": true
+},
+{
+"text": "range",
+"kind": "word",
+"voice": "man",
+"ipa": "re\u026and\u0292",
+"force": true
+},
+{
+"text": "card",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u0251rd",
+"force": true
+},
+{
+"text": "pain",
+"kind": "word",
+"voice": "man",
+"ipa": "pe\u026an",
+"force": true
+},
+{
+"text": "iron",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8a\u026a\u025an",
+"force": true
+},
+{
+"text": "feeling",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8fil\u026a\u014b",
+"force": true
+},
+{
+"text": "attack",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8t\u00e6k",
+"force": true
+},
+{
+"text": "danger",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8de\u026and\u0292\u025a",
+"force": true
+},
+{
+"text": "meat",
+"kind": "word",
+"voice": "man",
+"ipa": "mit",
+"force": true
+},
+{
+"text": "mix",
+"kind": "word",
+"voice": "man",
+"ipa": "m\u026aks",
+"force": true
+},
+{
+"text": "interest",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u026antr\u0259st",
+"force": true
+},
+{
+"text": "political",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u0259\u02c8l\u026at\u0259k\u0259l",
+"force": true
+},
+{
+"text": "love",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u028cv",
+"force": true
+},
+{
+"text": "save",
+"kind": "word",
+"voice": "man",
+"ipa": "se\u026av",
+"force": true
+},
+{
+"text": "serious",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u026ari\u0259s",
+"force": true
+},
+{
+"text": "party",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8p\u0251rti",
+"force": true
+},
+{
+"text": "date",
+"kind": "word",
+"voice": "man",
+"ipa": "de\u026at",
+"force": true
+},
+{
+"text": "fear",
+"kind": "word",
+"voice": "man",
+"ipa": "f\u026ar",
+"force": true
+},
+{
+"text": "doubt",
+"kind": "word",
+"voice": "man",
+"ipa": "da\u028at",
+"force": true
+},
+{
+"text": "safe",
+"kind": "word",
+"voice": "man",
+"ipa": "se\u026af",
+"force": true
+},
+{
+"text": "certain",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u025dt\u0259n",
+"force": true
+},
+{
+"text": "care",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u025br",
+"force": true
+},
+{
+"text": "check",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0283\u025bk",
+"force": true
+},
+{
+"text": "respect",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u026a\u02c8sp\u025bkt",
+"force": true
+},
+{
+"text": "pleasure",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8pl\u025b\u0292\u025a",
+"force": true
+},
+{
+"text": "until",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259n\u02c8t\u026al",
+"force": true
+},
+{
+"text": "consider",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u0259n\u02c8s\u026ad\u025a",
+"force": true
+},
+{
+"text": "moment",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8mo\u028am\u0259nt",
+"force": true
+},
+{
+"text": "condition",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u0259n\u02c8d\u026a\u0283\u0259n",
+"force": true
+},
+{
+"text": "social",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8so\u028a\u0283\u0259l",
+"force": true
+},
+{
+"text": "still",
+"kind": "word",
+"voice": "man",
+"ipa": "st\u026al",
+"force": true
+},
+{
+"text": "while",
+"kind": "word",
+"voice": "man",
+"ipa": "wa\u026al",
+"force": true
+},
+{
+"text": "since",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u026ans",
+"force": true
+},
+{
+"text": "yet",
+"kind": "word",
+"voice": "man",
+"ipa": "j\u025bt",
+"force": true
+},
+{
+"text": "wait",
+"kind": "word",
+"voice": "man",
+"ipa": "we\u026at",
+"force": true
+},
+{
+"text": "hour",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8a\u028a\u025a",
+"force": true
+},
+{
+"text": "state",
+"kind": "word",
+"voice": "man",
+"ipa": "ste\u026at",
+"force": true
+},
+{
+"text": "situation",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u026at\u0283u\u02c8e\u026a\u0283\u0259n",
+"force": true
+},
+{
+"text": "activity",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00e6k\u02c8t\u026av\u0259ti",
+"force": true
+},
+{
+"text": "morning",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8m\u0254rn\u026a\u014b",
+"force": true
+},
+{
+"text": "problem",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8pr\u0251bl\u0259m",
+"force": true
+},
+{
+"text": "matter",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8m\u00e6t\u025a",
+"force": true
+},
+{
+"text": "minute",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8m\u026an\u0259t",
+"force": true
+},
+{
+"text": "health",
+"kind": "word",
+"voice": "man",
+"ipa": "h\u025bl\u03b8",
+"force": true
+},
+{
+"text": "raise",
+"kind": "word",
+"voice": "man",
+"ipa": "re\u026az",
+"force": true
+},
+{
+"text": "market",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8m\u0251rk\u0259t",
+"force": true
+},
+{
+"text": "centre",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u025bnt\u025a",
+"force": true
+},
+{
+"text": "due",
+"kind": "word",
+"voice": "man",
+"ipa": "du",
+"force": true
+},
+{
+"text": "game",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261e\u026am",
+"force": true
+},
+{
+"text": "enjoy",
+"kind": "word",
+"voice": "man",
+"ipa": "\u025bn\u02c8d\u0292\u0254\u026a",
+"force": true
+},
+{
+"text": "win",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u026an",
+"force": true
+},
+{
+"text": "hospital",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8h\u0251sp\u026at\u0259l",
+"force": true
+},
+{
+"text": "relation",
+"kind": "word",
+"voice": "man",
+"ipa": "ri\u02c8le\u026a\u0283\u0259n",
+"force": true
+},
+{
+"text": "east",
+"kind": "word",
+"voice": "man",
+"ipa": "ist",
+"force": true
+},
+{
+"text": "responsible",
+"kind": "word",
+"voice": "man",
+"ipa": "ri\u02c8sp\u0251ns\u0259b\u0259l",
+"force": true
+},
+{
+"text": "lose",
+"kind": "word",
+"voice": "man",
+"ipa": "luz",
+"force": true
+},
+{
+"text": "meal",
+"kind": "word",
+"voice": "man",
+"ipa": "mil",
+"force": true
+},
+{
+"text": "disease",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u026a\u02c8ziz",
+"force": true
+},
+{
+"text": "surprise",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u025a\u02c8pra\u026az",
+"force": true
+},
+{
+"text": "harbour",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8h\u0251rb\u025a",
+"force": true
+},
+{
+"text": "even",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8iv\u026an",
+"force": true
+},
+{
+"text": "loss",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u0254s",
+"force": true
+},
+{
+"text": "lock",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u0251k",
+"force": true
+},
+{
+"text": "oil",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0254\u026al",
+"force": true
+},
+{
+"text": "belief",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u026a\u02c8lif",
+"force": true
+},
+{
+"text": "though",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00f0o\u028a",
+"force": true
+},
+{
+"text": "desire",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u026a\u02c8za\u026a\u025a",
+"force": true
+},
+{
+"text": "observation",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0251bz\u025a\u02c8ve\u026a\u0283\u0259n",
+"force": true
+},
+{
+"text": "potato",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u0259\u02c8te\u026ato\u028a",
+"force": true
+},
+{
+"text": "pull",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u028al",
+"force": true
+},
+{
+"text": "punishment",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8p\u028cn\u026a\u0283m\u0259nt",
+"force": true
+},
+{
+"text": "rat",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u00e6t",
+"force": true
+},
+{
+"text": "religion",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u026a\u02c8l\u026ad\u0292\u0259n",
+"force": true
+},
+{
+"text": "rough",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u028cf",
+"force": true
+},
+{
+"text": "salt",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u0254lt",
+"force": true
+},
+{
+"text": "church",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0283\u025dt\u0283",
+"force": true
+},
+{
+"text": "trouble",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8tr\u028cb\u0259l",
+"force": true
+},
+{
+"text": "sand",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u00e6nd",
+"force": true
+},
+{
+"text": "separate",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u025bp\u0259r\u0259t",
+"force": true
+},
+{
+"text": "smell",
+"kind": "word",
+"voice": "man",
+"ipa": "sm\u025bl",
+"force": true
+},
+{
+"text": "solid",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u0251l\u0259d",
+"force": true
+},
+{
+"text": "square",
+"kind": "word",
+"voice": "man",
+"ipa": "skw\u025br",
+"force": true
+},
+{
+"text": "stem",
+"kind": "word",
+"voice": "man",
+"ipa": "st\u025bm",
+"force": true
+},
+{
+"text": "stomach",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8st\u028cm\u0259k",
+"force": true
+},
+{
+"text": "tight",
+"kind": "word",
+"voice": "man",
+"ipa": "ta\u026at",
+"force": true
+},
+{
+"text": "substance",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u028cbst\u0259ns",
+"force": true
+},
+{
+"text": "chest",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0283\u025bst",
+"force": true
+},
+{
+"text": "tongue",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u028c\u014b",
+"force": true
+},
+{
+"text": "tooth",
+"kind": "word",
+"voice": "man",
+"ipa": "tu\u03b8",
+"force": true
+},
+{
+"text": "trousers",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8tra\u028az\u025az",
+"force": true
+},
+{
+"text": "material",
+"kind": "word",
+"voice": "man",
+"ipa": "m\u0259\u02c8t\u026ari\u0259l",
+"force": true
+},
+{
+"text": "heart",
+"kind": "word",
+"voice": "man",
+"ipa": "h\u0251rt",
+"force": true
+},
+{
+"text": "taste",
+"kind": "word",
+"voice": "man",
+"ipa": "te\u026ast",
+"force": true
+},
+{
+"text": "coal",
+"kind": "word",
+"voice": "man",
+"ipa": "ko\u028al",
+"force": true
+},
+{
+"text": "twist",
+"kind": "word",
+"voice": "man",
+"ipa": "tw\u026ast",
+"force": true
+},
+{
+"text": "sense",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u025bns",
+"force": true
+},
+{
+"text": "stone",
+"kind": "word",
+"voice": "man",
+"ipa": "sto\u028an",
+"force": true
+},
+{
+"text": "band",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u00e6nd",
+"force": true
+},
+{
+"text": "wood",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u028ad",
+"force": true
+},
+{
+"text": "sweet",
+"kind": "word",
+"voice": "man",
+"ipa": "swit",
+"force": true
+},
+{
+"text": "mean",
+"kind": "word",
+"voice": "man",
+"ipa": "min",
+"force": true
+},
+{
+"text": "board",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u0254rd",
+"force": true
+},
+{
+"text": "stick",
+"kind": "word",
+"voice": "man",
+"ipa": "st\u026ak",
+"force": true
+},
+{
+"text": "fruit",
+"kind": "word",
+"voice": "man",
+"ipa": "frut",
+"force": true
+},
+{
+"text": "mine",
+"kind": "word",
+"voice": "man",
+"ipa": "ma\u026an",
+"force": true
+},
+{
+"text": "understand",
+"kind": "word",
+"voice": "man",
+"ipa": "\u028cnd\u025a\u02c8st\u00e6nd",
+"force": true
+},
+{
+"text": "pick",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u026ak",
+"force": true
+},
+{
+"text": "sign",
+"kind": "word",
+"voice": "man",
+"ipa": "sa\u026an",
+"force": true
+},
+{
+"text": "skin",
+"kind": "word",
+"voice": "man",
+"ipa": "sk\u026an",
+"force": true
+},
+{
+"text": "rail",
+"kind": "word",
+"voice": "man",
+"ipa": "re\u026al",
+"force": true
+},
+{
+"text": "read",
+"kind": "word",
+"voice": "man",
+"ipa": "rid",
+"force": true
+},
+{
+"text": "clear",
+"kind": "word",
+"voice": "man",
+"ipa": "kl\u026ar",
+"force": true
+},
+{
+"text": "letter",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8l\u025bt\u025a",
+"force": true
+},
+{
+"text": "simple",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u026amp\u0259l",
+"force": true
+},
+{
+"text": "bright",
+"kind": "word",
+"voice": "man",
+"ipa": "bra\u026at",
+"force": true
+},
+{
+"text": "study",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8st\u028cdi",
+"force": true
+},
+{
+"text": "explain",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026ak\u02c8sple\u026an",
+"force": true
+},
+{
+"text": "complex",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8k\u0251mpl\u025bks",
+"force": true
+},
+{
+"text": "library",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8la\u026abr\u025bri",
+"force": true
+},
+{
+"text": "spring",
+"kind": "word",
+"voice": "man",
+"ipa": "spr\u026a\u014b",
+"force": true
+},
+{
+"text": "reason",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8riz\u0259n",
+"force": true
+},
+{
+"text": "history",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8h\u026ast\u025ai",
+"force": true
+},
+{
+"text": "research",
+"kind": "word",
+"voice": "man",
+"ipa": "ri\u02c8s\u025dt\u0283",
+"force": true
+},
+{
+"text": "field",
+"kind": "word",
+"voice": "man",
+"ipa": "fild",
+"force": true
+},
+{
+"text": "medical",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8m\u025bd\u0259k\u0259l",
+"force": true
+},
+{
+"text": "purpose",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8p\u025dp\u0259s",
+"force": true
+},
+{
+"text": "argument",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u0251r\u0261j\u0259m\u0259nt",
+"force": true
+},
+{
+"text": "science",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8sa\u026a\u0259ns",
+"force": true
+},
+{
+"text": "theory",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u03b8\u026ari",
+"force": true
+},
+{
+"text": "farm",
+"kind": "word",
+"voice": "man",
+"ipa": "f\u0251rm",
+"force": true
+},
+{
+"text": "technology",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u025bk\u02c8n\u0251l\u0259d\u0292i",
+"force": true
+},
+{
+"text": "organisation",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0254r\u0261\u0259n\u026a\u02c8ze\u026a\u0283\u0259n",
+"force": true
+},
+{
+"text": "stamp",
+"kind": "word",
+"voice": "man",
+"ipa": "st\u00e6mp",
+"force": true
+},
+{
+"text": "wine",
+"kind": "word",
+"voice": "man",
+"ipa": "wa\u026an",
+"force": true
+},
+{
+"text": "wire",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8wa\u026a\u025a",
+"force": true
+},
+{
+"text": "electric",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026a\u02c8l\u025bktr\u026ak",
+"force": true
+},
+{
+"text": "yellow",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8j\u025blo\u028a",
+"force": true
+},
+{
+"text": "adjustment",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8d\u0292\u028cstm\u0259nt",
+"force": true
+},
+{
+"text": "advertisement",
+"kind": "word",
+"voice": "man",
+"ipa": "\u00e6d\u02c8v\u025dt\u0259zm\u0259nt",
+"force": true
+},
+{
+"text": "approval",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8pruv\u0259l",
+"force": true
+},
+{
+"text": "current",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8k\u025d\u0259nt",
+"force": true
+},
+{
+"text": "colour",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8k\u028cl\u025a",
+"force": true
+},
+{
+"text": "attraction",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0259\u02c8tr\u00e6k\u0283\u0259n",
+"force": true
+},
+{
+"text": "automatic",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0254t\u0259\u02c8m\u00e6t\u026ak",
+"force": true
+},
+{
+"text": "bite",
+"kind": "word",
+"voice": "man",
+"ipa": "ba\u026at",
+"force": true
+},
+{
+"text": "mark",
+"kind": "word",
+"voice": "man",
+"ipa": "m\u0251rk",
+"force": true
+},
+{
+"text": "paint",
+"kind": "word",
+"voice": "man",
+"ipa": "pe\u026ant",
+"force": true
+},
+{
+"text": "bitter",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8b\u026at\u025a",
+"force": true
+},
+{
+"text": "boil",
+"kind": "word",
+"voice": "man",
+"ipa": "b\u0254\u026al",
+"force": true
+},
+{
+"text": "boot",
+"kind": "word",
+"voice": "man",
+"ipa": "but",
+"force": true
+},
+{
+"text": "result",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u026a\u02c8z\u028clt",
+"force": true
+},
+{
+"text": "art",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0251rt",
+"force": true
+},
+{
+"text": "branch",
+"kind": "word",
+"voice": "man",
+"ipa": "br\u00e6nt\u0283",
+"force": true
+},
+{
+"text": "brown",
+"kind": "word",
+"voice": "man",
+"ipa": "bra\u028an",
+"force": true
+},
+{
+"text": "brush",
+"kind": "word",
+"voice": "man",
+"ipa": "br\u028c\u0283",
+"force": true
+},
+{
+"text": "process",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8pr\u0251s\u025bs",
+"force": true
+},
+{
+"text": "butter",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8b\u028ct\u025a",
+"force": true
+},
+{
+"text": "button",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8b\u028ct\u0259n",
+"force": true
+},
+{
+"text": "camera",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8k\u00e6m\u025a\u0259",
+"force": true
+},
+{
+"text": "chain",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0283e\u026an",
+"force": true
+},
+{
+"text": "education",
+"kind": "word",
+"voice": "man",
+"ipa": "\u025bd\u0292\u0259\u02c8ke\u026a\u0283\u0259n",
+"force": true
+},
+{
+"text": "stage",
+"kind": "word",
+"voice": "man",
+"ipa": "ste\u026ad\u0292",
+"force": true
+},
+{
+"text": "cheese",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0283iz",
+"force": true
+},
+{
+"text": "chemical",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8k\u025bm\u0259k\u0259l",
+"force": true
+},
+{
+"text": "chief",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u0283if",
+"force": true
+},
+{
+"text": "student",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8stud\u0259nt",
+"force": true
+},
+{
+"text": "comfort",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8k\u028cmf\u025at",
+"force": true
+},
+{
+"text": "comparison",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u0259m\u02c8p\u025br\u0259s\u0259n",
+"force": true
+},
+{
+"text": "connection",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u0259\u02c8n\u025bk\u0283\u0259n",
+"force": true
+},
+{
+"text": "copy",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8k\u0251pi",
+"force": true
+},
+{
+"text": "class",
+"kind": "word",
+"voice": "man",
+"ipa": "kl\u00e6s",
+"force": true
+},
+{
+"text": "cough",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u0251f",
+"force": true
+},
+{
+"text": "crack",
+"kind": "word",
+"voice": "man",
+"ipa": "kr\u00e6k",
+"force": true
+},
+{
+"text": "credit",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8kr\u025bd\u0259t",
+"force": true
+},
+{
+"text": "curtain",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8k\u025dt\u0259n",
+"force": true
+},
+{
+"text": "course",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u0254rs",
+"force": true
+},
+{
+"text": "dear",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u026ar",
+"force": true
+},
+{
+"text": "dependent",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u026a\u02c8p\u025bnd\u0259nt",
+"force": true
+},
+{
+"text": "destruction",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u026a\u02c8str\u028ck\u0283\u0259n",
+"force": true
+},
+{
+"text": "dirty",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8d\u025dti",
+"force": true
+},
+{
+"text": "discovery",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u026a\u02c8sk\u028cv\u025ai",
+"force": true
+},
+{
+"text": "division",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u026a\u02c8v\u026a\u0292\u0259n",
+"force": true
+},
+{
+"text": "dust",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u028cst",
+"force": true
+},
+{
+"text": "ear",
+"kind": "word",
+"voice": "man",
+"ipa": "ir",
+"force": true
+},
+{
+"text": "engine",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u025bnd\u0292\u0259n",
+"force": true
+},
+{
+"text": "exchange",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026aks\u02c8t\u0283e\u026and\u0292",
+"force": true
+},
+{
+"text": "existence",
+"kind": "word",
+"voice": "man",
+"ipa": "\u025b\u0261\u02c8z\u026ast\u0259ns",
+"force": true
+},
+{
+"text": "expansion",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026ak\u02c8sp\u00e6n\u0283\u0259n",
+"force": true
+},
+{
+"text": "feather",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8f\u025b\u00f0\u025a",
+"force": true
+},
+{
+"text": "fiction",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8f\u026ak\u0283\u0259n",
+"force": true
+},
+{
+"text": "flag",
+"kind": "word",
+"voice": "man",
+"ipa": "fl\u00e6\u0261",
+"force": true
+},
+{
+"text": "flight",
+"kind": "word",
+"voice": "man",
+"ipa": "fla\u026at",
+"force": true
+},
+{
+"text": "fold",
+"kind": "word",
+"voice": "man",
+"ipa": "fo\u028ald",
+"force": true
+},
+{
+"text": "fork",
+"kind": "word",
+"voice": "man",
+"ipa": "f\u0254rk",
+"force": true
+},
+{
+"text": "frame",
+"kind": "word",
+"voice": "man",
+"ipa": "fre\u026am",
+"force": true
+},
+{
+"text": "frequent",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8frikw\u0259nt",
+"force": true
+},
+{
+"text": "grain",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261re\u026an",
+"force": true
+},
+{
+"text": "guide",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0261a\u026ad",
+"force": true
+},
+{
+"text": "hate",
+"kind": "word",
+"voice": "man",
+"ipa": "he\u026at",
+"force": true
+},
+{
+"text": "healthy",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8h\u025bl\u03b8i",
+"force": true
+},
+{
+"text": "humour",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8hjum\u025a",
+"force": true
+},
+{
+"text": "instrument",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u026anstr\u0259m\u0259nt",
+"force": true
+},
+{
+"text": "insurance",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026an\u02c8\u0283\u028ar\u0259ns",
+"force": true
+},
+{
+"text": "invention",
+"kind": "word",
+"voice": "man",
+"ipa": "\u026an\u02c8v\u025bn\u0283\u0259n",
+"force": true
+},
+{
+"text": "judge",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u0292\u028cd\u0292",
+"force": true
+},
+{
+"text": "jump",
+"kind": "word",
+"voice": "man",
+"ipa": "d\u0292\u028cmp",
+"force": true
+},
+{
+"text": "kiss",
+"kind": "word",
+"voice": "man",
+"ipa": "k\u026as",
+"force": true
+},
+{
+"text": "leather",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8l\u025b\u00f0\u025a",
+"force": true
+},
+{
+"text": "lip",
+"kind": "word",
+"voice": "man",
+"ipa": "l\u026ap",
+"force": true
+},
+{
+"text": "loose",
+"kind": "word",
+"voice": "man",
+"ipa": "lus",
+"force": true
+},
+{
+"text": "map",
+"kind": "word",
+"voice": "man",
+"ipa": "m\u00e6p",
+"force": true
+},
+{
+"text": "mass",
+"kind": "word",
+"voice": "man",
+"ipa": "m\u00e6s",
+"force": true
+},
+{
+"text": "match",
+"kind": "word",
+"voice": "man",
+"ipa": "m\u00e6t\u0283",
+"force": true
+},
+{
+"text": "military",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8m\u026al\u0259t\u025bri",
+"force": true
+},
+{
+"text": "motion",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8mo\u028a\u0283\u0259n",
+"force": true
+},
+{
+"text": "muscle",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8m\u028cs\u0259l",
+"force": true
+},
+{
+"text": "narrow",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8n\u025bro\u028a",
+"force": true
+},
+{
+"text": "nerve",
+"kind": "word",
+"voice": "man",
+"ipa": "n\u025dv",
+"force": true
+},
+{
+"text": "net",
+"kind": "word",
+"voice": "man",
+"ipa": "n\u025bt",
+"force": true
+},
+{
+"text": "opposite",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u0251p\u0259z\u0259t",
+"force": true
+},
+{
+"text": "parallel",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8p\u025br\u0259l\u025bl",
+"force": true
+},
+{
+"text": "payment",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8pe\u026am\u0259nt",
+"force": true
+},
+{
+"text": "peace",
+"kind": "word",
+"voice": "man",
+"ipa": "pis",
+"force": true
+},
+{
+"text": "pen",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u025bn",
+"force": true
+},
+{
+"text": "pig",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u026a\u0261",
+"force": true
+},
+{
+"text": "plate",
+"kind": "word",
+"voice": "man",
+"ipa": "ple\u026at",
+"force": true
+},
+{
+"text": "pocket",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8p\u0251k\u0259t",
+"force": true
+},
+{
+"text": "poison",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8p\u0254\u026az\u0259n",
+"force": true
+},
+{
+"text": "powder",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8pa\u028ad\u025a",
+"force": true
+},
+{
+"text": "print",
+"kind": "word",
+"voice": "man",
+"ipa": "pr\u026ant",
+"force": true
+},
+{
+"text": "profit",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8pr\u0251f\u0259t",
+"force": true
+},
+{
+"text": "protest",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8pro\u028at\u025bst",
+"force": true
+},
+{
+"text": "pump",
+"kind": "word",
+"voice": "man",
+"ipa": "p\u028cmp",
+"force": true
+},
+{
+"text": "regret",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u0259\u02c8\u0261r\u025bt",
+"force": true
+},
+{
+"text": "representative",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u025bpr\u0259\u02c8z\u025bnt\u0259t\u026av",
+"force": true
+},
+{
+"text": "request",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u026a\u02c8kw\u025bst",
+"force": true
+},
+{
+"text": "reward",
+"kind": "word",
+"voice": "man",
+"ipa": "r\u026a\u02c8w\u0254rd",
+"force": true
+},
+{
+"text": "roll",
+"kind": "word",
+"voice": "man",
+"ipa": "ro\u028al",
+"force": true
+},
+{
+"text": "root",
+"kind": "word",
+"voice": "man",
+"ipa": "rut",
+"force": true
+},
+{
+"text": "sail",
+"kind": "word",
+"voice": "man",
+"ipa": "se\u026al",
+"force": true
+},
+{
+"text": "secret",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8sikr\u0259t",
+"force": true
+},
+{
+"text": "secretary",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u025bkr\u0259t\u025bri",
+"force": true
+},
+{
+"text": "selection",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u0259\u02c8l\u025bk\u0283\u0259n",
+"force": true
+},
+{
+"text": "self",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u025blf",
+"force": true
+},
+{
+"text": "servant",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u025dv\u0259nt",
+"force": true
+},
+{
+"text": "sex",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u025bks",
+"force": true
+},
+{
+"text": "shade",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283e\u026ad",
+"force": true
+},
+{
+"text": "sheep",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283ip",
+"force": true
+},
+{
+"text": "shock",
+"kind": "word",
+"voice": "man",
+"ipa": "\u0283\u0251k",
+"force": true
+},
+{
+"text": "silver",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8s\u026alv\u025a",
+"force": true
+},
+{
+"text": "skirt",
+"kind": "word",
+"voice": "man",
+"ipa": "sk\u025dt",
+"force": true
+},
+{
+"text": "slip",
+"kind": "word",
+"voice": "man",
+"ipa": "sl\u026ap",
+"force": true
+},
+{
+"text": "slope",
+"kind": "word",
+"voice": "man",
+"ipa": "slo\u028ap",
+"force": true
+},
+{
+"text": "smile",
+"kind": "word",
+"voice": "man",
+"ipa": "sma\u026al",
+"force": true
+},
+{
+"text": "soap",
+"kind": "word",
+"voice": "man",
+"ipa": "so\u028ap",
+"force": true
+},
+{
+"text": "spoon",
+"kind": "word",
+"voice": "man",
+"ipa": "spun",
+"force": true
+},
+{
+"text": "steel",
+"kind": "word",
+"voice": "man",
+"ipa": "stil",
+"force": true
+},
+{
+"text": "straight",
+"kind": "word",
+"voice": "man",
+"ipa": "stre\u026at",
+"force": true
+},
+{
+"text": "stretch",
+"kind": "word",
+"voice": "man",
+"ipa": "str\u025bt\u0283",
+"force": true
+},
+{
+"text": "suggestion",
+"kind": "word",
+"voice": "man",
+"ipa": "s\u0259\u02c8d\u0292\u025bst\u0283\u0259n",
+"force": true
+},
+{
+"text": "tail",
+"kind": "word",
+"voice": "man",
+"ipa": "te\u026al",
+"force": true
+},
+{
+"text": "tendency",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8t\u025bnd\u0259nsi",
+"force": true
+},
+{
+"text": "thousand",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8\u03b8a\u028az\u0259nd",
+"force": true
+},
+{
+"text": "throat",
+"kind": "word",
+"voice": "man",
+"ipa": "\u03b8ro\u028at",
+"force": true
+},
+{
+"text": "till",
+"kind": "word",
+"voice": "man",
+"ipa": "t\u026al",
+"force": true
+},
+{
+"text": "transport",
+"kind": "word",
+"voice": "man",
+"ipa": "tr\u00e6n\u02c8sp\u0254rt",
+"force": true
+},
+{
+"text": "trick",
+"kind": "word",
+"voice": "man",
+"ipa": "tr\u026ak",
+"force": true
+},
+{
+"text": "vessel",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8v\u025bs\u0259l",
+"force": true
+},
+{
+"text": "violent",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8va\u026a\u0259l\u0259nt",
+"force": true
+},
+{
+"text": "waste",
+"kind": "word",
+"voice": "man",
+"ipa": "we\u026ast",
+"force": true
+},
+{
+"text": "wave",
+"kind": "word",
+"voice": "man",
+"ipa": "we\u026av",
+"force": true
+},
+{
+"text": "wheel",
+"kind": "word",
+"voice": "man",
+"ipa": "wil",
+"force": true
+},
+{
+"text": "wing",
+"kind": "word",
+"voice": "man",
+"ipa": "w\u026a\u014b",
+"force": true
+},
+{
+"text": "wise",
+"kind": "word",
+"voice": "man",
+"ipa": "wa\u026az",
+"force": true
+},
+{
+"text": "yesterday",
+"kind": "word",
+"voice": "man",
+"ipa": "\u02c8j\u025bst\u025ade\u026a",
+"force": true
+},
+{
 "text": "I have a dog.",
 "kind": "sentence",
 "voice": "man",
@@ -62,23 +7062,9 @@
 "force": true
 },
 {
-"text": "child",
-"kind": "word",
-"voice": "man",
-"ipa": "t\u0283a\u026ald",
-"force": true
-},
-{
 "text": "She is a child.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "that",
-"kind": "word",
-"voice": "man",
-"ipa": "\u00f0\u00e6t",
 "force": true
 },
 {
@@ -88,36 +7074,15 @@
 "force": true
 },
 {
-"text": "dog",
-"kind": "word",
-"voice": "man",
-"ipa": "d\u0251\u0261",
-"force": true
-},
-{
 "text": "That is a big dog.",
 "kind": "sentence",
 "voice": "man",
 "force": true
 },
 {
-"text": "cat",
-"kind": "word",
-"voice": "man",
-"ipa": "k\u00e6t",
-"force": true
-},
-{
 "text": "This is a cat.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "it",
-"kind": "word",
-"voice": "man",
-"ipa": "\u026at",
 "force": true
 },
 {
@@ -130,13 +7095,6 @@
 "text": "It is big.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "big",
-"kind": "word",
-"voice": "man",
-"ipa": "b\u026a\u0261",
 "force": true
 },
 {
@@ -158,13 +7116,6 @@
 "force": true
 },
 {
-"text": "and",
-"kind": "word",
-"voice": "man",
-"ipa": "\u00e6nd",
-"force": true
-},
-{
 "text": "I have a dog and a cat.",
 "kind": "sentence",
 "voice": "man",
@@ -174,13 +7125,6 @@
 "text": "We have a small dog.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "not",
-"kind": "word",
-"voice": "man",
-"ipa": "n\u0251t",
 "force": true
 },
 {
@@ -208,13 +7152,6 @@
 "force": true
 },
 {
-"text": "what",
-"kind": "word",
-"voice": "man",
-"ipa": "w\u028ct",
-"force": true
-},
-{
 "text": "What is that? It is a cat.",
 "kind": "sentence",
 "voice": "man",
@@ -227,23 +7164,9 @@
 "force": true
 },
 {
-"text": "book",
-"kind": "word",
-"voice": "man",
-"ipa": "b\u028ak",
-"force": true
-},
-{
 "text": "I have a book.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "red",
-"kind": "word",
-"voice": "man",
-"ipa": "r\u025bd",
 "force": true
 },
 {
@@ -259,13 +7182,6 @@
 "force": true
 },
 {
-"text": "of",
-"kind": "word",
-"voice": "man",
-"ipa": "\u028cv",
-"force": true
-},
-{
 "text": "The door of the house is red.",
 "kind": "sentence",
 "voice": "man",
@@ -275,13 +7191,6 @@
 "text": "I want a cup of milk.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "thing",
-"kind": "word",
-"voice": "man",
-"ipa": "\u03b8\u026a\u014b",
 "force": true
 },
 {
@@ -315,43 +7224,15 @@
 "force": true
 },
 {
-"text": "hot",
-"kind": "word",
-"voice": "man",
-"ipa": "h\u0251t",
-"force": true
-},
-{
 "text": "The water is hot.",
 "kind": "sentence",
 "voice": "man",
 "force": true
 },
 {
-"text": "cold",
-"kind": "word",
-"voice": "man",
-"ipa": "ko\u028ald",
-"force": true
-},
-{
 "text": "I also want some milk.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "want",
-"kind": "word",
-"voice": "man",
-"ipa": "w\u0251nt",
-"force": true
-},
-{
-"text": "milk",
-"kind": "word",
-"voice": "man",
-"ipa": "m\u026alk",
 "force": true
 },
 {
@@ -379,23 +7260,9 @@
 "force": true
 },
 {
-"text": "be",
-"kind": "word",
-"voice": "man",
-"ipa": "bi",
-"force": true
-},
-{
 "text": "Please be good.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "good",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0261\u028ad",
 "force": true
 },
 {
@@ -405,30 +7272,9 @@
 "force": true
 },
 {
-"text": "sit",
-"kind": "word",
-"voice": "man",
-"ipa": "s\u026at",
-"force": true
-},
-{
-"text": "put",
-"kind": "word",
-"voice": "man",
-"ipa": "p\u028at",
-"force": true
-},
-{
 "text": "She put on her coat.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "coat",
-"kind": "word",
-"voice": "man",
-"ipa": "ko\u028at",
 "force": true
 },
 {
@@ -444,13 +7290,6 @@
 "force": true
 },
 {
-"text": "hat",
-"kind": "word",
-"voice": "man",
-"ipa": "h\u00e6t",
-"force": true
-},
-{
 "text": "Put on your hat.",
 "kind": "sentence",
 "voice": "man",
@@ -463,23 +7302,9 @@
 "force": true
 },
 {
-"text": "make",
-"kind": "word",
-"voice": "man",
-"ipa": "me\u026ak",
-"force": true
-},
-{
 "text": "I make a cake.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "cake",
-"kind": "word",
-"voice": "man",
-"ipa": "ke\u026ak",
 "force": true
 },
 {
@@ -495,13 +7320,6 @@
 "force": true
 },
 {
-"text": "at",
-"kind": "word",
-"voice": "man",
-"ipa": "\u00e6t",
-"force": true
-},
-{
 "text": "Look at the dog.",
 "kind": "sentence",
 "voice": "man",
@@ -511,13 +7329,6 @@
 "text": "There is a cat on the roof.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "look",
-"kind": "word",
-"voice": "man",
-"ipa": "l\u028ak",
 "force": true
 },
 {
@@ -545,36 +7356,15 @@
 "force": true
 },
 {
-"text": "with",
-"kind": "word",
-"voice": "man",
-"ipa": "w\u026a\u00f0",
-"force": true
-},
-{
 "text": "Cut it with a knife.",
 "kind": "sentence",
 "voice": "man",
 "force": true
 },
 {
-"text": "parent",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8p\u025br\u0259nt",
-"force": true
-},
-{
 "text": "She is a good parent.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "bed",
-"kind": "word",
-"voice": "man",
-"ipa": "b\u025bd",
 "force": true
 },
 {
@@ -596,23 +7386,9 @@
 "force": true
 },
 {
-"text": "work",
-"kind": "word",
-"voice": "man",
-"ipa": "w\u025dk",
-"force": true
-},
-{
 "text": "The machine does not work.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "get",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0261\u025bt",
 "force": true
 },
 {
@@ -622,36 +7398,15 @@
 "force": true
 },
 {
-"text": "like",
-"kind": "word",
-"voice": "man",
-"ipa": "la\u026ak",
-"force": true
-},
-{
 "text": "I like milk.",
 "kind": "sentence",
 "voice": "man",
 "force": true
 },
 {
-"text": "take",
-"kind": "word",
-"voice": "man",
-"ipa": "te\u026ak",
-"force": true
-},
-{
 "text": "Take my hand.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "hand",
-"kind": "word",
-"voice": "man",
-"ipa": "h\u00e6nd",
 "force": true
 },
 {
@@ -673,30 +7428,9 @@
 "force": true
 },
 {
-"text": "cup",
-"kind": "word",
-"voice": "man",
-"ipa": "k\u028cp",
-"force": true
-},
-{
-"text": "much",
-"kind": "word",
-"voice": "man",
-"ipa": "m\u028ct\u0283",
-"force": true
-},
-{
 "text": "Thank you very much.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "part",
-"kind": "word",
-"voice": "man",
-"ipa": "p\u0251rt",
 "force": true
 },
 {
@@ -709,13 +7443,6 @@
 "text": "She saves money every week.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "cut",
-"kind": "word",
-"voice": "man",
-"ipa": "k\u028ct",
 "force": true
 },
 {
@@ -761,23 +7488,9 @@
 "force": true
 },
 {
-"text": "up",
-"kind": "word",
-"voice": "man",
-"ipa": "\u028cp",
-"force": true
-},
-{
 "text": "Stand up.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "stand",
-"kind": "word",
-"voice": "man",
-"ipa": "st\u00e6nd",
 "force": true
 },
 {
@@ -799,13 +7512,6 @@
 "force": true
 },
 {
-"text": "out",
-"kind": "word",
-"voice": "man",
-"ipa": "a\u028at",
-"force": true
-},
-{
 "text": "Get out!",
 "kind": "sentence",
 "voice": "man",
@@ -818,23 +7524,9 @@
 "force": true
 },
 {
-"text": "but",
-"kind": "word",
-"voice": "man",
-"ipa": "b\u028ct",
-"force": true
-},
-{
 "text": "She is small but strong.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "tired",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8ta\u026a\u025ad",
 "force": true
 },
 {
@@ -850,23 +7542,9 @@
 "force": true
 },
 {
-"text": "which",
-"kind": "word",
-"voice": "man",
-"ipa": "w\u026at\u0283",
-"force": true
-},
-{
 "text": "Which book do you want?",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "need",
-"kind": "word",
-"voice": "man",
-"ipa": "nid",
 "force": true
 },
 {
@@ -888,13 +7566,6 @@
 "force": true
 },
 {
-"text": "if",
-"kind": "word",
-"voice": "man",
-"ipa": "\u026af",
-"force": true
-},
-{
 "text": "If you are cold, put on a coat.",
 "kind": "sentence",
 "voice": "man",
@@ -913,27 +7584,6 @@
 "force": true
 },
 {
-"text": "would",
-"kind": "word",
-"voice": "man",
-"ipa": "w\u028ad",
-"force": true
-},
-{
-"text": "eat",
-"kind": "word",
-"voice": "man",
-"ipa": "it",
-"force": true
-},
-{
-"text": "think",
-"kind": "word",
-"voice": "man",
-"ipa": "\u03b8\u026a\u014bk",
-"force": true
-},
-{
 "text": "What do you think?",
 "kind": "sentence",
 "voice": "man",
@@ -946,20 +7596,6 @@
 "force": true
 },
 {
-"text": "could",
-"kind": "word",
-"voice": "man",
-"ipa": "k\u028ad",
-"force": true
-},
-{
-"text": "back",
-"kind": "word",
-"voice": "man",
-"ipa": "b\u00e6k",
-"force": true
-},
-{
 "text": "Put your hand on your back.",
 "kind": "sentence",
 "voice": "man",
@@ -969,13 +7605,6 @@
 "text": "I have five fingers on this hand.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "find",
-"kind": "word",
-"voice": "man",
-"ipa": "fa\u026and",
 "force": true
 },
 {
@@ -997,23 +7626,9 @@
 "force": true
 },
 {
-"text": "young",
-"kind": "word",
-"voice": "man",
-"ipa": "j\u028c\u014b",
-"force": true
-},
-{
 "text": "The children are young.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "first",
-"kind": "word",
-"voice": "man",
-"ipa": "f\u025dst",
 "force": true
 },
 {
@@ -1023,30 +7638,9 @@
 "force": true
 },
 {
-"text": "must",
-"kind": "word",
-"voice": "man",
-"ipa": "m\u028cst",
-"force": true
-},
-{
-"text": "life",
-"kind": "word",
-"voice": "man",
-"ipa": "la\u026af",
-"force": true
-},
-{
 "text": "She had a long and happy life.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "keep",
-"kind": "word",
-"voice": "man",
-"ipa": "kip",
 "force": true
 },
 {
@@ -1059,13 +7653,6 @@
 "text": "The moon is bright tonight.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "group",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0261rup",
 "force": true
 },
 {
@@ -1087,30 +7674,9 @@
 "force": true
 },
 {
-"text": "old",
-"kind": "word",
-"voice": "man",
-"ipa": "o\u028ald",
-"force": true
-},
-{
 "text": "My father is old.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "bird",
-"kind": "word",
-"voice": "man",
-"ipa": "b\u025dd",
-"force": true
-},
-{
-"text": "should",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0283\u028ad",
 "force": true
 },
 {
@@ -1126,23 +7692,9 @@
 "force": true
 },
 {
-"text": "each",
-"kind": "word",
-"voice": "man",
-"ipa": "it\u0283",
-"force": true
-},
-{
 "text": "It happened last night.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "different",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8d\u026af\u025a\u0259nt",
 "force": true
 },
 {
@@ -1155,20 +7707,6 @@
 "text": "Let us go to another shop.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "without",
-"kind": "word",
-"voice": "man",
-"ipa": "w\u026a\u02c8\u03b8a\u028at",
-"force": true
-},
-{
-"text": "point",
-"kind": "word",
-"voice": "man",
-"ipa": "p\u0254\u026ant",
 "force": true
 },
 {
@@ -1190,13 +7728,6 @@
 "force": true
 },
 {
-"text": "left",
-"kind": "word",
-"voice": "man",
-"ipa": "l\u025bft",
-"force": true
-},
-{
 "text": "He writes with his left hand.",
 "kind": "sentence",
 "voice": "man",
@@ -1206,20 +7737,6 @@
 "text": "I leave home at eight.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "might",
-"kind": "word",
-"voice": "man",
-"ipa": "ma\u026at",
-"force": true
-},
-{
-"text": "eight",
-"kind": "word",
-"voice": "man",
-"ipa": "e\u026at",
 "force": true
 },
 {
@@ -1241,13 +7758,6 @@
 "force": true
 },
 {
-"text": "end",
-"kind": "word",
-"voice": "man",
-"ipa": "\u025bnd",
-"force": true
-},
-{
 "text": "I do not know why he left.",
 "kind": "sentence",
 "voice": "man",
@@ -1263,13 +7773,6 @@
 "text": "There is little water left.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "last",
-"kind": "word",
-"voice": "man",
-"ipa": "l\u00e6st",
 "force": true
 },
 {
@@ -1291,13 +7794,6 @@
 "force": true
 },
 {
-"text": "start",
-"kind": "word",
-"voice": "man",
-"ipa": "st\u0251rt",
-"force": true
-},
-{
 "text": "It will become cold.",
 "kind": "sentence",
 "voice": "man",
@@ -1310,13 +7806,6 @@
 "force": true
 },
 {
-"text": "word",
-"kind": "word",
-"voice": "man",
-"ipa": "w\u025dd",
-"force": true
-},
-{
 "text": "I did not say a word.",
 "kind": "sentence",
 "voice": "man",
@@ -1326,27 +7815,6 @@
 "text": "The sun always comes up in the east.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "about",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0259\u02c8ba\u028at",
-"force": true
-},
-{
-"text": "write",
-"kind": "word",
-"voice": "man",
-"ipa": "ra\u026at",
-"force": true
-},
-{
-"text": "bring",
-"kind": "word",
-"voice": "man",
-"ipa": "br\u026a\u014b",
 "force": true
 },
 {
@@ -1368,30 +7836,9 @@
 "force": true
 },
 {
-"text": "hold",
-"kind": "word",
-"voice": "man",
-"ipa": "ho\u028ald",
-"force": true
-},
-{
 "text": "Hold my hand.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "set",
-"kind": "word",
-"voice": "man",
-"ipa": "s\u025bt",
-"force": true
-},
-{
-"text": "night",
-"kind": "word",
-"voice": "man",
-"ipa": "na\u026at",
 "force": true
 },
 {
@@ -1407,30 +7854,9 @@
 "force": true
 },
 {
-"text": "off",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0254f",
-"force": true
-},
-{
 "text": "Take your shoes off.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "both",
-"kind": "word",
-"voice": "man",
-"ipa": "bo\u028a\u03b8",
-"force": true
-},
-{
-"text": "head",
-"kind": "word",
-"voice": "man",
-"ipa": "h\u025bd",
 "force": true
 },
 {
@@ -1446,13 +7872,6 @@
 "force": true
 },
 {
-"text": "change",
-"kind": "word",
-"voice": "man",
-"ipa": "t\u0283e\u026and\u0292",
-"force": true
-},
-{
 "text": "The weather changed.",
 "kind": "sentence",
 "voice": "man",
@@ -1465,37 +7884,9 @@
 "force": true
 },
 {
-"text": "around",
-"kind": "word",
-"voice": "man",
-"ipa": "\u025a\u02c8a\u028and",
-"force": true
-},
-{
-"text": "let",
-"kind": "word",
-"voice": "man",
-"ipa": "l\u025bt",
-"force": true
-},
-{
-"text": "walk",
-"kind": "word",
-"voice": "man",
-"ipa": "w\u0254k",
-"force": true
-},
-{
 "text": "Let us go for a walk.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "fact",
-"kind": "word",
-"voice": "man",
-"ipa": "f\u00e6kt",
 "force": true
 },
 {
@@ -1505,23 +7896,9 @@
 "force": true
 },
 {
-"text": "round",
-"kind": "word",
-"voice": "man",
-"ipa": "ra\u028and",
-"force": true
-},
-{
 "text": "The ball is round.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "earth",
-"kind": "word",
-"voice": "man",
-"ipa": "\u025d\u03b8",
 "force": true
 },
 {
@@ -1534,13 +7911,6 @@
 "text": "The sun comes up in the east.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "world",
-"kind": "word",
-"voice": "man",
-"ipa": "w\u025dld",
 "force": true
 },
 {
@@ -1562,23 +7932,9 @@
 "force": true
 },
 {
-"text": "right",
-"kind": "word",
-"voice": "man",
-"ipa": "ra\u026at",
-"force": true
-},
-{
 "text": "Your answer is right.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "expect",
-"kind": "word",
-"voice": "man",
-"ipa": "\u026ak\u02c8sp\u025bkt",
 "force": true
 },
 {
@@ -1588,30 +7944,9 @@
 "force": true
 },
 {
-"text": "bad",
-"kind": "word",
-"voice": "man",
-"ipa": "b\u00e6d",
-"force": true
-},
-{
-"text": "quick",
-"kind": "word",
-"voice": "man",
-"ipa": "kw\u026ak",
-"force": true
-},
-{
 "text": "Take a quick look.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "friend",
-"kind": "word",
-"voice": "man",
-"ipa": "fr\u025bnd",
 "force": true
 },
 {
@@ -1627,13 +7962,6 @@
 "force": true
 },
 {
-"text": "bag",
-"kind": "word",
-"voice": "man",
-"ipa": "b\u00e6\u0261",
-"force": true
-},
-{
 "text": "Put the books in your bag.",
 "kind": "sentence",
 "voice": "man",
@@ -1646,23 +7974,9 @@
 "force": true
 },
 {
-"text": "add",
-"kind": "word",
-"voice": "man",
-"ipa": "\u00e6d",
-"force": true
-},
-{
 "text": "Add some sugar to your milk.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "job",
-"kind": "word",
-"voice": "man",
-"ipa": "d\u0292\u0251b",
 "force": true
 },
 {
@@ -1690,23 +8004,9 @@
 "force": true
 },
 {
-"text": "drink",
-"kind": "word",
-"voice": "man",
-"ipa": "dr\u026a\u014bk",
-"force": true
-},
-{
 "text": "What would you like to drink?",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "mind",
-"kind": "word",
-"voice": "man",
-"ipa": "ma\u026and",
 "force": true
 },
 {
@@ -1722,30 +8022,9 @@
 "force": true
 },
 {
-"text": "talk",
-"kind": "word",
-"voice": "man",
-"ipa": "t\u0254k",
-"force": true
-},
-{
 "text": "Tell me what you want.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "speak",
-"kind": "word",
-"voice": "man",
-"ipa": "spik",
-"force": true
-},
-{
-"text": "age",
-"kind": "word",
-"voice": "man",
-"ipa": "e\u026ad\u0292",
 "force": true
 },
 {
@@ -1755,23 +8034,9 @@
 "force": true
 },
 {
-"text": "break",
-"kind": "word",
-"voice": "man",
-"ipa": "bre\u026ak",
-"force": true
-},
-{
 "text": "Do not break the cup.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "language",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8l\u00e6\u014b\u0261w\u0259d\u0292",
 "force": true
 },
 {
@@ -1784,20 +8049,6 @@
 "text": "The army gave the order to attack.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "develop",
-"kind": "word",
-"voice": "man",
-"ipa": "d\u026a\u02c8v\u025bl\u0259p",
-"force": true
-},
-{
-"text": "short",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0283\u0254rt",
 "force": true
 },
 {
@@ -1819,13 +8070,6 @@
 "force": true
 },
 {
-"text": "enough",
-"kind": "word",
-"voice": "man",
-"ipa": "\u026a\u02c8n\u028cf",
-"force": true
-},
-{
 "text": "We have enough food.",
 "kind": "sentence",
 "voice": "man",
@@ -1838,50 +8082,15 @@
 "force": true
 },
 {
-"text": "spend",
-"kind": "word",
-"voice": "man",
-"ipa": "sp\u025bnd",
-"force": true
-},
-{
-"text": "food",
-"kind": "word",
-"voice": "man",
-"ipa": "fud",
-"force": true
-},
-{
 "text": "The food here is good.",
 "kind": "sentence",
 "voice": "man",
 "force": true
 },
 {
-"text": "build",
-"kind": "word",
-"voice": "man",
-"ipa": "b\u026ald",
-"force": true
-},
-{
 "text": "We walked across the road.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "hope",
-"kind": "word",
-"voice": "man",
-"ipa": "ho\u028ap",
-"force": true
-},
-{
-"text": "road",
-"kind": "word",
-"voice": "man",
-"ipa": "ro\u028ad",
 "force": true
 },
 {
@@ -1903,13 +8112,6 @@
 "force": true
 },
 {
-"text": "behind",
-"kind": "word",
-"voice": "man",
-"ipa": "b\u026a\u02c8ha\u026and",
-"force": true
-},
-{
 "text": "Please return my book.",
 "kind": "sentence",
 "voice": "man",
@@ -1922,30 +8124,9 @@
 "force": true
 },
 {
-"text": "suggest",
-"kind": "word",
-"voice": "man",
-"ipa": "s\u0259\u02c8d\u0292\u025bst",
-"force": true
-},
-{
 "text": "What do you suggest?",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "create",
-"kind": "word",
-"voice": "man",
-"ipa": "kri\u02c8e\u026at",
-"force": true
-},
-{
-"text": "describe",
-"kind": "word",
-"voice": "man",
-"ipa": "d\u026a\u02c8skra\u026ab",
 "force": true
 },
 {
@@ -1979,23 +8160,9 @@
 "force": true
 },
 {
-"text": "subject",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8s\u028cbd\u0292\u026akt",
-"force": true
-},
-{
 "text": "What is the subject of the book?",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "death",
-"kind": "word",
-"voice": "man",
-"ipa": "d\u025b\u03b8",
 "force": true
 },
 {
@@ -2008,20 +8175,6 @@
 "text": "It is easy to make.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "help",
-"kind": "word",
-"voice": "man",
-"ipa": "h\u025blp",
-"force": true
-},
-{
-"text": "white",
-"kind": "word",
-"voice": "man",
-"ipa": "wa\u026at",
 "force": true
 },
 {
@@ -2049,13 +8202,6 @@
 "force": true
 },
 {
-"text": "foot",
-"kind": "word",
-"voice": "man",
-"ipa": "f\u028at",
-"force": true
-},
-{
 "text": "My foot is cold.",
 "kind": "sentence",
 "voice": "man",
@@ -2065,13 +8211,6 @@
 "text": "He has a pain in his foot.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "light",
-"kind": "word",
-"voice": "man",
-"ipa": "la\u026at",
 "force": true
 },
 {
@@ -2099,20 +8238,6 @@
 "force": true
 },
 {
-"text": "amount",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0259\u02c8ma\u028ant",
-"force": true
-},
-{
-"text": "step",
-"kind": "word",
-"voice": "man",
-"ipa": "st\u025bp",
-"force": true
-},
-{
 "text": "Mind the step.",
 "kind": "sentence",
 "voice": "man",
@@ -2131,13 +8256,6 @@
 "force": true
 },
 {
-"text": "period",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8p\u026ari\u0259d",
-"force": true
-},
-{
 "text": "He lived here for a short period.",
 "kind": "sentence",
 "voice": "man",
@@ -2147,13 +8265,6 @@
 "text": "It was a hard period in my life.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "cost",
-"kind": "word",
-"voice": "man",
-"ipa": "k\u0251st",
 "force": true
 },
 {
@@ -2169,13 +8280,6 @@
 "force": true
 },
 {
-"text": "bit",
-"kind": "word",
-"voice": "man",
-"ipa": "b\u026at",
-"force": true
-},
-{
 "text": "Can I have a bit of cake?",
 "kind": "sentence",
 "voice": "man",
@@ -2185,13 +8289,6 @@
 "text": "Wait a bit.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "shirt",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0283\u025dt",
 "force": true
 },
 {
@@ -2207,23 +8304,9 @@
 "force": true
 },
 {
-"text": "during",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8d\u028ar\u026a\u014b",
-"force": true
-},
-{
 "text": "He came during the meeting.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "rate",
-"kind": "word",
-"voice": "man",
-"ipa": "re\u026at",
 "force": true
 },
 {
@@ -2233,23 +8316,9 @@
 "force": true
 },
 {
-"text": "sleep",
-"kind": "word",
-"voice": "man",
-"ipa": "slip",
-"force": true
-},
-{
 "text": "The baby is sleeping.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "effect",
-"kind": "word",
-"voice": "man",
-"ipa": "\u026a\u02c8f\u025bkt",
 "force": true
 },
 {
@@ -2259,23 +8328,9 @@
 "force": true
 },
 {
-"text": "along",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0259\u02c8l\u0254\u014b",
-"force": true
-},
-{
 "text": "There are trees along the road.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "plant",
-"kind": "word",
-"voice": "man",
-"ipa": "pl\u00e6nt",
 "force": true
 },
 {
@@ -2291,13 +8346,6 @@
 "force": true
 },
 {
-"text": "meet",
-"kind": "word",
-"voice": "man",
-"ipa": "mit",
-"force": true
-},
-{
 "text": "Food is necessary for life.",
 "kind": "sentence",
 "voice": "man",
@@ -2307,27 +8355,6 @@
 "text": "She drives to work.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "private",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8pra\u026av\u0259t",
-"force": true
-},
-{
-"text": "accept",
-"kind": "word",
-"voice": "man",
-"ipa": "\u00e6k\u02c8s\u025bpt",
-"force": true
-},
-{
-"text": "instead",
-"kind": "word",
-"voice": "man",
-"ipa": "\u026an\u02c8st\u025bd",
 "force": true
 },
 {
@@ -2349,13 +8376,6 @@
 "force": true
 },
 {
-"text": "forward",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8f\u0254rw\u025ad",
-"force": true
-},
-{
 "text": "Move forward.",
 "kind": "sentence",
 "voice": "man",
@@ -2368,23 +8388,9 @@
 "force": true
 },
 {
-"text": "catch",
-"kind": "word",
-"voice": "man",
-"ipa": "k\u00e6t\u0283",
-"force": true
-},
-{
 "text": "The value of the house went up.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "record",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8r\u025bk\u025ad",
 "force": true
 },
 {
@@ -2406,13 +8412,6 @@
 "force": true
 },
 {
-"text": "black",
-"kind": "word",
-"voice": "man",
-"ipa": "bl\u00e6k",
-"force": true
-},
-{
 "text": "The sky is black at night.",
 "kind": "sentence",
 "voice": "man",
@@ -2431,13 +8430,6 @@
 "force": true
 },
 {
-"text": "account",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0259\u02c8ka\u028ant",
-"force": true
-},
-{
 "text": "I put some money into my account.",
 "kind": "sentence",
 "voice": "man",
@@ -2450,23 +8442,9 @@
 "force": true
 },
 {
-"text": "project",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8pr\u0251d\u0292\u025bkt",
-"force": true
-},
-{
 "text": "We are working on a new project.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "meeting",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8mit\u026a\u014b",
 "force": true
 },
 {
@@ -2476,36 +8454,15 @@
 "force": true
 },
 {
-"text": "past",
-"kind": "word",
-"voice": "man",
-"ipa": "p\u00e6st",
-"force": true
-},
-{
 "text": "In the past, people walked to work.",
 "kind": "sentence",
 "voice": "man",
 "force": true
 },
 {
-"text": "top",
-"kind": "word",
-"voice": "man",
-"ipa": "t\u0251p",
-"force": true
-},
-{
 "text": "Put it on the top shelf.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "evening",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8ivn\u026a\u014b",
 "force": true
 },
 {
@@ -2521,13 +8478,6 @@
 "force": true
 },
 {
-"text": "visit",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8v\u026az\u026at",
-"force": true
-},
-{
 "text": "We visited the old church.",
 "kind": "sentence",
 "voice": "man",
@@ -2537,13 +8487,6 @@
 "text": "She is one year old.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "ground",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0261ra\u028and",
 "force": true
 },
 {
@@ -2559,23 +8502,9 @@
 "force": true
 },
 {
-"text": "avoid",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0259\u02c8v\u0254\u026ad",
-"force": true
-},
-{
 "text": "Avoid that road at night.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "list",
-"kind": "word",
-"voice": "man",
-"ipa": "l\u026ast",
 "force": true
 },
 {
@@ -2591,36 +8520,15 @@
 "force": true
 },
 {
-"text": "forget",
-"kind": "word",
-"voice": "man",
-"ipa": "f\u025a\u02c8\u0261\u025bt",
-"force": true
-},
-{
 "text": "Do not forget your bag.",
 "kind": "sentence",
 "voice": "man",
 "force": true
 },
 {
-"text": "large",
-"kind": "word",
-"voice": "man",
-"ipa": "l\u0251rd\u0292",
-"force": true
-},
-{
 "text": "That is a large dog.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "late",
-"kind": "word",
-"voice": "man",
-"ipa": "le\u026at",
 "force": true
 },
 {
@@ -2648,20 +8556,6 @@
 "force": true
 },
 {
-"text": "great",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0261re\u026at",
-"force": true
-},
-{
-"text": "lot",
-"kind": "word",
-"voice": "man",
-"ipa": "l\u0251t",
-"force": true
-},
-{
 "text": "We ate a lot.",
 "kind": "sentence",
 "voice": "man",
@@ -2680,27 +8574,6 @@
 "force": true
 },
 {
-"text": "knowledge",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8n\u0251l\u0259d\u0292",
-"force": true
-},
-{
-"text": "long",
-"kind": "word",
-"voice": "man",
-"ipa": "l\u0254\u014b",
-"force": true
-},
-{
-"text": "important",
-"kind": "word",
-"voice": "man",
-"ipa": "\u026am\u02c8p\u0254rt\u0259nt",
-"force": true
-},
-{
 "text": "This is an important meeting.",
 "kind": "sentence",
 "voice": "man",
@@ -2710,13 +8583,6 @@
 "text": "Your health is important.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "page",
-"kind": "word",
-"voice": "man",
-"ipa": "pe\u026ad\u0292",
 "force": true
 },
 {
@@ -2732,13 +8598,6 @@
 "force": true
 },
 {
-"text": "stop",
-"kind": "word",
-"voice": "man",
-"ipa": "st\u0251p",
-"force": true
-},
-{
 "text": "This is the main road.",
 "kind": "sentence",
 "voice": "man",
@@ -2748,13 +8607,6 @@
 "text": "Is there a particular book you want?",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "event",
-"kind": "word",
-"voice": "man",
-"ipa": "\u026a\u02c8v\u025bnt",
 "force": true
 },
 {
@@ -2788,13 +8640,6 @@
 "force": true
 },
 {
-"text": "just",
-"kind": "word",
-"voice": "man",
-"ipa": "d\u0292\u028cst",
-"force": true
-},
-{
 "text": "It is just a small cut.",
 "kind": "sentence",
 "voice": "man",
@@ -2807,30 +8652,9 @@
 "force": true
 },
 {
-"text": "present",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8pr\u025bz\u0259nt",
-"force": true
-},
-{
 "text": "She gave me a birthday present.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "recent",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8ris\u0259nt",
-"force": true
-},
-{
-"text": "deep",
-"kind": "word",
-"voice": "man",
-"ipa": "dip",
 "force": true
 },
 {
@@ -2846,13 +8670,6 @@
 "force": true
 },
 {
-"text": "bridge",
-"kind": "word",
-"voice": "man",
-"ipa": "br\u026ad\u0292",
-"force": true
-},
-{
 "text": "We walked over the bridge.",
 "kind": "sentence",
 "voice": "man",
@@ -2865,36 +8682,15 @@
 "force": true
 },
 {
-"text": "statement",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8ste\u026atm\u0259nt",
-"force": true
-},
-{
 "text": "The police made a statement.",
 "kind": "sentence",
 "voice": "man",
 "force": true
 },
 {
-"text": "hundred",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8h\u028cndr\u0259d",
-"force": true
-},
-{
 "text": "The house is a hundred years old.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "week",
-"kind": "word",
-"voice": "man",
-"ipa": "wik",
 "force": true
 },
 {
@@ -2916,13 +8712,6 @@
 "force": true
 },
 {
-"text": "complete",
-"kind": "word",
-"voice": "man",
-"ipa": "k\u0259m\u02c8plit",
-"force": true
-},
-{
 "text": "The list is complete.",
 "kind": "sentence",
 "voice": "man",
@@ -2932,20 +8721,6 @@
 "text": "Is your work complete?",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "south",
-"kind": "word",
-"voice": "man",
-"ipa": "sa\u028a\u03b8",
-"force": true
-},
-{
-"text": "month",
-"kind": "word",
-"voice": "man",
-"ipa": "m\u028cn\u03b8",
 "force": true
 },
 {
@@ -2961,13 +8736,6 @@
 "force": true
 },
 {
-"text": "quite",
-"kind": "word",
-"voice": "man",
-"ipa": "kwa\u026at",
-"force": true
-},
-{
 "text": "I ate the whole cake.",
 "kind": "sentence",
 "voice": "man",
@@ -2977,13 +8745,6 @@
 "text": "She was ill for the whole week.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "sound",
-"kind": "word",
-"voice": "man",
-"ipa": "sa\u028and",
 "force": true
 },
 {
@@ -2999,36 +8760,15 @@
 "force": true
 },
 {
-"text": "include",
-"kind": "word",
-"voice": "man",
-"ipa": "\u026an\u02c8klud",
-"force": true
-},
-{
 "text": "Does the price include food?",
 "kind": "sentence",
 "voice": "man",
 "force": true
 },
 {
-"text": "fight",
-"kind": "word",
-"voice": "man",
-"ipa": "fa\u026at",
-"force": true
-},
-{
 "text": "Do not fight.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "blood",
-"kind": "word",
-"voice": "man",
-"ipa": "bl\u028cd",
 "force": true
 },
 {
@@ -3044,23 +8784,9 @@
 "force": true
 },
 {
-"text": "west",
-"kind": "word",
-"voice": "man",
-"ipa": "w\u025bst",
-"force": true
-},
-{
 "text": "The sun goes down in the west.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "trade",
-"kind": "word",
-"voice": "man",
-"ipa": "tre\u026ad",
 "force": true
 },
 {
@@ -3082,23 +8808,9 @@
 "force": true
 },
 {
-"text": "dead",
-"kind": "word",
-"voice": "man",
-"ipa": "d\u025bd",
-"force": true
-},
-{
 "text": "The bird is dead.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "thought",
-"kind": "word",
-"voice": "man",
-"ipa": "\u03b8\u0254t",
 "force": true
 },
 {
@@ -3114,30 +8826,9 @@
 "force": true
 },
 {
-"text": "drop",
-"kind": "word",
-"voice": "man",
-"ipa": "dr\u0251p",
-"force": true
-},
-{
-"text": "leg",
-"kind": "word",
-"voice": "man",
-"ipa": "l\u025b\u0261",
-"force": true
-},
-{
 "text": "He broke his leg.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "support",
-"kind": "word",
-"voice": "man",
-"ipa": "s\u0259\u02c8p\u0254rt",
 "force": true
 },
 {
@@ -3147,50 +8838,15 @@
 "force": true
 },
 {
-"text": "teach",
-"kind": "word",
-"voice": "man",
-"ipa": "tit\u0283",
-"force": true
-},
-{
-"text": "north",
-"kind": "word",
-"voice": "man",
-"ipa": "n\u0254r\u03b8",
-"force": true
-},
-{
-"text": "seat",
-"kind": "word",
-"voice": "man",
-"ipa": "sit",
-"force": true
-},
-{
 "text": "Please take a seat.",
 "kind": "sentence",
 "voice": "man",
 "force": true
 },
 {
-"text": "dark",
-"kind": "word",
-"voice": "man",
-"ipa": "d\u0251rk",
-"force": true
-},
-{
 "text": "It is dark at night.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "shape",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0283e\u026ap",
 "force": true
 },
 {
@@ -3203,27 +8859,6 @@
 "text": "A ball has a round shape.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "next",
-"kind": "word",
-"voice": "man",
-"ipa": "n\u025bkst",
-"force": true
-},
-{
-"text": "almost",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8\u0254lmo\u028ast",
-"force": true
-},
-{
-"text": "thank",
-"kind": "word",
-"voice": "man",
-"ipa": "\u03b8\u00e6\u014bk",
 "force": true
 },
 {
@@ -3245,20 +8880,6 @@
 "force": true
 },
 {
-"text": "sad",
-"kind": "word",
-"voice": "man",
-"ipa": "s\u00e6d",
-"force": true
-},
-{
-"text": "mouth",
-"kind": "word",
-"voice": "man",
-"ipa": "ma\u028a\u03b8",
-"force": true
-},
-{
 "text": "Open your mouth.",
 "kind": "sentence",
 "voice": "man",
@@ -3274,13 +8895,6 @@
 "text": "The owner of the shop is my friend.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "hang",
-"kind": "word",
-"voice": "man",
-"ipa": "h\u00e6\u014b",
 "force": true
 },
 {
@@ -3302,23 +8916,9 @@
 "force": true
 },
 {
-"text": "song",
-"kind": "word",
-"voice": "man",
-"ipa": "s\u0254\u014b",
-"force": true
-},
-{
 "text": "My mother likes this song best.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "expert",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8\u025bksp\u025at",
 "force": true
 },
 {
@@ -3328,30 +8928,9 @@
 "force": true
 },
 {
-"text": "shake",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0283e\u026ak",
-"force": true
-},
-{
 "text": "Shake my hand.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "touch",
-"kind": "word",
-"voice": "man",
-"ipa": "t\u028ct\u0283",
-"force": true
-},
-{
-"text": "lift",
-"kind": "word",
-"voice": "man",
-"ipa": "l\u026aft",
 "force": true
 },
 {
@@ -3361,30 +8940,9 @@
 "force": true
 },
 {
-"text": "rich",
-"kind": "word",
-"voice": "man",
-"ipa": "r\u026at\u0283",
-"force": true
-},
-{
 "text": "They became rich.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "against",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0259\u02c8\u0261\u025bnst",
-"force": true
-},
-{
-"text": "reach",
-"kind": "word",
-"voice": "man",
-"ipa": "rit\u0283",
 "force": true
 },
 {
@@ -3400,13 +8958,6 @@
 "force": true
 },
 {
-"text": "shelf",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0283\u025blf",
-"force": true
-},
-{
 "text": "The books are on the shelf.",
 "kind": "sentence",
 "voice": "man",
@@ -3416,13 +8967,6 @@
 "text": "Put the cups on the top shelf.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "bread",
-"kind": "word",
-"voice": "man",
-"ipa": "br\u025bd",
 "force": true
 },
 {
@@ -3438,36 +8982,15 @@
 "force": true
 },
 {
-"text": "damage",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8d\u00e6m\u0259d\u0292",
-"force": true
-},
-{
 "text": "The rain did a lot of damage.",
 "kind": "sentence",
 "voice": "man",
 "force": true
 },
 {
-"text": "soft",
-"kind": "word",
-"voice": "man",
-"ipa": "s\u0251ft",
-"force": true
-},
-{
 "text": "The bed is soft.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "hard",
-"kind": "word",
-"voice": "man",
-"ipa": "h\u0251rd",
 "force": true
 },
 {
@@ -3480,20 +9003,6 @@
 "text": "The test was hard.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "ask",
-"kind": "word",
-"voice": "man",
-"ipa": "\u00e6sk",
-"force": true
-},
-{
-"text": "test",
-"kind": "word",
-"voice": "man",
-"ipa": "t\u025bst",
 "force": true
 },
 {
@@ -3527,23 +9036,9 @@
 "force": true
 },
 {
-"text": "weight",
-"kind": "word",
-"voice": "man",
-"ipa": "we\u026at",
-"force": true
-},
-{
 "text": "What is your weight?",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "cloth",
-"kind": "word",
-"voice": "man",
-"ipa": "kl\u0254\u03b8",
 "force": true
 },
 {
@@ -3553,23 +9048,9 @@
 "force": true
 },
 {
-"text": "knife",
-"kind": "word",
-"voice": "man",
-"ipa": "na\u026af",
-"force": true
-},
-{
 "text": "The knife is sharp.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "gold",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0261o\u028ald",
 "force": true
 },
 {
@@ -3579,23 +9060,9 @@
 "force": true
 },
 {
-"text": "wet",
-"kind": "word",
-"voice": "man",
-"ipa": "w\u025bt",
-"force": true
-},
-{
 "text": "My shirt is wet.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "cook",
-"kind": "word",
-"voice": "man",
-"ipa": "k\u028ak",
 "force": true
 },
 {
@@ -3611,30 +9078,9 @@
 "force": true
 },
 {
-"text": "leaf",
-"kind": "word",
-"voice": "man",
-"ipa": "lif",
-"force": true
-},
-{
-"text": "liquid",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8l\u026akw\u0259d",
-"force": true
-},
-{
 "text": "Water is a liquid.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "smooth",
-"kind": "word",
-"voice": "man",
-"ipa": "smu\u00f0",
 "force": true
 },
 {
@@ -3650,37 +9096,9 @@
 "force": true
 },
 {
-"text": "boat",
-"kind": "word",
-"voice": "man",
-"ipa": "bo\u028at",
-"force": true
-},
-{
 "text": "We went out in a boat.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "cloud",
-"kind": "word",
-"voice": "man",
-"ipa": "kla\u028ad",
-"force": true
-},
-{
-"text": "bend",
-"kind": "word",
-"voice": "man",
-"ipa": "b\u025bnd",
-"force": true
-},
-{
-"text": "egg",
-"kind": "word",
-"voice": "man",
-"ipa": "\u025b\u0261",
 "force": true
 },
 {
@@ -3696,30 +9114,9 @@
 "force": true
 },
 {
-"text": "send",
-"kind": "word",
-"voice": "man",
-"ipa": "s\u025bnd",
-"force": true
-},
-{
-"text": "birth",
-"kind": "word",
-"voice": "man",
-"ipa": "b\u025d\u03b8",
-"force": true
-},
-{
 "text": "What is your date of birth?",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "roof",
-"kind": "word",
-"voice": "man",
-"ipa": "ruf",
 "force": true
 },
 {
@@ -3735,36 +9132,15 @@
 "force": true
 },
 {
-"text": "building",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8b\u026ald\u026a\u014b",
-"force": true
-},
-{
 "text": "This is an old building.",
 "kind": "sentence",
 "voice": "man",
 "force": true
 },
 {
-"text": "internet",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8\u026ant\u025an\u025bt",
-"force": true
-},
-{
 "text": "I found it on the internet.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "ship",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0283\u026ap",
 "force": true
 },
 {
@@ -3780,13 +9156,6 @@
 "force": true
 },
 {
-"text": "outside",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8a\u028atsa\u026ad",
-"force": true
-},
-{
 "text": "Let us play outside.",
 "kind": "sentence",
 "voice": "man",
@@ -3796,13 +9165,6 @@
 "text": "The outside of the house is white.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "shop",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0283\u0251p",
 "force": true
 },
 {
@@ -3824,13 +9186,6 @@
 "force": true
 },
 {
-"text": "edge",
-"kind": "word",
-"voice": "man",
-"ipa": "\u025bd\u0292",
-"force": true
-},
-{
 "text": "Do not stand near the edge.",
 "kind": "sentence",
 "voice": "man",
@@ -3840,13 +9195,6 @@
 "text": "He sat on the edge of the bed.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "fat",
-"kind": "word",
-"voice": "man",
-"ipa": "f\u00e6t",
 "force": true
 },
 {
@@ -3862,13 +9210,6 @@
 "force": true
 },
 {
-"text": "side",
-"kind": "word",
-"voice": "man",
-"ipa": "sa\u026ad",
-"force": true
-},
-{
 "text": "He sat at my side.",
 "kind": "sentence",
 "voice": "man",
@@ -3878,13 +9219,6 @@
 "text": "He woke up in the middle of the night.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "seed",
-"kind": "word",
-"voice": "man",
-"ipa": "sid",
 "force": true
 },
 {
@@ -3900,23 +9234,9 @@
 "force": true
 },
 {
-"text": "insect",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8\u026ans\u025bkt",
-"force": true
-},
-{
 "text": "A fly is an insect.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "among",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0259\u02c8m\u028c\u014b",
 "force": true
 },
 {
@@ -3932,13 +9252,6 @@
 "force": true
 },
 {
-"text": "wide",
-"kind": "word",
-"voice": "man",
-"ipa": "wa\u026ad",
-"force": true
-},
-{
 "text": "The river is very wide.",
 "kind": "sentence",
 "voice": "man",
@@ -3948,13 +9261,6 @@
 "text": "This road is wide.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "street",
-"kind": "word",
-"voice": "man",
-"ipa": "strit",
 "force": true
 },
 {
@@ -3970,36 +9276,15 @@
 "force": true
 },
 {
-"text": "laugh",
-"kind": "word",
-"voice": "man",
-"ipa": "l\u00e6f",
-"force": true
-},
-{
 "text": "The children are laughing.",
 "kind": "sentence",
 "voice": "man",
 "force": true
 },
 {
-"text": "loud",
-"kind": "word",
-"voice": "man",
-"ipa": "la\u028ad",
-"force": true
-},
-{
 "text": "The music is too loud.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "neck",
-"kind": "word",
-"voice": "man",
-"ipa": "n\u025bk",
 "force": true
 },
 {
@@ -4015,13 +9300,6 @@
 "force": true
 },
 {
-"text": "orange",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8\u0254r\u0259nd\u0292",
-"force": true
-},
-{
 "text": "Her dress is orange.",
 "kind": "sentence",
 "voice": "man",
@@ -4034,23 +9312,9 @@
 "force": true
 },
 {
-"text": "shut",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0283\u028ct",
-"force": true
-},
-{
 "text": "The shop is shut.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "sort",
-"kind": "word",
-"voice": "man",
-"ipa": "s\u0254rt",
 "force": true
 },
 {
@@ -4066,23 +9330,9 @@
 "force": true
 },
 {
-"text": "type",
-"kind": "word",
-"voice": "man",
-"ipa": "ta\u026ap",
-"force": true
-},
-{
 "text": "What type of car is it?",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "kind",
-"kind": "word",
-"voice": "man",
-"ipa": "ka\u026and",
 "force": true
 },
 {
@@ -4098,13 +9348,6 @@
 "force": true
 },
 {
-"text": "quiet",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8kwa\u026a\u0259t",
-"force": true
-},
-{
 "text": "Please be quiet.",
 "kind": "sentence",
 "voice": "man",
@@ -4117,23 +9360,9 @@
 "force": true
 },
 {
-"text": "strange",
-"kind": "word",
-"voice": "man",
-"ipa": "stre\u026and\u0292",
-"force": true
-},
-{
 "text": "It is strange that he is late.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "such",
-"kind": "word",
-"voice": "man",
-"ipa": "s\u028ct\u0283",
 "force": true
 },
 {
@@ -4161,13 +9390,6 @@
 "force": true
 },
 {
-"text": "wrong",
-"kind": "word",
-"voice": "man",
-"ipa": "r\u0254\u014b",
-"force": true
-},
-{
 "text": "Your answer is wrong.",
 "kind": "sentence",
 "voice": "man",
@@ -4186,13 +9408,6 @@
 "force": true
 },
 {
-"text": "percent",
-"kind": "word",
-"voice": "man",
-"ipa": "p\u025a\u02c8s\u025bnt",
-"force": true
-},
-{
 "text": "Prices went up by five percent.",
 "kind": "sentence",
 "voice": "man",
@@ -4205,23 +9420,9 @@
 "force": true
 },
 {
-"text": "rest",
-"kind": "word",
-"voice": "man",
-"ipa": "r\u025bst",
-"force": true
-},
-{
 "text": "You need some rest.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "land",
-"kind": "word",
-"voice": "man",
-"ipa": "l\u00e6nd",
 "force": true
 },
 {
@@ -4237,27 +9438,6 @@
 "force": true
 },
 {
-"text": "front",
-"kind": "word",
-"voice": "man",
-"ipa": "fr\u028cnt",
-"force": true
-},
-{
-"text": "act",
-"kind": "word",
-"voice": "man",
-"ipa": "\u00e6kt",
-"force": true
-},
-{
-"text": "wind",
-"kind": "word",
-"voice": "man",
-"ipa": "w\u026and",
-"force": true
-},
-{
 "text": "Blow on your food if it is hot.",
 "kind": "sentence",
 "voice": "man",
@@ -4267,20 +9447,6 @@
 "text": "The wind is blowing.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "development",
-"kind": "word",
-"voice": "man",
-"ipa": "d\u026a\u02c8v\u025bl\u0259pm\u0259nt",
-"force": true
-},
-{
-"text": "decide",
-"kind": "word",
-"voice": "man",
-"ipa": "d\u026a\u02c8sa\u026ad",
 "force": true
 },
 {
@@ -4302,23 +9468,9 @@
 "force": true
 },
 {
-"text": "growth",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0261ro\u028a\u03b8",
-"force": true
-},
-{
 "text": "The growth of the city was quick.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "agreement",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0259\u02c8\u0261rim\u0259nt",
 "force": true
 },
 {
@@ -4331,13 +9483,6 @@
 "text": "We are all in agreement.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "sharp",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0283\u0251rp",
 "force": true
 },
 {
@@ -4359,23 +9504,9 @@
 "force": true
 },
 {
-"text": "island",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8a\u026al\u0259nd",
-"force": true
-},
-{
 "text": "They live on an island.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "heat",
-"kind": "word",
-"voice": "man",
-"ipa": "hit",
 "force": true
 },
 {
@@ -4385,23 +9516,9 @@
 "force": true
 },
 {
-"text": "pipe",
-"kind": "word",
-"voice": "man",
-"ipa": "pa\u026ap",
-"force": true
-},
-{
 "text": "The water pipe burst.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "thick",
-"kind": "word",
-"voice": "man",
-"ipa": "\u03b8\u026ak",
 "force": true
 },
 {
@@ -4414,13 +9531,6 @@
 "text": "The walls are thick.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "ticket",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8t\u026ak\u0259t",
 "force": true
 },
 {
@@ -4442,13 +9552,6 @@
 "force": true
 },
 {
-"text": "awake",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0259\u02c8we\u026ak",
-"force": true
-},
-{
 "text": "Are you awake?",
 "kind": "sentence",
 "voice": "man",
@@ -4458,13 +9561,6 @@
 "text": "The baby was awake all night.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "bath",
-"kind": "word",
-"voice": "man",
-"ipa": "b\u00e6\u03b8",
 "force": true
 },
 {
@@ -4486,13 +9582,6 @@
 "force": true
 },
 {
-"text": "pot",
-"kind": "word",
-"voice": "man",
-"ipa": "p\u0251t",
-"force": true
-},
-{
 "text": "Cook the rice in a pot.",
 "kind": "sentence",
 "voice": "man",
@@ -4505,13 +9594,6 @@
 "force": true
 },
 {
-"text": "ring",
-"kind": "word",
-"voice": "man",
-"ipa": "r\u026a\u014b",
-"force": true
-},
-{
 "text": "She has a gold ring.",
 "kind": "sentence",
 "voice": "man",
@@ -4521,20 +9603,6 @@
 "text": "The phone is ringing.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "breath",
-"kind": "word",
-"voice": "man",
-"ipa": "br\u025b\u03b8",
-"force": true
-},
-{
-"text": "burst",
-"kind": "word",
-"voice": "man",
-"ipa": "b\u025dst",
 "force": true
 },
 {
@@ -4556,36 +9624,15 @@
 "force": true
 },
 {
-"text": "effort",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8\u025bf\u025at",
-"force": true
-},
-{
 "text": "It took a lot of effort.",
 "kind": "sentence",
 "voice": "man",
 "force": true
 },
 {
-"text": "cheap",
-"kind": "word",
-"voice": "man",
-"ipa": "t\u0283ip",
-"force": true
-},
-{
 "text": "This shirt is cheap.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "clock",
-"kind": "word",
-"voice": "man",
-"ipa": "kl\u0251k",
 "force": true
 },
 {
@@ -4613,50 +9660,15 @@
 "force": true
 },
 {
-"text": "watch",
-"kind": "word",
-"voice": "man",
-"ipa": "w\u0251t\u0283",
-"force": true
-},
-{
-"text": "difficult",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8d\u026af\u0259k\u0259lt",
-"force": true
-},
-{
 "text": "This question is difficult.",
 "kind": "sentence",
 "voice": "man",
 "force": true
 },
 {
-"text": "government",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8\u0261\u028cv\u025am\u0259nt",
-"force": true
-},
-{
 "text": "He works for the government.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "lead",
-"kind": "word",
-"voice": "man",
-"ipa": "lid",
-"force": true
-},
-{
-"text": "strong",
-"kind": "word",
-"voice": "man",
-"ipa": "str\u0254\u014b",
 "force": true
 },
 {
@@ -4669,13 +9681,6 @@
 "text": "There is a strong wind.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "manage",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8m\u00e6n\u0259d\u0292",
 "force": true
 },
 {
@@ -4697,13 +9702,6 @@
 "force": true
 },
 {
-"text": "attempt",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0259\u02c8t\u025bmpt",
-"force": true
-},
-{
 "text": "It was his first attempt.",
 "kind": "sentence",
 "voice": "man",
@@ -4713,13 +9711,6 @@
 "text": "She is the manager of the shop.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "report",
-"kind": "word",
-"voice": "man",
-"ipa": "ri\u02c8p\u0254rt",
 "force": true
 },
 {
@@ -4747,13 +9738,6 @@
 "force": true
 },
 {
-"text": "wife",
-"kind": "word",
-"voice": "man",
-"ipa": "wa\u026af",
-"force": true
-},
-{
 "text": "This is my wife.",
 "kind": "sentence",
 "voice": "man",
@@ -4766,36 +9750,15 @@
 "force": true
 },
 {
-"text": "debt",
-"kind": "word",
-"voice": "man",
-"ipa": "d\u025bt",
-"force": true
-},
-{
 "text": "He has a lot of debt.",
 "kind": "sentence",
 "voice": "man",
 "force": true
 },
 {
-"text": "note",
-"kind": "word",
-"voice": "man",
-"ipa": "no\u028at",
-"force": true
-},
-{
 "text": "She played a high note.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "unit",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8jun\u0259t",
 "force": true
 },
 {
@@ -4811,13 +9774,6 @@
 "force": true
 },
 {
-"text": "second",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8s\u025bk\u0259nd",
-"force": true
-},
-{
 "text": "This is my second visit.",
 "kind": "sentence",
 "voice": "man",
@@ -4830,23 +9786,9 @@
 "force": true
 },
 {
-"text": "half",
-"kind": "word",
-"voice": "man",
-"ipa": "h\u00e6f",
-"force": true
-},
-{
 "text": "Cut the apple in half.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "smoke",
-"kind": "word",
-"voice": "man",
-"ipa": "smo\u028ak",
 "force": true
 },
 {
@@ -4856,23 +9798,9 @@
 "force": true
 },
 {
-"text": "hook",
-"kind": "word",
-"voice": "man",
-"ipa": "h\u028ak",
-"force": true
-},
-{
 "text": "He caught a fish with a hook.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "flat",
-"kind": "word",
-"voice": "man",
-"ipa": "fl\u00e6t",
 "force": true
 },
 {
@@ -4882,44 +9810,9 @@
 "force": true
 },
 {
-"text": "wound",
-"kind": "word",
-"voice": "man",
-"ipa": "wund",
-"force": true
-},
-{
 "text": "The wound is not deep.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "kick",
-"kind": "word",
-"voice": "man",
-"ipa": "k\u026ak",
-"force": true
-},
-{
-"text": "limit",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8l\u026am\u0259t",
-"force": true
-},
-{
-"text": "range",
-"kind": "word",
-"voice": "man",
-"ipa": "re\u026and\u0292",
-"force": true
-},
-{
-"text": "card",
-"kind": "word",
-"voice": "man",
-"ipa": "k\u0251rd",
 "force": true
 },
 {
@@ -4947,43 +9840,15 @@
 "force": true
 },
 {
-"text": "feeling",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8fil\u026a\u014b",
-"force": true
-},
-{
 "text": "I have a feeling that something is wrong.",
 "kind": "sentence",
 "voice": "man",
 "force": true
 },
 {
-"text": "attack",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0259\u02c8t\u00e6k",
-"force": true
-},
-{
-"text": "meat",
-"kind": "word",
-"voice": "man",
-"ipa": "mit",
-"force": true
-},
-{
 "text": "I do not eat meat.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "interest",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8\u026antr\u0259st",
 "force": true
 },
 {
@@ -4999,36 +9864,15 @@
 "force": true
 },
 {
-"text": "date",
-"kind": "word",
-"voice": "man",
-"ipa": "de\u026at",
-"force": true
-},
-{
 "text": "They went out on a date.",
 "kind": "sentence",
 "voice": "man",
 "force": true
 },
 {
-"text": "doubt",
-"kind": "word",
-"voice": "man",
-"ipa": "da\u028at",
-"force": true
-},
-{
 "text": "There is no doubt that he is right.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "safe",
-"kind": "word",
-"voice": "man",
-"ipa": "se\u026af",
 "force": true
 },
 {
@@ -5050,23 +9894,9 @@
 "force": true
 },
 {
-"text": "check",
-"kind": "word",
-"voice": "man",
-"ipa": "t\u0283\u025bk",
-"force": true
-},
-{
 "text": "Please check the door is locked.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "respect",
-"kind": "word",
-"voice": "man",
-"ipa": "r\u026a\u02c8sp\u025bkt",
 "force": true
 },
 {
@@ -5079,13 +9909,6 @@
 "text": "Consider the cost.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "moment",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8mo\u028am\u0259nt",
 "force": true
 },
 {
@@ -5119,13 +9942,6 @@
 "force": true
 },
 {
-"text": "yet",
-"kind": "word",
-"voice": "man",
-"ipa": "j\u025bt",
-"force": true
-},
-{
 "text": "Have you eaten yet?",
 "kind": "sentence",
 "voice": "man",
@@ -5138,36 +9954,15 @@
 "force": true
 },
 {
-"text": "wait",
-"kind": "word",
-"voice": "man",
-"ipa": "we\u026at",
-"force": true
-},
-{
 "text": "The class is two hours long.",
 "kind": "sentence",
 "voice": "man",
 "force": true
 },
 {
-"text": "state",
-"kind": "word",
-"voice": "man",
-"ipa": "ste\u026at",
-"force": true
-},
-{
 "text": "The house was in a bad state.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "morning",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8m\u0254rn\u026a\u014b",
 "force": true
 },
 {
@@ -5183,23 +9978,9 @@
 "force": true
 },
 {
-"text": "minute",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8m\u026an\u0259t",
-"force": true
-},
-{
 "text": "Wait a minute.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "health",
-"kind": "word",
-"voice": "man",
-"ipa": "h\u025bl\u03b8",
 "force": true
 },
 {
@@ -5221,13 +10002,6 @@
 "force": true
 },
 {
-"text": "market",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8m\u0251rk\u0259t",
-"force": true
-},
-{
 "text": "The market is open every morning.",
 "kind": "sentence",
 "voice": "man",
@@ -5243,13 +10017,6 @@
 "text": "There is a relation between food and health.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "east",
-"kind": "word",
-"voice": "man",
-"ipa": "ist",
 "force": true
 },
 {
@@ -5271,23 +10038,9 @@
 "force": true
 },
 {
-"text": "lock",
-"kind": "word",
-"voice": "man",
-"ipa": "l\u0251k",
-"force": true
-},
-{
 "text": "Turn the key in the lock.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "belief",
-"kind": "word",
-"voice": "man",
-"ipa": "b\u026a\u02c8lif",
 "force": true
 },
 {
@@ -5315,30 +10068,9 @@
 "force": true
 },
 {
-"text": "punishment",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8p\u028cn\u026a\u0283m\u0259nt",
-"force": true
-},
-{
-"text": "rat",
-"kind": "word",
-"voice": "man",
-"ipa": "r\u00e6t",
-"force": true
-},
-{
 "text": "There are many religions in the world.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "rough",
-"kind": "word",
-"voice": "man",
-"ipa": "r\u028cf",
 "force": true
 },
 {
@@ -5354,23 +10086,9 @@
 "force": true
 },
 {
-"text": "salt",
-"kind": "word",
-"voice": "man",
-"ipa": "s\u0254lt",
-"force": true
-},
-{
 "text": "The sea has salt in it.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "church",
-"kind": "word",
-"voice": "man",
-"ipa": "t\u0283\u025dt\u0283",
 "force": true
 },
 {
@@ -5380,23 +10098,9 @@
 "force": true
 },
 {
-"text": "sand",
-"kind": "word",
-"voice": "man",
-"ipa": "s\u00e6nd",
-"force": true
-},
-{
 "text": "The children are playing in the sand.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "separate",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8s\u025bp\u0259r\u0259t",
 "force": true
 },
 {
@@ -5412,36 +10116,15 @@
 "force": true
 },
 {
-"text": "solid",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8s\u0251l\u0259d",
-"force": true
-},
-{
 "text": "The table is made of solid wood.",
 "kind": "sentence",
 "voice": "man",
 "force": true
 },
 {
-"text": "stomach",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8st\u028cm\u0259k",
-"force": true
-},
-{
 "text": "I have a pain in my stomach.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "tight",
-"kind": "word",
-"voice": "man",
-"ipa": "ta\u026at",
 "force": true
 },
 {
@@ -5457,23 +10140,9 @@
 "force": true
 },
 {
-"text": "chest",
-"kind": "word",
-"voice": "man",
-"ipa": "t\u0283\u025bst",
-"force": true
-},
-{
 "text": "He has a pain in his chest.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "tooth",
-"kind": "word",
-"voice": "man",
-"ipa": "tu\u03b8",
 "force": true
 },
 {
@@ -5495,13 +10164,6 @@
 "force": true
 },
 {
-"text": "heart",
-"kind": "word",
-"voice": "man",
-"ipa": "h\u0251rt",
-"force": true
-},
-{
 "text": "His heart is strong.",
 "kind": "sentence",
 "voice": "man",
@@ -5511,13 +10173,6 @@
 "text": "She has a kind heart.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "taste",
-"kind": "word",
-"voice": "man",
-"ipa": "te\u026ast",
 "force": true
 },
 {
@@ -5533,43 +10188,15 @@
 "force": true
 },
 {
-"text": "twist",
-"kind": "word",
-"voice": "man",
-"ipa": "tw\u026ast",
-"force": true
-},
-{
-"text": "band",
-"kind": "word",
-"voice": "man",
-"ipa": "b\u00e6nd",
-"force": true
-},
-{
 "text": "My brother plays in a band.",
 "kind": "sentence",
 "voice": "man",
 "force": true
 },
 {
-"text": "wood",
-"kind": "word",
-"voice": "man",
-"ipa": "w\u028ad",
-"force": true
-},
-{
 "text": "The table is made of wood.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "sweet",
-"kind": "word",
-"voice": "man",
-"ipa": "swit",
 "force": true
 },
 {
@@ -5585,23 +10212,9 @@
 "force": true
 },
 {
-"text": "board",
-"kind": "word",
-"voice": "man",
-"ipa": "b\u0254rd",
-"force": true
-},
-{
 "text": "The teacher wrote on the board.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "stick",
-"kind": "word",
-"voice": "man",
-"ipa": "st\u026ak",
 "force": true
 },
 {
@@ -5611,36 +10224,15 @@
 "force": true
 },
 {
-"text": "fruit",
-"kind": "word",
-"voice": "man",
-"ipa": "frut",
-"force": true
-},
-{
 "text": "Apples and oranges are fruit.",
 "kind": "sentence",
 "voice": "man",
 "force": true
 },
 {
-"text": "understand",
-"kind": "word",
-"voice": "man",
-"ipa": "\u028cnd\u025a\u02c8st\u00e6nd",
-"force": true
-},
-{
 "text": "I do not understand.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "pick",
-"kind": "word",
-"voice": "man",
-"ipa": "p\u026ak",
 "force": true
 },
 {
@@ -5662,23 +10254,9 @@
 "force": true
 },
 {
-"text": "read",
-"kind": "word",
-"voice": "man",
-"ipa": "rid",
-"force": true
-},
-{
 "text": "I like to read.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "bright",
-"kind": "word",
-"voice": "man",
-"ipa": "bra\u026at",
 "force": true
 },
 {
@@ -5712,13 +10290,6 @@
 "force": true
 },
 {
-"text": "spring",
-"kind": "word",
-"voice": "man",
-"ipa": "spr\u026a\u014b",
-"force": true
-},
-{
 "text": "Flowers come out in spring.",
 "kind": "sentence",
 "voice": "man",
@@ -5731,23 +10302,9 @@
 "force": true
 },
 {
-"text": "research",
-"kind": "word",
-"voice": "man",
-"ipa": "ri\u02c8s\u025dt\u0283",
-"force": true
-},
-{
 "text": "We need more research.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "field",
-"kind": "word",
-"voice": "man",
-"ipa": "fild",
 "force": true
 },
 {
@@ -5781,23 +10338,9 @@
 "force": true
 },
 {
-"text": "argument",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8\u0251r\u0261j\u0259m\u0259nt",
-"force": true
-},
-{
 "text": "Her argument was strong.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "stamp",
-"kind": "word",
-"voice": "man",
-"ipa": "st\u00e6mp",
 "force": true
 },
 {
@@ -5813,13 +10356,6 @@
 "force": true
 },
 {
-"text": "adjustment",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0259\u02c8d\u0292\u028cstm\u0259nt",
-"force": true
-},
-{
 "text": "He made an adjustment to the seat.",
 "kind": "sentence",
 "voice": "man",
@@ -5832,23 +10368,9 @@
 "force": true
 },
 {
-"text": "advertisement",
-"kind": "word",
-"voice": "man",
-"ipa": "\u00e6d\u02c8v\u025dt\u0259zm\u0259nt",
-"force": true
-},
-{
 "text": "The plan needs the approval of the government.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "current",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8k\u025d\u0259nt",
 "force": true
 },
 {
@@ -5864,20 +10386,6 @@
 "force": true
 },
 {
-"text": "bite",
-"kind": "word",
-"voice": "man",
-"ipa": "ba\u026at",
-"force": true
-},
-{
-"text": "mark",
-"kind": "word",
-"voice": "man",
-"ipa": "m\u0251rk",
-"force": true
-},
-{
 "text": "There is a mark on your shirt.",
 "kind": "sentence",
 "voice": "man",
@@ -5887,13 +10395,6 @@
 "text": "She got a good mark in the test.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "paint",
-"kind": "word",
-"voice": "man",
-"ipa": "pe\u026ant",
 "force": true
 },
 {
@@ -5915,23 +10416,9 @@
 "force": true
 },
 {
-"text": "boot",
-"kind": "word",
-"voice": "man",
-"ipa": "but",
-"force": true
-},
-{
 "text": "My boots are wet.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "result",
-"kind": "word",
-"voice": "man",
-"ipa": "r\u026a\u02c8z\u028clt",
 "force": true
 },
 {
@@ -5947,23 +10434,9 @@
 "force": true
 },
 {
-"text": "art",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0251rt",
-"force": true
-},
-{
 "text": "She studies art.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "branch",
-"kind": "word",
-"voice": "man",
-"ipa": "br\u00e6nt\u0283",
 "force": true
 },
 {
@@ -6003,13 +10476,6 @@
 "force": true
 },
 {
-"text": "stage",
-"kind": "word",
-"voice": "man",
-"ipa": "ste\u026ad\u0292",
-"force": true
-},
-{
 "text": "The band is on the stage.",
 "kind": "sentence",
 "voice": "man",
@@ -6034,30 +10500,9 @@
 "force": true
 },
 {
-"text": "chief",
-"kind": "word",
-"voice": "man",
-"ipa": "t\u0283if",
-"force": true
-},
-{
-"text": "student",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8stud\u0259nt",
-"force": true
-},
-{
 "text": "She is a science student.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "comfort",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8k\u028cmf\u025at",
 "force": true
 },
 {
@@ -6079,13 +10524,6 @@
 "force": true
 },
 {
-"text": "cough",
-"kind": "word",
-"voice": "man",
-"ipa": "k\u0251f",
-"force": true
-},
-{
 "text": "He has a bad cough.",
 "kind": "sentence",
 "voice": "man",
@@ -6095,13 +10533,6 @@
 "text": "She coughed all night.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "crack",
-"kind": "word",
-"voice": "man",
-"ipa": "kr\u00e6k",
 "force": true
 },
 {
@@ -6117,13 +10548,6 @@
 "force": true
 },
 {
-"text": "credit",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8kr\u025bd\u0259t",
-"force": true
-},
-{
 "text": "We bought the car on credit.",
 "kind": "sentence",
 "voice": "man",
@@ -6133,13 +10557,6 @@
 "text": "She is a dear friend.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "dependent",
-"kind": "word",
-"voice": "man",
-"ipa": "d\u026a\u02c8p\u025bnd\u0259nt",
 "force": true
 },
 {
@@ -6155,23 +10572,9 @@
 "force": true
 },
 {
-"text": "dust",
-"kind": "word",
-"voice": "man",
-"ipa": "d\u028cst",
-"force": true
-},
-{
 "text": "The car made a cloud of dust.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "exchange",
-"kind": "word",
-"voice": "man",
-"ipa": "\u026aks\u02c8t\u0283e\u026and\u0292",
 "force": true
 },
 {
@@ -6193,13 +10596,6 @@
 "force": true
 },
 {
-"text": "flag",
-"kind": "word",
-"voice": "man",
-"ipa": "fl\u00e6\u0261",
-"force": true
-},
-{
 "text": "The flag is red and white.",
 "kind": "sentence",
 "voice": "man",
@@ -6212,30 +10608,9 @@
 "force": true
 },
 {
-"text": "flight",
-"kind": "word",
-"voice": "man",
-"ipa": "fla\u026at",
-"force": true
-},
-{
-"text": "fold",
-"kind": "word",
-"voice": "man",
-"ipa": "fo\u028ald",
-"force": true
-},
-{
 "text": "Fold the paper in half.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "fork",
-"kind": "word",
-"voice": "man",
-"ipa": "f\u0254rk",
 "force": true
 },
 {
@@ -6248,27 +10623,6 @@
 "text": "The window frame is made of wood.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "frequent",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8frikw\u0259nt",
-"force": true
-},
-{
-"text": "guide",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0261a\u026ad",
-"force": true
-},
-{
-"text": "hate",
-"kind": "word",
-"voice": "man",
-"ipa": "he\u026at",
 "force": true
 },
 {
@@ -6290,13 +10644,6 @@
 "force": true
 },
 {
-"text": "instrument",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8\u026anstr\u0259m\u0259nt",
-"force": true
-},
-{
 "text": "Can you play an instrument?",
 "kind": "sentence",
 "voice": "man",
@@ -6309,43 +10656,15 @@
 "force": true
 },
 {
-"text": "judge",
-"kind": "word",
-"voice": "man",
-"ipa": "d\u0292\u028cd\u0292",
-"force": true
-},
-{
-"text": "jump",
-"kind": "word",
-"voice": "man",
-"ipa": "d\u0292\u028cmp",
-"force": true
-},
-{
 "text": "He has a leather bag.",
 "kind": "sentence",
 "voice": "man",
 "force": true
 },
 {
-"text": "lip",
-"kind": "word",
-"voice": "man",
-"ipa": "l\u026ap",
-"force": true
-},
-{
 "text": "She has a cut on her lip.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "map",
-"kind": "word",
-"voice": "man",
-"ipa": "m\u00e6p",
 "force": true
 },
 {
@@ -6364,13 +10683,6 @@
 "text": "A mass of people came into the street.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "match",
-"kind": "word",
-"voice": "man",
-"ipa": "m\u00e6t\u0283",
 "force": true
 },
 {
@@ -6410,13 +10722,6 @@
 "force": true
 },
 {
-"text": "net",
-"kind": "word",
-"voice": "man",
-"ipa": "n\u025bt",
-"force": true
-},
-{
 "text": "They caught fish in a net.",
 "kind": "sentence",
 "voice": "man",
@@ -6426,13 +10731,6 @@
 "text": "The ball went into the net.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "opposite",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8\u0251p\u0259z\u0259t",
 "force": true
 },
 {
@@ -6448,23 +10746,9 @@
 "force": true
 },
 {
-"text": "payment",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8pe\u026am\u0259nt",
-"force": true
-},
-{
 "text": "I want some peace and quiet.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "pig",
-"kind": "word",
-"voice": "man",
-"ipa": "p\u026a\u0261",
 "force": true
 },
 {
@@ -6474,23 +10758,9 @@
 "force": true
 },
 {
-"text": "plate",
-"kind": "word",
-"voice": "man",
-"ipa": "ple\u026at",
-"force": true
-},
-{
 "text": "Put the food on a plate.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "pocket",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8p\u0251k\u0259t",
 "force": true
 },
 {
@@ -6506,20 +10776,6 @@
 "force": true
 },
 {
-"text": "print",
-"kind": "word",
-"voice": "man",
-"ipa": "pr\u026ant",
-"force": true
-},
-{
-"text": "profit",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8pr\u0251f\u0259t",
-"force": true
-},
-{
 "text": "The company made a profit.",
 "kind": "sentence",
 "voice": "man",
@@ -6532,23 +10788,9 @@
 "force": true
 },
 {
-"text": "protest",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8pro\u028at\u025bst",
-"force": true
-},
-{
 "text": "There was a protest in the street.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "pump",
-"kind": "word",
-"voice": "man",
-"ipa": "p\u028cmp",
 "force": true
 },
 {
@@ -6558,23 +10800,9 @@
 "force": true
 },
 {
-"text": "regret",
-"kind": "word",
-"voice": "man",
-"ipa": "r\u0259\u02c8\u0261r\u025bt",
-"force": true
-},
-{
 "text": "I regret what I said.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "request",
-"kind": "word",
-"voice": "man",
-"ipa": "r\u026a\u02c8kw\u025bst",
 "force": true
 },
 {
@@ -6590,13 +10818,6 @@
 "force": true
 },
 {
-"text": "reward",
-"kind": "word",
-"voice": "man",
-"ipa": "r\u026a\u02c8w\u0254rd",
-"force": true
-},
-{
 "text": "They gave a reward to the person who found the dog.",
 "kind": "sentence",
 "voice": "man",
@@ -6609,13 +10830,6 @@
 "force": true
 },
 {
-"text": "root",
-"kind": "word",
-"voice": "man",
-"ipa": "rut",
-"force": true
-},
-{
 "text": "The root of the tree is deep.",
 "kind": "sentence",
 "voice": "man",
@@ -6625,13 +10839,6 @@
 "text": "We sailed to the island.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "secret",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8sikr\u0259t",
 "force": true
 },
 {
@@ -6653,30 +10860,9 @@
 "force": true
 },
 {
-"text": "self",
-"kind": "word",
-"voice": "man",
-"ipa": "s\u025blf",
-"force": true
-},
-{
 "text": "She has a strong sense of self.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "servant",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8s\u025dv\u0259nt",
-"force": true
-},
-{
-"text": "shade",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0283e\u026ad",
 "force": true
 },
 {
@@ -6686,23 +10872,9 @@
 "force": true
 },
 {
-"text": "sheep",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0283ip",
-"force": true
-},
-{
 "text": "The sheep are in the field.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "shock",
-"kind": "word",
-"voice": "man",
-"ipa": "\u0283\u0251k",
 "force": true
 },
 {
@@ -6724,13 +10896,6 @@
 "force": true
 },
 {
-"text": "skirt",
-"kind": "word",
-"voice": "man",
-"ipa": "sk\u025dt",
-"force": true
-},
-{
 "text": "She has a long skirt.",
 "kind": "sentence",
 "voice": "man",
@@ -6740,20 +10905,6 @@
 "text": "This skirt is too short.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "slip",
-"kind": "word",
-"voice": "man",
-"ipa": "sl\u026ap",
-"force": true
-},
-{
-"text": "slope",
-"kind": "word",
-"voice": "man",
-"ipa": "slo\u028ap",
 "force": true
 },
 {
@@ -6769,30 +10920,9 @@
 "force": true
 },
 {
-"text": "soap",
-"kind": "word",
-"voice": "man",
-"ipa": "so\u028ap",
-"force": true
-},
-{
 "text": "Wash your hands with soap.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "straight",
-"kind": "word",
-"voice": "man",
-"ipa": "stre\u026at",
-"force": true
-},
-{
-"text": "stretch",
-"kind": "word",
-"voice": "man",
-"ipa": "str\u025bt\u0283",
 "force": true
 },
 {
@@ -6808,23 +10938,9 @@
 "force": true
 },
 {
-"text": "thousand",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8\u03b8a\u028az\u0259nd",
-"force": true
-},
-{
 "text": "The city is a thousand years old.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "throat",
-"kind": "word",
-"voice": "man",
-"ipa": "\u03b8ro\u028at",
 "force": true
 },
 {
@@ -6840,50 +10956,15 @@
 "force": true
 },
 {
-"text": "transport",
-"kind": "word",
-"voice": "man",
-"ipa": "tr\u00e6n\u02c8sp\u0254rt",
-"force": true
-},
-{
 "text": "They transport food by ship.",
 "kind": "sentence",
 "voice": "man",
 "force": true
 },
 {
-"text": "trick",
-"kind": "word",
-"voice": "man",
-"ipa": "tr\u026ak",
-"force": true
-},
-{
-"text": "violent",
-"kind": "word",
-"voice": "man",
-"ipa": "\u02c8va\u026a\u0259l\u0259nt",
-"force": true
-},
-{
 "text": "There was a violent wind.",
 "kind": "sentence",
 "voice": "man",
-"force": true
-},
-{
-"text": "waste",
-"kind": "word",
-"voice": "man",
-"ipa": "we\u026ast",
-"force": true
-},
-{
-"text": "wing",
-"kind": "word",
-"voice": "man",
-"ipa": "w\u026a\u014b",
 "force": true
 },
 {
