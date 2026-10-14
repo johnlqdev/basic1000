@@ -362,7 +362,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; font-weight: 400; }
 /* the rule */
 .g-rule { display: grid; grid-template-columns: max-content 56px max-content; align-items: center; gap: 10px 14px; width: fit-content; max-width: 100%; background: var(--card); border: 1px solid var(--rule); border-radius: 16px; padding: 18px clamp(16px, 4vw, 30px); box-shadow: var(--shadow); max-width: 560px; }
 .g-rule-row { display: contents; }
-.nav[hidden] + #account { margin-left: auto; }
+.nav[hidden] + #langPick { margin-left: auto; }
 .g-rule .gm-tile { font-size: 1.6rem; text-align: center; min-width: 3.4em; }
 .g-arrow { height: 2px; background: var(--rule); position: relative; }
 .g-arrow::after { content: ""; position: absolute; right: -1px; top: -4px; border: 5px solid transparent; border-left: 7px solid var(--rule); border-right: 0; }
@@ -530,6 +530,23 @@ h1, h2, h3 { text-wrap: balance; margin: 0; font-weight: 400; }
 .gt-word.is-picked { background: var(--marker); border-bottom-color: var(--ink); }
 .g-done-score { margin: 0 0 6px; }
 @media (max-width: 560px) { .gm-stage { min-height: 96px; } }
+/* mother-language translation of a word (lang.js) */
+.ml { display: flex; align-items: baseline; gap: 8px; margin: 6px 0 2px; font-size: 1.15rem; color: var(--ink); }
+.ml[hidden] { display: none; }
+.ml-code { font-family: var(--mono); font-size: .68rem; font-weight: 600; letter-spacing: .04em; color: var(--tab); border: 1px solid var(--tab-soft); background: var(--tab-soft); border-radius: 4px; padding: 1px 5px; position: relative; top: -1px; }
+.dict-row .ml { margin: 3px 0 0; font-family: var(--body); font-size: .92rem; color: var(--muted); gap: 6px; }
+.dict-row .ml-code { font-size: .6rem; padding: 0 4px; }
+.lang-sample .ml { display: inline-flex; margin: 0 0 0 4px; font-size: 1rem; }
+.lang-btn { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); letter-spacing: .04em; }
+.lang-btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; }
+.lang-list { display: grid; gap: 8px; margin-top: 16px; }
+.lang-opt { display: flex; align-items: baseline; gap: 10px; width: 100%; text-align: left; padding: 12px 16px; border: 1px solid var(--rule); border-radius: 10px; background: var(--card); color: var(--ink); cursor: pointer; font: inherit; }
+.lang-opt:hover { border-color: var(--tab); }
+.lang-opt[aria-pressed="true"] { border-color: var(--tab); background: var(--tab-soft); }
+.lang-name { font-weight: 700; font-size: 1.05rem; }
+.lang-sub { color: var(--muted); font-size: .88rem; }
+.lang-on { margin-left: auto; color: var(--tab); font-weight: 700; }
+.lang-sample { margin-top: 16px; display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px; }
 </style>
 
 </head>
@@ -542,6 +559,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; font-weight: 400; }
       <button type="button" data-go="review">Review <span class="count num" id="dueCount" hidden></span></button>
       <button type="button" data-go="dict">Dictionary</button>
     </nav>
+    <div id="langPick"></div>
     <div id="account"></div>
   </div>
 </header>
@@ -561,6 +579,7 @@ h1, h2, h3 { text-wrap: balance; margin: 0; font-weight: 400; }
 <script src="/figures.js"></script>
 <script src="/pron.js"></script>
 <script src="/audio.js"></script>
+<script src="/lang.js"></script>
 <script src="/films.js"></script>
 <script src="/grammar-data.js"></script>
 <script src="/grammar.js"></script>
@@ -733,6 +752,8 @@ function startApp(W, QUIZ) {
     // v1 records keyed boxes by position in the old word order, which no longer matches: start fresh
     if (!p || p.v !== 2) return { v: 2, cv: COURSE_VERSION, done: {}, boxes: {}, views: {}, learned: {}, grammar: {}, gr: 0 };
     const out = { v: 2, cv: COURSE_VERSION, done: p.done || {}, boxes: {}, views: {}, learned: {}, grammar: { ...(p.grammar || {}) }, gr: +p.gr || 0 };
+    // ml = mother language for the word translations ('' = none; missing = the default), mlt = when it was chosen
+    if (typeof p.ml === 'string') { out.ml = p.ml; out.mlt = +p.mlt || 0; }
     Object.entries(p.learned || {}).forEach(([w, t]) => { if (w in WI) out.learned[w] = t; });
     Object.entries(p.boxes || {}).forEach(([w, b]) => { if (w in WI) out.boxes[w] = b; });
     Object.entries(p.views || {}).forEach(([w, n]) => { if (w in WI && n > 0) out.views[w] = Math.floor(n); });
@@ -768,6 +789,7 @@ function startApp(W, QUIZ) {
     Object.entries(b.learned || {}).forEach(([w, t]) => { if (w in WI) out.learned[w] = Math.min(t, out.learned[w] || t); });
     // grammar: if one side was reset later, the other side's scores are from before that reset and are dropped
     const gb = +b.gr || 0;
+    if (typeof b.ml === 'string' && (+b.mlt || 0) > (out.mlt || 0)) { out.ml = b.ml; out.mlt = +b.mlt || 0; }  // the later choice
     if (gb > out.gr) { out.grammar = { ...(b.grammar || {}) }; out.gr = gb; }
     else if (gb === out.gr) Object.entries(b.grammar || {}).forEach(([g, sc]) => { out.grammar[g] = Math.max(sc, out.grammar[g] ?? -1); });
     return out;
@@ -790,6 +812,7 @@ function startApp(W, QUIZ) {
     const { data, error } = await sb.from('progress').select('data').eq('user_id', session.user.id).maybeSingle();
     if (error) { storeMode = 'error'; renderSaved(); return; }
     P = data ? merge(normal(data.data), P) : P;
+    applyLang();
     try { localStorage.setItem(LS_KEY, JSON.stringify(P)); } catch (e) {}
     storeMode = 'account';
     await push();
@@ -822,6 +845,52 @@ function startApp(W, QUIZ) {
       el.innerHTML = `<button type="button" class="acct" id="acctBtn">Sign in</button>`;
     }
     document.getElementById('acctBtn').addEventListener('click', openAccount);
+  }
+
+  // ---------- mother language ----------
+  // A short translation of each word in the learner's own language (lang.js). The choice is kept in
+  // P.ml, so it follows a signed-in learner to every device.
+  const GLOBE = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3Z"/></svg>';
+  function mlSpan(word) { // a translation slot; lang.js fills it again whenever the language changes
+    const t = BASIC_LANG.word(word), code = BASIC_LANG.current(), l = BASIC_LANG.info(code);
+    return `<span class="ml" data-ml="${esc(word)}"${t ? ` lang="${code}" title="${esc(l ? l.english : '')}"` : ' hidden'}>${t ? `<b class="ml-code">${code.toUpperCase()}</b><span class="ml-text">${esc(t)}</span>` : ''}</span>`;
+  }
+  function applyLang() { return BASIC_LANG.use(P.ml).then(renderLangBtn); }
+  function renderLangBtn() {
+    const el = document.getElementById('langPick');
+    if (!el) return;
+    const code = BASIC_LANG.current(), l = BASIC_LANG.info(code);
+    el.innerHTML = `<button type="button" class="acct lang-btn" id="langBtn" aria-haspopup="dialog" title="Your language: ${esc(l ? l.name : 'none (English only)')}">${GLOBE}<span>${code ? code.toUpperCase() : 'EN'}</span></button>`;
+    document.getElementById('langBtn').addEventListener('click', openLang);
+  }
+  function openLang() {
+    const cur = BASIC_LANG.current();
+    const opt = (code, name, sub) => `<button type="button" class="lang-opt" data-code="${code}" aria-pressed="${cur === code}">
+        <span class="lang-name">${esc(name)}</span>${sub ? `<span class="lang-sub">${esc(sub)}</span>` : ''}${cur === code ? '<span class="lang-on">✓</span>' : ''}</button>`;
+    const sample = (W[WI.make] || W[0]).w;
+    $scrim.innerHTML = `<div class="sheet" role="dialog" aria-modal="true" aria-label="Your language"><button class="btn quiet sheet-close" type="button" id="closeSheet">Close</button>
+      <div class="eyebrow">Your language</div><h2 class="acct-title">Words in your mother language</h2>
+      <p class="muted">Every word shows a short translation in your language, in the meaning its example sentences teach. The sentences stay in English.</p>
+      <div class="lang-list" role="group" aria-label="Languages">
+        ${BASIC_LANG.languages().map(l => opt(l.code, l.name, l.english)).join('')}
+        ${opt('', 'None', 'English only')}
+      </div>
+      <p class="lang-sample muted">Example: <b>${esc(sample)}</b> ${mlSpan(sample)}</p></div>`;
+    $scrim.hidden = false;
+    document.getElementById('closeSheet').addEventListener('click', closeSheet);
+    $scrim.querySelectorAll('.lang-opt').forEach(b => b.addEventListener('click', () => {
+      P.ml = b.dataset.code; P.mlt = Date.now(); save();
+      applyLang().then(() => {
+        $scrim.querySelectorAll('.lang-opt').forEach(o => {
+          const on = o.dataset.code === BASIC_LANG.current();
+          o.setAttribute('aria-pressed', on);
+          const mark = o.querySelector('.lang-on');
+          if (on && !mark) o.insertAdjacentHTML('beforeend', '<span class="lang-on">✓</span>');
+          if (!on && mark) mark.remove();
+        });
+      });
+    }));
+    ($scrim.querySelector('.lang-opt[aria-pressed="true"]') || document.getElementById('closeSheet')).focus();
   }
 
   function openAccount() {
@@ -1111,7 +1180,7 @@ function startApp(W, QUIZ) {
         <span class="ipa" title="How to say it (American English, IPA)">/${pron.map((g, k) => `<span class="ch" data-c="${k}">${esc(g[1])}</span>`).join('')}/</span></span>`
       : `<span class="headword">${esc(w.w)}</span>`;
     let h = `<div class="entry-head"${pron ? ' data-hl' : ''}>${head}${audio ? seq(A.button(w.w, 'Listen to ' + w.w), 1) : ''}${pron ? seq(A.slowButton(w.w, 'word', 'Listen slowly to ' + w.w), 2) : ''}<span class="pos">${esc(w.p)}</span>
-      ${opts.stepTag ? `<span class="tag">step ${w.s}</span>` : ''}${seenHTML(opts.views, opts.fresh)}${opts.learned ? STAMP : ''}</div>${!audio && A ? '<p class="muted noaudio">Audio for this step is coming soon.</p>' : ''}
+      ${opts.stepTag ? `<span class="tag">step ${w.s}</span>` : ''}${seenHTML(opts.views, opts.fresh)}${opts.learned ? STAMP : ''}</div>${mlSpan(w.w)}${!audio && A ? '<p class="muted noaudio">Audio for this step is coming soon.</p>' : ''}
       <div class="mode ${w.m}">${mName}</div> <span class="muted" style="font-size:.88rem">${mHelp}</span>`;
     if (BASIC_FIGURES.has(w.w)) h += `<div class="scene" data-scene="${esc(w.w)}" role="img" aria-label="${esc(BASIC_FIGURES.label(w.w))}"></div>`;
     else h += `<div class="slot blank"><span class="eyebrow">Picture coming soon</span><b>${esc(w.w)}</b></div>`;
@@ -1528,7 +1597,7 @@ function startApp(W, QUIZ) {
   let dq = '', dFilter = 'all';
   function renderDict() {
     $view.innerHTML = `<div class="dict-tools">
-        <input class="search" id="dsearch" type="search" placeholder="Search 1,000 words" aria-label="Search words" value="${esc(dq)}">
+        <input class="search" id="dsearch" type="search" placeholder="Search 1,000 words, or your language" aria-label="Search words" value="${esc(dq)}">
         <div class="seg" role="group" aria-label="Show">
           ${[['all', 'All'], ['learned', 'Learned'], ['ahead', 'Not yet']].map(([k, l]) => `<button type="button" data-f="${k}" aria-pressed="${dFilter === k}">${l}</button>`).join('')}
         </div></div><div class="dict" id="dlist"></div>`;
@@ -1537,6 +1606,10 @@ function startApp(W, QUIZ) {
     $view.querySelectorAll('[data-f]').forEach(b => b.addEventListener('click', () => { dFilter = b.dataset.f; renderDict(); }));
     fillDict();
   }
+  // does a translation ("machen; tun", "aller chercher") have a word that starts with q? Accents are ignored.
+  const fold = t => t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  const enMatch = (w, q) => w.w.toLowerCase().startsWith(q) || w.f.toLowerCase().split(', ').some(f => f.startsWith(q)) || (w.us && w.us.startsWith(q));
+  const mlMatch = (t, q) => !!t && fold(t).split(/[\s,;()'’.-]+/).some(x => x && x.startsWith(fold(q)));
   function fillDict() {
     const learned = learnedSet(), q = dq.trim().toLowerCase();
     const base = q ? BASIC1000.lemma(q) : null;
@@ -1545,13 +1618,15 @@ function startApp(W, QUIZ) {
       if (dFilter === 'learned' && !learned.has(i)) return false;
       if (dFilter === 'ahead' && learned.has(i)) return false;
       const w = W[i];
-      return !q || w.w.toLowerCase().startsWith(q) || w.f.toLowerCase().split(', ').some(f => f.startsWith(q)) || (w.us && w.us.startsWith(q));
+      return !q || enMatch(w, q) || (q.length > 2 && mlMatch(BASIC_LANG.word(w.w), q));  // the learner's language too
     });
-    ids.sort((a, b) => (b === base) - (a === base) || W[a].w.toLowerCase().localeCompare(W[b].w.toLowerCase()));
+    // the word itself first, then English matches, then matches in the learner's language
+    const en = i => !q || enMatch(W[i], q);
+    ids.sort((a, b) => (b === base) - (a === base) || en(b) - en(a) || W[a].w.toLowerCase().localeCompare(W[b].w.toLowerCase()));
     const total = ids.length, shown = ids.slice(0, 200);
     const list = document.getElementById('dlist');
     list.innerHTML = shown.map(i => `<button type="button" class="dict-row" data-word="${i}">
-        <span class="dw">${esc(W[i].w)}<small>${esc(W[i].p)}</small></span>
+        <span class="dw">${esc(W[i].w)}<small>${esc(W[i].p)}</small>${mlSpan(W[i].w)}</span>
         <span class="tag">${MODES[W[i].m][0]}</span>
         <span class="tag num ${learned.has(i) ? 'on' : ''}">${learned.has(i) ? '✓ ' : ''}step ${W[i].s}</span></button>`).join('') +
       (total > shown.length ? `<div class="more muted">${total - shown.length} more. Type to narrow the list.</div>` : '') +
@@ -1585,6 +1660,8 @@ function startApp(W, QUIZ) {
 
   route('path');
   renderAccount();
+  renderLangBtn();
+  applyLang();
   connectAccount();
 }
 Promise.all([1, 2, 3, 4].map(function (n) {

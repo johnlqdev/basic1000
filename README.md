@@ -17,6 +17,9 @@ Live site: https://basic-1000.vercel.app
 | `figures.js` | Animated stick-figure scenes (D3), one per word; Units 1 and 2 (steps 1-20) so far |
 | `audio.js` | Speaker buttons: plays each word and example (Daniel, or Sarah when a woman is speaking); slow buttons with highlighting |
 | `pron.js` | IPA for the words with slow audio, split into sound groups (which letters spell which sound) |
+| `lang.js`, `lang/` | Mother-language translations of the words: `lang/index.json` lists the languages, `lang/<code>.json` holds one language (built, do not edit by hand) |
+| `content/lang/` | Translation sources: `languages.json` and one `<code>.tsv` per language |
+| `tools/lang/build.py` | Checks the translations (every word, every language) and writes `lang/` |
 | `quiz.json` | The checked wrong answers for every quiz question (see Quiz check) |
 | `data-1.txt` ... `data-4.txt` | The 1,000 words the site loads (250 per file) |
 | `content/course.json` | The full course data: steps, definitions, examples |
@@ -68,9 +71,17 @@ Grammar sentences use the same clips as the rest of the site (`v2/{voice}/...` i
 - **Learning a word.** A word is learned when its four audio buttons are tapped in this order: the word, the word slowly, the first sentence, then the first sentence slowly.  At first only button 1 works. The others are grey and numbered, and the next one glows. A track at the top of the card shows the stops. "Next word" (or the step quiz) stays locked until the last tap. The word is then saved as learned (`learned` in the progress record), gets a "Learned" stamp and a teal top edge on its card, and its dot at the top of the lesson fills in. A learned word has no order: every button works straight away. Words from steps finished before this rule existed count as learned. A lesson always opens at the first word of its step that is not learned yet.
 - **Visits.** Each time a learner opens a word's page (in a lesson, or from a tapped word or the Dictionary), its visit count goes up by one. The count is shown next to the word, with five bars that fill at 1, 3, 5, 10 and 20 visits. Counts are part of the learner's progress (`views` in the saved record), so they are kept in the browser and in their account when signed in. When two devices are merged, the higher count is kept.
 
+- **Mother language.** Every word shows a short translation in the learner's own language, under the word on its page and in the Dictionary (which can also be searched in that language). It gives the meaning the word's example sentences teach. Sentences are not translated, and quiz questions never show translations. German is the default; the globe button in the header picks another language, or none. The choice is saved in the progress record (`ml`, with the time it was made in `mlt`; when two devices are merged, the later choice wins).
+
+### Adding a language
+
+1. Write `content/lang/<code>.tsv`: one line per word, `word<TAB>translation`, in the sense the examples teach. Several senses are separated by `; `, the one in the first example first.
+2. Add `{ "code", "name" (in that language), "english" }` to `content/lang/languages.json`.
+3. Run `python3 tools/lang/build.py`. It refuses a missing, extra or empty word. The site needs no change.
+
 ## Editing the course
 
-1. Edit `content/course.json`.
+1. Edit `content/course.json` (through `tools/pipeline/src/`, see `CLAUDE.md`). New words also need a line in every `content/lang/<code>.tsv`.
 2. Run `python3 content/check_course.py` and fix anything it reports.
 3. Run `python3 tools/build_data.py` to rebuild the data files.
 4. Run the quiz check (see Quiz check below) so new questions get checked wrong answers.
