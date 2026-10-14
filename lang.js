@@ -1,8 +1,9 @@
 // Mother-language annotations: a short translation of each Basic 1000 word, in the sense its
 // examples teach. Words only, never sentences.
 //
-// Each language is one resource file, lang/<code>.json = { code, name, english, words: { headword: text } },
-// listed in lang/index.json = { default, languages: [{ code, name, english }] }. Adding a language
+// Each language is one resource file, lang/<code>.json = { code, name, english, tag, dir, words: { headword: text } },
+// listed in lang/index.json = { default, languages: [{ code, name, english, tag?, dir? }] }. tag is the
+// BCP 47 language tag (fonts, screen readers), dir is "rtl" for right-to-left scripts. Adding a language
 // needs no change here (see tools/lang/build.py).
 //
 // The page puts <span class="ml" data-ml="headword"></span> wherever a translation belongs; fill()
@@ -26,15 +27,19 @@
 
   function word(w) { return current && current.words[w] || ''; }
 
+  // the slot's inner HTML: a code chip (always left to right) and the text in its own language and direction
+  function inner(t) {
+    if (!t || !current) return '';
+    var tag = current.tag || current.code, dir = current.dir === 'rtl' ? 'rtl' : 'ltr';
+    var esc = function (s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+    return '<b class="ml-code">' + esc(current.code.toUpperCase()) + '</b><span class="ml-text" lang="' + esc(tag) + '" dir="' + dir + '">' + esc(t) + '</span>';
+  }
   function fill(root) {
-    var code = current ? current.code : '';
     (root || document).querySelectorAll('[data-ml]').forEach(function (el) {
       var t = word(el.getAttribute('data-ml'));
       el.hidden = !t;
-      el.lang = code;
       el.title = t && current ? current.english : '';
-      el.innerHTML = t ? '<b class="ml-code">' + code.toUpperCase() + '</b><span class="ml-text"></span>' : '';
-      if (t) el.lastChild.textContent = t;
+      el.innerHTML = inner(t);
     });
   }
 
@@ -56,7 +61,7 @@
 
   window.BASIC_LANG = {
     ready: function () { return ready; },
-    languages: langs, info: info, resolve: resolve, use: use, word: word, fill: fill,
+    languages: langs, info: info, resolve: resolve, use: use, word: word, fill: fill, html: function (w) { return inner(word(w)); },
     current: function () { return current ? current.code : ''; }
   };
 })();

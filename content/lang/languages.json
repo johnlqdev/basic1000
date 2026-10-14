@@ -1,7 +1,16 @@
 {
   "default": "",
+  "note": "Listed in the order of Ethnologue's 2025 ranking of languages by total speakers (English, the course language, is the default and needs no file); German is kept as an extra option. Optional: tag (BCP 47, if it differs from code), dir (rtl for right-to-left scripts).",
   "languages": [
-    { "code": "de", "name": "Deutsch", "english": "German" },
-    { "code": "fr", "name": "Français", "english": "French" }
+    { "code": "zh", "name": "中文", "english": "Chinese (Simplified)", "tag": "zh-Hans" },
+    { "code": "hi", "name": "हिन्दी", "english": "Hindi" },
+    { "code": "es", "name": "Español", "english": "Spanish" },
+    { "code": "ar", "name": "العربية", "english": "Arabic", "dir": "rtl" },
+    { "code": "fr", "name": "Français", "english": "French" },
+    { "code": "bn", "name": "বাংলা", "english": "Bengali" },
+    { "code": "pt", "name": "Português", "english": "Portuguese" },
+    { "code": "ru", "name": "Русский", "english": "Russian" },
+    { "code": "id", "name": "Bahasa Indonesia", "english": "Indonesian" },
+    { "code": "de", "name": "Deutsch", "english": "German" }
   ]
 }

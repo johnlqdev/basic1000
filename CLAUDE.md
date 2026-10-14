@@ -26,13 +26,17 @@ when the owner gives them, with the date.
 7. **Modules are linked.** Every word shown in grammar (examples, rules, answers) links to its
    Basic 1000 word page and counts as a visit.
 8. **Mother-language annotations.** (2026-10-14) Every word has a short, intuitive translation in
-   every listed language (German and French as options; the default is English only, no
-   translation shown — learn English through English), in the meaning its example
+   every listed language, in the meaning its example
    sentences teach (several senses: "; ", the first example's sense first). Words only, never
    sentences, and never shown in quiz questions. Sources: `content/lang/<code>.tsv` plus
    `content/lang/languages.json`; build with `python3 tools/lang/build.py` (writes `lang/`). A new
    word needs its translation in every language; if a word's first example changes meaning, check
    its translations. Adding a language = one new `.tsv` + one line in `languages.json`.
+   The default is English only (no translation shown: learn English through English). Options
+   (2026-10-14): the top 10 languages of Ethnologue 2025 by total speakers other than English —
+   Chinese (Simplified), Hindi, Spanish, Arabic, French, Bengali, Portuguese, Russian, Indonesian —
+   plus German. Right-to-left scripts set `"dir": "rtl"`; a language tag that differs from the code
+   goes in `"tag"` (e.g. `zh-Hans`).
 
 ## Audio
 

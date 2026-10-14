@@ -4,7 +4,8 @@
     python3 tools/lang/build.py --check   # check only
 
 Sources (content/lang/):
-  languages.json   {"default": code, "languages": [{"code", "name" (in that language), "english"}]}
+  languages.json   {"default": code or "" (none), "languages": [{"code", "name" (in that language), "english",
+                   "tag"? (BCP 47 language tag when it differs from code, e.g. zh-Hans), "dir"? ("rtl")}]}
   <code>.tsv       one line per headword: word<TAB>translation  (lines starting with # are comments)
 
 A translation gives the sense the word's examples teach; several senses are separated by "; ",
@@ -54,6 +55,13 @@ def main():
         errors.append(f'default language "{reg.get("default")}" is not in the list')
     data = {}
     for lang in reg['languages']:
+        for key in ('code', 'name', 'english'):
+            if not str(lang.get(key, '')).strip():
+                errors.append(f'languages.json: a language has no "{key}": {lang}')
+        if lang.get('dir', 'ltr') not in ('ltr', 'rtl'):
+            errors.append(f'{lang.get("code")}: dir must be "ltr" or "rtl"')
+        if codes.count(lang.get('code')) > 1:
+            errors.append(f'{lang.get("code")}: listed twice')
         path = os.path.join(SRC, lang['code'] + '.tsv')
         if not os.path.exists(path):
             errors.append(f'{lang["code"]}: content/lang/{lang["code"]}.tsv is missing')
@@ -68,11 +76,14 @@ def main():
     if not check_only:
         os.makedirs(OUT, exist_ok=True)
         with open(os.path.join(OUT, 'index.json'), 'w', encoding='utf-8') as f:
-            json.dump({'default': reg.get('default') or '', 'languages': reg['languages']}, f, ensure_ascii=False, indent=1)
+            keep = ('code', 'name', 'english', 'tag', 'dir')
+            json.dump({'default': reg.get('default') or '',
+                       'languages': [{k: l[k] for k in keep if l.get(k)} for l in reg['languages']]}, f, ensure_ascii=False, indent=1)
         for lang in reg['languages']:
             words_out = {w: data[lang['code']][w] for w in words}
             with open(os.path.join(OUT, lang['code'] + '.json'), 'w', encoding='utf-8') as f:
-                json.dump({'code': lang['code'], 'name': lang['name'], 'english': lang['english'], 'words': words_out},
+                json.dump({'code': lang['code'], 'name': lang['name'], 'english': lang['english'],
+                       'tag': lang.get('tag') or lang['code'], 'dir': lang.get('dir') or 'ltr', 'words': words_out},
                           f, ensure_ascii=False, separators=(',', ':'))
     print(f'OK: {len(codes)} language(s) ({", ".join(codes)}), each with all {len(words)} words'
           + ('' if check_only else ' -> lang/'))

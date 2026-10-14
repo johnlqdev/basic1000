@@ -1,0 +1,1002 @@
+# Arabic annotations for the Basic 1000 words: headword<TAB>translation, in the sense the examples teach.
+# Several senses: separated by "; ", the one in the first example first.
+I	أنا
+am	(أكون)
+a	(أداة نكرة)؛ واحد
+man	رجل
+woman	امرأة
+you	أنتَ، أنتِ، أنتم
+are	(تكون، نكون)
+he	هو
+she	هي
+is	(يكون)؛ هو، هي
+boy	ولد
+girl	بنت
+child	طفل
+this	هذا، هذه
+that	ذلك، تلك
+house	بيت
+dog	كلب
+cat	قطة
+it	هو، هي (لغير العاقل)
+big	كبير
+the	الـ (أداة التعريف)
+small	صغير
+we	نحن
+they	هم
+and	و
+have	يملك، عنده
+not	لا، ليس
+yes	نعم
+no	لا؛ لا يوجد
+what	ما، ماذا
+to	إلى، لـ
+give	يعطي
+book	كتاب
+red	أحمر
+apple	تفاحة
+of	من، لـ
+in	في
+thing	شيء
+open	مفتوح؛ يفتح
+door	باب
+or	أو، أم
+do	يفعل، يعمل
+water	ماء
+hot	حار، ساخن
+cold	بارد
+some	بعض، قليل من
+also	أيضًا
+want	يريد
+milk	حليب
+cow	بقرة
+be	يكون
+good	جيد
+down	إلى أسفل
+sit	يجلس
+please	من فضلك
+on	على
+for	لـ، من أجل
+put	يضع؛ يلبس
+coat	معطف
+hat	قبعة
+one	واحد
+make	يصنع، يعمل
+brother	أخ
+cake	كعكة
+tall	طويل
+at	إلى، في
+there	هناك
+look	ينظر
+draw	يرسم
+picture	صورة، رسمة
+go	يذهب
+with	مع
+live	يعيش، يسكن
+parent	أحد الوالدين
+bed	سرير
+people	ناس
+from	من
+how	كيف
+here	هنا
+many	كثير
+can	يستطيع
+time	وقت؛ الساعة
+come	يأتي
+two	اثنان
+swim	يسبح
+work	يعمل
+get	يُحضِر
+like	يحب
+take	يأخذ، يمسك
+hand	يد
+by	بجانب
+very	جدًا
+other	آخر
+river	نهر
+cup	فنجان، كوب
+much	كثير
+part	جزء
+money	مال، نقود
+cut	يقطع، يجرح
+finger	إصبع
+will	سـ، سوف
+use	يستخدم
+say	يقول
+who	مَن
+phone	هاتف
+when	متى
+see	يرى
+up	إلى أعلى؛ يقوم
+stand	يقف
+sea	بحر
+all	كل، جميع
+day	يوم
+into	إلى داخل
+out	خارج
+way	طريق؛ طريقة
+as	مثل … ؛ كـ
+where	أين
+but	لكن
+happy	سعيد
+tired	متعب
+which	أيّ
+need	يحتاج
+so	جدًا، هكذا
+now	الآن
+if	إذا
+than	من (للمقارنة)
+new	جديد
+place	مكان
+any	أيّ
+car	سيارة
+after	بعد
+know	يعرف
+would	(للتمني والشرط)
+home	بيت، منزل
+eat	يأكل
+think	يفكر، يظن
+between	بين
+well	جيدًا
+because	لأن
+three	ثلاثة
+could	استطاع؛ هل يمكنك
+every	كل
+back	ظهر
+may	يجوز؛ ربما
+five	خمسة
+find	يجد
+then	آنذاك؛ ثم
+before	من قبل؛ قبل
+young	صغير السن، شاب
+key	مفتاح
+first	أول
+same	نفس
+show	يُري، يعرض
+must	يجب
+again	مرة أخرى
+life	حياة
+keep	يحتفظ
+blue	أزرق
+sky	سماء
+moon	قمر
+through	عبر
+group	مجموعة
+too	جدًا (زيادة)؛ أيضًا
+train	قطار
+mountain	جبل
+over	فوق
+old	قديم، كبير السن
+number	رقم، عدد
+fly	يطير
+bird	طائر
+high	عالٍ
+should	ينبغي
+feel	يشعر
+each	كل
+happen	يحدث
+country	بلد
+different	مختلف
+under	تحت
+together	معًا
+table	طاولة
+another	آخر
+without	بدون
+point	يشير
+turn	ينعطف
+left	يسارًا
+leave	يغادر
+might	قد، ربما
+few	قليل
+eight	ثمانية
+rain	مطر
+end	نهاية
+why	لماذا
+little	صغير؛ قليل
+true	صحيح، حقيقي
+story	قصة
+last	آخر، أخير
+often	غالبًا
+never	أبدًا
+start	يشغّل؛ يبدأ
+follow	يتبع
+become	يصبح
+pay	يدفع
+word	كلمة
+move	يتحرك؛ ينتقل
+always	دائمًا
+about	عن
+write	يكتب
+bring	يُحضِر
+name	اسم
+animal	حيوان
+hold	يمسك
+play	يعزف؛ يلعب
+room	غرفة؛ مكان
+body	جسم
+music	موسيقى
+set	يُعِدّ (المائدة)
+idea	فكرة
+today	اليوم
+night	ليل
+away	بعيدًا
+seem	يبدو
+off	(يخلع)؛ عن
+system	نظام
+family	عائلة
+shoe	حذاء
+run	يجري
+both	كلا
+begin	يبدأ
+head	رأس
+change	يغيّر
+hear	يسمع
+able	قادر
+person	شخص
+four	أربعة
+line	خط؛ صف
+possible	ممكن
+around	حول
+eye	عين
+let	يدع
+walk	يمشي
+fact	حقيقة
+allow	يسمح
+round	مستدير
+earth	الأرض؛ تراب
+sun	شمس
+world	عالم
+information	معلومات
+member	عضو
+later	لاحقًا
+right	يمينًا؛ صحيح
+expect	يتوقع
+bad	سيئ
+grow	ينمو؛ يزرع
+quick	سريع
+tomorrow	غدًا
+already	بالفعل، قد
+friend	صديق
+carry	يحمل
+fall	يسقط
+bag	حقيبة
+add	يجمع؛ يضيف
+job	وظيفة
+ever	أبدًا، في أي وقت
+rather	إلى حد ما؛ يفضّل
+learn	يتعلم
+school	مدرسة
+offer	يعرض، يقدّم
+towards	نحو
+perhaps	ربما
+drink	يشرب
+continue	يستمر
+mind	عقل
+mother	أم
+face	وجه
+talk	يتحدث
+tell	يخبر، يحكي
+speak	يتكلم
+age	عمر
+break	يكسر
+language	لغة
+order	ترتيب؛ أمر
+six	ستة
+develop	ينمو، يتطور
+short	قصير
+buy	يشتري
+enough	كافٍ
+spend	ينفق؛ يقضي
+food	طعام
+remember	يتذكر
+build	يبني
+position	موقع
+across	عبر
+several	عدة
+hope	يأمل
+road	طريق
+plan	خطة
+actually	في الواقع
+behind	خلف
+stay	يبقى
+return	يعيد؛ يعود
+suggest	يقترح
+create	يبتكر، يصنع
+describe	يصف
+design	تصميم
+chair	كرسي
+action	فعل، عمل
+cause	سبب
+cover	يغطي
+fire	نار
+warm	دافئ
+common	شائع
+subject	موضوع؛ مادة دراسية
+death	موت
+easy	سهل
+sudden	مفاجئ
+help	يساعد
+white	أبيض
+paper	ورق
+sometimes	أحيانًا
+snow	ثلج
+choose	يختار
+soon	قريبًا
+foot	قدم
+light	ضوء
+dress	فستان
+sure	متأكد
+father	أب
+piece	قطعة
+likely	مرجّح
+team	فريق
+believe	يصدّق
+amount	كمية
+town	بلدة
+step	درجة؛ خطوة
+sugar	سكر
+period	فترة
+cost	تكلفة
+price	سعر
+bit	قليل، قطعة صغيرة
+shirt	قميص
+during	أثناء
+free	حر؛ مجاني
+rate	سعر؛ معدل
+else	آخر، غير ذلك
+sleep	ينام
+only	فقط
+own	خاص
+effect	تأثير
+along	على طول
+plant	نبات
+public	عام
+join	يربط؛ ينضم
+especially	خاصةً
+chance	فرصة؛ احتمال
+ten	عشرة
+meet	يلتقي
+detail	تفصيل
+human	إنسان
+necessary	ضروري
+drive	يقود (سيارة)
+above	فوق
+practice	تمرين، ممارسة
+serve	يقدّم (الطعام)؛ يخدم
+rice	أرز
+fish	سمك
+arm	ذراع
+private	خاص
+accept	يقبل
+wish	يتمنى
+instead	بدلًا من ذلك
+rise	يشرق، يرتفع
+sell	يبيع
+million	مليون
+forward	إلى الأمام
+catch	يمسك، يصطاد
+value	قيمة
+record	سجل؛ رقم قياسي
+wall	جدار
+black	أسود
+prove	يُثبت
+account	حساب
+size	مقاس، حجم
+enter	يدخل
+rule	قاعدة
+project	مشروع
+reduce	يخفّض
+meeting	اجتماع
+compare	يقارن
+poor	فقير؛ رديء
+nine	تسعة
+window	نافذة
+arrive	يصل
+past	الماضي
+close	يغلق
+future	المستقبل
+once	مرة واحدة
+top	قمة، أعلى
+evening	مساء
+visit	يزور
+ready	جاهز
+year	سنة
+available	متاح
+ground	أرض
+tree	شجرة
+throw	يرمي
+avoid	يتجنب
+list	قائمة
+normal	عادي
+forget	ينسى
+floor	أرضية؛ طابق
+large	كبير
+company	شركة
+late	متأخر
+produce	ينتج
+usually	عادةً
+great	عظيم؛ رائع
+business	عمل تجاري
+lot	كثير (a lot)
+increase	يزيد
+knowledge	معرفة
+long	طويل
+important	مهم
+experience	خبرة
+page	صفحة
+direction	اتجاه
+far	بعيد
+stop	يتوقف، يوقف
+city	مدينة
+special	خاص، مميز
+main	رئيسي
+particular	معيّن
+event	حدث
+ago	منذ
+die	يموت
+finally	أخيرًا
+just	للتو؛ فقط
+general	عام
+present	الحاضر؛ هدية
+recent	حديث
+deep	عميق
+however	ولكن، مع ذلك
+news	أخبار
+structure	بناء؛ تركيب
+kill	يقتل
+bridge	جسر
+finish	ينهي
+seven	سبعة
+statement	تصريح، عبارة
+push	يدفع
+hundred	مئة
+week	أسبوع
+century	قرن
+complete	كامل
+south	جنوب
+hair	شعر
+month	شهر
+quite	إلى حد ما؛ تمامًا
+whole	كامل
+sound	صوت
+computer	حاسوب
+include	يشمل
+office	مكتب
+voice	صوت
+discussion	نقاش
+glass	كأس؛ زجاج
+fight	يتشاجر، يقاتل
+box	صندوق
+blood	دم
+west	غرب
+baby	رضيع
+trade	تجارة
+imagine	يتخيل
+travel	يسافر
+opinion	رأي
+dead	ميت
+agree	يوافق
+thought	فكرة
+drop	يُسقط
+machine	آلة
+leg	ساق
+support	يدعم
+teach	يعلّم
+north	شمال
+distance	مسافة
+seat	مقعد
+further	أبعد
+near	قرب
+dark	مظلم؛ داكن
+green	أخضر
+shape	شكل
+next	التالي
+almost	تقريبًا
+early	مبكرًا
+low	منخفض
+similar	مشابه
+thank	يشكر
+fix	يصلح
+nation	أمة
+holiday	عطلة
+sad	حزين
+miss	يشتاق إلى؛ يفوته
+mouth	فم
+owner	مالك
+hang	يعلّق
+horse	حصان
+star	نجمة
+song	أغنية
+expert	خبير
+reaction	رد فعل
+shoulder	كتف
+worry	يقلق
+shake	يصافح؛ يهزّ
+touch	يلمس
+lift	يرفع
+rich	غني
+against	مستندًا إلى؛ ضد
+reach	يطال؛ يصل إلى
+physical	جسدي
+sister	أخت
+shelf	رف
+ill	مريض
+bread	خبز
+ball	كرة
+damage	ضرر
+soft	ناعم، طري
+question	سؤال
+hard	صلب؛ صعب
+doctor	طبيب
+regular	منتظم
+metal	معدن
+ask	يسأل؛ يطلب
+test	اختبار
+prepare	يستعد؛ يُعِدّ
+heavy	ثقيل
+thin	نحيف؛ رقيق
+pass	يناول
+answer	إجابة
+weight	وزن
+measure	يقيس
+wash	يغسل
+cloth	قماش؛ خرقة
+knife	سكين
+gold	ذهب
+wet	مبلل
+cook	يطبخ
+wear	يلبس
+flower	زهرة
+leaf	ورقة شجر
+liquid	سائل
+smooth	أملس
+boat	قارب
+cloud	سحابة
+bend	يثني
+clean	نظيف
+dry	جاف
+egg	بيضة
+plane	طائرة
+angry	غاضب
+bottle	زجاجة
+female	أنثى
+daughter	ابنة
+ice	جليد
+knee	ركبة
+male	ذكر
+nose	أنف
+send	يرسل
+air	هواء
+son	ابن
+birth	ولادة
+roof	سقف، سطح
+receive	يستلم
+building	مبنى
+internet	الإنترنت
+ship	سفينة
+bone	عظمة
+outside	في الخارج
+shop	متجر
+station	محطة
+hotel	فندق
+circle	دائرة
+service	خدمة
+edge	حافة
+store	متجر؛ يخزّن
+curve	منحنى
+fat	سمين
+side	جانب
+middle	وسط
+seed	بذرة
+grass	عشب
+insect	حشرة
+among	بين
+base	قاعدة
+contain	يحتوي
+wide	عريض
+street	شارع
+afternoon	بعد الظهر
+laugh	يضحك
+loud	عالٍ (صوت)
+neck	رقبة
+orange	برتقالة
+call	يتصل؛ ينادي
+noise	ضجيج
+shut	يغلق
+slow	بطيء
+sort	نوع
+area	منطقة
+type	نوع
+kind	لطيف
+quiet	هادئ
+strange	غريب
+such	هكذا، مثل هذا
+local	محلي
+example	مثال
+view	رأي؛ منظر
+wrong	خطأ
+case	علبة، غلاف؛ حالة
+appear	يظهر
+percent	في المئة
+community	مجتمع محلي
+industry	صناعة
+space	مكان؛ الفضاء
+rest	راحة؛ الباقي
+land	يهبط؛ أرض
+nice	جميل؛ لطيف
+balance	توازن
+full	ممتلئ
+form	شكل؛ استمارة
+property	ملكية
+garden	حديقة
+front	أمام
+act	يتصرف
+army	جيش
+wind	ريح
+hole	ثقب، حفرة
+blow	ينفخ، تهبّ
+development	تطور
+war	حرب
+choice	اختيار
+operation	عملية جراحية
+addition	جمع؛ إضافة
+decide	يقرر
+decision	قرار
+behaviour	سلوك
+growth	نمو
+weather	طقس
+nature	طبيعة
+committee	لجنة
+agreement	اتفاق
+season	فصل (من السنة)
+sharp	حاد
+quality	جودة
+natural	طبيعي
+summer	صيف
+winter	شتاء
+island	جزيرة
+heat	حرارة؛ يسخّن
+pipe	أنبوب
+thick	سميك
+ticket	تذكرة
+angle	زاوية
+burn	يحرق، يحترق
+awake	مستيقظ
+bath	حمّام، حوض الاستحمام
+bell	جرس
+pot	قِدر؛ أصيص
+energy	طاقة
+ring	خاتم
+brain	دماغ
+breath	نَفَس
+burst	ينفجر
+power	كهرباء؛ سلطة
+effort	جهد
+cheap	رخيص
+clock	ساعة حائط
+cry	يبكي
+try	يحاول
+control	يتحكم
+force	قوة
+watch	يشاهد، يراقب
+difficult	صعب
+government	حكومة
+lead	يقود
+strong	قوي
+authority	سلطة محلية؛ صلاحية
+manage	يدير؛ ينجح في
+law	قانون
+fail	يرسب؛ يفشل
+attempt	محاولة
+listen	يستمع
+manager	مدير
+report	تقرير
+society	مجتمع
+attention	انتباه
+police	شرطة
+crime	جريمة
+tax	ضريبة
+memory	ذاكرة؛ ذكرى
+beautiful	جميل
+competition	مسابقة؛ منافسة
+marry	يتزوج
+single	أعزب؛ وحيد
+couple	زوجان
+wife	زوجة
+prison	سجن
+debt	دَين
+note	ملاحظة؛ نغمة
+unit	درس؛ وحدة
+equal	متساوٍ
+error	خطأ
+false	خاطئ
+second	ثانٍ؛ ثانية
+real	حقيقي
+degree	درجة
+half	نصف
+grey	رمادي
+level	مستوى
+smoke	دخان
+gun	مسدس، بندقية
+hook	خطاف؛ صنارة
+journey	رحلة
+scale	ميزان؛ مقياس
+flat	مسطح
+wound	جرح
+kick	يركل
+limit	حد
+lie	يستلقي؛ يكذب
+range	تشكيلة؛ نطاق
+card	بطاقة
+pain	ألم
+iron	حديد؛ يكوي
+feeling	شعور
+attack	يهاجم
+danger	خطر
+meat	لحم
+mix	يخلط
+interest	فائدة (مالية)؛ اهتمام
+political	سياسي
+love	يحب
+save	يدّخر؛ ينقذ
+serious	جاد؛ خطير
+party	حفلة؛ حزب
+date	تاريخ
+fear	خوف
+doubt	شك
+safe	آمن
+certain	متأكد
+care	رعاية؛ عناية
+check	يتحقق
+respect	احترام
+pleasure	سرور
+until	حتى
+consider	يفكر في
+moment	لحظة
+condition	حالة؛ شرط
+social	اجتماعي
+still	ما زال؛ ساكن
+while	برهة؛ بينما
+since	منذ؛ بما أن
+yet	بعدُ
+wait	ينتظر
+hour	ساعة
+state	حالة؛ دولة
+situation	وضع
+activity	نشاط
+morning	صباح
+problem	مشكلة
+matter	أمر، مسألة
+minute	دقيقة
+health	صحة
+raise	يرفع
+market	سوق
+centre	وسط؛ مركز
+due	مقرر؛ مستحق
+game	لعبة، مباراة
+enjoy	يستمتع
+win	يفوز
+hospital	مستشفى
+relation	علاقة؛ قريب
+east	شرق
+responsible	مسؤول
+lose	يفقد؛ يخسر
+meal	وجبة
+disease	مرض
+surprise	مفاجأة
+harbour	ميناء
+even	حتى؛ مستوٍ
+loss	فقدان؛ خسارة
+lock	قفل
+oil	زيت
+belief	إيمان، اعتقاد
+though	مع أن
+desire	رغبة
+observation	ملاحظة، مراقبة
+potato	بطاطس
+pull	يسحب
+punishment	عقاب
+rat	جرذ
+religion	دين
+rough	خشن؛ تقريبي
+salt	ملح
+church	كنيسة
+trouble	مشكلة، متاعب
+sand	رمل
+separate	منفصل
+smell	يشم؛ تفوح رائحته
+solid	صلب
+square	مربع؛ ساحة
+stem	ساق النبات
+stomach	معدة، بطن
+tight	ضيق؛ بإحكام
+substance	مادة
+chest	صدر؛ صندوق
+tongue	لسان
+tooth	سن
+trousers	بنطال
+material	مادة، قماش
+heart	قلب
+taste	طعم؛ يتذوق
+coal	فحم
+twist	يلوي
+sense	حاسة؛ عقل
+stone	حجر
+band	فرقة موسيقية
+wood	خشب
+sweet	حلو
+mean	يعني
+board	لوح، سبورة
+stick	عصا
+fruit	فاكهة
+mine	منجم
+understand	يفهم
+pick	يختار؛ يقطف
+sign	لافتة؛ علامة
+skin	جلد؛ قشرة
+rail	درابزين؛ سكة حديد
+read	يقرأ
+clear	صافٍ؛ واضح
+letter	رسالة؛ حرف
+simple	بسيط
+bright	ساطع؛ ذكي
+study	يدرس
+explain	يشرح
+complex	معقد
+library	مكتبة
+spring	الربيع؛ نابض
+reason	سبب
+history	تاريخ
+research	بحث
+field	حقل؛ مجال
+medical	طبي
+purpose	غرض
+argument	جدال؛ حجة
+science	علم
+theory	نظرية
+farm	مزرعة
+technology	تكنولوجيا
+organisation	منظمة
+stamp	طابع بريدي
+wine	نبيذ
+wire	سلك
+electric	كهربائي
+yellow	أصفر
+adjustment	تعديل
+advertisement	إعلان
+approval	موافقة
+current	حالي
+colour	لون
+attraction	معلم سياحي؛ جاذبية
+automatic	آلي
+bite	يعضّ
+mark	بقعة؛ علامة (درجة)
+paint	طلاء
+bitter	مُرّ
+boil	يغلي
+boot	حذاء طويل
+result	نتيجة
+art	فن
+branch	غصن؛ فرع
+brown	بني
+brush	فرشاة
+process	عملية
+butter	زبدة
+button	زر
+camera	كاميرا
+chain	سلسلة
+education	تعليم
+stage	خشبة المسرح؛ مرحلة
+cheese	جبن
+chemical	مادة كيميائية
+chief	رئيس
+student	طالب
+comfort	راحة؛ مواساة
+comparison	مقارنة
+connection	صلة؛ اتصال
+copy	نسخة
+class	صف؛ حصة
+cough	يسعل
+crack	شق
+credit	ائتمان؛ فضل
+curtain	ستارة
+course	دورة
+dear	عزيز
+dependent	معتمد على
+destruction	دمار
+dirty	متسخ
+discovery	اكتشاف
+division	تقسيم؛ قسم
+dust	غبار
+ear	أذن
+engine	محرك
+exchange	يبدّل
+existence	وجود
+expansion	توسع
+feather	ريشة
+fiction	قصص خيالية
+flag	علم
+flight	رحلة جوية؛ طيران
+fold	يطوي
+fork	شوكة
+frame	إطار
+frequent	متكرر
+grain	حبوب؛ حبة
+guide	مرشد
+hate	يكره
+healthy	صحي، معافى
+humour	فكاهة
+instrument	آلة موسيقية؛ أداة
+insurance	تأمين
+invention	اختراع
+judge	قاضٍ
+jump	يقفز
+kiss	قُبلة؛ يُقبّل
+leather	جلد (مدبوغ)
+lip	شفة
+loose	مرتخٍ، واسع
+map	خريطة
+mass	كتلة
+match	مباراة؛ عود ثقاب
+military	عسكري
+motion	حركة
+muscle	عضلة
+narrow	ضيق
+nerve	عصب
+net	شبكة
+opposite	عكس؛ مقابل
+parallel	موازٍ
+payment	دفعة
+peace	سلام؛ هدوء
+pen	قلم
+pig	خنزير
+plate	طبق
+pocket	جيب
+poison	سم
+powder	مسحوق
+print	يطبع
+profit	ربح
+protest	احتجاج
+pump	مضخة
+regret	يندم
+representative	ممثل
+request	طلب
+reward	مكافأة
+roll	يلف؛ يتدحرج
+root	جذر
+sail	شراع
+secret	سر
+secretary	سكرتير
+selection	تشكيلة؛ اختيار
+self	ذات
+servant	خادم
+sex	جنس (ذكر/أنثى)
+shade	ظل؛ درجة لون
+sheep	خروف
+shock	صدمة
+silver	فضة
+skirt	تنورة
+slip	ينزلق
+slope	منحدر
+smile	يبتسم
+soap	صابون
+spoon	ملعقة
+steel	فولاذ
+straight	مستقيم
+stretch	يمدّ
+suggestion	اقتراح
+tail	ذيل
+tendency	ميل
+thousand	ألف
+throat	حلق
+till	حتى
+transport	مواصلات
+trick	خدعة
+vessel	سفينة؛ وعاء دموي
+violent	عنيف
+waste	يهدر
+wave	موجة
+wheel	عجلة
+wing	جناح
+wise	حكيم
+yesterday	أمس

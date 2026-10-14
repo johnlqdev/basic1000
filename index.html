@@ -539,7 +539,8 @@ h1, h2, h3 { text-wrap: balance; margin: 0; font-weight: 400; }
 .lang-sample .ml { display: inline-flex; margin: 0 0 0 4px; font-size: 1rem; }
 .lang-btn { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); letter-spacing: .04em; }
 .lang-btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; }
-.lang-list { display: grid; gap: 8px; margin-top: 16px; }
+.lang-list { display: grid; gap: 8px; margin-top: 16px; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); }
+.lang-opt:first-child { grid-column: 1 / -1; }
 .lang-opt { display: flex; align-items: baseline; gap: 10px; width: 100%; text-align: left; padding: 12px 16px; border: 1px solid var(--rule); border-radius: 10px; background: var(--card); color: var(--ink); cursor: pointer; font: inherit; }
 .lang-opt:hover { border-color: var(--tab); }
 .lang-opt[aria-pressed="true"] { border-color: var(--tab); background: var(--tab-soft); }
@@ -853,8 +854,8 @@ function startApp(W, QUIZ) {
   // P.ml, so it follows a signed-in learner to every device.
   const GLOBE = '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3Z"/></svg>';
   function mlSpan(word) { // a translation slot; lang.js fills it again whenever the language changes
-    const t = BASIC_LANG.word(word), code = BASIC_LANG.current(), l = BASIC_LANG.info(code);
-    return `<span class="ml" data-ml="${esc(word)}"${t ? ` lang="${code}" title="${esc(l ? l.english : '')}"` : ' hidden'}>${t ? `<b class="ml-code">${code.toUpperCase()}</b><span class="ml-text">${esc(t)}</span>` : ''}</span>`;
+    const t = BASIC_LANG.word(word), l = BASIC_LANG.info(BASIC_LANG.current());
+    return `<span class="ml" data-ml="${esc(word)}"${t ? ` title="${esc(l ? l.english : '')}"` : ' hidden'}>${BASIC_LANG.html(word)}</span>`;
   }
   function applyLang() { return BASIC_LANG.use(P.ml).then(renderLangBtn); }
   function renderLangBtn() {
@@ -866,15 +867,15 @@ function startApp(W, QUIZ) {
   }
   function openLang() {
     const cur = BASIC_LANG.current();
-    const opt = (code, name, sub) => `<button type="button" class="lang-opt" data-code="${code}" aria-pressed="${cur === code}">
-        <span class="lang-name">${esc(name)}</span>${sub ? `<span class="lang-sub">${esc(sub)}</span>` : ''}${cur === code ? '<span class="lang-on">✓</span>' : ''}</button>`;
+    const opt = (code, name, sub, l) => `<button type="button" class="lang-opt" data-code="${code}" aria-pressed="${cur === code}">
+        <span class="lang-name" lang="${esc(l ? l.tag || l.code : 'en')}" dir="${l && l.dir === 'rtl' ? 'rtl' : 'ltr'}">${esc(name)}</span>${sub ? `<span class="lang-sub">${esc(sub)}</span>` : ''}${cur === code ? '<span class="lang-on">✓</span>' : ''}</button>`;
     const sample = (W[WI.make] || W[0]).w;
     $scrim.innerHTML = `<div class="sheet" role="dialog" aria-modal="true" aria-label="Your language"><button class="btn quiet sheet-close" type="button" id="closeSheet">Close</button>
       <div class="eyebrow">Your language</div><h2 class="acct-title">Words in your mother language</h2>
       <p class="muted">The course teaches English through English. If you like, every word can also show a short translation in your language, in the meaning its example sentences teach. The sentences stay in English.</p>
       <div class="lang-list" role="group" aria-label="Languages">
         ${opt('', 'English', 'English only: learn English through English')}
-        ${BASIC_LANG.languages().map(l => opt(l.code, l.name, l.english)).join('')}
+        ${BASIC_LANG.languages().map(l => opt(l.code, l.name, l.english, l)).join('')}
       </div>
       <p class="lang-sample muted" ${BASIC_LANG.current() ? '' : 'hidden'}>Example: <b>${esc(sample)}</b> ${mlSpan(sample)}</p></div>`;
     $scrim.hidden = false;
@@ -1610,9 +1611,10 @@ function startApp(W, QUIZ) {
     fillDict();
   }
   // does a translation ("machen; tun", "aller chercher") have a word that starts with q? Accents are ignored.
-  const fold = t => t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  // accents (and Arabic vowel marks) are ignored; senses and synonyms are split at the punctuation of any script
+  const fold = t => t.normalize('NFD').replace(/[\u0300-\u036f\u064b-\u065f\u0670]/g, '').toLowerCase();
   const enMatch = (w, q) => w.w.toLowerCase().startsWith(q) || w.f.toLowerCase().split(', ').some(f => f.startsWith(q)) || (w.us && w.us.startsWith(q));
-  const mlMatch = (t, q) => !!t && fold(t).split(/[\s,;()'’.-]+/).some(x => x && x.startsWith(fold(q)));
+  const mlMatch = (t, q) => !!t && fold(t).split(/[\s,;()'’.\-，；（）、؛،…—]+/).some(x => x && x.startsWith(fold(q)));
   function fillDict() {
     const learned = learnedSet(), q = dq.trim().toLowerCase();
     const base = q ? BASIC1000.lemma(q) : null;
@@ -1621,7 +1623,8 @@ function startApp(W, QUIZ) {
       if (dFilter === 'learned' && !learned.has(i)) return false;
       if (dFilter === 'ahead' && learned.has(i)) return false;
       const w = W[i];
-      return !q || enMatch(w, q) || (q.length > 2 && mlMatch(BASIC_LANG.word(w.w), q));  // the learner's language too
+      return !q || enMatch(w, q) || (q.length >= (/^[\x00-\u024f]+$/.test(q) ? 3 : 1) && mlMatch(BASIC_LANG.word(w.w), q));  // the learner's language too
+      // Latin letters count from 3 (fewer would match half the list); other scripts (中文, हिन्दी …) from 1
     });
     // the word itself first, then English matches, then matches in the learner's language
     const en = i => !q || enMatch(W[i], q);
