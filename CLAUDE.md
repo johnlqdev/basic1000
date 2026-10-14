@@ -43,8 +43,10 @@ when the owner gives them, with the date.
 - Voices: Daniel (`man`) by default; Sarah (`woman`) only when a woman is speaking
   (`voice_for` in `tools/audio_items.py`, `voiceFor` in `audio.js`).
 - A single word is read as "Word." (`spoken()` in the tts function), so its last sound is not lost.
-- Every new sentence needs a normal clip and, for course examples, a slow clip. Always stop the GPU
-  pod afterwards.
+- Every new sentence needs a normal clip and, for course examples, a slow clip. When the audio is
+  done, **delete** the GPU pod (2026-10-14). Create it with `"volumeInGb": 0`: RunPod otherwise adds a
+  20 GB volume that bills about $0.01/h even while the pod is stopped. Nothing on the pod needs
+  keeping (the voice references are in Supabase storage, the server is downloaded at start).
 - If clips are made again under the same name, raise `FRESH` in `audio.js` (clips are cached for a
   year).
 
