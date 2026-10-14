@@ -929,12 +929,12 @@ var BASIC_FIGURES = (function () {
       }
     },
     cow: {
-      label: 'A cow moves its head and tail, with a bucket of milk: Cows give milk.',
+      label: 'A cow moves its head and tail, with a bucket of milk: A cow gives milk.',
       period: BEAT, rest: 2400,
       frame: function (t) {
         var b = beat(t);
         return [{ t: 'spot', x: 90, op: b.e, rx: 40 }, cow({ x: 90, s: 1.3, f: 1, t: t, c: COL.acc }), bucket({ x: 165, y: G, s: 0.9, level: 0.8 }),
-          cap(b.on, 'Cows give milk.', 'Cows')];
+          cap(b.on, 'A cow gives milk.', 'cow')];
       }
     },
     // step 11
@@ -1048,12 +1048,13 @@ var BASIC_FIGURES = (function () {
       }
     },
     make: {
-      label: 'A woman stands by a table. A cake appears on it and she says: I made a cake.',
+      label: 'A woman stirs a bowl on a table, and a cake grows from it. She says: I make a cake.',
       period: BEAT, rest: 2600,
       frame: function (t) {
-        var b = beat(t), k = ramp(b.v, 300, 1200);
-        return [{ t: 'spot', x: 140, op: b.e, rx: 24 }, table({ x: 140 }), cake({ x: 140, y: G - 26, s: 0.6 + 0.4 * k, op: k, flame: 0.7 + 0.3 * Math.sin(t / 90) }),
-          figure({ x: 62, kind: 'woman', accent: true, pose: toChest(b.e), say: say(b.on, 'I made a cake.', 'made') })];
+        var b = beat(t), k = ramp(b.v, 900, 2400), stir = (1 - k) * Math.sin(t / 110);
+        var w = figure({ x: 110, kind: 'woman', accent: true, pose: mix(POSES.stand, pose([-26, -14, 48 + 6 * stir, 62 + 18 * stir]), b.e), say: say(b.on, 'I make a cake.', 'make') });
+        var bowl = { t: 'path', d: M(121, G - 30) + 'Q133,' + (G - 17) + ' 145,' + (G - 30) + 'Z', c: COL.ink, w: 2.2, fill: COL.card, op: 1 - k };
+        return [{ t: 'spot', x: 140, op: b.e, rx: 24 }, table({ x: 140 }), bowl, cake({ x: 140, y: G - 26, s: 0.6 + 0.4 * k, op: k, flame: 0.7 + 0.3 * Math.sin(t / 90) }), w];
       }
     },
     brother: {
@@ -1290,12 +1291,20 @@ var BASIC_FIGURES = (function () {
       }
     },
     get: {
-      label: 'Snow begins to fall, more and more. A man starts to shake with cold: It is getting cold.',
-      period: BEAT * 1.25, rest: 4800,
+      label: 'A woman says to a man: Please get me the book. He walks to the table, takes the book and gives it to her.',
+      period: BEAT * 1.6, rest: 2400,
       frame: function (t) {
-        var u = t % this.period, k = ramp(u, 0, 4000), n = Math.round(2 + 20 * k);
-        return snow(t, n, 0.8).concat([{ t: 'spot', x: 100, op: k }, figure({ x: 100, accent: true, pose: mix(POSES.stand, pose([-60, 160, 60, -160]), k), dx: k * 1.4 * Math.sin(t / 30) }),
-          cap(between(u, 1200, 5200), 'It is getting cold.', 'getting')]);
+        var u = t % this.period, ask = envelope(u, 200, 6600, 500);
+        var go = ramp(u, 1500, 2700), back = ramp(u, 3200, 4600), hand = ramp(u, 4600, 5200);
+        var out = u > 2700 && u < 3200, x = u < 3200 ? lerp(112, 146, go) : lerp(146, 86, back);
+        var moving = (u > 1500 && u < 2700) || (u > 3200 && u < 4600);
+        var m = figure({ x: x, facing: u < 2950 ? 1 : -1, pose: moving ? walking(t, toHold(1)) : (u >= 2700 ? toGive(u < 3200 ? ramp(u, 2700, 2950) : 1 - 0.6 * ramp(u, 5200, 5800)) : POSES.stand) });
+        var w = figure({ x: 44, kind: 'woman', accent: true, pose: toGive(u < 4400 ? ask * 0.5 : Math.max(ask * 0.5, ramp(u, 4400, 4800))), say: say(between(u, 300, 3600), 'Please get me the book.', 'get') });
+        var bk;
+        if (u < 2850) bk = [172, G - 26];
+        else if (u < 4600) bk = [m.hand[0] + (out ? 3 : -3), m.hand[1] + 2];
+        else bk = along([m.hand[0] - 3, m.hand[1] + 2], [w.hand[0] + 3, w.hand[1] + 2], hand);
+        return [{ t: 'spot', x: u < 4400 ? 172 : 44, op: envelope(u, 600, 6400, 400), rx: 20 }, table({ x: 172, w: 18 }), m, w, book({ x: bk[0], y: bk[1], s: 0.85 })];
       }
     },
     like: {

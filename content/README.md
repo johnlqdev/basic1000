@@ -40,6 +40,8 @@ python3 check_course.py            # prints OK, or lists every broken rule and e
 - A **definition** uses only words from **earlier** steps and never the word itself.
 - Every word has at least one **teaching example** that uses only words from earlier steps or the
   same step.
+- The **first example** uses the word in its plain form, exactly as listed ("I make a cake.", never
+  "I made a cake."; "A cow gives milk.", never "Cows give milk."), and is usable at the word's step.
 - Other examples are **review examples**. `available_from_step` says when every word in them is
   known, so they can be scheduled into later reviews.
 - Every word in a definition or example must map to one of the 1,000 under these rules:

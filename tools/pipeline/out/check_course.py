@@ -5,6 +5,7 @@ Exit code 0 means every rule passes. Run it after any edit to definitions, examp
 """
 import json
 import os
+import re
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -63,6 +64,15 @@ for w in words:
             teach += 1
     if not teach:
         errors.append(f'{name} (step {step}): no example usable at its own step')
+    # 4. the first example is the one the word page shows first (and the one its video acts out):
+    #    it must use the word in its plain form, as written in the list ("make", not "made" or "makes";
+    #    "cow", not "cows"), and be usable at the word's own step
+    if w['examples']:
+        first = w['examples'][0]
+        if name.lower() not in [t.lower() for t in re.findall(r"[A-Za-z]+", first['text'])]:
+            errors.append(f'{name}: the first example must use "{name}" in its plain form: "{first["text"]}"')
+        if first['available_from_step'] != step:
+            errors.append(f'{name} (step {step}): the first example must be usable at the word\'s own step')
 
 if errors:
     print(f'{len(errors)} problem(s):')

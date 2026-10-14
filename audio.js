@@ -20,6 +20,9 @@
   var NAMES = { us_daniel: 'Daniel', us_sarah: 'Sarah' };
   var VERSION = 'v2';
   var MAX_STEP = 200; // steps that have clips (all of them)
+  // Clips are cached for a year. When clips are made again in place (same name), raise FRESH so that
+  // browsers fetch the new ones. r=2: 2026-10-14, words and sentences that end in k/p/t/d/f/th made again.
+  var FRESH = '?r=2';
   var SLOW_VERSION = 'slow1'; // must match SLOW_VERSION in the tts function
   var SLOW_MAX_STEP = 200; // steps that have slow clips (all of them)
   var WORD_RE = /[A-Za-z']+/g; // how sentences are split into words (same as the voice server)
@@ -44,14 +47,14 @@
   }
   function clipUrl(text, voice) {
     var v = VOICES[voice] || VOICES.man;
-    return sha256(v + '|' + norm(text)).then(function (h) { return CLIPS + VERSION + '/' + v + '/' + h.slice(0, 32) + '.mp3'; });
+    return sha256(v + '|' + norm(text)).then(function (h) { return CLIPS + VERSION + '/' + v + '/' + h.slice(0, 32) + '.mp3' + FRESH; });
   }
 
   function slowUrls(text, voice) {
     var v = VOICES[voice] || VOICES.man;
     return sha256(v + '|' + norm(text)).then(function (h) {
       var base = CLIPS + SLOW_VERSION + '/' + v + '/' + h.slice(0, 32);
-      return { mp3: base + '.mp3', json: base + '.json' };
+      return { mp3: base + '.mp3' + FRESH, json: base + '.json' + FRESH };
     });
   }
 
