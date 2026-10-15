@@ -91,6 +91,23 @@ Grammar sentences use the same clips as the rest of the site (`v2/{voice}/...` i
 
 From this folder: `npx vercel --prod` (Vercel project `basic-1000`). Only the website files in the top folder are uploaded (`.vercelignore` keeps `content`, `tools` and `supabase` out). Pushing to `main` on GitHub (`johnlqdev/basic1000`) does not deploy by itself: start a production deployment from the pushed commit (Vercel dashboard, or the Vercel API with the commit SHA).
 
+## Grammar videos (MP4)
+
+The site draws the films live; `tools/video/` records them as MP4 files for use outside the site
+(not part of the website). `render.py` draws every frame with the site's own player and styles
+(`frame.html` loads `films.js`, `figures.js`, `grammar-data.js` and the `<style>` of `index.html`) at
+times computed from the real recordings, and lays the same clips on the sound track, so sound and
+picture always match. Each video has the lesson title, the subtitle with its marked words, the
+progress bar and the Basic 1000 logo (top right). Two sizes: desktop 1920 x 1080 and phone 1080 x 1920,
+30 frames a second, H.264 + AAC.
+
+The workspace cannot reach Supabase or Dropbox, so the run happens on a CPU pod started through
+the `runpod-ops` function (32 vCPU, no GPU, no volume, image `mcr.microsoft.com/playwright/python:v1.48.0-jammy`;
+`pip install playwright==1.48.0` first). `pod_run.sh <commit>` renders all 46 films in both sizes,
+zips them and uploads `grammar_46_desktop.zip` and `grammar_46_phone.zip` to Dropbox
+`basic1000-backup/grammar-videos/` (`upload.py` asks `runpod-ops` for a short-lived token; no key is
+stored on the pod). Delete the pod afterwards. If a film changes, its videos must be made again.
+
 ## Backups
 
 Code and course content are in GitHub. Everything else is copied to Dropbox by the `backup` edge function, into one folder: `basic1000-backup/` inside the Dropbox app's folder. Nothing outside that folder is touched.
