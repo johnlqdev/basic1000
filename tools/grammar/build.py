@@ -16,7 +16,9 @@ Rules checked here:
     example sentences, board words and exercise sentences may use the taught words but not terms;
   * every node in the FULL_BANDS has a complete lesson (content/grammar/lessons*.py), and each
     exercise is well formed (the right answer is among the options, and so on);
-  * a line spoken by a woman or girl in a film uses Sarah's voice.
+  * a line spoken by a woman or girl in a film uses Sarah's voice;
+  * a film line that talks about a word puts it in curly quotes (rule 9 in CLAUDE.md), so the voice
+    stresses it: "“We” is ...", "we say “it”." (unquoted_words() finds the usual slips).
 """
 import json
 import os
@@ -119,6 +121,8 @@ def main():
                 check(nid, f'film {s + 1}.{k + 1}', line['t'], with_terms=not line.get('by'))
                 if spoken_by in WOMEN and line.get('v') != 'woman':
                     problems.append(f"{nid} film {s + 1}.{k + 1}: spoken by a {spoken_by}, so it needs v: 'woman'")
+                for w in unquoted_words(line['t']):
+                    problems.append(f"{nid} film {s + 1}.{k + 1}: {w!r} is a word talked about, so put it in curly quotes (rule 9): {line['t']}")
                 if line.get('by') and line['by'] not in cast:
                     problems.append(f"{nid} film {s + 1}.{k + 1}: speaker {line['by']!r} is not in the shot")
             for b in shot.get('board', []):
@@ -182,6 +186,28 @@ def main():
         f.write('window.BASIC_GRAMMAR_DATA = ' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n')
     write_audio_jobs()
     print('wrote grammar-data.js')
+
+
+# Film lines that talk about a word without quoting it (rule 9). Unquoted, the voice reads the word as
+# a normal word: no stress, and a short word at the end loses its last sound ("we say it."). Two
+# patterns catch the usual slips: a sentence that starts with a pronoun whose verb does not agree
+# ("We is ...") or with a word that cannot be a subject ("Am is ...", "And adds ..."), and a clause
+# that ends in "say/use/add/put" plus one bare word ("we say it.").
+_TALK_VERBS = r"(?:is|are|was|becomes|means|says|has|does|goes|comes|asks|gives|shows|adds|makes|ends|begins|stands|changes)"
+_TALK_START = re.compile(
+    r"(?:^|(?<=[.?!:] ))("
+    r"(?:We|They|You)(?= (?:is|was|has|does|means|becomes|says|goes|comes|asks|gives|shows|adds|makes|ends|begins|changes)\b)"
+    r"|(?:Am|Is|Are|Was|Were|Can|Will|Did|Do|Does|Has|Have|And|But|Or|So|Because|A|An|The|My|Its|Mine|In|On|At"
+    r"|Must|Should|Could|May|Would|Too|Enough|Please)(?= " + _TALK_VERBS + r"\b)"
+    r"|(?:Who|What|Where|When|Why|How)(?= (?:asks|is for|are for|means)\b))")
+_TALK_END = re.compile(r"\b(?:say|says|use|add|put) ([a-z][a-z']*)(?=[.,;:!?]|$)")
+_TALK_END_OK = {'one', 'so', 'too', 'again', 'first', 'more', 'less', 'anything', 'something', 'nothing', 'yes', 'no'}
+
+
+def unquoted_words(text):
+    out = [m.group(1) for m in _TALK_START.finditer(text)]
+    out += [m.group(1) for m in _TALK_END.finditer(text) if m.group(1) not in _TALK_END_OK]
+    return out
 
 
 def spoken(les):

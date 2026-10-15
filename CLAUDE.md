@@ -44,6 +44,9 @@ when the owner gives them, with the date.
    their last sound or come out wrong ("am"). A sentence that starts with a quoted word (or list) is
    read with a comma after it, so the voice stresses it and pauses before the verb; `say_text()` in
    `tools/grammar/build.py` adds that comma to the audio job only (`say`), never to the shown text.
+   `build.py --check` fails on the usual slips ("We is ...", "And adds ...", "we say it."), but it
+   cannot see every case: read each new narration line and ask "is this word used, or talked about?"
+   The same goes for any new text the voice reads, not only grammar.
 
 ## Audio
 
@@ -56,6 +59,26 @@ when the owner gives them, with the date.
   keeping (the voice references are in Supabase storage, the server is downloaded at start).
 - If clips are made again under the same name, raise `FRESH` in `audio.js` (clips are cached for a
   year).
+- **Check new audio before shipping** (2026-10-15). The owner should not be the one who finds a
+  swallowed sound. After recording, run the tts `slow` action at `tempo: 1` on the sentences that
+  matter and read `heard` (the phonemes heard) and the word timings: short words and words at the
+  end of a sentence must be heard whole (the final "k" of "make", the "t" of "it"), and a quoted
+  first word needs a clear pause before the next word (about 0.5 s; unquoted it was 0.2 s).
+- **A clip with the same name is never replaced on its own.** `batch` skips any text that already
+  has a clip, including test clips made while trying things. When a sentence must be re-recorded
+  (new `say`, new voice rule), send it with `force: true`.
+
+## Grammar videos (MP4)
+
+- (2026-10-15) The 46 grammar films also exist as MP4s in Dropbox `basic1000-backup/grammar-videos/`
+  (`grammar_46_phone.zip`, `grammar_46_desktop.zip`), made by `tools/video/` from the site's own data
+  and clips. **When a film's text, pictures or audio change, make both sets again and replace both
+  zips** in the same piece of work: 46 videos in each, all with sound, checked to use the new clips.
+- The videos are made on a pod (README, "Grammar videos"). If no CPU pod is free, use a GPU pod with
+  the `pytorch/pytorch` image (the Playwright image never started on a GPU host) and install
+  Playwright and Chromium there. Delete the pod when the zips are checked.
+- `public.pod_cmds` and `public.pod_runs` are shared with other projects: read and write only rows
+  of this project's own run (filter by `run_id`). Never touch other projects' pods.
 
 ## Safety and secrets
 
