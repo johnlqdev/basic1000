@@ -107,8 +107,9 @@
 "voice": "man"
 },
 {
-"text": "Man, house, dog and apple are words that name something.",
-"voice": "man"
+"text": "“Man”, “house”, “dog” and “apple” are words that name something.",
+"voice": "man",
+"say": "“Man”, “house”, “dog” and “apple”, are words that name something."
 },
 {
 "text": "A word that names a person, an animal, a place or a thing is a noun.",
@@ -119,12 +120,14 @@
 "voice": "man"
 },
 {
-"text": "Man is a noun. Dog is a noun.",
-"voice": "man"
+"text": "“Man” is a noun. “Dog” is a noun.",
+"voice": "man",
+"say": "“Man”, is a noun. “Dog”, is a noun."
 },
 {
-"text": "Has is not a noun. It does not name anything.",
-"voice": "man"
+"text": "“Has” is not a noun. It does not name anything.",
+"voice": "man",
+"say": "“Has”, is not a noun. It does not name anything."
 },
 {
 "text": "The name of one person or one place is a noun too.",
@@ -167,11 +170,11 @@
 "voice": "man"
 },
 {
-"text": "We say the boy again and again.",
+"text": "We say “the boy” again and again.",
 "voice": "man"
 },
 {
-"text": "In place of the boy, we can say he.",
+"text": "In place of the boy, we can say “he”.",
 "voice": "man"
 },
 {
@@ -179,23 +182,24 @@
 "voice": "man"
 },
 {
-"text": "He is a pronoun: a short word we use in place of a noun.",
+"text": "“He” is a pronoun: a short word we use in place of a noun.",
+"voice": "man",
+"say": "“He”, is a pronoun: a short word we use in place of a noun."
+},
+{
+"text": "For a man or a boy, we say “he”.",
 "voice": "man"
 },
 {
-"text": "For a man or a boy, we say he.",
+"text": "For a woman or a girl, we say “she”.",
 "voice": "man"
 },
 {
-"text": "For a woman or a girl, we say she.",
+"text": "For an animal, we say “it”.",
 "voice": "man"
 },
 {
-"text": "For an animal, we say it.",
-"voice": "man"
-},
-{
-"text": "For a thing, we also say it.",
+"text": "For a thing, we also say “it”.",
 "voice": "man"
 },
 {
@@ -203,24 +207,28 @@
 "voice": "man"
 },
 {
-"text": "I is the person who is talking.",
-"voice": "man"
+"text": "“I” is the person who is talking.",
+"voice": "man",
+"say": "“I”, is the person who is talking."
 },
 {
 "text": "You are a doctor.",
 "voice": "man"
 },
 {
-"text": "You is the person you talk to.",
-"voice": "man"
+"text": "“You” is the person you talk to.",
+"voice": "man",
+"say": "“You”, is the person you talk to."
 },
 {
-"text": "We is you and other people together.",
-"voice": "man"
+"text": "“We” is you and other people together.",
+"voice": "man",
+"say": "“We”, is you and other people together."
 },
 {
-"text": "They is other people, or other things.",
-"voice": "man"
+"text": "“They” is other people, or other things.",
+"voice": "man",
+"say": "“They”, is other people, or other things."
 },
 {
 "text": "The girl is happy. She is happy.",
@@ -251,7 +259,7 @@
 "voice": "woman"
 },
 {
-"text": "With I, we use am.",
+"text": "With “I”, we use “am”.",
 "voice": "man"
 },
 {
@@ -263,7 +271,7 @@
 "voice": "man"
 },
 {
-"text": "With he, she and it, we use is.",
+"text": "With “he”, “she” and “it”, we use “is”.",
 "voice": "man"
 },
 {
@@ -279,7 +287,7 @@
 "voice": "man"
 },
 {
-"text": "With you, we and they, we use are.",
+"text": "With “you”, “we” and “they”, we use “are”.",
 "voice": "man"
 },
 {
@@ -327,7 +335,7 @@
 "voice": "man"
 },
 {
-"text": "We use a before one person or thing.",
+"text": "We use “a” before one person or thing.",
 "voice": "man"
 },
 {
@@ -335,11 +343,12 @@
 "voice": "man"
 },
 {
-"text": "Apple and egg begin with the sound of a and e. So we use an.",
-"voice": "man"
+"text": "“Apple” and “egg” begin with the sound of a and e. So we use “an”.",
+"voice": "man",
+"say": "“Apple” and “egg”, begin with the sound of a and e. So we use “an”."
 },
 {
-"text": "Before the sound of a, e, i, o or u, we use an.",
+"text": "Before the sound of a, e, i, o or u, we use “an”.",
 "voice": "man"
 },
 {
@@ -359,12 +368,14 @@
 "voice": "man"
 },
 {
-"text": "Hour begins with h, but we do not say the h. So: an hour.",
-"voice": "man"
+"text": "“Hour” begins with h, but we do not say the h. So: an hour.",
+"voice": "man",
+"say": "“Hour”, begins with h, but we do not say the h. So: an hour."
 },
 {
-"text": "University begins with u, but it sounds like you. So: a university.",
-"voice": "man"
+"text": "“University” begins with u, but it sounds like you. So: a university.",
+"voice": "man",
+"say": "“University”, begins with u, but it sounds like you. So: a university."
 },
 {
 "text": "It is the first sound that matters, not the first letter.",
@@ -407,7 +418,7 @@
 "voice": "man"
 },
 {
-"text": "For more than one, we add s: cat, cats.",
+"text": "For more than one, we add “s”: cat, cats.",
 "voice": "man"
 },
 {
@@ -419,7 +430,7 @@
 "voice": "man"
 },
 {
-"text": "After s, sh, ch and x, we add es: box, boxes.",
+"text": "After s, sh, ch and x, we add “es”: box, boxes.",
 "voice": "man"
 },
 {
@@ -495,7 +506,7 @@
 "voice": "man"
 },
 {
-"text": "We put not after is.",
+"text": "We put “not” after “is”.",
 "voice": "man"
 },
 {
@@ -507,7 +518,7 @@
 "voice": "woman"
 },
 {
-"text": "After am, is and are, we put not.",
+"text": "After “am”, “is” and “are”, we put “not”.",
 "voice": "man"
 },
 {
@@ -519,20 +530,23 @@
 "voice": "man"
 },
 {
-"text": "In talk, we often make is not shorter.",
+"text": "In talk, we often make “is not” shorter.",
 "voice": "man"
 },
 {
-"text": "Is not becomes isn't.",
-"voice": "man"
+"text": "“Is not” becomes “isn't”.",
+"voice": "man",
+"say": "“Is not”, becomes “isn't”."
 },
 {
-"text": "Are not becomes aren't.",
-"voice": "man"
+"text": "“Are not” becomes “aren't”.",
+"voice": "man",
+"say": "“Are not”, becomes “aren't”."
 },
 {
-"text": "I am not becomes I'm not.",
-"voice": "man"
+"text": "“I am not” becomes “I'm not”.",
+"voice": "man",
+"say": "“I am not”, becomes “I'm not”."
 },
 {
 "text": "I am not a child.",
@@ -571,7 +585,7 @@
 "voice": "man"
 },
 {
-"text": "To ask, we put is first: is she a girl?",
+"text": "To ask, we put “is” first: is she a girl?",
 "voice": "man"
 },
 {
@@ -603,7 +617,7 @@
 "voice": "woman"
 },
 {
-"text": "With are, it is the same: are goes first.",
+"text": "With “are”, it is the same: “are” goes first.",
 "voice": "man"
 },
 {
@@ -615,8 +629,9 @@
 "voice": "man"
 },
 {
-"text": "Am, is and are go first in a question.",
-"voice": "man"
+"text": "“Am”, “is” and “are” go first in a question.",
+"voice": "man",
+"say": "“Am”, “is” and “are”, go first in a question."
 },
 {
 "text": "Is she a girl? Yes, she is.",
@@ -731,8 +746,9 @@
 "voice": "man"
 },
 {
-"text": "Big and small say what the dog is like.",
-"voice": "man"
+"text": "“Big” and “small” say what the dog is like.",
+"voice": "man",
+"say": "“Big” and “small”, say what the dog is like."
 },
 {
 "text": "A big house.",
@@ -751,7 +767,7 @@
 "voice": "man"
 },
 {
-"text": "Or after is: the dog is big.",
+"text": "Or after “is”: the dog is big.",
 "voice": "man"
 },
 {
@@ -763,7 +779,7 @@
 "voice": "man"
 },
 {
-"text": "The adjective does not change. Only the noun gets s.",
+"text": "The adjective does not change. Only the noun gets “s”.",
 "voice": "man"
 },
 {
@@ -775,8 +791,9 @@
 "voice": "man"
 },
 {
-"text": "Happy and tired are adjectives too.",
-"voice": "man"
+"text": "“Happy” and “tired” are adjectives too.",
+"voice": "man",
+"say": "“Happy” and “tired”, are adjectives too."
 },
 {
 "text": "It is a small house.",
@@ -823,8 +840,9 @@
 "voice": "man"
 },
 {
-"text": "Runs, eats and sits are words for things we do.",
-"voice": "man"
+"text": "“Runs”, “eats” and “sits” are words for things we do.",
+"voice": "man",
+"say": "“Runs”, “eats” and “sits”, are words for things we do."
 },
 {
 "text": "A word for something we do, or something that happens, is a verb.",
@@ -835,8 +853,9 @@
 "voice": "man"
 },
 {
-"text": "Am, is and are are verbs too.",
-"voice": "man"
+"text": "“Am”, “is” and “are” are verbs too.",
+"voice": "man",
+"say": "“Am”, “is” and “are”, are verbs too."
 },
 {
 "text": "I walk.",
@@ -867,7 +886,7 @@
 "voice": "man"
 },
 {
-"text": "The book is near him, so he says this.",
+"text": "The book is near him, so he says “this”.",
 "voice": "man"
 },
 {
@@ -875,7 +894,7 @@
 "voice": "man"
 },
 {
-"text": "The house is far from him, so he says that.",
+"text": "The house is far from him, so he says “that”.",
 "voice": "man"
 },
 {
@@ -883,23 +902,25 @@
 "voice": "woman"
 },
 {
-"text": "These is for more than one thing near you.",
-"voice": "man"
+"text": "“These” is for more than one thing near you.",
+"voice": "man",
+"say": "“These”, is for more than one thing near you."
 },
 {
 "text": "Those birds are very high.",
 "voice": "woman"
 },
 {
-"text": "Those is for more than one thing far from you.",
+"text": "“Those” is for more than one thing far from you.",
+"voice": "man",
+"say": "“Those”, is for more than one thing far from you."
+},
+{
+"text": "Near you: “this” for one, “these” for more than one.",
 "voice": "man"
 },
 {
-"text": "Near you: this for one, these for more than one.",
-"voice": "man"
-},
-{
-"text": "Far from you: that for one, those for more than one.",
+"text": "Far from you: “that” for one, “those” for more than one.",
 "voice": "man"
 },
 {
@@ -935,7 +956,7 @@
 "voice": "woman"
 },
 {
-"text": "The dog is new to the man, so she says a dog.",
+"text": "The dog is new to the man, so she says “a dog”.",
 "voice": "man"
 },
 {
@@ -943,7 +964,7 @@
 "voice": "woman"
 },
 {
-"text": "Now he knows about the dog. So she says the dog.",
+"text": "Now he knows about the dog. So she says “the dog”.",
 "voice": "man"
 },
 {
@@ -951,20 +972,21 @@
 "voice": "man"
 },
 {
-"text": "There is only one sun, so we say the sun.",
+"text": "There is only one sun, so we say “the sun”.",
 "voice": "man"
 },
 {
-"text": "A dog: any dog, a dog that is new to you.",
+"text": "“A dog”: any dog, a dog that is new to you.",
 "voice": "man"
 },
 {
-"text": "The dog: the one we both know about.",
+"text": "“The dog”: the one we both know about.",
 "voice": "man"
 },
 {
-"text": "A, an and the are called articles.",
-"voice": "man"
+"text": "“A”, “an” and “the” are called articles.",
+"voice": "man",
+"say": "“A”, “an” and “the”, are called articles."
 },
 {
 "text": "I saw a dog. The dog was very big.",
@@ -1003,8 +1025,9 @@
 "voice": "man"
 },
 {
-"text": "Kicks is the verb.",
-"voice": "man"
+"text": "“Kicks” is the verb.",
+"voice": "man",
+"say": "“Kicks”, is the verb."
 },
 {
 "text": "The boy does the action. The boy is the subject.",
@@ -1071,7 +1094,7 @@
 "voice": "man"
 },
 {
-"text": "With he, she and it, the verb gets s.",
+"text": "With “he”, “she” and “it”, the verb gets “s”.",
 "voice": "man"
 },
 {
@@ -1083,7 +1106,7 @@
 "voice": "man"
 },
 {
-"text": "After s, sh, ch, x and o, we add es.",
+"text": "After s, sh, ch, x and o, we add “es”.",
 "voice": "man"
 },
 {
@@ -1127,7 +1150,7 @@
 "voice": "woman"
 },
 {
-"text": "With he, she and it, we use has.",
+"text": "With “he”, “she” and “it”, we use “has”.",
 "voice": "man"
 },
 {
@@ -1135,7 +1158,7 @@
 "voice": "man"
 },
 {
-"text": "With I, you, we and they, we use have.",
+"text": "With “I”, “you”, “we” and “they”, we use “have”.",
 "voice": "man"
 },
 {
@@ -1147,7 +1170,7 @@
 "voice": "man"
 },
 {
-"text": "We also use have for food and for time.",
+"text": "We also use “have” for food and for time.",
 "voice": "man"
 },
 {
@@ -1203,7 +1226,7 @@
 "voice": "man"
 },
 {
-"text": "He says do not before the verb.",
+"text": "He says “do not” before the verb.",
 "voice": "man"
 },
 {
@@ -1211,7 +1234,7 @@
 "voice": "man"
 },
 {
-"text": "Put do not before the verb.",
+"text": "Put “do not” before the verb.",
 "voice": "man"
 },
 {
@@ -1223,15 +1246,15 @@
 "voice": "man"
 },
 {
-"text": "With he, she and it, use does not. Then the verb has no s.",
+"text": "With “he”, “she” and “it”, use “does not”. Then the verb has no “s”.",
 "voice": "man"
 },
 {
-"text": "When we talk, do not becomes don't.",
+"text": "When we talk, “do not” becomes “don't”.",
 "voice": "man"
 },
 {
-"text": "And does not becomes doesn't.",
+"text": "And “does not” becomes “doesn't”.",
 "voice": "man"
 },
 {
@@ -1287,7 +1310,7 @@
 "voice": "man"
 },
 {
-"text": "To ask, put do first.",
+"text": "To ask, put “do” first.",
 "voice": "man"
 },
 {
@@ -1299,7 +1322,7 @@
 "voice": "man"
 },
 {
-"text": "With he, she and it, use does. Then the verb has no s.",
+"text": "With “he”, “she” and “it”, use “does”. Then the verb has no “s”.",
 "voice": "man"
 },
 {
@@ -1311,7 +1334,7 @@
 "voice": "man"
 },
 {
-"text": "A short answer uses do or does again.",
+"text": "A short answer uses “do” or “does” again.",
 "voice": "man"
 },
 {
@@ -1363,31 +1386,35 @@
 "voice": "man"
 },
 {
-"text": "After a verb, I becomes me.",
+"text": "After a verb, “I” becomes “me”.",
 "voice": "man"
 },
 {
-"text": "He becomes him. She becomes her.",
-"voice": "man"
+"text": "“He” becomes “him”. “She” becomes “her”.",
+"voice": "man",
+"say": "“He”, becomes “him”. “She”, becomes “her”."
 },
 {
-"text": "We becomes us. They becomes them.",
-"voice": "man"
+"text": "“We” becomes “us”. “They” becomes “them”.",
+"voice": "man",
+"say": "“We”, becomes “us”. “They”, becomes “them”."
 },
 {
-"text": "You does not change: you see me, I see you.",
-"voice": "man"
+"text": "“You” does not change: you see me, I see you.",
+"voice": "man",
+"say": "“You”, does not change: you see me, I see you."
 },
 {
-"text": "It does not change: it sees me, I see it.",
-"voice": "man"
+"text": "“It” does not change: it sees me, I see it.",
+"voice": "man",
+"say": "“It”, does not change: it sees me, I see it."
 },
 {
 "text": "Give the book to them.",
 "voice": "woman"
 },
 {
-"text": "After to, with and for, we use me, him, her, us and them too.",
+"text": "After “to”, “with” and “for”, we use “me”, “him”, “her”, “us” and “them” too.",
 "voice": "man"
 },
 {
@@ -1435,8 +1462,9 @@
 "voice": "man"
 },
 {
-"text": "My says who has the bag.",
-"voice": "man"
+"text": "“My” says who has the bag.",
+"voice": "man",
+"say": "“My”, says who has the bag."
 },
 {
 "text": "This is his dog.",
@@ -1463,16 +1491,18 @@
 "voice": "man"
 },
 {
-"text": "Its has no mark in it.",
-"voice": "man"
+"text": "“Its” has no mark in it.",
+"voice": "man",
+"say": "“Its”, has no mark in it."
 },
 {
 "text": "The bag is mine.",
 "voice": "woman"
 },
 {
-"text": "Mine, yours, his, hers, ours and theirs stand on their own, with no noun after them.",
-"voice": "man"
+"text": "“Mine”, “yours”, “his”, “hers”, “ours” and “theirs” stand on their own, with no noun after them.",
+"voice": "man",
+"say": "“Mine”, “yours”, “his”, “hers”, “ours” and “theirs”, stand on their own, with no noun after them."
 },
 {
 "text": "This is my house.",
@@ -1507,7 +1537,7 @@
 "voice": "man"
 },
 {
-"text": "We add 's to girl to show who has the book.",
+"text": "We add 's to “girl” to show who has the book.",
 "voice": "man"
 },
 {
@@ -1519,12 +1549,14 @@
 "voice": "man"
 },
 {
-"text": "Boys ends in s. So we add only the mark: the boys' room.",
-"voice": "man"
+"text": "“Boys” ends in s. So we add only the mark: the boys' room.",
+"voice": "man",
+"say": "“Boys”, ends in s. So we add only the mark: the boys' room."
 },
 {
-"text": "Children does not end in s.",
-"voice": "man"
+"text": "“Children” does not end in s.",
+"voice": "man",
+"say": "“Children”, does not end in s."
 },
 {
 "text": "So we add 's: the children's toys.",
@@ -1579,7 +1611,7 @@
 "voice": "man"
 },
 {
-"text": "Can and a verb say what someone is able to do.",
+"text": "“Can” and a verb say what someone is able to do.",
 "voice": "man"
 },
 {
@@ -1595,15 +1627,16 @@
 "voice": "man"
 },
 {
-"text": "Can is the same with every subject. The verb after it has no s.",
-"voice": "man"
+"text": "“Can” is the same with every subject. The verb after it has no “s”.",
+"voice": "man",
+"say": "“Can”, is the same with every subject. The verb after it has no “s”."
 },
 {
 "text": "I can not see the sea from here.",
 "voice": "man"
 },
 {
-"text": "We say can not, cannot or can't.",
+"text": "We say “can not”, “cannot” or “can't”.",
 "voice": "man"
 },
 {
@@ -1615,7 +1648,7 @@
 "voice": "man"
 },
 {
-"text": "To ask, put can first.",
+"text": "To ask, put “can” first.",
 "voice": "man"
 },
 {
@@ -1787,7 +1820,7 @@
 "voice": "man"
 },
 {
-"text": "We do not say you.",
+"text": "We do not say “you”.",
 "voice": "man"
 },
 {
@@ -1799,7 +1832,7 @@
 "voice": "woman"
 },
 {
-"text": "To tell someone not to do something, use do not.",
+"text": "To tell someone not to do something, use “do not”.",
 "voice": "man"
 },
 {
@@ -1807,8 +1840,9 @@
 "voice": "woman"
 },
 {
-"text": "Please makes it kind.",
-"voice": "man"
+"text": "“Please” makes it kind.",
+"voice": "man",
+"say": "“Please”, makes it kind."
 },
 {
 "text": "Do not run in the house.",
@@ -1871,8 +1905,9 @@
 "voice": "man"
 },
 {
-"text": "In, on, under and next to are prepositions.",
-"voice": "man"
+"text": "“In”, “on”, “under” and “next to” are prepositions.",
+"voice": "man",
+"say": "“In”, “on”, “under” and “next to”, are prepositions."
 },
 {
 "text": "A preposition shows where one thing is, next to another.",
@@ -1891,31 +1926,34 @@
 "voice": "man"
 },
 {
-"text": "At is for a time on the clock.",
-"voice": "man"
+"text": "“At” is for a time on the clock.",
+"voice": "man",
+"say": "“At”, is for a time on the clock."
 },
 {
 "text": "We play games on Monday.",
 "voice": "man"
 },
 {
-"text": "On is for a day: on Monday, on my birthday.",
-"voice": "man"
+"text": "“On” is for a day: on Monday, on my birthday.",
+"voice": "man",
+"say": "“On”, is for a day: on Monday, on my birthday."
 },
 {
 "text": "My birthday is in May.",
 "voice": "man"
 },
 {
-"text": "In is for a month or a year: in May, in this year.",
+"text": "“In” is for a month or a year: in May, in this year.",
+"voice": "man",
+"say": "“In”, is for a month or a year: in May, in this year."
+},
+{
+"text": "We say “in the morning”, “in the afternoon” and “in the evening”.",
 "voice": "man"
 },
 {
-"text": "We say in the morning, in the afternoon and in the evening.",
-"voice": "man"
-},
-{
-"text": "But we say at night.",
+"text": "But we say “at night”.",
 "voice": "man"
 },
 {
@@ -1983,7 +2021,7 @@
 "voice": "man"
 },
 {
-"text": "They come after am, is and are.",
+"text": "They come after “am”, “is” and “are”.",
 "voice": "man"
 },
 {
@@ -2027,7 +2065,7 @@
 "voice": "man"
 },
 {
-"text": "Am, is or are, then the verb with ing.",
+"text": "“Am”, “is” or “are”, then the verb with “ing”.",
 "voice": "man"
 },
 {
@@ -2179,11 +2217,12 @@
 "voice": "man"
 },
 {
-"text": "Know, like, want and need are about what we think or feel.",
-"voice": "man"
+"text": "“Know”, “like”, “want” and “need” are about what we think or feel.",
+"voice": "man",
+"say": "“Know”, “like”, “want” and “need”, are about what we think or feel."
 },
 {
-"text": "We do not use them with ing.",
+"text": "We do not use them with “ing”.",
 "voice": "man"
 },
 {
@@ -2211,20 +2250,24 @@
 "voice": "woman"
 },
 {
-"text": "Where asks about a place.",
-"voice": "man"
+"text": "“Where” asks about a place.",
+"voice": "man",
+"say": "“Where”, asks about a place."
 },
 {
-"text": "Who is for people. What is for things.",
-"voice": "man"
+"text": "“Who” is for people. “What” is for things.",
+"voice": "man",
+"say": "“Who”, is for people. “What”, is for things."
 },
 {
-"text": "Where is for places. When is for time.",
-"voice": "man"
+"text": "“Where” is for places. “When” is for time.",
+"voice": "man",
+"say": "“Where”, is for places. “When”, is for time."
 },
 {
-"text": "Why asks for a reason. How asks for the way.",
-"voice": "man"
+"text": "“Why” asks for a reason. “How” asks for the way.",
+"voice": "man",
+"say": "“Why”, asks for a reason. “How”, asks for the way."
 },
 {
 "text": "Where do you live?",
@@ -2279,44 +2322,50 @@
 "voice": "man"
 },
 {
-"text": "And adds an idea.",
-"voice": "man"
+"text": "“And” adds an idea.",
+"voice": "man",
+"say": "“And”, adds an idea."
 },
 {
 "text": "I like apples, but I do not like eggs.",
 "voice": "woman"
 },
 {
-"text": "But shows a different idea.",
-"voice": "man"
+"text": "“But” shows a different idea.",
+"voice": "man",
+"say": "“But”, shows a different idea."
 },
 {
 "text": "Do you want milk or water?",
 "voice": "woman"
 },
 {
-"text": "Or gives a choice.",
-"voice": "man"
+"text": "“Or” gives a choice.",
+"voice": "man",
+"say": "“Or”, gives a choice."
 },
 {
 "text": "We stayed at home because it was raining.",
 "voice": "man"
 },
 {
-"text": "Because gives the reason.",
-"voice": "man"
+"text": "“Because” gives the reason.",
+"voice": "man",
+"say": "“Because”, gives the reason."
 },
 {
 "text": "It was raining, so we stayed at home.",
 "voice": "man"
 },
 {
-"text": "So gives the result.",
-"voice": "man"
+"text": "“So” gives the result.",
+"voice": "man",
+"say": "“So”, gives the result."
 },
 {
-"text": "And, but, or, because and so are conjunctions.",
-"voice": "man"
+"text": "“And”, “but”, “or”, “because” and “so” are conjunctions.",
+"voice": "man",
+"say": "“And”, “but”, “or”, “because” and “so”, are conjunctions."
 },
 {
 "text": "A conjunction joins words or parts of a sentence.",
@@ -2347,7 +2396,7 @@
 "voice": "man"
 },
 {
-"text": "We can put a number before apple, and it has a plural.",
+"text": "We can put a number before “apple”, and it has a plural.",
 "voice": "man"
 },
 {
@@ -2355,16 +2404,19 @@
 "voice": "man"
 },
 {
-"text": "We do not say two waters. Water has no plural.",
-"voice": "man"
+"text": "We do not say “two waters”. “Water” has no plural.",
+"voice": "man",
+"say": "We do not say “two waters”. “Water”, has no plural."
 },
 {
-"text": "Apple is countable. Water is uncountable.",
-"voice": "man"
+"text": "“Apple” is countable. “Water” is uncountable.",
+"voice": "man",
+"say": "“Apple”, is countable. “Water”, is uncountable."
 },
 {
-"text": "Milk, music and money are uncountable too.",
-"voice": "man"
+"text": "“Milk”, “music” and “money” are uncountable too.",
+"voice": "man",
+"say": "“Milk”, “music” and “money”, are uncountable too."
 },
 {
 "text": "Many apples.",
@@ -2375,7 +2427,7 @@
 "voice": "man"
 },
 {
-"text": "Use many with countable nouns and much with uncountable nouns.",
+"text": "Use “many” with countable nouns and “much” with uncountable nouns.",
 "voice": "man"
 },
 {
@@ -2411,15 +2463,16 @@
 "voice": "man"
 },
 {
-"text": "There is for one. There are for more than one.",
-"voice": "man"
+"text": "“There is” for one. “There are” for more than one.",
+"voice": "man",
+"say": "“There is”, for one. “There are”, for more than one."
 },
 {
 "text": "There is water in the glass.",
 "voice": "man"
 },
 {
-"text": "With an uncountable noun, use there is too.",
+"text": "With an uncountable noun, use “there is” too.",
 "voice": "man"
 },
 {
@@ -2431,7 +2484,7 @@
 "voice": "man"
 },
 {
-"text": "To ask, put is or are first.",
+"text": "To ask, put “is” or “are” first.",
 "voice": "man"
 },
 {
@@ -2463,7 +2516,7 @@
 "voice": "man"
 },
 {
-"text": "We say some when we do not say the number.",
+"text": "We say “some” when we do not say the number.",
 "voice": "man"
 },
 {
@@ -2471,7 +2524,7 @@
 "voice": "man"
 },
 {
-"text": "After not, we use any.",
+"text": "After “not”, we use “any”.",
 "voice": "man"
 },
 {
@@ -2483,7 +2536,7 @@
 "voice": "man"
 },
 {
-"text": "In questions, we use any.",
+"text": "In questions, we use “any”.",
 "voice": "man"
 },
 {
@@ -2495,7 +2548,7 @@
 "voice": "woman"
 },
 {
-"text": "When we offer something, we use some, even in a question.",
+"text": "When we offer something, we use “some”, even in a question.",
 "voice": "man"
 },
 {
@@ -2531,8 +2584,9 @@
 "voice": "man"
 },
 {
-"text": "Was is the past of am and is.",
-"voice": "man"
+"text": "“Was” is the past of “am” and “is”.",
+"voice": "man",
+"say": "“Was”, is the past of “am” and “is”."
 },
 {
 "text": "I am at home.",
@@ -2543,11 +2597,11 @@
 "voice": "man"
 },
 {
-"text": "I, he, she and it: was.",
+"text": "“I”, “he”, “she” and “it”: “was”.",
 "voice": "man"
 },
 {
-"text": "You, we and they: were.",
+"text": "“You”, “we” and “they”: “were”.",
 "voice": "man"
 },
 {
@@ -2731,7 +2785,7 @@
 "voice": "man"
 },
 {
-"text": "For most verbs, we add ed.",
+"text": "For most verbs, we add “ed”.",
 "voice": "man"
 },
 {
@@ -2787,7 +2841,7 @@
 "voice": "man"
 },
 {
-"text": "Some verbs do not add ed. They have their own past form.",
+"text": "Some verbs do not add “ed”. They have their own past form.",
 "voice": "man"
 },
 {
@@ -2803,8 +2857,9 @@
 "voice": "woman"
 },
 {
-"text": "See becomes saw.",
-"voice": "man"
+"text": "“See” becomes “saw”.",
+"voice": "man",
+"say": "“See”, becomes “saw”."
 },
 {
 "text": "She came home and ate an apple.",
@@ -2863,7 +2918,7 @@
 "voice": "man"
 },
 {
-"text": "Put did first. Then the verb goes back to its simple form.",
+"text": "Put “did” first. Then the verb goes back to its simple form.",
 "voice": "man"
 },
 {
@@ -2875,7 +2930,7 @@
 "voice": "man"
 },
 {
-"text": "Did not, then the simple form.",
+"text": "“Did not”, then the simple form.",
 "voice": "man"
 },
 {
@@ -2887,8 +2942,9 @@
 "voice": "man"
 },
 {
-"text": "Did is the same with every subject.",
-"voice": "man"
+"text": "“Did” is the same with every subject.",
+"voice": "man",
+"say": "“Did”, is the same with every subject."
 },
 {
 "text": "Did you see the dog?",
@@ -2943,7 +2999,7 @@
 "voice": "man"
 },
 {
-"text": "Am, is or are, then going to, then the verb.",
+"text": "“Am”, “is” or “are”, then “going to”, then the verb.",
 "voice": "man"
 },
 {
@@ -3059,7 +3115,7 @@
 "voice": "man"
 },
 {
-"text": "We use will and a verb to say what we think will happen.",
+"text": "We use “will” and a verb to say what we think will happen.",
 "voice": "man"
 },
 {
@@ -3071,7 +3127,7 @@
 "voice": "man"
 },
 {
-"text": "He chooses to help at that moment, so he says will.",
+"text": "He chooses to help at that moment, so he says “will”.",
 "voice": "man"
 },
 {
@@ -3087,15 +3143,16 @@
 "voice": "man"
 },
 {
-"text": "Will is the same with every subject. The verb has no s.",
-"voice": "man"
+"text": "“Will” is the same with every subject. The verb has no “s”.",
+"voice": "man",
+"say": "“Will”, is the same with every subject. The verb has no “s”."
 },
 {
 "text": "The shop will not open on Sunday.",
 "voice": "man"
 },
 {
-"text": "In talk, will not becomes won't.",
+"text": "In talk, “will not” becomes “won't”.",
 "voice": "man"
 },
 {
@@ -3263,7 +3320,7 @@
 "voice": "man"
 },
 {
-"text": "For short adjectives, add er.",
+"text": "For short adjectives, add “er”.",
 "voice": "man"
 },
 {
@@ -3271,7 +3328,7 @@
 "voice": "man"
 },
 {
-"text": "For long adjectives, use more.",
+"text": "For long adjectives, use “more”.",
 "voice": "man"
 },
 {
@@ -3283,7 +3340,7 @@
 "voice": "man"
 },
 {
-"text": "Use than after it.",
+"text": "Use “than” after it.",
 "voice": "man"
 },
 {
@@ -3327,7 +3384,7 @@
 "voice": "man"
 },
 {
-"text": "For short adjectives, use the and est.",
+"text": "For short adjectives, use “the” and “est”.",
 "voice": "man"
 },
 {
@@ -3335,7 +3392,7 @@
 "voice": "man"
 },
 {
-"text": "For long adjectives, use the most.",
+"text": "For long adjectives, use “the most”.",
 "voice": "man"
 },
 {
@@ -3379,11 +3436,12 @@
 "voice": "man"
 },
 {
-"text": "Slowly says how he walks.",
-"voice": "man"
+"text": "“Slowly” says how he walks.",
+"voice": "man",
+"say": "“Slowly”, says how he walks."
 },
 {
-"text": "Many adverbs are an adjective and ly.",
+"text": "Many adverbs are an adjective and “ly”.",
 "voice": "man"
 },
 {
@@ -3403,8 +3461,9 @@
 "voice": "man"
 },
 {
-"text": "Good is an adjective. Its adverb is well.",
-"voice": "man"
+"text": "“Good” is an adjective. Its adverb is “well”.",
+"voice": "man",
+"say": "“Good”, is an adjective. Its adverb is “well”."
 },
 {
 "text": "The children ran quickly to the door.",
@@ -3447,19 +3506,21 @@
 "voice": "man"
 },
 {
-"text": "How many is for countable nouns.",
-"voice": "man"
+"text": "“How many” is for countable nouns.",
+"voice": "man",
+"say": "“How many”, is for countable nouns."
 },
 {
-"text": "How much is for uncountable nouns.",
-"voice": "man"
+"text": "“How much” is for uncountable nouns.",
+"voice": "man",
+"say": "“How much”, is for uncountable nouns."
 },
 {
 "text": "How much is this bag?",
 "voice": "woman"
 },
 {
-"text": "We also use how much to ask the price.",
+"text": "We also use “how much” to ask the price.",
 "voice": "man"
 },
 {
@@ -3487,8 +3548,9 @@
 "voice": "man"
 },
 {
-"text": "Must and have to say that something is necessary.",
-"voice": "man"
+"text": "“Must” and “have to” say that something is necessary.",
+"voice": "man",
+"say": "“Must” and “have to”, say that something is necessary."
 },
 {
 "text": "I must go now.",
@@ -3503,23 +3565,25 @@
 "voice": "man"
 },
 {
-"text": "Must not means it is not allowed.",
-"voice": "man"
+"text": "“Must not” means it is not allowed.",
+"voice": "man",
+"say": "“Must not”, means it is not allowed."
 },
 {
 "text": "You do not have to come.",
 "voice": "woman"
 },
 {
-"text": "Do not have to means it is not necessary. You can choose.",
+"text": "“Do not have to” means it is not necessary. You can choose.",
+"voice": "man",
+"say": "“Do not have to”, means it is not necessary. You can choose."
+},
+{
+"text": "“Must not”: not allowed.",
 "voice": "man"
 },
 {
-"text": "Must not: not allowed.",
-"voice": "man"
-},
-{
-"text": "Do not have to: not necessary.",
+"text": "“Do not have to”: not necessary.",
 "voice": "man"
 },
 {
@@ -3551,8 +3615,9 @@
 "voice": "woman"
 },
 {
-"text": "Should says what is a good idea.",
-"voice": "man"
+"text": "“Should” says what is a good idea.",
+"voice": "man",
+"say": "“Should”, says what is a good idea."
 },
 {
 "text": "Should I take an umbrella?",
@@ -3571,7 +3636,7 @@
 "voice": "man"
 },
 {
-"text": "Should not: it is not a good idea.",
+"text": "“Should not”: it is not a good idea.",
 "voice": "man"
 },
 {
@@ -3767,7 +3832,7 @@
 "voice": "man"
 },
 {
-"text": "Was or were, then the verb with ing. This is the past continuous.",
+"text": "“Was” or “were”, then the verb with “ing”. This is the past continuous.",
 "voice": "man"
 },
 {

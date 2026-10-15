@@ -38,6 +38,13 @@ when the owner gives them, with the date.
    plus German. Right-to-left scripts set `"dir": "rtl"`; a language tag that differs from the code
    goes in `"tag"` (e.g. `zh-Hans`).
 
+9. **Words talked about go in curly quotes.** (2026-10-15) When a grammar text talks about a word
+   instead of using it, put it in “curly quotes”: "“We” is you and other people.", "For an animal,
+   we say “it”.". Unquoted, the voice reads it as a normal word: no stress, and short words lose
+   their last sound or come out wrong ("am"). A sentence that starts with a quoted word (or list) is
+   read with a comma after it, so the voice stresses it and pauses before the verb; `say_text()` in
+   `tools/grammar/build.py` adds that comma to the audio job only (`say`), never to the shown text.
+
 ## Audio
 
 - Voices: Daniel (`man`) by default; Sarah (`woman`) only when a woman is speaking

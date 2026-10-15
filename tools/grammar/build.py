@@ -227,6 +227,16 @@ def machine_sentences(m):
     return out
 
 
+# A sentence that starts with a word (or a list of words) being talked about ("“We” is you and other
+# people.") is read with a comma after it ("“We”, is you ..."): the voice then stresses the word and pauses before the
+# verb. The comma is only spoken, never shown; the clip keeps the name of the shown sentence.
+TALKED_ABOUT = re.compile(r'(?:^|(?<=[.?!] ))(“[^”]+”(?:(?:, | and | or )“[^”]+”)*)( )(?=[A-Za-z])(?!(?:and|or) )')
+
+
+def say_text(t):
+    return TALKED_ABOUT.sub(r'\1,\2', t)
+
+
 def write_audio_jobs():
     items, seen = [], set()
     for nid, les in LESSONS.items():
@@ -234,7 +244,10 @@ def write_audio_jobs():
             t = re.sub(r'\s+', ' ', t).strip()
             if (v, t) not in seen:
                 seen.add((v, t))
-                items.append({'text': t, 'voice': v})
+                item = {'text': t, 'voice': v}
+                if say_text(t) != t:
+                    item['say'] = say_text(t)
+                items.append(item)
     path = os.path.join(ROOT, 'content', 'jobs', 'grammar_audio.json')
     with open(path, 'w') as f:
         json.dump({'action': 'batch', 'chunk': 16, 'items': items}, f, ensure_ascii=False, indent=0)

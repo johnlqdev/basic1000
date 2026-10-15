@@ -256,6 +256,8 @@ Deno.serve(async (req) => {
     }
     if (action === "batch") {
       // items: [{ text, voice: 'woman'|'man' } or { text, voiceId }] (or list/offset/count), optional speed, force, compact;
+      // optional say: what the voice reads instead of text (the clip keeps the name of text), e.g. text
+      // 'We is you and other people.' with say '"We"... is you and other people.' to stress a word talked about;
       // body.all = true makes each item in every CHOICES voice of its gender (old Kokoro trial).
       // Qwen voices are made in GPU batches of body.chunk texts (default 12) per voice.
       const podIds: Record<string, string | null> = {};
@@ -268,7 +270,7 @@ Deno.serve(async (req) => {
         return podIds[key];
       };
       const out: Record<string, unknown>[] = [];
-      const groups = new Map<string, { text: string; path: string }[]>();
+      const groups = new Map<string, { text: string; path: string; say: string }[]>();
       for (const it of await jobItems(body)) {
         const text = norm(String(it.text ?? ""));
         const ids: string[] = it.voiceId ? [it.voiceId] : body.all ? CHOICES[it.voice ?? "woman"] : [VOICES[it.voice ?? "woman"]];
@@ -282,7 +284,7 @@ Deno.serve(async (req) => {
           const path = await clipPath(voiceId, text);
           if (!it.force && await cached(path)) { out.push({ text, voiceId, url: publicUrl(path), cached: true }); continue; }
           if (!groups.has(voiceId)) groups.set(voiceId, []);
-          groups.get(voiceId)!.push({ text, path });
+          groups.get(voiceId)!.push({ text, path, say: it.say ? norm(String(it.say)) : "" });
         }
       }
       const size = Math.max(1, Math.min(32, Number(body.chunk ?? 12)));
@@ -294,7 +296,7 @@ Deno.serve(async (req) => {
           try {
             const r = await fetch(podUrl(podId, "lab") + "/tts_batch", {
               method: "POST", headers: { "content-type": "application/json" },
-              body: JSON.stringify({ ...labBody(spec), texts: chunk.map((c) => spoken(c.text)) }),
+              body: JSON.stringify({ ...labBody(spec), texts: chunk.map((c) => c.say || spoken(c.text)) }),
               signal: AbortSignal.timeout(140000),
             });
             if (!r.ok) throw new Error(`lab ${r.status}: ${(await r.text()).slice(0, 200)}`);
