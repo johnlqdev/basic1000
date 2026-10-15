@@ -107,6 +107,13 @@ the `runpod-ops` function (32 vCPU, no GPU, no volume, image `mcr.microsoft.com/
 zips them and uploads `grammar_46_desktop.zip` and `grammar_46_phone.zip` to Dropbox
 `basic1000-backup/grammar-videos/` (`upload.py` asks `runpod-ops` for a short-lived token; no key is
 stored on the pod). Delete the pod afterwards. If a film changes, its videos must be made again.
+When RunPod has no CPU pods free, the same run works on a GPU pod (the GPU is not used): add a
+`pod_runs` row, then create the pod with the tts function's `create` action, the same image and
+`minVCPUPerGPU` 16, `volumeInGb` 0, the row's `RUN_ID`/`REPORT_TOKEN`/`REPORT_URL` in `env`, and the
+runpod-ops agent as start command; delete it with runpod-ops `delete_pod`.
+
+Film narration puts a word that is talked about in curly quotes (“We” is you and other people.),
+so the voice stresses it; see rule 9 in CLAUDE.md.
 
 ## Backups
 
