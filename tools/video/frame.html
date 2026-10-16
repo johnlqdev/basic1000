@@ -116,8 +116,12 @@ window.setupFilm = async function (id, layout, number, count, durs) {
 function subHTML(line) {
   if (!line) return '';
   var hl = (line.hl || []).map(function (w) { return w.toLowerCase(); });
-  var html = esc(line.t).replace(/[A-Za-z']+/g, function (w) { return hl.indexOf(w.toLowerCase().replace(/[^a-z']/g, '')) >= 0 ? '<mark>' + w + '</mark>' : w; });
-  html = html.replace(/“[^”]*”/g, function (q) { return '<span class="nw">' + q + '</span>'; });
+  // a word or phrase in quotes is marked as a whole and kept on one line; elsewhere, the line's own
+  // marked words (hl) are marked
+  var html = esc(line.t).split(/(“[^”]*”)/).map(function (part) {
+    if (/^“[^”]*”$/.test(part)) return '<span class="nw">“<mark>' + part.slice(1, -1) + '</mark>”</span>';
+    return part.replace(/[A-Za-z']+/g, function (w) { return hl.indexOf(w.toLowerCase().replace(/[^a-z']/g, '')) >= 0 ? '<mark>' + w + '</mark>' : w; });
+  }).join('');
   return '<span class="v-sub-in">' + (line.by ? '<span class="v-q">' + html + '</span>' : html) + '</span>';
 }
 

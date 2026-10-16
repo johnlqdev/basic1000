@@ -81,6 +81,11 @@ when the owner gives them, with the date.
   its own `say` (`L('I am a man.', say='I AM a man.')`). Try a few wordings on test names
   (`text: "zz test 1"` plus `say`), take one that is heard right twice, then record and check the
   real clip. The voice is not always right even then: check the real clip and redo it if needed.
+- **Words must not run together** (2026-10-16). Read the word timings too: between a quoted word and
+  what follows (above all at a colon before examples), there should be a clear pause (0.3 s or
+  more). "we add “es”: box, boxes." had 0.12 s and sounded like "eezbox"; it is now said
+  "we add “E S”... Box, boxes." (0.46 s). An ending such as "es" or "ed" is spelled out as
+  letters, the way the voice already reads "s".
 - **The same wording gives the same take.** Recording a sentence again with the same `say` returns
   the same audio, so to get a different take, change the wording a little (a comma, say).
 - **Make sure you are checking the new clip.** The `slow` check reads the clip through the CDN,
@@ -94,6 +99,9 @@ when the owner gives them, with the date.
   (`grammar_46_phone.zip`, `grammar_46_desktop.zip`), made by `tools/video/` from the site's own data
   and clips. **When a film's text, pictures or audio change, make both sets again and replace both
   zips** in the same piece of work: 46 videos in each, all with sound, checked to use the new clips.
+- **Every word in quotes has a yellow background** (2026-10-16), in the videos (`subHTML` in
+  `tools/video/frame.html`) and in the site's films (`markQuoted` in `films.js`), together with the
+  words a line marks itself (`hl`).
 - **Subtitles must read well in both sizes** (2026-10-16). A long line wraps as one paragraph over
   as many lines as it needs, with a quoted word or phrase kept on one line. `render.py` checks
   every subtitle in every layout before it records, and stops when one does not fit; also look at

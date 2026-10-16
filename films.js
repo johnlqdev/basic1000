@@ -285,6 +285,28 @@ var BASIC_FILMS = (function () {
     });
   }
 
+  // mark every word in “quotes” (a word talked about), as the videos do: linked words get the
+  // film-mark class, other text inside the quotes is wrapped in <mark>
+  function markQuoted(root) {
+    var walk = document.createTreeWalker(root, NodeFilter.SHOW_TEXT), texts = [], inQ = false;
+    while (walk.nextNode()) texts.push(walk.currentNode);
+    texts.forEach(function (t) {
+      var word = t.parentNode.closest('[data-word]');
+      if (word && root.contains(word)) {
+        if (inQ) word.classList.add('film-mark');
+        return;
+      }
+      var parts = t.nodeValue.split(/([“”])/), frag = document.createDocumentFragment(), changed = false;
+      parts.forEach(function (p) {
+        if (p === '“') inQ = true;
+        else if (p === '”') inQ = false;
+        if (inQ && p !== '“' && /\S/.test(p)) { var m = document.createElement('mark'); m.textContent = p; frag.appendChild(m); changed = true; }
+        else if (p) frag.appendChild(document.createTextNode(p));
+      });
+      if (changed || parts.length > 1) t.parentNode.replaceChild(frag, t);
+    });
+  }
+
   // ---------- the player ----------
   function mount(el, film, opts) {
     opts = opts || {};
@@ -322,6 +344,7 @@ var BASIC_FILMS = (function () {
       var html = opts.link ? opts.link(line.t) : esc(line.t);
       sub.innerHTML = line.by ? '<span class="film-quote">' + html + '</span>' : html;
       markWords(sub, hl);
+      markQuoted(sub);
     }
     function segs() {
       el.querySelectorAll('.film-seg').forEach(function (b, i) {

@@ -23,7 +23,8 @@
   // Clips are cached for a year. When clips are made again in place (same name), raise FRESH so that
   // browsers fetch the new ones. r=2: 2026-10-14, words and sentences that end in k/p/t/d/f/th made again.
   // r=3: 2026-10-16, grammar lines with "am" (and two others) made again.
-  var FRESH = '?r=3';
+  // r=4: 2026-10-16, "we add “es”: box, boxes." made again.
+  var FRESH = '?r=4';
   var SLOW_VERSION = 'slow1'; // must match SLOW_VERSION in the tts function
   var SLOW_MAX_STEP = 200; // steps that have slow clips (all of them)
   var WORD_RE = /[A-Za-z']+/g; // how sentences are split into words (same as the voice server)

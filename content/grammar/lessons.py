@@ -216,7 +216,7 @@ LESSONS['plural'] = {
         S([L('One cat.'), L('Two cats.', hl=['cats']), L('For more than one, we add “s”: cat, cats.')],
           cast=[C('c', 'cat', 100, label='one cat', labelAt=0), C('c2', 'cat', 190, n=2, gap=40, in_=1, label='two cats', labelRole='n', labelAt=1)],
           board=[B(2, ['cat', 'cats'], r={1: 'n'})]),
-        S([L('One box.'), L('Three boxes.', hl=['boxes']), L('After s, sh, ch and x, we add “es”: box, boxes.')],
+        S([L('One box.'), L('Three boxes.', hl=['boxes']), L('After s, sh, ch and x, we add “es”: box, boxes.', say='After s, sh, ch and x, we add “E S”... Box, boxes.')],
           cast=[C('x', 'box', 90, label='one box', labelAt=0), C('x2', 'box', 175, n=3, gap=28, in_=1, label='three boxes', labelRole='n', labelAt=1)],
           board=[B(2, ['box', 'boxes'], r={1: 'n'})]),
         S([L('One man.'), L('Two men.', hl=['men']), L('Some nouns change: man, men.')],

@@ -43,7 +43,7 @@ def norm(t):
 
 def clip_url(text, voice):
     v = VOICES[voice]
-    return AUDIO + v + '/' + hashlib.sha256((v + '|' + norm(text)).encode()).hexdigest()[:32] + '.mp3?r=3'  # same as FRESH in audio.js: a new query skips old copies in the CDN
+    return AUDIO + v + '/' + hashlib.sha256((v + '|' + norm(text)).encode()).hexdigest()[:32] + '.mp3?r=4'  # same as FRESH in audio.js: a new query skips old copies in the CDN
 
 
 def serve(port):
