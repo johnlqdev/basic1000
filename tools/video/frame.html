@@ -20,8 +20,13 @@
   .v-main { flex: 1; display: flex; flex-direction: column; justify-content: center; }
   .film-screen { box-shadow: var(--shadow); }
   .v-sub { font-family: var(--display); text-align: center; line-height: 1.4; margin: 0; display: flex; align-items: center; justify-content: center; }
-  .v-sub mark { background: var(--marker); color: var(--ink); border-radius: 6px; padding: 0 .12em; }
-  .v-sub .q::before { content: "\201C"; color: var(--muted); } .v-sub .q::after { content: "\201D"; color: var(--muted); }
+  /* one inner block, so a long line wraps as one paragraph (as flex items, the text and each marked
+     word wrapped on their own) */
+  .v-sub-in { display: block; max-width: 100%; text-wrap: balance; }
+  .v-sub .nw { white-space: nowrap; } /* a quoted word or phrase (“does not”) stays on one line */
+  .v-sub mark { -webkit-box-decoration-break: clone; box-decoration-break: clone; background: var(--marker); color: var(--ink); border-radius: 6px; padding: 0 .12em; }
+  /* a line a person in the film says: quote marks, as .film-quote on the site (not .q, the site's quiz card) */
+  .v-sub .v-q::before { content: "\201C"; color: var(--muted); } .v-sub .v-q::after { content: "\201D"; color: var(--muted); }
   .v-segs { display: flex; gap: 8px; }
   .v-seg { flex: 1; height: 6px; border-radius: 999px; background: var(--rule); position: relative; overflow: hidden; }
   .v-seg i { position: absolute; inset: 0 auto 0 0; background: var(--tab); border-radius: 999px; }
@@ -112,8 +117,38 @@ function subHTML(line) {
   if (!line) return '';
   var hl = (line.hl || []).map(function (w) { return w.toLowerCase(); });
   var html = esc(line.t).replace(/[A-Za-z']+/g, function (w) { return hl.indexOf(w.toLowerCase().replace(/[^a-z']/g, '')) >= 0 ? '<mark>' + w + '</mark>' : w; });
-  return line.by ? '<span class="q">' + html + '</span>' : html;
+  html = html.replace(/“[^”]*”/g, function (q) { return '<span class="nw">' + q + '</span>'; });
+  return '<span class="v-sub-in">' + (line.by ? '<span class="v-q">' + html + '</span>' : html) + '</span>';
 }
+
+// a long line gets smaller type until it fits the subtitle box (in as many lines as it needs)
+function fitSub() {
+  F.sub.style.fontSize = '';
+  var inner = F.sub.firstChild, size = parseFloat(getComputedStyle(F.sub).fontSize), min = size * 0.7;
+  while (inner && inner.offsetHeight > F.sub.clientHeight && size > min) { size -= 1; F.sub.style.fontSize = size + 'px'; }
+}
+
+// every subtitle of every film in a layout, set the way drawFrame sets it: returns how many were
+// checked, the most lines one needed, and the ones that needed smaller type or still do not fit
+// (render.py stops when any does not fit)
+window.checkSubs = async function (layout) {
+  var films = listFilms(), out = { checked: 0, maxLines: 0, small: [], over: [] };
+  for (var f = 0; f < films.length; f++) {
+    var film = D.lessons[films[f].id].film;
+    await setupFilm(films[f].id, layout, f + 1, films.length, film.map(function (s) { return (s.lines || []).map(function () { return 1; }); }));
+    film.forEach(function (shot) {
+      (shot.lines || []).forEach(function (line) {
+        F.sub.innerHTML = subHTML(line); fitSub();
+        var inner = F.sub.firstChild, lh = parseFloat(getComputedStyle(F.sub).lineHeight);
+        var lines = Math.round(inner.offsetHeight / lh);
+        out.checked++; out.maxLines = Math.max(out.maxLines, lines);
+        if (inner.offsetHeight > F.sub.clientHeight || inner.scrollWidth > F.sub.clientWidth + 1) out.over.push(films[f].id + ': ' + line.t);
+        else if (F.sub.style.fontSize) out.small.push(films[f].id + ': ' + line.t);
+      });
+    });
+  }
+  return out;
+};
 
 // draw the film at time T (seconds); returns true when the picture differs from the last one drawn
 window.drawFrame = function (T) {
@@ -131,7 +166,7 @@ window.drawFrame = function (T) {
     for (var k = ls.length - 1; k >= 0; k--) if (r >= tl.shots[i].starts[k]) { subLine = ls[k]; break; }
   }
   var sub = subHTML(subLine);
-  if (F.sub.innerHTML !== sub) F.sub.innerHTML = sub;
+  if (F.sub.innerHTML !== sub) { F.sub.innerHTML = sub; fitSub(); }
   var bars = [];
   F.segs.forEach(function (b, i) {
     var n = (F.film[i].lines || []).length || 1;

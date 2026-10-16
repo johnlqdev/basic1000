@@ -82,7 +82,7 @@ LESSONS['how-often'] = {
         S([L('I walk to school.'), L('I often walk to school.', hl=['often']), L('These words come before most verbs.')],
           board=[B(0, ['I', 'walk', 'to', 'school.'], r={1: 'v'}),
                  B(1, ['I', 'often', 'walk', 'to', 'school.'], r={1: 'ok', 2: 'v'}, tag={1: 'before the verb'})]),
-        S([L('She is happy.'), L('She is always happy.', hl=['always']), L('They come after “am”, “is” and “are”.')],
+        S([L('She is happy.'), L('She is always happy.', hl=['always']), L('They come after “am”, “is” and “are”.', say='They come after, “Amm”, “is” and “are”.')],
           cast=[C('w', 'woman', 160, accent=True, pose='wave', poseAt=1)],
           board=[B(0, ['She', 'is', 'happy.'], r={1: 'b'}),
                  B(1, ['She', 'is', 'always', 'happy.'], r={1: 'b', 2: 'ok'}, tag={2: 'after is'})]),

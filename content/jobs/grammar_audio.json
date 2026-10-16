@@ -252,15 +252,18 @@
 },
 {
 "text": "I am a man.",
-"voice": "man"
+"voice": "man",
+"say": "I AM a man."
 },
 {
 "text": "I am a woman.",
-"voice": "woman"
+"voice": "woman",
+"say": "I AM a woman."
 },
 {
 "text": "With “I”, we use “am”.",
-"voice": "man"
+"voice": "man",
+"say": "With “I”, we use “Amm”."
 },
 {
 "text": "She is a woman.",
@@ -519,7 +522,8 @@
 },
 {
 "text": "After “am”, “is” and “are”, we put “not”.",
-"voice": "man"
+"voice": "man",
+"say": "After “Amm”, “is” and “are”, we put “not”."
 },
 {
 "text": "They are here.",
@@ -2022,7 +2026,8 @@
 },
 {
 "text": "They come after “am”, “is” and “are”.",
-"voice": "man"
+"voice": "man",
+"say": "They come after, “Amm”, “is” and “are”."
 },
 {
 "text": "He is never late.",
@@ -2586,7 +2591,7 @@
 {
 "text": "“Was” is the past of “am” and “is”.",
 "voice": "man",
-"say": "“Was”, is the past of “am” and “is”."
+"say": "“Was”, is the past of “Amm” and “is”."
 },
 {
 "text": "I am at home.",

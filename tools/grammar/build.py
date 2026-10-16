@@ -121,6 +121,8 @@ def main():
                 check(nid, f'film {s + 1}.{k + 1}', line['t'], with_terms=not line.get('by'))
                 if spoken_by in WOMEN and line.get('v') != 'woman':
                     problems.append(f"{nid} film {s + 1}.{k + 1}: spoken by a {spoken_by}, so it needs v: 'woman'")
+                if line.get('say'):
+                    SAY_LINES[re.sub(r'\s+', ' ', line['t']).strip()] = line['say']
                 for w in unquoted_words(line['t']):
                     problems.append(f"{nid} film {s + 1}.{k + 1}: {w!r} is a word talked about, so put it in curly quotes (rule 9): {line['t']}")
                 if line.get('by') and line['by'] not in cast:
@@ -180,7 +182,13 @@ def main():
     print(f"{len(NODES)} nodes, {len(LESSONS)} lessons: all good")
     if '--check' in sys.argv:
         return
-    data = {'bands': BANDS, 'nodes': NODES, 'lessons': LESSONS}
+    # the spoken text of a line is for the audio job only: keep it out of the site's data
+    site_lessons = json.loads(json.dumps(LESSONS))
+    for les in site_lessons.values():
+        for shot in les.get('film', []):
+            for line in shot.get('lines', []):
+                line.pop('say', None)
+    data = {'bands': BANDS, 'nodes': NODES, 'lessons': site_lessons}
     with open(os.path.join(ROOT, 'grammar-data.js'), 'w', encoding='utf-8') as f:
         f.write('// Made by tools/grammar/build.py from content/grammar/. Do not edit by hand.\n')
         f.write('window.BASIC_GRAMMAR_DATA = ' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n')
@@ -259,7 +267,19 @@ def machine_sentences(m):
 TALKED_ABOUT = re.compile(r'(?:^|(?<=[.?!] ))(“[^”]+”(?:(?:, | and | or )“[^”]+”)*)( )(?=[A-Za-z])(?!(?:and|or) )')
 
 
+# Words the voice says wrong even in quotes, and the spelling it reads right (checked with the slow
+# action's phoneme check, 2026-10-16): a quoted "am" came out as "arm" or "A.M.".
+SAY_SPELLING = {'“am”': '“Amm”'}
+# A line may also give its own spoken text: L('I am a man.', say='I AM a man.') (here a clear "am",
+# not the weak "əm" of quick speech). Filled by main() from the film lines.
+SAY_LINES = {}
+
+
 def say_text(t):
+    if t in SAY_LINES:
+        return SAY_LINES[t]
+    for shown, said in SAY_SPELLING.items():
+        t = t.replace(shown, said)
     return TALKED_ABOUT.sub(r'\1,\2', t)
 
 

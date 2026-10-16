@@ -151,13 +151,13 @@ LESSONS['pronoun'] = {
 # ---------------------------------------------------------------- 4. be
 LESSONS['be'] = {
     'film': [
-        S([L('I am a man.', by='m'), L('I am a woman.', by='w', v='woman'), L('With “I”, we use “am”.', hl=['am'])],
+        S([L('I am a man.', by='m', say='I AM a man.'), L('I am a woman.', by='w', v='woman', say='I AM a woman.'), L('With “I”, we use “am”.', hl=['am'])],
           cast=[C('m', 'man', 110, accent=True, pose='chest', poseAt=0), C('w', 'woman', 210, face=-1, pose='chest', poseAt=1)]),
-        S([L('I am a man.'), L('He is a man.'), L('She is a woman.'), L('It is a dog.'),
+        S([L('He is a man.'), L('She is a woman.'), L('It is a dog.'),
            L('With “he”, “she” and “it”, we use “is”.', hl=['is'])],
-          cast=[C('m', 'man', 90), C('w', 'woman', 170, in_=2), C('d', 'dog', 250, in_=3)],
-          board=[B(0, ['I', 'am', 'a', 'man.'], r={0: 'p', 1: 'b'}), B(1, ['He', 'is', 'a', 'man.'], r={0: 'p', 1: 'b'}),
-                 B(2, ['She', 'is', 'a', 'woman.'], r={0: 'p', 1: 'b'}), B(3, ['It', 'is', 'a', 'dog.'], r={0: 'p', 1: 'b'})]),
+          cast=[C('m', 'man', 90), C('w', 'woman', 170, in_=1), C('d', 'dog', 250, in_=2)],
+          board=[B(0, ['He', 'is', 'a', 'man.'], r={0: 'p', 1: 'b'}),
+                 B(1, ['She', 'is', 'a', 'woman.'], r={0: 'p', 1: 'b'}), B(2, ['It', 'is', 'a', 'dog.'], r={0: 'p', 1: 'b'})]),
         S([L('You are a child.'), L('We are children.'), L('They are children.'),
            L('With “you”, “we” and “they”, we use “are”.', hl=['are'])],
           cast=[C('b', 'boy', 120, n=3, gap=36)],

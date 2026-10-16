@@ -23,6 +23,7 @@ import re
 import shutil
 import socketserver
 import subprocess
+import sys
 import threading
 import time
 import urllib.request
@@ -42,7 +43,7 @@ def norm(t):
 
 def clip_url(text, voice):
     v = VOICES[voice]
-    return AUDIO + v + '/' + hashlib.sha256((v + '|' + norm(text)).encode()).hexdigest()[:32] + '.mp3?r=2'
+    return AUDIO + v + '/' + hashlib.sha256((v + '|' + norm(text)).encode()).hexdigest()[:32] + '.mp3?r=3'  # same as FRESH in audio.js: a new query skips old copies in the CDN
 
 
 def serve(port):
@@ -175,6 +176,23 @@ def main():
         films = pg.evaluate('listFilms()')
         shots = pg.evaluate('ids => ids.map(id => BASIC_GRAMMAR_DATA.lessons[id].film.map(s => (s.lines || []).length))', [f['id'] for f in films])
         b.close()
+        # every subtitle must fit its box in every layout (wrapped over as many lines as it needs)
+        bad = False
+        for layout in a.layouts.split(','):
+            b, pg = open_page(pw, layout, a.offline)
+            pg.goto(f'http://127.0.0.1:{a.port}/tools/video/frame.html')
+            pg.wait_for_function('window.BASIC_FILMS && window.listFilms')
+            r = pg.evaluate('l => checkSubs(l)', layout)
+            b.close()
+            print(f'subtitles, {layout}: {r["checked"]} checked, up to {r["maxLines"]} lines, '
+                  f'{len(r["small"])} in smaller type, {len(r["over"])} do not fit', flush=True)
+            for t in r['small']:
+                print('   smaller type: ' + t, flush=True)
+            for t in r['over']:
+                print('   DOES NOT FIT: ' + t, flush=True)
+            bad = bad or bool(r['over'])
+        if bad:
+            sys.exit('some subtitles do not fit: shorten them or change the layout in frame.html')
     print(f'{len(films)} films, {sum(len(f["lines"]) for f in films)} lines', flush=True)
     clips = fetch_clips(films, a.cache, a.fake_audio)
     print(f'{len(clips)} clips ready', flush=True)

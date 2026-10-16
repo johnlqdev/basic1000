@@ -67,6 +67,22 @@ when the owner gives them, with the date.
 - **A clip with the same name is never replaced on its own.** `batch` skips any text that already
   has a clip, including test clips made while trying things. When a sentence must be re-recorded
   (new `say`, new voice rule), send it with `force: true`.
+- **Check every sentence, not a sample** (2026-10-16). Run the phoneme check on every new or
+  changed sentence and compare `heard` word by word, above all the word being taught or talked
+  about. Misreads found so far: a quoted "am" heard as "arm" or "A.M."; "I am a man." with the weak
+  "əm"; one take of “These” heard as "this". The word a lesson teaches must be said in its full,
+  clear form.
+- **Fix a misread in the spoken text, never in the shown text.** In `tools/grammar/build.py`:
+  `SAY_SPELLING` respells a word for the voice everywhere (“am” → “Amm”), and a film line can carry
+  its own `say` (`L('I am a man.', say='I AM a man.')`). Try a few wordings on test names
+  (`text: "zz test 1"` plus `say`), take one that is heard right twice, then record and check the
+  real clip. The voice is not always right even then: check the real clip and redo it if needed.
+- **The same wording gives the same take.** Recording a sentence again with the same `say` returns
+  the same audio, so to get a different take, change the wording a little (a comma, say).
+- **Make sure you are checking the new clip.** The `slow` check reads the clip through the CDN,
+  which can serve the old copy for a while after an overwrite. Before checking, compare the `head`
+  size of the clip's URL with and without `?x=<time>`; check only once they are the same (about
+  75 s).
 
 ## Grammar videos (MP4)
 
@@ -74,6 +90,12 @@ when the owner gives them, with the date.
   (`grammar_46_phone.zip`, `grammar_46_desktop.zip`), made by `tools/video/` from the site's own data
   and clips. **When a film's text, pictures or audio change, make both sets again and replace both
   zips** in the same piece of work: 46 videos in each, all with sound, checked to use the new clips.
+- **Subtitles must read well in both sizes** (2026-10-16). A long line wraps as one paragraph over
+  as many lines as it needs, with a quoted word or phrase kept on one line. `render.py` checks
+  every subtitle in every layout before it records, and stops when one does not fit; also look at
+  frames of the longest lines in the phone layout. Video styles live in `tools/video/frame.html` and
+  must not reuse the site's class names: `.q`, the site's quiz card, once put a white card around
+  speech lines that ran off the phone screen.
 - The videos are made on a pod (README, "Grammar videos"). If no CPU pod is free, use a GPU pod with
   the `pytorch/pytorch` image (the Playwright image never started on a GPU host) and install
   Playwright and Chromium there. Delete the pod when the zips are checked.
