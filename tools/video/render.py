@@ -76,31 +76,30 @@ def pcm(path):
 
 
 def fetch_clips(films, cache, fake):
-    """download every clip once; returns {(text, voice): pcm bytes}"""
+    """download every clip once (16 at a time); returns {(text, voice): pcm bytes}"""
     os.makedirs(cache, exist_ok=True)
-    out = {}
-    for f in films:
-        for l in f['lines']:
-            key = (norm(l['t']), l['v'])
-            if key in out:
-                continue
-            if fake:  # silence of a plausible length: 0.9 s of padding + 0.4 s a word
-                out[key] = b'\0\0' * int(RATE * (0.9 + 0.4 * len(l['t'].split())))
-                continue
-            path = os.path.join(cache, hashlib.md5(repr(key).encode()).hexdigest() + '.mp3')
-            if not os.path.exists(path):
-                for attempt in range(5):
-                    try:
-                        with urllib.request.urlopen(clip_url(*key), timeout=60) as r, open(path + '.part', 'wb') as w:
-                            shutil.copyfileobj(r, w)
-                        os.replace(path + '.part', path)
-                        break
-                    except Exception as e:
-                        if attempt == 4:
-                            raise RuntimeError(f'clip missing for {key}: {e}')
-                        time.sleep(2 * (attempt + 1))
-            out[key] = pcm(path)
-    return out
+    keys = list(dict.fromkeys((norm(l['t']), l['v']) for f in films for l in f['lines']))
+    if fake:  # silence of a plausible length: 0.9 s of padding + 0.4 s a word
+        return {k: b'\0\0' * int(RATE * (0.9 + 0.4 * len(k[0].split()))) for k in keys}
+
+    def one(key):
+        path = os.path.join(cache, hashlib.md5(repr(key).encode()).hexdigest() + '.mp3')
+        if not os.path.exists(path):
+            for attempt in range(5):
+                try:
+                    with urllib.request.urlopen(clip_url(*key), timeout=60) as r, open(path + '.part', 'wb') as w:
+                        shutil.copyfileobj(r, w)
+                    os.replace(path + '.part', path)
+                    break
+                except Exception as e:
+                    if attempt == 4:
+                        raise RuntimeError(f'clip missing for {key}: {e}')
+                    time.sleep(2 * (attempt + 1))
+        return key, pcm(path)
+
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(16) as ex:
+        return dict(ex.map(one, keys))
 
 
 def build_job(job):
