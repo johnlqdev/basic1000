@@ -67,6 +67,10 @@ when the owner gives them, with the date.
 - **A clip with the same name is never replaced on its own.** `batch` skips any text that already
   has a clip, including test clips made while trying things. When a sentence must be re-recorded
   (new `say`, new voice rule), send it with `force: true`.
+- **List the pods before creating one, and again at the end** (2026-10-16). The tts function finds
+  its pod by name (`basic1000-lab`), so a second pod with the same name, say one left by an
+  interrupted session, keeps billing unseen and `delete` removes only one of them. Reuse or delete
+  any `basic1000-*` pod first; at the end, check that none is left.
 - **Check every sentence, not a sample** (2026-10-16). Run the phoneme check on every new or
   changed sentence and compare `heard` word by word, above all the word being taught or talked
   about. Misreads found so far: a quoted "am" heard as "arm" or "A.M."; "I am a man." with the weak
